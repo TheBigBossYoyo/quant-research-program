@@ -1,0 +1,22 @@
+{
+ "frozen_utc": "2026-09-20T21:21:31.931131+00:00",
+ "reason": "Amendment 3 fresh 15-case validation PASS (15/15)",
+ "classifier_version": "1.8",
+ "scope": "DEVELOPMENT use only; validation 2018-2021 and holdout 2022-2026 remain locked",
+ "files": {
+  "research/phase8b_classifier.py": "4a0c6b54a9a7b49cc8df04e8436d133d5801b7f220e6d76a9930a2c60ae21301",
+  "research/phase8b_corpus.py": "659f2834d98aa912076998a0a47f57506cdf511fae4e487193140d16dc71be58",
+  "research/phase8b_display.py": "7a372efa1b062c1c73e4136d1c271e80d5451b29390ae22299cba9fa7336036f",
+  "research/phase8b_lock.py": "699e2b8e1ddd71502c3eb7835b0d508f0194ee741f8e05f25091f75e50243a02",
+  "research/phase8b_timing.py": "375ba445ea04386d498876b3095f94a324571d0ba4a4176e48a286903e6eb36c",
+  "research/phase8b_edgar.py": "e83d9c9ef018c36997db1138413dc11fef9980d30c006c6ed29af63abcd999b7",
+  "research/phase8b_events.py": "626e1918b47362bc76ef5adc788dbc2313a3ee394c1d8c3d3c6f40fb34f1b51b",
+  "research/phase8b_portfolio.py": "aab44f7d0139727ba324c787eac6a600ecd48e8e59a3f3542c24b90d4f22077c",
+  "research/phase8b_backtest.py": "391e84fc0c3749d61e5edc5943192a773fa8dd1e4b7a68c4135464d537cf1d05",
+  "research/phase8b_gold2.py": "d3f84183c58deeb25552b5175d3f5c22d649b8e7f7bbf5c6b336ab724b0d4eea",
+  "research/phase8b_gold2_eval.py": "4f9b4ba89febc3edab968822ea5d1c729b008e7fb54e16146e7f4c3151e3b0af",
+  "research/phase8b/phase8b_config.json": "73fb59a67e4b3eecabf66bf05b0a68b90139d9976248f6abd807298739fe4238",
+  "research/phase8b/gold2/phase8b_gold2_reference_FROZEN.csv": "780eaa025d2db6d13173e750a053d4a2ba0a73ee53265bf754fd293d3de0be8a",
+  "research/phase8b/gold2/phase8b_gold2_key_SEALED.csv": "53afa863cd077de01fb6868742afb02139e808e3d15d2d46d1d5b6303dd28878"
+ }
+}

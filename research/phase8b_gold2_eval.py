@@ -37,9 +37,12 @@ HUMAN = list(CFG['human_labels'])
 POS_HUMAN = set(CFG['primary_positive_human'])            # {'NEW', 'INCREASED'}
 OUT = ROOT / 'research/phase8b'
 GOLD2 = OUT / 'gold2'
-LABELED = GOLD2 / 'phase8b_gold2_candidates_LABELED.csv'
+LABELED = GOLD2 / 'phase8b_gold2_reference_FROZEN.csv'      # frozen and hashed before evaluation; never the live working file
 KEY = GOLD2 / 'phase8b_gold2_key_SEALED.csv'
-REFERENCE_KIND = 'HUMAN_ENTERED_REFERENCE_SET_WITH_VISIBLE_CLASSIFIER_EVIDENCE'
+REFERENCE_KIND = 'FRESH_BLIND_TO_CLASSIFIER_AI_ASSISTED_HUMAN_ADJUDICATION'
+REFERENCE_NOTE = ("Labels entered by the human owner while blind to the repaired classifier's predictions, with the "
+                  'classifier evidence sentence visible (A3.4). The owner consulted an independent LLM to interpret '
+                  'filing passages. This is NOT unaided independent human annotation.')
 
 PASS_MIN = 15               # A3.8, frozen
 BORDERLINE_MIN = 14
@@ -117,7 +120,7 @@ def evaluate(df):
                                        'p1_margin', 'p1_evidence', 'human_notes']].to_dict('records')
     return dict(
         evaluated_utc=datetime.now(timezone.utc).isoformat(), amendment=3, reference_kind=REFERENCE_KIND,
-        reference_sha256=hashlib.sha256(LABELED.read_bytes()).hexdigest(),
+        reference_sha256=hashlib.sha256(LABELED.read_bytes()).hexdigest(), reference_note=REFERENCE_NOTE,
         classifier_version='1.8', classifier_sha256={f: g2.sha(f) for f in g2.CLASSIFIER_FILES},
         headline=dict(measure='precision on the NEW+INCREASED superclass (A3.9)', correct=correct, n=n,
                       precision=correct / n, ci95_clopper_pearson=[lo, hi],

@@ -1,0 +1,1 @@
+SUPERSEDED - DATA INTEGRITY DEFECT (Amendment 4): the SFD_old oscillating vendor series contaminated the equity path; none of these numbers are research results. See research/phase8b/PHASE8B_DATA_DEFECT_AMENDMENT4.md

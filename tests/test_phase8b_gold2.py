@@ -160,13 +160,22 @@ class DecisionRuleTests(unittest.TestCase):
 class ReturnLockTests(unittest.TestCase):
     """A3.10: returns stay locked until a PASS is recorded."""
 
-    def test_no_classifier_gate_passed_record_exists_yet(self):
-        log = (ROOT / 'research/phase8b/PHASE8B_FREEZE_HASHES.jsonl').read_text(encoding='utf8')
-        self.assertNotIn('classifier gate passed', log)
+    def test_the_gate_record_is_a_pass_and_is_development_only(self):
+        """The gate passed 15/15 on 2026-09-20. The record must say PASS and must scope it to DEVELOPMENT use."""
+        import json
+        recs = [json.loads(l) for l in (ROOT / 'research/phase8b/PHASE8B_FREEZE_HASHES.jsonl').read_text(encoding='utf8').splitlines() if l.strip()]
+        gate = [r for r in recs if r.get('stage', '').startswith('classifier gate passed')]
+        self.assertEqual(len(gate), 1)
+        self.assertIn('PASS', gate[0]['stage'])
+        self.assertIn('DEVELOPMENT use only', gate[0]['stage'])
 
-    def test_backtest_refuses_without_a_gate_record(self):
-        import phase8b_backtest as bt
-        self.assertFalse(bt.gate_recorded())
+    def test_the_recorded_pass_matches_the_written_result(self):
+        import json
+        rep = json.loads((ROOT / 'research/phase8b/phase8b_gold2_validation.json').read_text(encoding='utf8'))
+        self.assertEqual(rep['verdict'], 'PASS')
+        self.assertEqual(rep['headline']['correct'], 15)
+        self.assertEqual(rep['headline']['n'], 15)
+        self.assertEqual(rep['reference_kind'], 'FRESH_BLIND_TO_CLASSIFIER_AI_ASSISTED_HUMAN_ADJUDICATION')
 
     def test_the_v17_failure_record_is_still_present(self):
         log = (ROOT / 'research/phase8b/PHASE8B_FREEZE_HASHES.jsonl').read_text(encoding='utf8')

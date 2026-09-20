@@ -1,0 +1,23 @@
+{
+ "threshold_up": 2.0,
+ "threshold_down": -0.75,
+ "source": "phase6_stock_universe I3 (unchanged)",
+ "events_in": 7849,
+ "events_kept": 7806,
+ "events_dropped": 43,
+ "dropped_share": 0.005478404892342974,
+ "dropped_by_year": {
+  "2005": 4,
+  "2006": 5,
+  "2007": 7,
+  "2008": 12,
+  "2009": 1,
+  "2010": 3,
+  "2011": 1,
+  "2012": 3,
+  "2014": 2,
+  "2015": 5
+ },
+ "distinct_codes_dropped": 33,
+ "note": "screen reads the adjusted-open path only; it never sees an event return"
+}

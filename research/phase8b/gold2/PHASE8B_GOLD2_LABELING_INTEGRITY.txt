@@ -1,0 +1,18 @@
+PHASE8B_HUMAN_LABELING_INTEGRITY - neutral completeness and structure check (counts and hashes only)
+generated: 2026-09-20T22:17:35
+
+[Fresh validation set (15 cases)]
+  source_file: phase8b_gold2_candidates.csv
+  source_rows: 15
+  output_file: phase8b_gold2_candidates_LABELED.csv
+  output_rows: 15
+  valid_label_rows: 15
+  blank_label_rows: 0
+  invalid_label_rows: 0
+  event_ids_unchanged: True
+  non_label_columns_unchanged: True
+  duplicate_event_ids: False
+  columns_unchanged: True
+  complete: True
+  sha256_output: 780eaa025d2db6d13173e750a053d4a2ba0a73ee53265bf754fd293d3de0be8a
+  sha256_source: 8ab24e24702e61c976e2b0a3ce1a0c1f86c205fc2f999713793ba5ea7c1449aa

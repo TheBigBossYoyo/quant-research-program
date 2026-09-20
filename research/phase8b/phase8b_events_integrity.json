@@ -1,0 +1,64 @@
+{
+ "built_utc": "2026-09-20T21:47:27.994371+00:00",
+ "classifier_version": "1.8",
+ "classifier_sha256": "4a0c6b54a9a7b49cc8df04e8436d133d5801b7f220e6d76a9930a2c60ae21301",
+ "filings_rows": 110355,
+ "filings_without_a_prediction": 1,
+ "counts": {
+  "labelled_positive": 10474,
+  "amendments_dropped": 80,
+  "no_entry_dropped": 0,
+  "unmapped_dropped": 2110,
+  "repeated_references_merged": 435,
+  "events": 7849,
+  "price_integrity_dropped": 43
+ },
+ "events": 7806,
+ "price_integrity": {
+  "threshold_up": 2.0,
+  "threshold_down": -0.75,
+  "source": "phase6_stock_universe I3 (unchanged)",
+  "events_in": 7849,
+  "events_kept": 7806,
+  "events_dropped": 43,
+  "dropped_share": 0.005478404892342974,
+  "dropped_by_year": {
+   "2005": 4,
+   "2006": 5,
+   "2007": 7,
+   "2008": 12,
+   "2009": 1,
+   "2010": 3,
+   "2011": 1,
+   "2012": 3,
+   "2014": 2,
+   "2015": 5
+  },
+  "distinct_codes_dropped": 33,
+  "note": "screen reads the adjusted-open path only; it never sees an event return"
+ },
+ "events_by_year": {
+  "2004": 181,
+  "2005": 549,
+  "2006": 627,
+  "2007": 804,
+  "2008": 726,
+  "2009": 275,
+  "2010": 474,
+  "2011": 625,
+  "2012": 552,
+  "2013": 557,
+  "2014": 645,
+  "2015": 736,
+  "2016": 587,
+  "2017": 468
+ },
+ "events_2013_2017": 2993,
+ "entry_min": "2004-01-15 00:00:00",
+ "entry_max": "2017-12-26 00:00:00",
+ "unique_issuers": 2815,
+ "label_mix": {
+  "A": 4736,
+  "B": 3070
+ }
+}

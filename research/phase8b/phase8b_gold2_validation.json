@@ -1,0 +1,71 @@
+{
+ "evaluated_utc": "2026-09-20T21:20:22.048726+00:00",
+ "amendment": 3,
+ "reference_kind": "FRESH_BLIND_TO_CLASSIFIER_AI_ASSISTED_HUMAN_ADJUDICATION",
+ "reference_sha256": "780eaa025d2db6d13173e750a053d4a2ba0a73ee53265bf754fd293d3de0be8a",
+ "reference_note": "Labels entered by the human owner while blind to the repaired classifier's predictions, with the classifier evidence sentence visible (A3.4). The owner consulted an independent LLM to interpret filing passages. This is NOT unaided independent human annotation.",
+ "classifier_version": "1.8",
+ "classifier_sha256": {
+  "research/phase8b_classifier.py": "4a0c6b54a9a7b49cc8df04e8436d133d5801b7f220e6d76a9930a2c60ae21301",
+  "research/phase8b_corpus.py": "659f2834d98aa912076998a0a47f57506cdf511fae4e487193140d16dc71be58",
+  "research/phase8b_display.py": "7a372efa1b062c1c73e4136d1c271e80d5451b29390ae22299cba9fa7336036f"
+ },
+ "headline": {
+  "measure": "precision on the NEW+INCREASED superclass (A3.9)",
+  "correct": 15,
+  "n": 15,
+  "precision": 1.0,
+  "ci95_clopper_pearson": [
+   0.7819806390894659,
+   1.0
+  ],
+  "ci_note": "uncertainty information only; NOT a criterion (A3.8)"
+ },
+ "by_period": {
+  "P_early": {
+   "correct": 7,
+   "n": 7
+  },
+  "P_recent": {
+   "correct": 8,
+   "n": 8
+  }
+ },
+ "verdict": "PASS",
+ "systematic": {
+  "flag": false,
+  "n_false_positives": 0,
+  "routine_labelled_as_positive": 0,
+  "false_positive_labels": {},
+  "false_positives_by_rule": {},
+  "repeated_rule_false_positives": {},
+  "note": "a single non-systematic error is BORDERLINE under A3.8 and stops for a user decision"
+ },
+ "errors": [],
+ "subclass_new_vs_increased": {
+  "A": {
+   "INCREASED": 1,
+   "NEW": 9
+  },
+  "B": {
+   "INCREASED": 3,
+   "NEW": 2
+  }
+ },
+ "subclass_note": "reported only; the preregistered strategy trades the A/B superclass and does not separate them",
+ "human_label_counts": {
+  "NEW": 11,
+  "INCREASED": 4
+ },
+ "pass2_agreement": {
+  "n_pass2_positive": 14,
+  "of_which_reference_positive": 14
+ },
+ "prior_run": {
+  "status": "SEEN - reported separately, never pooled (A3.8)",
+  "frozen_v17_verdict": "CLASSIFIER_VALIDATION_FAILED_AS_MEASURED",
+  "frozen_v17_stratum_P": "33/38",
+  "frozen_v17_precision": 0.868421052631579
+ },
+ "returns_status": "LOCKED unless the verdict is PASS; validation 2018-2021 and holdout 2022-2026 untouched"
+}

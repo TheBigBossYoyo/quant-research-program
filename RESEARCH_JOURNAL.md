@@ -269,3 +269,53 @@ The instructive part was what had to be thrown away. A first pass at these repai
 The adjudication log is the uncomfortable part and is kept separate on purpose. Three of the entered labels are wrong against their own passages, including one that is simply not about share repurchases: an option granted to initial purchasers to buy twenty million dollars of additional convertible notes to cover over-allotments, entered as INCREASED. That one was displayed correctly, so it is a reading error, not an instrument error, and saying so matters more than being polite about it. Correcting the two that fall in the measured stratum would move the first run from 33/38 to 35/38 - ninety-two percent, still short of the ninety-five the rule demanded. The defect did not hide a pass. Both numbers are written down, the counterfactual is labelled diagnostic in the file, in the JSON and in the test suite, and the gate record that would let returns run was not written and does not exist.
 
 Fifteen fresh filings are now drawn from the eighty percent no human has seen, excluding every accession and every issuer that appeared in the first round, eight from the gate window and seven from before it. The rule for reading them was fixed before they were drawn and is in code: fifteen right passes, fourteen stops and asks, thirteen fails, and there is no version of this where the answer is to request another sixty labels. Nothing about returns has moved. The 2018-2021 validation and the 2022-2026 holdout have still never been opened, and a passing classifier would authorise development use only - the right to compute a number, not a belief that the number will be good.
+
+
+## 2026-09-20 - Phase 8B: the classifier was the easy part
+
+Fifteen out of fifteen. The repaired classifier read fifteen filings it had never seen, drawn from the four fifths of
+the corpus no human had looked at, and every one of them was what it said it was. Zero false positives, the error mode
+that sank the first attempt absent, and the second independent pass agreeing on fourteen of the fifteen. The labels
+were frozen and hashed before the scoring script was allowed to read them, the classifier hashes were checked against
+the ledger from before the cases were drawn, and the thresholds were the ones written down two hours earlier. The
+first result stays exactly where it was, 33 out of 38, and was never pooled into this one.
+
+Then the strategy was tested, and it failed.
+
+The shape of the failure is worth stating precisely, because the headline number looks like a discovery. Buying every
+new or increased buyback authorisation at the first open after EDGAR accepts the filing and holding a year beat the
+equal-weight liquid universe by six percentage points a year over 2013-2017, five years out of five, with a t
+statistic above five. It also lost to SPY - 14.94 against 15.22 - while carrying twice the drawdown, and its alpha
+against the market was minus nine tenths of a percent, and against the five-factor model with momentum minus four
+tenths, both with t statistics indistinguishable from zero. The six points are not skill. They are the market, size
+and value exposure of the kind of company that announces a buyback. This is the second time this program has found
+that exact object: the insider-purchase cell in Phase 8 failed the same way, and the gate that catches it exists
+because of that earlier failure. It worked.
+
+The event study says the same thing from the other direction. The 252-session abnormal return is positive in the gate
+window and negative before it, minus five and a half percent over 2004-2012 and minus one point nine over the full
+span. An effect that changes sign when you look at more of it is a window, not a mechanism.
+
+There was one genuine scare along the way. The first run reported a 2012 excess of seven hundred and thirty-seven
+percent. That is not a finding, it is a bug, and the right response to a number like that is to go and look. It was a
+single position: Smithfield Foods, on a vendor series that oscillates between about seventeen cents and about
+twenty-two dollars on adjacent sessions, minus ninety-nine percent one day and plus thirteen thousand the next. A book
+that re-equalises to 1/N on every entry and exit will buy that low and trim that high over and over, and it booked a
+thirty-fold gain on a position whose quoted price had fallen ninety-nine percent. The cause was structural rather than
+particular: Phase 8B checks whether a stock is eligible at the signal date before entry and then never looks at the
+price path again for the next two hundred and fifty-two sessions. Just under six percent of the panel carries the same
+pathology, which matches the vendor ticker-reuse damage Phase 6 measured independently.
+
+The screen written for it reuses Phase 6's existing extreme-day thresholds rather than any number chosen for this
+occasion, reads the price series only and never an event's return, and throws out the whole event rather than
+truncating the hold. It removed forty-three events out of seven thousand eight hundred and forty-nine. The honest
+detail is the direction: the defect was inflating the result, so cleaning it made the concentration gate go from
+failing badly to passing comfortably and moved the headline excess from 6.09 to 6.03. A data repair that makes your
+strategy look worse where it matters and only fixes a gate you were failing is not motivated reasoning. Both runs fail
+G4 and G11, the broken one is kept on disk with none of its numbers treated as results, and every permanently frozen
+file was re-hashed after the return stage to prove the classifier had not been touched while returns were visible.
+
+So the branch closes, and with it the EDGAR event family: insider purchases, quality conditioning, earnings drift and
+now repurchase authorisations, each rejected on its own evidence. Four hundred and ninety cells, no candidate. The
+2018-2021 validation window and the 2022-2026 holdout have still never been opened, which is the only part of this
+that was ever going to be hard to undo. A rejected candidate does not get to spend them.

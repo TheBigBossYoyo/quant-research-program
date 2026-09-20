@@ -67,8 +67,28 @@ class GateTests(unittest.TestCase):
 
 
 class RefusalTests(unittest.TestCase):
-    def test_gate_record_detection(self):
-        self.assertFalse(bt.gate_recorded())      # no classifier gate has passed in the repository at this point
+    """The gate passed on 2026-09-20 (Amendment 3, 15/15), so the repository now legitimately carries the record.
+    What must still hold is that the GUARD works: it reports False for any ledger lacking the record."""
+
+    def test_gate_record_present_for_the_real_ledger(self):
+        self.assertTrue(bt.gate_recorded())
+        self.assertFalse(bt.gate_recorded(stage_prefix='a stage that was never written'))
+
+    def test_guard_returns_false_when_the_record_is_absent(self):
+        import json
+        real = (bt.OUT / 'PHASE8B_FREEZE_HASHES.jsonl').read_text(encoding='utf8')
+        kept = [l for l in real.splitlines() if l.strip() and not json.loads(l).get('stage', '').startswith('classifier gate passed')]
+        self.assertLess(len(kept), len([l for l in real.splitlines() if l.strip()]))   # the record really is in there
+        import tempfile, pathlib as _p
+        with tempfile.TemporaryDirectory() as d:
+            fake = _p.Path(d) / 'PHASE8B_FREEZE_HASHES.jsonl'
+            fake.write_text(chr(10).join(kept), encoding='utf8')
+            orig = bt.OUT
+            try:
+                bt.OUT = _p.Path(d)
+                self.assertFalse(bt.gate_recorded())
+            finally:
+                bt.OUT = orig
 
 
 if __name__ == '__main__':
