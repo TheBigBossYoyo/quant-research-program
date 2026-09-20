@@ -1,0 +1,132 @@
+{
+  "experiment_id": "E019_20260908T194655",
+  "code_hash": "fc40efb3b1d45d19b3057409ef1c262c469e12e0a632c414886c843505ca25fc",
+  "git_commit": null,
+  "seed": 20261308,
+  "cumulative_hypotheses": 219,
+  "new_hypotheses": 4,
+  "long_flat_trials": 0,
+  "stage1": [
+    {
+      "feature": "agg_fund7",
+      "ic": 0.0022907070778102035,
+      "observations": 239,
+      "block": 4,
+      "samples": 2000,
+      "seed": 20261308,
+      "ci95": [
+        -0.12354076451572206,
+        0.11802310443230245
+      ],
+      "ci_lower_adjusted": -0.1408989576797013,
+      "ci_upper_adjusted": 0.13322580586507962,
+      "bonferroni_cells": 2,
+      "passes_stage1": false,
+      "direction": 0,
+      "ic_by_year": {
+        "2020": -0.2157258064516129,
+        "2021": -0.054725518654486466,
+        "2022": -0.06949543242551012,
+        "2023": -0.0811965811965812,
+        "2024": -0.028778280542986423
+      },
+      "feature_autocorrelation": 0.7024904411420845,
+      "weeks": 239
+    },
+    {
+      "feature": "breadth30",
+      "ic": 0.04078731306182794,
+      "observations": 239,
+      "block": 4,
+      "samples": 2000,
+      "seed": 20261309,
+      "ci95": [
+        -0.0737201163333747,
+        0.14555059441053095
+      ],
+      "ci_lower_adjusted": -0.08545390480357963,
+      "ci_upper_adjusted": 0.1600250170810428,
+      "bonferroni_cells": 2,
+      "passes_stage1": false,
+      "direction": 0,
+      "ic_by_year": {
+        "2020": -0.18396029509254966,
+        "2021": 0.06839544059061599,
+        "2022": -0.09434163627258386,
+        "2023": -0.016290979806101478,
+        "2024": 0.07212669683257918
+      },
+      "feature_autocorrelation": 0.8015791660488889,
+      "weeks": 239
+    }
+  ],
+  "stage2": [
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "rule": "long",
+      "direction": 1,
+      "case": "base",
+      "ending_equity": 53929.390447797996,
+      "cagr": 0.40057064024850475,
+      "daily_sharpe": 0.8527850677675886,
+      "max_daily_drawdown": -0.7900259326423784,
+      "max_gross": 1.022979949482159,
+      "mean_names": 1.0,
+      "annual_turnover": 0.25472765638191375,
+      "calendar_returns": {
+        "2020": 1.9130991851715513,
+        "2021": 0.19371602866752835,
+        "2022": -0.6621960605847776,
+        "2023": 1.3497767487392909,
+        "2024": 0.9537900897647604
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "rule": "long",
+      "direction": 1,
+      "case": "stress",
+      "ending_equity": 53859.68946588999,
+      "cagr": 0.40020856841552765,
+      "daily_sharpe": 0.8523832978267856,
+      "max_daily_drawdown": -0.7900617163798751,
+      "max_gross": 1.0229904705668635,
+      "mean_names": 1.0,
+      "annual_turnover": 0.25499706640430186,
+      "calendar_returns": {
+        "2020": 1.9105191470647687,
+        "2021": 0.19344046971092954,
+        "2022": -0.6622089922247831,
+        "2023": 1.349657105455154,
+        "2024": 0.953619812113015
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "rule": "long",
+      "direction": 1,
+      "case": "severe",
+      "ending_equity": 53720.070982843,
+      "cagr": 0.39948217095988037,
+      "daily_sharpe": 0.8515768488477781,
+      "max_daily_drawdown": -0.7901334085434367,
+      "max_gross": 1.0230115297263938,
+      "mean_names": 1.0,
+      "annual_turnover": 0.25553750363500366,
+      "calendar_returns": {
+        "2020": 1.9053444944532631,
+        "2021": 0.19288835673390547,
+        "2022": -0.6622348924141263,
+        "2023": 1.3494173580277615,
+        "2024": 0.953278575709116
+      }
+    }
+  ],
+  "stage2_survivors": [],
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "note": "Signal sign relative to the causal expanding median of the aggregate (52-week minimum); no threshold optimization."
+}

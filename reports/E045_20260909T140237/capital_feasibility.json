@@ -1,0 +1,1114 @@
+{
+  "snapshot": "data\\metadata\\futures_exchangeInfo_20260908T094615.json",
+  "snapshot_time": "2026-09-08 00:01:01.652000+00:00",
+  "sleeves": 24,
+  "assets": [
+    {
+      "asset": "SOLUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 0.01,
+      "min_notional": 5.0,
+      "scenario_price": 189.22,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 1.8922,
+      "trend_median_order_fraction": 0.288499763496821,
+      "trend_p05_order_fraction": 0.2733787081199577,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 836,
+      "breakout_orders": 110
+    },
+    {
+      "asset": "XRPUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 0.1,
+      "min_notional": 5.0,
+      "scenario_price": 2.0836,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.20836000000000002,
+      "trend_median_order_fraction": 0.2871297491020073,
+      "trend_p05_order_fraction": 0.27344839685202993,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 906,
+      "breakout_orders": 110
+    },
+    {
+      "asset": "BNBUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 0.01,
+      "min_notional": 5.0,
+      "scenario_price": 702.12,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 7.0212,
+      "trend_median_order_fraction": 0.28673188449077214,
+      "trend_p05_order_fraction": 0.2780488374612694,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 963,
+      "breakout_orders": 107
+    },
+    {
+      "asset": "DOTUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 0.1,
+      "min_notional": 5.0,
+      "scenario_price": 6.637,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.6637,
+      "trend_median_order_fraction": 0.2894354984108234,
+      "trend_p05_order_fraction": 0.27068025638502463,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 748,
+      "breakout_orders": 136
+    },
+    {
+      "asset": "DOGEUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 1.0,
+      "min_notional": 5.0,
+      "scenario_price": 0.31582,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.31582,
+      "trend_median_order_fraction": 0.2883322097419196,
+      "trend_p05_order_fraction": 0.2729045221046147,
+      "breakout_median_order_fraction": 0.9990958182844525,
+      "trend_orders": 777,
+      "breakout_orders": 106
+    },
+    {
+      "asset": "ADAUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 1.0,
+      "min_notional": 5.0,
+      "scenario_price": 0.8447,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.8447,
+      "trend_median_order_fraction": 0.2882810052732603,
+      "trend_p05_order_fraction": 0.2713060329168749,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 768,
+      "breakout_orders": 128
+    },
+    {
+      "asset": "AVAXUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 1.0,
+      "min_notional": 5.0,
+      "scenario_price": 35.688,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 35.688,
+      "trend_median_order_fraction": 0.2874171240206304,
+      "trend_p05_order_fraction": 0.271815200539372,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 761,
+      "breakout_orders": 135
+    },
+    {
+      "asset": "AXSUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 1.0,
+      "min_notional": 5.0,
+      "scenario_price": 6.214,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 6.214,
+      "trend_median_order_fraction": 0.28837055044807225,
+      "trend_p05_order_fraction": 0.26838381904146047,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 789,
+      "breakout_orders": 142
+    },
+    {
+      "asset": "MATICUSDT",
+      "listed_in_snapshot": false,
+      "status": "ABSENT (contract terminated)",
+      "step": NaN,
+      "min_notional": NaN,
+      "scenario_price": 0.3846,
+      "scenario_price_time": "2024-09-11 09:00:00+00:00",
+      "lot_value_usdt": NaN,
+      "trend_median_order_fraction": 0.2888573280231057,
+      "trend_p05_order_fraction": 0.26614795861659607,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 698,
+      "breakout_orders": 116
+    },
+    {
+      "asset": "FTMUSDT",
+      "listed_in_snapshot": true,
+      "status": "SETTLING",
+      "step": 1.0,
+      "min_notional": 5.0,
+      "scenario_price": 0.6811,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.6811,
+      "trend_median_order_fraction": 0.2875073211839796,
+      "trend_p05_order_fraction": 0.26832854818679036,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 622,
+      "breakout_orders": 120
+    },
+    {
+      "asset": "LTCUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 0.001,
+      "min_notional": 20.0,
+      "scenario_price": 103.22,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.10322,
+      "trend_median_order_fraction": 0.28755897905423417,
+      "trend_p05_order_fraction": 0.27554787855829244,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 915,
+      "breakout_orders": 100
+    },
+    {
+      "asset": "LINKUSDT",
+      "listed_in_snapshot": true,
+      "status": "TRADING",
+      "step": 0.01,
+      "min_notional": 20.0,
+      "scenario_price": 20.003,
+      "scenario_price_time": "2024-12-31 23:00:00+00:00",
+      "lot_value_usdt": 0.20003,
+      "trend_median_order_fraction": 0.28845832517658704,
+      "trend_p05_order_fraction": 0.27191945453313215,
+      "breakout_median_order_fraction": 0.9990958182844526,
+      "trend_orders": 936,
+      "breakout_orders": 121
+    }
+  ],
+  "eur500": [
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "SOLUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.409370565565394,
+      "share_below_min_notional": 0.03110047846889952,
+      "share_below_one_lot": 0.0011961722488038277
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "SOLUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "XRPUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.3836827956626365,
+      "share_below_min_notional": 0.03421633554083885,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "XRPUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "BNBUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.376222834201978,
+      "share_below_min_notional": 0.020768431983385256,
+      "share_below_one_lot": 0.8120456905503635
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "BNBUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "DOTUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.426915595202939,
+      "share_below_min_notional": 0.04144385026737968,
+      "share_below_one_lot": 0.004010695187165776
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "DOTUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "DOGEUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.4062289326609925,
+      "share_below_min_notional": 0.028314028314028315,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "DOGEUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "ADAUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.40526884887363,
+      "share_below_min_notional": 0.03515625,
+      "share_below_one_lot": 0.0013020833333333333
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "ADAUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "AVAXUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.38907107538682,
+      "share_below_min_notional": 0.03153745072273324,
+      "share_below_one_lot": 1.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "AVAXUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.9777777777777777
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "AXSUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.406947820901355,
+      "share_below_min_notional": 0.048162230671736375,
+      "share_below_one_lot": 0.8098859315589354
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "AXSUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "FTMUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.390762272199616,
+      "share_below_min_notional": 0.04662379421221865,
+      "share_below_one_lot": 0.003215434083601286
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "FTMUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "LTCUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.39173085726689,
+      "share_below_min_notional": 0.9978142076502732,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "LTCUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.97,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "LINKUSDT",
+      "component": "trend",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 5.408593597061007,
+      "share_below_min_notional": 0.9925213675213675,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 0.9",
+      "asset": "LINKUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 18.75,
+      "median_order_usdt": 18.733046592833485,
+      "share_below_min_notional": 0.9338842975206612,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "SOLUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 6.010411739517104,
+      "share_below_min_notional": 0.011961722488038277,
+      "share_below_one_lot": 0.0011961722488038277
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "SOLUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "XRPUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 5.981869772958485,
+      "share_below_min_notional": 0.019867549668874173,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "XRPUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "BNBUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 5.973580926891086,
+      "share_below_min_notional": 0.010384215991692628,
+      "share_below_one_lot": 0.794392523364486
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "BNBUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "DOTUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 6.029906216892154,
+      "share_below_min_notional": 0.022727272727272728,
+      "share_below_one_lot": 0.004010695187165776
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "DOTUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "DOGEUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 6.006921036289991,
+      "share_below_min_notional": 0.014157014157014158,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "DOGEUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259425,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "ADAUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 6.0058542765262555,
+      "share_below_min_notional": 0.024739583333333332,
+      "share_below_one_lot": 0.0013020833333333333
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "ADAUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "AVAXUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 5.9878567504298,
+      "share_below_min_notional": 0.01971090670170828,
+      "share_below_one_lot": 1.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "AVAXUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.9777777777777777
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "AXSUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 6.007719801001505,
+      "share_below_min_notional": 0.024081115335868188,
+      "share_below_one_lot": 0.6451204055766794
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "AXSUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "FTMUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 5.989735857999574,
+      "share_below_min_notional": 0.022508038585209004,
+      "share_below_one_lot": 0.003215434083601286
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "FTMUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "LTCUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 5.990812063629878,
+      "share_below_min_notional": 0.9967213114754099,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "LTCUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.09,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "LINKUSDT",
+      "component": "trend",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 6.009548441178897,
+      "share_below_min_notional": 0.9903846153846154,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.0",
+      "asset": "LINKUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 20.833333333333332,
+      "median_order_usdt": 20.814496214259428,
+      "share_below_min_notional": 0.08264462809917356,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "SOLUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.611452913468815,
+      "share_below_min_notional": 0.009569377990430622,
+      "share_below_one_lot": 0.0011961722488038277
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "SOLUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "XRPUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.580056750254334,
+      "share_below_min_notional": 0.016556291390728478,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "XRPUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "BNBUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.570939019580195,
+      "share_below_min_notional": 0.010384215991692628,
+      "share_below_one_lot": 0.7445482866043613
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "BNBUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "DOTUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.63289683858137,
+      "share_below_min_notional": 0.01871657754010695,
+      "share_below_one_lot": 0.004010695187165776
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "DOTUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "DOGEUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.607613139918991,
+      "share_below_min_notional": 0.007722007722007722,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "DOGEUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.89594583568537,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "ADAUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.6064397041788805,
+      "share_below_min_notional": 0.016927083333333332,
+      "share_below_one_lot": 0.0013020833333333333
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "ADAUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "AVAXUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.586642425472781,
+      "share_below_min_notional": 0.017082785808147174,
+      "share_below_one_lot": 1.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "AVAXUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.9777777777777777
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "AXSUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.608491781101656,
+      "share_below_min_notional": 0.017743979721166033,
+      "share_below_one_lot": 0.062103929024081114
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "AXSUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "FTMUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.588709443799532,
+      "share_below_min_notional": 0.01929260450160772,
+      "share_below_one_lot": 0.003215434083601286
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "FTMUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.0,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "LTCUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.589893269992866,
+      "share_below_min_notional": 0.9879781420765027,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "LTCUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.04,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "LINKUSDT",
+      "component": "trend",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 6.610503285296787,
+      "share_below_min_notional": 0.9754273504273504,
+      "share_below_one_lot": 0.0
+    },
+    {
+      "fx": "EUR->USDT 1.1",
+      "asset": "LINKUSDT",
+      "component": "breakout",
+      "sleeve_usdt": 22.916666666666668,
+      "median_order_usdt": 22.895945835685374,
+      "share_below_min_notional": 0.01652892561983471,
+      "share_below_one_lot": 0.0
+    }
+  ],
+  "minimum": [
+    {
+      "granularity": "lot <= 10% of order (rounding error <= 5%)",
+      "minimum_capital_usdt": 31510.820524400202,
+      "binding_asset": "AVAXUSDT",
+      "binding_component": "trend",
+      "binding_reason": "lot granularity",
+      "minimum_capital_eur_at_fx_1": 31510.820524400202,
+      "per_sleeve": [
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "SOLUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 69.21533915398082,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "SOLUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 21.07075391921704,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "XRPUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.28498560445257,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "XRPUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.452046370044542,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "BNBUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 252.51679036341997,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "BNBUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 74.57248139028253,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "DOTUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 24.519704867425975,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "DOTUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 7.726894830090221,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "DOGEUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.32142597506431,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "DOGEUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.7926998581017735,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "ADAUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 31.134582261899297,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "ADAUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 9.13925852754703,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "AVAXUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 1312.9508551833417,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "AVAXUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 401.7167902617708,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "AXSUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 231.53407765764183,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "AXSUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 72.57707411500378,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "FTMUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 25.38306134783202,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "FTMUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 7.57588256256708,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "LTCUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 72.58266731953438,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "LTCUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 21.445917172703012,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "LINKUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 73.55119196726356,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 10% of order (rounding error <= 5%)",
+          "asset": "LINKUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 21.736958052519913,
+          "binding": "minimum notional"
+        }
+      ]
+    },
+    {
+      "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+      "minimum_capital_usdt": 12604.328209760079,
+      "binding_asset": "AVAXUSDT",
+      "binding_component": "trend",
+      "binding_reason": "lot granularity",
+      "minimum_capital_eur_at_fx_1": 12604.328209760079,
+      "per_sleeve": [
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "SOLUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 27.686135661592328,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "SOLUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 8.428301567686816,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "XRPUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.28498560445257,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "XRPUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.452046370044542,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "BNBUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 101.00671614536799,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "BNBUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 29.828992556113015,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "DOTUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.471978956927813,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "DOTUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.821074905898916,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "DOGEUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.32142597506431,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "DOGEUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.7926998581017735,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "ADAUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.429372713329762,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "ADAUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.409765909522334,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "AVAXUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 525.1803420733366,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "AVAXUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 160.68671610470835,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "AXSUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 92.61363106305674,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "AXSUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 29.030829646001514,
+          "binding": "lot granularity"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "FTMUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 18.63387266762004,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "FTMUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 5.5615053314983705,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "LTCUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 72.58266731953438,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "LTCUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 21.445917172703012,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "LINKUSDT",
+          "component": "trend",
+          "required_sleeve_usdt": 73.55119196726356,
+          "binding": "minimum notional"
+        },
+        {
+          "granularity": "lot <= 25% of order (rounding error <= 12.5%)",
+          "asset": "LINKUSDT",
+          "component": "breakout",
+          "required_sleeve_usdt": 21.736958052519913,
+          "binding": "minimum notional"
+        }
+      ]
+    }
+  ],
+  "status": "SCENARIO; exchange filters are documented rules from a dated snapshot; prices are the last development close; no account-specific fees or tiers used"
+}

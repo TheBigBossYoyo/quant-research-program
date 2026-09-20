@@ -1,0 +1,7 @@
+# Future equity research — not executed in Phase4
+
+Distinct untested directions: broad cross-sectional equities, residual momentum, factor-neutral signals, sector relative strength, volatility-managed portfolios, equity statistical arbitrage, overnight/intraday return decomposition, and market-neutral architectures. Start with point-in-time membership, delistings, split/dividend adjustments, lagged fundamentals, realistic borrow availability/costs and broker shorting constraints. Trading212 Invest long-only access does not establish market-neutral execution feasibility.
+
+Candidate data sources checked2026-09-09: Tiingo individual pricing lists USD30/month (https://www.tiingo.com/pricing), with EOD corporate-action error checking described at https://www.tiingo.com/documentation/end-of-day . EODHD advertises historical-data access from USD19.99/month (https://eodhd.com/); verify the exact package, delisted coverage and license before choosing. These USD prices are candidates within an approximate EUR50/month budget, subject to FX/taxes and package confirmation. Do not combine subscriptions if total exceeds EUR50.
+
+Paid data could reduce false momentum around splits and missing delisted securities, which directly affects validity of cross-sectional returns. Cheapest adequate option depends on an audit of delisted coverage and point-in-time membership; a low sticker price alone is insufficient. Require sample reconciliation and written data-gap justification before purchase. No purchase, account connection, download or equity strategy run performed.

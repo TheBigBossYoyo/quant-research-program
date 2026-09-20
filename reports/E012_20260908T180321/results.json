@@ -1,0 +1,1959 @@
+{
+  "experiment_id": "E012_20260908T180321",
+  "code_hash": "dd979a3be1a32a72826e936ae9e9baf0b7ec375c13aede65497a286c26f7d6e6",
+  "git_commit": null,
+  "seed": 20260908,
+  "ic_cells": 18,
+  "directional_hypotheses": 36,
+  "rule_b_trials_run": 4,
+  "cumulative_hypotheses": 159,
+  "stage1": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "ic": -0.023911134963314012,
+      "observations": 26300,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20260908,
+      "ci95": [
+        -0.03571341588792156,
+        -0.011442813684842332
+      ],
+      "ci_lower_adjusted": -0.040583530611003386,
+      "ci_upper_adjusted": -0.0040060728367805306,
+      "bonferroni_cells": 18,
+      "passes_stage1": true,
+      "direction": -1,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.023911134963314012,
+        "4": -0.01454620858855769,
+        "24": -0.004757616803814341
+      },
+      "ic_by_year": {
+        "2022": -0.040300067695923134,
+        "2023": -0.017711096979642422,
+        "2024": -0.012046696864043986
+      },
+      "feature_autocorrelation": -0.0692488432583062,
+      "contemporaneous_bar_return_correlation": 0.7161373056476261,
+      "top_quintile_forward_mean_bps": 0.7743875106086403,
+      "bottom_quintile_forward_mean_bps": 0.414540611346652,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "ic": -0.02301585971631043,
+      "observations": 26296,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20260909,
+      "ci95": [
+        -0.03267925255844511,
+        -0.013463804529811982
+      ],
+      "ci_lower_adjusted": -0.03654680859570503,
+      "ci_upper_adjusted": -0.009781943072877546,
+      "bonferroni_cells": 18,
+      "passes_stage1": true,
+      "direction": -1,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.02301585971631043,
+        "4": -0.025013454785790163,
+        "24": -0.010788936736742092
+      },
+      "ic_by_year": {
+        "2022": -0.02058903592962011,
+        "2023": -0.036217974120707035,
+        "2024": -0.011619628356204592
+      },
+      "feature_autocorrelation": 0.8030103048908976,
+      "contemporaneous_bar_return_correlation": 0.23793201903169098,
+      "top_quintile_forward_mean_bps": 1.1162909955476232,
+      "bottom_quintile_forward_mean_bps": -0.20336979654291648,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "xv1",
+      "ic": -0.005191209123854547,
+      "observations": 26298,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20260910,
+      "ci95": [
+        -0.017314422590205197,
+        0.007427994419016352
+      ],
+      "ci_lower_adjusted": -0.02219620543772419,
+      "ci_upper_adjusted": 0.014310615422012805,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.005191209123854547,
+        "4": -0.015520244962749098,
+        "24": -0.0008681273777625394
+      },
+      "ic_by_year": {
+        "2022": 0.010887430655027456,
+        "2023": 0.0006222416439957823,
+        "2024": -0.023468903460784663
+      },
+      "feature_autocorrelation": 0.19280367916789767,
+      "contemporaneous_bar_return_correlation": -0.10895213318267997,
+      "top_quintile_forward_mean_bps": 0.786612188229539,
+      "bottom_quintile_forward_mean_bps": 1.5354979918943743,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 4,
+      "feature": "imb1",
+      "ic": -0.02324331820193657,
+      "observations": 6573,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20260911,
+      "ci95": [
+        -0.04624622083887698,
+        -0.00019078589615971275
+      ],
+      "ci_lower_adjusted": -0.057084693382709,
+      "ci_upper_adjusted": 0.012704468886696019,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.02324331820193657,
+        "4": 0.01503109733150345,
+        "24": 0.024662985331261246
+      },
+      "ic_by_year": {
+        "2022": -0.028163277228727898,
+        "2023": -0.023855864458017413,
+        "2024": -0.012732761873773903
+      },
+      "feature_autocorrelation": 0.02360603306801183,
+      "contemporaneous_bar_return_correlation": 0.7189503005848018,
+      "top_quintile_forward_mean_bps": -2.045035398273249,
+      "bottom_quintile_forward_mean_bps": 3.3617574803199433,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 4,
+      "feature": "imb6",
+      "ic": -0.006638612735934229,
+      "observations": 6568,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20260912,
+      "ci95": [
+        -0.030811501913828802,
+        0.017819858406388084
+      ],
+      "ci_lower_adjusted": -0.045243810820745335,
+      "ci_upper_adjusted": 0.03256480953045759,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.006638612735934229,
+        "4": 0.006343990496883553,
+        "24": 0.03851442404009839
+      },
+      "ic_by_year": {
+        "2022": 0.014720195044643739,
+        "2023": -0.004172248697997931,
+        "2024": -0.016734693528316476
+      },
+      "feature_autocorrelation": 0.8605952108487848,
+      "contemporaneous_bar_return_correlation": 0.24894468512371215,
+      "top_quintile_forward_mean_bps": 2.859079146154949,
+      "bottom_quintile_forward_mean_bps": -0.39156394768814823,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 4,
+      "feature": "xv1",
+      "ic": 0.008508897281712368,
+      "observations": 6572,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20260913,
+      "ci95": [
+        -0.013681781294981382,
+        0.03213304549484765
+      ],
+      "ci_lower_adjusted": -0.023793955431491636,
+      "ci_upper_adjusted": 0.042400050557573656,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": 0.008508897281712368,
+        "4": 0.009210679280958983,
+        "24": 0.015235137612824393
+      },
+      "ic_by_year": {
+        "2022": 0.04065797058292469,
+        "2023": -0.009380389714971895,
+        "2024": 0.002001138772676909
+      },
+      "feature_autocorrelation": 0.20833715283817147,
+      "contemporaneous_bar_return_correlation": -0.035710679730482905,
+      "top_quintile_forward_mean_bps": 5.3631445353934994,
+      "bottom_quintile_forward_mean_bps": 4.920278236895136,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "imb1",
+      "ic": 0.03901522473672653,
+      "observations": 1093,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20260914,
+      "ci95": [
+        -0.021896874003072494,
+        0.09831256256592719
+      ],
+      "ci_lower_adjusted": -0.05757445396023368,
+      "ci_upper_adjusted": 0.13015744671216053,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": 0.03901522473672653,
+        "4": 0.026520823014540274,
+        "24": 0.007086874161115449
+      },
+      "ic_by_year": {
+        "2022": 0.03335990306571938,
+        "2023": 0.10526648289953928,
+        "2024": 0.011820173799078872
+      },
+      "feature_autocorrelation": 0.11149819729915317,
+      "contemporaneous_bar_return_correlation": 0.8002980467677937,
+      "top_quintile_forward_mean_bps": 41.12154056386501,
+      "bottom_quintile_forward_mean_bps": -7.7750831133607425,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "imb6",
+      "ic": -0.03373696886511187,
+      "observations": 1088,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20260915,
+      "ci95": [
+        -0.09501383872286286,
+        0.025751932920906384
+      ],
+      "ci_lower_adjusted": -0.12306579653769736,
+      "ci_upper_adjusted": 0.061999530253316885,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.03373696886511187,
+        "4": -0.04716881244734742,
+        "24": -0.013196896397641301
+      },
+      "ic_by_year": {
+        "2022": -0.027370838766760025,
+        "2023": 0.04828378448409888,
+        "2024": -0.07669427508704256
+      },
+      "feature_autocorrelation": 0.8637515248800803,
+      "contemporaneous_bar_return_correlation": 0.25961299357056133,
+      "top_quintile_forward_mean_bps": 24.19042344913077,
+      "bottom_quintile_forward_mean_bps": 31.689945184225028,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "xv1",
+      "ic": 0.008696406393441857,
+      "observations": 1092,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20260916,
+      "ci95": [
+        -0.047165572298667385,
+        0.06801916706682043
+      ],
+      "ci_lower_adjusted": -0.08633247047532096,
+      "ci_upper_adjusted": 0.10165107136979204,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": 0.008696406393441857,
+        "4": -0.004389232188439862,
+        "24": -0.018170198348992493
+      },
+      "ic_by_year": {
+        "2022": 0.01789804626094768,
+        "2023": 0.013734210994484965,
+        "2024": -0.00632014896203746
+      },
+      "feature_autocorrelation": 0.3186448553361963,
+      "contemporaneous_bar_return_correlation": -0.09309305815305123,
+      "top_quintile_forward_mean_bps": 1.761637690988854,
+      "bottom_quintile_forward_mean_bps": -15.260741312704681,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "ic": -0.02064756841342188,
+      "observations": 26300,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20260917,
+      "ci95": [
+        -0.031917354354016284,
+        -0.008970258904734926
+      ],
+      "ci_lower_adjusted": -0.03810080739393612,
+      "ci_upper_adjusted": -0.004336764183841799,
+      "bonferroni_cells": 18,
+      "passes_stage1": true,
+      "direction": -1,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.02064756841342188,
+        "4": -0.017101536546569752,
+        "24": -0.005380027094361592
+      },
+      "ic_by_year": {
+        "2022": -0.025584482048020076,
+        "2023": -0.004414173679812072,
+        "2024": -0.025417320376714438
+      },
+      "feature_autocorrelation": -0.05234400396959421,
+      "contemporaneous_bar_return_correlation": 0.7064865596618984,
+      "top_quintile_forward_mean_bps": -0.7583830207697697,
+      "bottom_quintile_forward_mean_bps": 0.7044531981678235,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "ic": -0.030693163846023823,
+      "observations": 26296,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20260918,
+      "ci95": [
+        -0.04040140846691203,
+        -0.021341553119479655
+      ],
+      "ci_lower_adjusted": -0.044862063000327766,
+      "ci_upper_adjusted": -0.016291218842554453,
+      "bonferroni_cells": 18,
+      "passes_stage1": true,
+      "direction": -1,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.030693163846023823,
+        "4": -0.02278991882323876,
+        "24": -0.006096234259022457
+      },
+      "ic_by_year": {
+        "2022": -0.021690035514073034,
+        "2023": -0.03986902723213079,
+        "2024": -0.02811918039979604
+      },
+      "feature_autocorrelation": 0.816036022368418,
+      "contemporaneous_bar_return_correlation": 0.23086192653560708,
+      "top_quintile_forward_mean_bps": 0.619683143453135,
+      "bottom_quintile_forward_mean_bps": 0.4108518419306308,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "xv1",
+      "ic": -0.009024760270796541,
+      "observations": 26298,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20260919,
+      "ci95": [
+        -0.02121615908049406,
+        0.0023685577131156094
+      ],
+      "ci_lower_adjusted": -0.027504519570498032,
+      "ci_upper_adjusted": 0.009015586607329977,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.009024760270796541,
+        "4": -0.00017470621762286244,
+        "24": 0.0009210783977594339
+      },
+      "ic_by_year": {
+        "2022": -0.0011109858904757661,
+        "2023": -0.03615808652443769,
+        "2024": 0.0012599822166420615
+      },
+      "feature_autocorrelation": 0.194600990685946,
+      "contemporaneous_bar_return_correlation": 0.010917492607252515,
+      "top_quintile_forward_mean_bps": -0.4921048194058338,
+      "bottom_quintile_forward_mean_bps": 0.9478034371693487,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 4,
+      "feature": "imb1",
+      "ic": -0.007507543450221702,
+      "observations": 6573,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20260920,
+      "ci95": [
+        -0.0332125455207991,
+        0.017143270180847697
+      ],
+      "ci_lower_adjusted": -0.04470099701148517,
+      "ci_upper_adjusted": 0.027754194381875676,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.007507543450221702,
+        "4": 0.012678898571167923,
+        "24": 0.016169494163395297
+      },
+      "ic_by_year": {
+        "2022": -0.004080815942346889,
+        "2023": -0.01789222437903279,
+        "2024": 0.004231710106289607
+      },
+      "feature_autocorrelation": 0.020177555306213398,
+      "contemporaneous_bar_return_correlation": 0.7055938579820821,
+      "top_quintile_forward_mean_bps": 5.145050716451716,
+      "bottom_quintile_forward_mean_bps": 1.6127324369950817,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 4,
+      "feature": "imb6",
+      "ic": -0.013879193063428002,
+      "observations": 6568,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20260921,
+      "ci95": [
+        -0.0374816694780293,
+        0.008644570383045171
+      ],
+      "ci_lower_adjusted": -0.0490470086235417,
+      "ci_upper_adjusted": 0.01717256258921047,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.013879193063428002,
+        "4": -0.013649126492193773,
+        "24": 0.02675575474557193
+      },
+      "ic_by_year": {
+        "2022": 0.02832072071417102,
+        "2023": -0.05430202154560961,
+        "2024": -0.01268035372687655
+      },
+      "feature_autocorrelation": 0.8683972973939355,
+      "contemporaneous_bar_return_correlation": 0.23156281679154553,
+      "top_quintile_forward_mean_bps": 4.7152991488982385,
+      "bottom_quintile_forward_mean_bps": 1.066897744096073,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 4,
+      "feature": "xv1",
+      "ic": -0.011213251369154912,
+      "observations": 6572,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20260922,
+      "ci95": [
+        -0.033968038623388416,
+        0.011594848054226734
+      ],
+      "ci_lower_adjusted": -0.04569205948911133,
+      "ci_upper_adjusted": 0.02263512498661024,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.011213251369154912,
+        "4": -0.005074309603268347,
+        "24": -0.003868896329523281
+      },
+      "ic_by_year": {
+        "2022": -0.0070478711284385235,
+        "2023": -0.010043489935625479,
+        "2024": -0.015504722870507064
+      },
+      "feature_autocorrelation": 0.18531062795338707,
+      "contemporaneous_bar_return_correlation": 0.0835956188743665,
+      "top_quintile_forward_mean_bps": 0.678210265073868,
+      "bottom_quintile_forward_mean_bps": 5.5580362317176615,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "imb1",
+      "ic": 0.014736493287050179,
+      "observations": 1093,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20260923,
+      "ci95": [
+        -0.04592838219653976,
+        0.07136473637622073
+      ],
+      "ci_lower_adjusted": -0.08092072662330567,
+      "ci_upper_adjusted": 0.10813676205491891,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": 0.014736493287050179,
+        "4": 0.014801634661294671,
+        "24": 0.01160318651297103
+      },
+      "ic_by_year": {
+        "2022": 0.0053733376437171635,
+        "2023": 0.047795164637742686,
+        "2024": 0.04158749337051698
+      },
+      "feature_autocorrelation": 0.1526226395666115,
+      "contemporaneous_bar_return_correlation": 0.7495235708881255,
+      "top_quintile_forward_mean_bps": 13.776232473130454,
+      "bottom_quintile_forward_mean_bps": -25.36786508393555,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "imb6",
+      "ic": -0.012116901890121124,
+      "observations": 1088,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20260924,
+      "ci95": [
+        -0.06992064240603439,
+        0.04323807682410297
+      ],
+      "ci_lower_adjusted": -0.09680297184286017,
+      "ci_upper_adjusted": 0.0661533035068352,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.012116901890121124,
+        "4": -0.038187245533121875,
+        "24": -0.02145286054233965
+      },
+      "ic_by_year": {
+        "2022": 0.022109224093807306,
+        "2023": -0.004722091292942405,
+        "2024": -0.025811958006834956
+      },
+      "feature_autocorrelation": 0.9006785502087313,
+      "contemporaneous_bar_return_correlation": 0.23647238322437408,
+      "top_quintile_forward_mean_bps": 45.06952021424489,
+      "bottom_quintile_forward_mean_bps": 42.46671321965475,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "xv1",
+      "ic": 0.01360956365010998,
+      "observations": 1092,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20260925,
+      "ci95": [
+        -0.04145165345609329,
+        0.06838687983512717
+      ],
+      "ci_lower_adjusted": -0.06447247640085942,
+      "ci_upper_adjusted": 0.09467061415236308,
+      "bonferroni_cells": 18,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": 0.01360956365010998,
+        "4": 0.014746951931125019,
+        "24": -0.030029429021579086
+      },
+      "ic_by_year": {
+        "2022": 0.003892424664937578,
+        "2023": 0.0317328997279184,
+        "2024": 0.007301086658193641
+      },
+      "feature_autocorrelation": 0.3109632905545251,
+      "contemporaneous_bar_return_correlation": 0.0672061313064306,
+      "top_quintile_forward_mean_bps": -11.960191043257927,
+      "bottom_quintile_forward_mean_bps": 12.668132998238594,
+      "base_round_trip_cost_bps": 14.0
+    }
+  ],
+  "stage1_survivors": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "direction": -1
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "direction": -1
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "direction": -1
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "direction": -1
+    }
+  ],
+  "stage2": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "long_baseline",
+      "rule": "long_baseline",
+      "direction": 1,
+      "case": "fee_only",
+      "ending_equity": 673.5391154547528,
+      "cumulative_return": 0.34707823090950574,
+      "cagr": 0.10438653012021759,
+      "daily_sharpe": 0.5401878990656532,
+      "max_observed_drawdown": -0.329959109627339,
+      "max_observed_gross": 0.7220317220915557,
+      "fills": 2,
+      "turnover_usdt": 701.1827000000001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3155581351084108,
+        "2023": 0.34060475746539254,
+        "2024": 0.4680995166923021
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "long_baseline",
+      "rule": "long_baseline",
+      "direction": 1,
+      "case": "base",
+      "ending_equity": 673.398878914753,
+      "cumulative_return": 0.34679775782950606,
+      "cagr": 0.10430989474564645,
+      "daily_sharpe": 0.5398642671574486,
+      "max_observed_drawdown": -0.3299896800073593,
+      "max_observed_gross": 0.7220767772036608,
+      "fills": 2,
+      "turnover_usdt": 701.1827000000001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.31565166998841,
+        "2023": 0.3406513104030162,
+        "2024": 0.46794348523614904
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "long_baseline",
+      "rule": "long_baseline",
+      "direction": 1,
+      "case": "stress",
+      "ending_equity": 672.9080510247528,
+      "cumulative_return": 0.34581610204950564,
+      "cagr": 0.10404158710787614,
+      "daily_sharpe": 0.5387310866599223,
+      "max_observed_drawdown": -0.3300967209608624,
+      "max_observed_gross": 0.7222345143861936,
+      "fills": 2,
+      "turnover_usdt": 701.1827000000001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.31597904206840943,
+        "2023": 0.340814345945633,
+        "2024": 0.46739712451237936
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 101.2659575176126,
+      "cumulative_return": -0.7974680849647748,
+      "cagr": -0.41266769832037176,
+      "daily_sharpe": -2.738213091149343,
+      "max_observed_drawdown": -0.8082912501919929,
+      "max_observed_gross": 0.5633120902269944,
+      "fills": 4965,
+      "turnover_usdt": 1181506.802,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7524551880523483,
+        "2023": -0.1743457216987988,
+        "2024": -0.009073586699921865
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 100.02922272720394,
+      "cumulative_return": -0.7999415545455921,
+      "cagr": -0.4150679307283388,
+      "daily_sharpe": -2.9784271961833904,
+      "max_observed_drawdown": -0.8083230084681035,
+      "max_observed_gross": 0.5371471480581715,
+      "fills": 3398,
+      "turnover_usdt": 742694.81228,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7999415545455921,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 100.08288772264389,
+      "cumulative_return": -0.7998342245547122,
+      "cagr": -0.4149633692661999,
+      "daily_sharpe": -3.394669311950687,
+      "max_observed_drawdown": -0.8008178790507484,
+      "max_observed_gross": 0.5455601702834214,
+      "fills": 1639,
+      "turnover_usdt": 348231.17629000003,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7998342245547122,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 102.17658056940986,
+      "cumulative_return": -0.7956468388611803,
+      "cagr": -0.41091284297546515,
+      "daily_sharpe": -4.994647051134406,
+      "max_observed_drawdown": -0.7956468388611803,
+      "max_observed_gross": 0.5106975962848247,
+      "fills": 6371,
+      "turnover_usdt": 836176.95578,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6484522940523001,
+        "2023": -0.4120707400958181,
+        "2024": -0.011282963833820214
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 101.79771348543584,
+      "cumulative_return": -0.7964045730291283,
+      "cagr": -0.4116416832375379,
+      "daily_sharpe": -5.32934655198011,
+      "max_observed_drawdown": -0.7967392003091047,
+      "max_observed_gross": 0.5112413035096836,
+      "fills": 4950,
+      "turnover_usdt": 584882.67418,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7696277941501855,
+        "2023": -0.10770228564419337,
+        "2024": -0.00956003158930474
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 100.2566153624624,
+      "cumulative_return": -0.7994867692750752,
+      "cagr": -0.41462513260844547,
+      "daily_sharpe": -5.550382613390856,
+      "max_observed_drawdown": -0.7996490463550752,
+      "max_observed_gross": 0.4989265509402217,
+      "fills": 2144,
+      "turnover_usdt": 256135.35246000002,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7994867692750753,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 100.93908244877565,
+      "cumulative_return": -0.7981218351024487,
+      "cagr": -0.4133001827034699,
+      "daily_sharpe": -2.724654990115645,
+      "max_observed_drawdown": -0.8006510964548289,
+      "max_observed_gross": 0.6208986460228827,
+      "fills": 2418,
+      "turnover_usdt": 512202.25078000006,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6027166684656766,
+        "2023": -0.4839414720177616,
+        "2024": -0.015331499931153791
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 100.13633035091748,
+      "cumulative_return": -0.7997273392981651,
+      "cagr": -0.41485927820994106,
+      "daily_sharpe": -2.880784118679802,
+      "max_observed_drawdown": -0.8016268049553292,
+      "max_observed_gross": 0.5812978795922558,
+      "fills": 2065,
+      "turnover_usdt": 423587.82562,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6854366976229718,
+        "2023": -0.3601413037646386,
+        "2024": -0.0049852119421198715
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 100.1400859165719,
+      "cumulative_return": -0.7997198281668562,
+      "cagr": -0.4148519648280783,
+      "daily_sharpe": -3.311832943377169,
+      "max_observed_drawdown": -0.8008558734192124,
+      "max_observed_gross": 0.6010155126068356,
+      "fills": 1172,
+      "turnover_usdt": 222511.25677,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7997198281668563,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 115.48100128761334,
+      "cumulative_return": -0.7690379974247733,
+      "cagr": -0.38638603062084187,
+      "daily_sharpe": -3.717022035189069,
+      "max_observed_drawdown": -0.7753706058121344,
+      "max_observed_gross": 0.5502337709878069,
+      "fills": 5319,
+      "turnover_usdt": 643348.2988999999,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.39573151195406553,
+        "2023": -0.43098376025466667,
+        "2024": -0.3282836363182441
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 108.5129194694949,
+      "cumulative_return": -0.7829741610610101,
+      "cagr": -0.39898183853908376,
+      "daily_sharpe": -4.121600713908031,
+      "max_observed_drawdown": -0.7862510630176366,
+      "max_observed_gross": 0.5688735796309558,
+      "fills": 4241,
+      "turnover_usdt": 483277.72621,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.4977373912891707,
+        "2023": -0.4566050429946662,
+        "2024": -0.20482083540548512
+      }
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 102.36101995976121,
+      "cumulative_return": -0.7952779600804776,
+      "cagr": -0.410558682268112,
+      "daily_sharpe": -4.956792005310592,
+      "max_observed_drawdown": -0.7973093510179694,
+      "max_observed_gross": 0.5537641032234212,
+      "fills": 2514,
+      "turnover_usdt": 266756.43299,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7230260479824892,
+        "2023": -0.2596753013584405,
+        "2024": -0.0016026168524196915
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "long_baseline",
+      "rule": "long_baseline",
+      "direction": 1,
+      "case": "fee_only",
+      "ending_equity": 432.93219401112896,
+      "cumulative_return": -0.13413561197774204,
+      "cagr": -0.046864346567216275,
+      "daily_sharpe": -0.057634651033103446,
+      "max_observed_drawdown": -0.3960128246700476,
+      "max_observed_gross": 0.5656274970509432,
+      "fills": 2,
+      "turnover_usdt": 473.19822,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3434378612657353,
+        "2023": 0.18845606658574465,
+        "2024": 0.10966250326361826
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "long_baseline",
+      "rule": "long_baseline",
+      "direction": 1,
+      "case": "base",
+      "ending_equity": 432.8375543671289,
+      "cumulative_return": -0.1343248912657422,
+      "cagr": -0.04693378809280757,
+      "daily_sharpe": -0.05787853646087383,
+      "max_observed_drawdown": -0.3960515908189899,
+      "max_observed_gross": 0.565685825620923,
+      "fills": 2,
+      "turnover_usdt": 473.19822,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3435376569617369,
+        "2023": 0.18848471576041348,
+        "2024": 0.1095618365075699
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "long_baseline",
+      "rule": "long_baseline",
+      "direction": 1,
+      "case": "stress",
+      "ending_equity": 433.51368403681175,
+      "cumulative_return": -0.13297263192637654,
+      "cagr": -0.04643790217039678,
+      "daily_sharpe": -0.06155748529822498,
+      "max_observed_drawdown": -0.39038332754081995,
+      "max_observed_gross": 0.5571636798910867,
+      "fills": 2,
+      "turnover_usdt": 466.13556000000005,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3387543009738829,
+        "2023": 0.18432839012374824,
+        "2024": 0.10712792742861055
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 39.78166717158799,
+      "cumulative_return": -0.920436665656824,
+      "cagr": -0.5698156814987547,
+      "daily_sharpe": -3.290944497047528,
+      "max_observed_drawdown": -0.9226273789509299,
+      "max_observed_gross": 0.5944711266749477,
+      "fills": 5045,
+      "turnover_usdt": 719308.1277699999,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9034268670024018,
+        "2023": -0.17613385966100403,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 39.99384514260686,
+      "cumulative_return": -0.9200123097147863,
+      "cagr": -0.5690524066451403,
+      "daily_sharpe": -3.640403273372934,
+      "max_observed_drawdown": -0.9214153833491238,
+      "max_observed_gross": 0.5927030346434347,
+      "fills": 3164,
+      "turnover_usdt": 501716.73981,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9200123097147863,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 40.07894712715376,
+      "cumulative_return": -0.9198421057456925,
+      "cagr": -0.5687470250670407,
+      "daily_sharpe": -4.68558180812733,
+      "max_observed_drawdown": -0.9198421057456925,
+      "max_observed_gross": 0.5320222682837409,
+      "fills": 1589,
+      "turnover_usdt": 272393.0571,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9198421057456925,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 39.90669923356373,
+      "cumulative_return": -0.9201866015328726,
+      "cagr": -0.5693655720052166,
+      "daily_sharpe": -5.424694979878861,
+      "max_observed_drawdown": -0.9213128551912344,
+      "max_observed_gross": 0.5556739087278881,
+      "fills": 9045,
+      "turnover_usdt": 998347.83018,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6819981299610831,
+        "2023": -0.7490159461723922,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 40.0547827105527,
+      "cumulative_return": -0.9198904345788946,
+      "cagr": -0.568833693131356,
+      "daily_sharpe": -5.522084808590816,
+      "max_observed_drawdown": -0.9200116670996645,
+      "max_observed_gross": 0.5533902483959922,
+      "fills": 6345,
+      "turnover_usdt": 705675.12255,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.8124622132094921,
+        "2023": -0.5728350707764673,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb1",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 40.06219201720481,
+      "cumulative_return": -0.9198756159655904,
+      "cagr": -0.5688071152170922,
+      "daily_sharpe": -5.67143430375004,
+      "max_observed_drawdown": -0.9198756159655904,
+      "max_observed_gross": 0.5492977731562437,
+      "fills": 3430,
+      "turnover_usdt": 344189.9096,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9198756159655903,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 43.98731219256056,
+      "cumulative_return": -0.9120253756148788,
+      "cagr": -0.5551645343339542,
+      "daily_sharpe": -2.5174572419493257,
+      "max_observed_drawdown": -0.9218498031666149,
+      "max_observed_gross": 0.6421694209919294,
+      "fills": 4505,
+      "turnover_usdt": 661490.01308,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6727661349429064,
+        "2023": -0.5857292806091052,
+        "2024": -0.35104446518661325
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 40.03596376538005,
+      "cumulative_return": -0.9199280724692399,
+      "cagr": -0.5689012132844482,
+      "daily_sharpe": -3.11695332511786,
+      "max_observed_drawdown": -0.9214532253393319,
+      "max_observed_gross": 0.6425799182764069,
+      "fills": 2929,
+      "turnover_usdt": 480275.57726,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7582223373275359,
+        "2023": -0.6688199950082501,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "a_following",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 39.566190557932345,
+      "cumulative_return": -0.9208676188841353,
+      "cagr": -0.5705936056771748,
+      "daily_sharpe": -3.52933141402668,
+      "max_observed_drawdown": -0.9215994117624133,
+      "max_observed_gross": 0.6440193683476305,
+      "fills": 1563,
+      "turnover_usdt": 269253.32764,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9131269021218976,
+        "2023": -0.08910372660014032,
+        "2024": 0.0
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 92.9476976710256,
+      "cumulative_return": -0.8141046046579488,
+      "cagr": -0.42920726353617267,
+      "daily_sharpe": -2.937601726279798,
+      "max_observed_drawdown": -0.8274739059786096,
+      "max_observed_gross": 0.5820845727136075,
+      "fills": 6512,
+      "turnover_usdt": 772277.88304,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.40814675099651243,
+        "2023": -0.4513296541749924,
+        "2024": -0.4275426867133689
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 49.543895751498255,
+      "cumulative_return": -0.9009122084970035,
+      "cagr": -0.5371754513482504,
+      "daily_sharpe": -4.100726836066752,
+      "max_observed_drawdown": -0.9075325479836032,
+      "max_observed_gross": 0.581570252267035,
+      "fills": 6512,
+      "turnover_usdt": 616623.3255,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.5158917284813493,
+        "2023": -0.56014055177311,
+        "2024": -0.5346671412479089
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "imb6",
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 39.51031383374818,
+      "cumulative_return": -0.9209793723325036,
+      "cagr": -0.570795795575693,
+      "daily_sharpe": -5.494386659426804,
+      "max_observed_drawdown": -0.9228696712330394,
+      "max_observed_gross": 0.5800081833576484,
+      "fills": 3515,
+      "turnover_usdt": 316268.29594,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7597603685883692,
+        "2023": -0.6710758037582027,
+        "2024": 0.0
+      }
+    }
+  ],
+  "stage2_survivors": [],
+  "sources": [
+    {
+      "symbol": "BTCUSDT",
+      "spot_rows": 315632,
+      "spot_missing": 16,
+      "futures": {
+        "rows": 26304,
+        "original_archive_missing_hours": 0,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-01.zip",
+            "sha256": "5281a9c866e7d54b0a5b5e6a7dad5575ad7b96df67f05f74d614c54190ffff5f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-02.zip",
+            "sha256": "b3a199287b2a8fed2c261999205d56cfd72ef9675c4b498a399601978d666228"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-03.zip",
+            "sha256": "f61ebcacd9a38f20b0ad89c64bbeb56baf368641fbbd6e25e987db2b96ede5ff"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-04.zip",
+            "sha256": "db7f9dbcc60cf68051b755346a5be32d27b0d3565cf6c02341b050a234ef44df"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-05.zip",
+            "sha256": "b1512041ade711819be114fee30668fbdd2783b73fa55607991ae14d1d43653f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-06.zip",
+            "sha256": "1006ae5b8b4704da69f8f14fb4711d075d689fcf44cd0a98317df97953f1332d"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-07.zip",
+            "sha256": "72060f8608459b04817f652cbb945be28afef0ae54ccf38113911c194630c184"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-08.zip",
+            "sha256": "a1ad9eafd3dfecccfbc60c07de33ec2f7c33eab96f8ec04f88360b73b55dad76"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-09.zip",
+            "sha256": "92753ae32ed042ab7f10b90e3b9a49ddafc695c8e60eb563713855c73e2e6e82"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-10.zip",
+            "sha256": "d85a5f4bdbe93df2babdecf3b37f866655fa23c3fb31eeca96c3e3f6a1e9b872"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-11.zip",
+            "sha256": "e9b3f3b1929e3f6f255269c2d2eb564d9d9bcacbfc16651888e95765df383888"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-12.zip",
+            "sha256": "d313c2cb509cba13eff6538829245aedc993f18eff4a7bd48fe0eb6c3a9fa158"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-01.zip",
+            "sha256": "b9ac60cc3ffc1e16db96ca2314120ff7531988108ebef1733ee54234f4fedf7f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-02.zip",
+            "sha256": "1ace9802f4da961db025a7b76a6171ef2c516c5307e5dee24267182f059110e0"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-03.zip",
+            "sha256": "35f0068cc41887ea11960c4bb10e251a404fef5ad4cb4c88699cc2419b6bc38b"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-04.zip",
+            "sha256": "ed6f0a84d1b2ed8f73fbdd4df10703e2ab49864fc4d657b0d8a9464a49dd4a29"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-05.zip",
+            "sha256": "2f278ad3ea09cc42e577ad7185de74391a1eb09b9d9836d375e2c540aef1667f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-06.zip",
+            "sha256": "19bd435cdf58b426642c24a0df3b5fa755433f52a8c39f05dc5cfdeffa453aa0"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-07.zip",
+            "sha256": "ae9ebc03dff2bdeb805a1401b5cf1256b2b84283f5f9d92b1f454f33b223f499"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-08.zip",
+            "sha256": "599daa607ff593666036fe742d8272de6e0e9d284cd7d41d6585cf53baa20ca2"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-09.zip",
+            "sha256": "7849f82af86aabcb9a79f64d0527480f22117656a68f98280fe8b840a6ee1339"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-10.zip",
+            "sha256": "bbf0ef273c80f696ed9eb129a257812162487486692f124b9631ec38a924f6ae"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-11.zip",
+            "sha256": "26f1a2870f57925303edcf75581f0a33ff5e145c2126e15afc5fc1b400522428"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-12.zip",
+            "sha256": "5377bec9e6dc04027717836cc1c2a3789da4e4122d57e8395265a0414b766b7c"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-01.zip",
+            "sha256": "bf673f3d10804a951e8bac56dd2473486f113025971d43ebe5258ec40f9bfeb3"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-02.zip",
+            "sha256": "655ff5ac0fc570956756944c7afef4895c9bd149342f1e437de97292cbd1fe22"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-03.zip",
+            "sha256": "8138642b757ddf5a42207130277be4569afb4c581a0a1817be9f5f35a4415498"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-04.zip",
+            "sha256": "4bf3ca3574e0075c1b79f5b22c4253e26f6260f3621943205e3a8016c4c12318"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-05.zip",
+            "sha256": "1d607e3b26e6886ba742477bc97687f0b86c4c26ac564325dc5f1667e0362d35"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-06.zip",
+            "sha256": "7dba8642e56641fca2c7f3f363050ae88bf0d6c87d28e14b747fbd3267d4d3a8"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-07.zip",
+            "sha256": "920aacb84b2745ee8f31806a753cdc5b2d672e6814d9c50c0bf524ad45eb5611"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-08.zip",
+            "sha256": "8d8465eb4c8a4fd05ebc0126e4c14a217edb2039441546bf095229e975268de6"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-09.zip",
+            "sha256": "0a8118b3601f18ddad04a8afcf887fdc01661f66824a0ce49e0419be1f97f907"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-10.zip",
+            "sha256": "e3dcb9fe9d70fea19dfbdc5294044da69b9061c6f7411e99468825fac1ce8d61"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-11.zip",
+            "sha256": "0675e55056748489b8750cf6088a666f65dd4fd932d7ca5bd30491f5996b5f3d"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-12.zip",
+            "sha256": "b072f3147b3e390c81dcbf35830a12ff7d53a73236aa44a9eea78199502529cb"
+          }
+        ]
+      },
+      "marks": {
+        "rows": 26304,
+        "original_archive_missing_hours": 72,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-01.zip",
+            "sha256": "b03860574c80a3d7c58fce3afd24bd9e7d72d29ad8538adf00d9fdef78a8e0d5"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-02.zip",
+            "sha256": "fc03caff19988fb80d5b1dbaaf18839a25d28454925e5f5aee0a919f750623c3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-03.zip",
+            "sha256": "7f9d6033c1726a5afa377bcb5c514caa5a83be96f812fb11371d5fe06311d628"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-04.zip",
+            "sha256": "6673291c1e33cf5981f73da458c266a75761d6a20b5eeee870b3c7bff925f910"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-05.zip",
+            "sha256": "23e180c67ba5f89cfd02416561efb35a14481a5dc984ebf061f1534b31d5baa8"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-06.zip",
+            "sha256": "10ea39d94c31e514023010078383f22a0eb98628897a9f2a6a7a1b1941da435a"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-07.zip",
+            "sha256": "baafc36bfebd44d4356b8c5cae3a92dba09e03a841e7ef13a358ebe6960e4903"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-08.zip",
+            "sha256": "1925c38ceee17ea2142ce019f360db7c8549bc39998bb1bd63fc2027df5712bb"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-09.zip",
+            "sha256": "9483f95974442901ee8a277d1eae52af4dd70010c6fb4409d616990685a96158"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-10.zip",
+            "sha256": "9804dbd86adbd447d60edf955fd668de3e426fa3c6596a13d69ae539a2549864"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-11.zip",
+            "sha256": "9ff271bbd7bf9a1cb1fc271776a086f66ae38d489a5210ecd3a15d453732273b"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-12.zip",
+            "sha256": "321ea021c1d07ec31f5f029aa3e55c94f56d4595360b20027a004b7dc3083630"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-01.zip",
+            "sha256": "74e6f880fbc39d87fd27a248c79f761572f2ecb67560e2346d28460d8aac8228"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-02.zip",
+            "sha256": "f15d23370f252082d8741819800b82f62ac8bbc9001b53ab6abb5d65ccb3ed3d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-03.zip",
+            "sha256": "6c7ccf6e60ccf5b06905b3c7b82d6d53009105208f93621154de621f2642f251"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-04.zip",
+            "sha256": "c12b3fc18d15bb91005493e6afedb49a6c776ff821e7fe607c87f41f7747d70e"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-05.zip",
+            "sha256": "ca28c2dfcdadb7b7e4b7e82e12e8adfff0892447594235a04f8df1952124ffcf"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-06.zip",
+            "sha256": "a4d224d8558feb10d7d9e08ca7d970cf8879659257e876861dd398d52ae5da46"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-07.zip",
+            "sha256": "0ce8be53516729ebfb7fe4b7f4d0c45c118247d41484baa29e5b770f6a7daa96"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-08.zip",
+            "sha256": "fb077979ed1b31ed6532728c9ba2c0eb1f66a9d16c9ccadc69c64461d63fc25a"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-09.zip",
+            "sha256": "273e01ef7c664bdbe750fad4ed92716ab18bb298b26dee86b1fbf4a8bb09a29f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-10.zip",
+            "sha256": "507040896ca3cfec2a70aa7206e592f3597447f5e24d3cf0e56bafd586f6249d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-11.zip",
+            "sha256": "079a2b1817b8a94aa2f8187a2fbcc77cf61e8a92615459fceae667c8f69fccd3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-12.zip",
+            "sha256": "908aeb683f82c557a4f032cdaa9d472b2821282803f62fe7a8603c82660b9bda"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-01.zip",
+            "sha256": "759f86a22dadb455c87a3f90f6a9134c73d24a55a7596f0b96e193b5d45cdb49"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-02.zip",
+            "sha256": "edb8b7e0174e386accbdf09a022192ddadf3cc0cb874fc079ff38bf808b3be88"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-03.zip",
+            "sha256": "dd72fa2fa1cafeef6f0b4f937b8388ef7f88b84e95ca13e15ce9d4ea3fcec86c"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-04.zip",
+            "sha256": "98d2e92206505233959a467018ff1d094f234ee875a4ef3306c86f3a81bba793"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-05.zip",
+            "sha256": "4cd99fc326ea26513e995e09018a6303ca51581503dd01b7c79188f8fea100fe"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-06.zip",
+            "sha256": "f725086a0492f3a8be3234413fc6902d8191a4ed074c5a15d4bf0e53d8f37efb"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-07.zip",
+            "sha256": "1841595033d00f777e1fa1229a30d121e8953deee29c1150d9ae7f0c650604f3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-08.zip",
+            "sha256": "445f615d788151be98e4d021ba11ebb29ebc26ae2fe2ae6aeedc3e1ac0c7afab"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-09.zip",
+            "sha256": "cea573092cc212d76601450db3abe4dda8a801ae8cb770df771352ff4779e2af"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-10.zip",
+            "sha256": "d9e8037e4548658b9e6827e92d358188c645de1f52c9f74287c9e711a71a201e"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-11.zip",
+            "sha256": "528ecd74cc4a5eeaf9cce05a93c80a4c54f988270d0e9ef0b67d6f0e2e005c0d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-12.zip",
+            "sha256": "8ad10135afb8ace28b881ac893c1ae2ee2b9ba3c6ca2b613d057b0608909de01"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\BTCUSDT_2022-07-31_20260908T095439.json",
+            "sha256": "73e400e9db3b345246df8f6b162d7fef194deaea40537eaa0faa29811ae0519f",
+            "role": "REST gap supplement"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\BTCUSDT_2022-10-02_20260908T095439.json",
+            "sha256": "c39ba975f97771196b9f99c0fe8b3509dac44f7ee9ff6c8e50ff436c4a94d184",
+            "role": "REST gap supplement"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\BTCUSDT_2023-02-24_20260908T095439.json",
+            "sha256": "0866c1975da38d78fb38c0c2ec9f7751f05013e9a818c19d7797d69fa6ff2265",
+            "role": "REST gap supplement"
+          }
+        ]
+      },
+      "funding_file": "BTCUSDT_2022_2024_20260908T094615_combined.json"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "spot_rows": 315632,
+      "spot_missing": 16,
+      "futures": {
+        "rows": 26304,
+        "original_archive_missing_hours": 0,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-01.zip",
+            "sha256": "6d96a19efda6917a3912377ef8e1a5eadc8f1a273f91afa069ae70bd679301bc"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-02.zip",
+            "sha256": "14f8e42d6d7696d2f622301612a8f4ba6623658732cc5840ef0582b2ee05598e"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-03.zip",
+            "sha256": "1b9fcc8ead1a066017e8c40617a78d1b9ee7b7fdad5f9d5353b04a59883274ce"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-04.zip",
+            "sha256": "45bc22bd8603876174adfd1f6273021eeaf76084629030a53cca40f379b8fb0b"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-05.zip",
+            "sha256": "7adea64d8d82d2017c1b7c3fcc6848f685370b524e0a1512bb443980a487f4b8"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-06.zip",
+            "sha256": "582aa0b2c72641cb5e93318a92beee0bbc93e968ccd10b0d89ea755a60f9fb62"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-07.zip",
+            "sha256": "07781d1411a4b793ca5c4daaee70c9e2c1a3200fe12c954c39b3ad6c37badd42"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-08.zip",
+            "sha256": "4182681e2b2fc23bbb348411ca8bdb41894609be1f94a0d9939616bf91cc9f25"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-09.zip",
+            "sha256": "75aa0182242ac65110a1dd1737a2062ee9815032d746a57d3191c44c15eacff2"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-10.zip",
+            "sha256": "04246418d55fc96753ee5b4be0718796aeb9421af40042b4e145db02e1cfaf3a"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-11.zip",
+            "sha256": "e2e15ddc21d24ac6c3ca56ab77f065eda88252a37f2f778505a332e31fcc5b3c"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-12.zip",
+            "sha256": "1ba6559930f09fb8bd68a6592c4059526901939317eea4db8fc2d59cf5688957"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-01.zip",
+            "sha256": "247b85e0a8806e139f263831445e1d7bb91f9f56e6ab32e1f285038cdd1ceff4"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-02.zip",
+            "sha256": "f01571f2420b9eb6486e69b884fe1572abfa59bc226c4003c9d78735c559acc5"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-03.zip",
+            "sha256": "4d5266f12a8a3394ee23516de99fc380e928dbdb79cbf083fd3ddc3242073790"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-04.zip",
+            "sha256": "4ac96035c3867e0bfeff4f2f526812ee4b73a0b87b3962bb40934e2614917395"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-05.zip",
+            "sha256": "a47a9fc2936bcadc99aadfe48858e7d3e31093a9321d9bc083b886b72924f568"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-06.zip",
+            "sha256": "fe108dc555560ded46bb0807d0c2e0bc7722900213a96e4e86bf355f84fbcafa"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-07.zip",
+            "sha256": "911d3674c71a561df5ca5085426e9c61195bf5669bc7da7488ec9548ae476ca1"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-08.zip",
+            "sha256": "74210a689eb85c8908ae05cff3297b9dc6eda76a0b41a3f9d72fdde0c14e3b2f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-09.zip",
+            "sha256": "38883595a881aadfbfd8c256e5170c8b016e9927119250f5128abfba96aba9c5"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-10.zip",
+            "sha256": "61d6692284b406c9f9f655aef68e151a1eeb90509ddcd7f4a97233b1a002ef9e"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-11.zip",
+            "sha256": "d57c333ac46e779b2399c498cc8fedfbc8804deb688873585ded09aceec1fa16"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-12.zip",
+            "sha256": "8f581fcee21156d501435fc88db1d99515e6d7432fa7ae2993de3b5f95bb0069"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-01.zip",
+            "sha256": "2f3d1a6d9292f13b1d6cf86716cbda5b3f6119a310daed1dde5ee3d0d71e2fab"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-02.zip",
+            "sha256": "bde9a1b0824b212ef6cea97065543fda0fc57c33479709d34e5db995fc79af01"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-03.zip",
+            "sha256": "24af0ecf9db1953e8c83e94823f4aae368ff70ba54106ef121c204cb046f9e41"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-04.zip",
+            "sha256": "290b594fa46ef95ab9c1486e2640ce2d1894eecd4d71b79bcd30d6632ca75b9f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-05.zip",
+            "sha256": "a9b42949325fd4f236c7c88b63f35d94910109218ce2db80b8e29f7a2b2d623b"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-06.zip",
+            "sha256": "479dced4a591035987e084dc8a5e5f3f1f2593704c0aeecdebc20c89b35c1d98"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-07.zip",
+            "sha256": "8cc8d8b6ef13fa0393f53690e5d569afb8a50488e4d7852e20ac22d7bcf17cf5"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-08.zip",
+            "sha256": "00eddbb3297515be14426119f07468846cd04dc527dbc19834dd45294740a67c"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-09.zip",
+            "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-10.zip",
+            "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-11.zip",
+            "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-12.zip",
+            "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c"
+          }
+        ]
+      },
+      "marks": {
+        "rows": 26304,
+        "original_archive_missing_hours": 48,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-01.zip",
+            "sha256": "da76759ea210e7e9d33bd6be1576dd6fdd32f7a47b37b7c439c3fcceb025c5d9"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-02.zip",
+            "sha256": "c37f3bba2c61f63f78ba60aeed23067694fe64d7c2ef67e99201932560a7e1f7"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-03.zip",
+            "sha256": "9f85c7467b29c35f71e8d55c39e00e042d511cedb4270799a06f94bd706fe5e1"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-04.zip",
+            "sha256": "b3004ffea66d1e27160d8355ab8692254d272d2fb9a0f6969f5afa4ab033cba3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-05.zip",
+            "sha256": "713dd69910c2d39209e1e3be00c415044c0df017126cb2e0df914dbeb62fbae2"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-06.zip",
+            "sha256": "7baa832f63d629692d6f57c7840ff4c77649c2f717ca1a8fe485a17f67e1d33f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-07.zip",
+            "sha256": "dcd76948acedd02c2745c7a449ae09579f918cdf60102ccb3e2cb1743ce42729"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-08.zip",
+            "sha256": "31394dcf1a84655a3e003200d228f70dfe35487e22cba54de7cda9245b72b950"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-09.zip",
+            "sha256": "51f5ada75af692d6e95abdcc2d84dd521d03c52d187d0b870057c430b14e10d9"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-10.zip",
+            "sha256": "95311f377e0ec8ef14e2c8c81599760b03a5f97dee3d1128c8d5077d29d2c2b1"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-11.zip",
+            "sha256": "38b21c96b1b365f5130178dbbc601f3d45edec573678fbef9cf5c119868bb975"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-12.zip",
+            "sha256": "417a07e86f134f8cc99a0a412653651c577a805af0577282c1af03498ea6b820"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-01.zip",
+            "sha256": "6f3b17e6b2e1c7148dbb5bf81cd7f58252da87f7d0831edba38a4f81a8ae0c46"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-02.zip",
+            "sha256": "47b99057e2ea8bda8a6d266a34066b8c23954c4b1fb2a21d29f3697b2f69358d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-03.zip",
+            "sha256": "05dc0ee541110207cf24ff95b062fc084bb000708000caca25531898f5795a8f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-04.zip",
+            "sha256": "7627d0f3176e6819455c8ba6a963178bc93f512dbd63cd396d1ecf5699bf76e0"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-05.zip",
+            "sha256": "fb2130fb406eb670b51104a8d216b0e43fc83181bb0f0f4c9f4ca99f7037bee9"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-06.zip",
+            "sha256": "b8576b817b4a585346d64c79d7c0793c9c937bd4b9fc58723d4d0ba6ed1925af"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-07.zip",
+            "sha256": "978c33e4a464eef0cf89152012af0bfdb7486a0eed391596beae33afe7af0e6c"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-08.zip",
+            "sha256": "4010228173913d4aeca143c34aedb3bec99741e4d0548ff94f0d2fa113aedd1f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-09.zip",
+            "sha256": "94f99da71e69e202b0c854d827e8665175471779376efe5bb2735e5659da19f4"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-10.zip",
+            "sha256": "77c49c7e7a5aff5b9af8f79fac90d60dc34efb83a03dc5cdf21e6ce935169ba5"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-11.zip",
+            "sha256": "540e1cfc450555f4b4bf66597d2f53d3ef2aeca259628c2e3679a0328cd8cf62"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-12.zip",
+            "sha256": "15f8b317ce9a72b95c2f7b814cf354a3be7899c716b1da4bea5f9741f1a4bc72"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-01.zip",
+            "sha256": "69cbd7f53ebf1ce8f7a10181830a931e08e843d7ce0060e9f173f932f3b7510a"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-02.zip",
+            "sha256": "365bf9687593496872696454674a4a73183112bddcd1c894b000f6a66943a9db"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-03.zip",
+            "sha256": "2e04fe5bc9bfba00ae5d5bf74cccd2cc74c86a64923600715f309a1f20ff316c"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-04.zip",
+            "sha256": "ebbab0cd75059cd87171febce99b34bd9cb78d7d1ae0db76f50a8dcba4726eb7"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-05.zip",
+            "sha256": "51739079dcec6b65dfc3b108f1f6d009a8e92a3ee60425dd8384e7604974a7be"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-06.zip",
+            "sha256": "e16d550e6995d44bb5820218e1a817012be1495790c1f5074e31d681f13c2cf0"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-07.zip",
+            "sha256": "7f296e401087e50f3156779ad25a67e29b138cf35aa8afc89971e0862b42011e"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-08.zip",
+            "sha256": "81050d8e794a6c82a728a2ef1aeeea825ded69960aa905742796c5244eb7febe"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-09.zip",
+            "sha256": "5c98619433ccccb9484dbe9e278dac80b40944f63440941ca60142f4efa415b2"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-10.zip",
+            "sha256": "b9a714d6dfbf51f58b0fd8d0124929b05c59a57fb607b04ea383b6262650e85d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-11.zip",
+            "sha256": "3c0cf3885dce26b780090fdf7d6b7573648ba3c33fc17ad6bd20df7226e4ebf3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-12.zip",
+            "sha256": "513d90cb75666a93355d4c6f32928285df9be1c90b34233994e3a66c8c082074"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\ETHUSDT_2022-10-02_20260908T095439.json",
+            "sha256": "8b23aa82c82fdfc1b6a7431300f9631186f9629c1949c1f0e8597f1d96945512",
+            "role": "REST gap supplement"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\ETHUSDT_2023-02-24_20260908T095439.json",
+            "sha256": "a4c855126da7c43eb4141e667363bc01ebee165890aeff8725b76d82aba740da",
+            "role": "REST gap supplement"
+          }
+        ]
+      },
+      "funding_file": "ETHUSDT_2022_2024_20260908T094615_combined.json"
+    }
+  ],
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "verdict": "CHEAP DEVELOPMENT DIAGNOSTIC ONLY; taker aggregates, no depth/queue model; margin and executable quotes unverified."
+}

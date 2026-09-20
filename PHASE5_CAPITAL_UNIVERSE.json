@@ -1,0 +1,44 @@
+{
+  "rules": "TRADING; min notional <= 20; lot value <= 5 USDT at 2024-12-31 close; listed <= 2020-12-31; hourly history on disk",
+  "snapshot": "futures_exchangeInfo_20260908T094615.json",
+  "eligible_ranked": [
+    "ETHUSDT",
+    "SOLUSDT",
+    "XRPUSDT",
+    "DOTUSDT",
+    "DOGEUSDT",
+    "ADAUSDT",
+    "LTCUSDT",
+    "LINKUSDT",
+    "ETCUSDT",
+    "BCHUSDT",
+    "VETUSDT",
+    "TRXUSDT",
+    "XTZUSDT",
+    "XLMUSDT"
+  ],
+  "subsets": {
+    "2": [
+      "ETHUSDT",
+      "SOLUSDT"
+    ],
+    "3": [
+      "ETHUSDT",
+      "SOLUSDT",
+      "XRPUSDT"
+    ],
+    "4": [
+      "ETHUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "DOTUSDT"
+    ],
+    "5": [
+      "ETHUSDT",
+      "SOLUSDT",
+      "XRPUSDT",
+      "DOTUSDT",
+      "DOGEUSDT"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "14": {
+    "median_alpha_ci95": [
+      -0.3697989439642417,
+      0.7822417032512777
+    ],
+    "median_sharpe_ci95": [
+      -0.4193309021264615,
+      1.0671577455666956
+    ],
+    "positive_fraction_ci95": [
+      0.16666666666666666,
+      1.0
+    ],
+    "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+  },
+  "30": {
+    "median_alpha_ci95": [
+      -0.3054817475370691,
+      0.7577430911377356
+    ],
+    "median_sharpe_ci95": [
+      -0.32829069367324076,
+      1.044311767316307
+    ],
+    "positive_fraction_ci95": [
+      0.25,
+      1.0
+    ],
+    "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+  },
+  "60": {
+    "median_alpha_ci95": [
+      -0.33268112683970114,
+      0.699321803579848
+    ],
+    "median_sharpe_ci95": [
+      -0.3166648990858571,
+      0.9254858239132621
+    ],
+    "positive_fraction_ci95": [
+      0.16666666666666666,
+      1.0
+    ],
+    "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+  },
+  "asset_bootstrap_descriptive": [
+    -0.005476873166317016,
+    0.397801735966599
+  ],
+  "heterogeneity": {
+    "alpha_std": 0.3670501818343526,
+    "alpha_iqr": 0.31483817421510923,
+    "alpha_min": -0.2524620574383351,
+    "alpha_max": 1.0843044718454091,
+    "random_effects": "Not used: correlated crypto units violate independent-effect sampling assumptions"
+  }
+}

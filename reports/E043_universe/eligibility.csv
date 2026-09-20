@@ -1,0 +1,141 @@
+asset,start,end,history_days,valid_days_2021,median_quote_volume,data_quality,preeligible,reason,eligible
+BTCUSDT,2020-01-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,731,365,15681148715.541555,pass,False,discovery asset,False
+ETHUSDT,2020-01-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,731,365,6796630396.66474,pass,False,discovery asset,False
+SOLUSDT,2020-09-14 00:00:00+00:00,2021-12-31 00:00:00+00:00,474,365,1278834811.591,pass,True,selected by historical liquidity; later losses/delistings retained,True
+XRPUSDT,2020-01-06 00:00:00+00:00,2021-12-31 00:00:00+00:00,726,365,907611968.3831251,pass,True,selected by historical liquidity; later losses/delistings retained,True
+BNBUSDT,2020-02-10 00:00:00+00:00,2021-12-31 00:00:00+00:00,691,365,874949640.2835,pass,True,selected by historical liquidity; later losses/delistings retained,True
+DOTUSDT,2020-08-22 00:00:00+00:00,2021-12-31 00:00:00+00:00,497,365,720757600.1816,pass,True,selected by historical liquidity; later losses/delistings retained,True
+DOGEUSDT,2020-07-10 00:00:00+00:00,2021-12-31 00:00:00+00:00,540,365,708376335.4116025,pass,True,selected by historical liquidity; later losses/delistings retained,True
+ADAUSDT,2020-01-31 00:00:00+00:00,2021-12-31 00:00:00+00:00,701,365,695111931.6342499,pass,True,selected by historical liquidity; later losses/delistings retained,True
+AVAXUSDT,2020-09-23 00:00:00+00:00,2021-12-31 00:00:00+00:00,465,365,666498816.8395,pass,True,selected by historical liquidity; later losses/delistings retained,True
+AXSUSDT,2020-11-20 00:00:00+00:00,2021-12-31 00:00:00+00:00,407,365,597607440.095,pass,True,selected by historical liquidity; later losses/delistings retained,True
+LUNAUSDT,2021-01-28 00:00:00+00:00,2021-12-31 00:00:00+00:00,338,338,556070286.3065,pass,False,insufficient asof history,False
+MATICUSDT,2020-10-22 00:00:00+00:00,2021-12-31 00:00:00+00:00,436,365,514136808.592065,pass,True,selected by historical liquidity; later losses/delistings retained,True
+FTMUSDT,2020-09-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,464,365,478257357.65604,pass,True,selected by historical liquidity; later losses/delistings retained,True
+1000SHIBUSDT,2021-05-10 00:00:00+00:00,2021-12-31 00:00:00+00:00,236,236,476126913.19350195,pass,False,insufficient asof history,False
+LTCUSDT,2020-01-09 00:00:00+00:00,2021-12-31 00:00:00+00:00,723,365,400431763.103445,pass,True,selected by historical liquidity; later losses/delistings retained,True
+LINKUSDT,2020-01-17 00:00:00+00:00,2021-12-31 00:00:00+00:00,715,365,398657813.241205,pass,True,selected by historical liquidity; later losses/delistings retained,True
+GALAUSDT,2021-09-18 00:00:00+00:00,2021-12-31 00:00:00+00:00,105,105,372335359.41707,pass,False,insufficient asof history; below liquidity/history threshold,False
+EOSUSDT,2020-01-08 00:00:00+00:00,2021-12-31 00:00:00+00:00,724,365,368701537.5086,pass,True,outside preregistered top12 liquidity rank,False
+SANDUSDT,2021-01-25 00:00:00+00:00,2021-12-31 00:00:00+00:00,341,341,327940710.10899496,pass,False,insufficient asof history,False
+ETCUSDT,2020-01-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,716,365,310201102.47779,pass,True,outside preregistered top12 liquidity rank,False
+DYDXUSDT,2021-09-10 00:00:00+00:00,2021-12-31 00:00:00+00:00,113,113,300540355.0593,pass,False,insufficient asof history; below liquidity/history threshold,False
+FILUSDT,2020-10-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,442,365,277544700.09035003,pass,True,outside preregistered top12 liquidity rank,False
+ALICEUSDT,2021-03-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,291,291,252407254.0014,pass,False,insufficient asof history,False
+ATOMUSDT,2020-02-07 00:00:00+00:00,2021-12-31 00:00:00+00:00,694,365,251782154.32459,pass,True,outside preregistered top12 liquidity rank,False
+ICPUSDT,2021-05-11 00:00:00+00:00,2021-12-31 00:00:00+00:00,235,235,223987952.36720002,pass,False,insufficient asof history,False
+BCHUSDT,2020-01-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,731,365,202524836.55721998,pass,True,outside preregistered top12 liquidity rank,False
+ANTUSDT,2021-12-27 00:00:00+00:00,2021-12-31 00:00:00+00:00,5,5,195710799.5876,pass,False,insufficient asof history; below liquidity/history threshold,False
+AAVEUSDT,2020-10-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,442,365,180139542.57599998,pass,True,outside preregistered top12 liquidity rank,False
+UNIUSDT,2020-09-18 00:00:00+00:00,2021-12-31 00:00:00+00:00,470,365,168294497.95115,pass,True,outside preregistered top12 liquidity rank,False
+TLMUSDT,2021-07-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,169,169,162977946.8492,pass,False,insufficient asof history; below liquidity/history threshold,False
+SUSHIUSDT,2020-09-04 00:00:00+00:00,2021-12-31 00:00:00+00:00,484,365,153180736.47100002,pass,True,outside preregistered top12 liquidity rank,False
+THETAUSDT,2020-05-27 00:00:00+00:00,2021-12-31 00:00:00+00:00,584,365,151416588.6313,pass,True,outside preregistered top12 liquidity rank,False
+ALGOUSDT,2020-06-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,564,365,143762692.216405,pass,True,outside preregistered top12 liquidity rank,False
+NEARUSDT,2020-10-15 00:00:00+00:00,2021-12-31 00:00:00+00:00,443,365,143197265.232,pass,True,outside preregistered top12 liquidity rank,False
+VETUSDT,2020-02-14 00:00:00+00:00,2021-12-31 00:00:00+00:00,687,365,141987945.32099003,pass,True,outside preregistered top12 liquidity rank,False
+TRXUSDT,2020-01-15 00:00:00+00:00,2021-12-31 00:00:00+00:00,717,365,139701851.91231,pass,True,outside preregistered top12 liquidity rank,False
+XTZUSDT,2020-02-06 00:00:00+00:00,2021-12-31 00:00:00+00:00,695,365,139276706.0968,pass,True,outside preregistered top12 liquidity rank,False
+CRVUSDT,2020-09-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,487,365,131729341.69229999,pass,True,outside preregistered top12 liquidity rank,False
+RUNEUSDT,2020-09-04 00:00:00+00:00,2021-12-31 00:00:00+00:00,484,365,128926458.65349999,pass,True,outside preregistered top12 liquidity rank,False
+XLMUSDT,2020-01-20 00:00:00+00:00,2021-12-31 00:00:00+00:00,712,365,126615231.268885,pass,True,outside preregistered top12 liquidity rank,False
+ONEUSDT,2021-03-18 00:00:00+00:00,2021-12-31 00:00:00+00:00,289,289,123331610.473715,pass,False,insufficient asof history,False
+CHZUSDT,2021-01-21 00:00:00+00:00,2021-12-31 00:00:00+00:00,345,345,115496201.460225,pass,False,insufficient asof history,False
+CHRUSDT,2021-03-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,295,295,106548477.42335,pass,False,insufficient asof history,False
+C98USDT,2021-08-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,130,130,103856839.1654,pass,False,insufficient asof history; below liquidity/history threshold,False
+EGLDUSDT,2020-09-14 00:00:00+00:00,2021-12-31 00:00:00+00:00,474,365,103513743.582,pass,True,outside preregistered top12 liquidity rank,False
+1INCHUSDT,2020-12-25 00:00:00+00:00,2021-12-31 00:00:00+00:00,372,365,96795239.97545001,pass,True,outside preregistered top12 liquidity rank,False
+OMGUSDT,2020-07-02 00:00:00+00:00,2021-12-31 00:00:00+00:00,548,365,95125100.252165,pass,True,outside preregistered top12 liquidity rank,False
+ENJUSDT,2020-09-29 00:00:00+00:00,2021-12-31 00:00:00+00:00,459,365,92865941.331875,pass,True,outside preregistered top12 liquidity rank,False
+PEOPLEUSDT,2021-12-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,8,8,92143617.743985,pass,False,insufficient asof history; below liquidity/history threshold,False
+CELRUSDT,2021-03-29 00:00:00+00:00,2021-12-31 00:00:00+00:00,278,278,90974008.141645,pass,False,insufficient asof history,False
+SXPUSDT,2020-07-21 00:00:00+00:00,2021-12-31 00:00:00+00:00,529,365,87158484.60237,pass,True,outside preregistered top12 liquidity rank,False
+MANAUSDT,2021-03-15 00:00:00+00:00,2021-12-31 00:00:00+00:00,292,292,82731282.53495,pass,False,insufficient asof history,False
+GRTUSDT,2020-12-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,378,365,81488171.906435,pass,True,outside preregistered top12 liquidity rank,False
+KSMUSDT,2020-10-14 00:00:00+00:00,2021-12-31 00:00:00+00:00,444,365,78989426.053,pass,True,outside preregistered top12 liquidity rank,False
+SRMUSDT,2020-09-05 00:00:00+00:00,2021-12-31 00:00:00+00:00,483,365,75948270.11050001,pass,True,outside preregistered top12 liquidity rank,False
+QTUMUSDT,2020-02-20 00:00:00+00:00,2021-12-31 00:00:00+00:00,681,365,71485592.869,pass,True,outside preregistered top12 liquidity rank,False
+COMPUSDT,2020-06-30 00:00:00+00:00,2021-12-31 00:00:00+00:00,550,365,71483876.444555,pass,True,outside preregistered top12 liquidity rank,False
+DENTUSDT,2021-03-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,283,283,70881002.163885,pass,False,insufficient asof history,False
+COTIUSDT,2021-03-10 00:00:00+00:00,2021-12-31 00:00:00+00:00,297,297,69292493.88541001,pass,False,insufficient asof history,False
+BAKEUSDT,2021-05-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,227,227,68986901.92045,pass,False,insufficient asof history,False
+LINAUSDT,2021-03-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,288,288,66847240.562095,pass,False,insufficient asof history,False
+HOTUSDT,2021-03-30 00:00:00+00:00,2021-12-31 00:00:00+00:00,277,277,63625374.1576925,pass,False,insufficient asof history,False
+MASKUSDT,2021-08-27 00:00:00+00:00,2021-12-31 00:00:00+00:00,127,127,62993404.5983,pass,False,insufficient asof history; below liquidity/history threshold,False
+ZECUSDT,2020-02-05 00:00:00+00:00,2021-12-31 00:00:00+00:00,696,365,62666385.122,pass,True,outside preregistered top12 liquidity rank,False
+DODOUSDT,2021-02-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,316,316,62447628.23095,pass,False,insufficient asof history,False
+ALPHAUSDT,2020-11-23 00:00:00+00:00,2021-12-31 00:00:00+00:00,404,365,60746412.58845,pass,True,outside preregistered top12 liquidity rank,False
+BTTUSDT,2021-04-06 00:00:00+00:00,2021-12-31 00:00:00+00:00,270,270,59249668.6941925,pass,False,insufficient asof history,False
+IOTAUSDT,2020-02-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,689,365,58739036.599475,pass,True,outside preregistered top12 liquidity rank,False
+IOTXUSDT,2021-08-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,142,142,58359408.931635,pass,False,insufficient asof history; below liquidity/history threshold,False
+NEOUSDT,2020-02-17 00:00:00+00:00,2021-12-31 00:00:00+00:00,684,365,57660778.309255004,pass,True,outside preregistered top12 liquidity rank,False
+LRCUSDT,2020-10-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,439,365,56819402.185015,pass,True,outside preregistered top12 liquidity rank,False
+ARUSDT,2021-09-28 00:00:00+00:00,2021-12-31 00:00:00+00:00,95,95,56299274.5844,pass,False,insufficient asof history; below liquidity/history threshold,False
+ROSEUSDT,2021-12-31 00:00:00+00:00,2021-12-31 00:00:00+00:00,1,1,54772673.26112,pass,False,insufficient asof history; below liquidity/history threshold,False
+DASHUSDT,2020-02-04 00:00:00+00:00,2021-12-31 00:00:00+00:00,697,365,54002549.861765,pass,True,outside preregistered top12 liquidity rank,False
+SNXUSDT,2020-08-14 00:00:00+00:00,2021-12-31 00:00:00+00:00,505,365,53953959.18355,pass,True,outside preregistered top12 liquidity rank,False
+HBARUSDT,2021-03-17 00:00:00+00:00,2021-12-31 00:00:00+00:00,290,290,53008735.644995004,pass,False,insufficient asof history,False
+AUDIOUSDT,2021-08-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,135,135,52320167.9732,pass,False,insufficient asof history; below liquidity/history threshold,False
+XMRUSDT,2020-02-03 00:00:00+00:00,2021-12-31 00:00:00+00:00,698,365,51160081.653495,pass,True,outside preregistered top12 liquidity rank,False
+KAVAUSDT,2020-07-28 00:00:00+00:00,2021-12-31 00:00:00+00:00,522,365,50614168.45282,pass,True,outside preregistered top12 liquidity rank,False
+REEFUSDT,2021-02-22 00:00:00+00:00,2021-12-31 00:00:00+00:00,313,313,50126049.6026355,pass,False,insufficient asof history,False
+YFIUSDT,2020-08-31 00:00:00+00:00,2021-12-31 00:00:00+00:00,488,365,49810840.4385,pass,True,outside preregistered top12 liquidity rank,False
+IOSTUSDT,2020-02-21 00:00:00+00:00,2021-12-31 00:00:00+00:00,680,365,48503356.7847,pass,True,outside preregistered top12 liquidity rank,False
+WAVESUSDT,2020-08-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,507,365,46658412.3037,pass,True,outside preregistered top12 liquidity rank,False
+ENSUSDT,2021-11-30 00:00:00+00:00,2021-12-31 00:00:00+00:00,32,32,46612423.608349994,pass,False,insufficient asof history; below liquidity/history threshold,False
+STORJUSDT,2020-09-16 00:00:00+00:00,2021-12-31 00:00:00+00:00,472,365,46452109.12075,pass,True,outside preregistered top12 liquidity rank,False
+BZRXUSDT,2020-09-05 00:00:00+00:00,2021-12-19 00:00:00+00:00,483,353,45209043.21625,pass,False,insufficient asof history; not active at selection; below liquidity/history threshold,False
+ATAUSDT,2021-08-31 00:00:00+00:00,2021-12-31 00:00:00+00:00,123,123,44467022.8441,pass,False,insufficient asof history; below liquidity/history threshold,False
+ICXUSDT,2020-09-15 00:00:00+00:00,2021-12-31 00:00:00+00:00,473,365,44236931.8963,pass,True,outside preregistered top12 liquidity rank,False
+RLCUSDT,2020-07-31 00:00:00+00:00,2021-12-31 00:00:00+00:00,519,365,43748397.39593,pass,True,outside preregistered top12 liquidity rank,False
+SKLUSDT,2020-12-08 00:00:00+00:00,2021-12-31 00:00:00+00:00,389,365,43649120.316479996,pass,True,outside preregistered top12 liquidity rank,False
+ZENUSDT,2020-11-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,403,365,43084624.96185,pass,True,outside preregistered top12 liquidity rank,False
+OGNUSDT,2021-04-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,275,275,42976663.91555,pass,False,insufficient asof history,False
+LITUSDT,2021-02-18 00:00:00+00:00,2021-12-31 00:00:00+00:00,317,317,42783557.84,pass,False,insufficient asof history,False
+ONTUSDT,2020-02-11 00:00:00+00:00,2021-12-31 00:00:00+00:00,690,365,42431823.437345,pass,True,outside preregistered top12 liquidity rank,False
+RSRUSDT,2020-10-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,439,365,41884955.2295985,pass,True,outside preregistered top12 liquidity rank,False
+CTKUSDT,2020-11-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,408,365,41669131.0545,pass,True,outside preregistered top12 liquidity rank,False
+BELUSDT,2020-11-18 00:00:00+00:00,2021-12-31 00:00:00+00:00,409,365,41043675.525000006,pass,True,outside preregistered top12 liquidity rank,False
+ZILUSDT,2020-06-18 00:00:00+00:00,2021-12-31 00:00:00+00:00,562,365,40544852.497845,pass,True,outside preregistered top12 liquidity rank,False
+UNFIUSDT,2021-02-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,316,316,40251960.66554999,pass,False,insufficient asof history,False
+OCEANUSDT,2020-11-03 00:00:00+00:00,2021-12-31 00:00:00+00:00,424,365,39806101.663375005,pass,True,outside preregistered top12 liquidity rank,False
+ARPAUSDT,2021-10-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,74,74,39751040.000585,pass,False,insufficient asof history; below liquidity/history threshold,False
+SFPUSDT,2021-02-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,311,311,39379841.4783,pass,False,insufficient asof history,False
+BLZUSDT,2020-09-17 00:00:00+00:00,2021-12-31 00:00:00+00:00,471,365,38784378.081925005,pass,True,outside preregistered top12 liquidity rank,False
+HNTUSDT,2020-09-28 00:00:00+00:00,2021-12-31 00:00:00+00:00,460,365,37981685.741,pass,True,outside preregistered top12 liquidity rank,False
+KEEPUSDT,2021-06-22 00:00:00+00:00,2021-12-31 00:00:00+00:00,193,193,37350481.12085,pass,False,insufficient asof history,False
+RAYUSDT,2021-08-20 00:00:00+00:00,2021-12-31 00:00:00+00:00,134,134,36945688.29865,pass,False,insufficient asof history; below liquidity/history threshold,False
+RENUSDT,2020-10-13 00:00:00+00:00,2021-12-31 00:00:00+00:00,445,365,36528397.24368,pass,True,outside preregistered top12 liquidity rank,False
+ANKRUSDT,2021-01-26 00:00:00+00:00,2021-12-31 00:00:00+00:00,340,340,36233926.674355,pass,False,insufficient asof history,False
+CVCUSDT,2020-11-11 00:00:00+00:00,2021-12-31 00:00:00+00:00,416,365,35624800.108585,pass,True,outside preregistered top12 liquidity rank,False
+GTCUSDT,2021-06-11 00:00:00+00:00,2021-12-31 00:00:00+00:00,204,204,35367236.526700005,pass,False,insufficient asof history,False
+NKNUSDT,2021-04-09 00:00:00+00:00,2021-12-31 00:00:00+00:00,267,267,35297668.077435,pass,False,insufficient asof history,False
+TOMOUSDT,2020-10-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,446,365,34781791.76965,pass,True,outside preregistered top12 liquidity rank,False
+TRBUSDT,2020-09-03 00:00:00+00:00,2021-12-31 00:00:00+00:00,485,365,34157603.334,pass,True,outside preregistered top12 liquidity rank,False
+BANDUSDT,2020-07-29 00:00:00+00:00,2021-12-31 00:00:00+00:00,521,365,32957368.228694998,pass,True,outside preregistered top12 liquidity rank,False
+BATUSDT,2020-02-13 00:00:00+00:00,2021-12-31 00:00:00+00:00,688,365,31982644.56019,pass,True,outside preregistered top12 liquidity rank,False
+MKRUSDT,2020-08-13 00:00:00+00:00,2021-12-31 00:00:00+00:00,506,365,31678717.787,pass,True,outside preregistered top12 liquidity rank,False
+MTLUSDT,2021-03-31 00:00:00+00:00,2021-12-31 00:00:00+00:00,276,276,31122308.68085,pass,False,insufficient asof history,False
+AKROUSDT,2021-01-19 00:00:00+00:00,2021-12-31 00:00:00+00:00,347,347,30430520.572860003,pass,False,insufficient asof history,False
+STMXUSDT,2021-03-22 00:00:00+00:00,2021-12-31 00:00:00+00:00,285,285,29054204.574295,pass,False,insufficient asof history,False
+FLMUSDT,2020-09-29 00:00:00+00:00,2021-12-31 00:00:00+00:00,459,365,28992916.16545,pass,True,outside preregistered top12 liquidity rank,False
+CELOUSDT,2021-09-27 00:00:00+00:00,2021-12-31 00:00:00+00:00,96,96,28365362.972149998,pass,False,insufficient asof history; below liquidity/history threshold,False
+RVNUSDT,2021-02-23 00:00:00+00:00,2021-12-31 00:00:00+00:00,312,312,28352179.98972,pass,False,insufficient asof history,False
+YFIIUSDT,2020-09-03 00:00:00+00:00,2021-12-31 00:00:00+00:00,485,365,28317561.76205,pass,True,outside preregistered top12 liquidity rank,False
+NUUSDT,2021-10-21 00:00:00+00:00,2021-12-31 00:00:00+00:00,72,72,27921988.402905002,pass,False,insufficient asof history; below liquidity/history threshold,False
+ZRXUSDT,2020-06-24 00:00:00+00:00,2021-12-31 00:00:00+00:00,556,365,27460032.304745004,pass,True,outside preregistered top12 liquidity rank,False
+1000XECUSDT,2021-09-17 00:00:00+00:00,2021-12-31 00:00:00+00:00,106,106,27070074.41717,pass,False,insufficient asof history; below liquidity/history threshold,False
+LPTUSDT,2021-11-11 00:00:00+00:00,2021-12-31 00:00:00+00:00,51,51,26169943.7129,pass,False,insufficient asof history; below liquidity/history threshold,False
+CTSIUSDT,2021-10-26 00:00:00+00:00,2021-12-31 00:00:00+00:00,67,67,26110437.8975,pass,False,insufficient asof history; below liquidity/history threshold,False
+XEMUSDT,2021-03-03 00:00:00+00:00,2021-12-31 00:00:00+00:00,304,304,26031905.69475,pass,False,insufficient asof history,False
+BALUSDT,2020-09-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,487,365,25638962.51095,pass,True,outside preregistered top12 liquidity rank,False
+SCUSDT,2021-04-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,264,264,25379751.572908,pass,False,insufficient asof history,False
+KNCUSDT,2020-06-22 00:00:00+00:00,2021-12-31 00:00:00+00:00,558,365,24737909.787,pass,True,outside preregistered top12 liquidity rank,False
+BTSUSDT,2021-02-01 00:00:00+00:00,2021-12-31 00:00:00+00:00,334,334,21196840.81056,pass,False,insufficient asof history,False
+DGBUSDT,2021-04-21 00:00:00+00:00,2021-12-31 00:00:00+00:00,255,255,16455086.811515,pass,False,insufficient asof history; below liquidity/history threshold,False
+KLAYUSDT,2021-10-12 00:00:00+00:00,2021-12-31 00:00:00+00:00,81,81,15696527.69981,pass,False,insufficient asof history; below liquidity/history threshold,False
+BTCDOMUSDT,2021-06-21 00:00:00+00:00,2021-12-31 00:00:00+00:00,194,194,9641338.62755,pass,False,insufficient asof history; below liquidity/history threshold,False
+DEFIUSDT,2020-08-28 00:00:00+00:00,2021-12-31 00:00:00+00:00,491,365,9163307.950800002,pass,False,below liquidity/history threshold,False
+BTCSTUSDT,2021-03-04 00:00:00+00:00,2021-12-31 00:00:00+00:00,303,303,0.0,pass,False,insufficient asof history; below liquidity/history threshold,False
+DOTECOUSDT,2021-01-20 00:00:00+00:00,2021-02-19 00:00:00+00:00,346,31,0.0,pass,False,insufficient asof history; not active at selection; below liquidity/history threshold,False
+LENDUSDT,2020-07-23 00:00:00+00:00,2020-11-10 00:00:00+00:00,527,0,0.0,pass,False,insufficient asof history; not active at selection; below liquidity/history threshold,False

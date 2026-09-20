@@ -1,0 +1,1004 @@
+{
+  "symbol": "TRXUSDT",
+  "start": "2020-01-15 08:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 35064,
+  "primary_bars": 8766,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "supplemented_hours": 120,
+  "supplemented_days": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+  ],
+  "supplement_files": 5,
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1611925200000,
+      "open": 0.03135,
+      "close": 0.04135
+    }
+  ],
+  "funding_events": 4383,
+  "funding_nonzero_jitter": 2079,
+  "funding_max_jitter_ms": 47.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 21,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-01.zip",
+      "sha256": "fa1dab29482bc9dde649d04f140a5f9e09ca3fad6cc627b1f455c4dfecf01973",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-02.zip",
+      "sha256": "21dff80ff58087a162393bb7adeba70911f763301392c6aaa0e7b8172ec5ea56",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-03.zip",
+      "sha256": "9c15a1f21f95111b6927b8a84bf721e777e76336b196918c45eebfbd323bd762",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-04.zip",
+      "sha256": "ab6b072b4d0c362a1ad2f7d0ed705520a4900694d83df7b32609964c6037da84",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-05.zip",
+      "sha256": "6d3bfdeb001eac9614f74516359542b2d37d7c77fc016e53497b129c074177f1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-06.zip",
+      "sha256": "d662598b0f6576b084d86c7f8342346c1279ffa0520f955c8552d2e4c3a173ca",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-07.zip",
+      "sha256": "120931485e7fb986a76da18a8c4c75418e4b2df2cd283c82516e034fe3515539",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-08.zip",
+      "sha256": "17d2f167d7a41c1d690b247a6b152981999d78e89d95cac31f90b0b8e92fcd76",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-09.zip",
+      "sha256": "e0e2d089acd3badeb0cf23f68867c31710ccb0880cf01a5d5fcfc1beb1299d0e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-10.zip",
+      "sha256": "4f6a9c6c74121d548edae3425fc91014009fe5c1c4429f644ecd08de073a3eae",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-11.zip",
+      "sha256": "565d55918740f362c9839a737a707958af91ab77af61e1b4c82b9ead154b596b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2020-12.zip",
+      "sha256": "66babbcc7b99d2244b400ba2921705dfaeb15fda5b5f78e4ef93b14c34f4e984",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-01.zip",
+      "sha256": "9658adccb18b138f7ce23f6030633aaec3be220612e1b3ed3c9579966a89b735",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-02.zip",
+      "sha256": "37b98c9e10163e8c4201dd2e798be2cb819a7fdb084c2ecd75801cb86e11afb7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-03.zip",
+      "sha256": "56a4fd8e7bc707098cf138fccf5700d79b5fef81ef12a18dfb000d3388799a3d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-04.zip",
+      "sha256": "9d8517a2994a5e43f64ef4d50bec1634e1ab66293cca732e79b24f148c0b7ad8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-05.zip",
+      "sha256": "4e22d182f94c06463bfa30295ab2eb02fc2dac0c7fb068c213b04810ecea4d72",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-06.zip",
+      "sha256": "7d3086401acc2e83d0314257283e23621bab3c0afcb7c39edb795afd6c40ba80",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-07.zip",
+      "sha256": "8c18916bf8317125aa8677147b73c5d3e7fedb49a94b3cb891d137da043fe563",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-08.zip",
+      "sha256": "54f3947fd41865fe88acae27340f1e53d853cef357a9d293b0eadee632933e9c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-09.zip",
+      "sha256": "3c2fd76a55955a581c07b08c5bae84a2da09bb949dbaa246759d556bdce97cbd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-10.zip",
+      "sha256": "754c461f6a4542a936fe7065b0828410a0f4e9956c41d5b87c84479bb1e3a0c3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-11.zip",
+      "sha256": "94f26977a5c562deae5ed12eb0c094139438f2ef81bb42e99bba43643d1bdeb9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2021-12.zip",
+      "sha256": "3a6711e71af38430a3c0db44f192d002159ea44a3c437e3b5502fd6123b55f84",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-01.zip",
+      "sha256": "c1ff9e7489c6adbf58c9d1c2970b53435cdade5a6beec5797273ec113fe92aac",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-02.zip",
+      "sha256": "e960c9147b5c0ca10439ce2c9572015ba408d7f2c0ce6b4854878eee49c708cc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-03.zip",
+      "sha256": "dd4fe3a15ff5f019052fdb8b3fb3a4bcd914c4de7216335d5f69d743b5e2036e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-04.zip",
+      "sha256": "783ac2ccb4609fc86765deef2a763628f0d73c8cfc306d2490b5d5f2b3546a84",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-05.zip",
+      "sha256": "435604cc072728bb9ff0695ab4f9d993538355acd2608309c62470473c51fc23",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-06.zip",
+      "sha256": "128fe489bbc903f1e168b47638baa0b2bd3b5688d1a9575e1fbbc3ba14356ef4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-07.zip",
+      "sha256": "91dc7da7f5dce7dbb2e8c24aa1c17e66f51bc4ff7c5a0b917d9f2e2af153eef9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-08.zip",
+      "sha256": "1f2ed7b600aa3bb7ce1a38bfcb4186f123dc9ace91e6a4d0cc4b3e746bb7130f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-09.zip",
+      "sha256": "e22545510b645beda3fb8e8ed01cdb27441bdd0ec2451cddc102310a93d1eca0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-10.zip",
+      "sha256": "9a49b531757074ff297a98be8e35c88c2cd6b8444eb197a651ec2c90458f8826",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-11.zip",
+      "sha256": "229b3cfae8e59b638c8fcfb6d4c13aa9e2722bcbd333abcdcb7e0debc70e198b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2022-12.zip",
+      "sha256": "51ec62149977ab4a3327ba2c25580c87d0ecfeebeae31b1f0ca33c2b65adb186",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-01.zip",
+      "sha256": "b96d08363cfe2cfc75abe7959bce11198c188f5a50d2e079246e747ba834d79f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-02.zip",
+      "sha256": "4f5c4063860370bf5021f823bfe9c50285f0494b7f846cfb2de080e344c45152",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-03.zip",
+      "sha256": "b1da4ffa6ab9cb907f196a8a64c859fdd4a5eb17abbf71f1050ed316f5dd828a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-04.zip",
+      "sha256": "c9fe47ef439d582c3cb3d6d46923093aed88db086189fb63c6aa81bf420e0441",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-05.zip",
+      "sha256": "6677cd0a81a67fba67ea1af68f8a0aa195de7ecf4a3d20b468854ae7451d8735",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-06.zip",
+      "sha256": "5865db1530da4bc8998ae4734f9b2fa6dc107f7430936a5bdecd112113a30025",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-07.zip",
+      "sha256": "2165c4c42a3ca15a6cb234c97dee9692e3f43829963d71aa3d79e6c54405da86",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-08.zip",
+      "sha256": "800fc7c45905bd575e7e45c53e96d25499aa0382e68c0580e33c7d427c09bf1b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-09.zip",
+      "sha256": "15dd5d159002e2f1359436d751c2b51e09162c9d6e5fbd85d3734f633d1cf7dd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-10.zip",
+      "sha256": "627078543e0dcf2124d2f4f7c6eb85dab8af766096de6133be38209073628a42",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-11.zip",
+      "sha256": "bd83150a3b6fcc0cf418af9a9af67540de96f58560796d6066d4384cc3f8b8f2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2023-12.zip",
+      "sha256": "6293d1b1485056762f27548fd585c4de3fda0f7c4627f93eb427bf096642a676",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-01.zip",
+      "sha256": "d11cccd800a21b9fc32f6c26095b7d214c3e751bcf258aeef551770a7fa30bb3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-02.zip",
+      "sha256": "8874579ea4a9b72ad8719ad645150dd6a16ffc76bd92699c56cbec57414e55b8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-03.zip",
+      "sha256": "7f0abc49455550c3ddc7c8b6f8c87c95c3ed9415204b60592fae683c9a516fca",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-04.zip",
+      "sha256": "e430a54d3540a5e7005ed1de7953df8bcf1caa1c46448c94936a36eadbe59ea9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-05.zip",
+      "sha256": "42dfff9a3700f2ae6d958e0bbd4ade928a5a4dd6ceb23d6eedfc025962aa474e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-06.zip",
+      "sha256": "f039b7edf3292493c93ecb544d191ea8412eac23fd5b3ca54cc9c838c2fa367d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-07.zip",
+      "sha256": "b8e058216b1771b57b8b322062b6892c6cb3f9fc3fefbe47769710a78157acef",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-08.zip",
+      "sha256": "cb6fd04b2a25d0bca36a7223e223dc83f3628ec6d54ed966c3583fa0d21dc64c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-09.zip",
+      "sha256": "26f682a2c71ddb222a8dcfb9499cea97a98f1a8bf0d6bcc9eb5e06a8ff70522a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-10.zip",
+      "sha256": "3249cc0b563fa60663f3e6fccf8fc667766e85edd551a3d55c159ef20afcceb1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-11.zip",
+      "sha256": "c15a5c243411e74bd5121bcb238f534a94468978a160807439825fc31393ca7c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\TRXUSDT-1h-2024-12.zip",
+      "sha256": "e57ccfac748da229eaba9c4b50695eb2a162f173a317a087c5e71cd6af269a10",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\TRXUSDT-1h-2022-02-26.zip",
+      "sha256": "759a23741ae937d6f7918ee7372173cb97f2e16a397f0a1e1477d44eab1fa876",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-26 00:00:00+00:00",
+        "2022-02-26 01:00:00+00:00",
+        "2022-02-26 02:00:00+00:00",
+        "2022-02-26 03:00:00+00:00",
+        "2022-02-26 04:00:00+00:00",
+        "2022-02-26 05:00:00+00:00",
+        "2022-02-26 06:00:00+00:00",
+        "2022-02-26 07:00:00+00:00",
+        "2022-02-26 08:00:00+00:00",
+        "2022-02-26 09:00:00+00:00",
+        "2022-02-26 10:00:00+00:00",
+        "2022-02-26 11:00:00+00:00",
+        "2022-02-26 12:00:00+00:00",
+        "2022-02-26 13:00:00+00:00",
+        "2022-02-26 14:00:00+00:00",
+        "2022-02-26 15:00:00+00:00",
+        "2022-02-26 16:00:00+00:00",
+        "2022-02-26 17:00:00+00:00",
+        "2022-02-26 18:00:00+00:00",
+        "2022-02-26 19:00:00+00:00",
+        "2022-02-26 20:00:00+00:00",
+        "2022-02-26 21:00:00+00:00",
+        "2022-02-26 22:00:00+00:00",
+        "2022-02-26 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\TRXUSDT-1h-2022-02-27.zip",
+      "sha256": "bdc5369cebe7a63a432a9a16e4a8a43300eed198dd343f1121ba6793c18572ed",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-27 00:00:00+00:00",
+        "2022-02-27 01:00:00+00:00",
+        "2022-02-27 02:00:00+00:00",
+        "2022-02-27 03:00:00+00:00",
+        "2022-02-27 04:00:00+00:00",
+        "2022-02-27 05:00:00+00:00",
+        "2022-02-27 06:00:00+00:00",
+        "2022-02-27 07:00:00+00:00",
+        "2022-02-27 08:00:00+00:00",
+        "2022-02-27 09:00:00+00:00",
+        "2022-02-27 10:00:00+00:00",
+        "2022-02-27 11:00:00+00:00",
+        "2022-02-27 12:00:00+00:00",
+        "2022-02-27 13:00:00+00:00",
+        "2022-02-27 14:00:00+00:00",
+        "2022-02-27 15:00:00+00:00",
+        "2022-02-27 16:00:00+00:00",
+        "2022-02-27 17:00:00+00:00",
+        "2022-02-27 18:00:00+00:00",
+        "2022-02-27 19:00:00+00:00",
+        "2022-02-27 20:00:00+00:00",
+        "2022-02-27 21:00:00+00:00",
+        "2022-02-27 22:00:00+00:00",
+        "2022-02-27 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\TRXUSDT-1h-2022-02-28.zip",
+      "sha256": "5febb713808bca3f504d479715ccb364c014784561f4235aa28a38ec4816797b",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-28 00:00:00+00:00",
+        "2022-02-28 01:00:00+00:00",
+        "2022-02-28 02:00:00+00:00",
+        "2022-02-28 03:00:00+00:00",
+        "2022-02-28 04:00:00+00:00",
+        "2022-02-28 05:00:00+00:00",
+        "2022-02-28 06:00:00+00:00",
+        "2022-02-28 07:00:00+00:00",
+        "2022-02-28 08:00:00+00:00",
+        "2022-02-28 09:00:00+00:00",
+        "2022-02-28 10:00:00+00:00",
+        "2022-02-28 11:00:00+00:00",
+        "2022-02-28 12:00:00+00:00",
+        "2022-02-28 13:00:00+00:00",
+        "2022-02-28 14:00:00+00:00",
+        "2022-02-28 15:00:00+00:00",
+        "2022-02-28 16:00:00+00:00",
+        "2022-02-28 17:00:00+00:00",
+        "2022-02-28 18:00:00+00:00",
+        "2022-02-28 19:00:00+00:00",
+        "2022-02-28 20:00:00+00:00",
+        "2022-02-28 21:00:00+00:00",
+        "2022-02-28 22:00:00+00:00",
+        "2022-02-28 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\TRXUSDT-1h-2022-04-01.zip",
+      "sha256": "85fa3f5e3e95b478928da74b59d70ea4ed0448c9bfbfa1e46e6769f23cce5df2",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-04-01 00:00:00+00:00",
+        "2022-04-01 01:00:00+00:00",
+        "2022-04-01 02:00:00+00:00",
+        "2022-04-01 03:00:00+00:00",
+        "2022-04-01 04:00:00+00:00",
+        "2022-04-01 05:00:00+00:00",
+        "2022-04-01 06:00:00+00:00",
+        "2022-04-01 07:00:00+00:00",
+        "2022-04-01 08:00:00+00:00",
+        "2022-04-01 09:00:00+00:00",
+        "2022-04-01 10:00:00+00:00",
+        "2022-04-01 11:00:00+00:00",
+        "2022-04-01 12:00:00+00:00",
+        "2022-04-01 13:00:00+00:00",
+        "2022-04-01 14:00:00+00:00",
+        "2022-04-01 15:00:00+00:00",
+        "2022-04-01 16:00:00+00:00",
+        "2022-04-01 17:00:00+00:00",
+        "2022-04-01 18:00:00+00:00",
+        "2022-04-01 19:00:00+00:00",
+        "2022-04-01 20:00:00+00:00",
+        "2022-04-01 21:00:00+00:00",
+        "2022-04-01 22:00:00+00:00",
+        "2022-04-01 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\TRXUSDT-1h-2022-04-02.zip",
+      "sha256": "c4687e5079493323757930738f1b36f959610174d20f4a18b9db3997bf2f483d",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-04-02 00:00:00+00:00",
+        "2022-04-02 01:00:00+00:00",
+        "2022-04-02 02:00:00+00:00",
+        "2022-04-02 03:00:00+00:00",
+        "2022-04-02 04:00:00+00:00",
+        "2022-04-02 05:00:00+00:00",
+        "2022-04-02 06:00:00+00:00",
+        "2022-04-02 07:00:00+00:00",
+        "2022-04-02 08:00:00+00:00",
+        "2022-04-02 09:00:00+00:00",
+        "2022-04-02 10:00:00+00:00",
+        "2022-04-02 11:00:00+00:00",
+        "2022-04-02 12:00:00+00:00",
+        "2022-04-02 13:00:00+00:00",
+        "2022-04-02 14:00:00+00:00",
+        "2022-04-02 15:00:00+00:00",
+        "2022-04-02 16:00:00+00:00",
+        "2022-04-02 17:00:00+00:00",
+        "2022-04-02 18:00:00+00:00",
+        "2022-04-02 19:00:00+00:00",
+        "2022-04-02 20:00:00+00:00",
+        "2022-04-02 21:00:00+00:00",
+        "2022-04-02 22:00:00+00:00",
+        "2022-04-02 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-01.zip",
+      "sha256": "7857f4d19063e49edf85657269b7629bb186231a01a7f1aaa804d5ac4446724b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-02.zip",
+      "sha256": "c86281756c1102967ad11f7caa145159b50fefb10ad786485009c2c264dbe187",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-03.zip",
+      "sha256": "07ab018b0043c36db366a31f2310b7f6f42bfbed1188cf772b9b3f4e1032f4d6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-04.zip",
+      "sha256": "36a64c5676cd6aff25eb63c815dadc517a4ba4ed9f1c7feee97dc9e2485073ed",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-05.zip",
+      "sha256": "8e2db48335ff5b6e97f52a640dca4862be2e09c7d7c2fc5252a1e8a7d31c515c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-06.zip",
+      "sha256": "63d87f766ad3d0a1a0385be22b607f91387082a7b079608c0511c2ff20abde9c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-07.zip",
+      "sha256": "c7dfc5a1ba917b6357b1de5ad5052209256f043c4b8f384afd6fe939ccd73744",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-08.zip",
+      "sha256": "35e45ad4abde9ac8f71c312e234a5c9628fc0bd77a8741a4b73aa479138b86e0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-09.zip",
+      "sha256": "85952f0f9eacf827a75f2d97204e100db4cdba1da204ddebe2e6312f9ad7582b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-10.zip",
+      "sha256": "f8059ba0d4483fc3d17c6464cf8119c142a5c5685df02203c2b376bc9a537c97",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-11.zip",
+      "sha256": "654f317f2f6c6727d83e7561b0eb8a6057d96f89d4fec93ba5d2fbf7beb14b28",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2020-12.zip",
+      "sha256": "51c5b36628fffd0be0dd6df53986047b4af49183c6ac5c2e28ca81a562856abf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-01.zip",
+      "sha256": "3aab0f820761838031b2050eb11781bc92fa694ea9e688fb05c62888566cdec5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-02.zip",
+      "sha256": "e69169013ed004de4a144e53f98509e5330d77bd4dbb027a41a2ddd57f454a3c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-03.zip",
+      "sha256": "56863847e942fada6a5708e7689ac952d2c40e503fa56e5fbc266fb0cd18f0fd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-04.zip",
+      "sha256": "ac11e94d41689b640c89c1ef10cfabe9a116257cedc1fc1fb42faebc59d5e0f0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-05.zip",
+      "sha256": "3abc40fed8b8f03417b27fdc5ebfeaef66f6cabca1665baad69fce0388d33c78",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-06.zip",
+      "sha256": "29c297238f561b7829864383782ef782d074b38282fbc3a4f3e6697fe758ea3d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-07.zip",
+      "sha256": "429612d4512005f96fc17aadbd054cfabd9d5f65698de40b161f501e754e5fbf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-08.zip",
+      "sha256": "be07eb0ab1d15df400d8e26a8d69fc5726db142799a0866b31ae513153823aa5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-09.zip",
+      "sha256": "66b25736297eddd169ffee2d7638177680bef4816fc4052ae3101ac6fd3d4104",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-10.zip",
+      "sha256": "4b0cc5cf7f29083e565ecbbf4eebc9bf3783cdbab0291b7a6c2056be63c658c2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-11.zip",
+      "sha256": "2412bccff70acc3937ae95d552e64ff14332821e86180d0435b8807a3fc8e5bf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2021-12.zip",
+      "sha256": "4a94a42e85bec0b36bc8b15cef77748a97b2713748802565c43a3123ad236b8f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-01.zip",
+      "sha256": "7f64fc67e5b5e02d16065c10c89c536e2163128fba363dcafc439c4a5d8d5c3c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-02.zip",
+      "sha256": "e4bac6e83ce626894d65cb52fe0bf11a620c34a0fe1507bc0606d4ac61c9c611",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-03.zip",
+      "sha256": "4620236e79e3102b6b2bf26c2af4c085de95981246f32b984c188271f08e19e8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-04.zip",
+      "sha256": "c14d70d2020d6d6a8166de6444361a503a959fa610422b3bc7f4f8e5ea8cbb82",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-05.zip",
+      "sha256": "976a63080c7d4cffc573080ce5f4f68c3def8bef766d727496856ed3080a6613",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-06.zip",
+      "sha256": "d0201f99c2f5cf55b5f50eacf074adada0cf96a9fe77a2f45b0ae2293cd57378",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-07.zip",
+      "sha256": "7c9178c69d5fa9596b8680a318032ca61da3b757621e61afaede74737485f9bf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-08.zip",
+      "sha256": "425b49d7f7165b13b9fd5985bf519b018d52e72b12c46bc09d37d9e55f127efd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-09.zip",
+      "sha256": "491b72b99ce91a6637f1af820e106f7f0cf4f32e6f78847ab4886a0639022bce",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-10.zip",
+      "sha256": "a800cc8be1150b089f215f8be8e6f0fd432633db58b9db44ef105ed949ef6c5d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-11.zip",
+      "sha256": "d1dd5e620547b69a731176763b9fd9699f77484b850fbc84d1cf097ba7bc4e04",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2022-12.zip",
+      "sha256": "4ce57ebfd32eb90df5f92354369dbf566e79982bdce461fe66883e4eaf82ee57",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-01.zip",
+      "sha256": "cce4f3337f06285e354188d35c94b8c93cf2eed36641aec8050bd6dc3036b09c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-02.zip",
+      "sha256": "50e1b08505de98d1ab7ca0238b6330d6a4923ecc55ad5006e2ecd81e38101f09",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-03.zip",
+      "sha256": "4f406e0f0b6df8fdac8ef2b115b142bfe9debb865012e3552ce4eca558970ebc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-04.zip",
+      "sha256": "6ca92bb204a922f7903bda694215e3a3084cd544540c3c698447ed2cdde61d0e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-05.zip",
+      "sha256": "c08c7f231747fddce915f769772010daf798be243bf2c4da14b3b11fe1d2dff6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-06.zip",
+      "sha256": "55078b80fc7742bbfb1a9c24736f4de21beeea87717eb121b4766781e36ea6f4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-07.zip",
+      "sha256": "08e37b3a4298360a216571f260a14ff5778ba2e4438158ed2161dbc6d06c3813",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-08.zip",
+      "sha256": "1ab8826bad0530cb6d9b0c0d213a93da15524e1f69c59eaae24089952aa4b00e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-09.zip",
+      "sha256": "2d083ad203ef88db7451abd4997431b617b8333ce6332dd733fae519a9a84805",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-10.zip",
+      "sha256": "8b186978a16711c0f93ece0e16e6e9650b1822e2dd74873c1b7b8e22f13b70b0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-11.zip",
+      "sha256": "eb2d96cb708ac2ee9e8855ab77587d47bb8034b0655d97d025e072fb60cf23ba",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2023-12.zip",
+      "sha256": "79d397e3910fab519ec1ccb55e1c2955da4de7a15100cd3b2a133b48b43eb7c2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-01.zip",
+      "sha256": "c71d65e374161c95103c80bfe8edd2b12b6175e179f1e3e1c3a143c67cf19aeb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-02.zip",
+      "sha256": "b842b7853668aa056e926f59d04b5ee1e42d4c28dbfb4096badc27e932aebf57",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-03.zip",
+      "sha256": "1d0763f8bf92eff3a4b805f51221ea3f65eaf0ed2b288a673bf5cbf21202e134",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-04.zip",
+      "sha256": "183da0672cbd47989301c99878123d2437fc310a742e2db14e8bffaf6c8f8fc4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-05.zip",
+      "sha256": "4627e52c45ade2c555f9b7f34bbcd075fb5f320fbf5329ccff8a3bbe19e80d6d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-06.zip",
+      "sha256": "f8271bf4723e1b8c5796970313dc62efa2c250ec93a7774b32a2bf83a7c7568b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-07.zip",
+      "sha256": "7dde5e57c4a395b90824ff639429f92359bef6bbe8188850f87703a869057ed2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-08.zip",
+      "sha256": "60f042145f92ddba3d56bf56895d5ecca27c5cf425745e7ba77f9449fd896888",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-09.zip",
+      "sha256": "a1ca25f8dfde918df93f95e3c7c9e4b9c516564f5aaaaf0aab9c5fa458ce546b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-10.zip",
+      "sha256": "fbed141cda25f925da8c65e965fba3a18b2ba79003f777834166bea8aa5f577c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-11.zip",
+      "sha256": "57513280d1d019eeebcb62d59b2730bb88a7b89c61056c7723110bf626761b55",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\TRXUSDT-1h-2024-12.zip",
+      "sha256": "e6a3bc10010e3f4bd84ab2d077a3e72ccbec631f41b20ff0e983ef1be994a120",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2020-12.zip",
+      "sha256": "8166d28f7802a76bd7a76418424c8e3b3d6f592f9c203ab897854147d02070ff"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-01.zip",
+      "sha256": "0ce98dff0ba8a6380cf2756d155151014f3d15750a9831a655ef0234ac6b2b24"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-02.zip",
+      "sha256": "08fde96e5a87742957ddd9dd02cea7bb060160d388d894313c98237ec62ae494"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-03.zip",
+      "sha256": "1d14122b9b24c2977e94aeee98b97e0043e3081e994d6c059ec9b4f8757d906b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-04.zip",
+      "sha256": "ef1882dbec03860ed6b9d95ea62ad5c92a9ac05f321e0e4360f150c0f1756812"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-05.zip",
+      "sha256": "b43e4bbb1c91bc6d0105e87c218ee3256a1c3c55b2ea98f3cdbe2d423538f95b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-06.zip",
+      "sha256": "6ab462d33df370897d7d2e0ab0577232276d0a635754edb60794871c2ab88e2d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-07.zip",
+      "sha256": "9298f3737a1bb92b624774b22d9e72a04fa236dda7986c5e4f9017bd9f0c6759"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-08.zip",
+      "sha256": "c678124ea724e40e7b9cf9f8b1fa4c117de0a56caf0b5756b9959b3092b45ff5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-09.zip",
+      "sha256": "9fbe7531ecf3be8cbc63d0e564a594fd7986b0cd7fc3d7cf9da3580dffdef1e7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-10.zip",
+      "sha256": "443f31300814f787bbace287720ba371410eab0ab0f273ef82ffe02af2d7d2f7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-11.zip",
+      "sha256": "066b0d2254ecf0ad08c67ad2078d238b01dd0ca2044d0e013bfbc8594f26751d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2021-12.zip",
+      "sha256": "c3f2ecd84da046ba135e37b0eb2021a17a728e708f89a6224f662dce50575a69"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-01.zip",
+      "sha256": "a19786f7d8c449da8eb17261e327d3a878747ce6080863c62395f511d8d57f2c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-02.zip",
+      "sha256": "28979915c9225daf84b84526612870ce06e97b14584af2497878f8d27beab842"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-03.zip",
+      "sha256": "93be15821e4d8a215c8c753a5cb9f925bf009660d0c219499d573c8b87a88910"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-04.zip",
+      "sha256": "879840ba275a9fa2b177150dc709f3dd4b2a896817210c4f37fdf097576d1493"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-05.zip",
+      "sha256": "c627c701b1e3746522e6534ef6d85a684a4f32bb7739338313789fabb4be3a15"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-06.zip",
+      "sha256": "822ea000c903b33157e1b3cb3b480d44bebea70bff4391ed6494a8df0c30d29f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-07.zip",
+      "sha256": "45afaf83f0afa138c33a46441802432875b414bfefb8dcfacd18f8688aac5648"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-08.zip",
+      "sha256": "8840e907ab7575572f6a7f9a4d8d677ab15dff6c91867d919204498f5e75ad96"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-09.zip",
+      "sha256": "3acdad8c35a8af01763829a58291f37ee13fab699d0c9f78a51e21d5b3bd38e7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-10.zip",
+      "sha256": "3fe60976c86ac8f486a5886ebf3348ce5acd9b1f58e3ee864027a0d521cde6e4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-11.zip",
+      "sha256": "9c43f9cf7ba9feea8e1f408ec2c95e75f9dff1410a9a0ca949a1e09affc6d58a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2022-12.zip",
+      "sha256": "b183ef0f56f39820966ba201168db776a044a58f9223b6c75a900ae275e4b8dd"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-01.zip",
+      "sha256": "a0317828b3beb89d36dbbd3cc813a69d56009a810c8b9ac1c5bcce0b807e233c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-02.zip",
+      "sha256": "396c4ef657c0f36f31af21ab571969da360c388f1af2d00313863a6c3c8bed70"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-03.zip",
+      "sha256": "66b07f3ee27930251576208c27eacffc4362a223fa4c90640a37a181c3d3abb6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-04.zip",
+      "sha256": "45a93b1cbdbd6d6271bb3e1fd5790314e7a33fc1969ec835ca54ac52ea33e022"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-05.zip",
+      "sha256": "d118c72f001e77c083fd44e0a00a1991eda4da2730941f888601941df4244bae"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-06.zip",
+      "sha256": "17acf17abf551a12a6b55b95e749cdf4459eb32c51c069e6acc735da078ee8bf"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-07.zip",
+      "sha256": "48513507a80c5b1666765c37e7da0d1c6e0c5121ef4182b187feb24138e44fe5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-08.zip",
+      "sha256": "a210d276ad3610dce68c4022d5942140eb7ec297a9d89badae056f0875e22cf8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-09.zip",
+      "sha256": "24e25625e3b8fa10852844bd7d9dfcb7399148b375ea15a41deec59ab3988aa3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-10.zip",
+      "sha256": "754698918f9df2c3045c0090f7ee97ed69d7b3f1d6b9ae22954455ce90ea9315"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-11.zip",
+      "sha256": "71ff9aea3d62d9fe4ca6e6de6d43acce280bfd36b90fe8d577dd66c641a7cbf3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2023-12.zip",
+      "sha256": "29ad45c6c9f5c70d214139b484cba0b4db0b0a100c2353ae3a6a5d89888e5924"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-01.zip",
+      "sha256": "d2877662dafe72778f32cd361236f357f0267565938db9994bd6e900b0d7e631"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-02.zip",
+      "sha256": "2d2bfabeefcc10fc329f7b79d2f788ae943b659dc2ff26ab418ff263fa608356"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-03.zip",
+      "sha256": "1929b1b34ea1050a5fa281697082e6f6da84e148a1bd1d90479383f7732f4220"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-04.zip",
+      "sha256": "ba96693b2fb71fbfcf80f4a3adffe82defaeb6899c55951dee4994fe78fb357a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-05.zip",
+      "sha256": "d14af871339293b6fd6d43b084537868ffe290308cd27b430fd04d9d20e95d2e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-06.zip",
+      "sha256": "b7dff5f6f6a8b60db482aeecec40309cba631aa99edcd41d0b3fd413aca46685"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-07.zip",
+      "sha256": "16c16033aba6cda2dac8969f3466436fdbe0aac98721a38a7e4351e4eb8b6604"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-08.zip",
+      "sha256": "764f39b99fc11351cb4135b5f2fc081b2ad9a49046ba8f9638bf078d8f014278"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-09.zip",
+      "sha256": "24a4450561c8e4ba1b9efe2550a8e2f9d0ace94a2afcef5d925961f229907093"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-10.zip",
+      "sha256": "8b188036cd5a2a676700fd15738ef73ea0b8ee08246a2e677db2a33f2bcdfda4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-11.zip",
+      "sha256": "cdd3ead1d4001c46164bba34613ed1498caf70cecce75e41f0f1fd92161e4331"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\TRXUSDT-fundingRate-2024-12.zip",
+      "sha256": "47783220b7c56656c5f77d8883e8936b6023ed9447cf7f6797f8ab82e7a8be5c"
+    }
+  ],
+  "execution_descriptors": {
+    "gap_p50": 6.180851721360181e-05,
+    "gap_p99": 0.00042469256094815116,
+    "gap_max": 0.006089122612787046,
+    "gap_over_1pct_share": 0.0,
+    "mark_dev_p50": 0.0001206265514727134,
+    "mark_dev_p99": 0.0008021508296647107,
+    "mark_dev_obs": 34896
+  },
+  "vol_scaled_slippage_multiplier_p90": 1.7723930238325347
+}

@@ -1,0 +1,522 @@
+{
+  "symbol": "MATICUSDT",
+  "start": "2020-10-22 07:00:00+00:00",
+  "end": "2024-09-11 09:00:00+00:00",
+  "primary_hourly_event_rows": 23457,
+  "primary_bars": 5865,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "incomplete_4h_bars": 1,
+  "zero_volume_hours": 169,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1615496400000,
+      "open": 0.33845,
+      "close": 0.45928
+    },
+    {
+      "time": 1621432800000,
+      "open": 1.79997,
+      "close": 2.31308
+    }
+  ],
+  "funding_events": 2933,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 9,
+  "contract_exit": "2024-09-04 08:00:00+00:00",
+  "contract_exit_source": "https://www.binance.com/en/support/announcement/detail/6a6de383727f4659a3050f7982e1620f",
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2020-10.zip",
+      "sha256": "70dda4a6b6e7dc671f82ad1142ca23a0e4c54239a593c869cd84e7038c7b7096"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2020-11.zip",
+      "sha256": "dc0b13d7e5dd7a934fd6656a4324bea120d62249511331a6957854c8bc4f5959"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2020-12.zip",
+      "sha256": "bea42299b0f3d562abbbf93b0125199c44c40d5ec8f049b4a2682e1de1affe54"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-01.zip",
+      "sha256": "38051c69266e2104af323dadd6282f09c0eaf0553b5e8da84a4336e4deafa66a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-02.zip",
+      "sha256": "87a91868a5ed1494c2a61290c0e0f700e3e86b02ba50fd5dbc13d2b1914c36cf"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-03.zip",
+      "sha256": "f12c6a1909e53d4d34f2c8c83963e90c4f3ab9ff2a0612fce83ce6247d639694"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-04.zip",
+      "sha256": "0398616993da05f059a1b70f0c1f6e28c470cec8a064335d8a5aaecc9629a1bf"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-05.zip",
+      "sha256": "672077bd7c02d843a93f44840c5663f383cdad94c16293ece70ee32adfeafbb1"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-06.zip",
+      "sha256": "21552b20711686c5bc7f422c0c147bb457c59ebb7c9459c86b081b77557c1b0c"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-07.zip",
+      "sha256": "d7c89f9a89472d0ae640f2ea32d9251ee65fd781f64a526eacc032e57c25744f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-08.zip",
+      "sha256": "8cbc55337164e2f5711fb73d60d40decd1745d7bb698885bcb0dc64c00acc761"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-09.zip",
+      "sha256": "9a4cf36bbb86747b6b890ff9a6b7c6f039bda4ed15e5d95c522796f6f89b668b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-10.zip",
+      "sha256": "43a5dce7db119f118d990343261615cf1171fa62d41a9bebecaea9563abc8ce4"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-11.zip",
+      "sha256": "a0d21e904d0a2dabf56fa69a933cdad479c03c847900786774e7183f86fd339e"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2021-12.zip",
+      "sha256": "d769ab62a7c49344d283c012aeddc50b5e5f989e7f7d2f79d2956e8d79eafd33"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-01.zip",
+      "sha256": "4f5c0d28eddb6525f0785f2700e47f70427b1a05d4bab4d5b985cbd2ad33aa14"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-02.zip",
+      "sha256": "d418678f648367d35ca4eb86a88e1a52ac4e77ddb84b7401585f9569427eb85f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-03.zip",
+      "sha256": "cebe41f99a75ee4b83e8f6694e1b4f09d550d5889f82d03e0fa1c9b7793b4f51"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-04.zip",
+      "sha256": "5ad26a011dafeaa4972b6642fd319a13af2da04f078e6dc1fe20e013c7d19e11"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-05.zip",
+      "sha256": "74c4b982b9c2b098e36a93e71935031409064bea5fbae1d4ca33396a6577aede"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-06.zip",
+      "sha256": "1ef2c5c8680a5781c7eb7b86cbfa237357e26fac642271ce98ff886b794f05fa"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-07.zip",
+      "sha256": "f20b02523baebe5a846bbb9ef1df17c093bcea5d170e5c419a57fdd2b8f4085b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-08.zip",
+      "sha256": "a546488cb2e75f2f74030ca8422f46c1947792dbadf386882e822f9c40bc2ec7"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-09.zip",
+      "sha256": "ea7a2525b4821419001f06d949751d4f77849b257240c0d00da94ea074e483cc"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-10.zip",
+      "sha256": "f73a410bfad92f3eeb7a93cb600ec6ec47f39fafcf237a379e47e9eb13af6f1b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-11.zip",
+      "sha256": "048aa3b06f90cad6b6491d5cdc658176cbdd46e1622d86a511feea976076c687"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2022-12.zip",
+      "sha256": "9cbd7d01f9c5acabdfdae8884eb6a7a656c004b0c344a6baba16a7d40a8ab431"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-01.zip",
+      "sha256": "882f7d70520a3fb234f3d7acb72c0f601820b06b77c951c864048b15a08b8d23"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-02.zip",
+      "sha256": "7f831afda697c6f1883b544c23f599bd9b4e11dbd0434b537d4433050c1f1b58"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-03.zip",
+      "sha256": "3cdd60cfbb510fff24bac228ede2e90bc3928d6b717981537d7998ac18f07d10"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-04.zip",
+      "sha256": "a4af4f40f99bf7a4e31e5a89a8d8b21d284d0622e10582833153e1ff2fb8209b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-05.zip",
+      "sha256": "8078d993236fea0c3e0a24241ddcf16db9e3447c9a7e17048186745facec8721"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-06.zip",
+      "sha256": "0905f94bc4e2c21ce15f179654784fa7b5ad3a13acf1bd8d21b66e8568c2ebd8"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-07.zip",
+      "sha256": "b8cde0fa34db170da634d492f8757b2787c7820315e4da99a47f7c77fd45dc95"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-08.zip",
+      "sha256": "d738f903ca30159f0ea1e12fd1f0b83f72f73802683c6f9c43f01ea48935bd1a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-09.zip",
+      "sha256": "daae1e81fc1dd1a4d645cb78175da21d56dfcbdebd7b45295c4108db54d8b4e3"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-10.zip",
+      "sha256": "8356108a70b484a1b891aefc73b396b8803b663f8f3866b9c3c1a64436904e57"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-11.zip",
+      "sha256": "698f1c21e100bed17ee84867970f75653020875ce61dd3ff0dbc35f5c729e763"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2023-12.zip",
+      "sha256": "ccb545c98b0d478ad8b35355bc76a719ed3855914cd08b8b9c8574751b0c787b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-01.zip",
+      "sha256": "279b408404a4bad10c29312044a755b63ecf55229705c7538c2fc693502280e0"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-02.zip",
+      "sha256": "b13ea64296345d10418b40522d0db2b9271aa7f84a276549113e1d96a0d78d26"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-03.zip",
+      "sha256": "1d6df719a09a1e309bbef876f4b8112b96256961c07c7ca6e43ace41aeb86dd9"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-04.zip",
+      "sha256": "197ddc94e16fe1b865dd2c0e22d269d0d9219dc1161c8a7eaa7922a0a47ea0b6"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-05.zip",
+      "sha256": "9e37fc9d0454d4765bbf1899c4f1fe0c74db5b856004bd22fd757ea73e6568b4"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-06.zip",
+      "sha256": "cfd1238a59f0b7a366b116c609501240cd88e89131edefb6bca539b229005a2f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-07.zip",
+      "sha256": "09f40f725cc7584e01b5e2d34984a3393f4facc4909c81662b0e0db1698e1d7f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-08.zip",
+      "sha256": "90325fd5346cb71c3aba0f80e438697a6343268ad29a52247f7d00f2caa6b662"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\MATICUSDT-1h-2024-09.zip",
+      "sha256": "ecf23984ada0e67bd7fd0884f54e4c69f2b2c16e81db6361da5d7f965b920c8a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2021-12.zip",
+      "sha256": "98035f6f8e48dcde9076409ee76c2e7e3a19ce813aecb9cbc38108a2124a6a1a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-01.zip",
+      "sha256": "a08b9c13afc6e8f29efdf32e92bef4e535e576965828e6913dc98cc21f40e60e"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-02.zip",
+      "sha256": "72330359159ede7d465cf1593f603045fb864dd677dfd4ab5b7b9cb06a6d70bc"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-03.zip",
+      "sha256": "9c2499c7de5fbbb9758686837d67db4a34b296b131389e02193d87b23f460f80"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-04.zip",
+      "sha256": "00654d8e4fa266afc34cb042ae1a955a0e088b740bc462dee5b1160581a6d226"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-05.zip",
+      "sha256": "f9b575501a4e74ac5e15063c7301f4d5da7eac1bf48f673550496faa950af5f6"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-06.zip",
+      "sha256": "cec28369201174b13a70a43ccfd7c2127e0fb8b62f0d14ee00c0917f6afa481c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-07.zip",
+      "sha256": "e8d7bc92457dded33ecf69481f88f5f24f33c8a9978091c6362e26def7574877"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-08.zip",
+      "sha256": "9e24f96586cfc63f21909f34d7f815ae4313d7e1d654cf44e86ad8622572c1d9"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-09.zip",
+      "sha256": "083e8381a4fbabf8861d4e193f3f8e4fc2f218fde82ad41500df6f7f112449d7"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-10.zip",
+      "sha256": "524ba60e69e91a9239ce51a754261930ae4f0f6c24bc7b7278b588e84acee73f"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-11.zip",
+      "sha256": "981b7760d358760b932b2288afbe55c8623f6d2de33da9eb8796570b97e047cb"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2022-12.zip",
+      "sha256": "4b94d20dac034cac5f7cd1e5d2135dbbf16b979f43468d02ead5a695c7541dec"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-01.zip",
+      "sha256": "cd249aff9589e9bd2227ac47c209e4ef71e6490be3150ed393636061c9d31899"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-02.zip",
+      "sha256": "c3bf23580962d7be28d977bf0a5fc6a5b95625377b8699e21225e4e08afa495a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-03.zip",
+      "sha256": "92806a94bfb59476f908f6935b4e44dcc78f49ccd8192e87a32aadc49f199293"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-04.zip",
+      "sha256": "b5b593f050d7dbed4168d591f7590a114b4458ce529226e32c2fbd72ee3cf50a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-05.zip",
+      "sha256": "f188e9ad892679a159f0a059efd2c7177a9e262c61f86b9b818691dfdbadca65"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-06.zip",
+      "sha256": "7806f0b2d43d692eae62405dbd1da629729c8bc7c0369ebca9d577d46cca0ddb"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-07.zip",
+      "sha256": "2375dfbb0862d8ac9f237d26eb1d21c2511fd678e7beb3cedbb889751d201aa4"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-08.zip",
+      "sha256": "0c99d457235bcc908335f4e4658081ee97f50ab8ef03a6af276653a5199eb9f5"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-09.zip",
+      "sha256": "8148a36932ac14c4a17248d4ec341a7caf1f026e18ac816f1fccc96f860ea7c5"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-10.zip",
+      "sha256": "5ee39e4ecfa05611ea311f5599ab5cc5d53b29154be24a02d54474f3178f15d4"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-11.zip",
+      "sha256": "546c63be37227b3f5c6cca1407d3f0d13b77b5132a8d4977bb3198415efd4ad1"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2023-12.zip",
+      "sha256": "386dc2bed1bc3de8247689e1412e4889508e8e4aa704f83fa91d3d25265807b7"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-01.zip",
+      "sha256": "7cf3cec8465c3c0ba4e8f75963c2c40a01e58f6bf6b7cad2e2e2b81ca588986a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-02.zip",
+      "sha256": "653961a12b7180277d8bea64c15d48ace5d8dd5facc565d82af76c27ebeba52f"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-03.zip",
+      "sha256": "4f8410d4a2eca25a3517a8b0e93ea9569c7be05ab9c401e7397d9137ca0d6a6f"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-04.zip",
+      "sha256": "e932be5176463fbb80cc10f2dca720b599728a3d34902a98e812e76f59ad800b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-05.zip",
+      "sha256": "472c66b248a1f448c042cb362251bb137fcc42a96626eab0a3f0f34443db3894"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-06.zip",
+      "sha256": "d9281bd3610ade1e366709b3677f45cc0c438fe66cc5d4eebc6a092d46288431"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-07.zip",
+      "sha256": "d28b9f5a266d105f46b16e9209baf18179b974f54100fc7dd251210e7d5a7221"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-08.zip",
+      "sha256": "4cfe05a856cdfcd84ad510eef1a4431d8c5820cbcca8dbfc93e7a93d41b9a648"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-09.zip",
+      "sha256": "06c87c6adb58580686fe691924cd22d8b47a456bfed8d6745feaab8d19f06308"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-10.zip",
+      "sha256": "f5b52dd7dcbefce20455bfaf0bdd746ef67dda283ed3f67b83a612dbe219415c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-11.zip",
+      "sha256": "390b8f96a119e6efe35ae1dac23a66cfa870f1df98413fc24f67dbde98b37e46"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\MATICUSDT-1h-2024-12.zip",
+      "sha256": "548b9e5c9aeb37767c04df1e4d3ea605a77ed2d98dabfe76c60a6e339241b2e8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2021-12.zip",
+      "sha256": "d8b39a0d3f59c82f70349db4709ae15dcf8b206498b9c83549a0e3b5bb32c8f9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-01.zip",
+      "sha256": "9c9590a771417f4dd004e35943b932563fcbbe960301af9f0b19b0ab1f0b0050"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-02.zip",
+      "sha256": "1822f3bfa24077e8c7a09c0ece11721ff1d54f0a979d27cf510d9ff161b38798"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-03.zip",
+      "sha256": "25627696dbebbbf3dd055952b60edf3eecca23fd4b8efb6e5dc237d7ffa293f4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-04.zip",
+      "sha256": "d4b9899ac0ccf9abe2933e0bf64be4998c0df4a23942c3c3e6a5131053d8f5f0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-05.zip",
+      "sha256": "cf95aa843dfa64b67fe46891fe51dc2e5cca24b33d35a2c1cb8dbe7a2dcf2632"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-06.zip",
+      "sha256": "869b311153670cc28a3dd6297769d166532efcb1259484b4b663002002bdbf4a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-07.zip",
+      "sha256": "87e6a9bc85da35d6dfd90696c20383f19c4cdffe3192fd9f4eadf90945306a52"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-08.zip",
+      "sha256": "6a81896cee91c47d9e32946b83cbffa5519d75e74ceff0021adcd043f5821f17"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-09.zip",
+      "sha256": "ff4b97a090434d144015955de3cc61ae93031adda59b068d7f7d991f766e7c70"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-10.zip",
+      "sha256": "29cabb7d2e6b99018f38b8cd722a1dfa6f5a668cb147f309a57e1864f25e956c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-11.zip",
+      "sha256": "13f6e1c7bae582dd8abc8a50e07f3b9e5b1e5f537c8920092c64e8381205da10"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2022-12.zip",
+      "sha256": "a2849c0c4d16722691c38bb95623a42811da583e56c6dac9701e77790441fc40"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-01.zip",
+      "sha256": "df52ed868631ba4869a8f470bfc1dd18494b429722e38f21c886158c1df808c3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-02.zip",
+      "sha256": "8d0f5d5a281636742c292e526d5d36f60f39157181b3f8e8305fe7bac0d3fd8b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-03.zip",
+      "sha256": "3a8b9b7c1c168630d26795dfcc0a866eb97d263ccc17041fc05d6df9af302f7f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-04.zip",
+      "sha256": "a0466b85cdc3bee75eaa8e05fd7e24f3d784b28b69bec6a97fe61e7083421cc8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-05.zip",
+      "sha256": "78e0078611a9c92df3b76acdedb9bcdc4fc17f3b798a5e683ea0146bb175d96e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-06.zip",
+      "sha256": "2fa5b53e3efb02c6d2b8c8727c4f7e2b66f74f7af09c71e40c1bac0cacda1197"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-07.zip",
+      "sha256": "3892175097a61fbb4451e7ad0a37176059443cbdde2f3b8b159a230b01a1f09e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-08.zip",
+      "sha256": "6c4268c5a023e985c107e7ee53f9c91e0d1b29b06e5872c9af203e0ab245454a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-09.zip",
+      "sha256": "99c4a454981d0a5f314eb12a6c7eca5b252b4a7a02a7b2b3dc28d36613b195b0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-10.zip",
+      "sha256": "8a09c68364d7fd4aa661fe543032adfd0bffa0368fcf1f1e57265148ba5bb156"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-11.zip",
+      "sha256": "6c8ddf172b893b8d0386083fd5b543429c6dd8bc2119aa6f61b7ca2cc6cabb62"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2023-12.zip",
+      "sha256": "9bc6d1747db890d75536bf99dd18f18dd373539ff60fea1fd8103a6345403c91"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-01.zip",
+      "sha256": "dd1f014680f4950c16601919740869a93cd436556858a282510f136d41307a7f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-02.zip",
+      "sha256": "c228a5e509b53ccf172967409c086ee3d94707c925063292413cb85dce5699fe"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-03.zip",
+      "sha256": "3ae1747d422ac00ec1906c687071bc8550b5020b98307b94bdc9622a97cf474b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-04.zip",
+      "sha256": "fc5362d8c22779dad1f771c539ad1db9e0167c7e3f5c40b3362829a36bb2a22c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-05.zip",
+      "sha256": "d14653353d8b61466f40c778120439172be366a713910f8b071e19772d2eca46"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-06.zip",
+      "sha256": "46dbfdeed4d74294f32290eeb465c7b87b5427bee5fff06d3800ed788cb6aeeb"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-07.zip",
+      "sha256": "da68248c47c73089fd229911866831ef27073958413d0268f7dabdd91fdbeaeb"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-08.zip",
+      "sha256": "7f01c137e537b4b2eddea37d3e8c5523a7f262daf7a8edefeedc37fbea02615e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-09.zip",
+      "sha256": "1c621a47b0bea78d8e2b0c2b79ebc1fe3d7c2f49657981b25a33d3b137941017"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-10.zip",
+      "sha256": "fac94a950d4c1b1b772d9f163098e4734df0c26740aa3f3837f0c33201b7952b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-11.zip",
+      "sha256": "5f6694bc6a35b239c74713db805b3d94684ff46b113e4caad324b198f14f62c9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\MATICUSDT-fundingRate-2024-12.zip",
+      "sha256": "d4c95c8cd6e495c0b7f2a4e309f6c2fd684890d0d3bd5c62d1fc6eef404774ba"
+    }
+  ]
+}

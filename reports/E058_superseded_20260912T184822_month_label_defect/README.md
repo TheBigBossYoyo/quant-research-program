@@ -1,0 +1,2 @@
+# E058 second run - SUPERSEDED (portfolio month-label defect found before interpretation, 2026-09-12)
+monthly_from_equity labelled each month's return by "first open minus one day", which assigns a wrong month when the first session of a month is not the 1st (duplicate labels, 107 instead of 108 months, benchmark misalignment: equal-weight universe CAGR 2013-2017 read 2.7 percent against a direct 8.2 percent). Fixed: returns labelled by the month in which they start; uniqueness asserted. Retained unmodified; not evidence.

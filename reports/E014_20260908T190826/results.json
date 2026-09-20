@@ -1,0 +1,272 @@
+{
+  "experiment_id": "E014_20260908T190826",
+  "code_hash": "515475cd2b0be4c125ce5ca5aab34926a3b46f404bbe0f2b619f8a6502ce05c9",
+  "git_commit": null,
+  "seed": null,
+  "cumulative_hypotheses": 199,
+  "new_hypotheses": 8,
+  "integrity": {
+    "klines": {
+      "files": 7793,
+      "symbols": 393,
+      "rows": 233049,
+      "taker_volume_quarantined": [
+        {
+          "symbol": "ARBUSDT",
+          "time": "2023-09-19 00:00:00+00:00",
+          "volume": 53196965.0,
+          "taker_buy_volume": 75647001.6
+        },
+        {
+          "symbol": "COMBOUSDT",
+          "time": "2023-09-20 00:00:00+00:00",
+          "volume": 2838185.4,
+          "taker_buy_volume": 2995403.7
+        },
+        {
+          "symbol": "DYDXUSDT",
+          "time": "2023-11-30 00:00:00+00:00",
+          "volume": 24048704.1,
+          "taker_buy_volume": 27400442.6
+        },
+        {
+          "symbol": "EGLDUSDT",
+          "time": "2023-09-19 00:00:00+00:00",
+          "volume": 120959.2,
+          "taker_buy_volume": 168924.5
+        },
+        {
+          "symbol": "GTCUSDT",
+          "time": "2023-11-30 00:00:00+00:00",
+          "volume": 6493961.6,
+          "taker_buy_volume": 11031042.8
+        },
+        {
+          "symbol": "MAGICUSDT",
+          "time": "2023-11-30 00:00:00+00:00",
+          "volume": 14921409.4,
+          "taker_buy_volume": 17139937.7
+        },
+        {
+          "symbol": "THETAUSDT",
+          "time": "2023-09-19 00:00:00+00:00",
+          "volume": 10093669.5,
+          "taker_buy_volume": 13857545.5
+        }
+      ]
+    },
+    "funding": {
+      "files": 7791,
+      "symbols": 393,
+      "events": 823925,
+      "intervals": {
+        "8": 575088,
+        "4": 248561,
+        "2": 276
+      }
+    }
+  },
+  "stage1": [
+    {
+      "feature": "ret7",
+      "mean_ic": -0.01956251862142286,
+      "ic_t": -1.3703374839730675,
+      "weeks": 147,
+      "critical_t": 2.497705474412374,
+      "passes_stage1": false,
+      "direction": 0,
+      "ic_by_year": {
+        "2022": 0.006485316073480682,
+        "2023": -0.04506818301783437,
+        "2024": -0.016029384855978886
+      },
+      "decay_mean_ic_by_weeks": {
+        "1": -0.01956251862142286,
+        "2": -0.02321284445222533,
+        "4": -0.007204023589834361
+      },
+      "mean_eligible": 104.19727891156462
+    },
+    {
+      "feature": "ret30",
+      "mean_ic": -0.031369765826028836,
+      "ic_t": -2.2212463644668627,
+      "weeks": 147,
+      "critical_t": 2.497705474412374,
+      "passes_stage1": false,
+      "direction": 0,
+      "ic_by_year": {
+        "2022": -0.03252746186295117,
+        "2023": -0.04977022658283811,
+        "2024": -0.011609715140172656
+      },
+      "decay_mean_ic_by_weeks": {
+        "1": -0.031369765826028836,
+        "2": -0.030478774755074257,
+        "4": -0.028981485705896797
+      },
+      "mean_eligible": 104.19727891156462
+    },
+    {
+      "feature": "fund7",
+      "mean_ic": -0.015923107468056447,
+      "ic_t": -1.36037401570931,
+      "weeks": 147,
+      "critical_t": 2.497705474412374,
+      "passes_stage1": false,
+      "direction": 0,
+      "ic_by_year": {
+        "2022": 0.018839873437238537,
+        "2023": -0.020110156722561962,
+        "2024": -0.04164555057783474
+      },
+      "decay_mean_ic_by_weeks": {
+        "1": -0.015923107468056447,
+        "2": -0.023036710106362022,
+        "4": -0.026549215662718544
+      },
+      "mean_eligible": 104.19727891156462
+    },
+    {
+      "feature": "flow7",
+      "mean_ic": 0.02499692103226126,
+      "ic_t": 1.938324173708969,
+      "weeks": 147,
+      "critical_t": 2.497705474412374,
+      "passes_stage1": false,
+      "direction": 0,
+      "ic_by_year": {
+        "2022": 0.02943373326028861,
+        "2023": 0.003283984535344551,
+        "2024": 0.043307763381407634
+      },
+      "decay_mean_ic_by_weeks": {
+        "1": 0.02499692103226126,
+        "2": 0.028705214614652513,
+        "4": 0.05050506923742026
+      },
+      "mean_eligible": 104.19727891156462
+    }
+  ],
+  "stage2": [
+    {
+      "hypothesis": "ew_long",
+      "feature": "ew_long",
+      "direction": 1,
+      "case": "base",
+      "cost": 0.0007,
+      "ending_equity": 5545.495564213396,
+      "cagr": -0.1783889781266944,
+      "daily_sharpe": 0.13674033480215747,
+      "max_daily_drawdown": -0.7746404850016392,
+      "max_gross": 1.0135746618591022,
+      "mean_names": 104.3027079303675,
+      "annual_turnover": 9.945509573009648,
+      "calendar_returns": {
+        "2022": -0.6981536649891064,
+        "2023": 0.9991840620829175,
+        "2024": -0.08102927977828123
+      }
+    },
+    {
+      "hypothesis": "ew_long",
+      "feature": "ew_long",
+      "direction": 1,
+      "case": "stress",
+      "cost": 0.0014,
+      "ending_equity": 5429.959761960992,
+      "cagr": -0.184133624282098,
+      "daily_sharpe": 0.1277730115275385,
+      "max_daily_drawdown": -0.776869620813981,
+      "max_gross": 1.0138420068619798,
+      "mean_names": 104.3027079303675,
+      "annual_turnover": 9.941031335052466,
+      "calendar_returns": {
+        "2022": -0.7002782091560208,
+        "2023": 0.9866635855539352,
+        "2024": -0.08808583664079517
+      }
+    },
+    {
+      "hypothesis": "ew_long",
+      "feature": "ew_long",
+      "direction": 1,
+      "case": "severe",
+      "cost": 0.0028,
+      "ending_equity": 5205.973395658404,
+      "cagr": -0.19550712218737099,
+      "daily_sharpe": 0.10984655969621013,
+      "max_daily_drawdown": -0.7812633162842086,
+      "max_gross": 1.0143775938898787,
+      "mean_names": 104.3027079303675,
+      "annual_turnover": 9.932049828596199,
+      "calendar_returns": {
+        "2022": -0.7044838182729439,
+        "2023": 0.961847096534965,
+        "2024": -0.1020430388490603
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "direction": 1,
+      "case": "base",
+      "cost": 0.0007,
+      "ending_equity": 17324.56236500286,
+      "cagr": 0.2009804682281664,
+      "daily_sharpe": 0.6126142363825628,
+      "max_daily_drawdown": -0.6756960089645669,
+      "max_gross": 1.0093237991293267,
+      "mean_names": 1.0,
+      "annual_turnover": 0.4812959622484833,
+      "calendar_returns": {
+        "2022": -0.6221997959086156,
+        "2023": 1.3494549848195905,
+        "2024": 0.9517894047221136
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "direction": 1,
+      "case": "stress",
+      "cost": 0.0014,
+      "ending_equity": 17308.535034885535,
+      "cagr": 0.2006100873875647,
+      "daily_sharpe": 0.6120185038068549,
+      "max_daily_drawdown": -0.6757041616311168,
+      "max_gross": 1.0093276776997988,
+      "mean_names": 1.0,
+      "annual_turnover": 0.4819325368597794,
+      "calendar_returns": {
+        "2022": -0.6224971990383898,
+        "2023": 1.3493313128431135,
+        "2024": 0.9516227228546541
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "direction": 1,
+      "case": "severe",
+      "cost": 0.0028,
+      "ending_equity": 17276.43003273737,
+      "cagr": 0.19986747396620408,
+      "daily_sharpe": 0.6108234021473585,
+      "max_daily_drawdown": -0.6757204951879008,
+      "max_gross": 1.0093354416468607,
+      "mean_names": 1.0,
+      "annual_turnover": 0.48321085696011534,
+      "calendar_returns": {
+        "2022": -0.6230931542379856,
+        "2023": 1.349083501072676,
+        "2024": 0.9512886816827995
+      }
+    }
+  ],
+  "stage2_survivors": [],
+  "rebalance_weeks": 148,
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "verdict": "CHEAP DEVELOPMENT SCREEN; close-proxy funding notional, uncalibrated alt friction, no depth/queue model, delisting exit at last open assumed."
+}

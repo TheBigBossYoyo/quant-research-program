@@ -1,0 +1,559 @@
+{
+  "symbol": "BTCUSDT",
+  "start": "2020-01-01 00:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [],
+  "funding_events": 3288,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 9,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-01.zip",
+      "sha256": "512a1d725c8df97a1bbbee4f118e730e9628500a8f271c9e59d2a7fc5fbfcfcc"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-02.zip",
+      "sha256": "13d067e5c7b258764b8524e1d3c61b129c44838c2ce9850f4d86cae13c61f198"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-03.zip",
+      "sha256": "9fc0c560cce35fd083febee10c0c8c3ffcd56a9185f9b489f265a51bbf60ec6e"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-04.zip",
+      "sha256": "bfa6d2adc1aefd8a96b3cbd38932486741caa1ae40f1e646df3606205402176f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-05.zip",
+      "sha256": "1eb7de25a14b8a6c70098b866a21ba2c35f1b55c9e1c1d4dadb431cd4d3e180d"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-06.zip",
+      "sha256": "5f5b7ccd40facb7ddecd6019192be8de148e0aeeec8c8adc30cab3c474406c5b"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-07.zip",
+      "sha256": "f116be7c0a36e71f771ae4987b95e1f6d098dc0dae3b71154c12e7c390cf1a4c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-08.zip",
+      "sha256": "d4dff9c958c878c00f2f3f059043612ac051fdc4117c3e9e74261db28c4f13fc"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-09.zip",
+      "sha256": "b210c5ecfae463aaef862ea0e6d8ccbf63430f32d6a80bad0bdeb2eef83a7165"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-10.zip",
+      "sha256": "753bc2e366777b40294690c5bbee38da8ec99e3157739ba0f16850c94ac92dc7"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-11.zip",
+      "sha256": "23694fa6fc619c159992db5325d37730a392e8ee23e9e5c375a7bfef6022fb82"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2020-12.zip",
+      "sha256": "9eca4954142f813a1ab404161b76facb56389a26fcd0b05bf93a19bf29578cb3"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-01.zip",
+      "sha256": "00de1eb2f3e3bc7f21b7ab321f1681385726fe7ba55306a7337acfd8f81fedfa"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-02.zip",
+      "sha256": "c5739d16db0aa917f9b4f196cf1dc3c9741b2889253c029571dcd2d00e83ccbb"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-03.zip",
+      "sha256": "518891de0fa643092cac84143c9b35a7cbcebfc75ae0846ce36c8e3adab1929f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-04.zip",
+      "sha256": "0fdf8d01fa2eae368a63dcf709e6e6c5b0fd79bbe83b2f086aefbe2a7890924f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-05.zip",
+      "sha256": "c209747915a1451a7b51d80d92e68332622c1dd1b9517dc7723f78cfa4f28ab9"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-06.zip",
+      "sha256": "5134cef4361e0819b721776da6e99f715141d122e3cfbf4be729e3dfc153ac33"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-07.zip",
+      "sha256": "97241c02191fd4694daf9836269e6f8ed04ef5bf858414de5a3354678552b54d"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-08.zip",
+      "sha256": "4c8290ad0baa9fcf37d45b893e8cae1a1e3b9ef77987a9d9abd64e44ab7deb09"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-09.zip",
+      "sha256": "22c55191129632daf70611af13e8f2b0f34a5e79f4876f41744a9848c43b9864"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-10.zip",
+      "sha256": "d3b55f8ae3689efe9bccc1d9b7082bda39fa7fa194e4c1197a63d1473ca57b4e"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-11.zip",
+      "sha256": "a013f6adfd3012130c0b0bc58895373ae478cd38c646ac87957b855682c7f069"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2021-12.zip",
+      "sha256": "f1dff81c6e322f7d5cee3c0808efd4e35b33e371f04ba613054264d9621318f1"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-01.zip",
+      "sha256": "5281a9c866e7d54b0a5b5e6a7dad5575ad7b96df67f05f74d614c54190ffff5f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-02.zip",
+      "sha256": "b3a199287b2a8fed2c261999205d56cfd72ef9675c4b498a399601978d666228"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-03.zip",
+      "sha256": "f61ebcacd9a38f20b0ad89c64bbeb56baf368641fbbd6e25e987db2b96ede5ff"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-04.zip",
+      "sha256": "db7f9dbcc60cf68051b755346a5be32d27b0d3565cf6c02341b050a234ef44df"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-05.zip",
+      "sha256": "b1512041ade711819be114fee30668fbdd2783b73fa55607991ae14d1d43653f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-06.zip",
+      "sha256": "1006ae5b8b4704da69f8f14fb4711d075d689fcf44cd0a98317df97953f1332d"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-07.zip",
+      "sha256": "72060f8608459b04817f652cbb945be28afef0ae54ccf38113911c194630c184"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-08.zip",
+      "sha256": "a1ad9eafd3dfecccfbc60c07de33ec2f7c33eab96f8ec04f88360b73b55dad76"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-09.zip",
+      "sha256": "92753ae32ed042ab7f10b90e3b9a49ddafc695c8e60eb563713855c73e2e6e82"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-10.zip",
+      "sha256": "d85a5f4bdbe93df2babdecf3b37f866655fa23c3fb31eeca96c3e3f6a1e9b872"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-11.zip",
+      "sha256": "e9b3f3b1929e3f6f255269c2d2eb564d9d9bcacbfc16651888e95765df383888"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-12.zip",
+      "sha256": "d313c2cb509cba13eff6538829245aedc993f18eff4a7bd48fe0eb6c3a9fa158"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-01.zip",
+      "sha256": "b9ac60cc3ffc1e16db96ca2314120ff7531988108ebef1733ee54234f4fedf7f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-02.zip",
+      "sha256": "1ace9802f4da961db025a7b76a6171ef2c516c5307e5dee24267182f059110e0"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-03.zip",
+      "sha256": "35f0068cc41887ea11960c4bb10e251a404fef5ad4cb4c88699cc2419b6bc38b"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-04.zip",
+      "sha256": "ed6f0a84d1b2ed8f73fbdd4df10703e2ab49864fc4d657b0d8a9464a49dd4a29"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-05.zip",
+      "sha256": "2f278ad3ea09cc42e577ad7185de74391a1eb09b9d9836d375e2c540aef1667f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-06.zip",
+      "sha256": "19bd435cdf58b426642c24a0df3b5fa755433f52a8c39f05dc5cfdeffa453aa0"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-07.zip",
+      "sha256": "ae9ebc03dff2bdeb805a1401b5cf1256b2b84283f5f9d92b1f454f33b223f499"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-08.zip",
+      "sha256": "599daa607ff593666036fe742d8272de6e0e9d284cd7d41d6585cf53baa20ca2"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-09.zip",
+      "sha256": "7849f82af86aabcb9a79f64d0527480f22117656a68f98280fe8b840a6ee1339"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-10.zip",
+      "sha256": "bbf0ef273c80f696ed9eb129a257812162487486692f124b9631ec38a924f6ae"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-11.zip",
+      "sha256": "26f1a2870f57925303edcf75581f0a33ff5e145c2126e15afc5fc1b400522428"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-12.zip",
+      "sha256": "5377bec9e6dc04027717836cc1c2a3789da4e4122d57e8395265a0414b766b7c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-01.zip",
+      "sha256": "bf673f3d10804a951e8bac56dd2473486f113025971d43ebe5258ec40f9bfeb3"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-02.zip",
+      "sha256": "655ff5ac0fc570956756944c7afef4895c9bd149342f1e437de97292cbd1fe22"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-03.zip",
+      "sha256": "8138642b757ddf5a42207130277be4569afb4c581a0a1817be9f5f35a4415498"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-04.zip",
+      "sha256": "4bf3ca3574e0075c1b79f5b22c4253e26f6260f3621943205e3a8016c4c12318"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-05.zip",
+      "sha256": "1d607e3b26e6886ba742477bc97687f0b86c4c26ac564325dc5f1667e0362d35"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-06.zip",
+      "sha256": "7dba8642e56641fca2c7f3f363050ae88bf0d6c87d28e14b747fbd3267d4d3a8"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-07.zip",
+      "sha256": "920aacb84b2745ee8f31806a753cdc5b2d672e6814d9c50c0bf524ad45eb5611"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-08.zip",
+      "sha256": "8d8465eb4c8a4fd05ebc0126e4c14a217edb2039441546bf095229e975268de6"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-09.zip",
+      "sha256": "0a8118b3601f18ddad04a8afcf887fdc01661f66824a0ce49e0419be1f97f907"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-10.zip",
+      "sha256": "e3dcb9fe9d70fea19dfbdc5294044da69b9061c6f7411e99468825fac1ce8d61"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-11.zip",
+      "sha256": "0675e55056748489b8750cf6088a666f65dd4fd932d7ca5bd30491f5996b5f3d"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-12.zip",
+      "sha256": "b072f3147b3e390c81dcbf35830a12ff7d53a73236aa44a9eea78199502529cb"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\BTCUSDT-1h-2021-12.zip",
+      "sha256": "6f48453d80e4222086ecae9ddddf701402b0ca591171e9ae4ca5ce98813612e7"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-01.zip",
+      "sha256": "b03860574c80a3d7c58fce3afd24bd9e7d72d29ad8538adf00d9fdef78a8e0d5"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-02.zip",
+      "sha256": "fc03caff19988fb80d5b1dbaaf18839a25d28454925e5f5aee0a919f750623c3"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-03.zip",
+      "sha256": "7f9d6033c1726a5afa377bcb5c514caa5a83be96f812fb11371d5fe06311d628"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-04.zip",
+      "sha256": "6673291c1e33cf5981f73da458c266a75761d6a20b5eeee870b3c7bff925f910"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-05.zip",
+      "sha256": "23e180c67ba5f89cfd02416561efb35a14481a5dc984ebf061f1534b31d5baa8"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-06.zip",
+      "sha256": "10ea39d94c31e514023010078383f22a0eb98628897a9f2a6a7a1b1941da435a"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-07.zip",
+      "sha256": "baafc36bfebd44d4356b8c5cae3a92dba09e03a841e7ef13a358ebe6960e4903"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-08.zip",
+      "sha256": "1925c38ceee17ea2142ce019f360db7c8549bc39998bb1bd63fc2027df5712bb"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-09.zip",
+      "sha256": "9483f95974442901ee8a277d1eae52af4dd70010c6fb4409d616990685a96158"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-10.zip",
+      "sha256": "9804dbd86adbd447d60edf955fd668de3e426fa3c6596a13d69ae539a2549864"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-11.zip",
+      "sha256": "9ff271bbd7bf9a1cb1fc271776a086f66ae38d489a5210ecd3a15d453732273b"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-12.zip",
+      "sha256": "321ea021c1d07ec31f5f029aa3e55c94f56d4595360b20027a004b7dc3083630"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-01.zip",
+      "sha256": "74e6f880fbc39d87fd27a248c79f761572f2ecb67560e2346d28460d8aac8228"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-02.zip",
+      "sha256": "f15d23370f252082d8741819800b82f62ac8bbc9001b53ab6abb5d65ccb3ed3d"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-03.zip",
+      "sha256": "6c7ccf6e60ccf5b06905b3c7b82d6d53009105208f93621154de621f2642f251"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-04.zip",
+      "sha256": "c12b3fc18d15bb91005493e6afedb49a6c776ff821e7fe607c87f41f7747d70e"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-05.zip",
+      "sha256": "ca28c2dfcdadb7b7e4b7e82e12e8adfff0892447594235a04f8df1952124ffcf"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-06.zip",
+      "sha256": "a4d224d8558feb10d7d9e08ca7d970cf8879659257e876861dd398d52ae5da46"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-07.zip",
+      "sha256": "0ce8be53516729ebfb7fe4b7f4d0c45c118247d41484baa29e5b770f6a7daa96"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-08.zip",
+      "sha256": "fb077979ed1b31ed6532728c9ba2c0eb1f66a9d16c9ccadc69c64461d63fc25a"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-09.zip",
+      "sha256": "273e01ef7c664bdbe750fad4ed92716ab18bb298b26dee86b1fbf4a8bb09a29f"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-10.zip",
+      "sha256": "507040896ca3cfec2a70aa7206e592f3597447f5e24d3cf0e56bafd586f6249d"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-11.zip",
+      "sha256": "079a2b1817b8a94aa2f8187a2fbcc77cf61e8a92615459fceae667c8f69fccd3"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-12.zip",
+      "sha256": "908aeb683f82c557a4f032cdaa9d472b2821282803f62fe7a8603c82660b9bda"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-01.zip",
+      "sha256": "759f86a22dadb455c87a3f90f6a9134c73d24a55a7596f0b96e193b5d45cdb49"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-02.zip",
+      "sha256": "edb8b7e0174e386accbdf09a022192ddadf3cc0cb874fc079ff38bf808b3be88"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-03.zip",
+      "sha256": "dd72fa2fa1cafeef6f0b4f937b8388ef7f88b84e95ca13e15ce9d4ea3fcec86c"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-04.zip",
+      "sha256": "98d2e92206505233959a467018ff1d094f234ee875a4ef3306c86f3a81bba793"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-05.zip",
+      "sha256": "4cd99fc326ea26513e995e09018a6303ca51581503dd01b7c79188f8fea100fe"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-06.zip",
+      "sha256": "f725086a0492f3a8be3234413fc6902d8191a4ed074c5a15d4bf0e53d8f37efb"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-07.zip",
+      "sha256": "1841595033d00f777e1fa1229a30d121e8953deee29c1150d9ae7f0c650604f3"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-08.zip",
+      "sha256": "445f615d788151be98e4d021ba11ebb29ebc26ae2fe2ae6aeedc3e1ac0c7afab"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-09.zip",
+      "sha256": "cea573092cc212d76601450db3abe4dda8a801ae8cb770df771352ff4779e2af"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-10.zip",
+      "sha256": "d9e8037e4548658b9e6827e92d358188c645de1f52c9f74287c9e711a71a201e"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-11.zip",
+      "sha256": "528ecd74cc4a5eeaf9cce05a93c80a4c54f988270d0e9ef0b67d6f0e2e005c0d"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-12.zip",
+      "sha256": "8ad10135afb8ace28b881ac893c1ae2ee2b9ba3c6ca2b613d057b0608909de01"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2021-12.zip",
+      "sha256": "bf3ce484faf41d7dccfd38c5cc3d8de34d8297df30ab10784e874cc10fd1b310"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-01.zip",
+      "sha256": "22ee19079b620f5c6d820e7d7f8bafa7fde866d89bd664863b8bd527749c12cb"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-02.zip",
+      "sha256": "fa95088258a905c79ab79e8984d2f6f66933ec2e814dbab4ef9da89b01ab484a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-03.zip",
+      "sha256": "4cf0883bc07f4ed4cdd3b0d8c0d166b4d15d21e666ab752f9f44401af4d6172f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-04.zip",
+      "sha256": "57e2776cc68b3169fc9f8632dad67278f470cd453407a8ebe6c87963c8a31357"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-05.zip",
+      "sha256": "bced8a5013d09742b96682e6fd01ad4456213515a03d7586ec2b1f2689af5255"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-06.zip",
+      "sha256": "0cd0708f8903829eb46f98cf60f4b2516c986e1ccddf6620a5912b48e16baf93"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-07.zip",
+      "sha256": "29d58cce0cd45f74c6a112039835c6d9ee5a7e60e7c38c2503beb7930453a4fe"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-08.zip",
+      "sha256": "6f4f0c6c84c05694b4b4a5c085776730fd4059723eecd98ee6ffeb3fde4da811"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-09.zip",
+      "sha256": "d62cd4e13009de37add446dc4f63ead4c56dcc4955a1e60f6726bcadc5a68fa9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-10.zip",
+      "sha256": "ad9efed10d4ca1567b865d7a158790977cec1b925395634217069df6696c8bc9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-11.zip",
+      "sha256": "8febe5bec1a029e993bbf27490761f8c47c32849bf7dd13441b2b2f6ec1ffb51"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2022-12.zip",
+      "sha256": "4218c78331bcc4dbeb5768fa112242a880971c1f2cfd1d3f32aaa26ca34069af"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-01.zip",
+      "sha256": "05e3df32f28d0d50f4c5a280adee9368b4a66fc68c6ddca1b3277087ac0d19f5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-02.zip",
+      "sha256": "5227accd9aaa59f71f5e682abffb58be5f99573ed208ab968b1704c81ac11345"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-03.zip",
+      "sha256": "ab022adff9b853d2f33cf80154e77c770f57c3392f0bbc36564b2e2cdbd0e872"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-04.zip",
+      "sha256": "2931039d26818edc65d4faefba84945fd1ba52989dd58fb127dc3cd7a12c7fbf"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-05.zip",
+      "sha256": "5d026fece46df86293054c8c56c2c8de575d30161b82979b11831831217a246e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-06.zip",
+      "sha256": "3ffdde6f1dc9c3c065d77ae43f3ba64d19d4cb76512d4bc1d541933d4fb2e6f7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-07.zip",
+      "sha256": "0304baed9fd407293a8a8040b30a1b68bd344803b630d33530375b421733a930"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-08.zip",
+      "sha256": "516a8f50631c6ede6a9642f6d1590b6a22c33ba09935501d2ace8dc1396501fd"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-09.zip",
+      "sha256": "3fd9df6fd1eef33cf5fe625c27012359bc6d64a68c109305d7b44a0354f533c2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-10.zip",
+      "sha256": "03105cc140150bffca834bcccbddc6cfee245e079d2df1759653243bd6e92448"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-11.zip",
+      "sha256": "8015d2997f8d5e757ff3707ee87800ca30a74da0129daa747b64117f07bcc186"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2023-12.zip",
+      "sha256": "8f02fdd2a2da261bbf13ab301c74bdb57fae005f19d5088e9ece5f8824c1a2a7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-01.zip",
+      "sha256": "3e0d30870672aa8f0f937881056e3cfd55913ae5c780cd50b33f2763aa0ba58e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-02.zip",
+      "sha256": "daf1e4901e3d6436d82ad60f90d007eb5300be8047cfef121007203a7212cde6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-03.zip",
+      "sha256": "711dcaf2a341aedfd06447b4117b540f60adb0784c5e64a313c718e4cf092bc3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-04.zip",
+      "sha256": "6d220b8e2815362a11d294d35dbca28568370d8295351937eceec10f2b359b85"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-05.zip",
+      "sha256": "aef8c5fdce1493fd570b5829a72f2f17c7e459483390f25544d16c2a30be592e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-06.zip",
+      "sha256": "43fc4473820d1fb4fe340d1b1951a87555f6841aa352e684fa95d6adffce04c6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-07.zip",
+      "sha256": "acab0593c1452660ce74a6c239fb215c1192b0a9c6e8c1689e6495de40a0174b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-08.zip",
+      "sha256": "7003d29a43dd5f9357f838da8766834954939e22c1d80af682d9f33984f67b71"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-09.zip",
+      "sha256": "6ef23b02392b481ef9c3855434bf3644289fb6e228b4f7d9a0dfc6d3cdff1116"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-10.zip",
+      "sha256": "26db65ac8020d80ece35df79c254c5f7e24427529bcceeb2972748c4fe2d2707"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-11.zip",
+      "sha256": "e1b19cccfe2cdcba48b022790789b7b01edd86c075f39bc152e44c267d43bd51"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\BTCUSDT-fundingRate-2024-12.zip",
+      "sha256": "069409f525ebf6370ee1c7defe475167de4b97284c5ac8e68768652968cd3dc9"
+    }
+  ]
+}

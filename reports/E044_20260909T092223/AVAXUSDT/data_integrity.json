@@ -1,0 +1,538 @@
+{
+  "symbol": "AVAXUSDT",
+  "start": "2020-09-23 07:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1621425600000,
+      "open": 28.406,
+      "close": 20.995
+    },
+    {
+      "time": 1652270400000,
+      "open": 37.58,
+      "close": 27.96
+    }
+  ],
+  "funding_events": 3288,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 9,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2020-09.zip",
+      "sha256": "0e481a1e50497d6c8cfce26ee80879a30893d2448e998d73df153ece2a8c9620"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2020-10.zip",
+      "sha256": "f54e405d43ecbd3725d021164bbdb77cf1595d4e34a4aedc5def8eb97ec0863d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2020-11.zip",
+      "sha256": "483372872825437dcfd641944754292a21dbe6e30c54b931bda39aa2724d409c"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2020-12.zip",
+      "sha256": "a76008f30c04f2de59c1446f60634510a0dcfc63c2a1a1369794c7c870c20fb7"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-01.zip",
+      "sha256": "10847c0ac7ca17752b91db6156301465d183816ff5c86f2601689aa740ded1d2"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-02.zip",
+      "sha256": "adcdf646ca2b4110cb77c1a54fb59f22a92d629737746e4893db281563b26db5"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-03.zip",
+      "sha256": "3a05cad628aa202a2c71a619b2fa108562c9f2304c4e402d39405f8b1c26633c"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-04.zip",
+      "sha256": "32a90a23c98a3db9ae44f76a3303d147dcaf255526c821314f23ce335d15b920"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-05.zip",
+      "sha256": "b7bacfc6b997711a0633b5a7927f17cac83921f3a644124b15a8ed3bdbdb4ca3"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-06.zip",
+      "sha256": "e9f81072795aa4c5d948ac76923c190f6843806f7605788fdcae9ea847544f56"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-07.zip",
+      "sha256": "dae43fa0a08ab56eba9a06bdc4c97a7bd963c2f5b23e4e70d1ac018a02d8354a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-08.zip",
+      "sha256": "631276b27a6b238c4ce4c442907261e061f2bfc975da2169b4b8b2b04bc1e4e7"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-09.zip",
+      "sha256": "0dd5fe4341bf1304276a9b75f5fc0d7ff441c6f1c91b0834737182ebac3b7bc6"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-10.zip",
+      "sha256": "761b29a0794b1035b6342aa57334fafb68fc1594b6c3943c6d9d7a0a0fa1defb"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-11.zip",
+      "sha256": "2420a21f5d0941aeb4eaa29e26d0b38085170c45b36651e17a6f47eb14fe53cc"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2021-12.zip",
+      "sha256": "0d719df9be96b75bc868be3bd142a66aef7e3d132707d955d631c191a9984f78"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-01.zip",
+      "sha256": "dff5fac35064e5c2f500a5ba15cb70141f933b2445db68fd89cece6a684b0e61"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-02.zip",
+      "sha256": "ac01d95cb1d4679ca29ae31e78b9d4b8fc147c58112fd56e0179bedc5b1225d8"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-03.zip",
+      "sha256": "a4869228dfd2f8bb8d83d1daa7d50412e3e753fc35abc242e12e1fe5850743c5"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-04.zip",
+      "sha256": "cb0fa0dfeba8ed982a251c3d6e970dd81bd2ec8fb685cb81072fec7902955795"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-05.zip",
+      "sha256": "e64078f53a8d641f865adf77009bbc576dc7b1ae8133372744f0ae5b1b1bff12"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-06.zip",
+      "sha256": "e92ae6c929f05f7454eb8498172262d64f42626e5b5f9bf95d43e8818a3bbfea"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-07.zip",
+      "sha256": "af8bd72156f38924549d15a60b09ddf9574c8a9a6253a0ff96a96e64ca0b313a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-08.zip",
+      "sha256": "cd06b492fb177eeaef98f5220e8e9c7b7e67aa67b80d7a7d26ee33fb057a295d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-09.zip",
+      "sha256": "556864d134a71de56d9bdab5cb98a314d3c1738b02af1ae635fb7245a5643252"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-10.zip",
+      "sha256": "b529a467bb664873bb66230a08404e4c70f1f5b9d6f20d97f8c47b57ab131f86"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-11.zip",
+      "sha256": "07fbe4dd8b541078f5d814d3c50b13a17c001b93ba1c40c1e447182fdcb1964d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2022-12.zip",
+      "sha256": "f5e49a5fa406726f409784788b39bb207c948aeef799377570537d80e8725a98"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-01.zip",
+      "sha256": "8e0ad6459e213a766470245f5c3018e1505596cfdf941109c6d77534cc8a04d3"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-02.zip",
+      "sha256": "3bafbc968a3489bdd600bb871b52b970dfa0d75fc5a113cbac279cadb5db8c03"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-03.zip",
+      "sha256": "091b118413004d06396109e998bd79ad2067f8f4afb826931f6f71c4815f4336"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-04.zip",
+      "sha256": "04c5a60475a3d876bf1dfd9e5ff11358208cafb2fbd8749dbfead6541bfb3ab2"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-05.zip",
+      "sha256": "f13c87ce247268803ff83d04686ef6bf35edda23a78f81435e97f718dc11f257"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-06.zip",
+      "sha256": "3a1ed3a3300b311c97443e38891b7b10aa063e999e8690d6edfff47b12b47ad1"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-07.zip",
+      "sha256": "dffd3198f43bc00598a11d764a9efb38388dc524a0ba4fcbfe23c52c73d529d1"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-08.zip",
+      "sha256": "5d259aa9d909dbeb14c8758036642250e4f185d4db263242629669f74905bb6e"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-09.zip",
+      "sha256": "4c6d59f80137e13b2f8fb4a051bc8cbcb4593ed7a4a7a191b70cc953eb988427"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-10.zip",
+      "sha256": "062e83e5cf97922340b3fe3bf1fa9c71537dffe95f862afc37d1bc0d024406a3"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-11.zip",
+      "sha256": "eacfb37596b54836f55e0f0e73c4e7d31fe43b05de0a4ae19090dac23c56792f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2023-12.zip",
+      "sha256": "b6efcac9717241fd25c073889b79f973056d39e1f4f06cdeb0df9ec93cc613cb"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-01.zip",
+      "sha256": "4ce9201113b148b1aa786c08503066de74bb1b83d4b8c3f3d71f2f5878494aa7"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-02.zip",
+      "sha256": "fd15a880083ac32e78af8879a66bce0b64fd624c6ed97f9a13877b76dfa4e723"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-03.zip",
+      "sha256": "5a02732eba2cfcf8279efc853a7e3c24a089149dc2b018d612af1a4a4e9799d5"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-04.zip",
+      "sha256": "0b4f111fc4732dc3e47f7cfc04a2547fcac7ba38e5ccde0da5ab51593b47ea9b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-05.zip",
+      "sha256": "d2ecd49d2983f3a50ff9a1a3ff5f30f41cb48d54d4ae58e3279e4de462c3d62f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-06.zip",
+      "sha256": "4bc6dc7cf99607f166addd2d50de558d83b5dce4681d8a1b2dcac5b8d682e934"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-07.zip",
+      "sha256": "082a3a81b17553745109a7d0255b63cd16fa82b1aa1658f07eda9885e7495229"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-08.zip",
+      "sha256": "ba130191d273509dd6d198f4872a8467de5da51dd8261cf8aad64d2f8cfc8f5b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-09.zip",
+      "sha256": "2d262e4e3fb08f8fdfa66a5d0556d2cb0dc90bd373bd5f9d3c52a286a5208d37"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-10.zip",
+      "sha256": "26e9695ff1240db2e55b470eb03b7513e0aa419fe64c21e5ff0d3cb00e2bd6d2"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-11.zip",
+      "sha256": "ae174ce29c78660acd502dda2d9d6099a97da38854728802d2b8aaafc1d824d8"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AVAXUSDT-1h-2024-12.zip",
+      "sha256": "9de45a59308307109b1a0356fab9a317685861e9e4012e33d2cb703d094ded51"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2021-12.zip",
+      "sha256": "23f8f328879e14c241fb2422f9a23c990da97725d9f524e3ca0233e3741de371"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-01.zip",
+      "sha256": "f4756b8f1313f35b738c99ffcbea22dd15de788b1eb79587065b796b6c1d0224"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-02.zip",
+      "sha256": "2d269b2d6756d744e36fc83913bfbe931f67c4c88eda257cd2c13482695d10c7"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-03.zip",
+      "sha256": "2348f6277dee9051fee623673e0af6cbcd84e2cc037ed0b8ce2716834221222b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-04.zip",
+      "sha256": "8b93a30598fd21c28a90ff678e40ec9228562077dc5d1300f3fe31cf05d914a1"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-05.zip",
+      "sha256": "7abcfaab2524817dbda6a4b4eceb32b849ee2a3dba86060d7bfa9c6cd28dac38"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-06.zip",
+      "sha256": "1fe1bc846d28fda8cdb54f9b8a8e4780b9b967fd9859c5134c338b852376886f"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-07.zip",
+      "sha256": "e344c99a4c48c09e7e610acaaef52c87af60b4d19b5d3ede06bcf8ba46ea04b2"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-08.zip",
+      "sha256": "dbe54bef45dc03ac135aae883e4a94b1a6b1a7a52b31f142e179d4c0990eb908"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-09.zip",
+      "sha256": "a162e6513510e49d1fc73e806f19e6ed8f7a9c1e6a5c12b36e915e913637ca64"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-10.zip",
+      "sha256": "6acaf7babd30c78fc6fc6561c171326af07e5ad7f429f7acf3b15660639b2a3d"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-11.zip",
+      "sha256": "8c6d6d39db702d47bb215994c3e3d2e97c032504ed078dcdd071af16492003c5"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2022-12.zip",
+      "sha256": "dbcbab63f842d16852b9419e2063c163c93c1c04c591ae90d67e5ca956fdaa4c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-01.zip",
+      "sha256": "e81b85006dbbe9698fe69dcc77a1eb8e802e5680c1d49579b64de55b6ef63405"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-02.zip",
+      "sha256": "6352a2c8bd2c94c4f7347cda803823ea45b374a3af7ecb22d0257fee595ed7a6"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-03.zip",
+      "sha256": "7a24cd7e0a953ea5c1e9d3c32bdd9ff55ca13f34bb28304e7d486ed87b14d376"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-04.zip",
+      "sha256": "b891a20cce24c2abd0da2133c12fc77028c05587e985b0afae574c6734dd4485"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-05.zip",
+      "sha256": "5b9b68841ca1c08c84e33b83d17b802ccf46f5a0c472ebb94143aef0acf7d905"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-06.zip",
+      "sha256": "569827bb795263410fb9d93ed50744d6f266579616b623964102d84985647574"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-07.zip",
+      "sha256": "692a1cb6485ff8598991d3014df262eef9b54420906aecef1451a09145ced343"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-08.zip",
+      "sha256": "6592e8eb4c952b1d02ce1c10038f21d42e6212dd889dc63f07b9af3a07a5c3df"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-09.zip",
+      "sha256": "0ef9c4f0b08d0a18493ff731a052809cda9e6902db3e6e48de61b7a8f9536a39"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-10.zip",
+      "sha256": "af2995b7a94702a2eda520c8f66954fd213d33a755183afad03176ab0a723d28"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-11.zip",
+      "sha256": "e2c69870b93580aca8955c0853bffe7c5e21f0a0d1844efeb4cc333eff3fe375"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2023-12.zip",
+      "sha256": "5d6cbb9e7d858657aa7e25177deb8d28fd70b6b1fd332fdaf8a2b71716584b4b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-01.zip",
+      "sha256": "4ace90799c1c12439e8400b1915cb30e9cdd9953fb1fcccd03400de04f5eeb91"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-02.zip",
+      "sha256": "9f47d1ecb654beb9997d3474034c87a8ff5df1143987c8fda18793961357bf86"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-03.zip",
+      "sha256": "ce8a6c978f963be1a6ff99904b710a7d6386d254a75e625966e294856b795c5c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-04.zip",
+      "sha256": "a2e389fc5e3b88f9e336b84238246bf61b27065c183e59ede3ef88449c9a0258"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-05.zip",
+      "sha256": "c8d26dd0dc5b670edf6194e888c2bfa1f998afc0343814ae34bc1ab0dfdb38b1"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-06.zip",
+      "sha256": "95d4b0c36e4e09a20c888ee16798d3306c645b6bfc8bd6fe2a74c0b012d3e7f0"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-07.zip",
+      "sha256": "61c3d798c1cee7bb7690b2f014dfc95b73744cdfdabb8743b501a78ab10a4986"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-08.zip",
+      "sha256": "5c6af2349c454157150489dece642363a14adcebd998fe94d58f98439e8ea94b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-09.zip",
+      "sha256": "1eb907c8e3838c2ca30c955c2652fe1b30d7dc875c174c1a11865002f97dba5f"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-10.zip",
+      "sha256": "dbe9770f35ff7bc49fe93aeb9395640b04f462c1aacbc9115811a64100ed7670"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-11.zip",
+      "sha256": "cdaa87aeb690bb61ca88ae6935393b9fc3c120779dee216741a4b1c1c7533a9d"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AVAXUSDT-1h-2024-12.zip",
+      "sha256": "c1a5398a05617679d8d69d166a24376caa1eb32e711480f969cf46d8dabd9069"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2021-12.zip",
+      "sha256": "a88b012593c5b072f1e1df6edf75b76f2f786d21b08c0e937553aca8f03946f2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-01.zip",
+      "sha256": "7e32fd06427cd4d0f1d2a665d11a3d379677cf514035dea6de9c4583557ef429"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-02.zip",
+      "sha256": "07c788a3f90d13b5dd8decc9b9e4054ab1c5dc59e0d082bc76215f58a561f19c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-03.zip",
+      "sha256": "0c982ebcf93b28493abce0fa22a8c13913f7790bcf0cd862ddaa71275c404e31"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-04.zip",
+      "sha256": "bd74e2dbb12d6c884efdb139ecf1fc6b1397093335700a7fa358bd997f6998da"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-05.zip",
+      "sha256": "e9199665d684e1a7691eb0bd60a79955c740245f69456a7ca850daac30b980cf"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-06.zip",
+      "sha256": "1cd1118de840a4df6afcf1979b4ffab34db5b509000da21c4e0837b06b79a4dc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-07.zip",
+      "sha256": "fc9ac4b4fa331d8c633fdb75f883f8ca9b6b17fec1cc62a924495cb452770658"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-08.zip",
+      "sha256": "c89709e262344b176f2b2ca323cb3a0b1957527829ba068a176ccbe0d62198f2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-09.zip",
+      "sha256": "0d809284ac4a8aaf961f44d1d646f6f66b1aedcb2b9b487b09fa55637969bb6a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-10.zip",
+      "sha256": "6a185d4fdef56bbc9871685ce2496f342bb602db0076cb8919451bc39873185f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-11.zip",
+      "sha256": "2a85fba693e63a7ffd8c6de432485f3a435a7a3388a712160c846c619ea0a158"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2022-12.zip",
+      "sha256": "09c2df23d8820d9eeb95b1fc9e7c990a4c0a971776e18ccdda847a447fd90a0c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-01.zip",
+      "sha256": "b893b052e18ae9067b80fef9765475ff4b74ec8106a152bc7f86c915e84df9ce"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-02.zip",
+      "sha256": "a87358418de27cfc4fe7981847367c1690d66d0c31215f7565bb9f9b0b413fb9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-03.zip",
+      "sha256": "c635a5c1b5e4b6a8e352ff8889633230b6337a83d209bcddbbf2a1ae9f814910"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-04.zip",
+      "sha256": "47312af7109106a4eef182bf60911cbd35f8b3ebedafe9c96fd72c4a59c39c12"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-05.zip",
+      "sha256": "020b9407dd30220ea129923c83008a44c55fc6e214522c38baf306cd4f6ba998"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-06.zip",
+      "sha256": "001d6333e9fcfc88c0542cc94b2f605754d4c9b71a03cf39afd849cab48812d2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-07.zip",
+      "sha256": "33fdff77aa019f098a22c20eeb002f9fe26b2be46efa5ff2c54ed7963591fa3d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-08.zip",
+      "sha256": "5c4852ed738fde23758cc5684e9c981ea640c8b6c5a75dee3574fc7820d5eee8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-09.zip",
+      "sha256": "85c066aa09199a98fe7903eca85d09226d692eea7db5288d7a603109499c3791"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-10.zip",
+      "sha256": "b0843873b03a5681c9ad26e177753aff0a4e4df4a2ded49a20ccffc8c93e8344"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-11.zip",
+      "sha256": "8294f3106c4ef0ef64a4f6172f65acc4d10808a791c2a91e41e63346c0c7915b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2023-12.zip",
+      "sha256": "cf9549d0530b0be57e28b2ffc538c937dfe443f79791ec20460e06579f590fbc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-01.zip",
+      "sha256": "9a9c5d6c643d591204c1b37597afca3e7b1a6fd5c70f8d831bec3ea3ea14b0f2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-02.zip",
+      "sha256": "4395c18fb722657ec4e8ea1cb83f7f786ce5e71ae455bc5cde9c06534a43d302"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-03.zip",
+      "sha256": "87b586d989e3eda60955d088b110ae83cb6a01b6639c81219e21da05f5624ae0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-04.zip",
+      "sha256": "e0f5b786406efe3fd4b28f00d446facf672af97bf6787dd9606e6bdedcd25239"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-05.zip",
+      "sha256": "c070f7da85f78c24e3fb544507ee0064ed53e266401d04c4334c32e59c9be5af"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-06.zip",
+      "sha256": "4feaa04c2c4cb1e7f77625314b5a262553aae5574fe93d939ad05b48fd9cbe55"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-07.zip",
+      "sha256": "bd1f1ca09e79480a742aed2853bef9b7975a59623fe3b73ab32dd98c18b31b27"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-08.zip",
+      "sha256": "c54b41381b4b87a8e773df0315ab89ca7a2428044604021d5b08ad4bcafa1eb2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-09.zip",
+      "sha256": "728d3a29cddc13ecbd903ebcc592aaee0bb932629a9caeb4e87f630ae3cdae52"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-10.zip",
+      "sha256": "e000acd59ff7e1d89349e760ba9f3dd0051593d5671f038a5f14db69371566e0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-11.zip",
+      "sha256": "13428ba99baf9f615cbe2a56b0902e0db329652a42ab192c6814d2339126a102"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AVAXUSDT-fundingRate-2024-12.zip",
+      "sha256": "1cf56f943081eb35215b0334f280b81e58f551a37346ea0563e7fc4afbca2db2"
+    }
+  ]
+}

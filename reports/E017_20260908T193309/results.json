@@ -1,0 +1,403 @@
+{
+  "experiment_id": "E017_20260908T193309",
+  "code_hash": "2c4cb5f5e5969f5cfaed9709f5fcb4a155ac1a55aaabe6c235a499d27ed43618",
+  "git_commit": null,
+  "seed": 20261208,
+  "source": "reports\\E016_20260908T192328",
+  "cumulative_hypotheses": 209,
+  "rate_reference": {
+    "file": "data\\raw\\economic_references\\DGS3MO_20260908T191413.csv",
+    "sha256": "619f16a11e3040ec0aa1b0a5e385acb36f81bed19ea0b545ce816754acd16205",
+    "rows": 1327,
+    "missing_values": 55
+  },
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "observed_stress": {
+    "ending_equity": 44222.10637750676,
+    "cagr": 0.3460924142034534,
+    "daily_sharpe": 1.3063601941853933,
+    "max_daily_drawdown": -0.25746685263401303,
+    "max_gross": 1.4586792610018795,
+    "mean_names": 34.39698200812536,
+    "annual_turnover": 59.131183711569214,
+    "calendar_returns": {
+      "2020": 1.7403891935006226,
+      "2021": 0.2610201572321733,
+      "2022": -0.1076153293448463,
+      "2023": 0.34163480347283914,
+      "2024": 0.06885485127695357
+    }
+  },
+  "start_2021": {
+    "metrics": {
+      "ending_equity": 16894.358791883373,
+      "cagr": 0.14008026574796917,
+      "daily_sharpe": 0.6985892781785683,
+      "max_daily_drawdown": -0.2559424085123213,
+      "max_gross": 1.4577409048705088,
+      "mean_names": 39.571722717913524,
+      "annual_turnover": 61.00687297859313,
+      "calendar_returns": {
+        "2021": 0.32019037842269626,
+        "2022": -0.10761532934484341,
+        "2023": 0.3416348034728449,
+        "2024": 0.06885485127695312
+      }
+    },
+    "excess_uncertainty": {
+      "block_days": 30,
+      "samples": 10000,
+      "seed": 20261208,
+      "multiplicity_trials": 1,
+      "mean_daily_ci95": [
+        -0.0002556130717277574,
+        0.0009304450408871149
+      ],
+      "sharpe_ci95": [
+        -0.43972113471954727,
+        1.4857805515142193
+      ],
+      "arithmetic_alpha_annual_ci95": [
+        -0.09336267444856337,
+        0.3398450511840187
+      ],
+      "simultaneous_lower_mean_daily": -0.00016132849520595382,
+      "simultaneous_lower_alpha_annual": -0.05892523287397463,
+      "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+    }
+  },
+  "concentration": {
+    "weeks": 260,
+    "top5pct_weeks_share_of_positive_weekly_returns": 0.36285216278461513,
+    "top10_symbols": {
+      "SUSHIUSDT": 6323.3,
+      "DOGEUSDT": 5621.87,
+      "BTCUSDT": 5004.9,
+      "ETHUSDT": 4133.28,
+      "RUNEUSDT": 3485.27,
+      "AVAXUSDT": 3339.13,
+      "SANDUSDT": 3336.09,
+      "LINKUSDT": 3112.16,
+      "YFIUSDT": 2930.13,
+      "UNFIUSDT": 2207.22
+    },
+    "top10_share_of_total_price_pnl": 1.0597876929927832,
+    "price_pnl_without_top10": -2228.0087018022095,
+    "total_price_pnl": 37265.339909856426,
+    "funding_pnl": 9100.004009934903,
+    "cost_paid": 12143.237542284476,
+    "net_pnl_without_top10_symbols": -5271.242234151783
+  },
+  "breakeven_cost_per_executed_notional": 0.006717529296875001,
+  "upper_liquidity_half": {
+    "ending_equity": 26858.119876908848,
+    "cagr": 0.21837195507844753,
+    "daily_sharpe": 0.8221495175097658,
+    "max_daily_drawdown": -0.4838859262609333,
+    "max_gross": 1.6248999354125058,
+    "mean_names": 18.41006289308176,
+    "annual_turnover": 55.86780658495386,
+    "calendar_returns": {
+      "2020": -0.2268924485801208,
+      "2021": 0.4837203102411396,
+      "2022": 0.26839081932422015,
+      "2023": 0.5642939429235281,
+      "2024": 0.1800820306257085
+    }
+  },
+  "long_leg_only": {
+    "ending_equity": 61495.39045490562,
+    "cagr": 0.4378174406208539,
+    "daily_sharpe": 1.0576488058327367,
+    "max_daily_drawdown": -0.6284989588700229,
+    "max_gross": 0.593375386469994,
+    "mean_names": 17.19849100406268,
+    "annual_turnover": 28.75768151762213,
+    "calendar_returns": {
+      "2020": 1.5570099515420344,
+      "2021": 1.7693604405477532,
+      "2022": -0.5694592988665625,
+      "2023": 0.751882498608083,
+      "2024": 0.15136089039357925
+    }
+  },
+  "short_leg_only": {
+    "ending_equity": 3046.727649871718,
+    "cagr": -0.2114865512573637,
+    "daily_sharpe": -0.29830234734760835,
+    "max_daily_drawdown": -0.7677327235432372,
+    "max_gross": 0.8868494482378075,
+    "mean_names": 17.19849100406268,
+    "annual_turnover": 27.6761827037526,
+    "calendar_returns": {
+      "2020": -0.02837911252490022,
+      "2021": -0.6418688829660009,
+      "2022": 0.6648641344418056,
+      "2023": -0.29852726411659103,
+      "2024": -0.25026956611230355
+    }
+  },
+  "placebo": {
+    "runs": 200,
+    "seed": 20261208,
+    "cagr_quantiles": [
+      -0.26053995810372266,
+      -0.12877872321771355,
+      0.004659080907717328,
+      0.058193889838410735
+    ],
+    "sharpe_quantiles": [
+      -1.2798970081970356,
+      -0.5426320072040185,
+      0.12537726051041242,
+      0.3799493500246362
+    ],
+    "fraction_cagr_at_or_above_observed": 0.0,
+    "fraction_sharpe_at_or_above_observed": 0.0
+  },
+  "funding_share_of_net_pnl": 0.2659101082076024,
+  "variants": [
+    {
+      "rebalance_days": 14,
+      "cases": {
+        "base": {
+          "ending_equity": 77677.16014644867,
+          "cagr": 0.5065570191770283,
+          "daily_sharpe": 1.661749922373221,
+          "max_daily_drawdown": -0.25557597612936944,
+          "max_gross": 1.711701274657467,
+          "mean_names": 34.22170632617527,
+          "annual_turnover": 34.3347212098366,
+          "calendar_returns": {
+            "2020": 2.5536453236473897,
+            "2021": 0.1791613884143155,
+            "2022": 0.16712250933359796,
+            "2023": 0.2465453402258968,
+            "2024": 0.2741527174907952
+          }
+        },
+        "stress": {
+          "ending_equity": 69507.51606549279,
+          "cagr": 0.4734561691034729,
+          "daily_sharpe": 1.576332967718185,
+          "max_daily_drawdown": -0.262444329966227,
+          "max_gross": 1.7128516353525585,
+          "mean_names": 34.22170632617527,
+          "annual_turnover": 34.32203988748653,
+          "calendar_returns": {
+            "2020": 2.5081965857791637,
+            "2021": 0.14888131093046097,
+            "2022": 0.1406585560892435,
+            "2023": 0.21668931803890423,
+            "2024": 0.24261709725110592
+          }
+        },
+        "severe": {
+          "ending_equity": 55620.19402773179,
+          "cagr": 0.4092411462096599,
+          "daily_sharpe": 1.405043467073414,
+          "max_daily_drawdown": -0.2770956577973547,
+          "max_gross": 1.7151650460943983,
+          "mean_names": 34.22170632617527,
+          "annual_turnover": 34.29315793827143,
+          "calendar_returns": {
+            "2020": 2.418799562363961,
+            "2021": 0.09044442295570199,
+            "2022": 0.08939999886049255,
+            "2023": 0.15894077261522144,
+            "2024": 0.1816985746814508
+          }
+        }
+      },
+      "stage2_gate": true,
+      "excess_uncertainty": {
+        "7": {
+          "block_days": 7,
+          "samples": 10000,
+          "seed": 20262229,
+          "multiplicity_trials": 209,
+          "mean_daily_ci95": [
+            0.00042270607157575055,
+            0.0017664788586470642
+          ],
+          "sharpe_ci95": [
+            0.5844121203292467,
+            2.3551796368294267
+          ],
+          "arithmetic_alpha_annual_ci95": [
+            0.1543933926430429,
+            0.6452064031208402
+          ],
+          "simultaneous_lower_mean_daily": -0.00010783101680746826,
+          "simultaneous_lower_alpha_annual": -0.03938527888892779,
+          "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+        },
+        "30": {
+          "block_days": 30,
+          "samples": 10000,
+          "seed": 20262252,
+          "multiplicity_trials": 209,
+          "mean_daily_ci95": [
+            0.0004803671662172804,
+            0.0017421852208549654
+          ],
+          "sharpe_ci95": [
+            0.7021535990902197,
+            2.2458348189620287
+          ],
+          "arithmetic_alpha_annual_ci95": [
+            0.17545410746086165,
+            0.6363331519172761
+          ],
+          "simultaneous_lower_mean_daily": 2.8850011946731486e-05,
+          "simultaneous_lower_alpha_annual": 0.010537466863543676,
+          "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+        },
+        "60": {
+          "block_days": 60,
+          "samples": 10000,
+          "seed": 20262282,
+          "multiplicity_trials": 209,
+          "mean_daily_ci95": [
+            0.0004410584397618755,
+            0.0018047635158201427
+          ],
+          "sharpe_ci95": [
+            0.658754515310741,
+            2.288999812022388
+          ],
+          "arithmetic_alpha_annual_ci95": [
+            0.16109659512302502,
+            0.6591898741533071
+          ],
+          "simultaneous_lower_mean_daily": 3.4879618323270876e-05,
+          "simultaneous_lower_alpha_annual": 0.012739780592574686,
+          "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+        }
+      },
+      "passes_adjusted_bound": false
+    },
+    {
+      "rebalance_days": 28,
+      "cases": {
+        "base": {
+          "ending_equity": 54040.56237491553,
+          "cagr": 0.401147364837388,
+          "daily_sharpe": 1.2785094441317564,
+          "max_daily_drawdown": -0.3744133852582575,
+          "max_gross": 2.007590695559242,
+          "mean_names": 35.07199032062916,
+          "annual_turnover": 19.4450592982235,
+          "calendar_returns": {
+            "2020": 2.3391274742862604,
+            "2021": -0.13350363368052054,
+            "2022": 0.16558094329531747,
+            "2023": 0.3973161148349531,
+            "2024": 0.14678765478305444
+          }
+        },
+        "stress": {
+          "ending_equity": 50796.37877024588,
+          "cagr": 0.3839123992634079,
+          "daily_sharpe": 1.2352710300464558,
+          "max_daily_drawdown": -0.37831225727791973,
+          "max_gross": 2.009758651930963,
+          "mean_names": 35.07199032062916,
+          "annual_turnover": 19.44061136853503,
+          "calendar_returns": {
+            "2020": 2.3209242886110784,
+            "2021": -0.14677125933798962,
+            "2022": 0.1514410564688924,
+            "2023": 0.37827826804762865,
+            "2024": 0.12961300316156565
+          }
+        },
+        "severe": {
+          "ending_equity": 44862.0755406746,
+          "cagr": 0.3499645123756028,
+          "daily_sharpe": 1.1485972917161145,
+          "max_daily_drawdown": -0.38607990102729994,
+          "max_gross": 2.0141126305637123,
+          "mean_names": 35.07199032062916,
+          "annual_turnover": 19.431236687100288,
+          "calendar_returns": {
+            "2020": 2.284720708411538,
+            "2021": -0.17280765024685873,
+            "2022": 0.12360352075354064,
+            "2023": 0.3408521260501185,
+            "2024": 0.0959239760044901
+          }
+        }
+      },
+      "stage2_gate": false,
+      "excess_uncertainty": {
+        "7": {
+          "block_days": 7,
+          "samples": 10000,
+          "seed": 20262243,
+          "multiplicity_trials": 209,
+          "mean_daily_ci95": [
+            0.00019001168890327876,
+            0.001724185087821373
+          ],
+          "sharpe_ci95": [
+            0.245008758517021,
+            2.0621953147686023
+          ],
+          "arithmetic_alpha_annual_ci95": [
+            0.06940176937192258,
+            0.6297586033267565
+          ],
+          "simultaneous_lower_mean_daily": -0.00026966729766443706,
+          "simultaneous_lower_alpha_annual": -0.09849598047193563,
+          "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+        },
+        "30": {
+          "block_days": 30,
+          "samples": 10000,
+          "seed": 20262266,
+          "multiplicity_trials": 209,
+          "mean_daily_ci95": [
+            0.00017690799697531854,
+            0.0017716393667895542
+          ],
+          "sharpe_ci95": [
+            0.24595803546508763,
+            2.0036231484702802
+          ],
+          "arithmetic_alpha_annual_ci95": [
+            0.0646156458952351,
+            0.6470912787198847
+          ],
+          "simultaneous_lower_mean_daily": -0.0002892376931763883,
+          "simultaneous_lower_alpha_annual": -0.1056440674326758,
+          "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+        },
+        "60": {
+          "block_days": 60,
+          "samples": 10000,
+          "seed": 20262296,
+          "multiplicity_trials": 209,
+          "mean_daily_ci95": [
+            0.00015825636470363042,
+            0.0018491856748092666
+          ],
+          "sharpe_ci95": [
+            0.2124997159148335,
+            2.040492834054875
+          ],
+          "arithmetic_alpha_annual_ci95": [
+            0.05780313720800101,
+            0.6754150677240846
+          ],
+          "simultaneous_lower_mean_daily": -0.00026335726753454804,
+          "simultaneous_lower_alpha_annual": -0.09619124196699368,
+          "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+        }
+      },
+      "passes_adjusted_bound": false
+    }
+  ],
+  "frozen_candidate_keeps_research_promising_label": false
+}

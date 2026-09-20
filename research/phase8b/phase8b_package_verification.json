@@ -1,0 +1,25 @@
+{
+ "verified_utc": "2026-09-12T22:53:44.962854+00:00",
+ "phase8b_labeling_candidates.csv": {
+  "rows": 240,
+  "empty_snippet_rows": 28,
+  "referenced_texts": 240,
+  "missing_texts": 0,
+  "missing_list": [],
+  "forbidden_columns_present": []
+ },
+ "phase8b_retrieval_audit_candidates.csv": {
+  "rows": 90,
+  "empty_snippet_rows": 37,
+  "referenced_texts": 90,
+  "missing_texts": 0,
+  "missing_list": [],
+  "forbidden_columns_present": []
+ },
+ "missing_total": 0,
+ "zip": {
+  "file": "research/phase8b/phase8b_labeling_package.zip",
+  "bytes": 4686627,
+  "members": 335
+ }
+}

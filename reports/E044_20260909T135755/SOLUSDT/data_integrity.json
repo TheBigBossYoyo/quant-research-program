@@ -1,0 +1,796 @@
+{
+  "symbol": "SOLUSDT",
+  "start": "2020-09-14 07:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 49,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "supplemented_hours": 120,
+  "supplemented_days": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+  ],
+  "supplement_files": 5,
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1621425600000,
+      "open": 43.974,
+      "close": 31.506
+    },
+    {
+      "time": 1621429200000,
+      "open": 31.505,
+      "close": 41.123
+    }
+  ],
+  "funding_events": 3363,
+  "funding_nonzero_jitter": 1424,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 6,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2020-09.zip",
+      "sha256": "bc926b98121dcb870999c4c8b0cdb72551bbb7ac9d6e00047bba34156fce3bb2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2020-10.zip",
+      "sha256": "5f6131a244d980d631388ee504922b2bb09848e42cf6e3e59c933679887f5975",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2020-11.zip",
+      "sha256": "348047e07a306d93694a6c6cf0273a31e4b735740759e78ec9d39678e02d53a8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2020-12.zip",
+      "sha256": "bd5f75cc091658b0794eb80777914b3d7e8940438da77980bd659a935f6bbd5d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-01.zip",
+      "sha256": "fef310549a5baf8fcdb67a2c6c97a0ec05f25dbc87afbb2a0ba0f08842a52c27",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-02.zip",
+      "sha256": "029ec118946bf80d43f27baec8a80004265134c9540e7f9a04e440e453a43f99",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-03.zip",
+      "sha256": "94eaba4252ae9189c9be07ea2d40e3f016ee924a761462303882ffc9bb4e4e4c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-04.zip",
+      "sha256": "21d8b0ffa824a3d4845f4e0103f9739a9931e4788a5da3958a0c8e4552552965",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-05.zip",
+      "sha256": "efb32d5fd15525744c959ce9685e20af8227b6104ea3b279faae0dc8d73cd4a3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-06.zip",
+      "sha256": "8fe15facd01ac0eec8d23b04bc606f2c56344c1ee2aa88c3758c07a6cfeb5765",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-07.zip",
+      "sha256": "b1d3d3064ad1c48ee3db89da36f402ba27ed8764c14f5f8725db8c2d44412826",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-08.zip",
+      "sha256": "13a75507c7c6396782ca02659d2738a668a5b16a438d239b64199f19c69f81a0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-09.zip",
+      "sha256": "11ee5441a6a3d72b10b501b1ac246bff97ee0673def1954d116ecd2b09f584ff",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-10.zip",
+      "sha256": "400e88409c92a5a01eb4c4b7b6e4f5fddfef93dd4a3d9c8f89cc35d51cc298ac",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-11.zip",
+      "sha256": "4939d7a971e30ac1d7b87c6c0352375bf8a0a539cd13bbf3e3920969a24bb42e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2021-12.zip",
+      "sha256": "61d5be6bdb0fb8007898c8f61375a83fe466cd18f1fc67c53e6f42b8b8a34d07",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-01.zip",
+      "sha256": "bbe2ad04379133e2ca7b68cb5351b5ba610523c6a0d53b4ecfd628b972165cc3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-02.zip",
+      "sha256": "36b1e2ff3ffe162718e61bb23ef84a104dc2cc5591c18cd8ce4c04e96655b84c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-03.zip",
+      "sha256": "044c37d917fea58900c8ddf4086b9fc71fcadd55215a10680e1e7461ffa78265",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-04.zip",
+      "sha256": "1e4464fee6301816ff2efa7696d8cf53f34684b9b60616cf6af26e8cd75cfefc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-05.zip",
+      "sha256": "6a8888b3d3d5a856d44eff5907210c30cc81fe210364f8b611726ad24b6846ba",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-06.zip",
+      "sha256": "0a550357320ba4954437b15b85f01bf0cc0c455f07f19e27ca91ddda19f1f147",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-07.zip",
+      "sha256": "05fc6f96bc940ae0d290b1039387c3a223b5159596819998563f34508594719a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-08.zip",
+      "sha256": "971ab9bee4ad830767c285d3af6df5357af1bfa2ddb084fa49596cf9b5276036",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-09.zip",
+      "sha256": "41699bac620ac3f15318dd9238392fc5782d4321660e5c7986925eee3d172381",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-10.zip",
+      "sha256": "bc6bb18da0f2e30171cefad3d2df55a70d12e7eafed7b566225ae67e737be6cd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-11.zip",
+      "sha256": "e156bc7231bfe31e21aaf5628260062aa9d59184ef075412ab0fa546dea1fd80",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2022-12.zip",
+      "sha256": "8f1fa76f20f0cd161f238d4e7014274969df3d3ab5e8b6c9e1dc8327e02ec2d5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-01.zip",
+      "sha256": "0d7bc47dc3b49cbadd29274b63c02af8f23af40fe241412d357903ae945aa79d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-02.zip",
+      "sha256": "1dc1a4ad1c82935fbe8b4c218f22087470b3a20cc2c1a394574ad1587ba5a828",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-03.zip",
+      "sha256": "c41bd78088a2bb8547f1b3bf5c89fcadd7606397d2a74f0961c47cf6754f8f8a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-04.zip",
+      "sha256": "34aca0062513dbb81e99b4b6e2e0e2dd29b453e33c629c8cea1beeff9faf7543",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-05.zip",
+      "sha256": "4c5b1305d4395bb122f85b60520db8995c810357a2c189158b2beae2d116b1bc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-06.zip",
+      "sha256": "023229af2e8a8900ee79ba088837b174acc52512f2e8296b02aa279cf97a82f5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-07.zip",
+      "sha256": "e45b525229f485463a33f3c59f4dc3eafa2de1f9fbca8f2126cd3c074f62b6bb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-08.zip",
+      "sha256": "d509bcda20054981e3f738ef1a33090dc12ddaea5593932e2545a285ee4987c9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-09.zip",
+      "sha256": "99ac300173c437de0b735ca04ff7ac55512431eedd381795f2ba069edd9020c6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-10.zip",
+      "sha256": "e9046fe166dd07107386312716030e66aad44136d40712b17b976ff9dd905bef",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-11.zip",
+      "sha256": "96c7b5324c80818622477b6d3fa71b82f62ae2266ec42f763433a11eef7494bb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2023-12.zip",
+      "sha256": "5d7fea512037fe238b6133df8bec56231cf086b73a44bdff89e5dcdfb991d62f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-01.zip",
+      "sha256": "eb8a8dc7685761609f19b403db0eb6655d757f720f71da9b8c1ab638ddfc85b9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-02.zip",
+      "sha256": "7d87e385b8befd2c3fd6090475904fb6d28ec65d1afb1f1892570178bfba54ac",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-03.zip",
+      "sha256": "b679c264fc7d70ccf70d9fb25481bfed485a01c2cd439b8b698933b9398119c1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-04.zip",
+      "sha256": "02fdeb42d8293094fab995cca7b33ef6fb18714d173e6da9e894119c734557e9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-05.zip",
+      "sha256": "b22668d0d3fc2fb430efd5cca654dcf167b5df2d8997401f49d8e3f9ba43b3c8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-06.zip",
+      "sha256": "80e770b293faa4ae6da7d149df3e1912da67bb121b58123260c7f4b755f4809d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-07.zip",
+      "sha256": "da7072219268b51067972bf51032440ba3214d63df037180bc0c9e33a77ffa8b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-08.zip",
+      "sha256": "08bc16fd25cb4b024ac2f3d187d4ed5426014e48808ea9523b9792b141dca34d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-09.zip",
+      "sha256": "c99c50b8413b34318d5aa778b890d8d06d5c333c4db101570c1c9ee7e35b6451",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-10.zip",
+      "sha256": "ae94c6ea35e4b98c5a2e41a32a9d75e18793ced7c3e55c9e524a3e0c43ae75d7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-11.zip",
+      "sha256": "620f261485e352e46458f683129cdf5141d2f70222a70b65228d6473f884ca81",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\SOLUSDT-1h-2024-12.zip",
+      "sha256": "bdb5c900670da54eac3653f7be69529dbfeb13574aa6072049ff1c419d7f5567",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\SOLUSDT-1h-2022-02-26.zip",
+      "sha256": "24fbcb67b854564ee8f0d14028b277c272083c59ad2fd8bcbc8d496712fb57dc",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-26 00:00:00+00:00",
+        "2022-02-26 01:00:00+00:00",
+        "2022-02-26 02:00:00+00:00",
+        "2022-02-26 03:00:00+00:00",
+        "2022-02-26 04:00:00+00:00",
+        "2022-02-26 05:00:00+00:00",
+        "2022-02-26 06:00:00+00:00",
+        "2022-02-26 07:00:00+00:00",
+        "2022-02-26 08:00:00+00:00",
+        "2022-02-26 09:00:00+00:00",
+        "2022-02-26 10:00:00+00:00",
+        "2022-02-26 11:00:00+00:00",
+        "2022-02-26 12:00:00+00:00",
+        "2022-02-26 13:00:00+00:00",
+        "2022-02-26 14:00:00+00:00",
+        "2022-02-26 15:00:00+00:00",
+        "2022-02-26 16:00:00+00:00",
+        "2022-02-26 17:00:00+00:00",
+        "2022-02-26 18:00:00+00:00",
+        "2022-02-26 19:00:00+00:00",
+        "2022-02-26 20:00:00+00:00",
+        "2022-02-26 21:00:00+00:00",
+        "2022-02-26 22:00:00+00:00",
+        "2022-02-26 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\SOLUSDT-1h-2022-02-27.zip",
+      "sha256": "4a3f57259893da63acf2978799f3fb28bc8130ca95f23fe08ed11eaaff1840b1",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-27 00:00:00+00:00",
+        "2022-02-27 01:00:00+00:00",
+        "2022-02-27 02:00:00+00:00",
+        "2022-02-27 03:00:00+00:00",
+        "2022-02-27 04:00:00+00:00",
+        "2022-02-27 05:00:00+00:00",
+        "2022-02-27 06:00:00+00:00",
+        "2022-02-27 07:00:00+00:00",
+        "2022-02-27 08:00:00+00:00",
+        "2022-02-27 09:00:00+00:00",
+        "2022-02-27 10:00:00+00:00",
+        "2022-02-27 11:00:00+00:00",
+        "2022-02-27 12:00:00+00:00",
+        "2022-02-27 13:00:00+00:00",
+        "2022-02-27 14:00:00+00:00",
+        "2022-02-27 15:00:00+00:00",
+        "2022-02-27 16:00:00+00:00",
+        "2022-02-27 17:00:00+00:00",
+        "2022-02-27 18:00:00+00:00",
+        "2022-02-27 19:00:00+00:00",
+        "2022-02-27 20:00:00+00:00",
+        "2022-02-27 21:00:00+00:00",
+        "2022-02-27 22:00:00+00:00",
+        "2022-02-27 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\SOLUSDT-1h-2022-02-28.zip",
+      "sha256": "ea4f7d6d0dbca651066ef3e361e5457b1eba91ac077a942f48344a174abee40e",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-28 00:00:00+00:00",
+        "2022-02-28 01:00:00+00:00",
+        "2022-02-28 02:00:00+00:00",
+        "2022-02-28 03:00:00+00:00",
+        "2022-02-28 04:00:00+00:00",
+        "2022-02-28 05:00:00+00:00",
+        "2022-02-28 06:00:00+00:00",
+        "2022-02-28 07:00:00+00:00",
+        "2022-02-28 08:00:00+00:00",
+        "2022-02-28 09:00:00+00:00",
+        "2022-02-28 10:00:00+00:00",
+        "2022-02-28 11:00:00+00:00",
+        "2022-02-28 12:00:00+00:00",
+        "2022-02-28 13:00:00+00:00",
+        "2022-02-28 14:00:00+00:00",
+        "2022-02-28 15:00:00+00:00",
+        "2022-02-28 16:00:00+00:00",
+        "2022-02-28 17:00:00+00:00",
+        "2022-02-28 18:00:00+00:00",
+        "2022-02-28 19:00:00+00:00",
+        "2022-02-28 20:00:00+00:00",
+        "2022-02-28 21:00:00+00:00",
+        "2022-02-28 22:00:00+00:00",
+        "2022-02-28 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\SOLUSDT-1h-2022-04-01.zip",
+      "sha256": "186d8581e36ce03557fc0e517c2923a0c7cb6f8e5ecb47b9e7086f6bcefd7971",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-04-01 00:00:00+00:00",
+        "2022-04-01 01:00:00+00:00",
+        "2022-04-01 02:00:00+00:00",
+        "2022-04-01 03:00:00+00:00",
+        "2022-04-01 04:00:00+00:00",
+        "2022-04-01 05:00:00+00:00",
+        "2022-04-01 06:00:00+00:00",
+        "2022-04-01 07:00:00+00:00",
+        "2022-04-01 08:00:00+00:00",
+        "2022-04-01 09:00:00+00:00",
+        "2022-04-01 10:00:00+00:00",
+        "2022-04-01 11:00:00+00:00",
+        "2022-04-01 12:00:00+00:00",
+        "2022-04-01 13:00:00+00:00",
+        "2022-04-01 14:00:00+00:00",
+        "2022-04-01 15:00:00+00:00",
+        "2022-04-01 16:00:00+00:00",
+        "2022-04-01 17:00:00+00:00",
+        "2022-04-01 18:00:00+00:00",
+        "2022-04-01 19:00:00+00:00",
+        "2022-04-01 20:00:00+00:00",
+        "2022-04-01 21:00:00+00:00",
+        "2022-04-01 22:00:00+00:00",
+        "2022-04-01 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\SOLUSDT-1h-2022-04-02.zip",
+      "sha256": "9fe6fc49767488828f44db95d52412dcefd2b2b28924a92ab5461590fa80844c",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-04-02 00:00:00+00:00",
+        "2022-04-02 01:00:00+00:00",
+        "2022-04-02 02:00:00+00:00",
+        "2022-04-02 03:00:00+00:00",
+        "2022-04-02 04:00:00+00:00",
+        "2022-04-02 05:00:00+00:00",
+        "2022-04-02 06:00:00+00:00",
+        "2022-04-02 07:00:00+00:00",
+        "2022-04-02 08:00:00+00:00",
+        "2022-04-02 09:00:00+00:00",
+        "2022-04-02 10:00:00+00:00",
+        "2022-04-02 11:00:00+00:00",
+        "2022-04-02 12:00:00+00:00",
+        "2022-04-02 13:00:00+00:00",
+        "2022-04-02 14:00:00+00:00",
+        "2022-04-02 15:00:00+00:00",
+        "2022-04-02 16:00:00+00:00",
+        "2022-04-02 17:00:00+00:00",
+        "2022-04-02 18:00:00+00:00",
+        "2022-04-02 19:00:00+00:00",
+        "2022-04-02 20:00:00+00:00",
+        "2022-04-02 21:00:00+00:00",
+        "2022-04-02 22:00:00+00:00",
+        "2022-04-02 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2021-12.zip",
+      "sha256": "d5fee35101c3e4ea6741652e71875e810f0da4c6af9263958a9dc5fbca729d7c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-01.zip",
+      "sha256": "6c85571fc2e2172bcdae45cdc3a46e8e4167b21c61edea8888f94096e05d5c0c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-02.zip",
+      "sha256": "1531c45b25f052eb2efc81ed60aa55b6424f3598aeb516055bae44930aed7aaa",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-03.zip",
+      "sha256": "49e77a42787a5a4aed2ac0a2e528e71fe0d852c5f088867a30a07a6438737f30",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-04.zip",
+      "sha256": "679e3f7b13b456620360f7935933ea4782858cda3239f8a5a098200dca6bfb3b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-05.zip",
+      "sha256": "7f46493130fe4b34e084377bf2d92582c12be3ae5e6046a9762208bc5c1b1ecd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-06.zip",
+      "sha256": "bee6259a08db515e4bd55f248b2883615b2676ea42527a46d2eccfff8ca3f51e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-07.zip",
+      "sha256": "33912547c1207b734dbe849b9728d9e50f6a5a023298e5846bc58a0cb046aa10",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-08.zip",
+      "sha256": "48198b926de2382a54ca7b2c452e6c358653492558190170ea9b89b0de548065",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-09.zip",
+      "sha256": "60c7b2428567b97d22c00ab300a19de3e52e9e0107be95a036e2ef2ff1968738",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-10.zip",
+      "sha256": "4d137c5553bff5a2a2cba5a8702f6da0c4e7b741fa9464055a330c8df6951334",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-11.zip",
+      "sha256": "b5b44f3fbde48248b476f843567f0dce2a72a5b1d63f14d6d94527710a7c0aba",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2022-12.zip",
+      "sha256": "d1a32494d1013de7016f991afe666e5ec204735c542b50584f45464031267fc7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-01.zip",
+      "sha256": "5119096a903299268d5fbd22fb89c8503afe71b944b2b5c2895459868df26fb3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-02.zip",
+      "sha256": "2bb2d49cac17d9b397811c17e5a23a6ee79b30c7c666a997eee340828b999845",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-03.zip",
+      "sha256": "a3e5fa73282bce4cad34a3743645815590e49c4c569dd87adc0d2273fc2fb6f2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-04.zip",
+      "sha256": "c50e8d7833ed159069c4d07f12d4e723a4d5269333e6a708ab2b6b94fc9f2a47",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-05.zip",
+      "sha256": "1c6887d6ae001da3bde5465b9c43760f64297604e01bfd2697331045791afaa1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-06.zip",
+      "sha256": "18b35840c45e233e1e04d69d129b3a143e57d5d9eb74af7d5e2b718e157e3d01",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-07.zip",
+      "sha256": "2300bcbeecb2e795266e5b39d9aa35b0802a4c828dbfaf354f66bb63c22fb8bb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-08.zip",
+      "sha256": "0e2b28ce42fb9ceb8da7f8cfa12cb6c621167fc61267eb98ea36b50e38ea02c0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-09.zip",
+      "sha256": "24535d2446ea2549bb255f9b147be3b967a1411cda7e8a475a011b50bdfbbc2d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-10.zip",
+      "sha256": "e46a477e554a32b318311fd071cbdf640f77e9d595e76f2b2ee1e99240b39a80",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-11.zip",
+      "sha256": "062e5e60502dd8f85ad54c6444a99251f96b6ea6cfe3034dee2c959ab79aafea",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2023-12.zip",
+      "sha256": "fc3eb1fb13deada67d2950b662d255a00ff0ebe6afe92686decab7e559c59cf1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-01.zip",
+      "sha256": "c988b4cb56850cdf3f053ba96b58b7eee279e63032e9bce1c452910d0f17b1e0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-02.zip",
+      "sha256": "514fc731748481f1835d417231c71ef7282e01d1e75393da75923b1ffe9d4cd4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-03.zip",
+      "sha256": "20366872da87ab960bbfc7109b919caad3593654473734310b93437dbd5a6e65",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-04.zip",
+      "sha256": "43f150e5618030b6de9889891ff23d87a34829c13f2783962dc04a490888b111",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-05.zip",
+      "sha256": "d7a8b3115a3c538a79c397dd639d2099bc794f788a069040ea5c02a4fab6283d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-06.zip",
+      "sha256": "e3c6225c5f862333c87541a8db0084f0134942350f88403f3bebfc1f2c58de0d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-07.zip",
+      "sha256": "47559c98f3429f449bdc8f47b87abbc2a8c2e39060c1a11ad0ef654ff0750dcf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-08.zip",
+      "sha256": "961ffe2a2c3fcc071e4c8f66f097facb36a691adc8c1874cd939484d6950f632",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-09.zip",
+      "sha256": "37933b67e09e7620d1f047c17f77d6b5e0dd37b24eff240209584258f92ef364",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-10.zip",
+      "sha256": "de2481c7e40c6c8112ba3add3555d85b8dc042f697dd30f2e53645d0c9ad8863",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-11.zip",
+      "sha256": "50a64bb6793b458a6a575eb2de50e766d4a1d5910415a69913975ac8dc5d09c5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\SOLUSDT-1h-2024-12.zip",
+      "sha256": "f22d4b9647f12da49380515ef3fe1112e705f1d795027ab8a02f238c2221b119",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2021-12.zip",
+      "sha256": "0ea2c59cde9362715dea398bd66d3325d5bdb40c39db0370977bcad0b0f67533"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-01.zip",
+      "sha256": "f3be14b01356f33f6cbde6d12ee30311ae91fc521dc78d72a0aa39db8c295053"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-02.zip",
+      "sha256": "d622a4a5cfb461e81d9cb13ebdd34b02e2d221c2ddb8d708dc4047d2f499fa96"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-03.zip",
+      "sha256": "10d3d16d74340850c2148553261dfdad7ffeb0b705f014c869fa807a1e7ddc84"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-04.zip",
+      "sha256": "f07052472753f04eb8e7fb818cf60e90e187e712f63a577741ca7ae59c63bc9e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-05.zip",
+      "sha256": "ed42b50666e40e1489f01730f85e5efe919b9a94344e043369a459c66492a940"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-06.zip",
+      "sha256": "78249fec5212753b19ce01c2fb23ffdc3deecd29bd3ab61fb7cf70ba6c395edc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-07.zip",
+      "sha256": "ce4c96d62e020d4b3c53bc31c248e5800a4a6eb3a6809c36509238122aa02a3a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-08.zip",
+      "sha256": "1604d1993d0c6a7e37e2ff81a6944d7b5c0e81475e3fe475bdbdf0deaff4d847"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-09.zip",
+      "sha256": "673b50b2daec4a34da7d8a8095995ddbafa6f66bf8c2d499ba48f8050cf68565"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-10.zip",
+      "sha256": "d0436ed57e674ae3c00eeff3aa46f6e65c596892b80e5b6e8183d487c6ef3168"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-11.zip",
+      "sha256": "73fbada102584d8e19cb9594f04471f589ff37404b0cf64c0bd7cb4ac4d4a157"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2022-12.zip",
+      "sha256": "b9b8d803d985679959d21a55d08b14db331cf961442f8446eb18d723ea154567"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-01.zip",
+      "sha256": "12a401fc459341834a0d3c2f207d55e7aced058b62838f296028885ee2e52612"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-02.zip",
+      "sha256": "1173c36ad296e152ed9f954ce49fd65b7ffd8a03f270906a1e816fdbb7929f57"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-03.zip",
+      "sha256": "6a950dfbe4e75ce7e28a174d1432fed82fe08964053c618bec2be70f83ae6b61"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-04.zip",
+      "sha256": "88d1b03da4cd68774d846d5a9b7a9ba3d165a7b03855cad84a181820a2f7b297"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-05.zip",
+      "sha256": "b644431236540c0fa4573e96b9357077755d53440427fb2419e68272ea653137"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-06.zip",
+      "sha256": "63de6ffcbab1fec0b83807efde188fdafb06d4ed0f947c4df86d757f894d88c9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-07.zip",
+      "sha256": "7323f1cf79a8dfeb78dd7bd8cd2940a7db00ee023739430435b1cc25cecadcae"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-08.zip",
+      "sha256": "87ce0395cf9d1fa9ea4849b4811d366c1867d4159f3c1a2b4a3e0656972be2a0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-09.zip",
+      "sha256": "7a8c1135aa165e9399a274acf1f330bbf6bae594266582fc1cfc91b950f73e75"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-10.zip",
+      "sha256": "a56852237de6b69483565853858901ce7e4c611d3950d485a064bf90069958ba"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-11.zip",
+      "sha256": "1cbd9c6b802cdf035ba408c03e82aab678c2a994c2c6860386a4226ba104e252"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2023-12.zip",
+      "sha256": "debe51eb20a3b7d6093baec3b609e7a9f746c64635cfa77aa761e88e84454902"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-01.zip",
+      "sha256": "6b514b6c2bb67ff04df97d747efb9c6e4bb1bb27e889f1dc51a42ab1419a3d24"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-02.zip",
+      "sha256": "7ccaf8d60ddf07e03eba0589ec4f75abfc2a842217722aaefe996ee1bc095706"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-03.zip",
+      "sha256": "ff3041b6119af926fc55fc722332240037f1aee9b3a2db25f9cb801ba8e2992c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-04.zip",
+      "sha256": "591e7c4993e59b60966213efd938f48420cd9b63db815240ffc070ec40470e53"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-05.zip",
+      "sha256": "cdd788722e8b85fd6c9d992e7c1c767be87afc91db5b8c07751f898b373cbf29"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-06.zip",
+      "sha256": "8da6c97d67718422a5df9a0d50e37849521fb54de87cbb3b3397e441439dfcc9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-07.zip",
+      "sha256": "2585a0db933c70b62c87cac509de42ac09b98d370238c0d8c68249a20bd2b9a3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-08.zip",
+      "sha256": "ef076200aab768d33f71449957f6cd9c96c0da696708a5f561b97e7a0995e8d2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-09.zip",
+      "sha256": "7666e4d3e6ea6dd28011c508cf01421007521e98e96ea551f809836441b43ca0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-10.zip",
+      "sha256": "dbece64e8c5bc69c487cc03c00f6a4d4da2cad9152c73860386fcdc7d2ec9d05"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-11.zip",
+      "sha256": "f53a9b637d695a251200e48929a573b4bf04cc2d99d5a3a09fe7bdca622918aa"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\SOLUSDT-fundingRate-2024-12.zip",
+      "sha256": "bae83020ac2ccfa6dd8d1362d373a92b4d5a7e396cef52e78dc2e7d81e63f621"
+    }
+  ]
+}

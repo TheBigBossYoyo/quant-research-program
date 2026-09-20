@@ -1,0 +1,10 @@
+eur,usd_per_eur_assumption,minimum_notional_usd_assumption,executions,fraction_below_min,capital_eur_for_99pct_orders,capital_eur_for_all_observed_orders,status
+500,0.9,5.0,10960,0.0302007299270073,709.4443832606833,121340400.67371279,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,0.9,10.0,10960,0.7302919708029197,1418.8887665213665,242680801.34742558,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,0.9,20.0,10960,0.9889598540145985,2837.777533042733,485361602.69485116,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,1.0,5.0,10960,0.015237226277372264,638.499944934615,109206360.60634151,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,1.0,10.0,10960,0.7277372262773723,1276.99988986923,218412721.21268302,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,1.0,20.0,10960,0.8747262773722628,2553.99977973846,436825442.42536604,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,1.1,5.0,10960,0.012043795620437956,580.4544953951045,99278509.64212863,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,1.1,10.0,10960,0.7257299270072993,1160.908990790209,198557019.28425726,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"
+500,1.1,20.0,10960,0.8595802919708029,2321.817981580418,397114038.5685145,"SCENARIO_ONLY; quantity steps, split reversal fills, prices at execution and actual venue filters not verified"

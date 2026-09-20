@@ -1,0 +1,24 @@
+{
+  "portfolio_long_contribution": 1.6152743831747414,
+  "portfolio_short_contribution": -0.08417790795590574,
+  "short_side_sharpe": -0.05519724029464878,
+  "long_side_sharpe": 0.8395124793137988,
+  "short_side_expectancy_annual": -0.02103007282950417,
+  "drawdown_full": -0.5359347373158068,
+  "drawdown_without_short_contribution": -0.4820439142130377,
+  "sharpe_without_short_contribution": 0.8235450561916692,
+  "short_contribution_by_year": {
+    "2021": 0.014044993832264957,
+    "2022": 0.2902506110660849,
+    "2023": -0.24971161483001653,
+    "2024": -0.13876189802423902
+  },
+  "long_contribution_by_year": {
+    "2021": 1.0086013913631835,
+    "2022": -0.18417321433522438,
+    "2023": 0.20213424058080887,
+    "2024": 0.5887119655659734
+  },
+  "assets_with_positive_short_pnl": 1,
+  "assets_with_positive_long_pnl": 8
+}

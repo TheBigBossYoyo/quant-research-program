@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "N2_vt0.0": {
+      "eur500_sharpe": 0.7167462098715282,
+      "unconstrained_sharpe": 0.6944572242685958,
+      "retention": 1.0320955486155496,
+      "eur500_dd": -0.6707815575225409,
+      "skipped": 0.0,
+      "te_vs_vol": 0.0104987939195548,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.294802195236669
+    },
+    "N2_vt0.2": {
+      "eur500_sharpe": 1.2204785793054742,
+      "unconstrained_sharpe": 1.1980743070283038,
+      "retention": 1.0187002359918242,
+      "eur500_dd": -0.2429460848059047,
+      "skipped": 0.0356915232632249,
+      "te_vs_vol": 0.0222439330709814,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.3582223086373617
+    },
+    "N3_vt0.0": {
+      "eur500_sharpe": 0.5998854860222839,
+      "unconstrained_sharpe": 0.5796643583680685,
+      "retention": 1.0348842004209884,
+      "eur500_dd": -0.6400335828878503,
+      "skipped": 0.0,
+      "te_vs_vol": 0.0139213350900938,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.1990908247058047
+    },
+    "N3_vt0.2": {
+      "eur500_sharpe": 1.1165586206651934,
+      "unconstrained_sharpe": 1.0851663292162157,
+      "retention": 1.0289285527976637,
+      "eur500_dd": -0.2693175819890256,
+      "skipped": 0.0802778849864917,
+      "te_vs_vol": 0.028219527972996,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.318882053794576
+    },
+    "N4_vt0.0": {
+      "eur500_sharpe": 0.5848262896711609,
+      "unconstrained_sharpe": 0.5699725398416753,
+      "retention": 1.026060465708772,
+      "eur500_dd": -0.5998855138602854,
+      "skipped": 0.0,
+      "te_vs_vol": 0.0177118614748783,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.1883875939425969
+    },
+    "N4_vt0.2": {
+      "eur500_sharpe": 1.0378117692451614,
+      "unconstrained_sharpe": 0.9934663912366084,
+      "retention": 1.0446370188259255,
+      "eur500_dd": -0.2483679478027585,
+      "skipped": 0.2248261653360803,
+      "te_vs_vol": 0.0400977198102075,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.2776135939844697
+    },
+    "N5_vt0.0": {
+      "eur500_sharpe": 0.6834107781210378,
+      "unconstrained_sharpe": 0.660240666278308,
+      "retention": 1.0350934333889743,
+      "eur500_dd": -0.588762989683375,
+      "skipped": 0.0083018867924528,
+      "te_vs_vol": 0.0208005840500901,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.2541572857422702
+    },
+    "N5_vt0.2": {
+      "eur500_sharpe": 1.1684954142663564,
+      "unconstrained_sharpe": 1.129960267689067,
+      "retention": 1.034103098736471,
+      "eur500_dd": -0.220578950455976,
+      "skipped": 0.227416966363444,
+      "te_vs_vol": 0.0428354896673184,
+      "classification": "CAPITAL_EFFICIENT_WEAK_SIGNAL",
+      "cagr": 0.3115884002930886
+    }
+  },
+  "minimum_practical_capital": {
+    "2": 500.0,
+    "3": 500.0,
+    "4": 500.0,
+    "5": 500.0
+  }
+}

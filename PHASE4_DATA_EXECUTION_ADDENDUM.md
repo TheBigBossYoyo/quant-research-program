@@ -1,0 +1,7 @@
+# Phase4 data/execution addendum — before replication performance
+
+MATICUSDT was selected from2021 historical liquidity and remains included after its2024 termination. Binance announced mandatory settlement for2024-09-04 at09:00UTC: https://www.binance.com/en/support/announcement/detail/6a6de383727f4659a3050f7982e1620f . The planned exit is the immediately preceding scheduled4h open,08:00UTC, known from that notice, with ordinary stress costs and funding on incoming holdings at08:00 before exit. No replacement with POL. Keep the sleeve allocation in cash thereafter; it stays in the12-name denominator. This is contract administration, not performance-driven signal selection. No replication outcome has yet been computed.
+
+Daily reporting includes first-day net P&L rather than silently dropping it (the original E040 summary dropped that day); the preserved E042 regression uses the original convention to reproduce exactly. Primary study starts flat2022-01-01 with indicator warmup from pre2022; no pre2022 strategy performance evaluated on replication names. Funding archive millisecond jitter within60seconds is assigned to its scheduled hourly boundary and every deviation logged. Non4h-boundary events hard-fail.
+
+Source references checked2026-09-09, containing documentation only, not current market observations: https://github.com/binance/binance-public-data and Binance USD-M funding history documentation. No2025 market data read; no2026 market data queried or downloaded.

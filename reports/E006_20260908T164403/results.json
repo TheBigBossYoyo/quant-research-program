@@ -1,0 +1,176 @@
+{
+  "experiment_id": "E006_20260908T164403",
+  "code_hash": "b3edc76d1604aa8499b4e5b7c0d0e735b35d43c84c020ee558476cf0346ea17b",
+  "git_commit": null,
+  "seed": null,
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "cases": {
+        "base": {
+          "initial_capital_usdt": 500.0,
+          "ending_equity_usdt": 558.358329790246,
+          "cumulative_return": 0.11671665958049204,
+          "months": 1,
+          "indicative_cagr": 0.03747576488363302,
+          "monthly_sharpe": null,
+          "month_end_max_drawdown": null,
+          "positive_months": 1,
+          "necessary_solvency_breach": false,
+          "lowest_adverse_margin_ratio": 0.028852665925283117,
+          "total_fees_usdt": 1.3271134050000002,
+          "total_funding_income_usdt": 59.618593195246056,
+          "total_basis_pnl_usdt": 0.06684999999997672,
+          "monthly": [
+            {
+              "month": "2022-2024 continuous",
+              "entry": "2022-01-01 00:00:00+00:00",
+              "exit": "2024-12-31 23:00:00+00:00",
+              "q": 0.005,
+              "equity_start": 500.0,
+              "equity_end": 558.358329790246,
+              "net_return": 0.11671665958049206,
+              "traded": true,
+              "funding_income": 59.618593195246056,
+              "basis_pnl": 0.06684999999997672,
+              "fees": 1.3271134050000002,
+              "minimum_futures_wallet": 16.055603734652294,
+              "minimum_adverse_wallet": 15.626766832202208,
+              "min_adverse_margin_ratio": 0.028852665925283117,
+              "zero_equity_breach": false,
+              "funding_events": 3287,
+              "proxy_funding_events": 2004
+            }
+          ],
+          "note": "Indicative paired-account path with mark proxies; month-end DD understates intramonth risk. Maintenance/liquidation unverified; no eligibility verdict from these returns.",
+          "survives_additional_20pct_mark_jump_before_maintenance": false
+        },
+        "stress": {
+          "initial_capital_usdt": 500.0,
+          "ending_equity_usdt": 557.031216385246,
+          "cumulative_return": 0.114062432770492,
+          "months": 1,
+          "indicative_cagr": 0.03665330711245374,
+          "monthly_sharpe": null,
+          "month_end_max_drawdown": null,
+          "positive_months": 1,
+          "necessary_solvency_breach": false,
+          "lowest_adverse_margin_ratio": 0.028042041855134262,
+          "total_fees_usdt": 2.6542268100000004,
+          "total_funding_income_usdt": 59.618593195246056,
+          "total_basis_pnl_usdt": 0.06684999999997672,
+          "monthly": [
+            {
+              "month": "2022-2024 continuous",
+              "entry": "2022-01-01 00:00:00+00:00",
+              "exit": "2024-12-31 23:00:00+00:00",
+              "q": 0.005,
+              "equity_start": 500.0,
+              "equity_end": 557.031216385246,
+              "net_return": 0.11406243277049206,
+              "traded": true,
+              "funding_income": 59.618593195246056,
+              "basis_pnl": 0.06684999999997672,
+              "fees": 2.6542268100000004,
+              "minimum_futures_wallet": 15.61656515965231,
+              "minimum_adverse_wallet": 15.187728257202224,
+              "min_adverse_margin_ratio": 0.028042041855134262,
+              "zero_equity_breach": false,
+              "funding_events": 3287,
+              "proxy_funding_events": 2004
+            }
+          ],
+          "note": "Indicative paired-account path with mark proxies; month-end DD understates intramonth risk. Maintenance/liquidation unverified; no eligibility verdict from these returns.",
+          "survives_additional_20pct_mark_jump_before_maintenance": false
+        }
+      },
+      "verdict": "BASELINE DIAGNOSTIC; no margin-verification or OOS claim"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "cases": {
+        "base": {
+          "initial_capital_usdt": 500.0,
+          "ending_equity_usdt": 540.8068621985568,
+          "cumulative_return": 0.08161372439711356,
+          "months": 1,
+          "indicative_cagr": 0.026491216359974423,
+          "monthly_sharpe": null,
+          "month_end_max_drawdown": null,
+          "positive_months": 1,
+          "necessary_solvency_breach": false,
+          "lowest_adverse_margin_ratio": 0.868725400004552,
+          "total_fees_usdt": 0.9064253800000001,
+          "total_funding_income_usdt": 41.6636475785568,
+          "total_basis_pnl_usdt": 0.049640000000032165,
+          "monthly": [
+            {
+              "month": "2022-2024 continuous",
+              "entry": "2022-01-01 00:00:00+00:00",
+              "exit": "2024-12-31 23:00:00+00:00",
+              "q": 0.068,
+              "equity_start": 500.0,
+              "equity_end": 540.8068621985568,
+              "net_return": 0.08161372439711366,
+              "traded": true,
+              "funding_income": 41.6636475785568,
+              "basis_pnl": 0.049640000000032165,
+              "fees": 0.9064253800000001,
+              "minimum_futures_wallet": 236.14731984325851,
+              "minimum_adverse_wallet": 235.12053202953854,
+              "min_adverse_margin_ratio": 0.868725400004552,
+              "zero_equity_breach": false,
+              "funding_events": 3287,
+              "proxy_funding_events": 2004
+            }
+          ],
+          "note": "Indicative paired-account path with mark proxies; month-end DD understates intramonth risk. Maintenance/liquidation unverified; no eligibility verdict from these returns.",
+          "survives_additional_20pct_mark_jump_before_maintenance": true
+        },
+        "stress": {
+          "initial_capital_usdt": 500.0,
+          "ending_equity_usdt": 539.9004368185568,
+          "cumulative_return": 0.07980087363711363,
+          "months": 1,
+          "indicative_cagr": 0.025917517352424868,
+          "monthly_sharpe": null,
+          "month_end_max_drawdown": null,
+          "positive_months": 1,
+          "necessary_solvency_breach": false,
+          "lowest_adverse_margin_ratio": 0.8670209079866705,
+          "total_fees_usdt": 1.8128507600000001,
+          "total_funding_income_usdt": 41.6636475785568,
+          "total_basis_pnl_usdt": 0.049640000000032165,
+          "monthly": [
+            {
+              "month": "2022-2024 continuous",
+              "entry": "2022-01-01 00:00:00+00:00",
+              "exit": "2024-12-31 23:00:00+00:00",
+              "q": 0.068,
+              "equity_start": 500.0,
+              "equity_end": 539.9004368185568,
+              "net_return": 0.07980087363711365,
+              "traded": true,
+              "funding_income": 41.6636475785568,
+              "basis_pnl": 0.049640000000032165,
+              "fees": 1.8128507600000001,
+              "minimum_futures_wallet": 235.67236221525852,
+              "minimum_adverse_wallet": 234.64557440153854,
+              "min_adverse_margin_ratio": 0.8670209079866705,
+              "zero_equity_breach": false,
+              "funding_events": 3287,
+              "proxy_funding_events": 2004
+            }
+          ],
+          "note": "Indicative paired-account path with mark proxies; month-end DD understates intramonth risk. Maintenance/liquidation unverified; no eligibility verdict from these returns.",
+          "survives_additional_20pct_mark_jump_before_maintenance": true
+        }
+      },
+      "verdict": "BASELINE DIAGNOSTIC; no margin-verification or OOS claim"
+    }
+  ],
+  "cumulative_hypotheses": 82,
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "limitations": "Fixed initial quantity; no transfers, hedge rebalancing or cap on gross drift. 20% jump is declared stress, not estimated probability. Mark proxies and unverified maintenance tiers remain."
+}

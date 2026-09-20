@@ -1,0 +1,4 @@
+# E058 first run - SUPERSEDED (benchmark defects found before interpretation, 2026-09-12)
+1. The E051 monthly benchmark series (equal-weight universe, SPY) are indexed by the signal month-end but carry the following month's return; the Phase 8 portfolio series is labelled by the month that ended. The excess-return windows were therefore offset by one month (visible as an implausible SPY 2013-2017 CAGR of 20.7 percent). Fixed by relabelling the benchmarks to the holding month.
+2. The event-study benchmark was a daily-rebalanced equal-weight mean of member returns, which is biased upward by bid-ask bounce and bad prints over long horizons (visible as a -30 percent 252-day "abnormal" return). Replaced by a buy-and-hold equal-weight mean of the members eligible at the event's signal date over the same window.
+Retained unmodified; not evidence. Rerun follows with the same frozen rules.

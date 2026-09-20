@@ -1,0 +1,154 @@
+{
+  "status": "PRE_REPLICATION_FREEZE",
+  "version": "E040_accounting_corrected_1",
+  "created_utc": "2026-09-09T09:01:19.899805+00:00",
+  "git_commit": null,
+  "original_e040_report": "E040_20260909T082012",
+  "audit": "E042_20260909T085722",
+  "trend": {
+    "price_sma": [
+      150,
+      200,
+      250
+    ],
+    "slope_sma": [
+      100,
+      150,
+      200,
+      250
+    ],
+    "slope_lag": 5,
+    "votes": 7,
+    "mean_skipna": true,
+    "resize_only_when_target_changes": true,
+    "terminal": "marked_open"
+  },
+  "breakout": {
+    "channel": 20,
+    "atr_period": 14,
+    "atr_smoothing": "Wilder ewm adjust=False",
+    "compression_rank_window": 250,
+    "min_periods": 120,
+    "percentile": 0.2,
+    "compression_lag": 1,
+    "stop_atr": 3,
+    "trail": true,
+    "volume_confirmation": false,
+    "blocked_direction_until_target_reset": true,
+    "terminal": "liquidate"
+  },
+  "timeframe": "4h",
+  "component_weightings": [
+    "equal",
+    "inverse_vol_60_daily_shift1"
+  ],
+  "primary_component_weighting": "equal",
+  "costs": {
+    "fee": 0.0005,
+    "half_spread": 5e-06,
+    "base_slippage": 0.0002,
+    "stressed_slippage": 0.0004,
+    "asset_conservative_total": 0.0014,
+    "slippage_1_5_total": 0.001105,
+    "slippage_2_total": 0.001305
+  },
+  "funding": {
+    "source": "Binance monthly fundingRate + markPriceKlines open proxy",
+    "settlement": "scheduled boundary before orders, preserved incoming units",
+    "timestamp_tolerance_ms": 60000,
+    "non_boundary": "hard failure",
+    "missing": "hard failure while holding; unavailable settlement marks use trade-open proxy with separate adverse stress and disclosure",
+    "adverse_absolute_rate_increment": 0.0001
+  },
+  "execution": {
+    "delay_bars": 1,
+    "additional_delay_stress": 1,
+    "open_proxy": true,
+    "missing": "separate observed executable open from complete signal bucket; retain previous intent on incomplete signal bars; mark at last observed close",
+    "risk": "original target sizing with drift, not hard gross cap; absorb equity insolvency; no leverage optimization"
+  },
+  "universe_rule": {
+    "asof": "2021-12-31",
+    "liquidity_window_start": "2021-07-01",
+    "minimum_listing_history_days": 365,
+    "minimum_valid_days_2021": 360,
+    "minimum_daily_quote_volume_median_usdt": 20000000,
+    "rank": "descending trailing 184-day median quote volume; alphabetical ties",
+    "max_assets": 12,
+    "exclude": [
+      "BTCUSDT",
+      "ETHUSDT"
+    ],
+    "historical_membership": "all archived contracts present as of 2021-12-31, including later delistings",
+    "future_delistings": "retain asset in denominator and portfolio; terminal settlement requires verified evidence; missing terminal price blocks promotion"
+  },
+  "study": {
+    "warmup_start": "2020-01-01",
+    "primary_start": "2022-01-01",
+    "end_exclusive": "2025-01-01",
+    "planned_primary_years": 3,
+    "history_rationale": "one year observed before selection plus three-year fixed replication horizon; later contract failures are retained, never screened out by hindsight",
+    "pre2022_performance": "not evaluated for replication"
+  },
+  "portfolio": {
+    "primary": "equal capital across all preregistered assets and equal E040 components",
+    "secondary": "causal inverse 60-day daily volatility",
+    "risk_parity": "only if covariance numerically stable; otherwise omit with reason",
+    "cluster_cap": 0.5,
+    "cluster_definition": "connected components of absolute trailing180-day strategy correlation >=.65; minimum120 observations; lag1",
+    "rebalancing": "daily strategy-return allocation as in E040; separately quantify costs of changing sleeve allocations, no claim sleeve returns are directly investable"
+  },
+  "inference": {
+    "seed": 20260909,
+    "bootstrap_samples": 2000,
+    "block_days": [
+      14,
+      30,
+      60
+    ],
+    "primary": "common-time-block bootstrap of cross-asset median factor alpha; assets resampled together with dates, descriptive asset bootstrap separate",
+    "factor_daily": [
+      "underlying",
+      "BTC",
+      "equal_weight_replication_underlyings",
+      "lagged_BTC_30day_volatility",
+      "lagged_BTC_200day_trend"
+    ],
+    "hac_lags": 14,
+    "multiplicity": "one principal architecture/universe; components and weights secondary, Holm correction only for formal component claims"
+  },
+  "gate": {
+    "min_assets": 8,
+    "positive_net_fraction": 0.6666666666666666,
+    "positive_alpha_fraction": 0.6666666666666666,
+    "median_sharpe_min": 0.3,
+    "median_alpha_min": 0,
+    "common_block_alpha_lower95_min": 0,
+    "primary_portfolio_dd_limit": 0.4,
+    "top5_positive_trade_pnl_share_limit": 0.5,
+    "topyear_positive_pnl_share_limit": 0.6,
+    "conservative_stress_positive": true,
+    "remove_best_year_positive": true,
+    "no_unresolved_accounting_or_data_defects": true,
+    "classification_rules": "FAILURE if median net effect<=0 and positive fraction<=.5; MIXED if signs inconsistent; WEAK if positive majority but gate fails; PROMISING if directional, factor and cost criteria pass but concentration/risk fails; ELIGIBLE iff every gate passes",
+    "decision": "DO_NOT_OPEN_2025 unless VALIDATION_ELIGIBLE and separate final freeze is verified"
+  },
+  "protected": {
+    "validation_2025": "LOCKED",
+    "holdout_2026": "UNTOUCHED",
+    "network_dates_max": "2024-12-31"
+  },
+  "capital": {
+    "eur": 500,
+    "notional_constraints": "require verified venue lot/minimum filters; otherwise scenario bounds only",
+    "fx": "no current market queries; historical EURUSD reference or explicitly labelled conversion scenarios"
+  },
+  "source_hashes": {
+    "research/ta_engine.py": "572331a73b9d3edc1092967e3da36b8a1c5647b088828b2b4447e893ee4863ce",
+    "research/ta_ensemble.py": "a9ac9306a152d5ffe51153b634143869a28376a3301c079b31996a9f42590a24",
+    "research/ta_volcomp.py": "adbe4db4ca7d3b0531bb880a43a6f1261495098fe046973aa8807a3aad3a7367",
+    "research/ta_combo.py": "c133bb21dcb80078421feb460b5eabd0f2a6a997434cdb8585cbfe79f73a2737",
+    "research/phase4_engine.py": "6a639b66c0a5ddb176d40377f48a1d2f1c860d06297a8a1339e91806d9f83d0a",
+    "config/research.json": "3fe0cc8a7390598c96fcb4757dab95e3385042ef7df14ad17b0110456a3ca1a3"
+  }
+}

@@ -1,0 +1,836 @@
+{
+  "symbol": "XRPUSDT",
+  "start": "2020-01-06 08:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "supplemented_hours": 120,
+  "supplemented_days": [
+    "2022-02-26",
+    "2022-02-27",
+    "2022-02-28",
+    "2022-04-01",
+    "2022-04-02"
+  ],
+  "supplement_files": 5,
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1609261200000,
+      "open": 0.181,
+      "close": 0.2321
+    },
+    {
+      "time": 1689260400000,
+      "open": 0.4733,
+      "close": 0.5919
+    }
+  ],
+  "funding_events": 3288,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 6,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-01.zip",
+      "sha256": "d5f716d9797ca06c5760bac07240bdf87557f2dc28b3c5a63e26c543c35086d5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-02.zip",
+      "sha256": "530f7bac3e39ab3b5e82a78f961cd9b282d7fe579b9538caaf2a9ffbeb5d1dbb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-03.zip",
+      "sha256": "7b6078802e433e531d9273faef0272572cb2d3688fff87737c3b114d5f242f36",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-04.zip",
+      "sha256": "0b5a8fade812f8d5563b4dbb8f15cb349efd1b6cf874bbc921f6b0f5a25ddf5d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-05.zip",
+      "sha256": "b6257ecb5bd3c2c9d7588e9dac3d8d2d2da6fadbf9e86af16e30a16bc1c2dc41",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-06.zip",
+      "sha256": "0e3f4e423c51bf9b8f370b77056bf6c311317118a399e275fd7ba4d1433cbd3e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-07.zip",
+      "sha256": "1e371f83752b1171dc0f4a9765d0592db1f5c6abdd58607a96a3bdbbaf58f37e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-08.zip",
+      "sha256": "665fad96054bd7d0b2f9a5d45d3f77687ba9cdaeae9f429e51b3418973741ce8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-09.zip",
+      "sha256": "63ef8d524c5ed7226d33af3fe377b9f7ca1c593e50514e757716b14d3a1c3cd2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-10.zip",
+      "sha256": "a2d2b3489c939c8ed23b92cbe4fae9cccf26110ec52f33d345cf069836a355dd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-11.zip",
+      "sha256": "96dc9bd01daae53839a66a1f4fffd65a281e4b744e41f89b97edab3189b8b104",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2020-12.zip",
+      "sha256": "d4170f64ec1f8ffe46fc993974eb89d7be0f963c0eb1266acb6ebac7fd94910b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-01.zip",
+      "sha256": "bee9c4bd2583bc5f5fcc64e0fd16f61564a5998143d77f83df692994f308cae9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-02.zip",
+      "sha256": "cf7c0d118d34090bafbb573e72191c85fdfbb4b4b4a586b500d187dae7a2bf2c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-03.zip",
+      "sha256": "f47e01250c1cf41b32e13d45df609a2cf958e96004060bad15147ac345ac03c5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-04.zip",
+      "sha256": "6d02913dde0ba31a51867bcde37a4ab8ed7d96ad85b6458b9c623229d1249fcf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-05.zip",
+      "sha256": "31da56ecacdd72ba58cbd0aa75a1571a066a2db0eab7db0fab073fa2ad0db6ca",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-06.zip",
+      "sha256": "58d5eff054dda2027e5b2f098b8525597062dac7bdd0e7cacf42a9d1fcedbd74",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-07.zip",
+      "sha256": "f61f7e69e4437e5c372ce105ffc6a045ab6a18e1ecb771d39afd53c663871265",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-08.zip",
+      "sha256": "f9dcae63eabae0cefe55d66b3267c3a23368351874432935b5d9e3d36813c40b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-09.zip",
+      "sha256": "49773c0aef9b4dc0893a44c4f4207eb77f6130bfd8621cf9f4c7c4431aaf3c83",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-10.zip",
+      "sha256": "40437ee0dae2f0ccfd0900cc3c846d0f53afb851cb04b7ac9502fba5ade73402",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-11.zip",
+      "sha256": "5a9ed95a722819a9aacb1c842dced79f83045b6a046058d439b9573c07cce338",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2021-12.zip",
+      "sha256": "ddf125d3ff3fcf634978b26daa3865dff29946a85a36739df43902807d20d2b6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-01.zip",
+      "sha256": "fa1aa72eb70c55d696b521a453e458268009f2f44c175a37e1427e8c13850be7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-02.zip",
+      "sha256": "00f9537c6a7518307e24e5ab539cab76fadca6d07550eb1e0f68de915d985d63",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-03.zip",
+      "sha256": "b00b036f55d6e31fa434818b53b8c8bd1533a3e55032e8da5f822f26cdc90fb1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-04.zip",
+      "sha256": "3fa8979cfeff750a2a3f8c5087dd4616d35bf2d9314a8b0e5a5771352375bae2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-05.zip",
+      "sha256": "5ae10ebf8f3626f85e150ef4b4a04eecf3256416632e87a67db4306e75dbd6dc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-06.zip",
+      "sha256": "3c456a74a660535f671fc7ba20d50447c16ce6faf92a3b36e7a5c8ed4510d5b2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-07.zip",
+      "sha256": "df72f45ca8fb2ac1690f172d81d89c6642ac5525b11d5cbcca9121ee123eccfa",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-08.zip",
+      "sha256": "767ef65f91ddec0b808f799a6717f9c35bbf46bcf2a26dbf15eafbcbf6cf174c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-09.zip",
+      "sha256": "fc44f4e30dc99662660c6523a0d7f424d7fb4df10e4ce755d6068167be370cd7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-10.zip",
+      "sha256": "19278116198c87cdc787a27a4378da8ac50f1f290eda06708badee6fb8d65502",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-11.zip",
+      "sha256": "271d5f342ddd9bd7166f00d197e6d36ae76e542a301d6f335b170bbecbe21791",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2022-12.zip",
+      "sha256": "f557aa2a265dd1ebb1882db1228adebde9bf6524299b1e7143be903ea812e40a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-01.zip",
+      "sha256": "8b4af2275e237f351656b4c93066fde1dec8fc56a91cf52fceb4b5764c0c5f48",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-02.zip",
+      "sha256": "9fc59722b16eac5910cc4f95d061863013dd5ebd63d5f7b86211252d03ddaf89",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-03.zip",
+      "sha256": "b792f6f78d3d68528d78410d8643549b717cd4c59d2699955ac30cdb632d56fd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-04.zip",
+      "sha256": "b81cced30e6e0dbea2a92de014c0e2ff7adac5c200ea905eb3b4b691724352d4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-05.zip",
+      "sha256": "bf6df6b988e40b518b49ed47261ed4e353a9aa70acb3f382ab1c838a1d17658f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-06.zip",
+      "sha256": "0e9fe4c99cc414d42d898e344f5582c748f75d263ff8a4086808b5d725e173be",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-07.zip",
+      "sha256": "8a040848a9bf6b5049fdeca2cbab93018ae4752c6f2f903b168114f1cae70f0f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-08.zip",
+      "sha256": "e7e1839b24530f385964ba505ac367b3989b8c5f58e6368ee66efd3495e8c637",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-09.zip",
+      "sha256": "ab09057b33873cf058d3c722ed861a55f7d2367de0d6f0f2c51ca967f671d03b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-10.zip",
+      "sha256": "d58048df81578a59e6feb0506c3de26886fb01f54c6343cb25bce958001bab9c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-11.zip",
+      "sha256": "29b7a4a3b9360f7b3be131af6b1fd619f18e7344eea99b5c964e955e667027a7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2023-12.zip",
+      "sha256": "daf06e6735cfa9318a93b76957f4002524222ad0a8b4167d3fb9fcfb9b7b38fd",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-01.zip",
+      "sha256": "c049a552965aff83541ab07a965f7f42e00a7b681ca330cd186934e68a892751",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-02.zip",
+      "sha256": "5d9c866e89460894c4273114e5c6aa43655e927d6ad83e7f0ffbf22c327a52ac",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-03.zip",
+      "sha256": "2da416a11a2bed17be44fde0a734364e03d82c93d83046cfa6ab2623c88488a8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-04.zip",
+      "sha256": "88c968c463a4059c859e4e3873afdba07b2cfd06c3f035f24dd7c7166bf66b36",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-05.zip",
+      "sha256": "77402b0b1c2e197484f3fc75e0e0f3d89fc45bfeeebbd06519ec6f25ac7c4c19",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-06.zip",
+      "sha256": "14c80125d770c6a55fa4f16c2bc7c8f41d9b9508ee876de5974560e14095828c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-07.zip",
+      "sha256": "16b66ab8c8f27f7a9c58f4f1af89ec70432bb87ffe1ce0234e99f32c4965fb5c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-08.zip",
+      "sha256": "bed4d40a2a26bccff168f3a2f786d9d0e9da4aa0314c8048c681e9ba115cd2b8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-09.zip",
+      "sha256": "8991cb521b4cf5dfe3e249b6069147d0d80848563bc625a8779e17e381fc79a0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-10.zip",
+      "sha256": "61cbf128a512f6465fa4f4b37e197be6a2c609425bc1ed47fa5fa3b769b3f0b8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-11.zip",
+      "sha256": "a750faf8eda4dcaa25a8ad54dc7722a68933a437eff20aab15ebe9ab1a3015a8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\XRPUSDT-1h-2024-12.zip",
+      "sha256": "08f0de25e68d8f913f16abbdc13f49047d8b6f624cb748c89900231f75b2bba5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\XRPUSDT-1h-2022-02-26.zip",
+      "sha256": "d419516ba374ab4200f4d4817748545c4ce7e49aac657086bebd1220abbf12c8",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-26 00:00:00+00:00",
+        "2022-02-26 01:00:00+00:00",
+        "2022-02-26 02:00:00+00:00",
+        "2022-02-26 03:00:00+00:00",
+        "2022-02-26 04:00:00+00:00",
+        "2022-02-26 05:00:00+00:00",
+        "2022-02-26 06:00:00+00:00",
+        "2022-02-26 07:00:00+00:00",
+        "2022-02-26 08:00:00+00:00",
+        "2022-02-26 09:00:00+00:00",
+        "2022-02-26 10:00:00+00:00",
+        "2022-02-26 11:00:00+00:00",
+        "2022-02-26 12:00:00+00:00",
+        "2022-02-26 13:00:00+00:00",
+        "2022-02-26 14:00:00+00:00",
+        "2022-02-26 15:00:00+00:00",
+        "2022-02-26 16:00:00+00:00",
+        "2022-02-26 17:00:00+00:00",
+        "2022-02-26 18:00:00+00:00",
+        "2022-02-26 19:00:00+00:00",
+        "2022-02-26 20:00:00+00:00",
+        "2022-02-26 21:00:00+00:00",
+        "2022-02-26 22:00:00+00:00",
+        "2022-02-26 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\XRPUSDT-1h-2022-02-27.zip",
+      "sha256": "b09dbb334e5951ed1fed51ceb65cdbb6a061b2d6212b9f67e4a957f9e683a433",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-27 00:00:00+00:00",
+        "2022-02-27 01:00:00+00:00",
+        "2022-02-27 02:00:00+00:00",
+        "2022-02-27 03:00:00+00:00",
+        "2022-02-27 04:00:00+00:00",
+        "2022-02-27 05:00:00+00:00",
+        "2022-02-27 06:00:00+00:00",
+        "2022-02-27 07:00:00+00:00",
+        "2022-02-27 08:00:00+00:00",
+        "2022-02-27 09:00:00+00:00",
+        "2022-02-27 10:00:00+00:00",
+        "2022-02-27 11:00:00+00:00",
+        "2022-02-27 12:00:00+00:00",
+        "2022-02-27 13:00:00+00:00",
+        "2022-02-27 14:00:00+00:00",
+        "2022-02-27 15:00:00+00:00",
+        "2022-02-27 16:00:00+00:00",
+        "2022-02-27 17:00:00+00:00",
+        "2022-02-27 18:00:00+00:00",
+        "2022-02-27 19:00:00+00:00",
+        "2022-02-27 20:00:00+00:00",
+        "2022-02-27 21:00:00+00:00",
+        "2022-02-27 22:00:00+00:00",
+        "2022-02-27 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\XRPUSDT-1h-2022-02-28.zip",
+      "sha256": "0e6587a0fd2c66e5716d7d6457cbb10ab8ce4e2b9bd52497e33c9cd49f6de351",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-02-28 00:00:00+00:00",
+        "2022-02-28 01:00:00+00:00",
+        "2022-02-28 02:00:00+00:00",
+        "2022-02-28 03:00:00+00:00",
+        "2022-02-28 04:00:00+00:00",
+        "2022-02-28 05:00:00+00:00",
+        "2022-02-28 06:00:00+00:00",
+        "2022-02-28 07:00:00+00:00",
+        "2022-02-28 08:00:00+00:00",
+        "2022-02-28 09:00:00+00:00",
+        "2022-02-28 10:00:00+00:00",
+        "2022-02-28 11:00:00+00:00",
+        "2022-02-28 12:00:00+00:00",
+        "2022-02-28 13:00:00+00:00",
+        "2022-02-28 14:00:00+00:00",
+        "2022-02-28 15:00:00+00:00",
+        "2022-02-28 16:00:00+00:00",
+        "2022-02-28 17:00:00+00:00",
+        "2022-02-28 18:00:00+00:00",
+        "2022-02-28 19:00:00+00:00",
+        "2022-02-28 20:00:00+00:00",
+        "2022-02-28 21:00:00+00:00",
+        "2022-02-28 22:00:00+00:00",
+        "2022-02-28 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\XRPUSDT-1h-2022-04-01.zip",
+      "sha256": "df4d9cca7b11d850ce0fa8d6dcd43dbf29a354c2a15446d80e1fa4dd4a4a59dd",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-04-01 00:00:00+00:00",
+        "2022-04-01 01:00:00+00:00",
+        "2022-04-01 02:00:00+00:00",
+        "2022-04-01 03:00:00+00:00",
+        "2022-04-01 04:00:00+00:00",
+        "2022-04-01 05:00:00+00:00",
+        "2022-04-01 06:00:00+00:00",
+        "2022-04-01 07:00:00+00:00",
+        "2022-04-01 08:00:00+00:00",
+        "2022-04-01 09:00:00+00:00",
+        "2022-04-01 10:00:00+00:00",
+        "2022-04-01 11:00:00+00:00",
+        "2022-04-01 12:00:00+00:00",
+        "2022-04-01 13:00:00+00:00",
+        "2022-04-01 14:00:00+00:00",
+        "2022-04-01 15:00:00+00:00",
+        "2022-04-01 16:00:00+00:00",
+        "2022-04-01 17:00:00+00:00",
+        "2022-04-01 18:00:00+00:00",
+        "2022-04-01 19:00:00+00:00",
+        "2022-04-01 20:00:00+00:00",
+        "2022-04-01 21:00:00+00:00",
+        "2022-04-01 22:00:00+00:00",
+        "2022-04-01 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\daily_gap_supplements\\XRPUSDT-1h-2022-04-02.zip",
+      "sha256": "98e3150b8510696a1d26fc948e9ad4d80b427ebcd791bf11263ac302cd66aa36",
+      "role": "daily_gap_supplement",
+      "hours_in_file": 24,
+      "hours_added": [
+        "2022-04-02 00:00:00+00:00",
+        "2022-04-02 01:00:00+00:00",
+        "2022-04-02 02:00:00+00:00",
+        "2022-04-02 03:00:00+00:00",
+        "2022-04-02 04:00:00+00:00",
+        "2022-04-02 05:00:00+00:00",
+        "2022-04-02 06:00:00+00:00",
+        "2022-04-02 07:00:00+00:00",
+        "2022-04-02 08:00:00+00:00",
+        "2022-04-02 09:00:00+00:00",
+        "2022-04-02 10:00:00+00:00",
+        "2022-04-02 11:00:00+00:00",
+        "2022-04-02 12:00:00+00:00",
+        "2022-04-02 13:00:00+00:00",
+        "2022-04-02 14:00:00+00:00",
+        "2022-04-02 15:00:00+00:00",
+        "2022-04-02 16:00:00+00:00",
+        "2022-04-02 17:00:00+00:00",
+        "2022-04-02 18:00:00+00:00",
+        "2022-04-02 19:00:00+00:00",
+        "2022-04-02 20:00:00+00:00",
+        "2022-04-02 21:00:00+00:00",
+        "2022-04-02 22:00:00+00:00",
+        "2022-04-02 23:00:00+00:00"
+      ]
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2021-12.zip",
+      "sha256": "950bacfe70d57a8a56b46bf39a05e05ed7541f438deaf025d5078c0de6608650",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-01.zip",
+      "sha256": "5e8cc78856a281c9bc48d0a5798de6a043549f1aaa830983bbe1146bd02b586a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-02.zip",
+      "sha256": "c2e786bb9bd2f460c5b14ad0edc5312e759fce0cc6790d2660cf857e9c534194",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-03.zip",
+      "sha256": "c096f9b4695b6745700bb65ff2db02865100ba19a114fcc45969d626b5e8f57e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-04.zip",
+      "sha256": "8cfb7d4a8139ab29852f2a56678c6bdafe9dff8900b4f3d2d209b450dbcfe4f4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-05.zip",
+      "sha256": "f854f954b88768ac0e6dbe279d9f98954ffad4da6f93a828d245ff3d7a4b555a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-06.zip",
+      "sha256": "68c664debba01c1f9c1e80ac48d0533c272c659ab09a13fb5dc0f26a5de88b3f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-07.zip",
+      "sha256": "22d6fa0bcac36c7988d616945ee0a2e9276f08f690f4d0c21026de467b20872c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-08.zip",
+      "sha256": "7708218690bc95817087323ac381f78e05bc8eacedad4652ec861182dbb7acad",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-09.zip",
+      "sha256": "55efb2f93fe7885b086ca7a39cca56f4c460c86569a334e07e84543cb7ce9342",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-10.zip",
+      "sha256": "224cd0ba734dde968eb80b1c5c1c92536d6b6f1b7a71b878bb4cd0dbb15e50f5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-11.zip",
+      "sha256": "cd636bf8a9e3608e775477671d2ca2dbce4dd6bfa40b51fc8475d24ebce842e9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2022-12.zip",
+      "sha256": "2094c37f7e5eb90c95b2ce689de3a16cd8c74c5475b12dd6b17d0fdfc4fbc12e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-01.zip",
+      "sha256": "dea3f568cd2ce0f7b68dd129f7c5d417766ec79af4729c02a3108067042213f7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-02.zip",
+      "sha256": "f9139ef5c8cdd83c024a2edcfa54593ee0dfcdf5f93243531dab3b6ad760b097",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-03.zip",
+      "sha256": "c8d94cf79a254d4b9ec7b74d5c2842f4728ccf62509cd24451f0ef026a7a6b1e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-04.zip",
+      "sha256": "61eb1a26e3e51282d4a3e51e5899edf3749bc74c7af68630e85ef5a33e6cfa95",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-05.zip",
+      "sha256": "a1e824a199206a5bbf5072bfe795441cc85a7912c283adc8e1b0a831d81c5458",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-06.zip",
+      "sha256": "80a80276ee472a2740cb7d54516602f2f48caadadf198292bb7b807d75ffde3a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-07.zip",
+      "sha256": "213fa525b5235dba3e55920edde92f3ed3d44fac229f509fd9fc20d454288936",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-08.zip",
+      "sha256": "c13281a13454f5322b120f1d5545fe459d2cdcaaff26019d7d3298f4b4e72226",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-09.zip",
+      "sha256": "4b8ebd2205a99e025c0e7f68432ba2601751d46553f7afa56f52fde06aa1232c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-10.zip",
+      "sha256": "a60cdcb2b3ceedc3fe316a55ee271a04abbadeb6c57e587b87534e8984e09256",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-11.zip",
+      "sha256": "40f24502ccfa894da97478122538bb5d90ffcdb945c13734b0d3ccd3155d7003",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2023-12.zip",
+      "sha256": "7ebcea70ac94ee907f179c2d8242f0a0740b7b93a8dd915d65ab752e51905f02",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-01.zip",
+      "sha256": "24714c9b333e50b29c05247dca5c736fbe5cb1b220c0cd023e517fe7d0647afc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-02.zip",
+      "sha256": "978bc6a299a19042917839482381eb41e585e0fda44e5e47a6dec27f83db29dc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-03.zip",
+      "sha256": "bcb24491b75d1146f7894502464430f510279dc8504fc27f6094e3eb34c55d54",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-04.zip",
+      "sha256": "c079107464ab8bc035f0df4fd8a8171a529c1adcfe86471327c77a7b8a7c24d9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-05.zip",
+      "sha256": "3ebf0400c4d946f7d6443fbb1b9bed3dc75bc07034adb305f3e130f2af97a5cc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-06.zip",
+      "sha256": "e7befab97b4c2ebdb3996af9a886f1e55201f42ed2df77e040642f82aaeabda4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-07.zip",
+      "sha256": "e01da75841d836f6b374293c52fd83a793e616e5d1d7ab1cefc6477c294f80e5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-08.zip",
+      "sha256": "d0feaffeaeea2f63b24600a31331682500557f600c292bca6445e50318d5e517",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-09.zip",
+      "sha256": "a565bf97ae6bf07f56524cb492004c13a5c4cd5b2539bfa9b91477812efee572",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-10.zip",
+      "sha256": "3595cea813e8817b282fb301bdd7c1d78348be7a4b2f6cf8d1d13a593579475c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-11.zip",
+      "sha256": "1ce543b279ce02484658dc113eef8376fd1ec2cacdc539d3df9902066e64bf38",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\XRPUSDT-1h-2024-12.zip",
+      "sha256": "a3a2e530bdf37eb31902072664073c62a3bd015ab90524cc0d16acbbe34b74a4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2021-12.zip",
+      "sha256": "a96ac211f0316219b9d7faec92b830dec5c4ee808b0cfca5bb966dd8b68ff987"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-01.zip",
+      "sha256": "9ddff6efb16709debed38c0a6a0a2278c01659d18aedc2192b9fc02dc93d03ce"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-02.zip",
+      "sha256": "033b260f54c03c4f32b3503e87f9a3d3bcf735a48f13b4057344bb05192006b4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-03.zip",
+      "sha256": "4eeea8c79c35ff9363baa9dc70091a155c8f9e276dd319d05e0ba8ef5ab00b6e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-04.zip",
+      "sha256": "65dc012890af68b8e77736be03a71bde04c7a54b5ff6cb1957c94c4b2560da78"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-05.zip",
+      "sha256": "9ec85394189f8f61a420bc6266cfd6e782870eb14ab43fe53ad981f274ea2829"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-06.zip",
+      "sha256": "ed33e50c7a15b4605478840bc9ceb93af17afe81728dd9c80a8673732da5b979"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-07.zip",
+      "sha256": "d0c0be21ff0fd3476d88cd2ac576f4b8e5697001bedf8ab43c746f2e5ae4699b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-08.zip",
+      "sha256": "ebe01bede02640bb9425dc31f6a1bb4e46488989715d7083b6d1569adb8736ba"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-09.zip",
+      "sha256": "5f4cef57cc0b839b9efd1a0ad2a09457e8a4f7745f5de045d85ad86159255587"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-10.zip",
+      "sha256": "d19321c736b80fa52b447325092f6f21128f435a28e377941bccb65e6dae1370"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-11.zip",
+      "sha256": "44f32f9c6d3f66d7d0af48a56b5cd6f431c19070c9e4438784ee95df25d7dcb2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2022-12.zip",
+      "sha256": "4c17c8aa8c7b64d2acf1ecfdbdc5ff0c2a69d918f44a1040f530be3fbec74e6b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-01.zip",
+      "sha256": "d5a60c79d144e9157ccd211c4230fb64fdd210dd34cb22e7660e41531f66a5e9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-02.zip",
+      "sha256": "a8e7674eb3bd141d27787af892832896d609881764582f86c724b2a8d88fec50"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-03.zip",
+      "sha256": "198eed85733a3e9e6baa935b853aac7dcfa27c550a4ec43f6b862d02cea79d0b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-04.zip",
+      "sha256": "a312648378931c50243bbba31b6b4595f6d8c9d8f6e16c5ffb779fb3a8817ea4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-05.zip",
+      "sha256": "d3e2b728cb6e493672b359004946f0737506ed4b153f61354478dedd20a50da7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-06.zip",
+      "sha256": "a83e74907e437eac3f8db466fda62cdb7c487a096bdaa69a9b797e1507431502"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-07.zip",
+      "sha256": "5348dd7a724fdb991788703b14b5c134711ec173b2bc821e13da18a46042c1f3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-08.zip",
+      "sha256": "491f029d456a47cc58f5888c4e9a91deac419c5242c27fde744a971716391fa6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-09.zip",
+      "sha256": "5a06068aef716c54685ac57fde85ca9fc3b718659fcf90e83af9350f7de05553"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-10.zip",
+      "sha256": "ca0b78ee32f1b2a301e39cdeae50a466ad9bd1d153d0f7d070bbdb90d9203c30"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-11.zip",
+      "sha256": "17b4f9e2a7800265378e3e293295d58ccc8875e037d4286873250541b0a196b0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2023-12.zip",
+      "sha256": "49fd3c811e1388693e7dd482972f8b525ba10a90c01d77b04ec9b0631d43feb8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-01.zip",
+      "sha256": "fac75e242671739980886a0f39159562dde076d49244e6f2803c407dc0112570"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-02.zip",
+      "sha256": "e38e130c6361e5e9d5c67109f22f72812457f2461332a9304d715215576d2d0e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-03.zip",
+      "sha256": "31a841c4eaebbb192448838f37819fcc6263ac149df469463c11126b70717e59"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-04.zip",
+      "sha256": "d7586ec30b20ca06772ac7fb52dd027e913ce0a26a93669e3a4276522bff9ab5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-05.zip",
+      "sha256": "4ca09712c976062effee663d005c27420089003ed5a1c95d8c2b4937fe05fa01"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-06.zip",
+      "sha256": "fd9055cb8a05ce268c24b91800682091232f0dc285b1240f57e2d66396eb6a5f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-07.zip",
+      "sha256": "68c8ac31b16c4b1f81a3b70860175e5163e76652ddea9ef1bb6e6f01a369a33e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-08.zip",
+      "sha256": "fa1318b6213cae7ff5ead4110c4d7c97c3103203b56b2607678e4527dd8ad906"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-09.zip",
+      "sha256": "69faf312921ce5c88092d8c328b04dc006ea42dabfe68ad5fee542d28c0ae2ca"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-10.zip",
+      "sha256": "f9d62565da4bf7d1caddc9cb09b1a73a4a312a7419c5c0439c662fc3f58dd993"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-11.zip",
+      "sha256": "95c733e5ad58f4c26c75b71a2081de8f692a4ce271006b7f5b3c87854a848c70"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\XRPUSDT-fundingRate-2024-12.zip",
+      "sha256": "be526ba15c6c4c3ae8cddda1411a13f665f635be444c992efd2f66e6bbfa37d8"
+    }
+  ]
+}

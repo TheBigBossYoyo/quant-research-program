@@ -1,0 +1,194 @@
+{
+  "experiment_id": "E009_20260908T170120",
+  "code_hash": "5a0ae62e20649f2f8c2d9a52dfcea9a339e971b6489bce2d01b6549ae316316b",
+  "git_commit": null,
+  "seed": 20260908,
+  "cumulative_hypotheses": 83,
+  "sources": [
+    {
+      "file": "data\\raw\\economic_references\\DEXUSUK_20260908T165855.csv",
+      "sha256": "8d0c90e97474cbd7d0a54e3713c5b1f31f9c5431b09de667c39891037a9e0400",
+      "rows": 805,
+      "missing_values": 34
+    },
+    {
+      "file": "data\\raw\\economic_references\\DGS3MO_20260908T165855.csv",
+      "sha256": "ac489c72c388369082ee442bdb08ab3bf6db484f8628fe1c71adca834227a4ab",
+      "rows": 805,
+      "missing_values": 34
+    }
+  ],
+  "cases": {
+    "base": {
+      "usd_assuming_usdt_parity": {
+        "cumulative_return": 0.06481089878594615,
+        "cagr": 0.02114815166675843,
+        "annual_volatility": 0.002449260760575004,
+        "max_daily_drawdown": -0.0031413973833158693,
+        "calendar_returns": {
+          "2022": 0.002848238955727389,
+          "2023": 0.016713835312285985,
+          "2024": 0.04433188546590405
+        }
+      },
+      "usd_short_rate_accrual_reference": {
+        "cumulative_return": 0.13340093901918082,
+        "cagr": 0.04261440521775306,
+        "annual_volatility": 0.0009184444435568641,
+        "max_daily_drawdown": 0.0,
+        "calendar_returns": {
+          "2022": 0.020867084414259773,
+          "2023": 0.05407449502917516,
+          "2024": 0.05327811837625118
+        }
+      },
+      "relative_wealth_vs_reference": {
+        "cumulative_return": -0.06051701376971774,
+        "cagr": -0.02058887105680407,
+        "annual_volatility": 0.0024364550819111776,
+        "max_daily_drawdown": -0.06530443384658668,
+        "calendar_returns": {
+          "2022": -0.017650530351724147,
+          "2023": -0.03544404109298871,
+          "2024": -0.008493704325824525
+        }
+      },
+      "gbp_translation_assuming_usdt_parity": {
+        "cumulative_return": 0.14806701809841671,
+        "cagr": 0.04709122642705332,
+        "annual_volatility": 0.09288485031893828,
+        "max_daily_drawdown": -0.17722172429974914,
+        "calendar_returns": {
+          "2022": 0.12101111417589894,
+          "2023": -0.03642368444899191,
+          "2024": 0.0628481124903788
+        }
+      },
+      "uninvested_usd_cash_in_gbp": {
+        "cumulative_return": 0.07818864307962636,
+        "cagr": 0.025405789275483315,
+        "annual_volatility": 0.09288505035255679,
+        "max_daily_drawdown": -0.20293416741137915,
+        "calendar_returns": {
+          "2022": 0.11782727498550694,
+          "2023": -0.052263988071883705,
+          "2024": 0.017730213241752724
+        }
+      },
+      "excess_daily_mean_uncertainty": {
+        "block_days": 30,
+        "samples": 10000,
+        "seed": 20260908,
+        "multiplicity_trials": 83,
+        "mean_daily_ci95": [
+          -7.982641005302851e-05,
+          -3.179629290766996e-05
+        ],
+        "sharpe_ci95": [
+          -14.89162211081048,
+          -4.064746282855256
+        ],
+        "arithmetic_alpha_annual_ci95": [
+          -0.029156596271868666,
+          -0.011613595984526453
+        ],
+        "simultaneous_lower_mean_daily": -9.186414730301149e-05,
+        "simultaneous_lower_alpha_annual": -0.03355337980242494,
+        "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+      },
+      "initial_usd_per_gbp": 1.35,
+      "final_usd_per_gbp": 1.2521,
+      "input_ledger": "reports\\E008_20260908T165321\\base_ledger.csv",
+      "input_sha256": "352fdd7b846ef89400b3d089373d9464ff9e0005129841598bc135ff64c7700e"
+    },
+    "stress": {
+      "usd_assuming_usdt_parity": {
+        "cumulative_return": 0.06337128200594644,
+        "cagr": 0.020687854093972335,
+        "annual_volatility": 0.0026193998004050167,
+        "max_daily_drawdown": -0.0031437565172180992,
+        "calendar_returns": {
+          "2022": 0.002093894487724901,
+          "2023": 0.016726416956859058,
+          "2024": 0.043692117701847666
+        }
+      },
+      "usd_short_rate_accrual_reference": {
+        "cumulative_return": 0.13340093901918082,
+        "cagr": 0.04261440521775306,
+        "annual_volatility": 0.0009184444435568641,
+        "max_daily_drawdown": 0.0,
+        "calendar_returns": {
+          "2022": 0.020867084414259773,
+          "2023": 0.05407449502917516,
+          "2024": 0.05327811837625118
+        }
+      },
+      "relative_wealth_vs_reference": {
+        "cumulative_return": -0.06178718810118211,
+        "cagr": -0.021030355051733007,
+        "annual_volatility": 0.002596844479250935,
+        "max_daily_drawdown": -0.06526981294854617,
+        "calendar_returns": {
+          "2022": -0.018389455604108984,
+          "2023": -0.03543210489243809,
+          "2024": -0.009101110625164499
+        }
+      },
+      "gbp_translation_assuming_usdt_parity": {
+        "cumulative_return": 0.146514839635834,
+        "cagr": 0.04661923463112916,
+        "annual_volatility": 0.09288950275230307,
+        "max_daily_drawdown": -0.1772167785143668,
+        "calendar_returns": {
+          "2022": 0.12016788735483108,
+          "2023": -0.036411760371342305,
+          "2024": 0.06219700150743801
+        }
+      },
+      "uninvested_usd_cash_in_gbp": {
+        "cumulative_return": 0.07818864307962636,
+        "cagr": 0.025405789275483315,
+        "annual_volatility": 0.09288505035255679,
+        "max_daily_drawdown": -0.20293416741137915,
+        "calendar_returns": {
+          "2022": 0.11782727498550694,
+          "2023": -0.052263988071883705,
+          "2024": 0.017730213241752724
+        }
+      },
+      "excess_daily_mean_uncertainty": {
+        "block_days": 30,
+        "samples": 10000,
+        "seed": 20260908,
+        "multiplicity_trials": 83,
+        "mean_daily_ci95": [
+          -8.12913808478275e-05,
+          -3.286211240110389e-05
+        ],
+        "sharpe_ci95": [
+          -14.226014802747772,
+          -4.0222346875784165
+        ],
+        "arithmetic_alpha_annual_ci95": [
+          -0.029691676854668995,
+          -0.012002886554503198
+        ],
+        "simultaneous_lower_mean_daily": -9.226012801473447e-05,
+        "simultaneous_lower_alpha_annual": -0.03369801175738177,
+        "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+      },
+      "initial_usd_per_gbp": 1.35,
+      "final_usd_per_gbp": 1.2521,
+      "input_ledger": "reports\\E008_20260908T165321\\stress_ledger.csv",
+      "input_sha256": "e5ae3ddb2da850deab510f654b3f4ec013e0b73d1838fd19c8d8b1d0def0872f"
+    }
+  },
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "limitations": [
+    "DGS3MO accrual is a yield-based opportunity-cost reference, not a realizable rolling-bond total-return index or a verified broker cash offer.",
+    "DEXUSUK is USD per GBP; latest-vintage reference observations, asynchronous daily marks and carried nonbusiness-day valuations are not executable conversions.",
+    "USDT assumed equal USD; depeg, conversion costs, tax and access to Treasury alternatives omitted. This is an economic sensitivity audit, not a trade recommendation."
+  ]
+}

@@ -1,0 +1,1837 @@
+{
+ "stamp": "20260911T223343",
+ "dev_end": "2017-12-31",
+ "pit_start": "2012-04-04",
+ "a1_constituents": {
+  "GSPC": {
+   "spells": 633,
+   "member_months": 33722,
+   "covered_months": 32592,
+   "coverage": 0.9664907182254908,
+   "spells_without_file": 2,
+   "delisted_spells": 156,
+   "delisted_coverage": 0.9033363121834972,
+   "by_year": {
+    "2012": {
+     "spells": 493,
+     "without_file": 0
+    },
+    "2013": {
+     "spells": 496,
+     "without_file": 0
+    },
+    "2014": {
+     "spells": 498,
+     "without_file": 0
+    },
+    "2015": {
+     "spells": 515,
+     "without_file": 0
+    },
+    "2016": {
+     "spells": 529,
+     "without_file": 1
+    },
+    "2017": {
+     "spells": 533,
+     "without_file": 1
+    }
+   },
+   "worst": [
+    {
+     "code": "LLL",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 69
+    },
+    {
+     "code": "MON",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 69
+    },
+    {
+     "code": "STI",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 69
+    },
+    {
+     "code": "IR",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 7,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 62
+    },
+    {
+     "code": "DNB",
+     "start": "2012-04-04",
+     "end": "2017-04-05",
+     "months": 61,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 61
+    },
+    {
+     "code": "SE",
+     "start": "2012-04-04",
+     "end": "2017-02-28",
+     "months": 59,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 59
+    },
+    {
+     "code": "DO",
+     "start": "2012-04-04",
+     "end": "2016-10-03",
+     "months": 55,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 55
+    },
+    {
+     "code": "EMC",
+     "start": "2012-04-04",
+     "end": "2016-09-08",
+     "months": 54,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 54
+    },
+    {
+     "code": "ALTR",
+     "start": "2012-04-04",
+     "end": "2015-12-29",
+     "months": 45,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 45
+    },
+    {
+     "code": "VAL",
+     "start": "2012-07-31",
+     "end": "2016-03-30",
+     "months": 45,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 45
+    },
+    {
+     "code": "XL",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 24,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 45
+    },
+    {
+     "code": "ADT",
+     "start": "2012-10-01",
+     "end": "2016-05-03",
+     "months": 44,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 44
+    },
+    {
+     "code": "PLL",
+     "start": "2012-04-04",
+     "end": "2015-08-31",
+     "months": 41,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 41
+    },
+    {
+     "code": "DTV",
+     "start": "2012-04-04",
+     "end": "2015-07-29",
+     "months": 40,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 40
+    },
+    {
+     "code": "NE",
+     "start": "2012-04-04",
+     "end": "2015-07-20",
+     "months": 40,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 40
+    }
+   ]
+  },
+  "MID": {
+   "spells": 608,
+   "member_months": 26438,
+   "covered_months": 25029,
+   "coverage": 0.946705499659581,
+   "spells_without_file": 3,
+   "delisted_spells": 247,
+   "delisted_coverage": 0.9238196286472149,
+   "by_year": {
+    "2012": {
+     "spells": 387,
+     "without_file": 1
+    },
+    "2013": {
+     "spells": 399,
+     "without_file": 1
+    },
+    "2014": {
+     "spells": 416,
+     "without_file": 2
+    },
+    "2015": {
+     "spells": 428,
+     "without_file": 2
+    },
+    "2016": {
+     "spells": 435,
+     "without_file": 1
+    },
+    "2017": {
+     "spells": 439,
+     "without_file": 2
+    }
+   },
+   "worst": [
+    {
+     "code": "DBD",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 69
+    },
+    {
+     "code": "PAY_old",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": false,
+     "is_delisted": 1,
+     "gap": 69
+    },
+    {
+     "code": "RXO",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 69
+    },
+    {
+     "code": "WOOF",
+     "start": "2012-04-04",
+     "end": "2017-09-18",
+     "months": 66,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 66
+    },
+    {
+     "code": "JHG",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 7,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 62
+    },
+    {
+     "code": "STR",
+     "start": "2012-04-04",
+     "end": "2016-09-19",
+     "months": 54,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 54
+    },
+    {
+     "code": "GPOR",
+     "start": "2013-10-18",
+     "end": "2017-12-31",
+     "months": 51,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 51
+    },
+    {
+     "code": "BMR",
+     "start": "2012-04-04",
+     "end": "2016-01-27",
+     "months": 46,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 46
+    },
+    {
+     "code": "NSR",
+     "start": "2012-04-04",
+     "end": "2017-08-10",
+     "months": 65,
+     "covered": 19,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 46
+    },
+    {
+     "code": "TW",
+     "start": "2012-04-04",
+     "end": "2016-01-05",
+     "months": 46,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 46
+    },
+    {
+     "code": "CYT",
+     "start": "2012-04-04",
+     "end": "2015-12-14",
+     "months": 45,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 45
+    },
+    {
+     "code": "CYN",
+     "start": "2012-04-04",
+     "end": "2015-11-02",
+     "months": 44,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 44
+    },
+    {
+     "code": "HCC",
+     "start": "2012-04-04",
+     "end": "2015-10-28",
+     "months": 43,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 43
+    },
+    {
+     "code": "SWI",
+     "start": "2012-08-01",
+     "end": "2016-02-09",
+     "months": 43,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 43
+    },
+    {
+     "code": "THOR_old",
+     "start": "2012-04-04",
+     "end": "2015-10-08",
+     "months": 43,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 43
+    }
+   ]
+  },
+  "SML": {
+   "spells": 869,
+   "member_months": 38805,
+   "covered_months": 37167,
+   "coverage": 0.9577889447236181,
+   "spells_without_file": 6,
+   "delisted_spells": 422,
+   "delisted_coverage": 0.9528206949624105,
+   "by_year": {
+    "2012": {
+     "spells": 580,
+     "without_file": 3
+    },
+    "2013": {
+     "spells": 598,
+     "without_file": 2
+    },
+    "2014": {
+     "spells": 602,
+     "without_file": 2
+    },
+    "2015": {
+     "spells": 612,
+     "without_file": 4
+    },
+    "2016": {
+     "spells": 630,
+     "without_file": 3
+    },
+    "2017": {
+     "spells": 630,
+     "without_file": 3
+    }
+   },
+   "worst": [
+    {
+     "code": "CPSI",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": false,
+     "is_delisted": 1,
+     "gap": 69
+    },
+    {
+     "code": "EE",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 69
+    },
+    {
+     "code": "NCI",
+     "start": "2012-04-04",
+     "end": "2017-12-31",
+     "months": 69,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 69
+    },
+    {
+     "code": "HF",
+     "start": "2012-09-19",
+     "end": "2017-12-31",
+     "months": 64,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 64
+    },
+    {
+     "code": "SMRT",
+     "start": "2012-04-04",
+     "end": "2017-07-19",
+     "months": 64,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 64
+    },
+    {
+     "code": "GK",
+     "start": "2012-04-04",
+     "end": "2017-03-23",
+     "months": 60,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 60
+    },
+    {
+     "code": "CSH",
+     "start": "2012-04-04",
+     "end": "2016-09-02",
+     "months": 54,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 54
+    },
+    {
+     "code": "FBRT",
+     "start": "2013-09-20",
+     "end": "2017-12-31",
+     "months": 52,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 52
+    },
+    {
+     "code": "PBY",
+     "start": "2012-04-04",
+     "end": "2016-02-03",
+     "months": 47,
+     "covered": 1,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 46
+    },
+    {
+     "code": "PKY",
+     "start": "2012-04-04",
+     "end": "2016-10-06",
+     "months": 55,
+     "covered": 9,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 46
+    },
+    {
+     "code": "ACET",
+     "start": "2014-05-01",
+     "end": "2017-12-31",
+     "months": 44,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 44
+    },
+    {
+     "code": "BRLI",
+     "start": "2012-04-04",
+     "end": "2015-08-24",
+     "months": 41,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 41
+    },
+    {
+     "code": "CAS_old2",
+     "start": "2012-04-04",
+     "end": "2015-08-03",
+     "months": 41,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 1,
+     "gap": 41
+    },
+    {
+     "code": "MIG",
+     "start": "2012-04-04",
+     "end": "2015-07-10",
+     "months": 40,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 40
+    },
+    {
+     "code": "SFY",
+     "start": "2012-04-04",
+     "end": "2015-07-20",
+     "months": 40,
+     "covered": 0,
+     "has_file": true,
+     "is_delisted": 0,
+     "gap": 40
+    }
+   ]
+  }
+ },
+ "a2_delisted_depth": {
+  "delisted_with_rows": 32978,
+  "delisted_first_year": {
+   "1985": 306,
+   "1986": 43,
+   "1987": 48,
+   "1988": 28,
+   "1989": 27,
+   "1990": 35,
+   "1991": 45,
+   "1992": 77,
+   "1993": 85,
+   "1994": 189,
+   "1995": 194,
+   "1996": 187,
+   "1997": 3887,
+   "1998": 434,
+   "1999": 2421,
+   "2000": 719,
+   "2001": 1143,
+   "2002": 480,
+   "2003": 639,
+   "2004": 661,
+   "2005": 656,
+   "2006": 666,
+   "2007": 1055,
+   "2008": 604,
+   "2009": 636,
+   "2010": 740,
+   "2011": 638,
+   "2012": 665,
+   "2013": 825,
+   "2014": 1009,
+   "2015": 852,
+   "2016": 1071,
+   "2017": 1654,
+   "2018": 1153,
+   "2019": 1217,
+   "2020": 1792,
+   "2021": 2860,
+   "2022": 1020,
+   "2023": 604,
+   "2024": 404,
+   "2025": 824,
+   "2026": 385
+  },
+  "delisted_last_year": {
+   "1998": 220,
+   "1999": 791,
+   "2000": 789,
+   "2001": 730,
+   "2002": 453,
+   "2003": 344,
+   "2004": 342,
+   "2005": 355,
+   "2006": 364,
+   "2007": 403,
+   "2008": 322,
+   "2009": 262,
+   "2010": 318,
+   "2011": 312,
+   "2012": 346,
+   "2013": 314,
+   "2014": 326,
+   "2015": 483,
+   "2016": 610,
+   "2017": 1527,
+   "2018": 2225,
+   "2019": 1954,
+   "2020": 1957,
+   "2021": 3533,
+   "2022": 3053,
+   "2023": 2792,
+   "2024": 2358,
+   "2025": 2786,
+   "2026": 2709
+  },
+  "active_first_year": {
+   "1985": 776,
+   "1986": 83,
+   "1987": 79,
+   "1988": 46,
+   "1989": 42,
+   "1990": 31,
+   "1991": 67,
+   "1992": 88,
+   "1993": 145,
+   "1994": 269,
+   "1995": 280,
+   "1996": 261,
+   "1997": 216,
+   "1998": 221,
+   "1999": 196,
+   "2000": 208,
+   "2001": 1155,
+   "2002": 417,
+   "2003": 374,
+   "2004": 455,
+   "2005": 389,
+   "2006": 427,
+   "2007": 506,
+   "2008": 395,
+   "2009": 496,
+   "2010": 495,
+   "2011": 383,
+   "2012": 446,
+   "2013": 557,
+   "2014": 494,
+   "2015": 402,
+   "2016": 386,
+   "2017": 495,
+   "2018": 519,
+   "2019": 542,
+   "2020": 774,
+   "2021": 1108,
+   "2022": 557,
+   "2023": 559,
+   "2024": 643,
+   "2025": 786,
+   "2026": 1114
+  },
+  "top1000_delisted_share": {
+   "1985": {
+    "n": 883,
+    "top": 883,
+    "delisted_share": 0.26047565118912797,
+    "min_dv_top1000": 0.0
+   },
+   "1986": {
+    "n": 959,
+    "top": 959,
+    "delisted_share": 0.264859228362878,
+    "min_dv_top1000": 0.0
+   },
+   "1987": {
+    "n": 1056,
+    "top": 1000,
+    "delisted_share": 0.269,
+    "min_dv_top1000": 498.524
+   },
+   "1988": {
+    "n": 1106,
+    "top": 1000,
+    "delisted_share": 0.272,
+    "min_dv_top1000": 1351.104
+   },
+   "1989": {
+    "n": 1163,
+    "top": 1000,
+    "delisted_share": 0.276,
+    "min_dv_top1000": 2809.728
+   },
+   "1990": {
+    "n": 1207,
+    "top": 1000,
+    "delisted_share": 0.284,
+    "min_dv_top1000": 3081.25
+   },
+   "1991": {
+    "n": 1257,
+    "top": 1000,
+    "delisted_share": 0.284,
+    "min_dv_top1000": 5756.184
+   },
+   "1992": {
+    "n": 1401,
+    "top": 1000,
+    "delisted_share": 0.295,
+    "min_dv_top1000": 22503.239999999998
+   },
+   "1993": {
+    "n": 1566,
+    "top": 1000,
+    "delisted_share": 0.308,
+    "min_dv_top1000": 62947.78
+   },
+   "1994": {
+    "n": 1777,
+    "top": 1000,
+    "delisted_share": 0.315,
+    "min_dv_top1000": 93937.5
+   },
+   "1995": {
+    "n": 1926,
+    "top": 1000,
+    "delisted_share": 0.326,
+    "min_dv_top1000": 146389.95
+   },
+   "1996": {
+    "n": 2190,
+    "top": 1000,
+    "delisted_share": 0.339,
+    "min_dv_top1000": 303316.05000000005
+   },
+   "1997": {
+    "n": 2430,
+    "top": 1000,
+    "delisted_share": 0.334,
+    "min_dv_top1000": 514499.265
+   },
+   "1998": {
+    "n": 5140,
+    "top": 1000,
+    "delisted_share": 0.694,
+    "min_dv_top1000": 5043502.59
+   },
+   "1999": {
+    "n": 6425,
+    "top": 1000,
+    "delisted_share": 0.719,
+    "min_dv_top1000": 7916468.75
+   },
+   "2000": {
+    "n": 6683,
+    "top": 1000,
+    "delisted_share": 0.716,
+    "min_dv_top1000": 13334070.075
+   },
+   "2001": {
+    "n": 6570,
+    "top": 1000,
+    "delisted_share": 0.664,
+    "min_dv_top1000": 10285328.5
+   },
+   "2002": {
+    "n": 6501,
+    "top": 1000,
+    "delisted_share": 0.62,
+    "min_dv_top1000": 8960940.35
+   },
+   "2003": {
+    "n": 6470,
+    "top": 1000,
+    "delisted_share": 0.615,
+    "min_dv_top1000": 10213305.399999999
+   },
+   "2004": {
+    "n": 6904,
+    "top": 1000,
+    "delisted_share": 0.634,
+    "min_dv_top1000": 16249163.56
+   },
+   "2005": {
+    "n": 7144,
+    "top": 1000,
+    "delisted_share": 0.607,
+    "min_dv_top1000": 19216795.0
+   },
+   "2006": {
+    "n": 7383,
+    "top": 1000,
+    "delisted_share": 0.604,
+    "min_dv_top1000": 25692702.21
+   },
+   "2007": {
+    "n": 7592,
+    "top": 1000,
+    "delisted_share": 0.584,
+    "min_dv_top1000": 36225047.150000006
+   },
+   "2008": {
+    "n": 7589,
+    "top": 1000,
+    "delisted_share": 0.543,
+    "min_dv_top1000": 33754505.9301
+   },
+   "2009": {
+    "n": 7505,
+    "top": 1000,
+    "delisted_share": 0.514,
+    "min_dv_top1000": 26263306.759999998
+   },
+   "2010": {
+    "n": 7736,
+    "top": 1000,
+    "delisted_share": 0.532,
+    "min_dv_top1000": 31532293.275000002
+   },
+   "2011": {
+    "n": 7820,
+    "top": 1000,
+    "delisted_share": 0.53,
+    "min_dv_top1000": 34065555.7816
+   },
+   "2012": {
+    "n": 7814,
+    "top": 1000,
+    "delisted_share": 0.517,
+    "min_dv_top1000": 30795262.935000002
+   },
+   "2013": {
+    "n": 7992,
+    "top": 1000,
+    "delisted_share": 0.507,
+    "min_dv_top1000": 36691676.4486
+   },
+   "2014": {
+    "n": 8415,
+    "top": 1000,
+    "delisted_share": 0.521,
+    "min_dv_top1000": 46062038.315
+   },
+   "2015": {
+    "n": 8553,
+    "top": 1000,
+    "delisted_share": 0.485,
+    "min_dv_top1000": 45445216.68895
+   },
+   "2016": {
+    "n": 8602,
+    "top": 1000,
+    "delisted_share": 0.473,
+    "min_dv_top1000": 47143593.8285
+   },
+   "2017": {
+    "n": 8694,
+    "top": 1000,
+    "delisted_share": 0.455,
+    "min_dv_top1000": 48307111.9888
+   }
+  },
+  "reference_2003_2007": 0.6088,
+  "rule": "first year with delisted share >= 0.75 x ref",
+  "survivorship_safe_start_year": 1998
+ },
+ "a3_reconciliation": {
+  "rows": [
+   {
+    "code": "ENRNQ",
+    "kind": "failure Enron (NYSE delisting 2002-01; OTC trading continued)",
+    "expected": "2002-01",
+    "eodhd_last": "2004-11-17",
+    "first": "1997-12-31",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "MCWEQ",
+    "kind": "failure WorldCom",
+    "expected": "2002-07",
+    "eodhd_last": "2004-04-20",
+    "first": "2001-06-08",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "BSC_old",
+    "kind": "failure Bear Stearns",
+    "expected": "2008-05",
+    "eodhd_last": "2008-03-14",
+    "first": "1999-01-04",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "LEH",
+    "kind": "failure Lehman Brothers",
+    "expected": "2008-09",
+    "eodhd_last": "2008-09-17",
+    "first": "1997-12-31",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "WAMUQ",
+    "kind": "failure Washington Mutual",
+    "expected": "2008-09",
+    "eodhd_last": "2012-03-20",
+    "first": "1997-12-31",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "CCTYQ",
+    "kind": "failure Circuit City",
+    "expected": "2009-01",
+    "eodhd_last": "2011-09-26",
+    "first": "1997-12-31",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "GM_old",
+    "kind": "failure General Motors (old)",
+    "expected": "2009-06",
+    "eodhd_last": "2011-03-31",
+    "first": "1997-12-31",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "BLIAQ",
+    "kind": "failure Blockbuster (BB Liquidating)",
+    "expected": "2010-07",
+    "eodhd_last": "2026-09-10",
+    "first": "2019-11-11",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "EKDKQ",
+    "kind": "failure Eastman Kodak (old)",
+    "expected": "2012-01",
+    "eodhd_last": "2013-09-03",
+    "first": "1997-12-31",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "RSH",
+    "kind": "failure RadioShack",
+    "expected": "2015-02",
+    "eodhd_last": "2015-02-02",
+    "first": "2003-09-10",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "SUNEQ",
+    "kind": "failure SunEdison",
+    "expected": "2016-04",
+    "eodhd_last": "2017-12-29",
+    "first": "2016-01-04",
+    "within_one_month": false,
+    "present": true
+   },
+   {
+    "code": "CPQ",
+    "kind": "acquisition Compaq",
+    "expected": "2002-05",
+    "eodhd_last": "2002-05-03",
+    "first": "1999-01-04",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "G_old",
+    "kind": "acquisition Gillette",
+    "expected": "2005-10",
+    "eodhd_last": "2005-09-30",
+    "first": "1997-12-31",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "BUD_old",
+    "kind": "acquisition Anheuser-Busch",
+    "expected": "2008-11",
+    "eodhd_last": "2008-11-17",
+    "first": "1997-12-31",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "WYE",
+    "kind": "acquisition Wyeth",
+    "expected": "2009-10",
+    "eodhd_last": "2009-10-15",
+    "first": "1997-12-31",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "BNI",
+    "kind": "acquisition Burlington Northern",
+    "expected": "2010-02",
+    "eodhd_last": "2010-02-12",
+    "first": "1997-12-31",
+    "within_one_month": true,
+    "present": true
+   },
+   {
+    "code": "HNZ",
+    "kind": "acquisition Heinz",
+    "expected": "2013-06",
+    "eodhd_last": "2013-06-07",
+    "first": "2003-09-10",
+    "within_one_month": true,
+    "present": true
+   }
+  ],
+  "present": 17,
+  "within_one_month": 8,
+  "n": 17
+ },
+ "a4_ticker_reuse": {
+  "GSPC": {
+   "spells": 633,
+   "mismatches": 28,
+   "share": 0.044233807266982623,
+   "examples": [
+    {
+     "code": "ADT",
+     "name": "ADT Inc",
+     "reason": "series does not cover spell",
+     "first": "2018-01-19",
+     "last": "2026-09-11",
+     "start": "2012-10-01",
+     "end": "2016-05-03"
+    },
+    {
+     "code": "ALTR",
+     "name": "Altair Engineering Inc",
+     "reason": "series does not cover spell",
+     "first": "2017-11-01",
+     "last": "2025-03-25",
+     "start": "2012-04-04",
+     "end": "2015-12-29"
+    },
+    {
+     "code": "BEAM",
+     "name": "Beam Therapeutics\u00a0Inc",
+     "reason": "series does not cover spell",
+     "first": "2020-02-06",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2014-05-01"
+    },
+    {
+     "code": "BTU",
+     "name": "Peabody Energy Corp",
+     "reason": "series does not cover spell",
+     "first": "2017-04-03",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2014-09-22"
+    },
+    {
+     "code": "COV",
+     "name": "Covidien plc",
+     "reason": "series does not cover spell",
+     "first": "2007-06-14",
+     "last": "2012-06-15",
+     "start": "2012-04-04",
+     "end": "2015-01-27"
+    },
+    {
+     "code": "DEN",
+     "name": "Denbury Resources Inc",
+     "reason": "series does not cover spell",
+     "first": "2020-09-21",
+     "last": "2023-11-03",
+     "start": "2012-04-04",
+     "end": "2015-03-23"
+    },
+    {
+     "code": "DNB",
+     "name": "Dun & Bradstreet Holdings Inc.",
+     "reason": "series does not cover spell",
+     "first": "2020-07-01",
+     "last": "2025-08-25",
+     "start": "2012-04-04",
+     "end": "2017-04-05"
+    },
+    {
+     "code": "DO",
+     "name": "Diamond Offshore Drilling Inc",
+     "reason": "series does not cover spell",
+     "first": "2022-03-30",
+     "last": "2024-09-04",
+     "start": "2012-04-04",
+     "end": "2016-10-03"
+    },
+    {
+     "code": "DTV",
+     "name": "DTE Energy Co",
+     "reason": "series does not cover spell",
+     "first": "2016-10-11",
+     "last": "2019-09-30",
+     "start": "2012-04-04",
+     "end": "2015-07-29"
+    },
+    {
+     "code": "EMC",
+     "name": "Global X Emerging Markets Great Consumer ETF",
+     "reason": "series does not cover spell",
+     "first": "2023-05-15",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2016-09-08"
+    },
+    {
+     "code": "FRX",
+     "name": "Forest Road Acquisition Corp.",
+     "reason": "series does not cover spell",
+     "first": "2021-01-15",
+     "last": "2021-06-25",
+     "start": "2012-04-04",
+     "end": "2014-07-01"
+    },
+    {
+     "code": "HSH",
+     "name": "Hillshire Brands Company",
+     "reason": "series does not cover spell",
+     "first": "2012-06-29",
+     "last": "2020-07-21",
+     "start": "2012-04-04",
+     "end": "2012-06-29"
+    },
+    {
+     "code": "IILGV",
+     "name": "IILGV",
+     "reason": "no rows",
+     "start": "2016-05-13",
+     "end": "2016-05-16"
+    },
+    {
+     "code": "IR",
+     "name": "Ingersoll Rand Inc",
+     "reason": "series does not cover spell",
+     "first": "2017-05-12",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "LEN-N",
+     "name": "Lennar Corp.-Class B Temporary Placeholder Security (TPS)",
+     "reason": "no rows",
+     "start": "2017-11-09",
+     "end": "2017-11-28"
+    },
+    {
+     "code": "LLL",
+     "name": "JX Luxventure Ltd",
+     "reason": "series does not cover spell",
+     "first": "2021-10-13",
+     "last": "2022-10-07",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "MMI",
+     "name": "Marcus & Millichap Inc",
+     "reason": "series does not cover spell",
+     "first": "2013-10-31",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2012-05-25"
+    },
+    {
+     "code": "MNK",
+     "name": "Mallinckrodt plc",
+     "reason": "series does not cover spell",
+     "first": "2022-10-27",
+     "last": "2023-08-28",
+     "start": "2014-08-19",
+     "end": "2017-07-26"
+    },
+    {
+     "code": "MON",
+     "name": "Monument Circle Acquisition Corp",
+     "reason": "series does not cover spell",
+     "first": "2021-03-16",
+     "last": "2022-12-30",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "NE",
+     "name": "Noble Corporation plc",
+     "reason": "series does not cover spell",
+     "first": "2021-06-09",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2015-07-20"
+    },
+    {
+     "code": "PGN",
+     "name": "Paragon Offshore plc",
+     "reason": "series does not cover spell",
+     "first": "2014-07-21",
+     "last": "2015-12-17",
+     "start": "2012-04-04",
+     "end": "2012-07-02"
+    },
+    {
+     "code": "PLL",
+     "name": "Piedmont Lithium Ltd ADR",
+     "reason": "series does not cover spell",
+     "first": "2017-11-07",
+     "last": "2025-08-29",
+     "start": "2012-04-04",
+     "end": "2015-08-31"
+    },
+    {
+     "code": "S",
+     "name": "SentinelOne Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-06-30",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2013-07-09"
+    },
+    {
+     "code": "SE",
+     "name": "Sea Ltd",
+     "reason": "series does not cover spell",
+     "first": "2017-10-20",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2017-02-28"
+    },
+    {
+     "code": "STI",
+     "name": "Solidion Technology Inc.",
+     "reason": "series does not cover spell",
+     "first": "2022-05-02",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    }
+   ]
+  },
+  "MID": {
+   "spells": 608,
+   "mismatches": 40,
+   "share": 0.06578947368421052,
+   "examples": [
+    {
+     "code": "--",
+     "name": "Seattle SpinCo [HPE]--Temp placeholder security",
+     "reason": "no rows",
+     "start": "2017-11-28",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "ARCH_old",
+     "name": "Arch Resources Inc",
+     "reason": "series does not cover spell",
+     "first": "2020-12-21",
+     "last": "2025-02-14",
+     "start": "2012-04-04",
+     "end": "2013-12-23"
+    },
+    {
+     "code": "BMR",
+     "name": "Beamr Imaging Ltd. Ordinary Share",
+     "reason": "series does not cover spell",
+     "first": "2023-02-28",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2016-01-27"
+    },
+    {
+     "code": "BTU",
+     "name": "Peabody Energy Corp",
+     "reason": "series does not cover spell",
+     "first": "2017-04-03",
+     "last": "2026-09-11",
+     "start": "2014-09-22",
+     "end": "2015-07-01"
+    },
+    {
+     "code": "CRC",
+     "name": "California Resources Corp",
+     "reason": "series does not cover spell",
+     "first": "2020-10-28",
+     "last": "2026-09-11",
+     "start": "2014-12-01",
+     "end": "2016-02-25"
+    },
+    {
+     "code": "CYN",
+     "name": "Cyngn Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-10-20",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2015-11-02"
+    },
+    {
+     "code": "CYT",
+     "name": "Cyteir Therapeutics Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-06-18",
+     "last": "2024-03-15",
+     "start": "2012-04-04",
+     "end": "2015-12-14"
+    },
+    {
+     "code": "DBD",
+     "name": "Diebold Nixdorf, Incorporated",
+     "reason": "series does not cover spell",
+     "first": "2023-08-14",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "DEN",
+     "name": "Denbury Resources Inc",
+     "reason": "series does not cover spell",
+     "first": "2020-09-21",
+     "last": "2023-11-03",
+     "start": "2015-03-23",
+     "end": "2017-03-20"
+    },
+    {
+     "code": "DNB",
+     "name": "Dun & Bradstreet Holdings Inc.",
+     "reason": "series does not cover spell",
+     "first": "2020-07-01",
+     "last": "2025-08-25",
+     "start": "2017-04-05",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "DO",
+     "name": "Diamond Offshore Drilling Inc",
+     "reason": "series does not cover spell",
+     "first": "2022-03-30",
+     "last": "2024-09-04",
+     "start": "2016-10-03",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "EDR",
+     "name": "Endeavor Group Holdings Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-04-29",
+     "last": "2025-03-21",
+     "start": "2016-05-31",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "ESI",
+     "name": "Element Solutions Inc",
+     "reason": "series does not cover spell",
+     "first": "2013-10-22",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2013-01-02"
+    },
+    {
+     "code": "FST",
+     "name": "FAST Acquisition Corp",
+     "reason": "series does not cover spell",
+     "first": "2020-10-12",
+     "last": "2022-08-25",
+     "start": "2012-04-04",
+     "end": "2013-07-01"
+    },
+    {
+     "code": "GDI",
+     "name": "Ingersoll Rand Inc",
+     "reason": "series does not cover spell",
+     "first": "2017-05-11",
+     "last": "2020-06-08",
+     "start": "2012-04-04",
+     "end": "2013-07-31"
+    },
+    {
+     "code": "GPOR",
+     "name": "Gulfport Energy Operating Corp",
+     "reason": "series does not cover spell",
+     "first": "2021-05-18",
+     "last": "2026-09-11",
+     "start": "2013-10-18",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "GPRO",
+     "name": "GoPro Inc",
+     "reason": "series does not cover spell",
+     "first": "2014-06-26",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2012-08-01"
+    },
+    {
+     "code": "HCC",
+     "name": "Warrior Met Coal Inc",
+     "reason": "series does not cover spell",
+     "first": "2017-04-13",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2015-10-28"
+    },
+    {
+     "code": "HMA",
+     "name": "Heartland Media Acquisition Corp.",
+     "reason": "series does not cover spell",
+     "first": "2022-03-14",
+     "last": "2023-07-25",
+     "start": "2012-04-04",
+     "end": "2014-01-29"
+    },
+    {
+     "code": "INFA",
+     "name": "Informatica Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-10-27",
+     "last": "2025-11-19",
+     "start": "2012-04-04",
+     "end": "2015-08-10"
+    },
+    {
+     "code": "JHG",
+     "name": "Janus Henderson Group PLC",
+     "reason": "series does not cover spell",
+     "first": "2017-05-30",
+     "last": "2026-07-02",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "MNK",
+     "name": "Mallinckrodt plc",
+     "reason": "series does not cover spell",
+     "first": "2022-10-27",
+     "last": "2023-08-28",
+     "start": "2017-07-26",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "MRX",
+     "name": "Marex Group plc Ordinary Shares",
+     "reason": "series does not cover spell",
+     "first": "2024-04-24",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2012-12-12"
+    },
+    {
+     "code": "NE",
+     "name": "Noble Corporation plc",
+     "reason": "series does not cover spell",
+     "first": "2021-06-09",
+     "last": "2026-09-11",
+     "start": "2015-07-20",
+     "end": "2017-05-16"
+    },
+    {
+     "code": "NSR",
+     "name": "Nomad Royalty Company Ltd",
+     "reason": "series does not cover spell",
+     "first": "2015-02-11",
+     "last": "2022-08-15",
+     "start": "2012-04-04",
+     "end": "2017-08-10"
+    }
+   ]
+  },
+  "SML": {
+   "spells": 869,
+   "mismatches": 52,
+   "share": 0.05983889528193326,
+   "examples": [
+    {
+     "code": "ACET",
+     "name": "Adicet Bio Inc",
+     "reason": "series does not cover spell",
+     "first": "2018-01-26",
+     "last": "2026-09-11",
+     "start": "2014-05-01",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "ADPT",
+     "name": "Adaptive Biotechnologies Corp",
+     "reason": "series does not cover spell",
+     "first": "2019-06-27",
+     "last": "2026-09-11",
+     "start": "2016-01-04",
+     "end": "2017-04-25"
+    },
+    {
+     "code": "AM",
+     "name": "Antero Midstream Partners LP",
+     "reason": "series does not cover spell",
+     "first": "2017-05-03",
+     "last": "2026-09-11",
+     "start": "2012-05-01",
+     "end": "2013-08-12"
+    },
+    {
+     "code": "ARB",
+     "name": "AltShares Trust - AltShares Merger Arbitrage ETF",
+     "reason": "series does not cover spell",
+     "first": "2020-05-07",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2013-09-30"
+    },
+    {
+     "code": "AVIV",
+     "name": "Avantis International Large Cap",
+     "reason": "series does not cover spell",
+     "first": "2021-09-30",
+     "last": "2026-09-11",
+     "start": "2014-09-04",
+     "end": "2015-04-02"
+    },
+    {
+     "code": "BEAT",
+     "name": "Heartbeam Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-11-11",
+     "last": "2026-09-11",
+     "start": "2016-08-01",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "BKI",
+     "name": "Black Knight Inc",
+     "reason": "series does not cover spell",
+     "first": "2015-05-20",
+     "last": "2023-09-01",
+     "start": "2012-04-04",
+     "end": "2013-08-27"
+    },
+    {
+     "code": "BMR",
+     "name": "Beamr Imaging Ltd. Ordinary Share",
+     "reason": "series does not cover spell",
+     "first": "2023-02-28",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2012-04-04"
+    },
+    {
+     "code": "BRLI",
+     "name": "Brilliant Acquisition Corp",
+     "reason": "series does not cover spell",
+     "first": "2020-07-22",
+     "last": "2024-01-05",
+     "start": "2012-04-04",
+     "end": "2015-08-24"
+    },
+    {
+     "code": "CAS_old2",
+     "name": "Cascade Acquisition Corp",
+     "reason": "series does not cover spell",
+     "first": "2016-01-04",
+     "last": "2022-06-07",
+     "start": "2012-04-04",
+     "end": "2015-08-03"
+    },
+    {
+     "code": "CBL",
+     "name": "CBL & Associates Properties Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-11-02",
+     "last": "2026-09-11",
+     "start": "2017-04-24",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "CELL",
+     "name": "PhenomeX Inc.",
+     "reason": "series does not cover spell",
+     "first": "2020-07-17",
+     "last": "2023-10-02",
+     "start": "2012-04-04",
+     "end": "2012-10-16"
+    },
+    {
+     "code": "COCO",
+     "name": "Vita Coco Company Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-10-21",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2013-12-02"
+    },
+    {
+     "code": "CPSI",
+     "name": "Computer Programs & Systems Inc",
+     "reason": "no rows",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "CSH",
+     "name": "Listed Funds Trust",
+     "reason": "series does not cover spell",
+     "first": "2022-02-01",
+     "last": "2023-04-14",
+     "start": "2012-04-04",
+     "end": "2016-09-02"
+    },
+    {
+     "code": "DEN",
+     "name": "Denbury Resources Inc",
+     "reason": "series does not cover spell",
+     "first": "2020-09-21",
+     "last": "2023-11-03",
+     "start": "2017-03-20",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "DM",
+     "name": "Desktop Metal Inc",
+     "reason": "series does not cover spell",
+     "first": "2019-05-03",
+     "last": "2025-04-01",
+     "start": "2012-04-04",
+     "end": "2013-05-02"
+    },
+    {
+     "code": "DRIV",
+     "name": "Global X Autonomous & Electric Vehicles ETF",
+     "reason": "series does not cover spell",
+     "first": "2018-04-17",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2015-02-17"
+    },
+    {
+     "code": "EDR",
+     "name": "Endeavor Group Holdings Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-04-29",
+     "last": "2025-03-21",
+     "start": "2014-07-22",
+     "end": "2016-05-31"
+    },
+    {
+     "code": "EE",
+     "name": "Excelerate Energy Inc",
+     "reason": "series does not cover spell",
+     "first": "2022-04-13",
+     "last": "2026-09-11",
+     "start": "2012-04-04",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "ENTR",
+     "name": "ERShares Entrepreneurs ETF",
+     "reason": "series does not cover spell",
+     "first": "2017-11-08",
+     "last": "2024-02-26",
+     "start": "2012-04-04",
+     "end": "2015-05-01"
+    },
+    {
+     "code": "ESI",
+     "name": "Element Solutions Inc",
+     "reason": "series does not cover spell",
+     "first": "2013-10-22",
+     "last": "2026-09-11",
+     "start": "2013-01-02",
+     "end": "2014-10-01"
+    },
+    {
+     "code": "EVHC",
+     "name": "Envision Healthcare Holdings",
+     "reason": "series does not cover spell",
+     "first": "2013-08-14",
+     "last": "2018-10-10",
+     "start": "2012-04-04",
+     "end": "2015-10-15"
+    },
+    {
+     "code": "FBRT",
+     "name": "Franklin BSP Realty Trust Inc",
+     "reason": "series does not cover spell",
+     "first": "2021-10-19",
+     "last": "2026-09-11",
+     "start": "2013-09-20",
+     "end": "2017-12-31"
+    },
+    {
+     "code": "FLOW",
+     "name": "Global X U.S. Cash Flow Kings 100 ETF",
+     "reason": "series does not cover spell",
+     "first": "2023-07-12",
+     "last": "2026-09-11",
+     "start": "2015-09-28",
+     "end": "2017-12-31"
+    }
+   ]
+  }
+ },
+ "a5_splits": {
+  "rows": [
+   {
+    "code": "AAPL",
+    "date": "2014-06-09",
+    "expected": 7.0,
+    "present": true,
+    "raw_close_ratio": 6.889763073639274,
+    "adj_close_ratio": 0.9842530426902352,
+    "consistent": true
+   },
+   {
+    "code": "AAPL",
+    "date": "2005-02-28",
+    "expected": 2.0,
+    "present": true,
+    "raw_close_ratio": 1.9837713001685287,
+    "adj_close_ratio": 0.9918759782365656,
+    "consistent": true
+   },
+   {
+    "code": "MSFT",
+    "date": "2003-02-18",
+    "expected": 2.0,
+    "present": true,
+    "raw_close_ratio": 1.9350961538461537,
+    "adj_close_ratio": 0.9675465223703313,
+    "consistent": true
+   },
+   {
+    "code": "NVDA",
+    "date": "2007-09-11",
+    "expected": 1.5,
+    "present": true,
+    "raw_close_ratio": 1.4688259109311743,
+    "adj_close_ratio": 0.9792562610675437,
+    "consistent": true
+   },
+   {
+    "code": "GOOGL",
+    "date": "2014-04-03",
+    "expected": 2.0,
+    "present": true,
+    "raw_close_ratio": 1.9861767279090112,
+    "adj_close_ratio": 0.994047135382626,
+    "consistent": true
+   },
+   {
+    "code": "AMZN",
+    "date": "1999-09-02",
+    "expected": 2.0,
+    "present": true,
+    "raw_close_ratio": 1.9823017689906348,
+    "adj_close_ratio": 0.9911757850221438,
+    "consistent": true
+   },
+   {
+    "code": "WMT",
+    "date": "1999-04-20",
+    "expected": 2.0,
+    "present": true,
+    "raw_close_ratio": 1.8795730270721944,
+    "adj_close_ratio": 0.9397884944141851,
+    "consistent": true
+   },
+   {
+    "code": "CSCO",
+    "date": "2000-03-23",
+    "expected": 2.0,
+    "present": true,
+    "raw_close_ratio": 1.855421686746988,
+    "adj_close_ratio": 0.9277121715009541,
+    "consistent": true
+   },
+   {
+    "code": "C",
+    "date": "2011-05-09",
+    "expected": 0.1,
+    "present": true,
+    "raw_close_ratio": 0.10235507246376811,
+    "adj_close_ratio": 1.0235506236175393,
+    "consistent": true
+   }
+  ],
+  "consistent": 9,
+  "n": 9
+ },
+ "a6_integrity": {
+  "files_with_rows": 50874,
+  "nonpositive_min_close": 3979,
+  "zero_volume_days_total": 22150370,
+  "errors": 1,
+  "empty": 16
+ }
+}

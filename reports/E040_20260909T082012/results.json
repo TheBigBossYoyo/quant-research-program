@@ -1,0 +1,196 @@
+{
+  "experiment_id": "E040_20260909T082012",
+  "code_hash": "a7a78b13f7c42e1423519b2e0c3f50f83fdad8dfac9318d82ad99d3d156314cc",
+  "git_commit": null,
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "correlation": 0.32699018338333813,
+      "drawdown_overlap": 0.05640744797371303,
+      "components": {
+        "trend": {
+          "cagr": 0.5427026086795042,
+          "sharpe": 1.058046542534877,
+          "max_dd": -0.44214895427002754,
+          "positive_years": 0.8
+        },
+        "breakout": {
+          "cagr": 0.2729121685129985,
+          "sharpe": 1.1007943985459527,
+          "max_dd": -0.24229532126018738,
+          "positive_years": 1.0
+        },
+        "buy_hold": {
+          "cagr": 0.6694367075966943,
+          "sharpe": 1.119632785713717,
+          "max_dd": -0.7666956183209542,
+          "positive_years": 0.8
+        }
+      },
+      "combinations": {
+        "equal": {
+          "perf": {
+            "cagr": 0.448817720289556,
+            "sharpe": 1.2693531069911508,
+            "max_dd": -0.27170718231686386,
+            "positive_years": 1.0
+          },
+          "bootstrap": {
+            "sharpe": 1.2693531069911508,
+            "ci95": [
+              0.4595645389909695,
+              2.0148587961340376
+            ],
+            "p_value_one_sided": 0.0012
+          },
+          "alpha": {
+            "alpha_annual": 0.4354029661069744,
+            "beta": -0.014362595154562341,
+            "alpha_ci95": [
+              0.11118755844931272,
+              0.7746998278131743
+            ],
+            "alpha_p_one_sided": 0.003
+          },
+          "dsr": 0.9948341900907701,
+          "gates": {
+            "sharpe_gain": true,
+            "alpha": true,
+            "drawdown": false,
+            "correlation": true
+          },
+          "all": false
+        },
+        "inverse_vol": {
+          "perf": {
+            "cagr": 0.3213490785453983,
+            "sharpe": 1.1762073566176428,
+            "max_dd": -0.18617697334455374,
+            "positive_years": 1.0
+          },
+          "bootstrap": {
+            "sharpe": 1.1762073566176428,
+            "ci95": [
+              0.42090448869322683,
+              1.848695616375855
+            ],
+            "p_value_one_sided": 0.0026
+          },
+          "alpha": {
+            "alpha_annual": 0.3623360362628327,
+            "beta": -0.06817944602301404,
+            "alpha_ci95": [
+              0.09896768055063991,
+              0.6392401945318845
+            ],
+            "alpha_p_one_sided": 0.0016
+          },
+          "dsr": 0.9927782389535231,
+          "gates": {
+            "sharpe_gain": false,
+            "alpha": true,
+            "drawdown": true,
+            "correlation": true
+          },
+          "all": false
+        }
+      }
+    },
+    {
+      "symbol": "ETHUSDT",
+      "correlation": 0.14519999322423566,
+      "drawdown_overlap": 0.3422782037239869,
+      "components": {
+        "trend": {
+          "cagr": 0.5394180283571253,
+          "sharpe": 0.9623516865932275,
+          "max_dd": -0.6120334546407283,
+          "positive_years": 0.8
+        },
+        "breakout": {
+          "cagr": 0.21124044510960083,
+          "sharpe": 0.8207091117746692,
+          "max_dd": -0.24538829743904356,
+          "positive_years": 1.0
+        },
+        "buy_hold": {
+          "cagr": 0.9108446171026308,
+          "sharpe": 1.1977752869718647,
+          "max_dd": -0.7935130756288558,
+          "positive_years": 0.8
+        }
+      },
+      "combinations": {
+        "equal": {
+          "perf": {
+            "cagr": 0.45119349067738423,
+            "sharpe": 1.143653839207683,
+            "max_dd": -0.36229928478724327,
+            "positive_years": 1.0
+          },
+          "bootstrap": {
+            "sharpe": 1.143653839207683,
+            "ci95": [
+              0.25374511908218017,
+              1.9757721478461587
+            ],
+            "p_value_one_sided": 0.0052
+          },
+          "alpha": {
+            "alpha_annual": 0.37993160641490714,
+            "beta": 0.06688799386084082,
+            "alpha_ci95": [
+              0.018478776920123743,
+              0.7363088232026492
+            ],
+            "alpha_p_one_sided": 0.019
+          },
+          "dsr": 0.9828958783490689,
+          "gates": {
+            "sharpe_gain": true,
+            "alpha": true,
+            "drawdown": false,
+            "correlation": true
+          },
+          "all": false
+        },
+        "inverse_vol": {
+          "perf": {
+            "cagr": 0.2899081827793826,
+            "sharpe": 1.0291819749223812,
+            "max_dd": -0.2672497894608088,
+            "positive_years": 1.0
+          },
+          "bootstrap": {
+            "sharpe": 1.0291819749223812,
+            "ci95": [
+              0.134854042685758,
+              1.8496034525836291
+            ],
+            "p_value_one_sided": 0.0118
+          },
+          "alpha": {
+            "alpha_annual": 0.25949774770736544,
+            "beta": 0.03500061001478024,
+            "alpha_ci95": [
+              0.006324004037738425,
+              0.5278599818666548
+            ],
+            "alpha_p_one_sided": 0.0224
+          },
+          "dsr": 0.9688853468457465,
+          "gates": {
+            "sharpe_gain": false,
+            "alpha": true,
+            "drawdown": false,
+            "correlation": true
+          },
+          "all": false
+        }
+      }
+    }
+  ],
+  "verdict": "WEAK_SIGNAL",
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

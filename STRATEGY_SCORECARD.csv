@@ -1,0 +1,17 @@
+ID,Strategy,Market,TF,Net CAGR,Sharpe,Sortino,Max DD,PF,Trades,Turnover,Cost Ratio,OOS,Stability,Correlation Value,Verdict
+E032-perp-BTC-4h-A1-250,Price vs 250-SMA regime long/short,BTCUSDT perp,4h,0.91,1.45,,-0.43,>1.2,210,~42 trades/yr,low (7 bps/side),WF eff 0.59; OOS Sharpe 1.12 (2021-24 held-out years),plateau; PBO 0.14,beta 0.12 vs B&H,WEAK_SIGNAL (selection)
+E032-perp-BTC-4h-A3-200,200-SMA slope regime long/short,BTCUSDT perp,4h,0.92,1.41,,-0.42,>1.2,136,,low,WF eff 0.24; OOS Sharpe 0.47,plateau; PBO 0.00,beta 0.12,WEAK_SIGNAL
+E032-perp-ETH-4h-A1-150,Price vs 150-SMA regime long/short,ETHUSDT perp,4h,1.10,1.38,,-0.49,>1.2,280,,low,WF eff 0.45; OOS Sharpe 0.86,plateau; PBO 0.06,beta 0.14,WEAK_SIGNAL
+E032-perp-ETH-1D-A4-200,Capped distance from 200-SMA,ETHUSDT perp,1D,0.70,1.36,,-0.55,>1.2,92,,low,WF eff 0.45; OOS Sharpe 0.64,PBO 0.31,beta 0.12,WEAK_SIGNAL
+E032-spot-BTC-4h-A3-200,200-SMA slope long/cash,BTCUSDT spot,4h,0.55,1.25,,-0.76,>1.2,89,,low,WF eff 0.43; OOS Sharpe 0.74 (2018-24),PBO 0.01,beta 0.28,WEAK_SIGNAL
+E032-spot-ETH-4h-A1-200,Price vs 200-SMA long/cash,ETHUSDT spot,4h,0.49,1.06,,-0.67,>1.2,142,,low,WF eff 0.61; OOS Sharpe 0.91 (2018-24),PBO 0.06,beta 0.20,WEAK_SIGNAL
+E035-ensemble-perp-BTC-4h,Unselected 7-signal slow-trend mean,BTCUSDT perp,4h,0.54,1.06,,-0.46,,,,low,n/a (no selection),n/a,alpha +56% [+5%;+107%],WEAK_SIGNAL
+E035-ensemble-perp-ETH-1D,Unselected 7-signal slow-trend mean,ETHUSDT perp,1D,0.73,1.15,,-0.60,,,,low,n/a,n/a,alpha +37% [-17%;+91%],WEAK_SIGNAL
+E033-pullback-family,EMA/RSI/Bollinger pullback in daily regime,BTC/ETH perp+spot,1h/4h,~0,~0,,small,,4-21,,,,,,REJECTED
+E033-N2-mtf,4h Supertrend + 1h pullback + 15m breakout,BTC/ETH spot,15m,<0,-1.7,,,,,,,,,,REJECTED
+E036-liquid-relstrength,12-1 momentum L/S and long-only+overlay on liquid top-30,perp universe,weekly,<=0.24,<=0.66,,-0.42 to -0.80,,,,,placebo 0.06-0.24,,,REJECTED
+E037-regime-meanrev,z-score reversal unconditional/range-gated/lowvol-gated,BTC/ETH perp+spot,1h/4h,<=0.04,<=0.76 (12 trades),,,,3-283,,,,,,REJECTED
+E038-perp-BTC-4h-D1,Compression (ATR pct<20%) Donchian-20 breakout with 3-ATR trail,BTCUSDT perp,4h,0.27,1.10,,-0.24,>1.2,92,,low,WF eff 0.57,PBO 0.13; plateau,corr 0.33 with trend,WEAK_SIGNAL
+E040-combo-perp-BTC-4h,Equal-weight trend ensemble + compression breakout,BTCUSDT perp,4h,,1.27,,-0.27,,,,,alpha +44% [+11;+77],,corr 0.33,WEAK_SIGNAL
+E040-combo-perp-ETH-4h,Equal-weight trend ensemble + compression breakout,ETHUSDT perp,4h,,1.14,,-0.36,,,,,alpha +38% [+2;+74],,corr 0.15,WEAK_SIGNAL
+E041-stack,Ridge/logistic stacking of 18 features,BTC/ETH perp,4h,<0,-0.6 to -3.2,,,,1696-3309,very high,,OOS 2022-24,,,REJECTED

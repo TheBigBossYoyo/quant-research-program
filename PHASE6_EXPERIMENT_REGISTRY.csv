@@ -1,0 +1,103 @@
+experiment,run,trial_id,family,architecture,neighbourhood_cell,data,segment,cumulative_hypotheses,classification
+E050,20260909T211001,H1,A momentum,momentum_12_2_deciles,primary,French library 202607 (VW),development 1963-07..2017-12,389,FACTOR_EVIDENCE
+E050,20260909T211001,H2,E short-term reversal,st_reversal_1_0_deciles,primary,French library 202607 (VW),development 1963-07..2017-12,390,REJECTED
+E050,20260909T211001,H3,D low volatility,low_total_variance_quintiles,primary,French library 202607 (VW),development 1963-07..2017-12,391,REJECTED
+E050,20260909T211001,H4,D low volatility,low_residual_variance_quintiles,primary,French library 202607 (VW),development 1963-07..2017-12,392,REJECTED
+E050,20260909T211001,H5a,F industry relative strength,industry_momentum_12_1,a,French library 202607 (VW),development 1963-07..2017-12,393,FACTOR_EVIDENCE
+E050,20260909T211001,H5b,F industry relative strength,industry_momentum_6_1,b,French library 202607 (VW),development 1963-07..2017-12,394,WEAK_SIGNAL
+E050,20260909T211001,H6a,C trend (market filter),market_trend_sma10,a,French library 202607 (VW),development 1963-07..2017-12,395,WEAK_SIGNAL
+E050,20260909T211001,H6b,C trend (market filter),market_trend_sma12,b,French library 202607 (VW),development 1963-07..2017-12,396,WEAK_SIGNAL
+E050,20260909T211001,H7a,G volatility-managed exposure,vol_managed_market_cap1.0,a,French library 202607 (VW),development 1963-07..2017-12,397,WEAK_SIGNAL
+E050,20260909T211001,H7b,G volatility-managed exposure,vol_managed_market_cap1.5,b,French library 202607 (VW),development 1963-07..2017-12,398,WEAK_SIGNAL
+E051,20260911T233815,T2_A_mom12_1_N10,A,mom,L12_N10,EODHD LIQ1000,development,399,REJECTED
+E051,20260911T233815,T2_A_mom12_1_N20,A,mom,L12_N20,EODHD LIQ1000,development,400,REJECTED
+E051,20260911T233815,T2_A_mom12_1_N30,A,mom,L12_N30,EODHD LIQ1000,development,401,REJECTED
+E051,20260911T233815,T2_A_mom12_1_N50,A,mom,L12_N50,EODHD LIQ1000,development,402,REJECTED
+E051,20260911T233815,T2_A_mom6_1_N10,A,mom,L6_N10,EODHD LIQ1000,development,403,REJECTED
+E051,20260911T233815,T2_A_mom6_1_N20,A,mom,L6_N20,EODHD LIQ1000,development,404,REJECTED
+E051,20260911T233815,T2_A_mom6_1_N30,A,mom,L6_N30,EODHD LIQ1000,development,405,REJECTED
+E051,20260911T233815,T2_A_mom6_1_N50,A,mom,L6_N50,EODHD LIQ1000,development,406,REJECTED
+E051,20260911T233815,T2_A_mom9_1_N10,A,mom,L9_N10,EODHD LIQ1000,development,407,REJECTED
+E051,20260911T233815,T2_A_mom9_1_N20,A,mom,L9_N20,EODHD LIQ1000,development,408,REJECTED
+E051,20260911T233815,T2_A_mom9_1_N30,A,mom,L9_N30,EODHD LIQ1000,development,409,REJECTED
+E051,20260911T233815,T2_A_mom9_1_N50,A,mom,L9_N50,EODHD LIQ1000,development,410,REJECTED
+E051,20260911T233815,T2_B_resid12_1_N10,B,resid,L12_N10,EODHD LIQ1000,development,411,REJECTED
+E051,20260911T233815,T2_B_resid12_1_N20,B,resid,L12_N20,EODHD LIQ1000,development,412,REJECTED
+E051,20260911T233815,T2_B_resid12_1_N30,B,resid,L12_N30,EODHD LIQ1000,development,413,REJECTED
+E051,20260911T233815,T2_B_resid12_1_N50,B,resid,L12_N50,EODHD LIQ1000,development,414,REJECTED
+E051,20260911T233815,T2_A_volmom12_1_N30,A,volmom,L12_N30,EODHD LIQ1000,development,415,REJECTED
+E051,20260911T233815,T1_A_mom12_1_N30,A,mom,L12_N30,EODHD PIT_SP1500,development,416,REJECTED
+E051,20260911T233815,T1_B_resid12_1_N30,B,resid,L12_N30,EODHD PIT_SP1500,development,417,REJECTED
+E051,20260911T233815,T1_A_secneutral12_1_N30,A,secneutral,L12_N30,EODHD PIT_SP1500,development,418,REJECTED
+E051,20260911T233815,ETF_F_mom12_1_top3,F,mom,L12_N3,EODHD SECTOR_ETF,development,419,REJECTED
+E051,20260911T233815,ETF_F_mom12_1_top2,F,mom,L12_N2,EODHD SECTOR_ETF,development,420,REJECTED
+E051,20260911T233815,ETF_F_mom12_1_top4,F,mom,L12_N4,EODHD SECTOR_ETF,development,421,REJECTED
+E051,20260911T233815,ETF_F_mom6_1_top3,F,mom,L6_N3,EODHD SECTOR_ETF,development,422,REJECTED
+E051SENS,20260911T234807,SENS_rank500_mom12_N30,A momentum (universe sensitivity),mom,"{""RANK_CAP"": 500}",EODHD LIQ1000 sensitivity band,development 1998-2017,423,REJECTED (diagnostic)
+E051SENS,20260911T234807,SENS_rank500_volmom12_N30,A momentum (universe sensitivity),volmom,"{""RANK_CAP"": 500}",EODHD LIQ1000 sensitivity band,development 1998-2017,424,REJECTED (diagnostic)
+E051SENS,20260911T234807,SENS_price10_mom12_N30,A momentum (universe sensitivity),mom,"{""MIN_PRICE"": 10.0}",EODHD LIQ1000 sensitivity band,development 1998-2017,425,REJECTED (diagnostic)
+E051SENS,20260911T234807,SENS_price10_volmom12_N30,A momentum (universe sensitivity),volmom,"{""MIN_PRICE"": 10.0}",EODHD LIQ1000 sensitivity band,development 1998-2017,426,REJECTED (diagnostic)
+E052,20260912T110300,F1,dividend yield (price-computable value proxy),long Hi 30 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",427,ME_FAIL
+E052,20260912T110300,F2,long-term reversal 60-13,long Lo PRIOR minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",428,ME_FAIL
+E052,20260912T110300,F3,low beta,long Lo 20 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",429,ME_FAIL
+E052,20260912T110300,F4a,low total variance (E050 H3 re-read),long Lo 20 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",430,ME_FAIL
+E052,20260912T110300,F4b,low residual variance (E050 H4 re-read),long Lo 20 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",431,ME_FAIL
+E052,20260912T110300,F5,operating profitability (reference: needs fundamentals),long Hi 30 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",432,ME_PASS (family-level only)
+E052,20260912T110300,F6,book-to-market (reference),long Hi 30 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",433,ME_FAIL
+E052,20260912T110300,F7,investment / asset growth (reference),long Lo 30 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",434,ME_PASS (family-level only)
+E052,20260912T110300,F8,accruals (reference),long Lo 20 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",435,ME_FAIL
+E052,20260912T110300,F9,net share issuance (reference),long < 0 minus market,family-level,French library 202607 (VW),"development 1963-07..2017-12 (decision 2000-2017, 2010-2017)",436,ME_PASS (family-level only)
+E053,20260912T110306,G1a_absmom12_SPY_IEF,ETF allocation (regime/defensive),G1a_absmom12_SPY_IEF,primary,EODHD US ETFs,development 2004-01..2017-12,437,RESEARCH_INTEREST (drawdown overlay)
+E053,20260912T110306,G1b_sma10_SPY_IEF,ETF allocation (regime/defensive),G1b_sma10_SPY_IEF,primary,EODHD US ETFs,development 2004-01..2017-12,438,REJECTED
+E053,20260912T110306,G2_dualmom_SPY_EFA_AGG,ETF allocation (regime/defensive),G2_dualmom_SPY_EFA_AGG,primary,EODHD US ETFs,development 2004-01..2017-12,439,REJECTED
+E053,20260912T110306,G3_volmanaged_SPY_IEF,ETF allocation (regime/defensive),G3_volmanaged_SPY_IEF,primary,EODHD US ETFs,development 2004-01..2017-12,440,RESEARCH_INTEREST (drawdown overlay)
+E053,20260912T110306,G4_static_60_30_10_q,ETF allocation (regime/defensive),G4_static_60_30_10_q,primary,EODHD US ETFs,development 2004-01..2017-12,441,RESEARCH_INTEREST (drawdown overlay)
+E053,20260912T110306,G5_regime_SPY_defensive,ETF allocation (regime/defensive),G5_regime_SPY_defensive,primary,EODHD US ETFs,development 2004-01..2017-12,442,RESEARCH_INTEREST (drawdown overlay)
+E052b,20260912T110511,DVY,dividend yield (Dow Jones Select Dividend),buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2004-01-31..2017-12-31,443,NO_EXCESS
+E052b,20260912T110511,SDY,dividend aristocrats (20y growers),buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2006-01-31..2017-12-31,444,NO_EXCESS
+E052b,20260912T110511,VIG,dividend growers (10y),buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2006-06-30..2017-12-31,445,NO_EXCESS
+E052b,20260912T110511,HDV,high dividend quality screen,buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2011-05-31..2017-12-31,446,NO_EXCESS
+E052b,20260912T110511,SCHD,dividend quality/yield,buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2011-12-31..2017-12-31,447,NO_EXCESS
+E052b,20260912T110511,VTV,large value,buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2004-03-31..2017-12-31,448,NO_EXCESS
+E052b,20260912T110511,VBR,small value,buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2004-03-31..2017-12-31,449,REFERENCE_ONLY
+E052b,20260912T110511,USMV,min volatility,buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2011-12-31..2017-12-31,450,NO_EXCESS
+E052b,20260912T110511,SPLV,low volatility (100 lowest of S&P 500),buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2011-07-31..2017-12-31,451,NO_EXCESS
+E052b,20260912T110511,QUAL,"quality (ROE, leverage, earnings stability)",buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2013-09-30..2017-12-31,452,NO_EXCESS
+E052b,20260912T110511,MTUM,momentum (reference only),buy-and-hold ETF vs SPY,diagnostic,EODHD US ETF,development 2013-06-30..2017-12-31,453,REFERENCE_ONLY
+E053b,20260912T110621,H1_gtaa5,multi-asset defensive trend (GTAA),H1_gtaa5,primary,EODHD US ETFs,development 2006-11..2017-12,454,REJECTED
+E053b,20260912T110621,H2_gtaa8,multi-asset defensive trend (GTAA),H2_gtaa8,primary,EODHD US ETFs,development 2006-11..2017-12,455,REJECTED
+E055,20260912T133139,S1,52wk_high_proximity,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,456,REJECTED
+E055,20260912T133139,S2,overnight_12m,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,457,REJECTED
+E055,20260912T133139,S3,intraday_12m,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,458,REJECTED
+E055,20260912T133139,S4,abnormal_volume_1m_12m,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,459,REJECTED
+E055,20260912T133139,S5,liquidity_level_63d,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,460,REJECTED
+E055,20260912T133139,S6,range_21d,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,461,ADVANCE
+E055,20260912T133139,S7,idio_vol_63d,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,462,ADVANCE
+E055,20260912T133139,S8,beta_252d,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,463,REJECTED
+E055,20260912T133139,S9,max_ret_21d,cross-sectional screen,primary,EODHD LIQ1000 + PIT,development 1998-2017,464,ADVANCE
+E056,20260912T133249,P1_deletions_demotions,index events (PIT constituents),P1_deletions_demotions,primary,EODHD PIT constituents,development 2012-04..2017-12,465,REJECTED
+E056,20260912T133249,P2_outside_additions,index events (PIT constituents),P2_outside_additions,primary,EODHD PIT constituents,development 2012-04..2017-12,466,REJECTED
+E056,20260912T133249,P3_promotions,index events (PIT constituents),P3_promotions,primary,EODHD PIT constituents,development 2012-04..2017-12,467,REJECTED
+E057,20260912T133643,LR_S7_N30_M,low realized risk (idio vol / range / MAX),S7,N30_M,EODHD LIQ1000,development 1998-2017,468,REJECTED
+E057,20260912T133643,LR_S7_N30_Q,low realized risk (idio vol / range / MAX),S7,N30_Q,EODHD LIQ1000,development 1998-2017,469,REJECTED
+E057,20260912T133643,LR_S7_N50_M,low realized risk (idio vol / range / MAX),S7,N50_M,EODHD LIQ1000,development 1998-2017,470,REJECTED
+E057,20260912T133643,LR_S7_N50_Q,low realized risk (idio vol / range / MAX),S7,N50_Q,EODHD LIQ1000,development 1998-2017,471,REJECTED
+E057,20260912T133643,LR_S6_N30_M,low realized risk (idio vol / range / MAX),S6,N30_M,EODHD LIQ1000,development 1998-2017,472,REJECTED
+E057,20260912T133643,LR_S6_N30_Q,low realized risk (idio vol / range / MAX),S6,N30_Q,EODHD LIQ1000,development 1998-2017,473,REJECTED
+E057,20260912T133643,LR_S6_N50_M,low realized risk (idio vol / range / MAX),S6,N50_M,EODHD LIQ1000,development 1998-2017,474,REJECTED
+E057,20260912T133643,LR_S6_N50_Q,low realized risk (idio vol / range / MAX),S6,N50_Q,EODHD LIQ1000,development 1998-2017,475,REJECTED
+E057,20260912T133643,LR_S9_N30_M,low realized risk (idio vol / range / MAX),S9,N30_M,EODHD LIQ1000,development 1998-2017,476,REJECTED
+E057,20260912T133643,LR_S9_N30_Q,low realized risk (idio vol / range / MAX),S9,N30_Q,EODHD LIQ1000,development 1998-2017,477,REJECTED
+E057,20260912T133643,LR_S9_N50_M,low realized risk (idio vol / range / MAX),S9,N50_M,EODHD LIQ1000,development 1998-2017,478,REJECTED
+E057,20260912T133643,LR_S9_N50_Q,low realized risk (idio vol / range / MAX),S9,N50_Q,EODHD LIQ1000,development 1998-2017,479,REJECTED
+E057,20260912T133643,LR_S7_N30_M_TIER1,"low realized risk (Tier 1 replication, diagnostic)",S7,N30_M,EODHD PIT_SP1500,development 2012-04..2017-12,,REJECTED (diagnostic)
+E058,20260912T185148,C1_ANY,insider open-market purchases (Form 4 code P),slot portfolio 126d/20 slots,primary,SEC insider data + EODHD Tier 2,development 2009-2017 (gate 2013-2017),480,"REJECTED (2013-17 excess vs EW 2.8%, t 0.75, alpha vs SPY t -1.45)"
+E058,20260912T185148,C2_CLUSTER,insider open-market purchases (Form 4 code P),slot portfolio 126d/20 slots,primary,SEC insider data + EODHD Tier 2,development 2009-2017 (gate 2013-2017),481,"REJECTED (2013-17 excess vs EW 0.1%, t 0.02, alpha vs SPY t -1.61)"
+E058,20260912T185148,C3_OPPORTUNISTIC,insider open-market purchases (Form 4 code P),slot portfolio 126d/20 slots,primary,SEC insider data + EODHD Tier 2,development 2009-2017 (gate 2013-2017),482,"REJECTED (2013-17 excess vs EW -5.6%, t -1.42, alpha vs SPY t -2.93)"
+E058,20260912T185148,C4_OFFICER,insider open-market purchases (Form 4 code P),slot portfolio 126d/20 slots,primary,SEC insider data + EODHD Tier 2,development 2009-2017 (gate 2013-2017),483,"REJECTED (2013-17 excess vs EW 0.7%, t 0.15, alpha vs SPY t -1.20)"
+E058,20260912T185148,C5_DIRECTOR_ONLY,insider open-market purchases (Form 4 code P),slot portfolio 126d/20 slots,primary,SEC insider data + EODHD Tier 2,development 2009-2017 (gate 2013-2017),484,"REJECTED (2013-17 excess vs EW 7.5%, t 2.78, alpha vs SPY t -0.52)"
+E060,20260912T191133,Q1_PROFITABLE,insider purchases conditioned on XBRL quality,Q1_PROFITABLE,primary,SEC insider + companyfacts,development 2009-2017,485,"REJECTED (excess 3.7%, alpha t -1.96)"
+E060,20260912T191133,Q2_NO_ISSUANCE,insider purchases conditioned on XBRL quality,Q2_NO_ISSUANCE,primary,SEC insider + companyfacts,development 2009-2017,486,"REJECTED (excess -1.5%, alpha t -2.36)"
+E059,-,REPURCHASE_ANNOUNCEMENTS,repurchase authorisations (8-K),calendar-time 252d,primary,"EDGAR full-text search (33,388 hits inventoried)",development,487,NOT RUN (classifier not validated; stopped per frozen rule)
+E061,20260912T191646,SUE_TOP_DECILE_63d,"earnings surprise / PEAD falsification (XBRL, 10-Q filing dates)",top SUE decile 63-session slot portfolio,primary,"SEC companyfacts (4,473 issuers) + EODHD Tier 2",development 2009-2017,488,"REJECTED as expected (no drift: top-minus-bottom 63d AR +1.3% full, 0.0% 2013-17; portfolio excess vs EW +4.0% t 1.43, alpha vs SPY t 0.00)"
+E062,-,AB_252_HOLDALL,repurchase authorisation announcements (8-K; new or increased),"hold-all EW calendar-time, 252 sessions, next open >= 60 min after acceptance",primary,"EDGAR full-text search 2004-2017 + full-submission text; EODHD Tier 2",development 2004-2017 (gate 2013-2017),489,"PREREGISTERED 2026-09-12; STOPPED AT THE HUMAN-LABEL GATE (no label exists; no return computed)"

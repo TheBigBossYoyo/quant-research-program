@@ -1,0 +1,177 @@
+{
+  "experiment_id": "E004_20260908T094758",
+  "code_hash": "d59b32c0f11bf42cff83bc8b8d3a8634c48d4449ed577ee26988a9d9a9c0d2e1",
+  "git_commit": null,
+  "seed": null,
+  "hypotheses": 2,
+  "cumulative_signal_asset_hypotheses": 80,
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "input_file": "BTCUSDT_2022_2024_20260908T094615_combined.json",
+      "input_sha256": "71ba0d18ecbb5933aa21d1f157a924245ceb22fe1da927cb3d7d22173d795ad9",
+      "diagnostic": {
+        "events": 3288,
+        "missing_scheduled_events": 0,
+        "max_timestamp_jitter_seconds": 0.031,
+        "missing_funding_mark_prices": 2005,
+        "positive_event_fraction": 0.8646593673965937,
+        "negative_event_fraction": 0.1353406326034063,
+        "rate_autocorrelation": 0.7793186919475354,
+        "annual": {
+          "2022": {
+            "sum_funding_rates": 0.04164925,
+            "normalized_funding_only_on_2x_notional_capital": 0.020824625,
+            "monthly_reset_base_normalized_yield": -0.0019753750000000014
+          },
+          "2023": {
+            "sum_funding_rates": 0.07865712000000001,
+            "normalized_funding_only_on_2x_notional_capital": 0.039328560000000005,
+            "monthly_reset_base_normalized_yield": 0.016528560000000005
+          },
+          "2024": {
+            "sum_funding_rates": 0.11956883000000001,
+            "normalized_funding_only_on_2x_notional_capital": 0.05978441500000001,
+            "monthly_reset_base_normalized_yield": 0.03698441500000001
+          }
+        },
+        "monthly_base_hurdle_positive": 26,
+        "monthly_stress_hurdle_positive": 10,
+        "months": 36,
+        "min_monthly_rate_sum": -0.0017365600000000003,
+        "max_monthly_rate_sum": 0.03140187,
+        "note": "Sum of realized rates is a normalized constant-notional diagnostic, not actual income for a fixed-quantity hedge; basis PnL and margin omitted."
+      },
+      "current_filters": {
+        "PRICE_FILTER": {
+          "filterType": "PRICE_FILTER",
+          "maxPrice": "4529764",
+          "tickSize": "0.10",
+          "minPrice": "556.80"
+        },
+        "LOT_SIZE": {
+          "filterType": "LOT_SIZE",
+          "maxQty": "1000",
+          "stepSize": "0.001",
+          "minQty": "0.001"
+        },
+        "MARKET_LOT_SIZE": {
+          "stepSize": "0.001",
+          "minQty": "0.001",
+          "maxQty": "120",
+          "filterType": "MARKET_LOT_SIZE"
+        },
+        "MAX_NUM_ORDERS": {
+          "limit": 200,
+          "filterType": "MAX_NUM_ORDERS"
+        },
+        "MIN_NOTIONAL": {
+          "notional": "50",
+          "filterType": "MIN_NOTIONAL"
+        },
+        "PERCENT_PRICE": {
+          "multiplierDown": "0.9500",
+          "multiplierDecimal": "4",
+          "filterType": "PERCENT_PRICE",
+          "multiplierUp": "1.0500"
+        },
+        "POSITION_RISK_CONTROL": {
+          "filterType": "POSITION_RISK_CONTROL",
+          "positionControlSide": "NONE"
+        }
+      },
+      "current_mark_price": "78726.13456522",
+      "minimum_hedge_quantity": "0.001",
+      "illustrative_combined_capital_floor_usdt": "157.751428441787836",
+      "capital_floor_warning": "Current mark-based notional approximation, excludes conversion and margin safety buffers; not minimum efficient capital.",
+      "verdict": "INCOMPLETE: funding mechanism measurable; full carry net PnL and margin survival unverified"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "input_file": "ETHUSDT_2022_2024_20260908T094615_combined.json",
+      "input_sha256": "70a15a9524c5604413787735e1e4b3beeb7345f46ccf1185b7e42b7464bf343f",
+      "diagnostic": {
+        "events": 3288,
+        "missing_scheduled_events": 0,
+        "max_timestamp_jitter_seconds": 0.031,
+        "missing_funding_mark_prices": 2005,
+        "positive_event_fraction": 0.8418491484184915,
+        "negative_event_fraction": 0.15815085158150852,
+        "rate_autocorrelation": 0.7973221586106253,
+        "annual": {
+          "2022": {
+            "sum_funding_rates": 0.007872559999999997,
+            "normalized_funding_only_on_2x_notional_capital": 0.003936279999999999,
+            "monthly_reset_base_normalized_yield": -0.01886372
+          },
+          "2023": {
+            "sum_funding_rates": 0.08259507000000002,
+            "normalized_funding_only_on_2x_notional_capital": 0.04129753500000001,
+            "monthly_reset_base_normalized_yield": 0.01849753500000001
+          },
+          "2024": {
+            "sum_funding_rates": 0.12996919,
+            "normalized_funding_only_on_2x_notional_capital": 0.064984595,
+            "monthly_reset_base_normalized_yield": 0.042184595000000005
+          }
+        },
+        "monthly_base_hurdle_positive": 22,
+        "monthly_stress_hurdle_positive": 12,
+        "months": 36,
+        "min_monthly_rate_sum": -0.01557023,
+        "max_monthly_rate_sum": 0.03222009,
+        "note": "Sum of realized rates is a normalized constant-notional diagnostic, not actual income for a fixed-quantity hedge; basis PnL and margin omitted."
+      },
+      "current_filters": {
+        "PRICE_FILTER": {
+          "tickSize": "0.01",
+          "minPrice": "39.86",
+          "maxPrice": "306177",
+          "filterType": "PRICE_FILTER"
+        },
+        "LOT_SIZE": {
+          "filterType": "LOT_SIZE",
+          "maxQty": "10000",
+          "stepSize": "0.001",
+          "minQty": "0.001"
+        },
+        "MARKET_LOT_SIZE": {
+          "stepSize": "0.001",
+          "filterType": "MARKET_LOT_SIZE",
+          "minQty": "0.001",
+          "maxQty": "2000"
+        },
+        "MAX_NUM_ORDERS": {
+          "limit": 200,
+          "filterType": "MAX_NUM_ORDERS"
+        },
+        "MIN_NOTIONAL": {
+          "notional": "20",
+          "filterType": "MIN_NOTIONAL"
+        },
+        "PERCENT_PRICE": {
+          "multiplierDown": "0.9500",
+          "filterType": "PERCENT_PRICE",
+          "multiplierUp": "1.0500",
+          "multiplierDecimal": "4"
+        },
+        "POSITION_RISK_CONTROL": {
+          "positionControlSide": "NONE",
+          "filterType": "POSITION_RISK_CONTROL"
+        }
+      },
+      "current_mark_price": "2493.17000000",
+      "minimum_hedge_quantity": "0.009",
+      "illustrative_combined_capital_floor_usdt": "44.962326414000000",
+      "capital_floor_warning": "Current mark-based notional approximation, excludes conversion and margin safety buffers; not minimum efficient capital.",
+      "verdict": "INCOMPLETE: funding mechanism measurable; full carry net PnL and margin survival unverified"
+    }
+  ],
+  "exchange_snapshot": "futures_exchangeInfo_20260908T094615.json",
+  "exchange_sha256": "77ded4b106fc102e2df7dd2ec65ba7200826d95ea38f5a8aa7dc4504aa1d5cf8",
+  "price_snapshot": "futures_premiumIndex_20260908T094615.json",
+  "price_sha256": "5ff3ef65acf88d5783f7f1a3b164be45b1d6f751bd8c62ba2ad6fb3095b2c7ae",
+  "funding_fee_assumptions": "spot 10bps + futures 5bps each side; two legs entry/exit 30bps normalized leg notional. Base add 2bps friction per each of 4 executions =38bps; stress76bps. Divide by2 for spot+equal futures cash allocation. Not portfolio return.",
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

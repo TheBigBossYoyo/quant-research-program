@@ -1,0 +1,5 @@
+component_a,component_b,asset,timeframe,daily_return_correlation,drawdown_overlap_share,source
+slow_trend_ensemble_E035,compression_breakout_E038,BTCUSDT perp,4h,0.33,0.06,E040_20260909T082012
+slow_trend_ensemble_E035,compression_breakout_E038,ETHUSDT perp,4h,0.15,0.34,E040_20260909T082012
+slow_trend_ensemble_E035,buy_and_hold,BTCUSDT perp,4h,beta 0.12 (E034 best cell),,E034_20260909T075307
+compression_breakout_E038,buy_and_hold,BTCUSDT perp,4h,not measured,,

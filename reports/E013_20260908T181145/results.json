@@ -1,0 +1,1207 @@
+{
+  "experiment_id": "E013_20260908T181145",
+  "code_hash": "60e02bb0bf25007141b94a9e2ce4647fb79022d19cc256e258a2776dc54fb82c",
+  "git_commit": null,
+  "seed": 20261008,
+  "ic_cells": 16,
+  "directional_hypotheses": 32,
+  "rule_b_trials_run": 0,
+  "cumulative_hypotheses": 191,
+  "stage1": [
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 8,
+      "feature": "fund8",
+      "ic": -0.02506694625827524,
+      "observations": 3285,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261008,
+      "ci95": [
+        -0.05818427825653453,
+        0.008294997348820894
+      ],
+      "ci_lower_adjusted": -0.07449006106637264,
+      "ci_upper_adjusted": 0.025385208573480752,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.02506694625827524,
+        "4": -0.02808214211552708,
+        "12": -0.05471478090363584
+      },
+      "ic_by_year": {
+        "2022": -0.07595018401394303,
+        "2023": -0.0605712185915861,
+        "2024": 0.014500689647572972
+      },
+      "feature_autocorrelation": 0.7793186919475353,
+      "contemporaneous_bar_return_correlation": 0.014599339972568239,
+      "top_quintile_forward_mean_bps": -1.5627216171604623,
+      "bottom_quintile_forward_mean_bps": 9.935943348297585,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 8,
+      "feature": "fund24",
+      "ic": -0.015791677733398325,
+      "observations": 3284,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261009,
+      "ci95": [
+        -0.04849281463642796,
+        0.018790689446658793
+      ],
+      "ci_lower_adjusted": -0.06320117542561951,
+      "ci_upper_adjusted": 0.04151940250902415,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.015791677733398325,
+        "4": -0.020010617010889173,
+        "12": -0.038551487776418626
+      },
+      "ic_by_year": {
+        "2022": -0.06753292732663183,
+        "2023": -0.04286766710297295,
+        "2024": 0.00792561377945912
+      },
+      "feature_autocorrelation": 0.9530141292828445,
+      "contemporaneous_bar_return_correlation": -0.014912484508670238,
+      "top_quintile_forward_mean_bps": 0.4554382897887103,
+      "bottom_quintile_forward_mean_bps": 10.757578813078979,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 8,
+      "feature": "basis",
+      "ic": -0.016976305166653615,
+      "observations": 3284,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261010,
+      "ci95": [
+        -0.05103712008738473,
+        0.016806393857925504
+      ],
+      "ci_lower_adjusted": -0.0697234483700029,
+      "ci_upper_adjusted": 0.03478279349758883,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.016976305166653615,
+        "4": -0.0009388668198533446,
+        "12": -0.014334458477900753
+      },
+      "ic_by_year": {
+        "2022": -0.05127305368183475,
+        "2023": -0.062013070442212735,
+        "2024": 0.0010182162770925832
+      },
+      "feature_autocorrelation": 0.8744285678917095,
+      "contemporaneous_bar_return_correlation": 0.03398468560023975,
+      "top_quintile_forward_mean_bps": 7.593678029527669,
+      "bottom_quintile_forward_mean_bps": 17.6680258188128,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 8,
+      "feature": "basis_z",
+      "ic": -0.03943139798016413,
+      "observations": 3225,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261011,
+      "ci95": [
+        -0.0745323240704634,
+        -0.005546852129271978
+      ],
+      "ci_lower_adjusted": -0.08690648753225728,
+      "ci_upper_adjusted": 0.01917986713934338,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.03943139798016413,
+        "4": -0.021717555647762635,
+        "12": -0.016408292403323064
+      },
+      "ic_by_year": {
+        "2022": -0.045060628709113044,
+        "2023": -0.08031397161017668,
+        "2024": -0.001931241976350811
+      },
+      "feature_autocorrelation": 0.578617433487623,
+      "contemporaneous_bar_return_correlation": 0.04372515071642118,
+      "top_quintile_forward_mean_bps": -6.012626331243642,
+      "bottom_quintile_forward_mean_bps": 11.338905908396343,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "fund8",
+      "ic": -0.028744927821049208,
+      "observations": 1093,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261012,
+      "ci95": [
+        -0.08109545273961441,
+        0.026146643962637394
+      ],
+      "ci_lower_adjusted": -0.10542709977021329,
+      "ci_upper_adjusted": 0.050862374652999316,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.028744927821049208,
+        "4": -0.022230191388204725,
+        "12": 0.033674488181357695
+      },
+      "ic_by_year": {
+        "2022": -0.09517233537552076,
+        "2023": -0.036530019385538556,
+        "2024": -0.008815470637213264
+      },
+      "feature_autocorrelation": 0.596843634538705,
+      "contemporaneous_bar_return_correlation": 0.1275982055949413,
+      "top_quintile_forward_mean_bps": 2.77071148744877,
+      "bottom_quintile_forward_mean_bps": 30.002076241293153,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "fund24",
+      "ic": -0.026744063380033763,
+      "observations": 1093,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261013,
+      "ci95": [
+        -0.08402348393462468,
+        0.027114628093458534
+      ],
+      "ci_lower_adjusted": -0.1053414243353903,
+      "ci_upper_adjusted": 0.0528904256469866,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.026744063380033763,
+        "4": -0.01909165321088365,
+        "12": 0.039576824102848136
+      },
+      "ic_by_year": {
+        "2022": -0.1195558899971056,
+        "2023": -0.04901309054980276,
+        "2024": 0.01778735158424288
+      },
+      "feature_autocorrelation": 0.8274973501484675,
+      "contemporaneous_bar_return_correlation": 0.03919596571268004,
+      "top_quintile_forward_mean_bps": 2.457719886848787,
+      "bottom_quintile_forward_mean_bps": 40.46456193465644,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "basis",
+      "ic": -0.006285420904574706,
+      "observations": 1092,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261014,
+      "ci95": [
+        -0.060677699498144964,
+        0.046452078856390286
+      ],
+      "ci_lower_adjusted": -0.08762828652575956,
+      "ci_upper_adjusted": 0.07075628681277114,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.006285420904574706,
+        "4": 0.005017234356021581,
+        "12": 0.04280576639879743
+      },
+      "ic_by_year": {
+        "2022": -0.06807510926082677,
+        "2023": -0.026000898230038948,
+        "2024": 0.007093358675478213
+      },
+      "feature_autocorrelation": 0.8553161889550877,
+      "contemporaneous_bar_return_correlation": 0.07841813624853236,
+      "top_quintile_forward_mean_bps": 23.741008047737537,
+      "bottom_quintile_forward_mean_bps": 3.5385887967251386,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "BTCUSDT",
+      "timeframe_hours": 24,
+      "feature": "basis_z",
+      "ic": -0.018178328862075415,
+      "observations": 1073,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261015,
+      "ci95": [
+        -0.07472967199405187,
+        0.03678668277362768
+      ],
+      "ci_lower_adjusted": -0.10927143587530469,
+      "ci_upper_adjusted": 0.06224279002802314,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.018178328862075415,
+        "4": -0.00041051819344665216,
+        "12": 0.07932213047784113
+      },
+      "ic_by_year": {
+        "2022": -0.05467392571808913,
+        "2023": -0.022674212462506355,
+        "2024": 0.014078337533887509
+      },
+      "feature_autocorrelation": 0.5226523771265378,
+      "contemporaneous_bar_return_correlation": 0.10615069813678475,
+      "top_quintile_forward_mean_bps": 3.5156508324631286,
+      "bottom_quintile_forward_mean_bps": 18.336665201091524,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 8,
+      "feature": "fund8",
+      "ic": -0.021860186536145788,
+      "observations": 3285,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261016,
+      "ci95": [
+        -0.05277592268083492,
+        0.008628595120690632
+      ],
+      "ci_lower_adjusted": -0.06525928367232647,
+      "ci_upper_adjusted": 0.02600903625967725,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.021860186536145788,
+        "4": -0.03230586839584408,
+        "12": -0.04100076825364359
+      },
+      "ic_by_year": {
+        "2022": -0.05219083703837162,
+        "2023": -0.0557124242039693,
+        "2024": -0.0004261392173953633
+      },
+      "feature_autocorrelation": 0.7973221586106253,
+      "contemporaneous_bar_return_correlation": 0.0942992418620284,
+      "top_quintile_forward_mean_bps": 0.43480672731309755,
+      "bottom_quintile_forward_mean_bps": 13.610259395716444,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 8,
+      "feature": "fund24",
+      "ic": -0.020460715841792543,
+      "observations": 3284,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261017,
+      "ci95": [
+        -0.056864423838918036,
+        0.015189338559551208
+      ],
+      "ci_lower_adjusted": -0.0758831076465717,
+      "ci_upper_adjusted": 0.030811730910680256,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.020460715841792543,
+        "4": -0.036801655945371596,
+        "12": -0.03950925819176101
+      },
+      "ic_by_year": {
+        "2022": -0.07468545658134723,
+        "2023": -0.024103939019104396,
+        "2024": 0.0038386531005277385
+      },
+      "feature_autocorrelation": 0.9455219580604441,
+      "contemporaneous_bar_return_correlation": 0.0230512912775585,
+      "top_quintile_forward_mean_bps": -0.6987316480902651,
+      "bottom_quintile_forward_mean_bps": 11.77998165252522,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 8,
+      "feature": "basis",
+      "ic": -0.004046961321976096,
+      "observations": 3284,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261018,
+      "ci95": [
+        -0.0356028254167017,
+        0.02812355435599948
+      ],
+      "ci_lower_adjusted": -0.053477107184726806,
+      "ci_upper_adjusted": 0.046544082898690414,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.004046961321976096,
+        "4": -0.002607424392754766,
+        "12": 0.0019659214914107973
+      },
+      "ic_by_year": {
+        "2022": -0.04179821505966405,
+        "2023": -0.02554642818123123,
+        "2024": 0.017151712655863554
+      },
+      "feature_autocorrelation": 0.8456397537886224,
+      "contemporaneous_bar_return_correlation": 0.06763770268602094,
+      "top_quintile_forward_mean_bps": 4.1425956016283765,
+      "bottom_quintile_forward_mean_bps": 4.912722452413223,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 8,
+      "feature": "basis_z",
+      "ic": -0.01619330961932922,
+      "observations": 3225,
+      "block": 21,
+      "samples": 2000,
+      "seed": 20261019,
+      "ci95": [
+        -0.04748682014208041,
+        0.014545929996219283
+      ],
+      "ci_lower_adjusted": -0.058484038688877964,
+      "ci_upper_adjusted": 0.03344512318993831,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.01619330961932922,
+        "4": -0.017278689229072372,
+        "12": -0.01272429929498535
+      },
+      "ic_by_year": {
+        "2022": -0.03364969574352829,
+        "2023": -0.04575348560438761,
+        "2024": 0.019783039977537897
+      },
+      "feature_autocorrelation": 0.5751156738294982,
+      "contemporaneous_bar_return_correlation": 0.07937686105158993,
+      "top_quintile_forward_mean_bps": 2.4295625902912685,
+      "bottom_quintile_forward_mean_bps": 5.599196061196095,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "fund8",
+      "ic": -0.01710760926066665,
+      "observations": 1093,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261020,
+      "ci95": [
+        -0.07382698534644552,
+        0.03700674435042106
+      ],
+      "ci_lower_adjusted": -0.10538123110580225,
+      "ci_upper_adjusted": 0.05940667900629284,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.01710760926066665,
+        "4": -0.015250272313996463,
+        "12": 0.054111109892464815
+      },
+      "ic_by_year": {
+        "2022": -0.07540849150651169,
+        "2023": -0.027751348487482008,
+        "2024": -0.002782913312377636
+      },
+      "feature_autocorrelation": 0.5181835790589119,
+      "contemporaneous_bar_return_correlation": 0.1902734460476876,
+      "top_quintile_forward_mean_bps": 11.875424056854248,
+      "bottom_quintile_forward_mean_bps": 22.427388466554945,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "fund24",
+      "ic": -0.02844225312774271,
+      "observations": 1093,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261021,
+      "ci95": [
+        -0.08328975974287676,
+        0.02473501872578335
+      ],
+      "ci_lower_adjusted": -0.10998285626435353,
+      "ci_upper_adjusted": 0.05493753478608659,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.02844225312774271,
+        "4": -0.013500299276346819,
+        "12": 0.07133581155482908
+      },
+      "ic_by_year": {
+        "2022": -0.12347499432227613,
+        "2023": -0.0581194554737939,
+        "2024": -0.0021961466556964567
+      },
+      "feature_autocorrelation": 0.7292489395736539,
+      "contemporaneous_bar_return_correlation": 0.09980218195773431,
+      "top_quintile_forward_mean_bps": 17.222243595203388,
+      "bottom_quintile_forward_mean_bps": 21.724809165239556,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "basis",
+      "ic": -0.013087954174595854,
+      "observations": 1092,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261022,
+      "ci95": [
+        -0.06587315915776662,
+        0.03817784777700078
+      ],
+      "ci_lower_adjusted": -0.09349151505917178,
+      "ci_upper_adjusted": 0.061323025424920345,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.013087954174595854,
+        "4": -0.023503385545589835,
+        "12": 0.0702103815621456
+      },
+      "ic_by_year": {
+        "2022": -0.06921201412555557,
+        "2023": -0.004692443297673684,
+        "2024": -0.015155863724422241
+      },
+      "feature_autocorrelation": 0.8600090817212495,
+      "contemporaneous_bar_return_correlation": 0.10362658432511411,
+      "top_quintile_forward_mean_bps": 13.892321411467874,
+      "bottom_quintile_forward_mean_bps": 33.018384004732596,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "symbol": "ETHUSDT",
+      "timeframe_hours": 24,
+      "feature": "basis_z",
+      "ic": -0.030978549618373995,
+      "observations": 1073,
+      "block": 7,
+      "samples": 2000,
+      "seed": 20261023,
+      "ci95": [
+        -0.08416068949922739,
+        0.02406977519780309
+      ],
+      "ci_lower_adjusted": -0.10967037094657456,
+      "ci_upper_adjusted": 0.047618469546143107,
+      "bonferroni_cells": 16,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.030978549618373995,
+        "4": -0.038655951964027886,
+        "12": 0.09404688298288665
+      },
+      "ic_by_year": {
+        "2022": -0.0490333617486038,
+        "2023": -0.039386516347911106,
+        "2024": -0.002754151925422644
+      },
+      "feature_autocorrelation": 0.5534115448009548,
+      "contemporaneous_bar_return_correlation": 0.13933662496300467,
+      "top_quintile_forward_mean_bps": -6.915875938922697,
+      "bottom_quintile_forward_mean_bps": 34.921179035177246,
+      "base_round_trip_cost_bps": 14.0
+    }
+  ],
+  "stage1_survivors": [],
+  "stage2": [],
+  "stage2_survivors": [],
+  "sources": [
+    {
+      "symbol": "BTCUSDT",
+      "spot_rows": 315632,
+      "spot_missing": 16,
+      "funding_rate_file": "BTCUSDT_2022_2024_20260908T094615_combined.json",
+      "futures": {
+        "rows": 26304,
+        "original_archive_missing_hours": 0,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-01.zip",
+            "sha256": "5281a9c866e7d54b0a5b5e6a7dad5575ad7b96df67f05f74d614c54190ffff5f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-02.zip",
+            "sha256": "b3a199287b2a8fed2c261999205d56cfd72ef9675c4b498a399601978d666228"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-03.zip",
+            "sha256": "f61ebcacd9a38f20b0ad89c64bbeb56baf368641fbbd6e25e987db2b96ede5ff"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-04.zip",
+            "sha256": "db7f9dbcc60cf68051b755346a5be32d27b0d3565cf6c02341b050a234ef44df"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-05.zip",
+            "sha256": "b1512041ade711819be114fee30668fbdd2783b73fa55607991ae14d1d43653f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-06.zip",
+            "sha256": "1006ae5b8b4704da69f8f14fb4711d075d689fcf44cd0a98317df97953f1332d"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-07.zip",
+            "sha256": "72060f8608459b04817f652cbb945be28afef0ae54ccf38113911c194630c184"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-08.zip",
+            "sha256": "a1ad9eafd3dfecccfbc60c07de33ec2f7c33eab96f8ec04f88360b73b55dad76"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-09.zip",
+            "sha256": "92753ae32ed042ab7f10b90e3b9a49ddafc695c8e60eb563713855c73e2e6e82"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-10.zip",
+            "sha256": "d85a5f4bdbe93df2babdecf3b37f866655fa23c3fb31eeca96c3e3f6a1e9b872"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-11.zip",
+            "sha256": "e9b3f3b1929e3f6f255269c2d2eb564d9d9bcacbfc16651888e95765df383888"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2022-12.zip",
+            "sha256": "d313c2cb509cba13eff6538829245aedc993f18eff4a7bd48fe0eb6c3a9fa158"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-01.zip",
+            "sha256": "b9ac60cc3ffc1e16db96ca2314120ff7531988108ebef1733ee54234f4fedf7f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-02.zip",
+            "sha256": "1ace9802f4da961db025a7b76a6171ef2c516c5307e5dee24267182f059110e0"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-03.zip",
+            "sha256": "35f0068cc41887ea11960c4bb10e251a404fef5ad4cb4c88699cc2419b6bc38b"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-04.zip",
+            "sha256": "ed6f0a84d1b2ed8f73fbdd4df10703e2ab49864fc4d657b0d8a9464a49dd4a29"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-05.zip",
+            "sha256": "2f278ad3ea09cc42e577ad7185de74391a1eb09b9d9836d375e2c540aef1667f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-06.zip",
+            "sha256": "19bd435cdf58b426642c24a0df3b5fa755433f52a8c39f05dc5cfdeffa453aa0"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-07.zip",
+            "sha256": "ae9ebc03dff2bdeb805a1401b5cf1256b2b84283f5f9d92b1f454f33b223f499"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-08.zip",
+            "sha256": "599daa607ff593666036fe742d8272de6e0e9d284cd7d41d6585cf53baa20ca2"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-09.zip",
+            "sha256": "7849f82af86aabcb9a79f64d0527480f22117656a68f98280fe8b840a6ee1339"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-10.zip",
+            "sha256": "bbf0ef273c80f696ed9eb129a257812162487486692f124b9631ec38a924f6ae"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-11.zip",
+            "sha256": "26f1a2870f57925303edcf75581f0a33ff5e145c2126e15afc5fc1b400522428"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2023-12.zip",
+            "sha256": "5377bec9e6dc04027717836cc1c2a3789da4e4122d57e8395265a0414b766b7c"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-01.zip",
+            "sha256": "bf673f3d10804a951e8bac56dd2473486f113025971d43ebe5258ec40f9bfeb3"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-02.zip",
+            "sha256": "655ff5ac0fc570956756944c7afef4895c9bd149342f1e437de97292cbd1fe22"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-03.zip",
+            "sha256": "8138642b757ddf5a42207130277be4569afb4c581a0a1817be9f5f35a4415498"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-04.zip",
+            "sha256": "4bf3ca3574e0075c1b79f5b22c4253e26f6260f3621943205e3a8016c4c12318"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-05.zip",
+            "sha256": "1d607e3b26e6886ba742477bc97687f0b86c4c26ac564325dc5f1667e0362d35"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-06.zip",
+            "sha256": "7dba8642e56641fca2c7f3f363050ae88bf0d6c87d28e14b747fbd3267d4d3a8"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-07.zip",
+            "sha256": "920aacb84b2745ee8f31806a753cdc5b2d672e6814d9c50c0bf524ad45eb5611"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-08.zip",
+            "sha256": "8d8465eb4c8a4fd05ebc0126e4c14a217edb2039441546bf095229e975268de6"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-09.zip",
+            "sha256": "0a8118b3601f18ddad04a8afcf887fdc01661f66824a0ce49e0419be1f97f907"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-10.zip",
+            "sha256": "e3dcb9fe9d70fea19dfbdc5294044da69b9061c6f7411e99468825fac1ce8d61"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-11.zip",
+            "sha256": "0675e55056748489b8750cf6088a666f65dd4fd932d7ca5bd30491f5996b5f3d"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\BTCUSDT-1h-2024-12.zip",
+            "sha256": "b072f3147b3e390c81dcbf35830a12ff7d53a73236aa44a9eea78199502529cb"
+          }
+        ]
+      },
+      "marks": {
+        "rows": 26304,
+        "original_archive_missing_hours": 72,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-01.zip",
+            "sha256": "b03860574c80a3d7c58fce3afd24bd9e7d72d29ad8538adf00d9fdef78a8e0d5"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-02.zip",
+            "sha256": "fc03caff19988fb80d5b1dbaaf18839a25d28454925e5f5aee0a919f750623c3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-03.zip",
+            "sha256": "7f9d6033c1726a5afa377bcb5c514caa5a83be96f812fb11371d5fe06311d628"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-04.zip",
+            "sha256": "6673291c1e33cf5981f73da458c266a75761d6a20b5eeee870b3c7bff925f910"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-05.zip",
+            "sha256": "23e180c67ba5f89cfd02416561efb35a14481a5dc984ebf061f1534b31d5baa8"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-06.zip",
+            "sha256": "10ea39d94c31e514023010078383f22a0eb98628897a9f2a6a7a1b1941da435a"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-07.zip",
+            "sha256": "baafc36bfebd44d4356b8c5cae3a92dba09e03a841e7ef13a358ebe6960e4903"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-08.zip",
+            "sha256": "1925c38ceee17ea2142ce019f360db7c8549bc39998bb1bd63fc2027df5712bb"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-09.zip",
+            "sha256": "9483f95974442901ee8a277d1eae52af4dd70010c6fb4409d616990685a96158"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-10.zip",
+            "sha256": "9804dbd86adbd447d60edf955fd668de3e426fa3c6596a13d69ae539a2549864"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-11.zip",
+            "sha256": "9ff271bbd7bf9a1cb1fc271776a086f66ae38d489a5210ecd3a15d453732273b"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2022-12.zip",
+            "sha256": "321ea021c1d07ec31f5f029aa3e55c94f56d4595360b20027a004b7dc3083630"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-01.zip",
+            "sha256": "74e6f880fbc39d87fd27a248c79f761572f2ecb67560e2346d28460d8aac8228"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-02.zip",
+            "sha256": "f15d23370f252082d8741819800b82f62ac8bbc9001b53ab6abb5d65ccb3ed3d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-03.zip",
+            "sha256": "6c7ccf6e60ccf5b06905b3c7b82d6d53009105208f93621154de621f2642f251"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-04.zip",
+            "sha256": "c12b3fc18d15bb91005493e6afedb49a6c776ff821e7fe607c87f41f7747d70e"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-05.zip",
+            "sha256": "ca28c2dfcdadb7b7e4b7e82e12e8adfff0892447594235a04f8df1952124ffcf"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-06.zip",
+            "sha256": "a4d224d8558feb10d7d9e08ca7d970cf8879659257e876861dd398d52ae5da46"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-07.zip",
+            "sha256": "0ce8be53516729ebfb7fe4b7f4d0c45c118247d41484baa29e5b770f6a7daa96"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-08.zip",
+            "sha256": "fb077979ed1b31ed6532728c9ba2c0eb1f66a9d16c9ccadc69c64461d63fc25a"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-09.zip",
+            "sha256": "273e01ef7c664bdbe750fad4ed92716ab18bb298b26dee86b1fbf4a8bb09a29f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-10.zip",
+            "sha256": "507040896ca3cfec2a70aa7206e592f3597447f5e24d3cf0e56bafd586f6249d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-11.zip",
+            "sha256": "079a2b1817b8a94aa2f8187a2fbcc77cf61e8a92615459fceae667c8f69fccd3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2023-12.zip",
+            "sha256": "908aeb683f82c557a4f032cdaa9d472b2821282803f62fe7a8603c82660b9bda"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-01.zip",
+            "sha256": "759f86a22dadb455c87a3f90f6a9134c73d24a55a7596f0b96e193b5d45cdb49"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-02.zip",
+            "sha256": "edb8b7e0174e386accbdf09a022192ddadf3cc0cb874fc079ff38bf808b3be88"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-03.zip",
+            "sha256": "dd72fa2fa1cafeef6f0b4f937b8388ef7f88b84e95ca13e15ce9d4ea3fcec86c"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-04.zip",
+            "sha256": "98d2e92206505233959a467018ff1d094f234ee875a4ef3306c86f3a81bba793"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-05.zip",
+            "sha256": "4cd99fc326ea26513e995e09018a6303ca51581503dd01b7c79188f8fea100fe"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-06.zip",
+            "sha256": "f725086a0492f3a8be3234413fc6902d8191a4ed074c5a15d4bf0e53d8f37efb"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-07.zip",
+            "sha256": "1841595033d00f777e1fa1229a30d121e8953deee29c1150d9ae7f0c650604f3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-08.zip",
+            "sha256": "445f615d788151be98e4d021ba11ebb29ebc26ae2fe2ae6aeedc3e1ac0c7afab"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-09.zip",
+            "sha256": "cea573092cc212d76601450db3abe4dda8a801ae8cb770df771352ff4779e2af"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-10.zip",
+            "sha256": "d9e8037e4548658b9e6827e92d358188c645de1f52c9f74287c9e711a71a201e"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-11.zip",
+            "sha256": "528ecd74cc4a5eeaf9cce05a93c80a4c54f988270d0e9ef0b67d6f0e2e005c0d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\BTCUSDT-1h-2024-12.zip",
+            "sha256": "8ad10135afb8ace28b881ac893c1ae2ee2b9ba3c6ca2b613d057b0608909de01"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\BTCUSDT_2022-07-31_20260908T095439.json",
+            "sha256": "73e400e9db3b345246df8f6b162d7fef194deaea40537eaa0faa29811ae0519f",
+            "role": "REST gap supplement"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\BTCUSDT_2022-10-02_20260908T095439.json",
+            "sha256": "c39ba975f97771196b9f99c0fe8b3509dac44f7ee9ff6c8e50ff436c4a94d184",
+            "role": "REST gap supplement"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\BTCUSDT_2023-02-24_20260908T095439.json",
+            "sha256": "0866c1975da38d78fb38c0c2ec9f7751f05013e9a818c19d7797d69fa6ff2265",
+            "role": "REST gap supplement"
+          }
+        ]
+      },
+      "funding_file": "BTCUSDT_2022_2024_20260908T094615_combined.json"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "spot_rows": 315632,
+      "spot_missing": 16,
+      "funding_rate_file": "ETHUSDT_2022_2024_20260908T094615_combined.json",
+      "futures": {
+        "rows": 26304,
+        "original_archive_missing_hours": 0,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-01.zip",
+            "sha256": "6d96a19efda6917a3912377ef8e1a5eadc8f1a273f91afa069ae70bd679301bc"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-02.zip",
+            "sha256": "14f8e42d6d7696d2f622301612a8f4ba6623658732cc5840ef0582b2ee05598e"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-03.zip",
+            "sha256": "1b9fcc8ead1a066017e8c40617a78d1b9ee7b7fdad5f9d5353b04a59883274ce"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-04.zip",
+            "sha256": "45bc22bd8603876174adfd1f6273021eeaf76084629030a53cca40f379b8fb0b"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-05.zip",
+            "sha256": "7adea64d8d82d2017c1b7c3fcc6848f685370b524e0a1512bb443980a487f4b8"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-06.zip",
+            "sha256": "582aa0b2c72641cb5e93318a92beee0bbc93e968ccd10b0d89ea755a60f9fb62"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-07.zip",
+            "sha256": "07781d1411a4b793ca5c4daaee70c9e2c1a3200fe12c954c39b3ad6c37badd42"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-08.zip",
+            "sha256": "4182681e2b2fc23bbb348411ca8bdb41894609be1f94a0d9939616bf91cc9f25"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-09.zip",
+            "sha256": "75aa0182242ac65110a1dd1737a2062ee9815032d746a57d3191c44c15eacff2"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-10.zip",
+            "sha256": "04246418d55fc96753ee5b4be0718796aeb9421af40042b4e145db02e1cfaf3a"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-11.zip",
+            "sha256": "e2e15ddc21d24ac6c3ca56ab77f065eda88252a37f2f778505a332e31fcc5b3c"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-12.zip",
+            "sha256": "1ba6559930f09fb8bd68a6592c4059526901939317eea4db8fc2d59cf5688957"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-01.zip",
+            "sha256": "247b85e0a8806e139f263831445e1d7bb91f9f56e6ab32e1f285038cdd1ceff4"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-02.zip",
+            "sha256": "f01571f2420b9eb6486e69b884fe1572abfa59bc226c4003c9d78735c559acc5"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-03.zip",
+            "sha256": "4d5266f12a8a3394ee23516de99fc380e928dbdb79cbf083fd3ddc3242073790"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-04.zip",
+            "sha256": "4ac96035c3867e0bfeff4f2f526812ee4b73a0b87b3962bb40934e2614917395"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-05.zip",
+            "sha256": "a47a9fc2936bcadc99aadfe48858e7d3e31093a9321d9bc083b886b72924f568"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-06.zip",
+            "sha256": "fe108dc555560ded46bb0807d0c2e0bc7722900213a96e4e86bf355f84fbcafa"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-07.zip",
+            "sha256": "911d3674c71a561df5ca5085426e9c61195bf5669bc7da7488ec9548ae476ca1"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-08.zip",
+            "sha256": "74210a689eb85c8908ae05cff3297b9dc6eda76a0b41a3f9d72fdde0c14e3b2f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-09.zip",
+            "sha256": "38883595a881aadfbfd8c256e5170c8b016e9927119250f5128abfba96aba9c5"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-10.zip",
+            "sha256": "61d6692284b406c9f9f655aef68e151a1eeb90509ddcd7f4a97233b1a002ef9e"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-11.zip",
+            "sha256": "d57c333ac46e779b2399c498cc8fedfbc8804deb688873585ded09aceec1fa16"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-12.zip",
+            "sha256": "8f581fcee21156d501435fc88db1d99515e6d7432fa7ae2993de3b5f95bb0069"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-01.zip",
+            "sha256": "2f3d1a6d9292f13b1d6cf86716cbda5b3f6119a310daed1dde5ee3d0d71e2fab"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-02.zip",
+            "sha256": "bde9a1b0824b212ef6cea97065543fda0fc57c33479709d34e5db995fc79af01"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-03.zip",
+            "sha256": "24af0ecf9db1953e8c83e94823f4aae368ff70ba54106ef121c204cb046f9e41"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-04.zip",
+            "sha256": "290b594fa46ef95ab9c1486e2640ce2d1894eecd4d71b79bcd30d6632ca75b9f"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-05.zip",
+            "sha256": "a9b42949325fd4f236c7c88b63f35d94910109218ce2db80b8e29f7a2b2d623b"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-06.zip",
+            "sha256": "479dced4a591035987e084dc8a5e5f3f1f2593704c0aeecdebc20c89b35c1d98"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-07.zip",
+            "sha256": "8cc8d8b6ef13fa0393f53690e5d569afb8a50488e4d7852e20ac22d7bcf17cf5"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-08.zip",
+            "sha256": "00eddbb3297515be14426119f07468846cd04dc527dbc19834dd45294740a67c"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-09.zip",
+            "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-10.zip",
+            "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-11.zip",
+            "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63"
+          },
+          {
+            "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-12.zip",
+            "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c"
+          }
+        ]
+      },
+      "marks": {
+        "rows": 26304,
+        "original_archive_missing_hours": 48,
+        "missing_hours": 0,
+        "sources": [
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-01.zip",
+            "sha256": "da76759ea210e7e9d33bd6be1576dd6fdd32f7a47b37b7c439c3fcceb025c5d9"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-02.zip",
+            "sha256": "c37f3bba2c61f63f78ba60aeed23067694fe64d7c2ef67e99201932560a7e1f7"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-03.zip",
+            "sha256": "9f85c7467b29c35f71e8d55c39e00e042d511cedb4270799a06f94bd706fe5e1"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-04.zip",
+            "sha256": "b3004ffea66d1e27160d8355ab8692254d272d2fb9a0f6969f5afa4ab033cba3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-05.zip",
+            "sha256": "713dd69910c2d39209e1e3be00c415044c0df017126cb2e0df914dbeb62fbae2"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-06.zip",
+            "sha256": "7baa832f63d629692d6f57c7840ff4c77649c2f717ca1a8fe485a17f67e1d33f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-07.zip",
+            "sha256": "dcd76948acedd02c2745c7a449ae09579f918cdf60102ccb3e2cb1743ce42729"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-08.zip",
+            "sha256": "31394dcf1a84655a3e003200d228f70dfe35487e22cba54de7cda9245b72b950"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-09.zip",
+            "sha256": "51f5ada75af692d6e95abdcc2d84dd521d03c52d187d0b870057c430b14e10d9"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-10.zip",
+            "sha256": "95311f377e0ec8ef14e2c8c81599760b03a5f97dee3d1128c8d5077d29d2c2b1"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-11.zip",
+            "sha256": "38b21c96b1b365f5130178dbbc601f3d45edec573678fbef9cf5c119868bb975"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-12.zip",
+            "sha256": "417a07e86f134f8cc99a0a412653651c577a805af0577282c1af03498ea6b820"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-01.zip",
+            "sha256": "6f3b17e6b2e1c7148dbb5bf81cd7f58252da87f7d0831edba38a4f81a8ae0c46"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-02.zip",
+            "sha256": "47b99057e2ea8bda8a6d266a34066b8c23954c4b1fb2a21d29f3697b2f69358d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-03.zip",
+            "sha256": "05dc0ee541110207cf24ff95b062fc084bb000708000caca25531898f5795a8f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-04.zip",
+            "sha256": "7627d0f3176e6819455c8ba6a963178bc93f512dbd63cd396d1ecf5699bf76e0"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-05.zip",
+            "sha256": "fb2130fb406eb670b51104a8d216b0e43fc83181bb0f0f4c9f4ca99f7037bee9"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-06.zip",
+            "sha256": "b8576b817b4a585346d64c79d7c0793c9c937bd4b9fc58723d4d0ba6ed1925af"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-07.zip",
+            "sha256": "978c33e4a464eef0cf89152012af0bfdb7486a0eed391596beae33afe7af0e6c"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-08.zip",
+            "sha256": "4010228173913d4aeca143c34aedb3bec99741e4d0548ff94f0d2fa113aedd1f"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-09.zip",
+            "sha256": "94f99da71e69e202b0c854d827e8665175471779376efe5bb2735e5659da19f4"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-10.zip",
+            "sha256": "77c49c7e7a5aff5b9af8f79fac90d60dc34efb83a03dc5cdf21e6ce935169ba5"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-11.zip",
+            "sha256": "540e1cfc450555f4b4bf66597d2f53d3ef2aeca259628c2e3679a0328cd8cf62"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-12.zip",
+            "sha256": "15f8b317ce9a72b95c2f7b814cf354a3be7899c716b1da4bea5f9741f1a4bc72"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-01.zip",
+            "sha256": "69cbd7f53ebf1ce8f7a10181830a931e08e843d7ce0060e9f173f932f3b7510a"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-02.zip",
+            "sha256": "365bf9687593496872696454674a4a73183112bddcd1c894b000f6a66943a9db"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-03.zip",
+            "sha256": "2e04fe5bc9bfba00ae5d5bf74cccd2cc74c86a64923600715f309a1f20ff316c"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-04.zip",
+            "sha256": "ebbab0cd75059cd87171febce99b34bd9cb78d7d1ae0db76f50a8dcba4726eb7"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-05.zip",
+            "sha256": "51739079dcec6b65dfc3b108f1f6d009a8e92a3ee60425dd8384e7604974a7be"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-06.zip",
+            "sha256": "e16d550e6995d44bb5820218e1a817012be1495790c1f5074e31d681f13c2cf0"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-07.zip",
+            "sha256": "7f296e401087e50f3156779ad25a67e29b138cf35aa8afc89971e0862b42011e"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-08.zip",
+            "sha256": "81050d8e794a6c82a728a2ef1aeeea825ded69960aa905742796c5244eb7febe"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-09.zip",
+            "sha256": "5c98619433ccccb9484dbe9e278dac80b40944f63440941ca60142f4efa415b2"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-10.zip",
+            "sha256": "b9a714d6dfbf51f58b0fd8d0124929b05c59a57fb607b04ea383b6262650e85d"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-11.zip",
+            "sha256": "3c0cf3885dce26b780090fdf7d6b7573648ba3c33fc17ad6bd20df7226e4ebf3"
+          },
+          {
+            "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-12.zip",
+            "sha256": "513d90cb75666a93355d4c6f32928285df9be1c90b34233994e3a66c8c082074"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\ETHUSDT_2022-10-02_20260908T095439.json",
+            "sha256": "8b23aa82c82fdfc1b6a7431300f9631186f9629c1949c1f0e8597f1d96945512",
+            "role": "REST gap supplement"
+          },
+          {
+            "file": "data\\raw\\futures\\mark_supplements\\ETHUSDT_2023-02-24_20260908T095439.json",
+            "sha256": "a4c855126da7c43eb4141e667363bc01ebee165890aeff8725b76d82aba740da",
+            "role": "REST gap supplement"
+          }
+        ]
+      },
+      "funding_file": "ETHUSDT_2022_2024_20260908T094615_combined.json"
+    }
+  ],
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "verdict": "CHEAP DEVELOPMENT DIAGNOSTIC ONLY; funding availability at scheduled boundary; margin and executable quotes unverified."
+}

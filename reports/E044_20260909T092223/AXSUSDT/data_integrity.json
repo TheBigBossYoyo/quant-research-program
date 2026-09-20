@@ -1,0 +1,545 @@
+{
+  "symbol": "AXSUSDT",
+  "start": "2020-11-20 07:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1617602400000,
+      "open": 5.87294,
+      "close": 8.81319
+    },
+    {
+      "time": 1621425600000,
+      "open": 5.021,
+      "close": 3.138
+    },
+    {
+      "time": 1621429200000,
+      "open": 3.138,
+      "close": 4.12
+    },
+    {
+      "time": 1652274000000,
+      "open": 16.53,
+      "close": 22.3
+    },
+    {
+      "time": 1668344400000,
+      "open": 6.361,
+      "close": 8.574
+    }
+  ],
+  "funding_events": 3288,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 9,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2020-11.zip",
+      "sha256": "ea6be38efe771da981f07e81a996e3d9690e64f765dc34dc60c0f0ac68e730b0"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2020-12.zip",
+      "sha256": "5da3ecea786a828696f5f03cdab4f76350e4a88e230ddfc5fe866c5e46dd2f56"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-01.zip",
+      "sha256": "ba50f190d846ea5a7f41acd56195bee8ccb50ad334456dd1d5e565297b88b29d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-02.zip",
+      "sha256": "3bfc7d009a184e282585b590f3e324336a7e9499344bb2732eef4dadb92b7df7"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-03.zip",
+      "sha256": "f6287154216b916240e362dd89e512aa08fc675c9fc5f979e1d7beeb9c060daf"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-04.zip",
+      "sha256": "f003bc51ccf36aa23989625799e04bd77df2ba547eaad6683a0125a33b6c0c82"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-05.zip",
+      "sha256": "8872049691c63c6d8f2638a33b0c87d1df2d26de662a5c91bb060df33c5ce4e9"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-06.zip",
+      "sha256": "4831dfc00d846ab6d1f1d2e2e6329696a18b6c67c9e800aba3d150c436e8a564"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-07.zip",
+      "sha256": "5538b225e22bf3fb79b24f562aca4d9d6cabe94b93b6ec96662df088b0331eeb"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-08.zip",
+      "sha256": "49eda8208cf1135a6e6d999bffc7d18b196e543583814a8b60991bcbfcf2fc98"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-09.zip",
+      "sha256": "b35913257a81591cd96df5a4e0e4a611416ae23ba4f4ee67a705ee8262ebe074"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-10.zip",
+      "sha256": "c0825541cf728cfdb052abe95b7b4c58f28d7767d2f75d738cfeb9598bdb589e"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-11.zip",
+      "sha256": "ae08a53c0fd6ef8ab9f2ce01012e5b85b952d1cd5842c473584116fd6a35f15c"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2021-12.zip",
+      "sha256": "eb7e09fedd3e5c6c1bb78f54fbd3c3a9613af24d0811fdb7b65d21750914149f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-01.zip",
+      "sha256": "e38d69681a89e6465bb8f5a5deedd2b0bde3962bcb9dcb35f3e39b2245acca33"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-02.zip",
+      "sha256": "df97ec944546cf64a296bdeee7231011780654970e7da1620ea7cb2ba85c267d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-03.zip",
+      "sha256": "9baa47fc8d925ec7f8d4959b18c235c32eb66fe0136343a1720859b78a56d1a1"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-04.zip",
+      "sha256": "2ef0cc6c4108ec0636d020733d2d6c94932ee762bbccd0598337c19cf35e47d9"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-05.zip",
+      "sha256": "a947c65a3286e264f5a8aaf9ef3248343e44e4f647a2269a080bf53b6d079b11"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-06.zip",
+      "sha256": "6772efa31582a45e717e6c8056edbc8bf82f9ef35f4fd8545b1e31a88aca0e5a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-07.zip",
+      "sha256": "a29a4f63e224c85a5481b39a9e2f433c0ca040ec98346c00a81e664335861a23"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-08.zip",
+      "sha256": "86b87ed10b8e3cd4feb29b0b875174aadce0d37862bea816daaf39a89995e0f8"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-09.zip",
+      "sha256": "78599df9c7e3428f30363d1a4e8922f59360e59ad1ccd102cc144116aab40156"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-10.zip",
+      "sha256": "9dd57ac857dbdbc5e8892b840b83c58f66db857239bb675417caba99bacbb4eb"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-11.zip",
+      "sha256": "3e55e905770763f6dedbdccb84ad47ed51a049c4586b93bc5b84de565867139f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2022-12.zip",
+      "sha256": "6689208157afd97f17aa8bfbb4d8f79b656075762d9bf0fded6d0f574114e85d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-01.zip",
+      "sha256": "8a6d49fbbff0078813007fc48ccd1372dfc599cb72fc9b095d7ac099f05d63ba"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-02.zip",
+      "sha256": "de9f7f08f40c5880f674536239c34395b00216e0429cfdb4011ef9d4a2d1a780"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-03.zip",
+      "sha256": "ce1b70743928354d63f87daaba669f58a42100161881223a8080d1cbdf3c2d80"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-04.zip",
+      "sha256": "426a8b9a04ec0d00b5dcb7e6d77c646528820d84200e28ab2dbcf3f1c5bdbd5b"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-05.zip",
+      "sha256": "61a03928dc2642bf29f9a5f3c7c5b7bfa8150cacebd57b775ee368167c4144bd"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-06.zip",
+      "sha256": "f00bde11baa66ae52bb53dc59be0dac737f284a49d28cd4c3a84f5886585359f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-07.zip",
+      "sha256": "962695803a2fff58ec1c0e57fcd8ecbb7a52e5ccfcd8ad851cb98b02e5011062"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-08.zip",
+      "sha256": "2a78587a029795287133d7cb0e0e6b40658ae71cde364fbbe392482555ea695c"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-09.zip",
+      "sha256": "ffafd449a01571ca25c4ce6792a5476293b618992756c47c47fd2f1c9b443f0f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-10.zip",
+      "sha256": "35eaf2da20ec3634d8a195ee9f22810128d1787bf826bda3a31554a1d0813754"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-11.zip",
+      "sha256": "35ddbbe8ba0970bef10a112905b5be822aae03f3ccba0fea34eb0434f0f32c42"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2023-12.zip",
+      "sha256": "379dff1a0c88588f0fb7c9a5644bfa0f5bf8e8ec9f3b7c6ae984af1f343b1387"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-01.zip",
+      "sha256": "144c66ed13817ab9caf33331903811255a8db9813b0b3a228169fd7443bf464a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-02.zip",
+      "sha256": "9203982b8cd566405394c530d215c777dd6872d0c9c9784b1cdeb16367e73962"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-03.zip",
+      "sha256": "1612297ea7ac700c9f67686050b27764aad5f9024724a80f91791a02ad24e606"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-04.zip",
+      "sha256": "1e33652732bcf0ca9e91c149b5ee6a20b5d6eb23c79ecda5e00fab16e16d63df"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-05.zip",
+      "sha256": "345804ea3cc0b3b06c063b8611218a6886611ffee90e2aff106d79dc8af12d2a"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-06.zip",
+      "sha256": "110d696b251b4fc05c555fc5cfba160dd92dabed3cfc3e8a2d5f7aae0edf371f"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-07.zip",
+      "sha256": "71cd0e2a8aedaf55842e50ef557fb9258083c7d1497820683f95f4bb75409d2c"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-08.zip",
+      "sha256": "f832e2d063b353be00fda317b479c1e6cf2b2874d83ac46fcba1772d7637e44d"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-09.zip",
+      "sha256": "9c5f6c17b8580cc9d65275551f4cb235ff5212a2eb0f33c749bf5df9229913d3"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-10.zip",
+      "sha256": "b1dc558d9a34383e79ab46e2cffdefc923b36e495c6f3a34aeed1e3add98ed84"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-11.zip",
+      "sha256": "7c0c29b9a90f02d8de64e677715aa333674da22ad89e6b0c2d87931931dffb64"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\AXSUSDT-1h-2024-12.zip",
+      "sha256": "18c69bfe2e324ad2cb5f304a9095c4fd2788fb69348fa149732cd69f08053bfc"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2021-12.zip",
+      "sha256": "f57d34eda8f9e4efc14362c289095bb55f77f510d9ca596271fa79fa9e06fd97"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-01.zip",
+      "sha256": "9c91bf0c8dfc2de0d2508be42cc0e2a29eaf1ea8a17c654a80fde0322f70df4b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-02.zip",
+      "sha256": "b4cc144d7480dc28d9d88026978f9e1c1ab293f7c5e573d4cfd22b87aacbf673"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-03.zip",
+      "sha256": "079f0e5394658520fb73762a5294c107925d49ef59bd43c04ce992e9efd39a35"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-04.zip",
+      "sha256": "515925c057603d8144489648c9bdb276a940589df48ad1e83b03a4a5bdcfd11b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-05.zip",
+      "sha256": "f8b76921c6b7cc3b4f820afcda02aa3adf9e0b04fbdc4d796303e1553f368a85"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-06.zip",
+      "sha256": "3361c6cc3080dc136c549eab6b7ff904fc06e07ebd02b2841f2184bfa0984e22"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-07.zip",
+      "sha256": "93f02ba1cef6feebe5284a3591fa0626ce2bcd40245b124a05834b265df7f180"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-08.zip",
+      "sha256": "5833f697d6271eef305ca213940b2959962be6fba4d30db7e561f45158a89cf8"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-09.zip",
+      "sha256": "0018d3cf879638b05d659bc34c825d253e64e023fec59c83fa50e0c342018b3b"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-10.zip",
+      "sha256": "b33f39679309405c2e74163560d5bbdb22e31e850b0629e6dd2c89d08d15130d"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-11.zip",
+      "sha256": "0169b81618b079bcd8c3d7838aa1272dd3c053edd366e6172238ea9ca8ee1b9a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2022-12.zip",
+      "sha256": "0b8c2ec253d524dd9d93db1a245d4ec79f75227ccc90c895f89c94a56ff740b2"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-01.zip",
+      "sha256": "892ae8b70ccbd9cd9c75178bd7335e38fbf927b8d3d1152b05a202609cdec124"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-02.zip",
+      "sha256": "50cf822346905d369283318b3cb65c1322d3d42f3ea4853876d6e32b34e5371e"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-03.zip",
+      "sha256": "a4e486935ffa539edab4546b479bf56efee3ed50b26f4ada79bb9703ca00064c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-04.zip",
+      "sha256": "ce79877c8cc596eefb16de5451665f58f95680ec0afdd8f29603c37f9a527a5d"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-05.zip",
+      "sha256": "a14b04969f3f22423abc58cd6f9da6cc028f173f589bddf430761de2bbf8f58a"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-06.zip",
+      "sha256": "02ec57993eb3427cfbeef8d46fd186336e2c593c21a59cf0f0db0e5edbc90e38"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-07.zip",
+      "sha256": "5f9b5d1a307b225ba03d91dbe21a58ec8c0b51eea7a8d59d6a8d04c4479ac292"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-08.zip",
+      "sha256": "dfc9feae508e5dc29c7f646e783f5db4413abd6d66d0684dff01b03cad43bf4c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-09.zip",
+      "sha256": "b467cbf714897f356c4c99c50cf187a090c12215802d54a76106c96804cc0a05"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-10.zip",
+      "sha256": "e30296666b7d51a61971e1f734d2520ed668bb68066998d8825ae7ea9110dae6"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-11.zip",
+      "sha256": "73926cdf89755740fa976302d047bdb00e7e77d8c6079cf2f2657d4a4433c077"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2023-12.zip",
+      "sha256": "556cee4e3948c9935c8e8467f3ef84a914cc8ff556f8d0c8e0e6a1ab135ff4c9"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-01.zip",
+      "sha256": "96d185dda6f8896d2f4da210ceaf0ecc8f722aa88e8918f2e9835365ca4222b5"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-02.zip",
+      "sha256": "a2f327025ef1e67144d0ee71e48ed06d6c4efdaf1a4c03503f9cdbfbc91b8be3"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-03.zip",
+      "sha256": "3efead7445d65883084a25a1738ca722e50d1bd5e6bdf62b2ada34ed1782de98"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-04.zip",
+      "sha256": "87c264e19bb68b9d62d41d5e08bba023e12f93724c7364955ecef045ee708b2e"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-05.zip",
+      "sha256": "3de4229b7ade8e470971ec786261d24c27b221e6311620182962aba50eaa316c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-06.zip",
+      "sha256": "42ac50f980984778e9efae35446a354843afdec1cb76cb9295b8950ff01d9b53"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-07.zip",
+      "sha256": "5381e15b8f60f6204b4098784875253b0e5f82687c00dba1680a6fe2c9733602"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-08.zip",
+      "sha256": "71457a3e6b29171469385ff23e4558deed921f27cacfdbe11f0d396e5525ddf7"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-09.zip",
+      "sha256": "e4df431187b0357b741c4cd2a47069a711d2f3092461a6812c8288f78cbccca0"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-10.zip",
+      "sha256": "aaf74ce9cc74fa882d7f93929b3ec8b746c1c9656b9f00e6a9c7740f15f07be1"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-11.zip",
+      "sha256": "d7ddb04a83cc3dcc73700fee422fdc76ef8f5cdf5f391af2652f78de56ffa90c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\AXSUSDT-1h-2024-12.zip",
+      "sha256": "edb9e2f9d405d69bf2f2344fd390978213c8b74475c75dce730fb5c1228e929c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2021-12.zip",
+      "sha256": "6aa658d3317ebb3da1448460c3c6f22757e51ee47de8396387a9b566535013cb"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-01.zip",
+      "sha256": "0770cfc01d67fd7284e4de065db05677e1cbdf60da590b124736044ff8100898"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-02.zip",
+      "sha256": "144d6aef3ceaad1222d9c8e9c2b882030bcb0625396425f512de7a81463e932e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-03.zip",
+      "sha256": "8bc54e06e57bcf0aa8de6973ea80fc4853dc5d6ef3ac9461d6550f46b94a02bc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-04.zip",
+      "sha256": "e9b9eea6a5f96e8c6f448e51394b20609b1f2a1fb8e75851f9bc8c5eff90d2d6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-05.zip",
+      "sha256": "9c06b3c78a29394f7ec79e34d0ac52fc6bcf7b35550068b7553b246d792bdf3b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-06.zip",
+      "sha256": "3a6757c3af29a6f571831e2c09cdb11e3e78f865d4522613397a4479ddf0de0d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-07.zip",
+      "sha256": "b19582e5d2fa997ef32432c4ca9f2a56d210be3d164d3279c6f4c3efc77ec60f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-08.zip",
+      "sha256": "9166f739b06e771ffa055b17cbc7b06994c5b25defc74406a962215d07aba50c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-09.zip",
+      "sha256": "99621efd4a05f144e3b1a455e778a884465465ca152b86a780ac95e5710d1955"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-10.zip",
+      "sha256": "2f2f5b9bf28c18bb03d677b4cea5ad3e79aac7d1ab2309938fdc75b76f20d9f8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-11.zip",
+      "sha256": "e4588696ab7c6feb509adb798fefe6bcd8697a6253d27010da18ac13d00aa0af"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2022-12.zip",
+      "sha256": "f13e25cbc4c528ce635dfcdc186e332b1ba415f1b9c8a5ca8b9defb1c881c44d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-01.zip",
+      "sha256": "864fa89084ace6483cc23bf98671ce973f23358d320378a8236d32e337b953b2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-02.zip",
+      "sha256": "451de0388c1292939ddbbc729cb4478525c44ffd42a9450d488fe24f8d96492c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-03.zip",
+      "sha256": "63a40a86e5da42f310433929c127071271a9632936804401cc564e79d6504184"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-04.zip",
+      "sha256": "55f14623ee11a7943fca857302e521609de65be22f6d215ac81f17cee083b916"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-05.zip",
+      "sha256": "b928c792ac4a76ad91c8b1da520181f8de8e21ed3054051ee9dd55aaf5376c43"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-06.zip",
+      "sha256": "1fc8f452b0cb7d7a3760cc5dc27957463d5adc4cb8b44dc97fba1661a89898bc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-07.zip",
+      "sha256": "f8a4d6f2be1b1e69a5e6fd6e8ab25a20b4299464fea84028bb81c9d926c8f827"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-08.zip",
+      "sha256": "de5599df875983c55394d8ebf414471c81848bcadcd72381b81eb736c1044805"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-09.zip",
+      "sha256": "75c4ab1fd84349312b7d4da2bf9d68c3467dc152d503a0e01475a0fd73194e93"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-10.zip",
+      "sha256": "6c5391b39f5370cb242c1de2cfbddfd7f1e988bf4050ea06c4232c944c018393"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-11.zip",
+      "sha256": "6acae1dbd75789ed3e3c5133a49c60487488b7b20705a28f99fbe572a5bf11b2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2023-12.zip",
+      "sha256": "8eb2c1655d5b6697bcfdb2130c4d025bad09d23052049a6544373a11fec3beff"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-01.zip",
+      "sha256": "f633b14db5bea8482cc57584587d28e672b595bcb089196d9b24e1c0e4b54c3b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-02.zip",
+      "sha256": "8e072080a9cee13e0459457736753d21ecbc1ebcf9e8463e471c4f33e00e003c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-03.zip",
+      "sha256": "96da1ab76c3d9fc901f7e8b33e30ce17c2b12ff13f99477bc0777e57efa762a6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-04.zip",
+      "sha256": "ff857c4d9d3a0ae24a2d28af6e523210a866141c209a978ed96229a5d0c6fad5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-05.zip",
+      "sha256": "b8f6a34fedd4a4cb6d3085ea0849708326b9c25d04b56782dcd4175f9b792824"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-06.zip",
+      "sha256": "8f80bc859f77a82a249f6316a749ff77c03534c95521ca86cb279b4846d7a3b7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-07.zip",
+      "sha256": "0da44803573a8ea77e1bdef6f6181b653b3575257d6ac33eda90cad3f3b08b34"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-08.zip",
+      "sha256": "6f5e1f484abe4bd230345e252acdc1f8a580fe0b5e6e9934d9f5114942cb764c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-09.zip",
+      "sha256": "3c4e49114d3b3d6a4fb4129562f5b481ed6929240addd084ec80335d3f174a71"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-10.zip",
+      "sha256": "bb5fecbc9f3934ae4d275920d822133f968797b2324325309969dcf1d11cb981"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-11.zip",
+      "sha256": "dbd52efb7c23ded4b0348cff861035359727f6fe2045be0da2bde96cafa30656"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\AXSUSDT-fundingRate-2024-12.zip",
+      "sha256": "ebe594b5936a1b44b1ffcd0952af3099492b938cf1406e3dcbfd7814eebeb97d"
+    }
+  ]
+}

@@ -1,0 +1,630 @@
+{
+  "symbol": "DOTUSDT",
+  "start": "2020-08-22 07:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "supplemented_hours": 0,
+  "supplemented_days": [],
+  "supplement_files": 0,
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1621425600000,
+      "open": 35.938,
+      "close": 23.921
+    }
+  ],
+  "funding_events": 3288,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 9,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2020-08.zip",
+      "sha256": "0c16074431217211633c84b717b4900310e2e5673886c5c939e5d56a41d50f82",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2020-09.zip",
+      "sha256": "9f7d1c39718c72a5fd989e87692c60b21b1188b9c0122d4f72a993f73cc9206e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2020-10.zip",
+      "sha256": "0050582582aea15a5efbe421f8d31da50dd74c3f70acfbe696ad73f058b426f9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2020-11.zip",
+      "sha256": "86ae2fd16438c35733c05b132ecdc4b41e8a1e12767181dda377c009034a170f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2020-12.zip",
+      "sha256": "de592e49ce3b82522c061a77f73ccb6afb2badb3465a9048318b13fc1ce3648d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-01.zip",
+      "sha256": "fae181340ad3f5731c382f4d49e3dd9a3814bf88470fd1bf2571a13d928e666a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-02.zip",
+      "sha256": "f3a15712d6066e227aef3af67076aba95a3f1afa427b87ce85267d6790a4975d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-03.zip",
+      "sha256": "21bbad18810061526e52f84a4a16dfb4083723232672410617f38a8bde0aab99",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-04.zip",
+      "sha256": "39e8e364cd749e99d155a814691ab091d9d0e0ecaa7c6a645ae88e4c8d9bad33",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-05.zip",
+      "sha256": "62585af59fc3cef121fa131bddaf7275bf26a414eb310ec9940e371aac57895d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-06.zip",
+      "sha256": "0ae301b029c5a8a4b96647f7d8cdef83ce82794038b8ebe3a2de9076d20116da",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-07.zip",
+      "sha256": "e7fb99c34f4de59d26e1f6a58bb5e116e912134552a4b42eb2021becc755c408",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-08.zip",
+      "sha256": "50bf283caa28c35dc28a20e741cdd7cd8ca0c1127e786de61a05bf59acf058f6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-09.zip",
+      "sha256": "1bba1cda4c793926b5461bec3e182a9bd8858efeab9d9c3a6c507eae4058d3b4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-10.zip",
+      "sha256": "30d0cc3b194300e9ac5a8f194ca2a1e9a2bf71baa4691c761870d176642bdd8c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-11.zip",
+      "sha256": "33b901cceded295ad35d5cd8d9e14f95e2bc96598d743be254a1165e95f4ec94",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2021-12.zip",
+      "sha256": "bb701e46b8c06df44cb740e70cc62ec3f76b3e06765562bc9e451c0a72bb2c60",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-01.zip",
+      "sha256": "cec7929aa1d21568a39c85444253cc068da9b0b2bcadbbe2bd94e888b28617a6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-02.zip",
+      "sha256": "856244c60e1f218e45b8768a22539e1d0e3370a958fac38e518283b7da9be4f4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-03.zip",
+      "sha256": "dd3c1c3b087a6085ab0a0d6a3852437479a0c5d947358041a1fd90ff095440f8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-04.zip",
+      "sha256": "518285d02277eeac66aa39e23b1d6b1345ab380fbd7283268ed04cc5275f58c5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-05.zip",
+      "sha256": "084dc436b374c1de084fadb9dde497282ca1e60dacdd15e3bcebe463aa59fb55",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-06.zip",
+      "sha256": "982b313d5f7fa032b0265c576d72e54cccfd79d7afdb0e5d07bd7b79fb0b527c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-07.zip",
+      "sha256": "42f2136e1484716773f609c282761634c36549d8eacd7189404b8401da5dacda",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-08.zip",
+      "sha256": "3b43ecb09aa33a1adac71accaabf5a74bf073d6618ebc20de2b2f35e12ec4642",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-09.zip",
+      "sha256": "0cbc4f9a002e944359f449d342feb306c69a8f69aa444ae692f16570d222cf00",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-10.zip",
+      "sha256": "288961a1fa6b06a6e0e228ebb99411c3586a82f50367c8c754bbab89dca415c0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-11.zip",
+      "sha256": "6ad04a334e4490b0ff25de2ccf71f21b84615c8d70b8365c4cdd26b3d2a87718",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2022-12.zip",
+      "sha256": "ef40fcbf90abb570f86f67a40309bb329d122613e1e9d534e173fd224e6aa922",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-01.zip",
+      "sha256": "ecfcf32032d1860a95fcf54bdefc790b82a69a3ff4227ccf3c8a242609d95c16",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-02.zip",
+      "sha256": "22b6158abeb569f696483242e92eafded57ba48b4951d89f43959555aedbd49b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-03.zip",
+      "sha256": "5cdefbf291eb4d4dc0149874f1c7f551977d2231f1462ffc28d6030aad049d08",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-04.zip",
+      "sha256": "8909769aff23a52fa78606f220cfa45b8c8e4ff4c2558f5d589510f5e1f01bf3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-05.zip",
+      "sha256": "12fad57aa3559de433abe1ba11714713421cef3fa01d632cb5ac5327e6c3a2ba",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-06.zip",
+      "sha256": "71846947f273ae757dcb3d040762c53a0f0c62602db52bfe5688c4477b0d6ccc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-07.zip",
+      "sha256": "8cef7abe18eb5da7495ae1e65d5fb5e275d8f03307e94b8d595c85c42a89974e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-08.zip",
+      "sha256": "ee1ae2b52767c16717bfc803aa4d44b31a7ef75c9e58071e24b2c3f8c98806a6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-09.zip",
+      "sha256": "d70b4bbd4ea9e2c28ec7d06110c068fcdded2019d804d99e71d97af6932c1a57",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-10.zip",
+      "sha256": "e42ce9863efd5979ca5ba7780d5ca5b8aa1cc7751c728c8a6796c88932a53a10",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-11.zip",
+      "sha256": "0f5b39535230b0160c315a12057498ddc2b85b54e3b00d109c5e211f04c58449",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2023-12.zip",
+      "sha256": "69a1b0797dbc42193681cd8bf744a68d8bf32c71f8cf78a720c474531ef77a39",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-01.zip",
+      "sha256": "500174607a3d855efaf95ff4aefb9e6d4178882dbcd80bb636ac06b6c0ab1845",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-02.zip",
+      "sha256": "1ea3620204eb317fb060658add5f6b26ac97d4197e79d070550ef5deb1f579c7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-03.zip",
+      "sha256": "552306a47166be16e4a3a81fab7298b0f93506ec2cc1f42d853e1a31c98fcaa9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-04.zip",
+      "sha256": "08ef0809d708bfcc1c07a840e50b4192c0c07ee9c1d19dacdc4583a2a2b048aa",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-05.zip",
+      "sha256": "304618b2342ab12a4b90d3df1b4d65bf9f915dd25d4b8b5192ecec695240b115",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-06.zip",
+      "sha256": "ec11c17e5beb6525e313e617d34ddd1df707e29a09907103bc41bb32b1842f51",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-07.zip",
+      "sha256": "290a5356b0d43c29343fbf19277e0b3ae2ea9a682da42367fb0bf97229eb28b4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-08.zip",
+      "sha256": "bc53ee71debd7d1bd68385817f1be9c79562511475307d508048ac4e1065bd24",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-09.zip",
+      "sha256": "46ed5d6f41924d40fca00f36c422e2e116a916e13626ac34f281bc19db1aaa0c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-10.zip",
+      "sha256": "5d7a4c8f111b97154ac26125af906c5d1e686d982bea369e48b7c399aee0e3a2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-11.zip",
+      "sha256": "785dcad37a68cf3a26cd0c4d7281749936e866a3f765e0c985cb991d4f900c1b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\DOTUSDT-1h-2024-12.zip",
+      "sha256": "2533eab6851c38fd9ced1e29b94d1dd79bbc9a30c8746d5b5a8c7a69ef9b55b5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2021-12.zip",
+      "sha256": "615b1742cfde0db2a47f388738b438c479a99a5cc2a4ced5167758230160baa6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-01.zip",
+      "sha256": "89b9d7371c72e3851e8b6eae19a6d4634611b73d4224cb57d5289b52b71414ff",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-02.zip",
+      "sha256": "986d5873cf2857c912508b850b5c65b566e4321887630b03d2dd8d48a704b0cb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-03.zip",
+      "sha256": "b3060603c0dbf34fc35b240d01f066b155804f47f2007c8a86b25e3e9cc8c71d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-04.zip",
+      "sha256": "6ec2398f9220bc6b51188637e5d764be7cf2eb184b199e457b6686f0536f940e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-05.zip",
+      "sha256": "bd41afbd8c35ff7069e7ae226a2c9a1ede1fa360862d100622fa01ec8361ba17",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-06.zip",
+      "sha256": "477f547d87d483ae4583532a1cc6e905690047c2b3dc7299fe440cacfe3aff17",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-07.zip",
+      "sha256": "cf451193d26af8630b0298e77de2ce6ee2dce05a3134165e9e8fd9e5bbd6216d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-08.zip",
+      "sha256": "8fd1422ff41206c1f76e7c23c2b8edbe26594fc795ddb520c866dbc8b472b8ba",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-09.zip",
+      "sha256": "72e9d124eccb8f87dc8c77a446b83f33849fc58a5fcf6fd081849e7c80819952",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-10.zip",
+      "sha256": "f8e9c905be8fd6adfb2c7a51157b563b3f87f95fd3eb0bcda22a5061ca31d545",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-11.zip",
+      "sha256": "fbf159d84e9a5d11a0009fbcc5b69e2951d49d70f0d6c6edb5a5596d4ff1c79b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2022-12.zip",
+      "sha256": "83bcfcdecc3be8b0a1d330129b3e2fe228cec2530535ffaf64c06a47c9e06a39",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-01.zip",
+      "sha256": "c8754f204dc6b0a944798a245cc7d3b7673993aea96f2d8cb355da6d8ac53a0e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-02.zip",
+      "sha256": "3e1f443fe1f96e0d5d815d5fe148e37aa5c938f7f28dc077f4aae3ef62fc7d39",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-03.zip",
+      "sha256": "9a488ccc19c237034ca2500b8cddaad694c8b1fd4512c13bc3005815fa6ff82b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-04.zip",
+      "sha256": "a5b3fe9daa282d49f2c6c4c9c0e1110c511e4c9e8f184018a95df2007632bd0a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-05.zip",
+      "sha256": "6b199f8bdcf5c7be3fadddfc8b9a9ecaa843db67a0ae7184e52b032953e22823",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-06.zip",
+      "sha256": "50da5ce599d8d15e40eb044088786c29a83ca3da4c2e8e9b5bea66d39fba9abb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-07.zip",
+      "sha256": "8eb3abe1854abeab310596167bab6d4cf7c23da98b2d77672ac785247fcceca0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-08.zip",
+      "sha256": "9fed5a1a46f5059c70fc7396234fc3054ec99123939b739b9e38e16b20de8d03",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-09.zip",
+      "sha256": "5ebe0b6e395ac0a4f6a051914b5c6348f07d260d7446a50cf6237bf89bbfe78e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-10.zip",
+      "sha256": "aaa3f2dad568b94295ff1a25bd6f0f2416a3e870b721c06937343ac647dee663",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-11.zip",
+      "sha256": "4709cd3188627286911c34e3826d31125ab85fec74f82e76e433ee8951367735",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2023-12.zip",
+      "sha256": "015a33da1dd6bde01d3067f3a8be47ec7bca93a89c371480428f96bbc82c4601",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-01.zip",
+      "sha256": "e69663a80880bccdd7a40b6a81f296bff8e13c8f61fa444d2bbf0b97fc6cbb1f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-02.zip",
+      "sha256": "f7e39a6c39c1c7ead8bc250b5cd076a48987b677d26125aeebc399f7873eebd9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-03.zip",
+      "sha256": "1637788b15879353212e22ed5db24b769e021ff62339baa22ceb61cf99d029f4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-04.zip",
+      "sha256": "0edb57ff1ac193be45feef777fb94415c50da92e065ebe84e9fcacab99999897",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-05.zip",
+      "sha256": "0337cc85d1559bd67020f3aefe0568a547936e6491d187f30f77df97e8173ab3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-06.zip",
+      "sha256": "e84f1a1d1d93923a0670ee5a16303f5c13ba2ea2375fd92758391e9a3101842c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-07.zip",
+      "sha256": "c41549e25319c7999276e8527189d507a1a17e6b67c77d94f7bf679de0c0d138",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-08.zip",
+      "sha256": "a4496075389a114b36014144a71c8961d85f3ad48e371fa94920af9c78fcb3aa",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-09.zip",
+      "sha256": "651e1baf780aefe36e52da75f47505594bd3516c332e9adf865cf705ba87d764",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-10.zip",
+      "sha256": "9845ee6e03ab4b6983e2748c035fea5fb2764de9a209ebcf744d28802e4e34eb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-11.zip",
+      "sha256": "7f80f5d73ab81779f78da494745cd2cf1815e9f8ef52fb1cbb61224acf8b86db",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\DOTUSDT-1h-2024-12.zip",
+      "sha256": "8f75661cf5821ee82d90249413f072aec2d05c81245daec0ef8d7a5e00d02cea",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2021-12.zip",
+      "sha256": "c7543a16ad4e974f77fdc05e1ca80b9b4d202f958d32311a57816e8fb1e3bed5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-01.zip",
+      "sha256": "1897dda495a2a46058609df0bb866e06026daade549deae74664e02125df9add"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-02.zip",
+      "sha256": "bcd93e481e6d88d5e1024f2817af716130b98e956f7b07a2f059c7743f03fcb3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-03.zip",
+      "sha256": "6043a1f6ef9d7a54d3235b924ddf254b72014d60a0621f0477ecfd5e4879bd97"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-04.zip",
+      "sha256": "3614b0b9d31e57ecd654c13ddf339606393f210e344d0fbceedc0d14ebc1d5be"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-05.zip",
+      "sha256": "9308b8db20165b762e1d1cbc0a38795877c5de015d25978d15de2b29aa907037"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-06.zip",
+      "sha256": "ee05cae5829be4f0827b667870080a05425b12ef7631bb34b0990c811806574c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-07.zip",
+      "sha256": "fc87f7250f9e17136289167eee5ce7025a48cb6d83f31165da74f13e0c522cfa"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-08.zip",
+      "sha256": "3883040d1bccb5ed239de1a19c9f5d052b2764bd458831d9962be0152d38ccc3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-09.zip",
+      "sha256": "6ecf0e91c0dda8f9a795a43b1bf87f41950c21b316b610117d0f1a575aba8fc3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-10.zip",
+      "sha256": "d7bd357f7e6cb86ae6f7cd051346458712dd42218cff216e35c0c1063a41cb23"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-11.zip",
+      "sha256": "aff5174cec6876c69881bbc689b3d6fdd35b1f7c55ad58ae6d779347119f1fce"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2022-12.zip",
+      "sha256": "64a93d3299b70d5bb1c459bd1c53d0ffa34c33174db9f924aa0b8f34b924a15d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-01.zip",
+      "sha256": "daf6986e3669fcea3cca406ef72751ef3b25d25d2a5a029a23397a398d78d133"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-02.zip",
+      "sha256": "0dcf3c70f2a781c6b8f325f4a523e4fda651ebc18595a0ef20ea72d87a074f8d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-03.zip",
+      "sha256": "cd9c8d94f18c9780b9152ddf6ac26ab1147981190b704e912958ebbb97572e4e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-04.zip",
+      "sha256": "fcd6555f958b0cdcb62954893e4b1884e66727e7521c83af7be25ac5de78c5a1"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-05.zip",
+      "sha256": "f27f079f18c894f78eaa09790fa93584e5d2b610bb6f788600d5ba56c4d69b6f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-06.zip",
+      "sha256": "e29d828cbea7eed708ec9728c94b4fc1fb72e82495def596d978902e8c9e636f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-07.zip",
+      "sha256": "3b0bc3e552ed8e2c7c5221cb1d778c0e92a0df569a9f1c44fab462bf775b7678"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-08.zip",
+      "sha256": "fc5685bd3ec2a6af0ff73e418c0b12c08af9d93ffe1d8e9e515bb4b15aa02415"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-09.zip",
+      "sha256": "98c4c054fb1121b14a5b319a04d1eb5b4f89678a1b8dcc9416b8c639dbb9317d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-10.zip",
+      "sha256": "092f39c279742fcf21ac6b136ca68d7c690d8d4f7811c8f4c31bf951dc9ff3d0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-11.zip",
+      "sha256": "3f0ba50e441a17e403f16510b0ea147625f531512f4bd1bbaa73fe7d9515973c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2023-12.zip",
+      "sha256": "a2c0ba437d9b6159ecf95bf27eafe36f61650e9923d0a5f22858644525e4be22"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-01.zip",
+      "sha256": "dcd4a6511fcc216baa9988abae0d18f3598fd6ac79bc1fe5dfcdc3058434037d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-02.zip",
+      "sha256": "2603545e0b07eba3261a607fa192f202da773faa32160133f046ab834a9512ee"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-03.zip",
+      "sha256": "cf0a7894adef77805c61c4517d0cbfac78665f1fcccbacd52fa0707a502ce670"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-04.zip",
+      "sha256": "13e20d6bf20678f934978c92edfb900cda9fea4f1e342040af4499f64bdad2d4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-05.zip",
+      "sha256": "a9302fe44977b81cfff1d96ee211191c4eeceda21170c3fd074a06ebf899f52e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-06.zip",
+      "sha256": "74c807aa155ced4a09f35881c9cd14d749eba85fa881015b0bfbe51d83d0980a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-07.zip",
+      "sha256": "7090fa6a4897521868240ab89b66effef5b91f955cf15f2decb9f7566e1859d0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-08.zip",
+      "sha256": "b586d2d240bdaeea90583e2d17bd93ea34d91e192b50334ef01f5a3a9895f331"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-09.zip",
+      "sha256": "2d707e7208463b4fa1a648d824744582b1d8fd18f25870a620035e24a544333a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-10.zip",
+      "sha256": "8d02c52c75cbc6231cd64507ba544497d024dd8a6a50ff4dc85e837fc8e58213"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-11.zip",
+      "sha256": "af1b00d617b7221fe77cb2d2e297a10f74d91d0924e0456214d2469de47e8763"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\DOTUSDT-fundingRate-2024-12.zip",
+      "sha256": "d43a9805d9674591a21710503f9a18a2bead6ad665ce224608d483d9a1fe600d"
+    }
+  ]
+}

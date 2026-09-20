@@ -1,0 +1,3 @@
+# SUPERSEDED FIRST PASS (data-integrity)
+
+This cohort-2 replication ran on inputs where TRXUSDT, XLMUSDT and VETUSDT monthly kline archives lack 120 hours each (2022-02-26..28, 2022-04-01..02; 30 incomplete 4h bars per asset), the same documented Binance archive gap corrected in Phase 4. The preregistered supplement rule (PHASE5_PLAN.md, Branch A item 3) applies mechanically: official daily archives are merged for absent hours only and the run is repeated. Nothing here is modified or deleted; do not cite these numbers as the Branch A result. Analysis E048_20260909T151232 of this pass is likewise superseded.

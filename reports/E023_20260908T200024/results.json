@@ -1,0 +1,233 @@
+{
+  "experiment_id": "E023_20260908T200024",
+  "code_hash": "4795bc9e684ca6cab9a7bb5fc6f897707eeb82f12568c8932af8e049ea4bace9",
+  "git_commit": null,
+  "seed": null,
+  "cumulative_hypotheses": 241,
+  "new_hypotheses": 2,
+  "integrity": {
+    "klines": {
+      "files": 9706,
+      "symbols": 396,
+      "rows": 289092,
+      "taker_volume_quarantined": [
+        {
+          "symbol": "ARBUSDT",
+          "time": "2023-09-19 00:00:00+00:00",
+          "volume": 53196965.0,
+          "taker_buy_volume": 75647001.6
+        },
+        {
+          "symbol": "COMBOUSDT",
+          "time": "2023-09-20 00:00:00+00:00",
+          "volume": 2838185.4,
+          "taker_buy_volume": 2995403.7
+        },
+        {
+          "symbol": "DYDXUSDT",
+          "time": "2023-11-30 00:00:00+00:00",
+          "volume": 24048704.1,
+          "taker_buy_volume": 27400442.6
+        },
+        {
+          "symbol": "EGLDUSDT",
+          "time": "2023-09-19 00:00:00+00:00",
+          "volume": 120959.2,
+          "taker_buy_volume": 168924.5
+        },
+        {
+          "symbol": "GTCUSDT",
+          "time": "2023-11-30 00:00:00+00:00",
+          "volume": 6493961.6,
+          "taker_buy_volume": 11031042.8
+        },
+        {
+          "symbol": "MAGICUSDT",
+          "time": "2023-11-30 00:00:00+00:00",
+          "volume": 14921409.4,
+          "taker_buy_volume": 17139937.7
+        },
+        {
+          "symbol": "THETAUSDT",
+          "time": "2023-09-19 00:00:00+00:00",
+          "volume": 10093669.5,
+          "taker_buy_volume": 13857545.5
+        }
+      ]
+    },
+    "funding": {
+      "files": 9693,
+      "symbols": 396,
+      "events": 991233,
+      "intervals": {
+        "8": 742390,
+        "4": 248561,
+        "2": 282
+      }
+    }
+  },
+  "stage1": [
+    {
+      "feature": "ret90",
+      "mean_ic": -0.016544753434301573,
+      "ic_t": -1.175787984802622,
+      "weeks": 237,
+      "critical_t": 1.959963984540054,
+      "passes_stage1": false,
+      "fresh_subsample": {
+        "2020_2021": {
+          "mean_ic": -0.01717319300964789,
+          "t": -0.5836081949901275,
+          "weeks": 81
+        }
+      },
+      "direction": 0,
+      "ic_by_year": {
+        "2020": 0.057918797376454036,
+        "2021": -0.05905141841728166,
+        "2022": -0.031238642047580333,
+        "2023": -0.007184689500105703,
+        "2024": -0.010291764709180681
+      },
+      "decay_mean_ic_by_weeks": {
+        "1": -0.016544753434301573,
+        "2": -0.015404442190932902,
+        "4": -0.02006382622026093
+      },
+      "mean_eligible": 86.14682539682539
+    }
+  ],
+  "stage2": [
+    {
+      "hypothesis": "ew_long",
+      "feature": "ew_long",
+      "direction": 1,
+      "case": "base",
+      "cost": 0.0007,
+      "ending_equity": 28334.393154751007,
+      "cagr": 0.23147513506455586,
+      "daily_sharpe": 0.6820927263648853,
+      "max_daily_drawdown": -0.8748647492108698,
+      "max_gross": 1.045063400350962,
+      "mean_names": 88.06906558328497,
+      "annual_turnover": 8.683794110128067,
+      "calendar_returns": {
+        "2020": 1.1710240326346009,
+        "2021": 3.014363522004323,
+        "2022": -0.8238219026690226,
+        "2023": 1.0389750918724592,
+        "2024": -0.094957963891383
+      }
+    },
+    {
+      "hypothesis": "ew_long",
+      "feature": "ew_long",
+      "direction": 1,
+      "case": "stress",
+      "cost": 0.0014,
+      "ending_equity": 27439.454594770403,
+      "cagr": 0.22359897227260705,
+      "daily_sharpe": 0.6746212202925782,
+      "max_daily_drawdown": -0.8763306739642334,
+      "max_gross": 1.0451834289114583,
+      "mean_names": 88.06906558328497,
+      "annual_turnover": 8.675375669042772,
+      "calendar_returns": {
+        "2020": 1.1593424646896553,
+        "2021": 2.9925955618844715,
+        "2022": -0.8250304011363732,
+        "2023": 1.0258222298718143,
+        "2024": -0.102086086797471
+      }
+    },
+    {
+      "hypothesis": "ew_long",
+      "feature": "ew_long",
+      "direction": 1,
+      "case": "severe",
+      "cost": 0.0028,
+      "ending_equity": 25732.758775690083,
+      "cagr": 0.20799063691624942,
+      "daily_sharpe": 0.6596801597773947,
+      "max_daily_drawdown": -0.8792117773705759,
+      "max_gross": 1.0454236414484386,
+      "mean_names": 88.06906558328497,
+      "annual_turnover": 8.658824433796156,
+      "calendar_returns": {
+        "2020": 1.1361479464978874,
+        "2021": 2.949395613605352,
+        "2022": -0.8274229426528843,
+        "2023": 0.9997592500679433,
+        "2024": -0.11618044248204251
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "direction": 1,
+      "case": "base",
+      "cost": 0.0007,
+      "ending_equity": 53929.390447797996,
+      "cagr": 0.40057064024850475,
+      "daily_sharpe": 0.8527850677675886,
+      "max_daily_drawdown": -0.7900259326423784,
+      "max_gross": 1.022979949482159,
+      "mean_names": 1.0,
+      "annual_turnover": 0.25472765638191375,
+      "calendar_returns": {
+        "2020": 1.9130991851715513,
+        "2021": 0.19371602866752835,
+        "2022": -0.6621960605847776,
+        "2023": 1.3497767487392909,
+        "2024": 0.9537900897647604
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "direction": 1,
+      "case": "stress",
+      "cost": 0.0014,
+      "ending_equity": 53859.68946588999,
+      "cagr": 0.40020856841552765,
+      "daily_sharpe": 0.8523832978267856,
+      "max_daily_drawdown": -0.7900617163798751,
+      "max_gross": 1.0229904705668635,
+      "mean_names": 1.0,
+      "annual_turnover": 0.25499706640430186,
+      "calendar_returns": {
+        "2020": 1.9105191470647687,
+        "2021": 0.19344046971092954,
+        "2022": -0.6622089922247831,
+        "2023": 1.349657105455154,
+        "2024": 0.953619812113015
+      }
+    },
+    {
+      "hypothesis": "btc_long",
+      "feature": "btc_long",
+      "direction": 1,
+      "case": "severe",
+      "cost": 0.0028,
+      "ending_equity": 53720.070982843,
+      "cagr": 0.39948217095988037,
+      "daily_sharpe": 0.8515768488477781,
+      "max_daily_drawdown": -0.7901334085434367,
+      "max_gross": 1.0230115297263938,
+      "mean_names": 1.0,
+      "annual_turnover": 0.25553750363500366,
+      "calendar_returns": {
+        "2020": 1.9053444944532631,
+        "2021": 0.19288835673390547,
+        "2022": -0.6622348924141263,
+        "2023": 1.3494173580277615,
+        "2024": 0.953278575709116
+      }
+    }
+  ],
+  "stage2_survivors": [],
+  "rebalance_weeks": 253,
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "verdict": "CHEAP DEVELOPMENT SCREEN; close-proxy funding notional, uncalibrated alt friction, no depth/queue model, delisting exit at last open assumed."
+}

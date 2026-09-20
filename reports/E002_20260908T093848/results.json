@@ -1,0 +1,136 @@
+{
+  "experiment_id": "E002_20260908T093848",
+  "source": "reports/E001_20260908T093818",
+  "source_code_hash": "708d279440a2a820cf7c0805ae9719fc25e17e875eebeed21a5e8b972454b152",
+  "code_hash": "708d279440a2a820cf7c0805ae9719fc25e17e875eebeed21a5e8b972454b152",
+  "git_commit": null,
+  "seed": 20260908,
+  "results": [
+    {
+      "candidate": {
+        "symbol": "BTCUSDT",
+        "minutes": 1440,
+        "family": "momentum",
+        "lookback": 48
+      },
+      "development_uncertainty": {
+        "block_days": 14,
+        "samples": 4000,
+        "seed": 20260908,
+        "multiplicity_trials": 70,
+        "mean_daily_ci95": [
+          -0.00039536055700597583,
+          0.0020876201905989733
+        ],
+        "sharpe_ci95": [
+          -0.3998915092887496,
+          2.0001498074961095
+        ],
+        "arithmetic_alpha_annual_ci95": [
+          -0.20162173350438317,
+          0.44977782391100907
+        ],
+        "simultaneous_lower_mean_daily": -0.0012414766650122315,
+        "simultaneous_lower_alpha_annual": -0.44495076046518117,
+        "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+      },
+      "extra_delay_stress": {
+        "cumulative_return": 0.89377058606557,
+        "cagr": 0.23714717931742757,
+        "annualized_volatility": 0.3674392005467793,
+        "sharpe": 0.7627922552462781,
+        "sortino": 1.1398758357697991,
+        "calmar": 0.5863364973506748,
+        "max_drawdown": -0.4044557696629195,
+        "average_drawdown": -0.14392110190103852,
+        "max_drawdown_duration_days": 573.0,
+        "trades": 30,
+        "win_rate": 0.43333333333333335,
+        "profit_factor": 2.119169933055573,
+        "payoff_ratio": 2.7712222201495957,
+        "expectancy": 0.03020563209882471,
+        "turnover": 60.0,
+        "avg_holding_hours": 436.0,
+        "exposure": 0.4972627737226277,
+        "beta": 0.45721444117254867,
+        "arithmetic_alpha_annual": 0.10667592404785878,
+        "skew": 0.16852904380593745,
+        "excess_kurtosis": 10.443518485130841,
+        "daily_var95_loss": 0.026481902651938782,
+        "daily_cvar95_loss": 0.047960324792537035,
+        "calendar_returns": {
+          "2022": -0.30923411772944076,
+          "2023": 0.9905302011248345,
+          "2024": 0.37729736451296114
+        }
+      },
+      "development_audit_pass": false,
+      "validation": null,
+      "verdict": "REJECTED FOR PROMOTION"
+    },
+    {
+      "candidate": {
+        "symbol": "ETHUSDT",
+        "minutes": 1440,
+        "family": "momentum",
+        "lookback": 48
+      },
+      "development_uncertainty": {
+        "block_days": 14,
+        "samples": 4000,
+        "seed": 20260909,
+        "multiplicity_trials": 70,
+        "mean_daily_ci95": [
+          -0.0005743562565348416,
+          0.001987915365821867
+        ],
+        "sharpe_ci95": [
+          -0.4747961125320686,
+          1.6498179133314201
+        ],
+        "arithmetic_alpha_annual_ci95": [
+          -0.19745978774406356,
+          0.5475735435392803
+        ],
+        "simultaneous_lower_mean_daily": -0.0013733385855748063,
+        "simultaneous_lower_alpha_annual": -0.4378153102649976,
+        "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+      },
+      "extra_delay_stress": {
+        "cumulative_return": 0.15261129100682824,
+        "cagr": 0.04847062306504224,
+        "annualized_volatility": 0.4512565668407146,
+        "sharpe": 0.3310203970157074,
+        "sortino": 0.4791746849637626,
+        "calmar": 0.08221893881266926,
+        "max_drawdown": -0.5895311197761813,
+        "average_drawdown": -0.3254880366532298,
+        "max_drawdown_duration_days": 700.0,
+        "trades": 25,
+        "win_rate": 0.4,
+        "profit_factor": 1.384162354781142,
+        "payoff_ratio": 2.0762435321717128,
+        "expectancy": 0.013777448313392782,
+        "turnover": 50.0,
+        "avg_holding_hours": 509.76,
+        "exposure": 0.4844890510948905,
+        "beta": 0.43886814258355067,
+        "arithmetic_alpha_annual": 0.06083760087382455,
+        "skew": 0.038144054090417774,
+        "excess_kurtosis": 12.11751991114932,
+        "daily_var95_loss": 0.03478752133219348,
+        "daily_cvar95_loss": 0.05934968407760315,
+        "calendar_returns": {
+          "2022": -0.391861452628838,
+          "2023": 0.5057604652721306,
+          "2024": 0.25870641896166147
+        }
+      },
+      "development_audit_pass": false,
+      "validation": null,
+      "verdict": "REJECTED FOR PROMOTION"
+    }
+  ],
+  "final_test_accessed": false,
+  "validation_accessed": false
+}

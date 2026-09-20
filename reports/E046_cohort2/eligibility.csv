@@ -1,0 +1,82 @@
+asset,eligibility_date,start,end_at_selection,history_days,completeness,median_quote_volume_2020H2,contract_status_at_selection,preeligible,reason,eligible
+BTCUSDT,2020-12-31,2020-01-01,2020-12-31,366,1.0,2872596566.2925196,active,False,discovery asset,False
+ETHUSDT,2020-12-31,2020-01-01,2020-12-31,366,1.0,885794505.6101999,active,False,discovery asset,False
+LINKUSDT,2020-12-31,2020-01-17,2020-12-31,350,1.0,298158091.08243,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+GRTUSDT,2020-12-31,2020-12-19,2020-12-31,13,1.0,154475647.43537,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+YFIUSDT,2020-12-31,2020-08-31,2020-12-31,123,1.0,146223974.9296,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+1INCHUSDT,2020-12-31,2020-12-25,2020-12-31,7,1.0,125316138.8299,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+LTCUSDT,2020-12-31,2020-01-09,2020-12-31,358,1.0,101210256.88909501,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+SUSHIUSDT,2020-12-31,2020-09-04,2020-12-31,119,1.0,96544161.8291,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+XRPUSDT,2020-12-31,2020-01-06,2020-12-31,361,1.0,92072521.06802,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+UNIUSDT,2020-12-31,2020-09-18,2020-12-31,105,1.0,87164793.6883,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BCHUSDT,2020-12-31,2020-01-01,2020-12-31,366,1.0,82153450.359655,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+BNBUSDT,2020-12-31,2020-02-10,2020-12-31,326,1.0,64589942.12624,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+YFIIUSDT,2020-12-31,2020-09-03,2020-12-31,120,1.0,63544750.39825,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ADAUSDT,2020-12-31,2020-01-31,2020-12-31,336,1.0,62407402.08027,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+DOTUSDT,2020-12-31,2020-08-22,2020-12-31,132,1.0,57490015.6091,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+EOSUSDT,2020-12-31,2020-01-08,2020-12-31,359,1.0,52145351.61825,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+FILUSDT,2020-12-31,2020-10-16,2020-12-31,77,1.0,42971817.6857,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+AAVEUSDT,2020-12-31,2020-10-16,2020-12-31,77,1.0,41753606.5081,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+SXPUSDT,2020-12-31,2020-07-21,2020-12-31,164,1.0,40850390.077555,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+TRXUSDT,2020-12-31,2020-01-15,2020-12-31,352,1.0,34321292.336585,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+CRVUSDT,2020-12-31,2020-09-01,2020-12-31,122,1.0,32480524.7444,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+XTZUSDT,2020-12-31,2020-02-06,2020-12-31,330,1.0,30276704.392849997,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+WAVESUSDT,2020-12-31,2020-08-12,2020-12-31,142,1.0,28608127.193635,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BANDUSDT,2020-12-31,2020-07-29,2020-12-31,156,1.0,27671950.52998,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+XLMUSDT,2020-12-31,2020-01-20,2020-12-31,347,1.0,23705772.81454,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+VETUSDT,2020-12-31,2020-02-14,2020-12-31,322,1.0,23519944.634208,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+LENDUSDT,2020-12-31,2020-07-23,2020-11-10,162,0.6852,23496074.16019,inactive,False,listed after 2020-03-31; history completeness below 90%; not active at selection; below liquidity/history threshold,False
+COMPUSDT,2020-12-31,2020-06-30,2020-12-31,185,1.0,23184473.42313,active,False,listed after 2020-03-31,False
+ETCUSDT,2020-12-31,2020-01-16,2020-12-31,351,1.0,21309747.562115,active,True,selected by 2020H2 historical liquidity; later losses/delistings retained,True
+ATOMUSDT,2020-12-31,2020-02-07,2020-12-31,329,1.0,21030437.97901,active,True,outside preregistered top-12 liquidity rank,False
+ZECUSDT,2020-12-31,2020-02-05,2020-12-31,331,1.0,20803606.32406,active,True,outside preregistered top-12 liquidity rank,False
+THETAUSDT,2020-12-31,2020-05-27,2020-12-31,219,1.0,19630707.30292,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+AVAXUSDT,2020-12-31,2020-09-23,2020-12-31,100,1.0,19137815.9238,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+NEOUSDT,2020-12-31,2020-02-17,2020-12-31,319,1.0,17869128.076085,active,False,below liquidity/history threshold,False
+XMRUSDT,2020-12-31,2020-02-03,2020-12-31,333,1.0,17223395.408855,active,False,below liquidity/history threshold,False
+RSRUSDT,2020-12-31,2020-10-19,2020-12-31,74,1.0,16969791.291046,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+OMGUSDT,2020-12-31,2020-07-02,2020-12-31,183,1.0,16939055.69602,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ALGOUSDT,2020-12-31,2020-06-16,2020-12-31,199,1.0,16122490.56368,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+SNXUSDT,2020-12-31,2020-08-14,2020-12-31,140,1.0,16070920.575199999,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+MKRUSDT,2020-12-31,2020-08-13,2020-12-31,141,1.0,15235179.50472,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+TRBUSDT,2020-12-31,2020-09-03,2020-12-31,120,1.0,14671641.375999998,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+RLCUSDT,2020-12-31,2020-07-31,2020-12-31,154,1.0,14535095.422125,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+SOLUSDT,2020-12-31,2020-09-14,2020-12-31,109,1.0,13973188.2356,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+KAVAUSDT,2020-12-31,2020-07-28,2020-12-31,157,1.0,13932107.24197,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+DEFIUSDT,2020-12-31,2020-08-28,2020-12-31,126,1.0,12741945.7249,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BZRXUSDT,2020-12-31,2020-09-05,2020-12-31,118,1.0,11763552.106600001,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ONTUSDT,2020-12-31,2020-02-11,2020-12-31,325,1.0,11438478.720575001,active,False,below liquidity/history threshold,False
+NEARUSDT,2020-12-31,2020-10-15,2020-12-31,78,1.0,11290779.1784,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ZILUSDT,2020-12-31,2020-06-18,2020-12-31,197,1.0,10613473.046705,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+CVCUSDT,2020-12-31,2020-11-11,2020-12-31,51,1.0,10314258.56492,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+KSMUSDT,2020-12-31,2020-10-14,2020-12-31,79,1.0,10222042.4651,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+AXSUSDT,2020-12-31,2020-11-20,2020-12-31,42,1.0,9263374.343995,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+DASHUSDT,2020-12-31,2020-02-04,2020-12-31,332,1.0,9019869.98408,active,False,below liquidity/history threshold,False
+SKLUSDT,2020-12-31,2020-12-08,2020-12-31,24,1.0,8756216.330405,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BELUSDT,2020-12-31,2020-11-18,2020-12-31,44,1.0,8630168.24775,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+RUNEUSDT,2020-12-31,2020-09-04,2020-12-31,119,1.0,8376304.6756,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+IOSTUSDT,2020-12-31,2020-02-21,2020-12-31,315,1.0,8354787.1833095,active,False,below liquidity/history threshold,False
+CTKUSDT,2020-12-31,2020-11-19,2020-12-31,43,1.0,7919185.05428,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+QTUMUSDT,2020-12-31,2020-02-20,2020-12-31,316,1.0,7755250.17375,active,False,below liquidity/history threshold,False
+ZENUSDT,2020-12-31,2020-11-24,2020-12-31,38,1.0,7731655.2116,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ALPHAUSDT,2020-12-31,2020-11-23,2020-12-31,39,1.0,7652908.61873,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+KNCUSDT,2020-12-31,2020-06-22,2020-12-31,193,1.0,7607796.207455,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BALUSDT,2020-12-31,2020-09-01,2020-12-31,122,1.0,7542989.19525,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+SRMUSDT,2020-12-31,2020-09-05,2020-12-31,118,1.0,7449981.30085,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+OCEANUSDT,2020-12-31,2020-11-03,2020-12-31,59,1.0,6943853.08366,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+FLMUSDT,2020-12-31,2020-09-29,2020-12-31,94,1.0,6839397.7366,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BATUSDT,2020-12-31,2020-02-13,2020-12-31,323,1.0,6771943.718225,active,False,below liquidity/history threshold,False
+RENUSDT,2020-12-31,2020-10-13,2020-12-31,80,1.0,6555887.12101,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ZRXUSDT,2020-12-31,2020-06-24,2020-12-31,191,1.0,5923770.0089,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+IOTAUSDT,2020-12-31,2020-02-12,2020-12-31,324,1.0,5879081.000475001,active,False,below liquidity/history threshold,False
+EGLDUSDT,2020-12-31,2020-09-14,2020-12-31,109,1.0,5032480.5225,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+STORJUSDT,2020-12-31,2020-09-16,2020-12-31,107,1.0,4562377.3455,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+TOMOUSDT,2020-12-31,2020-10-12,2020-12-31,81,1.0,4417036.4347,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+FTMUSDT,2020-12-31,2020-09-24,2020-12-31,99,1.0,4113897.825821,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+DOGEUSDT,2020-12-31,2020-07-10,2020-12-31,175,1.0,4106217.837548,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+LRCUSDT,2020-12-31,2020-10-19,2020-12-31,74,1.0,3340269.4738499997,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ICXUSDT,2020-12-31,2020-09-15,2020-12-31,108,1.0,2948759.71005,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+MATICUSDT,2020-12-31,2020-10-22,2020-12-31,71,1.0,2851670.21941,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+BLZUSDT,2020-12-31,2020-09-17,2020-12-31,106,1.0,2660452.49044,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+HNTUSDT,2020-12-31,2020-09-28,2020-12-31,95,1.0,2454028.0213,active,False,listed after 2020-03-31; below liquidity/history threshold,False
+ENJUSDT,2020-12-31,2020-09-29,2020-12-31,94,1.0,1880228.860485,active,False,listed after 2020-03-31; below liquidity/history threshold,False

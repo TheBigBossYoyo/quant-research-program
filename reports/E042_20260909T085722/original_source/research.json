@@ -1,0 +1,18 @@
+{
+  "version": "screen-v1.1-gap-timing-fix",
+  "mode": "research_only",
+  "live_trading": false,
+  "gross_exposure_limit": 1.0,
+  "absolute_leverage_ceiling": 15.0,
+  "symbols": ["BTCUSDT", "ETHUSDT"],
+  "start": "2022-01-01",
+  "train_end_exclusive": "2025-01-01",
+  "validation_end_exclusive": "2026-01-01",
+  "final_test_start": "2026-01-01",
+  "final_test_end_exclusive": "2026-09-01",
+  "final_test_locked": true,
+  "timeframes_minutes": [5, 15, 60, 240, 1440],
+  "lookbacks_bars": [3, 12, 48],
+  "one_way_cost_bps": {"optimistic": 10, "base": 12, "stress": 24},
+  "seed": 20260908
+}

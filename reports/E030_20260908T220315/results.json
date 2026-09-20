@@ -1,0 +1,97 @@
+{
+  "experiment_id": "E030_20260908T220315",
+  "code_hash": "273001673f8392db8e559ab03b6f5016f022363790f220e1a3dfd9b37a6202bb",
+  "git_commit": null,
+  "source": "reports\\E024_20260908T204223",
+  "new_hypotheses": 2,
+  "cumulative_hypotheses": 343,
+  "fill_model": "touch (zero ticks through) within 300 s; front-of-queue upper bound",
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "cases": {
+        "base": {
+          "trades": 4902,
+          "net_return": -3.424398190890878,
+          "daily_sharpe": -14.713494967994817,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -6.985716423686002,
+          "hit_rate": 0.4104447164422685,
+          "worst_day": -0.11892262142770532,
+          "top5pct_days_share": 0.6921076660191113,
+          "attempts": 85796,
+          "fill_rate": 0.05713553079397641
+        },
+        "stress": {
+          "trades": 4902,
+          "net_return": -3.914598190890877,
+          "daily_sharpe": -16.42267904398651,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -7.985716423686,
+          "hit_rate": 0.39371685026519787,
+          "worst_day": -0.12222262142770532,
+          "top5pct_days_share": 0.7552728013362988,
+          "attempts": 85796,
+          "fill_rate": 0.05713553079397641
+        },
+        "severe": {
+          "trades": 4902,
+          "net_return": -4.8949981908908775,
+          "daily_sharpe": -19.527636537080646,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -9.985716423686002,
+          "hit_rate": 0.36311709506323947,
+          "worst_day": -0.12882262142770531,
+          "top5pct_days_share": 0.8641706499413903,
+          "attempts": 85796,
+          "fill_rate": 0.05713553079397641
+        }
+      },
+      "verdict": "PASSIVE ROUTE CLOSED (optimistic bound non-positive)"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "cases": {
+        "base": {
+          "trades": 5196,
+          "net_return": -3.442214668274894,
+          "daily_sharpe": -13.802211326973143,
+          "positive_month_share": 0.05263157894736842,
+          "mean_trade_bps": -6.624739546333514,
+          "hit_rate": 0.424364896073903,
+          "worst_day": -0.12531806882166235,
+          "top5pct_days_share": 0.5320350710861262,
+          "attempts": 80193,
+          "fill_rate": 0.06479368523437208
+        },
+        "stress": {
+          "trades": 5196,
+          "net_return": -3.961814668274893,
+          "daily_sharpe": -15.700855139974362,
+          "positive_month_share": 0.05263157894736842,
+          "mean_trade_bps": -7.624739546333512,
+          "hit_rate": 0.4095458044649731,
+          "worst_day": -0.12761806882166235,
+          "top5pct_days_share": 0.5697272741449608,
+          "attempts": 80193,
+          "fill_rate": 0.06479368523437208
+        },
+        "severe": {
+          "trades": 5196,
+          "net_return": -5.001014668274893,
+          "daily_sharpe": -19.289279422505867,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -9.624739546333513,
+          "hit_rate": 0.3812548113933795,
+          "worst_day": -0.13221806882166234,
+          "top5pct_days_share": 0.6301088317860446,
+          "attempts": 80193,
+          "fill_rate": 0.06479368523437208
+        }
+      },
+      "verdict": "PASSIVE ROUTE CLOSED (optimistic bound non-positive)"
+    }
+  ],
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

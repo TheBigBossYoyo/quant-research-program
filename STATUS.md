@@ -1,0 +1,242 @@
+CURRENT PHASE: Phase 8B (2026-09-12) - repurchase-authorisation announcements, E062 (supersedes never-run E059). STOPPED AT THE HUMAN-LABEL GATE: preregistration frozen and hashed; Stage 1 retrieval complete (110,355 candidate 8-K accessions 2004-2017); labelling package built (240 filings + 60 retrieval-audit filings, DEV/HOLDOUT split frozen); NO LABEL EXISTS; NO CLASSIFIER RULE EXISTS; NO RETURN COMPUTED. Full-text fetch of the candidate pool running detached (resume-safe). Phases 1-8 closed as recorded.
+CURRENT BEST CANDIDATE: None. E062 has no result; nothing is promoted.
+WHY IT MAY WORK: (hypothesis under test, not evidence) a new or enlarged authorisation signals management's undervaluation judgement and a capital-return commitment; the literature's long-horizon drift would be capturable at the next open after EDGAR acceptance with a 252-session hold.
+STRONGEST EVIDENCE: none yet for or against; the branch is at the classifier-validation gate by design.
+BIGGEST WEAKNESS: the human-label step has not been done; the retrieval pool is noisy by construction (warrant/credit-agreement "purchase up to" hits) so classifier precision is the whole game; press-release timestamps are not used, so the test is post-SEC-disclosure drift.
+WHAT COULD INVALIDATE IT: classifier holdout precision < 0.90 (stop, no return); a 252-session abnormal return that is zero or explained by FF5+MOM exposure in 2013-2017; failure of any of G1-G14.
+NEXT EXPERIMENT: HUMAN ACTION REQUIRED: label research/phase8b/phase8b_labeling_candidates.csv (240 rows, column human_label, letters A-J per research/phase8b/phase8b_labeling_guide.md; full texts in research/phase8b/labeling_texts/ or phase8b_labeling_package.zip) and research/phase8b/phase8b_retrieval_audit_candidates.csv (90 rows, strata B1/B2 per PHASE8B_RETRIEVAL_AUDIT_DESIGN.md). Package v2 (Amendment 1: label J for self-tenders outside A/B; no ticker hint; CIK-consistent classifier split DEVELOPMENT 167 / HOLDOUT 73, PHASE8B_CLASSIFIER_SPLIT.md). Then, in a new session: develop the classifier on DEV rows only (phase8b_classifier_eval.load_labels blanks HOLDOUT), freeze and hash the classifier files ('classifier frozen' record), evaluate HOLDOUT once (evaluate_holdout), and only if the gate passes record 'classifier gate passed' and run phase8b_backtest.py.
+CURRENT VERDICT: No strategy passes. E062 undecided (gate not reached). Equity validation 2018-2021 NOT OPENED; holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; 2026 UNTOUCHED. No live or paper trading. No purchases. Cumulative cells 489 (E062 registered, not run); 249 tests pass.
+BLOCKERS / REQUIRED APPROVALS: HUMAN LABELS (no money, ~4-6 hours of reading). Nothing else. SEC data are public domain.
+
+## Labelling UI (2026-09-13)
+- research/phase8b/labeler/ (labeler_app.py, labeler.html; standard library only) launched by START_PHASE8B_LABELER.bat (repo root or research/phase8b); README_LABELER.md. Writes phase8b_labeling_candidates_LABELED.csv and phase8b_retrieval_audit_candidates_LABELED.csv (sources untouched), backups/ on start and every 25 saves, PHASE8B_HUMAN_LABELING_INTEGRITY.txt when both are complete. Neutral by design: no preselection, suggestion, ranking or per-class counts. Tested on temporary copies (tests/test_phase8b_labeler.py + browser session); no real labelled file exists yet.
+
+## Resume (Phase 8B, 2026-09-12)
+
+- Read research/phase8b/PHASE8B_REPOSITORY_AUDIT.md, PHASE8B_PREREGISTRATION.md (+ phase8b_config.json, PHASE8B_FREEZE_HASHES.jsonl), PHASE8B_RETRIEVAL_REPORT.md, PHASE8B_RETRIEVAL_RECALL_AUDIT.md, PHASE8B_DECISION.md, phase8b_labeling_meta.json.
+- Code (research/, PYTHONUTF8=1): phase8b_lock.py, phase8b_timing.py, phase8b_edgar.py (scan|candidates|fetch), phase8b_events.py, phase8b_labeling.py (package|draw_complement|audit_package), phase8b_xbrl_audit.py, phase8b_classifier_eval.py, phase8b_portfolio.py, phase8b_backtest.py (refuses without a gate record), phase8b_reports.py. Tests: tests/test_phase8b_*.py (86).
+- Data: data/raw/phase8b/fts/<expression>/hits_<month>.json.gz (30 expressions x 168 months), data/raw/phase8b/filings/<yy>/<accession>.json.gz (full-submission text + header; fetch resumable with `python phase8b_edgar.py fetch --workers 24`, launched detached via PowerShell Start-Process), data/derived/phase8b/{candidates,complement,complement_sample,cik_symbols}.parquet, candidates_summary.json, fts_counts.csv, xbrl_audit_*.
+- After labels exist: (1) `phase8b_events.build_filing_table()` once the fetch is complete (schedule + mapping + integrity), then `phase8b_reports.py timing`; (2) classifier development on DEV only; (3) freeze + one HOLDOUT evaluation; (4) if passed, `phase8b_backtest.py`, then PHASE8B_RED_TEAM.md and PHASE8B_DECISION.md.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 8 COMPLETE (2026-09-12) - SEC EDGAR event-driven alpha (insider open-market purchases primary; XBRL quality conditioning; earnings falsification; repurchase family stopped at the classifier stage). DEVELOPMENT GATE: FAIL -> EDGAR_EVENT_FAMILY_REJECTED (PHASE8_VALIDATION_DECISION.md). Phases 1-7B closed as recorded. STOPPED: no candidate; user decisions pending (accept closure; EODHD cancellation; whether to fund the E059 classifier labelling in a future session).
+CURRENT BEST CANDIDATE: None promoted. Best Phase 8 cell: E058 C5 DIRECTOR_ONLY (126-session hold, 20 slots): 2013-2017 net CAGR 16.1% vs EW universe 8.2% vs SPY 15.2%, excess vs EW +7.55%/yr (t 2.78, 5/5 years) but CAPM alpha vs SPY t -0.52 and FF3 alpha -2%/yr (beta 1.2, SMB 0.17, HML 0.20); fails G4 and the deflated-Sharpe threshold (0.89). Not a candidate.
+WHY IT MAY WORK: not applicable; the equal-weight excess is market, size and value exposure of insiders buying beaten-down smaller stocks (PHASE8_RED_TEAM.md).
+STRONGEST EVIDENCE: for rejection: event-study abnormal returns after next-day-open entry negative or zero at +5/+21/+63/+126/+252 for all five cells; every cell has a negative three-factor alpha in 2013-2017; clusters, opportunistic and officer purchases do not beat the universe; quality conditioning (E060) does not help; SUE drift absent (E061).
+BIGGEST WEAKNESS: of the rejection: the informative part of insider purchases may live in the first sessions after acceptance (not capturable at monthly cost realism); the repurchase family (E059) was not tested because its classifier was not validated; the E061 issuer sample is a subset. None of these can turn a negative alpha into a promotable one under the frozen rules.
+WHAT COULD INVALIDATE IT: a preregistered weekly-entry construction with a documented USD-balance execution path showing positive alpha vs SPY in 2013-2017; a validated repurchase classifier (>= 200 hand labels, precision >= 0.8) followed by the preregistered 252-session test.
+NEXT EXPERIMENT: None registered. Options requiring a user decision: (a) accept closure of the EDGAR event family and of the equity program at "no qualifying strategy"; (b) authorise a future session to hand-label the E059 sample (data inventoried, no money); (c) confirm EODHD cancellation (unchanged recommendation).
+CURRENT VERDICT: No strategy passes. Equity validation 2018-2021 NOT OPENED; holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; crypto 2026 UNTOUCHED. No live or paper trading. No purchases. Cumulative cells 488; 163 tests pass.
+BLOCKERS / REQUIRED APPROVALS: USER DECISION on (a)-(c). No purchase recommended. SEC data are public domain; EODHD token only in the user environment.
+
+## Resume (Phase 8, 2026-09-12)
+
+- Read PHASE8_PREREGISTRATION.md (+ .sha256), PHASE8_VALIDATION_DECISION.md, PHASE8_INSIDER_RESULTS.md, PHASE8_RED_TEAM.md, PHASE8_INSIDER_EVENT_STUDY.md, PHASE8_SEC_DATA_AUDIT.md, PHASE8_QUALITY_CONDITIONING.md, PHASE8_REPURCHASE_CLASSIFIER.md, PHASE8_COST_ANALYSIS.md, PHASE8_SMALL_CAPITAL.md.
+- Reports: E058_20260912T185148 (valid), E058_superseded_* (two, defects documented), E058RT_20260912T190236, E060_20260912T191133, E061_20260912T191646.
+- Data: data/raw/phase8/sec_insider (48 quarterly ZIPs 2006Q1-2017Q4 + readme, hashed), data/raw/phase8/companyfacts (4,473 issuer files), data/raw/phase8/fts (33,388 8-K hits), data/metadata/phase8_*; derived: data/derived/phase8 (rows_p, events, audit, d7 reconciliation). No 2018+ SEC file downloaded.
+- Code (research/, PYTHONUTF8=1): phase8_sec_acquire.py, phase8_insider_events.py, phase8_insider_backtest.py, phase8_redteam.py, phase8_xbrl_acquire.py, phase8_quality_conditioning.py, phase8_repurchase_fts.py, phase8_sue_falsification.py.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 7B COMPLETE (2026-09-12) - modern alpha and data-source audit (no backtests, no locked data, no purchase). Direction selected: SEC EDGAR event-driven long-only program (insider purchases primary; repurchase announcements secondary; XBRL quality conditioning; earnings channel as a falsification cell). Data source: SEC EDGAR (free, point-in-time, 2006/2009-2026). Analyst-revision data: blocked (no retail point-in-time consensus history found). EODHD: cancel both subscriptions before renewal (unchanged). Phases 1-7A closed as recorded. STOPPED for the user's decision to open Phase 8 (data acquisition from EDGAR, then preregistration).
+CURRENT BEST CANDIDATE: None. Nothing promoted; the Phase 6B/7A risk-reduction structures remain WEAK_SIGNAL and are not candidates.
+WHY IT MAY WORK: (for the selected direction, not a candidate) insider purchases and repurchase authorisations are private-information and signalling events dated to the minute by EDGAR; the informative side is the long side; holds of 3-12 months keep turnover low.
+STRONGEST EVIDENCE: literature only (PHASE7B_MODERN_ALPHA_AUDIT.md section 3): recent filing-date event studies show positive short-horizon abnormal returns to insider purchases; repurchase-announcement drift persists in recent samples; SEC data verified free and point-in-time on 2026-09-12.
+BIGGEST WEAKNESS: the durable part of the insider effect may be too short-horizon for a monthly retail rule and sits in small caps; no test has been run; Martineau (2022) says the earnings drift is dead, so the earnings channel is a falsification cell only.
+WHAT COULD INVALIDATE IT: E058 failing its preregistered 2013-2017 gates after costs (an acceptable null); CIK-ticker mapping or filing-data errors that fail the reconciliation tests.
+NEXT EXPERIMENT: Phase 8 (needs the user's go-ahead, no money): ENV acquisition of SEC Insider Transactions Data Sets 2006-2026, Financial Statement Data Sets 2009-2026, submissions/full-text metadata (hashed); then preregister E058 insider purchases, E059 repurchase announcements, E060 quality conditioning, E061 SUE falsification (PHASE7B_MODERN_ALPHA_AUDIT.md section 7) before any computation.
+CURRENT VERDICT: No strategy passes. Equity validation 2018-2021 NOT OPENED; holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; crypto 2026 UNTOUCHED. No live or paper trading. Cumulative cells 479 (Phase 7B added none); 163 tests pass.
+BLOCKERS / REQUIRED APPROVALS: USER DECISION: (1) confirm cancellation of both EODHD subscriptions; (2) authorise Phase 8 on SEC EDGAR data (free); (3) note that analyst-revision research would need a point-in-time consensus source not found within budget. No purchase recommended.
+
+## Resume (Phase 7B, 2026-09-12)
+
+- Read PHASE7B_MODERN_ALPHA_AUDIT.md and PHASE7B_DATA_SOURCE_SELECTION.md, then PHASE7A_CONCLUSION.md, PHASE6B_CONCLUSION.md, PHASE6_CONCLUSION.md and PHASE6_RED_TEAM_REPORT.md Parts 1-4.
+- Verified 2026-09-12: EDGAR submissions API (acceptanceDateTime, 8-K items), companyfacts (filed dates from 2009), frames, full-text search JSON; SEC insider and financial-statement data sets free and quarterly; EODHD Fundamentals earnings fields; Martineau 2022 PEAD result. No code or data added in Phase 7B.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 7A COMPLETE (2026-09-12) - zero-additional-cost EODHD alpha search closed: EODHD_OPPORTUNITY_SET_EXHAUSTED; recommendation CANCEL BOTH EODHD SUBSCRIPTIONS BEFORE RENEWAL (PHASE7A_CONCLUSION.md). Earlier: Phase 6B closed (stop condition 2), Phase 6 EODHD stage (E051 momentum REJECTED_DECAY, DO_NOT_BUY_NORGATE), crypto Phases 1-5 CLOSED. STOPPED: no candidate; user decisions pending (cancel subscriptions; accept closure or name a new mechanism/data source).
+CURRENT BEST CANDIDATE: None promoted. Best deployable structures (not candidates): the Phase 6B RISK_OVERLAY (index ETF with a bond switch) and, from Phase 7A, a low-realized-risk top-50 quarterly tilt (E057 LR_S7_N50_Q: net CAGR 6.8% vs SPY 6.9% 1998-2017, DD -40 vs -51, beta 0.55, 2.6x one-way turnover), both trading expected return for drawdown; classification RISK_REDUCTION / WEAK_SIGNAL.
+WHY IT MAY WORK: low-risk stocks carry half the market beta and lost far less in 2000-02 and 2008; overlays step aside in prolonged bear markets.
+STRONGEST EVIDENCE: E057 2000-2017 net CAGR 7.9-8.6% vs SPY 5.6% (beta 0.5); E053-RT 1994-2017 absolute momentum 10.5% vs 9.4% with drawdown -17% vs -51%.
+BIGGEST WEAKNESS: no modern excess return: 2010-2017 net CAGR 12.1-13.5% vs SPY 14.4% (E057), overlays below SPY from any start >= 2009; excess vs the equal-weight universe zero even at 3 bps costs; alpha t vs SPY 1.0-1.3; the 2020 crash sits in the untouched validation window.
+WHAT COULD INVALIDATE IT: as return strategies they are already invalidated for 2010-2017; a rate-rising bear market removes the bond cushion; a long bull market widens the shortfall.
+NEXT EXPERIMENT: None registered. Every mechanism the paid data support has been screened with modern gates (E050-E057, 479 cells). Options requiring a user decision: (a) cancel both EODHD subscriptions before renewal (recommended); (b) accept closure of the equity program at "no qualifying strategy on the available data"; (c) adopt a risk-reduction structure as a personal allocation policy outside the research program (no validation claim); (d) name a new mechanism with an economic rationale, or a data source within the policy, to reopen.
+CURRENT VERDICT: No strategy passes. Equity validation 2018-2021 NOT OPENED; holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; crypto 2026 UNTOUCHED. No live or paper trading. Cumulative cells 479; 163 tests pass.
+BLOCKERS / REQUIRED APPROVALS: USER DECISION on (a)-(d). No purchase recommended. EODHD token only in the user environment. Trading 212 spreads/fractional steps and UCITS instrument availability UNVERIFIED (modelled).
+
+## Resume (Phase 7A, 2026-09-12)
+
+- Read PHASE7A_PLAN.md, PHASE7A_CONCLUSION.md, PHASE6_RED_TEAM_REPORT.md Part 4, then PHASE6B_CONCLUSION.md and PHASE6_CONCLUSION.md. Ledgers: PHASE6_EXPERIMENT_REGISTRY.csv (rows to 479), PHASE6_CANDIDATES.csv.
+- Reports: reports/E055_20260912T133139 (cross-sectional screen), E056_20260912T133249 (index events, events.csv), E057_20260912T133643 (low-risk portfolios).
+- Code (research/, PYTHONUTF8=1): phase7a_xs_screen.py, phase7a_index_events.py, phase7a_lowrisk_portfolio.py; tests in tests/test_phase6_stock.py (Phase7ASignalTests).
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 6B COMPLETE (2026-09-12) - modern-evidence screen of distinct families on the existing EODHD subscriptions closed under stop condition 2 (PHASE6B_CONCLUSION.md). Phase 6 EODHD stage: E051 momentum REJECTED_DECAY, DO_NOT_BUY_NORGATE (accepted). Crypto Phases 1-5 CLOSED. STOPPED: no candidate exists; the next step is a user decision (keep/cancel EODHD; accept the closure or name a new mechanism/data source).
+CURRENT BEST CANDIDATE: None promoted. Best deployable structure (not a candidate): RISK_OVERLAY - S&P 500 UCITS ETF with a 12-month absolute-momentum or volatility-managed switch into a 7-10y Treasury UCITS ETF (E053 G1a/G3), classification WEAK_SIGNAL.
+WHY IT MAY WORK: it holds the index most of the time and steps aside in prolonged bear markets; drawdown -17% vs -51% over 2004-2017 and 1994-2017; one to two switches a year; costs negligible.
+STRONGEST EVIDENCE: 1994-2017 with a T-bill cash leg: absolute momentum 10.5% vs SPY 9.4% CAGR, Sharpe 0.75 vs 0.52, alpha t 1.9; consistent with E050 H6 over 1963-2017.
+BIGGEST WEAKNESS: no modern return excess: every start year from 2009 onward underperforms SPY by 1.5-5 points a year; 2015-2017 excess -2 to -6 points; beats SPY in only 4-5 of 24 calendar years; the volatility rule needs the 2008-2017 bond rally; monthly rules missed the 2020 crash (validation segment, untouched).
+WHAT COULD INVALIDATE IT: as a return strategy it is already invalidated for the modern era; as an overlay, a rate-rising bear market (the 2022 holdout is one) removes the bond leg's cushion.
+NEXT EXPERIMENT: None registered. Options requiring a user decision: (a) accept closure of Phase 6 stock/ETF discovery at "no qualifying strategy on the available data"; (b) the user may adopt the RISK_OVERLAY as a personal allocation policy outside the research program (no validation claim); (c) a point-in-time fundamentals source would allow stock-level profitability/investment/net-issuance tests (family-level 2010-2017 excess only +0.3-0.5%/yr; EODHD Fundamentals USD 59.99/month judged not material for EUR 500-1,000; not bought); (d) cancel or keep the EODHD subscriptions (all raw snapshots retained and hashed).
+CURRENT VERDICT: No strategy passes. Equity validation 2018-2021 NOT OPENED; holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; crypto 2026 UNTOUCHED. No live or paper trading. Cumulative hypotheses/cells 455; 161 tests pass.
+BLOCKERS / REQUIRED APPROVALS: USER DECISION on (a)-(d) above. No purchase recommended. EODHD token only in the user environment. Trading 212 spreads/fractional steps UNVERIFIED (modelled); UCITS ETF availability per instrument UNVERIFIED (to be read from the instruments endpoint if the overlay is ever adopted).
+
+## Resume (Phase 6B, 2026-09-12)
+
+- Read PHASE6B_PLAN.md, PHASE6B_CONCLUSION.md, PHASE6_RED_TEAM_REPORT.md Part 3, then PHASE6_CONCLUSION.md (E051) and PHASE6_NORGATE_DECISION.md. Ledgers: PHASE6_EXPERIMENT_REGISTRY.csv (rows to 455), PHASE6_CANDIDATES.csv.
+- Reports: reports/E052_20260912T110300 (French family screen), E052B_20260912T110511 (factor ETFs), E053_20260912T110306 (allocation), E053RT_20260912T110504 (red team), E053B_20260912T110621 (GTAA).
+- Code (research/, PYTHONUTF8=1): phase6b_family_screen.py, phase6b_factor_etfs.py, phase6b_etf_allocation.py, phase6b_etf_redteam.py; phase6_french.py FILES extended with nine French portfolio files (manifest rebuilt, vintage 202607); ETF snapshots data/raw/phase6/eodhd/etf with manifests phase6_eodhd_etf_manifest{,_6b}.json.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 6 (US equities/ETFs) - EODHD screening stage COMPLETE (2026-09-12); stock-level momentum family CLOSED (REJECTED_DECAY); decision DO_NOT_BUY_NORGATE (PHASE6_NORGATE_DECISION.md). STOPPED under mandate condition A/B: the next step is a user decision (keep or cancel the EODHD subscriptions; continue Phase 6 at ETF/index level or close Phase 6). Crypto Phases 1-5 CLOSED (E040 frozen, crypto 2025 LOCKED, 2026 UNTOUCHED).
+CURRENT BEST CANDIDATE: None. E051 (24 preregistered trials, EODHD, development 1998-2017 Tier 2 / 2012-2017 Tier 1 / 1999-2017 sector ETFs) rejected every cell; E051-SENS (4 diagnostic cells) confirmed. Family-level FACTOR_EVIDENCE from E050 (French library) stands but does not translate to a deployable long-only top-N portfolio.
+WHY IT MAY WORK: not applicable. The best Tier 2 cell (vol-scaled 12-1 momentum, top-30) shows +6.7%/yr net excess over the equal-weight universe with t 1.12, but 43% of its return is 1999 and its 2000-2009 and 2010-2017 excess are zero; it fails S1, S2, S4, S5, S6.
+STRONGEST EVIDENCE: for rejection: primary 12-1 top-30 net CAGR 2.2% vs EW 5.7% vs SPY 6.9%; 2000-2017 CAGR -7.4% vs SPY +5.6%; max DD -88%; last 36 months -11%/yr; rolling-60 positive share 19%; optimistic costs t 0.47; PIT S&P 1500 replication t 0.06; sector-ETF momentum t -1.0; all universe cuts (rank 500, price 10) same pattern.
+BIGGEST WEAKNESS: of the rejection: EODHD's survivorship-safe window starts only in 1998 (delisted histories begin 1997-99), point-in-time membership only from 2012-04, Bear Stearns truncated and Blockbuster absent, 5-7% ticker-reuse mismatches remapped/dropped, residual vendor errors after I1-I5. None of these plausibly hides a post-2000 premium (they would inflate momentum, not depress it).
+WHAT COULD INVALIDATE IT: evidence that EODHD's 1998-2017 liquid-universe prices systematically destroy top-momentum names' subsequent returns while leaving benchmarks intact (benchmarks reconcile with SPY, so unlikely); or a genuinely distinct mechanism with a preregistered rationale and a data source passing PHASE6_DATA_PROVIDER_AUDIT.md.
+NEXT EXPERIMENT: None registered. Options requiring a user decision: (a) ETF/index-level work on the existing EODHD snapshots (e.g. SPY trend filter of E050 H6 as a drawdown overlay, classification cap WEAK_SIGNAL) - does not need Norgate; (b) close Phase 6 at "no qualifying architecture on the available data"; (c) cancel or keep the EODHD subscriptions (USD 49.98/month; raw snapshots retained on disk under the personal-use licence).
+CURRENT VERDICT: No strategy passes. DO_NOT_BUY_NORGATE. Equity validation 2018-2021 NOT OPENED; equity holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; crypto 2026 UNTOUCHED. No live or paper trading. Cumulative hypotheses 426; 161 tests pass.
+BLOCKERS / REQUIRED APPROVALS: USER DECISION: keep or cancel EODHD; continue Phase 6 at ETF level or close it. No purchase recommended. EODHD token stays only in the user environment (never persisted). Trading 212 spreads/fractional steps UNVERIFIED (modelled); crypto account facts UNVERIFIED and irrelevant here.
+
+## Resume (Phase 6 EODHD stage, 2026-09-12)
+
+- Read PHASE6_CONCLUSION.md, PHASE6_NORGATE_DECISION.md, PHASE6_E051_RESULTS.md, PHASE6_RED_TEAM_REPORT.md Part 2, PHASE6_EODHD_COVERAGE_AUDIT.md, PHASE6_NORGATE_PURCHASE_GATE.md (+ .sha256 with both hashes). Ledgers: PHASE6_EXPERIMENT_REGISTRY.csv (E051 rows 399-422, E051SENS 423-426), PHASE6_CANDIDATES.csv.
+- Reports: reports/E051_20260911T233815 (results.json, trials.csv, monthly_net.csv, benchmarks_monthly.csv, spy_monthly.csv), reports/E051SENS_20260911T234807, reports/PHASE6_EODHD_AUDIT_20260911T223343, reports/E051_aborted_20260912T0010_data_integrity (retained, not evidence).
+- Code (run from research/ with PYTHONUTF8=1): phase6_eodhd.py (client), phase6_eodhd_acquire.py, phase6_eodhd_panel.py (lock-enforced load_panel), phase6_stock_universe.py, phase6_stock_engine.py, phase6_eodhd_audit.py, phase6_eodhd_audit_report.py, phase6_e051_run.py, phase6_e051_report.py, phase6_e051_sensitivity.py. Tests: tests/test_phase6_eodhd.py, tests/test_phase6_stock.py (161 total).
+- Data: data/raw/phase6/eodhd/{symbols,constituents,eod (50,890 gz),splits (18,972 gz),etf}; manifests data/metadata/phase6_eodhd_*; derived panels data/derived/phase6/eodhd (read only through phase6_eodhd_panel.load_panel). Raw files run to 2026-09 but every loader truncates at 2017-12-31 through phase6_lock.enforce.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 6 (US equities/ETFs) OPEN since 2026-09-09; STOPPED under mandate condition A (data purchase needs user authorisation). Crypto discovery (Phases 1-5) is CLOSED: E040 frozen (hash 9928aa46...), crypto 2025 LOCKED, crypto 2026 UNTOUCHED, no crypto branch may be reopened without genuinely new independent evidence.
+CURRENT BEST CANDIDATE: None. Family-level FACTOR_EVIDENCE only (E050_20260909T211001 on the survivorship-free Kenneth French library, development 1963-07..2017-12): cross-sectional momentum 12-2 and industry momentum 12-1. These are not portfolios and not candidates (PHASE6_CANDIDATES.csv).
+WHY IT MAY WORK: momentum ranks returns monotonically (Spearman 0.99 / 1.00) in every era since 1963, is larger in value-weighted than equal-weighted portfolios (not a microcap artefact), and the long-only top bucket has an FF3 alpha t of 5.0 / 4.2 with near-zero market beta, which suits an unlevered long-only Trading 212 account if it survives costs and the modern era.
+STRONGEST EVIDENCE: H1 L/S 1.27%/month, HAC t 4.48, bootstrap CI [0.78, 1.73], 4/4 eras; H5a 0.68%/month, t 3.64, CI [0.36, 1.01], 4/4 eras; both pass BH-FDR 0.05 across the seven primary trials; ex-2009 t 6.1 / 4.4.
+BIGGEST WEAKNESS: post-2000 the premiums are statistically silent (L/S t 0.64 / 0.69; long-only excess 0.15-0.19%/month in 2000-2017); rolling ten-year t ending 2013-2017 is 0.19-0.53; 2009 erased a year of L/S return and cost the long-only bucket 17% relative to the market; premium concentrated after bull markets (t 5.5) and absent after bear markets (t 0.6); no costs, turnover, liquidity screen or delisting haircut at this level.
+WHAT COULD INVALIDATE IT: a stock-level top-N long-only momentum portfolio on a liquid point-in-time universe that fails to beat the equal-weight eligible universe after the base cost case (20 bps per side incl. FX) in 2000-2017; or a 2009-type episode that a preregistered overlay cannot contain without destroying the premium.
+NEXT EXPERIMENT: E051 (after data authorisation): stock-level momentum 12-1 top-N long-only (N in {10, 20, 30, 50}), monthly, Norgate point-in-time Russell 3000 universe per PHASE6_UNIVERSE_CONSTRUCTION.md, three cost cases, eras 1990s / 2000-2009 / 2010-2017, benchmark equal-weight eligible universe; then E052 residual momentum and E053 sector-neutral momentum as direct comparisons; overlays (trend SMA10/12, vol cap 1.0, low-vol rank component) only on survivors. Preregistration to be written before the first stock-level result.
+CURRENT VERDICT: No strategy passes. Equity validation 2018-2021 NOT OPENED; equity holdout 2022-01..2026-08 NOT READ; crypto 2025 LOCKED; crypto 2026 UNTOUCHED. No live or paper trading. Cumulative hypotheses 398; 136 tests pass.
+BLOCKERS / REQUIRED APPROVALS: USER ACTION REQUIRED: authorise or decline the purchase in PHASE6_DATA_PURCHASE_RECOMMENDATION.md (Norgate Data US Stocks Platinum, 12 months, USD 630 = EUR 540.69 up front, EUR 45.06/month equivalent; fallback EODHD All-World USD 19.99/month with a weaker point-in-time basis). If authorised, the user subscribes, installs the Norgate Data Updater on this PC and completes the initial download; no credentials are shared with the agent. Account fees/margin tiers (crypto) remain UNVERIFIED and irrelevant to Phase 6; Trading 212 spreads and per-instrument fractional steps UNVERIFIED (modelled, see PHASE6_COST_MODEL.md).
+
+## Resume (Phase 6, 2026-09-09)
+
+- Read PHASE6_PLAN.md, PHASE6_CONCLUSION.md (interim), PHASE6_FACTOR_ANALYSIS.md, PHASE6_RED_TEAM_REPORT.md, PHASE6_DATA_PROVIDER_AUDIT.md, PHASE6_DATA_PURCHASE_RECOMMENDATION.md, PHASE6_EQUITY_DATA_LOCK.md, PHASE6_UNIVERSE_CONSTRUCTION.md, PHASE6_COST_MODEL.md. Ledgers: PHASE6_EXPERIMENT_REGISTRY.csv, PHASE6_SIGNAL_DIAGNOSTICS.csv, PHASE6_CANDIDATES.csv.
+- Code (run from research/ with PYTHONUTF8=1): phase6_lock.py (firewall: development < 2018-01-01; validation/holdout need human-created PHASE6_VALIDATION_UNLOCK.json / PHASE6_HOLDOUT_UNLOCK.json with hash-checked decision documents; neither exists), phase6_french.py (`python phase6_french.py manifest`; loader `load(key, kind, segment)`), phase6_factor_screen.py (E050), phase6_redteam_e050.py E050_<stamp>. Tests: tests/test_phase6_lock.py, tests/test_phase6_french.py; full suite `python -m unittest discover -s tests -v` (136).
+- Data: data/raw/phase6/french (20 French zips, CRSP vintage 202607, hashed in data/metadata/phase6_french_manifest.json; raw files run to 2026-07 but loaders truncate through the firewall). No stock-level data on disk. No Trading 212 or Norgate credentials anywhere.
+- Active report: reports/E050_20260909T211001 (results.json, tables.csv, summary.md, redteam.json). A first E050 run aborted on a missing optional dependency before writing its summary and was removed together with the rows it had appended (no results differed; determinism by fixed seed).
+- Verified facts with retrieval date 2026-09-09 are in PHASE6_COST_MODEL.md section 1 and PHASE6_DATA_PROVIDER_AUDIT.md; anything marked UNVERIFIED must not support a promotion.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 5 COMPLETE (2026-09-09). Branch A (independent slow-trend replication on a 2020-selected cohort, 2021-2024): TREND_REPLICATION_FAILURE. Branch B (CAPITAL_EFFICIENCY_RESEARCH): CAPITAL_EFFICIENT_WEAK_SIGNAL (capped). Decision DO_NOT_OPEN_2025. See PHASE5_CONCLUSION.md.
+CURRENT BEST CANDIDATE: None validated. Frozen E040 (hash 9928aa46...) remains the FROZEN RESEARCH BENCHMARK (Phase 4: CROSS_ASSET_WEAK_SIGNAL). The slow-trend component is downgraded to a regime description after failing cohort-2 replication. Branch B pooled-capital trend architectures (E049) are preserved as CAPITAL_EFFICIENT_WEAK_SIGNAL, not candidates.
+WHY IT MAY WORK: the seven-vote slow trend keeps a positive risk-adjusted sign on 10 of 12 cohort-2 names and 7 of 7 new names, was net short and controlled through every crash window, and earned +87% in the never-used 2021 regime.
+STRONGEST EVIDENCE: E047_20260909T151953 / E048_20260909T152237: cohort-2 positive Sharpe 10/12, median two-factor alpha +31%/yr (9/12 positive), 2021 portfolio +87%, crash windows +40%/+23%/+4%/+2% with net exposure -0.4; E049_20260909T153444: pooled-capital trend on 2-5 liquid names is executable at 500 USDT with Sharpe retention 1.00 and skipped orders <= 4%.
+BIGGEST WEAKNESS: compounding: cohort-2 sleeves at 0.74 gross with 78-96% drawdowns lost money on 7 of 12 names (median net -32%); cohort 2 is 0.88 correlated with cohort 1 and half its Sharpe on 2022-2024 (0.32 vs 0.75); 2021 is 60% of positive P&L; every dependence-aware interval includes zero; Branch B implements an unreplicated signal on names that favour 2023-2024 winners; turnover 84-91x average equity per year at 1x.
+WHAT COULD INVALIDATE IT: already largely invalidated as a stand-alone 1x premium. What would revive it: a preregistered volatility-scaled architecture succeeding on an uninspected cohort/window, or the same mechanism on a different market class with verified data.
+NEXT EXPERIMENT: None registered. Options requiring separate preregistration: (a) equity/ETF or futures replication with survivorship-safe data (EQUITY_DATA_FEASIBILITY.md; purchase needs user approval), (b) close the program at "no validated strategy". No further crypto cohort on 2020-2024 and no E040/trend parameter change.
+CURRENT VERDICT: No strategy passes. 2025 LOCKED (never read); 2026 UNTOUCHED (never downloaded). No live or paper trading. Cumulative hypotheses 388; 124 tests pass.
+BLOCKERS / REQUIRED APPROVALS: none for research. Any equity data subscription (EUR <= 50/month) needs explicit user approval; account fees/margin tiers remain UNVERIFIED; any 2025 access or capital stage needs a passed frozen gate plus human authorisation.
+
+## Resume (Phase 5, 2026-09-09)
+
+- Read PHASE5_CONCLUSION.md, PHASE5_PREVALIDATION_DECISION.md, PHASE5_RED_TEAM_REPORT.md, PHASE5_CAPITAL_FEASIBILITY.md. Active pointers: reports/PHASE5_ACTIVE_REPLICATION.txt = E047_20260909T151953; PHASE5_ACTIVE_ANALYSIS.txt = E048_20260909T152237; PHASE5_ACTIVE_CAPITAL.txt = E049_20260909T153444. Superseded and labelled: E047_20260909T150950 (archive gaps), E048_20260909T151232, E049_20260909T152740 (simulator resized to equity drift).
+- Frozen documents: PHASE5_TREND_FROZEN_SPEC.md (+.sha256 96b70e8c...), PHASE5_COHORT2.json (+.sha256 5ca28d27...), PHASE5_CAPITAL_UNIVERSE.json (+.sha256), PHASE5_CAPITAL_SPEC.md (amendment 1 recorded).
+- Scripts (PYTHONUTF8=1, from research/): phase5_cohort.py, phase5_acquire.py, phase5_supplement.py [run], phase5_run.py, phase5_analysis.py, phase5_capital_universe.py, phase5_capital_run.py (engine phase5_capital_engine.py). phase4_run.load now takes DAYS/funding_from/termination with defaults reproducing E044 exactly (regression checked). Never edit research/ during a run.
+- Data added: cohort-2 hourly kline/mark archives 2020-2024 (1,434) and 15 daily supplements under data/raw/phase4; funding from data/raw/universe/fundingRate; nothing after 2024-12-31.
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 4 COMPLETE (2026-09-09): frozen E040 cross-asset replication on 12 preregistered perpetuals, 2022-2024. Classification CROSS_ASSET_WEAK_SIGNAL; decision DO_NOT_OPEN_2025. See PHASE4_CONCLUSION.md.
+CURRENT BEST CANDIDATE: Frozen E040 (7-vote slow-trend ensemble + compression breakout without volume gate, 4h, corrected causal execution/accounting, FROZEN_E040_HASH 9928aa46...). WEAK_SIGNAL on BTC/ETH (Phase 3) and CROSS_ASSET_WEAK_SIGNAL on the replication cohort (Phase 4). Not a validation candidate.
+WHY IT MAY WORK: multi-week trend persistence and post-compression expansion on crypto perpetuals; low beta to the underlying (0.08-0.36), net short through 2022, positive sign on 8 of 12 independently selected names after 9.05 bps per side plus funding.
+STRONGEST EVIDENCE: supplemented replication E044_20260909T135755 / analysis E045_20260909T140237: median Sharpe 0.70, 8/12 positive net (in all seven cost/delay/funding cases), 9/12 positive alpha, primary equal-weight portfolio Sharpe 0.87 / CAGR 21.5% / DD -24.1% net of allocation costs, +6.2% in the 2022 bear, survives best-year removal (+34.7%), best-5-trade removal (Sharpe 0.54), 14 bps costs (0.74), extra 4h delay (0.76), adverse funding (0.69); strategy correlation 0.39 versus 0.64 for the coins.
+BIGGEST WEAKNESS: the only dependence-aware statistic fails: common-time-block 95% interval of the median factor alpha is [-26%, +137%]/yr; the breakout leg did not transport (median Sharpe 0.18 versus 1.10/0.82 on BTC/ETH); P&L timed to the Q4-2023 and Q4-2024 rallies (7 of the top 10 contributions); positive fraction passes at exactly 2/3 and top-year share at 56.4% of 60%; per-asset drawdowns -30% to -67%; not implementable at EUR 500 (minimum practical capital about 12.6k-31.5k USDT).
+WHAT COULD INVALIDATE IT: a further independent regime or second cohort showing the trend sleeve is 2023/2024 beta timing; exact settlement marks or thin 2022 alt books raising real costs by a few bps (each 2 bps costs about 0.05 Sharpe); exchange liquidation on 1.2-1.7x drift; the five-factor "alpha" being a conditional extrapolation (underlying-only median alpha +28.5%/yr, every interval includes zero).
+NEXT EXPERIMENT: None registered. Phase 4 protocol complete; the frozen gate failed, so no PRE_2025_FINAL_FREEZE and no 2025 access. Reopening requires a genuinely new regime/cohort under the protocol (counting this replication in the multiplicity) or the Phase 1-3 reopening conditions; any E040 variant must be a separately versioned hypothesis (PHASE4_FUTURE_HYPOTHESES.md), never a retune on this cohort.
+CURRENT VERDICT: No strategy passes. E040 frozen, unmodified; 2025 LOCKED (never read); 2026 UNTOUCHED (never downloaded). No live trading, no capital exposure. Cumulative economic hypotheses 385; 124 tests pass.
+BLOCKERS / REQUIRED APPROVALS: none pending for research. Account-specific fees/margin tiers remain UNVERIFIED (promotion-only blocker). Any 2025 access, paper/shadow/live stage or capital allocation requires a passed frozen gate plus explicit human authorisation.
+
+## Resume (Phase 4, 2026-09-09)
+
+- Read PHASE4_CONCLUSION.md, PHASE4_PREVALIDATION_DECISION.md, PHASE4_RED_TEAM_REPORT.md, then PHASE4_DATA_SUPPLEMENTATION_AUDIT.md. Active pointers: reports/PHASE4_ACTIVE_REPLICATION.txt = E044_20260909T135755; reports/PHASE4_ACTIVE_ANALYSIS.txt = E045_20260909T140237.
+- Superseded, retained and labelled: E044_20260909T092223 (first pass on gapped inputs), E044_20260909T135238 (guard failure, identical metrics), E045_20260909T135156 (dry run on the first pass), reports/E043_universe/superseded_pre_supplement and superseded_pre_event_freeze.
+- Scripts (run with PYTHONUTF8=1 from research/): phase4_run.py (integrity gate; supplements merged), phase4_execute.py (replication; never edit research/ while it runs), phase4_report.py [E044_name] [--no-root] (analysis), phase4_final_tables.py, phase4_capital.py, phase4_supplement_audit.py, phase4_supplement_delta.py, archive_checkpoint.py. Tests: python -m unittest discover -s tests -v (124).
+- Data: data/raw/phase4/{klines,markPriceKlines} 1,106 monthly archives + 20 daily supplements, all checksum-verified; data/raw/universe/fundingRate; nothing after 2024-12-31 on disk except the 2026-09-08 exchangeInfo rule snapshot (no prices).
+
+## History (prior STATUS content, verbatim)
+
+CURRENT PHASE: Phase 3 concluded (2026-09-09) under mandate §59 B with the coverage matrix in PHASE3_CONCLUSION.md; Phases 1–2 conclusions preserved.
+CURRENT BEST STANDALONE STRATEGY: None promoted. Best development standalone: perp 4h compression breakout (E038, Sharpe 1.10, DD −24%) — WEAK_SIGNAL.
+CURRENT BEST PORTFOLIO COMPONENT: Slow-trend plateau ensemble (E035) and compression breakout (E038) on perp BTC/ETH 4h — both WEAK_SIGNAL (fail deflation), correlation 0.15–0.33.
+CURRENT BEST ENSEMBLE: E040 equal-weight of the two: Sharpe 1.27 (BTC) / 1.14 (ETH), alpha over B&H excluding zero, DD −27%/−36% (inverse-vol −19%/−27%) — WEAK_SIGNAL; RED_TEAM_REPORT.md written.
+BEST NET OOS EVIDENCE: Development-internal only: price-vs-slow-SMA cells had walk-forward OOS Sharpe 0.9–1.1 over 4–7 held-out years; E041 stacking OOS −0.6 to −3.2. No protected data touched.
+BIGGEST CURRENT RISK: Five bull-biased perpetual years; components fail multiplicity deflation; drawdowns 25–45% at 1x.
+MOST PROMISING UNTESTED FAMILY: Equity/ETF cross-sectional and market-neutral architectures (needs checksum-grade data; RESEARCH-ONLY under current broker constraints).
+TOTAL ECONOMIC HYPOTHESES: 384 (Phase 1–2: 367; Phase 3: 17).
+TOTAL ARCHITECTURE VARIANTS: 121 cells in E032, 50 in E033, 8 in E035, 12 in E036, 24 in E037, 24 in E038, 64 ablation cells in E039, 4 combinations in E040, 4 models in E041.
+TOTAL PARAMETER CONFIGURATIONS: 684 + 114 + 12 + 144 + 112 stressed configurations (2052 + 342 + 36 + 432 + 336 ledger runs across cost cases).
+PROTECTED DATA STATUS: 2025 validation unopened; 2026 holdout never downloaded.
+CURRENT VERDICT: No strategy currently passes; no VALIDATION-CANDIDATE. Best combination WEAK_SIGNAL.
+NEXT HIGHEST-INFORMATION-GAIN EXPERIMENT: None registered. Reopening: PHASE3_CONCLUSION.md conditions (frozen E040 rule tested on a further development regime before any validation access; equity/ETF architectures with auditable data).
+
+## Resume
+
+- Phase 3 (2026-09-09): research/ta_data.py, ta_engine.py, ta_stats.py, ta_screen.py, ta_audit.py, ta_pullback.py, ta_ensemble.py, ta_relstrength.py, ta_meanrev.py, ta_volcomp.py, ta_ablation.py, ta_combo.py, ta_stack.py; tests test_ta_*.py; data/raw/spot_1h and extended UM 1h. Reports E032–E041. Documents: PHASE3_RESEARCH_MAP.md, PHASE3_CANDIDATES.md, STRATEGY_SCORECARD.csv, ALPHA_CORRELATION_MATRIX.csv, RED_TEAM_REPORT.md, PHASE3_CONCLUSION.md.
+
+- Phase 2 session 2026-09-08: research/micro_data.py, micro_screen.py, micro_ledger.py, micro_horizon.py, micro_passive.py, micro_passive_bound.py, spot_micro_data.py, micro_spot_screen.py, micro_positioning.py, vol_data.py, vol_screen.py; tests test_micro_*.py, test_spot_micro.py, test_vol.py. Data: data/raw/micro (bookDepth, metrics, aggTrades, spot_aggTrades), data/raw/option/BVOLIndex, data/derived/{micro,micro_spot,bvol}. Reports E024–E031 and reports/PHASE2_CONCLUSION_2026-09-08.md.
+
+- Session 2026-09-08 (Claude Code) added E012–E023 and ENV002–ENV004: research/flow_screen.py, positioning_screen.py, acquire_universe.py, universe.py, cross_sectional_screen.py (feature sets flow/risk/horizon), cross_sectional_audit.py, cross_sectional_hostile.py, breadth_timing.py, etf_data.py, etf_screen.py, seasonality_leadlag.py; tests in tests/. Latest reports: E021_20260908T195841, E022_20260908T195903, E023_20260908T200024, E020_20260908T195502, E017_20260908T193309, E016_20260908T192328. Conclusion report: reports/RESEARCH_CONCLUSION_2026-09-08.md. Run `python -m unittest discover -s tests -v` (62 tests) before any new work.
+
+- ENV002/ENV003 complete: data/raw/universe (9706 kline + 9693 funding archives 2020–2024, verified). E014 (2022–2024, no survivor), E016_20260908T192328 (2020–2024 survivor flow7), E015_20260908T192617 (audit, rejected for promotion). Report: reports/CROSS_SECTIONAL_SCREEN_2026-09-08.md. Loader research/universe.py; screen cross_sectional_screen.py; audit cross_sectional_audit.py; tests/test_universe.py. Extended FRED references DGS3MO/DEXUSUK from 2019-12 acquired (economic_references_20260908T191413.jsonl).
+
+- Latest: reports/E013_20260908T181145 (results.json, ic.csv; positioning_screen.py, tests/test_positioning_screen.py) and reports/FLOW_SCREEN_2026-09-08.md with reports/E012_20260908T180321 (flow_screen.py, tests/test_flow_screen.py).
+- Latest audit: reports/PERPETUAL_SCREEN_2026-09-08.md, corrected E010_20260908T171214 and E011_20260908T171422. Economic audit: reports/ECONOMIC_AND_RISK_AUDIT_2026-09-08.md and E009_20260908T170120. Older reports are historical checkpoints.
+- User reports Tunisia residence, all Binance products enabled, Trading212 Invest GBP with UK account detail. Do not infer UK residency; entity alignment is unverified.
+- 240 checksum-verified archives, funding responses, five REST mark-gap supplements and two pre-2025 FRED reference series. Raw originals retained.119 tested hypotheses/architectures; failures/superseded runs logged.
+- Original three supplied Markdown files preserved; no Git repository exists.
+- Test: `python -m unittest discover -s tests -v`.
+- Current diagnostic: `python research/capped_carry.py`; prior continuous baseline: `python research/continuous_carry.py`; uncertainty: `python research/carry_uncertainty.py`.
+- Economic audit: `python research/economic_audit.py`. Corrected halt-latch replay: E008_20260908T170123. Previous E008 returns remain identical, but its risk implementation is superseded.
+- Directional screen: `python research/perpetual_screen.py`; audit: `python research/perpetual_audit.py` (currently points to the corrected registered screen). E010_20260908T170827 is superseded for tradability bug. Source hash consistency is checked across screen execution.
+- Corrected original screen: E001_20260908T094021; audit E002_20260908T094107; robustness E003_20260908T094233. Earlier E001/E002 outputs at 09:38 are superseded by a documented gap-timing fix.
+- Carry outputs: E004_20260908T094758, E005_20260908T164103, E006_20260908T164403, E007_20260908T164535, E008_20260908T165321.
+- 2025 validation was NOT analyzed; 2026-01-01 to 2026-08-31 final test was NOT downloaded. Architecture is not frozen.
+- Research examples start at 500 USDT, not EUR500. Actual capital committed is zero; no broker order adapters or live-trading code.
+- Reproducibility snapshot and file manifest stored under reports. Current code improves annualization slightly versus retained E005 output; all changes logged.
+
+
+## Phase 4 checkpoint � 2026-09-09
+E042 original reproduction and approved accounting audit complete;114 tests pass. Signals unchanged; corrected equal-weight daily Sharpe BTC1.26914/ETH1.14293 versus original1.26935/1.14365. Original files preserved. Strategy/config frozen before replication. Next: historical universe preregistration, acquire pre2025 hourly/mark data, integrity audit, replication and predefined inference.2025 LOCKED;2026 UNTOUCHED. No extra economic hypothesis counted for accounting diagnostics. FROZEN_E040_HASH=2707309704de29e394b5a2b511840cd5b058e3980e28c4a19e937be69fadb2ec
+
+
+Phase4 E043: all12 assets and discovery comparators pass the data gate with disclosed gaps/proxies;121 tests pass. SOL non4h funding handled by hourly event accounting without changing4h signals/orders/trailing updates. Superseded pre-event freeze retained. Final frozen hash 9928aa464bd7f88bb44e76566f01593d87786ff048043620c514c20a96142ca0. E044 preregistered: one replication hypothesis, cumulative385 once run; seven cost/delay/funding cases are diagnostics, not additional hypotheses.2025 LOCKED;2026 UNTOUCHED.
+
+
+## Phase4 completed - E045_20260909T140237
+Classification: CROSS_ASSET_WEAK_SIGNAL; decision: DO_NOT_OPEN_2025.12 assets,2022-2024; positive fraction 66.7%; median Sharpe 0.702; median factor alpha 53.63%. Primary portfolio Sharpe 0.869, DD -24.1%. E042 accounting audit, E043 universe/data, E044 one frozen replication hypothesis (cumulative385), E045 diagnostics (no additional hypotheses). Sources/config/universe/data hashes and seeds retained.2025 LOCKED;2026 UNTOUCHED. See PHASE4_CONCLUSION.md.
+
+- Checkpoint archive: reports/checkpoint_20260909T141439 (136 source/config/document files hashed; 240 legacy + 19,399 universe + 3,827 Phase 2/3 + 1,126 Phase 4 raw archives checksum-verified; no 2025/2026 archives present). 124 tests passed before the checkpoint.
+
+- Phase 5 checkpoint archive: reports/checkpoint_20260909T154132 (source/config/documents hashed; all raw archives checksum-verified; no 2025/2026 archives). 124 tests passed before the checkpoint.
+
+
+## Resume (Phase 6 EODHD screening stage, 2026-09-11, IN PROGRESS)
+- User subscribed to EODHD All-World EOD + Indices Historical Constituents; token in the Windows user environment only (research/phase6_eodhd.py reads it via winreg; never printed). Both verified through the API.
+- Frozen before any stock-level result: PHASE6_NORGATE_PURCHASE_GATE.md (+ .sha256), PHASE6_EODHD_COVERAGE_AUDIT.md sections 1-2, E051 preregistration in EXPERIMENTS.md.
+- Pipeline (from research/, PYTHONUTF8=1): phase6_eodhd_acquire.py targets|eod|splits (resumable; manifests data/metadata/phase6_eodhd_*_manifest.jsonl) -> phase6_eodhd_panel.py summarize|select|build -> phase6_eodhd_audit.py -> fill PHASE6_EODHD_COVERAGE_AUDIT.md section 3 -> phase6_e051_run.py --t2-start <year from audit rule A2> -> PHASE6_E051_RESULTS.md, PHASE6_NORGATE_DECISION.md.
+- If interrupted mid-download: rerun `phase6_eodhd_acquire.py eod` (skips completed tickers). Tests: tests/test_phase6_eodhd.py, tests/test_phase6_stock.py (157 total expected).
+
+- Phase 6 EODHD-stage checkpoint archive: reports/checkpoint_20260911T235338 (190 source/config/document files hashed; all legacy raw archives checksum-verified; EODHD raw snapshots are hashed in data/metadata/phase6_eodhd_*_manifest.jsonl, not in the archive). 161 tests passed before the checkpoint.
+
+- Phase 6B checkpoint archive: reports/checkpoint_20260912T110918 (196 source/config/document files hashed; all legacy raw archives checksum-verified; EODHD raw snapshots hashed in data/metadata/phase6_eodhd_*). 161 tests passed before the checkpoint.
+
+- Phase 7A checkpoint archive: reports\checkpoint_20260912T135010 (source/config/document files hashed; legacy raw archives checksum-verified; EODHD raw snapshots hashed in data/metadata/phase6_eodhd_*). 163 tests passed before the checkpoint.
+
+- Phase 7B checkpoint archive: reports\checkpoint_20260912T155445 (documents hashed; no code or data changes in Phase 7B; 163 tests passed at the Phase 7A checkpoint).
+
+
+- Phase 8 checkpoint archive: reports/checkpoint_20260912T193025 (225 source/config/document files hashed; legacy raw archives checksum-verified; SEC and EODHD raw snapshots hashed in data/metadata). 163 tests passed before the checkpoint.

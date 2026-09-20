@@ -1,0 +1,3091 @@
+{
+  "experiment_id": "E033_20260909T075334",
+  "code_hash": "3efbdb2acd7eaf854e2293b013a1bb7ad5e7899f1e23951fd57a95fefc779f9d",
+  "git_commit": null,
+  "economic_hypotheses": 3,
+  "cumulative_economic": 375,
+  "architecture_trials": 50,
+  "parameter_configs": 114,
+  "stage_c": [
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": true,
+      "sharpe": 0.8732607902392484,
+      "cagr": 0.3256528035998856,
+      "max_dd": -0.6022677771419434,
+      "trades": 409,
+      "boot_p": 0.0348,
+      "sharpe_ci95": [
+        -0.07815528615205534,
+        1.7513326525057675
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 3.0140120450850025,
+          "oos_sharpe": -0.1292686075493752,
+          "oos_return": -0.2135644751276795
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.9650123563567318,
+          "oos_sharpe": 0.502365338383432,
+          "oos_return": 0.13366226009696147
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.819766817994272,
+          "oos_sharpe": 0.524629888290612,
+          "oos_return": 0.13050965427286543
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.7557776448722872,
+          "oos_sharpe": 1.3787240858837926,
+          "oos_return": 0.6064018300663887
+        }
+      ],
+      "wf_efficiency": 0.40983391521817886,
+      "dsr": 0.3704523663929788,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": -3.844275579891452,
+      "cagr": -0.8216914855938593,
+      "max_dd": -0.9998420104670893,
+      "trades": 4541,
+      "boot_p": 1.0,
+      "sharpe_ci95": [
+        -4.801575881248398,
+        -2.9436418959183457
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -1.7708955532813564,
+          "oos_sharpe": -4.151005311534324,
+          "oos_return": -0.9320372952629649
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -3.1715776678183234,
+          "oos_sharpe": -3.7319845019081375,
+          "oos_return": -0.8397832300086714
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -3.3563116264592057,
+          "oos_sharpe": -4.375849463655952,
+          "oos_return": -0.7897666494955372
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -3.529288100271839,
+          "oos_sharpe": -5.4965307302688835,
+          "oos_return": -0.8656766870210588
+        }
+      ],
+      "wf_efficiency": -4438842501.841824,
+      "dsr": 5.849882735527427e-25,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 0.5, \"fast\": 10}",
+      "gate_b": false,
+      "sharpe": -0.39996187848638715,
+      "cagr": -0.0351977177959647,
+      "max_dd": -0.22530804104881463,
+      "trades": 33,
+      "boot_p": 0.8738,
+      "sharpe_ci95": [
+        -1.0989304475314934,
+        0.2606033349005345
+      ],
+      "pbo": 0.7857142857142857,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 1.0, \"fast\": 10}",
+          "is_sharpe": 0.14718076358616186,
+          "oos_sharpe": -0.9758833319247221,
+          "oos_return": -0.08064742758959753
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 1.0, \"fast\": 10}",
+          "is_sharpe": -0.6782337556341912,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 1.0, \"fast\": 10}",
+          "is_sharpe": -0.553785666430023,
+          "oos_sharpe": -1.2412672783174552,
+          "oos_return": -0.024395517515188314
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 1.0, \"fast\": 30}",
+          "is_sharpe": -0.5873192307330048,
+          "oos_sharpe": -0.28203722955431854,
+          "oos_return": -0.014549181629100905
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.0007237309829734971,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+      "gate_b": false,
+      "sharpe": -0.33013827311174754,
+      "cagr": -0.0216247708751659,
+      "max_dd": -0.17465896635035538,
+      "trades": 31,
+      "boot_p": 0.8226,
+      "sharpe_ci95": [
+        -1.3909282148490438,
+        0.33656038305368824
+      ],
+      "pbo": 0.2714285714285714,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+          "is_sharpe": -0.21006639091735993,
+          "oos_sharpe": -1.3357436218652967,
+          "oos_return": -0.1907512237900768
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -0.23250211659313874,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -0.18987588636849762,
+          "oos_sharpe": -2.0207260538723633,
+          "oos_return": -0.024771891851786854
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -0.260639542603382,
+          "oos_sharpe": -0.7705493035847427,
+          "oos_return": -0.033479434822168974
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.0030543726956036928,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 30}",
+      "gate_b": false,
+      "sharpe": -0.218332231775769,
+      "cagr": -0.010156394993393159,
+      "max_dd": -0.17469083184864664,
+      "trades": 26,
+      "boot_p": 0.6806,
+      "sharpe_ci95": [
+        -1.2266783011550317,
+        0.699884081079137
+      ],
+      "pbo": 0.7428571428571429,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": 0.7184888632711902,
+          "oos_sharpe": -1.1793750726625463,
+          "oos_return": -0.07021268556567584
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -0.7573295646996503,
+          "oos_sharpe": -1.2448123171902585,
+          "oos_return": -0.010215542090435958
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.6422498024382381,
+          "oos_sharpe": 0.760742117738331,
+          "oos_return": 0.060118222647457475
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.2599285711131055,
+          "oos_sharpe": -0.8531809418239669,
+          "oos_return": -0.05745008486591774
+        }
+      ],
+      "wf_efficiency": -629156553.4846102,
+      "dsr": 0.003174013553842736,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": -0.7033423610152192,
+      "cagr": -0.05384342041434986,
+      "max_dd": -0.27429417663011046,
+      "trades": 32,
+      "boot_p": 0.9784,
+      "sharpe_ci95": [
+        -1.5044954596704834,
+        -0.022268828793090067
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.14718076358616186,
+          "oos_sharpe": -1.996320707028978,
+          "oos_return": -0.2644140842111593
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -1.4018897910703383,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -1.14387243072039,
+          "oos_sharpe": 0.7681728946851957,
+          "oos_return": 0.03158609696125558
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.8501732029327175,
+          "oos_sharpe": -0.001701066530557448,
+          "oos_return": -0.002095030098950512
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 3.1669668121259467e-05,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": true,
+      "sharpe": 0.6258878917481869,
+      "cagr": 0.20142029356026225,
+      "max_dd": -0.7364533356682649,
+      "trades": 136,
+      "boot_p": 0.0828,
+      "sharpe_ci95": [
+        -0.23217394579361741,
+        1.447429545412354
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 3.152144839721412,
+          "oos_sharpe": -0.7569026542539147,
+          "oos_return": -0.5018139015749417
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.6231264934644719,
+          "oos_sharpe": 0.6434225653153779,
+          "oos_return": 0.20806245789131506
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.6278993503234536,
+          "oos_sharpe": 0.7917152088515607,
+          "oos_return": 0.2398001640280769
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.651870862521677,
+          "oos_sharpe": 0.5192986748797956,
+          "oos_return": 0.14348864920239013
+        }
+      ],
+      "wf_efficiency": 0.23689890258826218,
+      "dsr": 0.18872100248306067,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": 0.31213502481195454,
+      "cagr": 0.046358968849396165,
+      "max_dd": -0.7858261402421487,
+      "trades": 1068,
+      "boot_p": 0.2672,
+      "sharpe_ci95": [
+        -0.6398746926341202,
+        1.2250698908434352
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 2.245427461817843,
+          "oos_sharpe": -0.9357651802629282,
+          "oos_return": -0.4884761989223988
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 0.20152762972167435,
+          "oos_sharpe": 0.9063586608116054,
+          "oos_return": 0.35167045991213564
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 0.4305474099645917,
+          "oos_sharpe": 0.10400666835877767,
+          "oos_return": -0.019125534375602826
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 0.36297168603814994,
+          "oos_sharpe": 0.09088432911078474,
+          "oos_return": -0.03663475047907938
+        }
+      ],
+      "wf_efficiency": 0.051067982165829716,
+      "dsr": 0.055224845375522046,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 0.5, \"fast\": 10}",
+      "gate_b": false,
+      "sharpe": -0.06776009313178721,
+      "cagr": -0.012007764731535864,
+      "max_dd": -0.2775976120143556,
+      "trades": 20,
+      "boot_p": 0.5598,
+      "sharpe_ci95": [
+        -0.9930843970522338,
+        0.7163775010092746
+      ],
+      "pbo": 0.8571428571428571,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": 1.8781079127893476,
+          "oos_sharpe": -1.264947502720664,
+          "oos_return": -0.20247810120811238
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 30}",
+          "is_sharpe": 0.12739588600560015,
+          "oos_sharpe": -1.2505290164523153,
+          "oos_return": -0.027579195549045976
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 30}",
+          "is_sharpe": 0.010458971066035395,
+          "oos_sharpe": 1.0336143792648251,
+          "oos_return": 0.049591089729508875
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 30}",
+          "is_sharpe": 0.147008436551833,
+          "oos_sharpe": -1.5630724662199802,
+          "oos_return": -0.10376626004985257
+        }
+      ],
+      "wf_efficiency": -1.4077554972070168,
+      "dsr": 0.007990787476698827,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+      "gate_b": false,
+      "sharpe": 0.05519664648792321,
+      "cagr": -0.00047315094623667786,
+      "max_dd": -0.26971771194577077,
+      "trades": 19,
+      "boot_p": 0.4586,
+      "sharpe_ci95": [
+        -0.8071548691855693,
+        0.796402798235763
+      ],
+      "pbo": 0.38571428571428573,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+          "is_sharpe": 1.8781079127893476,
+          "oos_sharpe": -0.8901282864256462,
+          "oos_return": -0.14703338233656993
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+          "is_sharpe": -0.26709928167062574,
+          "oos_sharpe": -1.250529016452317,
+          "oos_return": -0.027579195549046087
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+          "is_sharpe": -0.05266509743090938,
+          "oos_sharpe": 1.1660766935867628,
+          "oos_return": 0.12568437667351406
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+          "is_sharpe": 0.2071934009072595,
+          "oos_sharpe": -0.697161407582027,
+          "oos_return": -0.07241433761197724
+        }
+      ],
+      "wf_efficiency": -0.9468745649643648,
+      "dsr": 0.015202867531351383,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 40}",
+      "gate_b": false,
+      "sharpe": 0.1964694525519084,
+      "cagr": 0.0137915932065793,
+      "max_dd": -0.19314808010035667,
+      "trades": 22,
+      "boot_p": 0.3174,
+      "sharpe_ci95": [
+        -0.6222235776554652,
+        0.8933042891159289
+      ],
+      "pbo": 0.05714285714285714,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.8741839457378014,
+          "oos_sharpe": -0.1979361907919227,
+          "oos_return": -0.03770917382161021
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.06657064267234827,
+          "oos_sharpe": -0.2654391212530129,
+          "oos_return": -0.00841153404354611
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.023347831275938306,
+          "oos_sharpe": 0.6165214566470718,
+          "oos_return": 0.05683777374687171
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.18163494295914276,
+          "oos_sharpe": 0.25806871413480925,
+          "oos_return": 0.0189713366242934
+        }
+      ],
+      "wf_efficiency": 0.35890848299434847,
+      "dsr": 0.030827332367080254,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": -0.06146704375168973,
+      "cagr": -0.011099315177161118,
+      "max_dd": -0.21982895741333386,
+      "trades": 18,
+      "boot_p": 0.5648,
+      "sharpe_ci95": [
+        -0.9274018370790261,
+        0.6650696799114978
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.08058916553066275,
+          "oos_sharpe": -0.8897714960057745,
+          "oos_return": -0.14985618869491346
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.6076299376550539,
+          "oos_sharpe": 1.5988273730543774,
+          "oos_return": 0.10467079304919924
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.1587542018039705,
+          "oos_sharpe": 0.5295951331998846,
+          "oos_return": 0.04382925673700333
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.013369365778802647,
+          "oos_sharpe": -0.3067286716667204,
+          "oos_return": -0.028307286060480275
+        }
+      ],
+      "wf_efficiency": 232980584.64544174,
+      "dsr": 0.008283259511105503,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": true,
+      "sharpe": 1.0580463956609991,
+      "cagr": 0.5321649732050762,
+      "max_dd": -0.462602323076704,
+      "trades": 397,
+      "boot_p": 0.0076,
+      "sharpe_ci95": [
+        0.2015726446123278,
+        1.8678182695510905
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 2.367188710957401,
+          "oos_sharpe": 1.024459444767966,
+          "oos_return": 0.6447526908875256
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 1.4561648560000404,
+          "oos_sharpe": 0.6869396705630302,
+          "oos_return": 0.25947292142776046
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 1.2164177999258727,
+          "oos_sharpe": -0.17725990944075112,
+          "oos_return": -0.11888925800157613
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.9673655098412272,
+          "oos_sharpe": 1.4893567315770975,
+          "oos_return": 0.8181708109015118
+        }
+      ],
+      "wf_efficiency": 0.5033173039859111,
+      "dsr": 0.5369998377228309,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": -2.5454263652718367,
+      "cagr": -0.7615931114211879,
+      "max_dd": -0.9994558845674548,
+      "trades": 4465,
+      "boot_p": 1.0,
+      "sharpe_ci95": [
+        -3.4633755182028927,
+        -1.6905867158628949
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -1.371386543583004,
+          "oos_sharpe": -1.032397365180744,
+          "oos_return": -0.6279124468551269
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -1.1125471937521594,
+          "oos_sharpe": -2.9457360376126327,
+          "oos_return": -0.8445379447777606
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -1.7207334894193584,
+          "oos_sharpe": -4.721927014595925,
+          "oos_return": -0.8098425342468949
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -2.168992061159554,
+          "oos_sharpe": -4.385583353651431,
+          "oos_return": -0.8693511774801723
+        }
+      ],
+      "wf_efficiency": -3271410942.760183,
+      "dsr": 1.974728000174208e-14,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 1.0, \"fast\": 10}",
+      "gate_b": false,
+      "sharpe": 0.47672117105217143,
+      "cagr": 0.033222674366807814,
+      "max_dd": -0.10010712493280971,
+      "trades": 21,
+      "boot_p": 0.077,
+      "sharpe_ci95": [
+        -0.1830672819904,
+        1.0730932540222413
+      ],
+      "pbo": 0.5571428571428572,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 1.0, \"fast\": 20}",
+          "is_sharpe": 0.43307826109849157,
+          "oos_sharpe": 0.4408924859250586,
+          "oos_return": 0.04239918903973883
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 1.0, \"fast\": 10}",
+          "is_sharpe": 0.5536546900478443,
+          "oos_sharpe": 1.2762686508996857,
+          "oos_return": 0.10559492757766265
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 1.0, \"fast\": 10}",
+          "is_sharpe": 0.8005515230417003,
+          "oos_sharpe": -0.4309913388226714,
+          "oos_return": -0.017109229410551707
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 1.0, \"fast\": 10}",
+          "is_sharpe": 0.6096162737182054,
+          "oos_sharpe": 0.0404633012950388,
+          "oos_return": -0.00012524419969617284
+        }
+      ],
+      "wf_efficiency": 0.5534785286607976,
+      "dsr": 0.0942979121509187,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+      "gate_b": false,
+      "sharpe": 0.4596154033133964,
+      "cagr": 0.037224482021888994,
+      "max_dd": -0.12992712444126886,
+      "trades": 20,
+      "boot_p": 0.1894,
+      "sharpe_ci95": [
+        -0.465087512346609,
+        1.3399881355320544
+      ],
+      "pbo": 0.9285714285714286,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+          "is_sharpe": 0.3642462914012056,
+          "oos_sharpe": 0.44089248592505936,
+          "oos_return": 0.04239918903973905
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": 0.47958978139876113,
+          "oos_sharpe": 0.44508504193351534,
+          "oos_return": 0.016800893311624376
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": 0.46430250757220737,
+          "oos_sharpe": -0.35546230051039196,
+          "oos_return": -0.006404658387029527
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": 0.36073206049919526,
+          "oos_sharpe": -0.9265341834947989,
+          "oos_return": -0.01947739939385207
+        }
+      ],
+      "wf_efficiency": -0.2372975750474239,
+      "dsr": 0.0976353781537947,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 40}",
+      "gate_b": false,
+      "sharpe": 0.3741078453893923,
+      "cagr": 0.024476130421848596,
+      "max_dd": -0.07375765085425245,
+      "trades": 21,
+      "boot_p": 0.1324,
+      "sharpe_ci95": [
+        -0.31492336761280904,
+        0.9766090428483686
+      ],
+      "pbo": 0.7142857142857143,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.6153845431837577,
+          "oos_sharpe": 0.5896379779103906,
+          "oos_return": 0.06519932961001174
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.5389085997331686,
+          "oos_sharpe": 1.0337168754992105,
+          "oos_return": 0.043526029121002674
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.6065567886681111,
+          "oos_sharpe": -0.5539559886223202,
+          "oos_return": -0.026836904148432872
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": 0.48008764229472717,
+          "oos_sharpe": -1.4120316630798089,
+          "oos_return": -0.08709164534674563
+        }
+      ],
+      "wf_efficiency": -0.1528970741024808,
+      "dsr": 0.06420625384170148,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": 0.5733948568914182,
+      "cagr": 0.04168739502728114,
+      "max_dd": -0.10038073279053505,
+      "trades": 21,
+      "boot_p": 0.063,
+      "sharpe_ci95": [
+        -0.17314314388584226,
+        1.215404624406375
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.3642462914012056,
+          "oos_sharpe": 0.5134747512588248,
+          "oos_return": 0.051714395374987454
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.4020773692784472,
+          "oos_sharpe": -0.4840856619421412,
+          "oos_return": -0.027646075572243523
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.17114699111072995,
+          "oos_sharpe": 0.9708450753026866,
+          "oos_return": 0.06702110328860122
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.3658504676319573,
+          "oos_sharpe": 1.2151176323220267,
+          "oos_return": 0.11672104989090393
+        }
+      ],
+      "wf_efficiency": 1.6997743410490338,
+      "dsr": 0.13674791099794775,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": true,
+      "sharpe": 0.8503284348213032,
+      "cagr": 0.3829025529813366,
+      "max_dd": -0.6812081164025956,
+      "trades": 101,
+      "boot_p": 0.0314,
+      "sharpe_ci95": [
+        -0.0435509457471151,
+        1.7287783669059027
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 2.3971860147992263,
+          "oos_sharpe": 1.0329246314814609,
+          "oos_return": 0.6829229134335866
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 1.4504454692817537,
+          "oos_sharpe": 0.21191911210827757,
+          "oos_return": -0.020658720179082657
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 1.111961940510675,
+          "oos_sharpe": 0.20062869865174854,
+          "oos_return": 0.004520589417649212
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.9439748536767583,
+          "oos_sharpe": 0.4190311916562364,
+          "oos_return": 0.09070019588012124
+        }
+      ],
+      "wf_efficiency": 0.3158265554005931,
+      "dsr": 0.3534756239164977,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": true,
+      "sharpe": 0.7586921812197911,
+      "cagr": 0.3029930345143439,
+      "max_dd": -0.5570798969412404,
+      "trades": 1059,
+      "boot_p": 0.0344,
+      "sharpe_ci95": [
+        -0.054238210205512075,
+        1.5455895310705376
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 2.5171261016127455,
+          "oos_sharpe": 0.8237859356449854,
+          "oos_return": 0.41908765495681854
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 1.3063938619008022,
+          "oos_sharpe": 1.0674095624403195,
+          "oos_return": 0.5581962254777493
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 1.230904047074238,
+          "oos_sharpe": -0.234000211581508,
+          "oos_return": -0.13608838437890214
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 0.9678884428055928,
+          "oos_sharpe": -0.25340089498441737,
+          "oos_return": -0.18742793958325088
+        }
+      ],
+      "wf_efficiency": 0.23309889720656832,
+      "dsr": 0.2741677533982816,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 0.5, \"fast\": 30}",
+      "gate_b": false,
+      "sharpe": 0.8332731082355518,
+      "cagr": 0.11429079422579358,
+      "max_dd": -0.17907078928035214,
+      "trades": 13,
+      "boot_p": 0.0344,
+      "sharpe_ci95": [
+        -0.06936871140322706,
+        1.568101178708708
+      ],
+      "pbo": 0.14285714285714285,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": 2.427957884892121,
+          "oos_sharpe": 0.4021616597126843,
+          "oos_return": 0.05177718211292315
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": 1.5161734161925333,
+          "oos_sharpe": -0.2101390203354042,
+          "oos_return": -0.02312863188178249
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 30}",
+          "is_sharpe": 1.1851439491317097,
+          "oos_sharpe": 1.0663036866436486,
+          "oos_return": 0.16261642663038556
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 30}",
+          "is_sharpe": 1.1529413919703517,
+          "oos_sharpe": -0.45519718475430554,
+          "oos_return": -0.07102040188659131
+        }
+      ],
+      "wf_efficiency": 0.1278416818473598,
+      "dsr": 0.31235509191908406,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+      "gate_b": false,
+      "sharpe": 0.24860007624625727,
+      "cagr": 0.029398706296301924,
+      "max_dd": -0.2514604579297943,
+      "trades": 16,
+      "boot_p": 0.293,
+      "sharpe_ci95": [
+        -0.6072700073473374,
+        0.9769288976647692
+      ],
+      "pbo": 0.21428571428571427,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -0.544444013323354,
+          "oos_sharpe": 0.170644873319566,
+          "oos_return": 0.012442936550562944
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -0.024672230982038253,
+          "oos_sharpe": -0.04241105886440648,
+          "oos_return": -0.006863242552338944
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+          "is_sharpe": 0.32721919264752325,
+          "oos_sharpe": 0.6315530637887248,
+          "oos_return": 0.09018153336777468
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+          "is_sharpe": 0.3937759393136865,
+          "oos_sharpe": -0.239801546934837,
+          "oos_return": -0.06815588463357336
+        }
+      ],
+      "wf_efficiency": 3.4236840902299717,
+      "dsr": 0.039401211177000434,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 40}",
+      "gate_b": false,
+      "sharpe": 0.023275510941015244,
+      "cagr": -0.0017914668209920714,
+      "max_dd": -0.22819497332223881,
+      "trades": 15,
+      "boot_p": 0.4776,
+      "sharpe_ci95": [
+        -0.720074409533248,
+        0.7109377956267005
+      ],
+      "pbo": 0.05714285714285714,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.13310321871645356,
+          "oos_sharpe": -1.044541155743012,
+          "oos_return": -0.12494358144818662
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.6810196378696654,
+          "oos_sharpe": 0.8947445567186825,
+          "oos_return": 0.04910497611337772
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.3292298049520689,
+          "oos_sharpe": 0.5666061620332828,
+          "oos_return": 0.04378663513345926
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.1170289230235256,
+          "oos_sharpe": 0.5342277378423808,
+          "oos_return": 0.04715781322061585
+        }
+      ],
+      "wf_efficiency": 237759325.2128335,
+      "dsr": 0.013046754884868401,
+      "family_trials": 50
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": -0.16113584233325098,
+      "cagr": -0.022761376999301586,
+      "max_dd": -0.21861469424710767,
+      "trades": 13,
+      "boot_p": 0.6704,
+      "sharpe_ci95": [
+        -0.9880117164644143,
+        0.5071264945057221
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.7415124064083329,
+          "oos_sharpe": -0.04895390796696584,
+          "oos_return": -0.01363510283609115
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.25461117756874996,
+          "oos_sharpe": 0.10040543464435002,
+          "oos_return": 0.004939856323067149
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.1498505726478027,
+          "oos_sharpe": 0.9642046999330346,
+          "oos_return": 0.1443652748107569
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.23969755876205842,
+          "oos_sharpe": -1.894741144790961,
+          "oos_return": -0.17851951732279847
+        }
+      ],
+      "wf_efficiency": -219771229.54513556,
+      "dsr": 0.004917329161922858,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "15m",
+      "arch": "N2_mtf_breakout",
+      "best_params": "{}",
+      "gate_b": false,
+      "sharpe": -2.2946130559717948,
+      "cagr": -0.11647645637197257,
+      "max_dd": -0.311766770411799,
+      "trades": 64,
+      "boot_p": 1.0,
+      "sharpe_ci95": [
+        -3.620142920945753,
+        -1.083412303601369
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2023,
+          "selected": "{}",
+          "is_sharpe": -1.4723342367262118,
+          "oos_sharpe": -4.347890238195786,
+          "oos_return": -0.16108030722191335
+        },
+        {
+          "year": 2024,
+          "selected": "{}",
+          "is_sharpe": -2.6398260586645192,
+          "oos_sharpe": -1.7875533158406818,
+          "oos_return": -0.10639122400095069
+        }
+      ],
+      "wf_efficiency": -3067721777.018234,
+      "dsr": 2.2575323922432213e-08,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": false,
+      "sharpe": 0.8048718255586214,
+      "cagr": 0.12994753639946421,
+      "max_dd": -0.15692738088906621,
+      "trades": 96,
+      "boot_p": 0.02,
+      "sharpe_ci95": [
+        0.04399823201804242,
+        1.4539804372150258
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 1.6414585354052058,
+          "oos_return": 0.5290866392252833
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.64882792797361,
+          "oos_sharpe": 1.493671525473821,
+          "oos_return": 0.6112294523848769
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.4611745209868637,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": -3.902083614091894,
+      "cagr": -0.5257330845015703,
+      "max_dd": -0.9960353223503283,
+      "trades": 1258,
+      "boot_p": 1.0,
+      "sharpe_ci95": [
+        -4.744691341840628,
+        -3.082569317534762
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -4.7270897852744875,
+          "oos_return": -0.7674116241257085
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -1.827621683299556,
+          "oos_sharpe": -10.943284090189778,
+          "oos_return": -0.9825280197975095
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 3.696801353364528e-37,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 1.0, \"fast\": 30}",
+      "gate_b": false,
+      "sharpe": 0.4327599810313024,
+      "cagr": 0.013095458779730507,
+      "max_dd": -0.043578686617887774,
+      "trades": 4,
+      "boot_p": 0.1098,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.5,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -0.704452762707852,
+          "oos_return": -0.014520210582272153
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 1.0, \"fast\": 30}",
+          "is_sharpe": 0.5444038224568636,
+          "oos_sharpe": -0.5090732039971697,
+          "oos_return": -0.012347452984289409
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.03148448336090644,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+      "gate_b": false,
+      "sharpe": 0.05743443453127926,
+      "cagr": 0.0008507140499443011,
+      "max_dd": -0.06718453013917602,
+      "trades": 7,
+      "boot_p": 0.4536,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.5,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -1.2796301509637507,
+          "oos_return": -0.012525110432950681
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 4.0}",
+          "is_sharpe": 0.39427896261156986,
+          "oos_sharpe": -1.0568418787341853,
+          "oos_return": -0.038027839819329
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.016018959540683126,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 30}",
+      "gate_b": false,
+      "sharpe": 0.18392618807899372,
+      "cagr": 0.002842751073123928,
+      "max_dd": -0.042791845294394615,
+      "trades": 5,
+      "boot_p": 0.425,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.07142857142857142,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -1.105443231383982,
+          "oos_return": -0.007947912591806716
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -0.4376967348709228,
+          "oos_sharpe": 0.6890779458629593,
+          "oos_return": 0.029352992396755484
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.022987598715659162,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": -0.22471950531334822,
+      "cagr": -0.0028199962073328644,
+      "max_dd": -0.05444431944218897,
+      "trades": 7,
+      "boot_p": 0.7494,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -0.31155726495909153,
+          "oos_return": -0.001882596510991541
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -0.12352068997861342,
+          "oos_sharpe": -0.5622234294835265,
+          "oos_return": -0.018779066602054417
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.0027016223490757487,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": false,
+      "sharpe": 0.75451439040848,
+      "cagr": 0.12847082762523065,
+      "max_dd": -0.31271805855845725,
+      "trades": 30,
+      "boot_p": 0.0212,
+      "sharpe_ci95": [
+        0.03121848769126544,
+        1.4271308867252241
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 1.7810822071011954,
+          "oos_return": 0.5931704618581659
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.7036308060790338,
+          "oos_sharpe": 1.2538541409916808,
+          "oos_return": 0.5315656315501933
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.4063548454805859,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": -0.1400596137064402,
+      "cagr": -0.03587794593139193,
+      "max_dd": -0.42491015836567714,
+      "trades": 284,
+      "boot_p": 0.639,
+      "sharpe_ci95": [
+        -0.9592594841193418,
+        0.6103073201948782
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.39434247086768087,
+          "oos_return": 0.07398951524264064
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 0.15633131991042434,
+          "oos_sharpe": -0.7730472400455681,
+          "oos_return": -0.2889691404973649
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.004411849951367988,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20}",
+      "gate_b": false,
+      "sharpe": 0.3636994494000958,
+      "cagr": 0.012139023999201859,
+      "max_dd": -0.05115225718837002,
+      "trades": 4,
+      "boot_p": 0.1206,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.21428571428571427,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.7697254321337746,
+          "oos_return": 0.06559524957654284
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20}",
+          "is_sharpe": 0.46481441968782494,
+          "oos_sharpe": -0.09302913737632644,
+          "oos_return": -0.005190307577175091
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.04644889013788971,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+      "gate_b": false,
+      "sharpe": 0.3636994494000958,
+      "cagr": 0.012139023999201859,
+      "max_dd": -0.05115225718837002,
+      "trades": 4,
+      "boot_p": 0.1206,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.42857142857142855,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.7161389665792134,
+          "oos_return": 0.05524470318056007
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+          "is_sharpe": 0.46481441968782494,
+          "oos_sharpe": -0.09302913737632644,
+          "oos_return": -0.005190307577175091
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.04644889013788971,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 40}",
+      "gate_b": false,
+      "sharpe": 0.1513383141141744,
+      "cagr": 0.004900470323930817,
+      "max_dd": -0.045184455413716185,
+      "trades": 4,
+      "boot_p": 0.2458,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.35714285714285715,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -0.02412810222886325,
+          "oos_return": -0.004979909674942995
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": 0.03273874851855638,
+          "oos_sharpe": 0.6093713942797022,
+          "oos_return": 0.033149594039964425
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.02646984324504449,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": 0.26403246359444377,
+      "cagr": 0.009371514772431366,
+      "max_dd": -0.04996818236018408,
+      "trades": 4,
+      "boot_p": 0.1928,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.7697254321337746,
+          "oos_return": 0.06559524957654284
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.30499216122120176,
+          "oos_sharpe": 0.12350359081241774,
+          "oos_return": 0.005323679613416177
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.03668766110818384,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "15m",
+      "arch": "N2_mtf_breakout",
+      "best_params": "{}",
+      "gate_b": false,
+      "sharpe": -1.1170672129905261,
+      "cagr": -0.0992811382129768,
+      "max_dd": -0.3244615696468601,
+      "trades": 68,
+      "boot_p": 0.959,
+      "sharpe_ci95": [
+        -3.3025929561640748,
+        0.11319068806998593
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2023,
+          "selected": "{}",
+          "is_sharpe": -0.12128437015901314,
+          "oos_sharpe": -2.5128556290170962,
+          "oos_return": -0.1225620269847898
+        },
+        {
+          "year": 2024,
+          "selected": "{}",
+          "is_sharpe": -0.7063076009570188,
+          "oos_sharpe": -2.8427260988930856,
+          "oos_return": -0.14596691640807524
+        }
+      ],
+      "wf_efficiency": -2677790863.9550905,
+      "dsr": 0.001988177415099397,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": false,
+      "sharpe": 0.44579757102674805,
+      "cagr": 0.06806567795984919,
+      "max_dd": -0.2372903303523448,
+      "trades": 91,
+      "boot_p": 0.1084,
+      "sharpe_ci95": [
+        -0.2736861693080831,
+        1.0515073596900935
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.4060697215182194,
+          "oos_return": 0.07922494092224763
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.16097866794740132,
+          "oos_sharpe": 1.1897783437697473,
+          "oos_return": 0.5064385240254543
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.12806213464778687,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": -3.3114244281513567,
+      "cagr": -0.4830951233050539,
+      "max_dd": -0.9928303357181755,
+      "trades": 1108,
+      "boot_p": 1.0,
+      "sharpe_ci95": [
+        -4.1869093691666315,
+        -2.4594765675673047
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -4.724750762190742,
+          "oos_return": -0.7542431618864027
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -1.8267618259023695,
+          "oos_sharpe": -8.248384305979728,
+          "oos_return": -0.9687852296059657
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 7.194812806387174e-23,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 0.5, \"fast\": 10}",
+      "gate_b": false,
+      "sharpe": 0.2702470895559196,
+      "cagr": 0.009218956785425503,
+      "max_dd": -0.08768509967601412,
+      "trades": 6,
+      "boot_p": 0.2426,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.6428571428571429,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 1.075841369527794,
+          "oos_return": 0.07542196594500639
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": 0.4260077411088845,
+          "oos_sharpe": -0.03720108816482182,
+          "oos_return": -0.00497314628082568
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.03426838208553487,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+      "gate_b": false,
+      "sharpe": -0.022571803367956823,
+      "cagr": -0.0010052287825501605,
+      "max_dd": -0.08045441288203337,
+      "trades": 6,
+      "boot_p": 0.5446,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.35714285714285715,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -0.5529327355057935,
+          "oos_return": -0.009387941318487414
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+          "is_sharpe": -0.1402772913926607,
+          "oos_sharpe": 0.07556173630946174,
+          "oos_return": 0.002913086343774074
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.010468912988129773,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 30}",
+      "gate_b": false,
+      "sharpe": 0.09884216296826709,
+      "cagr": 0.002841640955644431,
+      "max_dd": -0.08615604792293186,
+      "trades": 5,
+      "boot_p": 0.3992,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.9285714285714286,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 1.0610262653901958,
+          "oos_return": 0.0930920805269948
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": 0.4201566744155728,
+          "oos_sharpe": -1.9544134431064044,
+          "oos_return": -0.06580290883977336
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.01627517534826493,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": 0.33407668049402456,
+      "cagr": 0.01159578167562203,
+      "max_dd": -0.07684950056363105,
+      "trades": 6,
+      "boot_p": 0.1812,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 1.1346256001590282,
+          "oos_return": 0.0814115852556565
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.4492174880878279,
+          "oos_sharpe": 0.13234460454230323,
+          "oos_return": 0.006844825878927541
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.045451427456790545,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "A3_MA_slope_in_regime_control",
+      "best_params": "{\"ma\": 100}",
+      "gate_b": false,
+      "sharpe": 0.4017278708725258,
+      "cagr": 0.06095975426026157,
+      "max_dd": -0.24529358683416203,
+      "trades": 26,
+      "boot_p": 0.1282,
+      "sharpe_ci95": [
+        -0.31099016696168286,
+        1.033600157128618
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.6193304154122399,
+          "oos_return": 0.15443972123024174
+        },
+        {
+          "year": 2024,
+          "selected": "{\"ma\": 100}",
+          "is_sharpe": 0.24545970544965132,
+          "oos_sharpe": 0.8968614762094128,
+          "oos_return": 0.34059032903158526
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.10795501471724916,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "F3_rsi_slope_in_regime",
+      "best_params": "{\"n\": 14}",
+      "gate_b": false,
+      "sharpe": -0.2832882399057394,
+      "cagr": -0.06453192640169647,
+      "max_dd": -0.4931112841618086,
+      "trades": 262,
+      "boot_p": 0.8046,
+      "sharpe_ci95": [
+        -1.0109960192560785,
+        0.37793137220414597
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.2612881632414445,
+          "oos_return": 0.03569781341528655
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 14}",
+          "is_sharpe": 0.10359434376199132,
+          "oos_sharpe": -1.133378748362481,
+          "oos_return": -0.409866651649329
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.0017034818961120946,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback",
+      "best_params": "{\"depth\": 0.5, \"fast\": 30}",
+      "gate_b": false,
+      "sharpe": 0.3132263913669506,
+      "cagr": 0.019936292598338623,
+      "max_dd": -0.1100160015060545,
+      "trades": 4,
+      "boot_p": 0.1214,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.5,
+      "plateau": false,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 10}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.9769101038718682,
+          "oos_return": 0.14472783625940044
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 30}",
+          "is_sharpe": 0.41879871552528497,
+          "oos_sharpe": 0.04384782336779469,
+          "oos_return": -0.001702713780956544
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.04246218095177333,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M1_ema_pullback_trail",
+      "best_params": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+      "gate_b": false,
+      "sharpe": 0.2538467694771342,
+      "cagr": 0.015958170142922556,
+      "max_dd": -0.124681352766702,
+      "trades": 5,
+      "boot_p": 0.1706,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.7857142857142857,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 2.0}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.8031896560463716,
+          "oos_return": 0.05986490537809197
+        },
+        {
+          "year": 2024,
+          "selected": "{\"depth\": 0.5, \"fast\": 20, \"trail\": 3.0}",
+          "is_sharpe": 0.38692407207558954,
+          "oos_sharpe": -0.08190873771858723,
+          "oos_return": -0.018152875120629908
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.0341121441681174,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M2_rsi_pullback",
+      "best_params": "{\"level\": 40}",
+      "gate_b": false,
+      "sharpe": 0.15014608542538632,
+      "cagr": 0.0051988863859979695,
+      "max_dd": -0.08615042953135355,
+      "trades": 5,
+      "boot_p": 0.2718,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": 0.6428571428571429,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"level\": 30}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -0.7225634441432395,
+          "oos_return": -0.052888318711338256
+        },
+        {
+          "year": 2024,
+          "selected": "{\"level\": 40}",
+          "is_sharpe": -0.003945421802692309,
+          "oos_sharpe": 0.5401304100964989,
+          "oos_return": 0.04224315283043878
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.028063139992029727,
+      "family_trials": 50
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "arch": "M3_bollinger_pullback",
+      "best_params": "{\"n\": 20}",
+      "gate_b": false,
+      "sharpe": 0.11639156857236453,
+      "cagr": 0.005327506682537786,
+      "max_dd": -0.13214411008297278,
+      "trades": 4,
+      "boot_p": 0.3868,
+      "sharpe_ci95": [
+        NaN,
+        NaN
+      ],
+      "pbo": null,
+      "plateau": true,
+      "walk_forward": [
+        {
+          "year": 2018,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2019,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2020,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2021,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2022,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": -Infinity,
+          "oos_return": 0.0
+        },
+        {
+          "year": 2023,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": -Infinity,
+          "oos_sharpe": 0.9769101038718682,
+          "oos_return": 0.14472783625940044
+        },
+        {
+          "year": 2024,
+          "selected": "{\"n\": 20}",
+          "is_sharpe": 0.38692407207558954,
+          "oos_sharpe": -1.305496447035018,
+          "oos_return": -0.09149267749863266
+        }
+      ],
+      "wf_efficiency": -Infinity,
+      "dsr": 0.017695674904839507,
+      "family_trials": 50
+    }
+  ],
+  "survivors": [],
+  "gate_b_passers": 5,
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

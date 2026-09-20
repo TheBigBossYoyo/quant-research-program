@@ -1,0 +1,13 @@
+{
+  "experiment_id": "E038_20260909T081546",
+  "code_hash": "5ac614616b8372b035c67481939ff164ae3e4d2b0beb3269da14c825baa4acbc",
+  "git_commit": null,
+  "economic_hypotheses": 2,
+  "cumulative_economic": 380,
+  "architecture_trials": 24,
+  "parameter_configs": 112,
+  "gate_b_passers": 12,
+  "survivors": [],
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

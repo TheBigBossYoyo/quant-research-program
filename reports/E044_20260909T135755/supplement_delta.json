@@ -1,0 +1,183 @@
+{
+  "first_pass": "E044_20260909T092223",
+  "rerun": "E044_20260909T135755",
+  "unaffected_assets_identical": true,
+  "changed_rows": 112,
+  "changed_assets": [
+    "FTMUSDT",
+    "LTCUSDT",
+    "SOLUSDT",
+    "XRPUSDT"
+  ],
+  "sign_changes": [],
+  "stress_equal": [
+    {
+      "asset": "SOLUSDT",
+      "supplemented": true,
+      "sharpe_first": 1.1624746135550523,
+      "sharpe_rerun": 1.0097697585781216,
+      "return_first": 2.617359181658869,
+      "return_rerun": 1.9852371225689855,
+      "max_dd_first": -0.3174507738824631,
+      "max_dd_rerun": -0.3174507738824632,
+      "trades_first": 198,
+      "trades_rerun": 213
+    },
+    {
+      "asset": "XRPUSDT",
+      "supplemented": true,
+      "sharpe_first": 0.125437001493176,
+      "sharpe_rerun": -0.0174745781195086,
+      "return_first": -0.0455531671479076,
+      "return_rerun": -0.1808918691113193,
+      "max_dd_first": -0.6168886749017285,
+      "max_dd_rerun": -0.6362950011031585,
+      "trades_first": 249,
+      "trades_rerun": 264
+    },
+    {
+      "asset": "BNBUSDT",
+      "supplemented": false,
+      "sharpe_first": 0.0257790718612135,
+      "sharpe_rerun": 0.0257790718612135,
+      "return_first": -0.084049602377873,
+      "return_rerun": -0.084049602377873,
+      "max_dd_first": -0.3852098124554254,
+      "max_dd_rerun": -0.3852098124554254,
+      "trades_first": 274,
+      "trades_rerun": 274
+    },
+    {
+      "asset": "DOTUSDT",
+      "supplemented": false,
+      "sharpe_first": 0.5899889504570637,
+      "sharpe_rerun": 0.5899889504570637,
+      "return_first": 0.5781952795189385,
+      "return_rerun": 0.5781952795189385,
+      "max_dd_first": -0.3043010119666497,
+      "max_dd_rerun": -0.3043010119666497,
+      "trades_first": 199,
+      "trades_rerun": 199
+    },
+    {
+      "asset": "DOGEUSDT",
+      "supplemented": false,
+      "sharpe_first": 1.0082201516009122,
+      "sharpe_rerun": 1.0082201516009122,
+      "return_first": 1.8593057856225137,
+      "return_rerun": 1.8593057856225137,
+      "max_dd_first": -0.3520532571503943,
+      "max_dd_rerun": -0.3520532571503943,
+      "trades_first": 174,
+      "trades_rerun": 174
+    },
+    {
+      "asset": "ADAUSDT",
+      "supplemented": false,
+      "sharpe_first": 1.0106177432209298,
+      "sharpe_rerun": 1.0106177432209298,
+      "return_first": 1.4926445966824478,
+      "return_rerun": 1.4926445966824478,
+      "max_dd_first": -0.3637020031204416,
+      "max_dd_rerun": -0.3637020031204416,
+      "trades_first": 215,
+      "trades_rerun": 215
+    },
+    {
+      "asset": "AVAXUSDT",
+      "supplemented": false,
+      "sharpe_first": 1.151660524225132,
+      "sharpe_rerun": 1.151660524225132,
+      "return_first": 2.2667490230698006,
+      "return_rerun": 2.2667490230698006,
+      "max_dd_first": -0.3495373544208985,
+      "max_dd_rerun": -0.3495373544208985,
+      "trades_first": 221,
+      "trades_rerun": 221
+    },
+    {
+      "asset": "AXSUSDT",
+      "supplemented": false,
+      "sharpe_first": 0.8145493087007077,
+      "sharpe_rerun": 0.8145493087007077,
+      "return_first": 1.2107683443594182,
+      "return_rerun": 1.2107683443594182,
+      "max_dd_first": -0.3343038576234692,
+      "max_dd_rerun": -0.3343038576234692,
+      "trades_first": 204,
+      "trades_rerun": 204
+    },
+    {
+      "asset": "MATICUSDT",
+      "supplemented": false,
+      "sharpe_first": 0.4820517503219041,
+      "sharpe_rerun": 0.4820517503219041,
+      "return_first": 0.4041997994308415,
+      "return_rerun": 0.4041997994308415,
+      "max_dd_first": -0.4365786038850494,
+      "max_dd_rerun": -0.4365786038850494,
+      "trades_first": 196,
+      "trades_rerun": 196
+    },
+    {
+      "asset": "FTMUSDT",
+      "supplemented": true,
+      "sharpe_first": 0.9631339194714706,
+      "sharpe_rerun": 1.0596668353497956,
+      "return_first": 1.9870004991106844,
+      "return_rerun": 2.5130951623286357,
+      "max_dd_first": -0.4439905102484831,
+      "max_dd_rerun": -0.4439905102484849,
+      "trades_first": 165,
+      "trades_rerun": 172
+    },
+    {
+      "asset": "LTCUSDT",
+      "supplemented": true,
+      "sharpe_first": -0.3066482441943338,
+      "sharpe_rerun": -0.4410599861103605,
+      "return_first": -0.3653273448166474,
+      "return_rerun": -0.4496380993734258,
+      "max_dd_first": -0.6550012261754623,
+      "max_dd_rerun": -0.6557995970632997,
+      "trades_first": 240,
+      "trades_rerun": 245
+    },
+    {
+      "asset": "LINKUSDT",
+      "supplemented": false,
+      "sharpe_first": -0.3216458741900989,
+      "sharpe_rerun": -0.3216458741900989,
+      "return_first": -0.4767506678410107,
+      "return_rerun": -0.4767506678410107,
+      "max_dd_first": -0.6711116253975982,
+      "max_dd_rerun": -0.6711116253975982,
+      "trades_first": 256,
+      "trades_rerun": 256
+    },
+    {
+      "asset": "BTCUSDT",
+      "supplemented": false,
+      "sharpe_first": 1.0599600863904295,
+      "sharpe_rerun": 1.0599600863904295,
+      "return_first": 1.1430037292477655,
+      "return_rerun": 1.1430037292477655,
+      "max_dd_first": -0.2066967924099283,
+      "max_dd_rerun": -0.2066967924099283,
+      "trades_first": 192,
+      "trades_rerun": 192
+    },
+    {
+      "asset": "ETHUSDT",
+      "supplemented": false,
+      "sharpe_first": 0.6916298649311575,
+      "sharpe_rerun": 0.6916298649311575,
+      "return_first": 0.6420470162269081,
+      "return_rerun": 0.6420470162269081,
+      "max_dd_first": -0.3628201598785154,
+      "max_dd_rerun": -0.3628201598785154,
+      "trades_first": 200,
+      "trades_rerun": 200
+    }
+  ]
+}

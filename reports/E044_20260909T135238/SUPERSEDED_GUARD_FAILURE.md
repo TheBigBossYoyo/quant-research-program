@@ -1,0 +1,3 @@
+# SUPERSEDED - GUARD FAILURE, NOT A RESULT CHANGE
+
+This supplemented run completed all fourteen assets and wrote metrics.csv, metrics_partial.csv and daily_panel.csv, but its end-of-run source-consistency guard raised because new helper scripts (phase4_supplement_audit.py, phase4_final_tables.py, phase4_supplement_delta.py, phase4_capital.py) were ADDED under research/ while it ran. No pre-existing source file changed and the frozen engine/config hashes verified before the run. results.json was therefore never written and this folder must not be cited. It is retained only as a determinism cross-check against the clean rerun that followed (identical inputs, identical frozen sources).

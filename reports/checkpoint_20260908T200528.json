@@ -1,0 +1,322 @@
+{
+  "created_utc": "2026-09-08T20:05:43.937373+00:00",
+  "source_files": [
+    {
+      "file": "AGENTS.md",
+      "sha256": "928a56cf2e7928325ec8227ee902b3b7b7fe6e03e1df518e28f51ae6315b5da4",
+      "bytes": 5983
+    },
+    {
+      "file": "CLAUDE.md",
+      "sha256": "415279cdf1278adebd6fc4a66c2529c285ff6d98863ce18151350aec6ee037c2",
+      "bytes": 10229
+    },
+    {
+      "file": "config/research.json",
+      "sha256": "3fe0cc8a7390598c96fcb4757dab95e3385042ef7df14ad17b0110456a3ca1a3",
+      "bytes": 589
+    },
+    {
+      "file": "EXPERIMENTS.md",
+      "sha256": "9ac058fb7faf0592228c18a00852145ac421aa603f489e688f3e6c7ed731b7a7",
+      "bytes": 57320
+    },
+    {
+      "file": "PLAN.md",
+      "sha256": "b5b8e78ca39ba5b089e73c66f2cdf346f4ed77effb9c218293de33ebb0eca081",
+      "bytes": 3615
+    },
+    {
+      "file": "QUANT_RESEARCH_PROTOCOL_CODEX.md",
+      "sha256": "13d1aa829258cc9980be89455798634b909152a9b112eec6d7c91c44d7ee905e",
+      "bytes": 39382
+    },
+    {
+      "file": "README.md",
+      "sha256": "713fc870e9067107dde5f524612bfd664f350aa6ded6123f55c479d3fc9f31f5",
+      "bytes": 2025
+    },
+    {
+      "file": "reports/CARRY_RESEARCH_CHECKPOINT_2026-09-08.md",
+      "sha256": "700e44484d6b44f30797adcb9fa3ccdd8cf287812685bd4cc172405e51daa096",
+      "bytes": 4704
+    },
+    {
+      "file": "reports/CROSS_SECTIONAL_SCREEN_2026-09-08.md",
+      "sha256": "1ecf0b1a6e6d1d5a165fe253c1068241aedc13566789d3eb83c41d6689aafd1d",
+      "bytes": 4531
+    },
+    {
+      "file": "reports/ECONOMIC_AND_RISK_AUDIT_2026-09-08.md",
+      "sha256": "4f96beb27ced589bdeed09135408a6c8ba5599016eafcb9b47fc68dacf20bcc5",
+      "bytes": 4387
+    },
+    {
+      "file": "reports/FLOW_SCREEN_2026-09-08.md",
+      "sha256": "d1d35a061a12a192de85228cb6cb7c5361736ac103c249a310e4d2df754e48f6",
+      "bytes": 3468
+    },
+    {
+      "file": "reports/INITIAL_RESEARCH_REPORT_2026-09-08.md",
+      "sha256": "ac12379bee2670f02fa72e0fcb62798bd5a27c0817f6957b0e32a760e8d65713",
+      "bytes": 14837
+    },
+    {
+      "file": "reports/LATEST_RESEARCH_SUMMARY.md",
+      "sha256": "23b83e3ab47e74e115ee86b1d5975bb98fac26f0ce0a0f322409268726146659",
+      "bytes": 4956
+    },
+    {
+      "file": "reports/PERPETUAL_SCREEN_2026-09-08.md",
+      "sha256": "c7998f75566e49e7c35238095e76335fb87002608366f0bdc94c4a95c11aba0c",
+      "bytes": 3090
+    },
+    {
+      "file": "reports/RESEARCH_CONCLUSION_2026-09-08.md",
+      "sha256": "0906da768c3ecb73d3043188bf637b0b0d6d14ab2b0226aff094da6b65759e16",
+      "bytes": 6386
+    },
+    {
+      "file": "reports/VENUE_CONSTRAINTS_2026-09-08.md",
+      "sha256": "88744b4c3b93968acd4a137ff011207c602e7c204f854640ab660fc8f8667ee1",
+      "bytes": 6581
+    },
+    {
+      "file": "research/acquire.py",
+      "sha256": "61edfbeea26634979af728ffbc1b7393c6d59b636743ffa6537a89a371997229",
+      "bytes": 3479
+    },
+    {
+      "file": "research/acquire_carry_prices.py",
+      "sha256": "fc28c5d934b6b917212bde3b0efdda57f54f9a454fa41dcd73af472d3f106f24",
+      "bytes": 1511
+    },
+    {
+      "file": "research/acquire_economic_benchmarks.py",
+      "sha256": "d700f46df5dbee925707c5811163f2fb93e79d2edf652a4fd496d4aa82bf8929",
+      "bytes": 1335
+    },
+    {
+      "file": "research/acquire_funding.py",
+      "sha256": "21911e46f84ecd184cb226a74c408418abe1dd233b9f42d6a81e471c33ff219e",
+      "bytes": 1941
+    },
+    {
+      "file": "research/acquire_universe.py",
+      "sha256": "c8d6d5f9435a4d4ac985e00fe8ba7689964e00007c6aeb794aa99c3546c06e3e",
+      "bytes": 4256
+    },
+    {
+      "file": "research/archive_checkpoint.py",
+      "sha256": "af94a866a4577004b1924368c788bb8200d7ad6c0f6b591b5e84f62077295ae4",
+      "bytes": 2121
+    },
+    {
+      "file": "research/audit.py",
+      "sha256": "62c7df0c661374956e9e2473a8b7fe30aaa3d54f29e74fa6569d58e231ef8611",
+      "bytes": 4547
+    },
+    {
+      "file": "research/breadth_timing.py",
+      "sha256": "724394d12c96a478cefd672259f0aa23ca5e6dd98179c5b252b8daceb83b952f",
+      "bytes": 4989
+    },
+    {
+      "file": "research/capped_carry.py",
+      "sha256": "814d0e6ae445bd128043b9ec6a8cd90ea4ab6c0917f83b55e6438518b01b35c4",
+      "bytes": 5211
+    },
+    {
+      "file": "research/carry_backtest.py",
+      "sha256": "2d3264dcc492768f88e85978e57ef930410a36bea112292ce96e568449582045",
+      "bytes": 9685
+    },
+    {
+      "file": "research/carry_screen.py",
+      "sha256": "dcda07089b450d1d4d4188c25c6e2f60621e4509f06cc4976bb67fbc81b02777",
+      "bytes": 5149
+    },
+    {
+      "file": "research/carry_uncertainty.py",
+      "sha256": "61ce1fcc326905693493d796c52e976776b69d580db7f8b8d352bccc8e284438",
+      "bytes": 3530
+    },
+    {
+      "file": "research/continuous_carry.py",
+      "sha256": "d58edebc007c6ee48b90cbeab9cd8db934a800636ee7176bb3ac82b2bddce596",
+      "bytes": 2730
+    },
+    {
+      "file": "research/core.py",
+      "sha256": "3a05f568838b2a151a26cddf557d848dbe5c81221b04fd1956b1ca6337c9129a",
+      "bytes": 8283
+    },
+    {
+      "file": "research/cross_sectional_audit.py",
+      "sha256": "882187a33b8bf37c4f2a78e8900a47330fb3856c21630fdefa0d386074f72910",
+      "bytes": 4203
+    },
+    {
+      "file": "research/cross_sectional_hostile.py",
+      "sha256": "31120d1a4365a986044aecdd04238f4cc36c69f9d1521779dc6de922ef83f44c",
+      "bytes": 7717
+    },
+    {
+      "file": "research/cross_sectional_screen.py",
+      "sha256": "490e8193fd5cd2a024607a7a7842424907058cd2160a2270088ddc6e1cc8d28a",
+      "bytes": 9987
+    },
+    {
+      "file": "research/economic_audit.py",
+      "sha256": "e937d84aeaa2ddd6ad3eb7717f97e4b1b18e6e4f4296cdd7df8b6f2337866911",
+      "bytes": 4832
+    },
+    {
+      "file": "research/etf_data.py",
+      "sha256": "b0252e9d31a6d49416254e3c08d32c05e94babc21f712a02f2229cb6e79677fd",
+      "bytes": 4106
+    },
+    {
+      "file": "research/etf_screen.py",
+      "sha256": "41c9ac156556256312a23855e2c8e6ee4b3ffcf676d507f8afc5ca1a964c407c",
+      "bytes": 7261
+    },
+    {
+      "file": "research/flow_screen.py",
+      "sha256": "a9baa7588ecd43ada3fa7d8e00fe7dd16078a638b333c68f51c13814f2f84e28",
+      "bytes": 9126
+    },
+    {
+      "file": "research/perpetual_audit.py",
+      "sha256": "c49cb66e6c2054da925f7fa5c2cfcdbffd9d6067862fa365ab5308738bca6aa6",
+      "bytes": 2860
+    },
+    {
+      "file": "research/perpetual_screen.py",
+      "sha256": "f9a862ef2ec2fd314917ac5100c3cdc1f4b77133a274bb48cf65a242333e3197",
+      "bytes": 6074
+    },
+    {
+      "file": "research/positioning_screen.py",
+      "sha256": "c68dc54978f9b7aaae3dcb529cedaaaaec00a3cbda842a455322cf85e54fb887",
+      "bytes": 6296
+    },
+    {
+      "file": "research/repair_mark_gaps.py",
+      "sha256": "3cbc7e27e209ad4f7495b6c53a711eb7214cf034d7602483ef10f4367cf6f724",
+      "bytes": 1815
+    },
+    {
+      "file": "research/report.py",
+      "sha256": "32db3723e50957ed2209426df66e7144fe0fc7f6e10483d3314ba649384dde3d",
+      "bytes": 7715
+    },
+    {
+      "file": "research/robustness.py",
+      "sha256": "9aff840e0171d2f8c2b06e5b006ce351caf8c831848e673b15af501b027a5c18",
+      "bytes": 4277
+    },
+    {
+      "file": "research/screen.py",
+      "sha256": "66f4b8296d723b2aa7db64f7cbc945f55df7c7e76b1d4668e87abd1d82c5635f",
+      "bytes": 3115
+    },
+    {
+      "file": "research/seasonality_leadlag.py",
+      "sha256": "765632e1819f39cca0464e3469ea7326896dba34557844892b06c57664ba8ca7",
+      "bytes": 6947
+    },
+    {
+      "file": "research/universe.py",
+      "sha256": "42d86f761aeb50e1daa9f937bc4b30ce5bd7903bb40bacac44bc7ded1f0312a9",
+      "bytes": 6346
+    },
+    {
+      "file": "RESEARCH_JOURNAL.md",
+      "sha256": "732da679379fb28257af13ccd94a6a520cacd04b773aea2b3481e3f8047eb92f",
+      "bytes": 23523
+    },
+    {
+      "file": "START_CODEX.md",
+      "sha256": "70ebf2f2cce1d1d58131027b73717754f1a8b0a7fbc2c155fd70699195802ac0",
+      "bytes": 1885
+    },
+    {
+      "file": "STATUS.md",
+      "sha256": "03ea729170da6a89aa91c27626d83da304ae6914b74fb782471b35e3144403df",
+      "bytes": 5612
+    },
+    {
+      "file": "tests/test_audit.py",
+      "sha256": "484596ebf19f6af89e705195068495dda56a7981af468f3870bb55b60fc519f0",
+      "bytes": 863
+    },
+    {
+      "file": "tests/test_breadth.py",
+      "sha256": "ea3fab29ffd1a4b0c253e828234fdeb447d611184c579013968beba2f97dc02f",
+      "bytes": 1994
+    },
+    {
+      "file": "tests/test_capped_carry.py",
+      "sha256": "e0243cbc44c3412ed1af6efc464d5a5fb16d3c115f4e1644a7002c802d59a0c1",
+      "bytes": 1769
+    },
+    {
+      "file": "tests/test_carry.py",
+      "sha256": "958a02173f5b27a4cc9f4dbe681562c0b0736aec8bbb678a723b6ecb4bcea443",
+      "bytes": 2178
+    },
+    {
+      "file": "tests/test_core.py",
+      "sha256": "d470f03a05bfb19aabef2973100ccca2a4053b9bdc85c5e517b8e32b508f12ef",
+      "bytes": 3318
+    },
+    {
+      "file": "tests/test_economic_audit.py",
+      "sha256": "a1dfdc75431b4797cf32211b2a438e71f1bd2758fede6fb9e261ac11c8cd48b6",
+      "bytes": 713
+    },
+    {
+      "file": "tests/test_etf.py",
+      "sha256": "a9c0d32d4da63853beb41f5a7f03788c32a7b2d345926ce929a7e4c744f97bf8",
+      "bytes": 2607
+    },
+    {
+      "file": "tests/test_flow_screen.py",
+      "sha256": "c19f9dd5b3719221f7d71f867171237ae6f5b40346dfae6ec4642045de185434",
+      "bytes": 4061
+    },
+    {
+      "file": "tests/test_hostile.py",
+      "sha256": "756eafd22db851cffeb0370081a62577e8d2e7cb4cc66453fd52fc2363363c95",
+      "bytes": 1939
+    },
+    {
+      "file": "tests/test_perpetual_screen.py",
+      "sha256": "53a0212680a2ae617699149a41a3cfbc8e45d8247216fe78470b74f20f833c02",
+      "bytes": 1801
+    },
+    {
+      "file": "tests/test_positioning_screen.py",
+      "sha256": "2225818a8de6576ef18e91923b8c82d8e5de301b35ae2eea758f8383723f1e6c",
+      "bytes": 2180
+    },
+    {
+      "file": "tests/test_seasonality.py",
+      "sha256": "a930845e333cc70c5fb5f3b79f319b834f84bb2ba2e706042308f098b8fa5b9c",
+      "bytes": 1465
+    },
+    {
+      "file": "tests/test_universe.py",
+      "sha256": "e4d6dc3604674583094f10f4f302175e6d33620ec73bb184fbb323bfc954c3ef",
+      "bytes": 7000
+    }
+  ],
+  "verified_raw_archives": 240,
+  "verified_universe_archives": 19399,
+  "raw_archive_bytes": 72856192,
+  "test_result": "unittest suite passed before checkpoint; count recorded in EXPERIMENTS.md/STATUS.md",
+  "final_test_downloaded": false,
+  "validation_analyzed": false,
+  "git_commit": null
+}

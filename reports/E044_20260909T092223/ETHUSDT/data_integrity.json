@@ -1,0 +1,559 @@
+{
+  "symbol": "ETHUSDT",
+  "start": "2020-01-01 00:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 26304,
+  "primary_bars": 6576,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [],
+  "funding_events": 3288,
+  "funding_nonzero_jitter": 1376,
+  "funding_max_jitter_ms": 31.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 6,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-01.zip",
+      "sha256": "fb4840ec9ce7248ec4d82ce4bf3e9ca50872a3ad6b6ab4e3720f218f5f3a6021"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-02.zip",
+      "sha256": "10e0e094091fbc32271c19b3b0aaeaf229ed52538ca024dd133f9c34714d931a"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-03.zip",
+      "sha256": "36628b7275a7141048a7abbf8944ac07c9230fd055e81ff9d11beb1c229a6cd6"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-04.zip",
+      "sha256": "13e40f3a8414a1aca0f6ca494012c94f15cff50eed729d61c43ee4fa530f2488"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-05.zip",
+      "sha256": "f07e9469646e3a4ad519523c5ea6b03abd015a08cf3a5b03640b1dd0ce0c7efd"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-06.zip",
+      "sha256": "312490661c3b420680eb6d99616643150393e9ab65b878060fe7776557b50c5c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-07.zip",
+      "sha256": "e315992b16103f4ec06168ebf6a4b7f892c1089f762b4cf51006a328e16e115f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-08.zip",
+      "sha256": "6ec4b508e0fbb9a2c6d15b6faf6bdb1d7e951affc02c77fa134f610dd1ada221"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-09.zip",
+      "sha256": "d7199a24ab2e41e56ede3141caf6dc63ebd759e3931005c87c0062dd7705ae9d"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-10.zip",
+      "sha256": "d586eb0bff3c9be1476989d9cb58c45713858678ee35e57f79d47796b34a4937"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-11.zip",
+      "sha256": "79b4e1f55040f41563342b6dbaaa9d9b02440141e889793e3aac8df87187aaf7"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2020-12.zip",
+      "sha256": "7698fe1677da731dcb82ab3aa4a63e26de6086e8b7f981f57ed76acfe205529a"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-01.zip",
+      "sha256": "52b01b6937e57c3299003a91ec93fe8c2560b1ee6cacb24a60c110bf696b6118"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-02.zip",
+      "sha256": "d2833fb9bbbf66cf2f829af2c767f70283e01c3c471858a038e342798aae7d24"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-03.zip",
+      "sha256": "4f5a456703c8d48f947917dd7cb5f07503bd31bfdb60ec9a68b391b70f52666c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-04.zip",
+      "sha256": "b522173710fb0aa70bff13c54ad6b3b889edb79b42278246796c5da7c4bfce7f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-05.zip",
+      "sha256": "e43c840fdde7903f99fcbc1311e75cd6cc58b4c302c48a017100747922eefd8c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-06.zip",
+      "sha256": "625a8c04b76cc9fa096599bd1498b24b28ea31d9900dfddb86995046bd6b2ebf"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-07.zip",
+      "sha256": "bd4ffb6a1e7eb374915222129b5270ff0e7eb94c5b355ecc75ba491e4cc7b0b9"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-08.zip",
+      "sha256": "56bfd83ab6a604ffb57aa318805e813c04335a08219eac63f3c4750442c1a9c9"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-09.zip",
+      "sha256": "e29a6a88a2c28b30651cf45e46d5b67f1bd8f8ec42812ad5b4a7a72468dfa3c6"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-10.zip",
+      "sha256": "515de2962ce7c53706f6dcd489b50bade65148e8d59af1d0711134a6450e912c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-11.zip",
+      "sha256": "d61dcde383cefa67bd3febb54690d28db408cc7cfb4b4c99f4c00710f5e5b3ad"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2021-12.zip",
+      "sha256": "764bae4807411d6683b72085aeeb1bcd168654fbcb88e8f1a81a307240761c1a"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-01.zip",
+      "sha256": "6d96a19efda6917a3912377ef8e1a5eadc8f1a273f91afa069ae70bd679301bc"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-02.zip",
+      "sha256": "14f8e42d6d7696d2f622301612a8f4ba6623658732cc5840ef0582b2ee05598e"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-03.zip",
+      "sha256": "1b9fcc8ead1a066017e8c40617a78d1b9ee7b7fdad5f9d5353b04a59883274ce"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-04.zip",
+      "sha256": "45bc22bd8603876174adfd1f6273021eeaf76084629030a53cca40f379b8fb0b"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-05.zip",
+      "sha256": "7adea64d8d82d2017c1b7c3fcc6848f685370b524e0a1512bb443980a487f4b8"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-06.zip",
+      "sha256": "582aa0b2c72641cb5e93318a92beee0bbc93e968ccd10b0d89ea755a60f9fb62"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-07.zip",
+      "sha256": "07781d1411a4b793ca5c4daaee70c9e2c1a3200fe12c954c39b3ad6c37badd42"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-08.zip",
+      "sha256": "4182681e2b2fc23bbb348411ca8bdb41894609be1f94a0d9939616bf91cc9f25"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-09.zip",
+      "sha256": "75aa0182242ac65110a1dd1737a2062ee9815032d746a57d3191c44c15eacff2"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-10.zip",
+      "sha256": "04246418d55fc96753ee5b4be0718796aeb9421af40042b4e145db02e1cfaf3a"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-11.zip",
+      "sha256": "e2e15ddc21d24ac6c3ca56ab77f065eda88252a37f2f778505a332e31fcc5b3c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2022-12.zip",
+      "sha256": "1ba6559930f09fb8bd68a6592c4059526901939317eea4db8fc2d59cf5688957"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-01.zip",
+      "sha256": "247b85e0a8806e139f263831445e1d7bb91f9f56e6ab32e1f285038cdd1ceff4"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-02.zip",
+      "sha256": "f01571f2420b9eb6486e69b884fe1572abfa59bc226c4003c9d78735c559acc5"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-03.zip",
+      "sha256": "4d5266f12a8a3394ee23516de99fc380e928dbdb79cbf083fd3ddc3242073790"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-04.zip",
+      "sha256": "4ac96035c3867e0bfeff4f2f526812ee4b73a0b87b3962bb40934e2614917395"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-05.zip",
+      "sha256": "a47a9fc2936bcadc99aadfe48858e7d3e31093a9321d9bc083b886b72924f568"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-06.zip",
+      "sha256": "fe108dc555560ded46bb0807d0c2e0bc7722900213a96e4e86bf355f84fbcafa"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-07.zip",
+      "sha256": "911d3674c71a561df5ca5085426e9c61195bf5669bc7da7488ec9548ae476ca1"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-08.zip",
+      "sha256": "74210a689eb85c8908ae05cff3297b9dc6eda76a0b41a3f9d72fdde0c14e3b2f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-09.zip",
+      "sha256": "38883595a881aadfbfd8c256e5170c8b016e9927119250f5128abfba96aba9c5"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-10.zip",
+      "sha256": "61d6692284b406c9f9f655aef68e151a1eeb90509ddcd7f4a97233b1a002ef9e"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-11.zip",
+      "sha256": "d57c333ac46e779b2399c498cc8fedfbc8804deb688873585ded09aceec1fa16"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2023-12.zip",
+      "sha256": "8f581fcee21156d501435fc88db1d99515e6d7432fa7ae2993de3b5f95bb0069"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-01.zip",
+      "sha256": "2f3d1a6d9292f13b1d6cf86716cbda5b3f6119a310daed1dde5ee3d0d71e2fab"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-02.zip",
+      "sha256": "bde9a1b0824b212ef6cea97065543fda0fc57c33479709d34e5db995fc79af01"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-03.zip",
+      "sha256": "24af0ecf9db1953e8c83e94823f4aae368ff70ba54106ef121c204cb046f9e41"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-04.zip",
+      "sha256": "290b594fa46ef95ab9c1486e2640ce2d1894eecd4d71b79bcd30d6632ca75b9f"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-05.zip",
+      "sha256": "a9b42949325fd4f236c7c88b63f35d94910109218ce2db80b8e29f7a2b2d623b"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-06.zip",
+      "sha256": "479dced4a591035987e084dc8a5e5f3f1f2593704c0aeecdebc20c89b35c1d98"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-07.zip",
+      "sha256": "8cc8d8b6ef13fa0393f53690e5d569afb8a50488e4d7852e20ac22d7bcf17cf5"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-08.zip",
+      "sha256": "00eddbb3297515be14426119f07468846cd04dc527dbc19834dd45294740a67c"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-09.zip",
+      "sha256": "37bea2dbe4281fbcaa45a849b6eed4393713b7236c5cb35cff63876e96df5677"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-10.zip",
+      "sha256": "b4cda93568426a315e1de2fc7ca0ffb56586495680b233ffd7ce6bec11d18713"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-11.zip",
+      "sha256": "3e8286eb77062f7c1047ee32aa1ce98dbf42f8e8029acebe38cc1bdd33967c63"
+    },
+    {
+      "file": "data\\raw\\futures\\klines\\ETHUSDT-1h-2024-12.zip",
+      "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\ETHUSDT-1h-2021-12.zip",
+      "sha256": "7c15a005c4dd21a0b41d767b1c0e881f7687ffe9fe580d37632965b2c797b52e"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-01.zip",
+      "sha256": "da76759ea210e7e9d33bd6be1576dd6fdd32f7a47b37b7c439c3fcceb025c5d9"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-02.zip",
+      "sha256": "c37f3bba2c61f63f78ba60aeed23067694fe64d7c2ef67e99201932560a7e1f7"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-03.zip",
+      "sha256": "9f85c7467b29c35f71e8d55c39e00e042d511cedb4270799a06f94bd706fe5e1"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-04.zip",
+      "sha256": "b3004ffea66d1e27160d8355ab8692254d272d2fb9a0f6969f5afa4ab033cba3"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-05.zip",
+      "sha256": "713dd69910c2d39209e1e3be00c415044c0df017126cb2e0df914dbeb62fbae2"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-06.zip",
+      "sha256": "7baa832f63d629692d6f57c7840ff4c77649c2f717ca1a8fe485a17f67e1d33f"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-07.zip",
+      "sha256": "dcd76948acedd02c2745c7a449ae09579f918cdf60102ccb3e2cb1743ce42729"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-08.zip",
+      "sha256": "31394dcf1a84655a3e003200d228f70dfe35487e22cba54de7cda9245b72b950"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-09.zip",
+      "sha256": "51f5ada75af692d6e95abdcc2d84dd521d03c52d187d0b870057c430b14e10d9"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-10.zip",
+      "sha256": "95311f377e0ec8ef14e2c8c81599760b03a5f97dee3d1128c8d5077d29d2c2b1"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-11.zip",
+      "sha256": "38b21c96b1b365f5130178dbbc601f3d45edec573678fbef9cf5c119868bb975"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2022-12.zip",
+      "sha256": "417a07e86f134f8cc99a0a412653651c577a805af0577282c1af03498ea6b820"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-01.zip",
+      "sha256": "6f3b17e6b2e1c7148dbb5bf81cd7f58252da87f7d0831edba38a4f81a8ae0c46"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-02.zip",
+      "sha256": "47b99057e2ea8bda8a6d266a34066b8c23954c4b1fb2a21d29f3697b2f69358d"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-03.zip",
+      "sha256": "05dc0ee541110207cf24ff95b062fc084bb000708000caca25531898f5795a8f"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-04.zip",
+      "sha256": "7627d0f3176e6819455c8ba6a963178bc93f512dbd63cd396d1ecf5699bf76e0"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-05.zip",
+      "sha256": "fb2130fb406eb670b51104a8d216b0e43fc83181bb0f0f4c9f4ca99f7037bee9"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-06.zip",
+      "sha256": "b8576b817b4a585346d64c79d7c0793c9c937bd4b9fc58723d4d0ba6ed1925af"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-07.zip",
+      "sha256": "978c33e4a464eef0cf89152012af0bfdb7486a0eed391596beae33afe7af0e6c"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-08.zip",
+      "sha256": "4010228173913d4aeca143c34aedb3bec99741e4d0548ff94f0d2fa113aedd1f"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-09.zip",
+      "sha256": "94f99da71e69e202b0c854d827e8665175471779376efe5bb2735e5659da19f4"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-10.zip",
+      "sha256": "77c49c7e7a5aff5b9af8f79fac90d60dc34efb83a03dc5cdf21e6ce935169ba5"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-11.zip",
+      "sha256": "540e1cfc450555f4b4bf66597d2f53d3ef2aeca259628c2e3679a0328cd8cf62"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2023-12.zip",
+      "sha256": "15f8b317ce9a72b95c2f7b814cf354a3be7899c716b1da4bea5f9741f1a4bc72"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-01.zip",
+      "sha256": "69cbd7f53ebf1ce8f7a10181830a931e08e843d7ce0060e9f173f932f3b7510a"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-02.zip",
+      "sha256": "365bf9687593496872696454674a4a73183112bddcd1c894b000f6a66943a9db"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-03.zip",
+      "sha256": "2e04fe5bc9bfba00ae5d5bf74cccd2cc74c86a64923600715f309a1f20ff316c"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-04.zip",
+      "sha256": "ebbab0cd75059cd87171febce99b34bd9cb78d7d1ae0db76f50a8dcba4726eb7"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-05.zip",
+      "sha256": "51739079dcec6b65dfc3b108f1f6d009a8e92a3ee60425dd8384e7604974a7be"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-06.zip",
+      "sha256": "e16d550e6995d44bb5820218e1a817012be1495790c1f5074e31d681f13c2cf0"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-07.zip",
+      "sha256": "7f296e401087e50f3156779ad25a67e29b138cf35aa8afc89971e0862b42011e"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-08.zip",
+      "sha256": "81050d8e794a6c82a728a2ef1aeeea825ded69960aa905742796c5244eb7febe"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-09.zip",
+      "sha256": "5c98619433ccccb9484dbe9e278dac80b40944f63440941ca60142f4efa415b2"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-10.zip",
+      "sha256": "b9a714d6dfbf51f58b0fd8d0124929b05c59a57fb607b04ea383b6262650e85d"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-11.zip",
+      "sha256": "3c0cf3885dce26b780090fdf7d6b7573648ba3c33fc17ad6bd20df7226e4ebf3"
+    },
+    {
+      "file": "data\\raw\\futures\\markPriceKlines\\ETHUSDT-1h-2024-12.zip",
+      "sha256": "513d90cb75666a93355d4c6f32928285df9be1c90b34233994e3a66c8c082074"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2021-12.zip",
+      "sha256": "788d5c57e7cbc8e6b94ed4d7672618a85311edf1d7f0888083410d0d3389d811"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-01.zip",
+      "sha256": "9f5bd01450b05a8c5e48cdc99fa147e85c82ecf7ee7919fa543a4e6039a2b98d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-02.zip",
+      "sha256": "9c35e30327ac8915cc1333415b7d5018425781c81918e349d26b734525fcdfe5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-03.zip",
+      "sha256": "3de0714a2b2582029b32147815298b6e67e972e776ca3f68a4208823b4109404"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-04.zip",
+      "sha256": "7c306ac8b6275a857b064916080e0b6ec502b25a4501c84c3fd2c0b077425de3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-05.zip",
+      "sha256": "c458330243c9d8e048ffc7168c9e3c077c01bb82b1644097a4893fee34069b78"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-06.zip",
+      "sha256": "f6f3a69b656b91500b41501a230e663ccc3c1a65f46273595b00682d8f6fabb1"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-07.zip",
+      "sha256": "17826e5591af8660a7fed74d60e24eee77c822cf0d901dd8af355a10a36699aa"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-08.zip",
+      "sha256": "a2680549de5e087566f4d323b3a812c2b9863528c6bc49b0e551cb42c381bb4d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-09.zip",
+      "sha256": "816e4de946d9f854cc457c86ca396b9cb49b46e80cf44941b59b9ad2124f2ef8"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-10.zip",
+      "sha256": "e434c29eb544cc57ff574e38685535bb7d04703aee54bc5d52f53cea372810e6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-11.zip",
+      "sha256": "4f4e52f176f69e99353959d287874a4d4a135b5bb4ea85514dd5a3e65958b2d7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2022-12.zip",
+      "sha256": "8cd0e885d63b85ee602d80eaae956f9ee3e0e25db264eb5c74026a9ae0d71f4e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-01.zip",
+      "sha256": "5647d5978092d220eb14e11c7854d86815d0eb6204197e37b4808cc599e986f3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-02.zip",
+      "sha256": "7da37820c15fb08600ae668551d0b724326b8f71d761582990721059280a221b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-03.zip",
+      "sha256": "5110b60cbbc5f26048ce02575c26444ea2ed497baed9a5609e118359e1ca3b51"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-04.zip",
+      "sha256": "fa3a3cf7c3b8285687ae8c8014eed8bc58ad3ceb33ccb62ff4298048213c0e6c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-05.zip",
+      "sha256": "bf890ea68d979942ed296b058390eb98b0b495547fee2117d3b76d5e7f629b24"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-06.zip",
+      "sha256": "b3ddac1309f9a684f4e811776a6c09fb2239bb8d1ae0ff4bd342a1c32a5e171f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-07.zip",
+      "sha256": "82577976d8acd886fda84179ee38c9e7ef445732c3b6a062d6ffd2a9e3cc30bf"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-08.zip",
+      "sha256": "cf749429c366cef3302a804b3e702937e5f1a77aeddc5b628dca7da547a8935a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-09.zip",
+      "sha256": "41ac7eb67a46d14d97daec4c37e8229df5ac6b165639ad4b2c54bc7374930341"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-10.zip",
+      "sha256": "ccaf4474f0dc94adedd4330c14995f338186caa2cc9fd0d2e2c55f74cf263a5c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-11.zip",
+      "sha256": "153ec1450eb5d999ce253e2c7ca2e81b79a523ff52dd18b14faefab8212b999b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2023-12.zip",
+      "sha256": "91bdf41566cebb86c6f0e3646b0037de9c22e14ee2f592c5722c7e4a19c91119"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-01.zip",
+      "sha256": "5a71469b0b363886df904e784dddefc484dd943334b1fb7454713ce4ed715a4b"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-02.zip",
+      "sha256": "915fad950c48935f3875d88992b8d78290bc8a6fada44408e3ed14aef9a56670"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-03.zip",
+      "sha256": "e9c1d0f3e7e3b493277c7f826afb223482d56bdc7611144d398ac10e47307907"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-04.zip",
+      "sha256": "b54c9f05af116ccd921b32b25960ae26954c4983992d44f2390bf1de08b2c724"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-05.zip",
+      "sha256": "8350ab4d61b12ec61539611e30809039f54814213bc4c937609360b1ff28b5e0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-06.zip",
+      "sha256": "def13f4a478c28b0111fb24c57f95fcee80e71982ed74f12e465d20d328e2275"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-07.zip",
+      "sha256": "9d236281ab6430250ad2b472cbbf03812a40aed42e73c8339fc6be55a2417a82"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-08.zip",
+      "sha256": "e17684bc761924eb5e1912c52cfa997eddeb99da303e68e28f6f37369f672b9d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-09.zip",
+      "sha256": "ffb6e7441053137cb7ca81cc83bcdd996612f7dbb15aa2e168a7ee521f8cbbca"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-10.zip",
+      "sha256": "2124978c335473a5d9c0f0e9f238193d56c21ac7e250e065a36e9d1201beb049"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-11.zip",
+      "sha256": "636a4c7c86445c2774b4eae8598c480fcbc57de7dde5d40f6937c7fac510797c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\ETHUSDT-fundingRate-2024-12.zip",
+      "sha256": "11a0847e8aacb32eeb725611fda4fe6a8419c03eb0c16e14dfc3b9287e78ecc9"
+    }
+  ]
+}

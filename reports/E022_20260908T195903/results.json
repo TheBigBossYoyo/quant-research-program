@@ -1,0 +1,546 @@
+{
+  "experiment_id": "E022_20260908T195903",
+  "code_hash": "4795bc9e684ca6cab9a7bb5fc6f897707eeb82f12568c8932af8e049ea4bace9",
+  "git_commit": null,
+  "seed": 20261508,
+  "new_hypotheses": 8,
+  "rule_b_trials": 2,
+  "cumulative_hypotheses": 241,
+  "stage1": [
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "feature": "leader_ret1",
+      "ic": -0.022885805775521566,
+      "observations": 26300,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20261508,
+      "ci95": [
+        -0.03399045016433391,
+        -0.010983542291607687
+      ],
+      "ci_lower_adjusted": -0.03769077951518248,
+      "ci_upper_adjusted": -0.008164386243516819,
+      "bonferroni_cells": 4,
+      "passes_stage1": true,
+      "direction": -1,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.022885805775521566,
+        "4": -0.018565915510140404,
+        "24": -0.007848935777103654
+      },
+      "ic_by_year": {
+        "2022": -0.03162320045706668,
+        "2023": -0.019972285670775414,
+        "2024": -0.012896938030230582
+      },
+      "feature_autocorrelation": -0.010755085667558166,
+      "contemporaneous_bar_return_correlation": 0.8286472549904432,
+      "top_quintile_forward_mean_bps": 0.4868428599432212,
+      "bottom_quintile_forward_mean_bps": 0.37077086817669147,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 4,
+      "feature": "leader_ret1",
+      "ic": -0.000354429268952063,
+      "observations": 6572,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20261509,
+      "ci95": [
+        -0.02603783767867588,
+        0.026049368234861286
+      ],
+      "ci_lower_adjusted": -0.033231197692072716,
+      "ci_upper_adjusted": 0.03297235669206585,
+      "bonferroni_cells": 4,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.000354429268952063,
+        "4": 0.02537367577926201,
+        "24": 0.016772303845636254
+      },
+      "ic_by_year": {
+        "2022": -0.011823436771509887,
+        "2023": -0.025934655506999697,
+        "2024": 0.031092926033188827
+      },
+      "feature_autocorrelation": -0.003572241734324055,
+      "contemporaneous_bar_return_correlation": 0.8265864655212092,
+      "top_quintile_forward_mean_bps": 6.958246000353723,
+      "bottom_quintile_forward_mean_bps": 1.3164798284837997,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "feature": "leader_ret1",
+      "ic": -0.023165260410560454,
+      "observations": 26300,
+      "block": 168,
+      "samples": 2000,
+      "seed": 20261510,
+      "ci95": [
+        -0.03492742583346344,
+        -0.011558825273039907
+      ],
+      "ci_lower_adjusted": -0.037798505055108164,
+      "ci_upper_adjusted": -0.008576079574522773,
+      "bonferroni_cells": 4,
+      "passes_stage1": true,
+      "direction": -1,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.023165260410560454,
+        "4": -0.018071195980625,
+        "24": -0.00940448327438598
+      },
+      "ic_by_year": {
+        "2022": -0.025484423529913137,
+        "2023": -0.025015757752461575,
+        "2024": -0.019561002252724606
+      },
+      "feature_autocorrelation": -0.004355713599623084,
+      "contemporaneous_bar_return_correlation": 0.8286229374162216,
+      "top_quintile_forward_mean_bps": 0.39895966490795587,
+      "bottom_quintile_forward_mean_bps": 1.0612846812867178,
+      "base_round_trip_cost_bps": 14.0
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 4,
+      "feature": "leader_ret1",
+      "ic": -0.007606347906770219,
+      "observations": 6572,
+      "block": 42,
+      "samples": 2000,
+      "seed": 20261511,
+      "ci95": [
+        -0.032107661826780445,
+        0.019817839569747753
+      ],
+      "ci_lower_adjusted": -0.04163598111179458,
+      "ci_upper_adjusted": 0.027908487539484543,
+      "bonferroni_cells": 4,
+      "passes_stage1": false,
+      "direction": 0,
+      "decay_ic_by_horizon_bars": {
+        "1": -0.007606347906770219,
+        "4": 0.01501938865964716,
+        "24": 0.001889473523179444
+      },
+      "ic_by_year": {
+        "2022": -0.009913197230135529,
+        "2023": -0.045329732025999235,
+        "2024": 0.022714167147856915
+      },
+      "feature_autocorrelation": -0.019166978730671382,
+      "contemporaneous_bar_return_correlation": 0.8265885170160762,
+      "top_quintile_forward_mean_bps": 6.193651496803651,
+      "bottom_quintile_forward_mean_bps": -1.5564352023777994,
+      "base_round_trip_cost_bps": 14.0
+    }
+  ],
+  "stage2": [
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "long_baseline",
+      "case": "fee_only",
+      "ending_equity": 432.93219401112896,
+      "cumulative_return": -0.13413561197774204,
+      "cagr": -0.046864346567216275,
+      "daily_sharpe": -0.057634651033103446,
+      "max_observed_drawdown": -0.3960128246700476,
+      "max_observed_gross": 0.5656274970509432,
+      "fills": 2,
+      "turnover_usdt": 473.19822,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3434378612657353,
+        "2023": 0.18845606658574465,
+        "2024": 0.10966250326361826
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "long_baseline",
+      "case": "base",
+      "ending_equity": 432.8375543671289,
+      "cumulative_return": -0.1343248912657422,
+      "cagr": -0.04693378809280757,
+      "daily_sharpe": -0.05787853646087383,
+      "max_observed_drawdown": -0.3960515908189899,
+      "max_observed_gross": 0.565685825620923,
+      "fills": 2,
+      "turnover_usdt": 473.19822,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3435376569617369,
+        "2023": 0.18848471576041348,
+        "2024": 0.1095618365075699
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "long_baseline",
+      "case": "stress",
+      "ending_equity": 433.51368403681175,
+      "cumulative_return": -0.13297263192637654,
+      "cagr": -0.04643790217039678,
+      "daily_sharpe": -0.06155748529822498,
+      "max_observed_drawdown": -0.39038332754081995,
+      "max_observed_gross": 0.5571636798910867,
+      "fills": 2,
+      "turnover_usdt": 466.13556000000005,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3387543009738829,
+        "2023": 0.18432839012374824,
+        "2024": 0.10712792742861055
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "a_following",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 39.97577827428916,
+      "cumulative_return": -0.9200484434514217,
+      "cagr": -0.5691172938794884,
+      "daily_sharpe": -3.0859379200426615,
+      "max_observed_drawdown": -0.9229438726874859,
+      "max_observed_gross": 0.5895702257324826,
+      "fills": 6131,
+      "turnover_usdt": 1043134.9846300001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.8517625232694563,
+        "2023": -0.4606522027226011,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "a_following",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 39.818363188992464,
+      "cumulative_return": -0.9203632736220151,
+      "cagr": -0.569683479903594,
+      "daily_sharpe": -3.3031386228324044,
+      "max_observed_drawdown": -0.9223344006944179,
+      "max_observed_gross": 0.5894471465287555,
+      "fills": 4318,
+      "turnover_usdt": 706618.73925,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9203632736220151,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "a_following",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 39.498408723919205,
+      "cumulative_return": -0.9210031825521616,
+      "cagr": -0.5708388988433377,
+      "daily_sharpe": -4.0884173566108615,
+      "max_observed_drawdown": -0.9225763820489524,
+      "max_observed_gross": 0.5747600164403085,
+      "fills": 1941,
+      "turnover_usdt": 332622.40043,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.9210031825521616,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 39.88787667959356,
+      "cumulative_return": -0.9202242466408129,
+      "cagr": -0.5694332721288551,
+      "daily_sharpe": -4.321491476195027,
+      "max_observed_drawdown": -0.9202242466408129,
+      "max_observed_gross": 0.5727397746431142,
+      "fills": 8172,
+      "turnover_usdt": 910482.69309,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6274645721221911,
+        "2023": -0.7858572705054149,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 40.05163889011153,
+      "cumulative_return": -0.9198967222197769,
+      "cagr": -0.5688449713160816,
+      "daily_sharpe": -4.5090399937692265,
+      "max_observed_drawdown": -0.9199095502197769,
+      "max_observed_gross": 0.5713523222436482,
+      "fills": 6208,
+      "turnover_usdt": 643337.6881599999,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7681309482153562,
+        "2023": -0.6545322579115831,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "BTCUSDT",
+      "follower": "ETHUSDT",
+      "timeframe_hours": 1,
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 40.06020737444289,
+      "cumulative_return": -0.9198795852511142,
+      "cagr": -0.5688142340051823,
+      "daily_sharpe": -5.058552621173088,
+      "max_observed_drawdown": -0.9198795852511142,
+      "max_observed_gross": 0.5585738877375618,
+      "fills": 3217,
+      "turnover_usdt": 301458.70877,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.919879585251114,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "long_baseline",
+      "case": "fee_only",
+      "ending_equity": 673.5391154547528,
+      "cumulative_return": 0.34707823090950574,
+      "cagr": 0.10438653012021759,
+      "daily_sharpe": 0.5401878990656532,
+      "max_observed_drawdown": -0.329959109627339,
+      "max_observed_gross": 0.7220317220915557,
+      "fills": 2,
+      "turnover_usdt": 701.1827000000001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.3155581351084108,
+        "2023": 0.34060475746539254,
+        "2024": 0.4680995166923021
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "long_baseline",
+      "case": "base",
+      "ending_equity": 673.398878914753,
+      "cumulative_return": 0.34679775782950606,
+      "cagr": 0.10430989474564645,
+      "daily_sharpe": 0.5398642671574486,
+      "max_observed_drawdown": -0.3299896800073593,
+      "max_observed_gross": 0.7220767772036608,
+      "fills": 2,
+      "turnover_usdt": 701.1827000000001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.31565166998841,
+        "2023": 0.3406513104030162,
+        "2024": 0.46794348523614904
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "long_baseline",
+      "case": "stress",
+      "ending_equity": 672.9080510247528,
+      "cumulative_return": 0.34581610204950564,
+      "cagr": 0.10404158710787614,
+      "daily_sharpe": 0.5387310866599223,
+      "max_observed_drawdown": -0.3300967209608624,
+      "max_observed_gross": 0.7222345143861936,
+      "fills": 2,
+      "turnover_usdt": 701.1827000000001,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.31597904206840943,
+        "2023": 0.340814345945633,
+        "2024": 0.46739712451237936
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "a_following",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 99.93103856186522,
+      "cumulative_return": -0.8001379228762695,
+      "cagr": -0.4152593306811807,
+      "daily_sharpe": -4.012762002676509,
+      "max_observed_drawdown": -0.805353248240459,
+      "max_observed_gross": 0.5487780251873441,
+      "fills": 2835,
+      "turnover_usdt": 658741.22686,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.8001379228762694,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "a_following",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 100.12564057078485,
+      "cumulative_return": -0.7997487188584302,
+      "cagr": -0.4148800959005927,
+      "daily_sharpe": -4.28348900468344,
+      "max_observed_drawdown": -0.8028341288542228,
+      "max_observed_gross": 0.5478827926444575,
+      "fills": 2331,
+      "turnover_usdt": 513585.32244,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7997487188584301,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "a_following",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 100.27767529646545,
+      "cumulative_return": -0.799444649407069,
+      "cagr": -0.41458415682182537,
+      "daily_sharpe": -4.4569186417756965,
+      "max_observed_drawdown": -0.8002485911435047,
+      "max_observed_gross": 0.5445101724260033,
+      "fills": 1135,
+      "turnover_usdt": 258121.55699,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.799444649407069,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "fee_only",
+      "ending_equity": 101.49477578354124,
+      "cumulative_return": -0.7970104484329175,
+      "cagr": -0.41222575770512315,
+      "daily_sharpe": -4.127619787270247,
+      "max_observed_drawdown": -0.7970104484329175,
+      "max_observed_gross": 0.536193621903779,
+      "fills": 5685,
+      "turnover_usdt": 760088.3205,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.6615930220031288,
+        "2023": -0.38196822832107513,
+        "2024": -0.02943735388994151
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "base",
+      "ending_equity": 101.36352157274371,
+      "cumulative_return": -0.7972729568545126,
+      "cagr": -0.412479181333382,
+      "daily_sharpe": -4.347991551241522,
+      "max_observed_drawdown": -0.7972729568545126,
+      "max_observed_gross": 0.5122661033051539,
+      "fills": 4409,
+      "turnover_usdt": 560103.25232,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7621279184528145,
+        "2023": -0.1306000924171421,
+        "2024": -0.01972342796834803
+      }
+    },
+    {
+      "leader": "ETHUSDT",
+      "follower": "BTCUSDT",
+      "timeframe_hours": 1,
+      "rule": "b_threshold",
+      "direction": -1,
+      "case": "stress",
+      "ending_equity": 100.1298994299484,
+      "cumulative_return": -0.7997402011401032,
+      "cagr": -0.4148718018562082,
+      "daily_sharpe": -4.95209494032795,
+      "max_observed_drawdown": -0.7997402011401032,
+      "max_observed_gross": 0.5204269123205986,
+      "fills": 2051,
+      "turnover_usdt": 259819.46229000002,
+      "halted": false,
+      "calendar_returns": {
+        "2022": -0.7997402011401034,
+        "2023": 0.0,
+        "2024": 0.0
+      }
+    }
+  ],
+  "survivors": [],
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

@@ -1,0 +1,35 @@
+# secrets and environments
+.env
+.env.*
+.venv/
+__pycache__/
+*.pyc
+
+# data: vendor files are licensed for personal use (EODHD) or are large public archives (Binance, SEC);
+# nothing under data/ is published. Acquisition scripts and hashes in the repository reproduce it.
+data/
+
+# large or binary experiment artefacts (every report folder keeps its JSON/MD/small CSV results)
+reports/**/*.parquet
+reports/**/*.npz
+reports/**/*.zip
+reports/*.zip
+reports/**/daily_panel.csv
+reports/**/*_features.csv
+
+# human labelling work in progress and its backups (labels are published deliberately, not by accident)
+research/phase8b/*_LABELED.csv
+research/phase8b/backups/
+research/phase8b/PHASE8B_HUMAN_LABELING_INTEGRITY.txt
+
+# local tooling
+.claude/
+*.log
+*.tmp
+
+# bar-by-bar equity paths of the crypto phases (2.4 GB); summary results of the same runs are published
+reports/**/*_path.csv
+
+# vendor symbol list and a duplicate copy of the labelling package kept at the root
+/supported_tickers.zip
+/phase8b_labeling_package.zip

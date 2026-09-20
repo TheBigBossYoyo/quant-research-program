@@ -1,0 +1,336 @@
+{
+  "first_pass": "E044_20260909T092223",
+  "supplement_files": 20,
+  "rows": [
+    {
+      "asset": "SOLUSDT",
+      "missing_period": "2022-02-26 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive SOLUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2022-02-26.zip",
+      "sha256": "24fbcb67b854564ee8f0d14028b277c272083c59ad2fd8bcbc8d496712fb57dc",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "SOLUSDT",
+      "missing_period": "2022-02-27 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive SOLUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2022-02-27.zip",
+      "sha256": "4a3f57259893da63acf2978799f3fb28bc8130ca95f23fe08ed11eaaff1840b1",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "SOLUSDT",
+      "missing_period": "2022-02-28 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive SOLUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2022-02-28.zip",
+      "sha256": "ea4f7d6d0dbca651066ef3e361e5457b1eba91ac077a942f48344a174abee40e",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "SOLUSDT",
+      "missing_period": "2022-04-01 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive SOLUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2022-04-01.zip",
+      "sha256": "186d8581e36ce03557fc0e517c2923a0c7cb6f8e5ecb47b9e7086f6bcefd7971",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "SOLUSDT",
+      "missing_period": "2022-04-02 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive SOLUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/SOLUSDT/1h/SOLUSDT-1h-2022-04-02.zip",
+      "sha256": "9fe6fc49767488828f44db95d52412dcefd2b2b28924a92ab5461590fa80844c",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "XRPUSDT",
+      "missing_period": "2022-02-26 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive XRPUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2022-02-26.zip",
+      "sha256": "d419516ba374ab4200f4d4817748545c4ce7e49aac657086bebd1220abbf12c8",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "XRPUSDT",
+      "missing_period": "2022-02-27 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive XRPUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2022-02-27.zip",
+      "sha256": "b09dbb334e5951ed1fed51ceb65cdbb6a061b2d6212b9f67e4a957f9e683a433",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "XRPUSDT",
+      "missing_period": "2022-02-28 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive XRPUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2022-02-28.zip",
+      "sha256": "0e6587a0fd2c66e5716d7d6457cbb10ab8ce4e2b9bd52497e33c9cd49f6de351",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "XRPUSDT",
+      "missing_period": "2022-04-01 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive XRPUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2022-04-01.zip",
+      "sha256": "df4d9cca7b11d850ce0fa8d6dcd43dbf29a354c2a15446d80e1fa4dd4a4a59dd",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "XRPUSDT",
+      "missing_period": "2022-04-02 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive XRPUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2022-04-02.zip",
+      "sha256": "98e3150b8510696a1d26fc948e9ad4d80b427ebcd791bf11263ac302cd66aa36",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "FTMUSDT",
+      "missing_period": "2022-02-26 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive FTMUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/FTMUSDT/1h/FTMUSDT-1h-2022-02-26.zip",
+      "sha256": "abbbed954de32ff246f3268cbd4cf3361840ff853123cb4046de8fd4419129c8",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "FTMUSDT",
+      "missing_period": "2022-02-27 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive FTMUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/FTMUSDT/1h/FTMUSDT-1h-2022-02-27.zip",
+      "sha256": "9489972291a66f6c18eb3f6ddbc8b12109f35bbd3677ea2e4c0c643c899f2969",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "FTMUSDT",
+      "missing_period": "2022-02-28 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive FTMUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/FTMUSDT/1h/FTMUSDT-1h-2022-02-28.zip",
+      "sha256": "da5f066c2da04f74911de33c8b4e76db2a8f8cd75f6b16c9e4f11fd8cef8df45",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "FTMUSDT",
+      "missing_period": "2022-04-01 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive FTMUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/FTMUSDT/1h/FTMUSDT-1h-2022-04-01.zip",
+      "sha256": "87bb785f6432555c46800241eef57fed9634d4da91e3c7ce2a48f3a7605eb5f4",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "FTMUSDT",
+      "missing_period": "2022-04-02 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive FTMUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/FTMUSDT/1h/FTMUSDT-1h-2022-04-02.zip",
+      "sha256": "573c852b1c2e42671f4228c4909a19ab1fcc2990488197ee6669face6867862b",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "LTCUSDT",
+      "missing_period": "2022-02-26 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive LTCUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/LTCUSDT/1h/LTCUSDT-1h-2022-02-26.zip",
+      "sha256": "426ccd90cb2b9c17da9fc1ad4e7eb07067764a332066a8e7ec75c88e6ffcce18",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "LTCUSDT",
+      "missing_period": "2022-02-27 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive LTCUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/LTCUSDT/1h/LTCUSDT-1h-2022-02-27.zip",
+      "sha256": "5234c4c09c5347651c50813a2070111e920b261807ad6d3554946b9ae4a7f367",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "LTCUSDT",
+      "missing_period": "2022-02-28 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive LTCUSDT-1h-2022-02.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/LTCUSDT/1h/LTCUSDT-1h-2022-02-28.zip",
+      "sha256": "2516ad0fd306c2754ca3b341508b9a5df3beb607d8d25114359ba80a4d3beca1",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "LTCUSDT",
+      "missing_period": "2022-04-01 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive LTCUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/LTCUSDT/1h/LTCUSDT-1h-2022-04-01.zip",
+      "sha256": "b1dd41d59f59a6ebe3d625de71db3bb2f88717f526ba5d2e0fb04ba7aa8da9fa",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    },
+    {
+      "asset": "LTCUSDT",
+      "missing_period": "2022-04-02 00:00-23:00 UTC (24 hours)",
+      "original_source_status": "monthly archive LTCUSDT-1h-2022-04.zip verified but lacks the day",
+      "supplemental_source": "https://data.binance.vision/data/futures/um/daily/klines/LTCUSDT/1h/LTCUSDT-1h-2022-04-02.zip",
+      "sha256": "3c9631ea621728f3ae38885dec7ac8276956fd8a4f45e8b71de0c6016e84559b",
+      "hours_before": 24,
+      "day_supplemented": true,
+      "treatment": "official daily archive merged for absent hours only; identical-overlap check; no forward fill; no strategy change"
+    }
+  ],
+  "per_asset": {
+    "SOLUSDT": {
+      "missing_hours_before": 120,
+      "incomplete_4h_bars_before": 30,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 120,
+      "non_4h_funding_events": 49,
+      "funding_mark_fallbacks": 6
+    },
+    "XRPUSDT": {
+      "missing_hours_before": 120,
+      "incomplete_4h_bars_before": 30,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 120,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 6
+    },
+    "BNBUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "DOTUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "DOGEUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 6
+    },
+    "ADAUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 6
+    },
+    "AVAXUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "AXSUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "MATICUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 1,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 1,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "FTMUSDT": {
+      "missing_hours_before": 120,
+      "incomplete_4h_bars_before": 30,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 120,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 6
+    },
+    "LTCUSDT": {
+      "missing_hours_before": 120,
+      "incomplete_4h_bars_before": 30,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 120,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 6
+    },
+    "LINKUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "BTCUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 9
+    },
+    "ETHUSDT": {
+      "missing_hours_before": 0,
+      "incomplete_4h_bars_before": 0,
+      "missing_hours_after": 0,
+      "incomplete_4h_bars_after": 0,
+      "supplemented_hours": 0,
+      "non_4h_funding_events": 0,
+      "funding_mark_fallbacks": 6
+    }
+  },
+  "post_integrity_sha256": "5ffd03db587abfec7579cb43eb9f8ab453809f4a9c641e4020bcffde40ec9f93",
+  "pre_integrity_sha256": "c3a8ae2163c05bab9bcefecbbbc83f59604344fac31df76edbe78ff833e2ea0e"
+}

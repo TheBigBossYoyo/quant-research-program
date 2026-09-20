@@ -1,0 +1,114 @@
+{
+  "trend": {
+    "positive_net_fraction": 0.5833333333333334,
+    "positive_sharpe_fraction": 0.75,
+    "positive_alpha_fraction": 0.75,
+    "positive_alpha_ci_excludes_zero": 1,
+    "negative_alpha_ci_excludes_zero": 0,
+    "median_sharpe": 0.6523468643183574,
+    "median_alpha": 1.3695465241533018,
+    "median_factor_adjusted_sharpe": 2.2927773073419098,
+    "median_max_dd": -0.630204723349636,
+    "median_exposure_max": 1.3619381782628803,
+    "assets_positive": [
+      "ADAUSDT",
+      "AVAXUSDT",
+      "AXSUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "FTMUSDT",
+      "SOLUSDT"
+    ],
+    "assets_negative": [
+      "BNBUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "MATICUSDT",
+      "XRPUSDT"
+    ]
+  },
+  "breakout": {
+    "positive_net_fraction": 0.5833333333333334,
+    "positive_sharpe_fraction": 0.8333333333333334,
+    "positive_alpha_fraction": 0.6666666666666666,
+    "positive_alpha_ci_excludes_zero": 0,
+    "negative_alpha_ci_excludes_zero": 0,
+    "median_sharpe": 0.18281441942747634,
+    "median_alpha": 0.12789752410720875,
+    "median_factor_adjusted_sharpe": 0.36133871528441264,
+    "median_max_dd": -0.3773970257618787,
+    "median_exposure_max": 1.1290463718288244,
+    "assets_positive": [
+      "ADAUSDT",
+      "AVAXUSDT",
+      "AXSUSDT",
+      "BNBUSDT",
+      "DOGEUSDT",
+      "MATICUSDT",
+      "SOLUSDT"
+    ],
+    "assets_negative": [
+      "DOTUSDT",
+      "FTMUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "XRPUSDT"
+    ]
+  },
+  "equal": {
+    "positive_net_fraction": 0.6666666666666666,
+    "positive_sharpe_fraction": 0.75,
+    "positive_alpha_fraction": 0.75,
+    "positive_alpha_ci_excludes_zero": 2,
+    "negative_alpha_ci_excludes_zero": 0,
+    "median_sharpe": 0.7022691295788857,
+    "median_alpha": 0.5362563547106942,
+    "median_factor_adjusted_sharpe": 1.6950760515530288,
+    "median_max_dd": -0.3744559077879335,
+    "median_exposure_max": 1.1228404974844621,
+    "assets_positive": [
+      "ADAUSDT",
+      "AVAXUSDT",
+      "AXSUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "FTMUSDT",
+      "MATICUSDT",
+      "SOLUSDT"
+    ],
+    "assets_negative": [
+      "BNBUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "XRPUSDT"
+    ]
+  },
+  "inverse_vol": {
+    "positive_net_fraction": 0.6666666666666666,
+    "positive_sharpe_fraction": 0.6666666666666666,
+    "positive_alpha_fraction": 0.75,
+    "positive_alpha_ci_excludes_zero": 1,
+    "negative_alpha_ci_excludes_zero": 0,
+    "median_sharpe": 0.7755374744770267,
+    "median_alpha": 0.21272913728382203,
+    "median_factor_adjusted_sharpe": 0.8866220951559768,
+    "median_max_dd": -0.29919119004116634,
+    "median_exposure_max": null,
+    "assets_positive": [
+      "ADAUSDT",
+      "AVAXUSDT",
+      "AXSUSDT",
+      "DOGEUSDT",
+      "DOTUSDT",
+      "FTMUSDT",
+      "MATICUSDT",
+      "SOLUSDT"
+    ],
+    "assets_negative": [
+      "BNBUSDT",
+      "LINKUSDT",
+      "LTCUSDT",
+      "XRPUSDT"
+    ]
+  }
+}

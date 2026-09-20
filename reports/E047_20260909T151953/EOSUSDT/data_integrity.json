@@ -1,0 +1,838 @@
+{
+  "symbol": "EOSUSDT",
+  "start": "2020-01-08 08:00:00+00:00",
+  "end": "2024-12-31 23:00:00+00:00",
+  "primary_hourly_event_rows": 35064,
+  "primary_bars": 8766,
+  "non_4h_funding_events": 0,
+  "missing_hours": 0,
+  "missing_timestamps": [],
+  "supplemented_hours": 0,
+  "supplemented_days": [],
+  "supplement_files": 0,
+  "incomplete_4h_bars": 0,
+  "zero_volume_hours": 1,
+  "volume_inconsistencies": [],
+  "large_hourly_moves": [
+    {
+      "time": 1621425600000,
+      "open": 7.293,
+      "close": 5.276
+    }
+  ],
+  "funding_events": 4383,
+  "funding_nonzero_jitter": 2079,
+  "funding_max_jitter_ms": 47.0,
+  "missing_funding_intervals": [],
+  "funding_mark_fallbacks": 6,
+  "contract_exit": null,
+  "contract_exit_source": null,
+  "sources": [
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-01.zip",
+      "sha256": "3dd584950fec0236f4837e82c1deebe0b607142e27f14a1ed69eafa8735709ed",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-02.zip",
+      "sha256": "32a890a771a660a1272c31b903aab028837be2d6025255b8bbf92f3ef273496d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-03.zip",
+      "sha256": "50f39c1faa0a7b00b73b4c016341abdae630f8d0087181378248d6007b39579d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-04.zip",
+      "sha256": "b4020bccc28c1adba1ca35f6d704323cb1adedec4f8ccd3f165eb4fc375ec855",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-05.zip",
+      "sha256": "fa87ed32703629e3654853d48d3040840c8e8042c6f4ddfe16c216b5db2562e5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-06.zip",
+      "sha256": "2c0ae2f8765912139a513c7ed3412f68288cea2bd10ba10e7d362a2ebd803cac",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-07.zip",
+      "sha256": "7628fb6ae7a5476f1753e2f9e0c92ede4e3b1857212749c0337a2bba1d03d0ca",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-08.zip",
+      "sha256": "8bbdd0a296a6cd705f8b1fb2fadb928e1aac639f222c0aad46827d35e9bc7256",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-09.zip",
+      "sha256": "b07393aaf67f0751726c1f4a049f4823ad0c0f89f6d69ecfc431f3c280464a99",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-10.zip",
+      "sha256": "66eeadbb59f084f4c36cb7360a50c86e9076f8fec3d0df77562e36363a394fec",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-11.zip",
+      "sha256": "85322a87cffb173320db11236f2cd02a2eff4d7d47cb3b6b13efccf13375eb56",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2020-12.zip",
+      "sha256": "b58d6d70c39098bd56221d91c3d9a0cbb9f14f1532dbd76c462df1ec41969672",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-01.zip",
+      "sha256": "7a24758e9d5322e6f07d6667d0d715e820ac74041c72dae9556493789942dc7d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-02.zip",
+      "sha256": "ff28db61b67489e6853b566664e4468b28b6a833a87775d2d2639e1d772c69a9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-03.zip",
+      "sha256": "85746526d5dec483bb24526a7b70299e0f1adaaace61fed09d0a384e430dadd5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-04.zip",
+      "sha256": "aee9bd1a01c3c797361d64772556cbe6d7829e78b022b5895b2c25ed2e67d4b7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-05.zip",
+      "sha256": "703cff4a3b0beaf54a339dc81b2776acee386e110f6f6974d72d7c4f8be62364",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-06.zip",
+      "sha256": "25b49e798193d93a68a35c3f10fc5527157f9df581f3d0d182f6b1118609f58c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-07.zip",
+      "sha256": "11edfcfba052a114175e8eb719b8de792636316426689308a239b691f4396b54",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-08.zip",
+      "sha256": "2a66c9f34fa79bd0ce08b7176c5df915df26be3f785b4b139c18155d6577d392",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-09.zip",
+      "sha256": "36687a8eb9d3a4747df3381b518e13913ab834b8995e2629c3d3434e926e03b2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-10.zip",
+      "sha256": "b59cfe02a4014d96e38cba882b5a424e53782496a01b837ae84ef15b6c5c0ae0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-11.zip",
+      "sha256": "8a595a4a42b60c03a3493502f77388dd2f5469fe913b63f3d642ed70e3a1e8bb",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2021-12.zip",
+      "sha256": "4859d5167f8f819c70f457ac1b69ff5fbfb98e76f3e91601732b6d494e7b62d3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-01.zip",
+      "sha256": "8e5963567185859d467891bcccb42ff5067bf0e3eb36bbd86779a80ae85df66e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-02.zip",
+      "sha256": "5056e0a0115b4a1dc1667a432820f8cfe2cbfd3b5f5a92014d50bdbaae6aeac4",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-03.zip",
+      "sha256": "fc31abb8f8ae80284a483eab4eede54b0ab6ba7a59256c309a54eb4d459ee34c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-04.zip",
+      "sha256": "f72eb5c7465d5f3c6b101be514ea707927f700abca4f1363c77f5e57e1ee2b2d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-05.zip",
+      "sha256": "63368b92f8fea1d1d9bd4686b771a7621738ab42cd6c8198e59402ec2cbf9158",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-06.zip",
+      "sha256": "72d1fd6dceebef124386d2a2c7ae484cb2b455cef9efa0de94b4e9a3c3fb85ee",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-07.zip",
+      "sha256": "8ceeb519aa3d4a158e68f4ea959a8980de80fda8e44a4163ba34f1244bf1d3e5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-08.zip",
+      "sha256": "b315af134f7fef881660c2a4e14332a31a7fbab0b942c6a9c93957b88852f03a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-09.zip",
+      "sha256": "b167a2af07d00f78ea17f59710eaffcca6220e296afca64ce0c71c19184708c9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-10.zip",
+      "sha256": "c17024ec8ee4b0c2c263b8b3db74add2f16676b12c8d7f088758fb46cf58326a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-11.zip",
+      "sha256": "8feec0db42f03f9a127196971cfc43035d34d48816efca64687a76e9b3ae1a11",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2022-12.zip",
+      "sha256": "5a58de80a3f529ddb5b8872f67e240de8d44abb8ac446020023731cc370f10c7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-01.zip",
+      "sha256": "e57929478e1b70eaa1290402807bab2452fcf915ddb1fea47c5793fd8870983e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-02.zip",
+      "sha256": "68df0f058d56e3a27f3a5de1953d2031935eb67336ddeacf7bdd7789ce08f4a8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-03.zip",
+      "sha256": "d3a4774616b8b5d3aad3f3269a41d09e9f26312107d3e48ec17fcdf121bfdba5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-04.zip",
+      "sha256": "ee65109c4d906c06151935eb84df3596ae444b0a87638f4e713383865665c567",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-05.zip",
+      "sha256": "972569dd33f4ee18e2fc95026eb5317539aa11296b35961ccf4df0dd4f6b7f06",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-06.zip",
+      "sha256": "fa1e82c9c9a7bd5a274355dbf757398f389a6efc0e7ef4ee88157d482b53a752",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-07.zip",
+      "sha256": "35dd2d614950f2f88c6d8d613f8c52954140995bf5b86bbb7931f5f6ef3e1a74",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-08.zip",
+      "sha256": "10f4c0d61f70b030035a0c657967e2601cc2b6d26efbf95bb605e1856b5c2821",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-09.zip",
+      "sha256": "8b7183c8268e7eb0ceb6a0cb25b5024975b80a2163a7f3c7a04bb9c11fa30119",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-10.zip",
+      "sha256": "75c5663db082125573c7b9c295fea0b64624ece2134bafc9c1763c08d05dd666",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-11.zip",
+      "sha256": "b070691139684218bf5b1724dd6d06f8c8f4acd6c412f304de0f6c5b33ebab40",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2023-12.zip",
+      "sha256": "ab44650401c8e63d4a78b566354f1feb097691cfa4a45b05a37a92050f535dca",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-01.zip",
+      "sha256": "dd440cf1e1a9ee75900698e0094b66185be1e4436456606dca31af60f4d9c7c2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-02.zip",
+      "sha256": "60869cb5b7dc0d623cebf9baa393660548fc11bbca30b73b55a407865785feb9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-03.zip",
+      "sha256": "74111021f830f02a5163e60f8a808963f0c1b0b9ef8f5c6798e062e8a4c0d812",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-04.zip",
+      "sha256": "5d3fd8fff2a76e09cb40687ce015fa2de8fed768cd18233949fa1b02511dcfb2",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-05.zip",
+      "sha256": "895f28f7b6cdafb49b12917680b1ff39867d37d258d30d0e12f130de7409de95",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-06.zip",
+      "sha256": "d7e1ca4ec9197e80e051065a35250cb44889e24aa05ecfc2ae36d163634ed65b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-07.zip",
+      "sha256": "33775c09edb8476afaf45d2a4e141061bbe0fa4e18c5013fdfa0e6f992608e49",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-08.zip",
+      "sha256": "0e005157bd504881da7aed859b49f577a1f4c7e90c67640089d53c92f1f5444b",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-09.zip",
+      "sha256": "d421308d49cd253dfb98030fa8191834101d79041f59520a02cdf033c448e297",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-10.zip",
+      "sha256": "8a0cd473fbb50e90e0b9b96e2ac9c76cd087f977bb075c69a60b01b742280e62",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-11.zip",
+      "sha256": "d7e872539a1fc5b0a45e9bb029706bc2e8db427f0a22459e8ea30fd305af12d6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\klines\\EOSUSDT-1h-2024-12.zip",
+      "sha256": "2d5524b2a6f810b326adae8de46da878574e9210439c69fb6b854007cc5c5066",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-01.zip",
+      "sha256": "3e64e9430a7e7303b4b0c581bc39889bc8ec3a4bbffe23e08d422c9f861a4e08",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-02.zip",
+      "sha256": "7a98f5ba07fec5e67c33c890a8a47917a17ca714bd2efe675a07fb0f7a749ee1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-03.zip",
+      "sha256": "6ea4608919f58ec29de13956db071c3227b64aae89d3c0ce9d814a3dd2964afc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-04.zip",
+      "sha256": "07abca47cfec91b87b82afd5739ffc6857b82ed10eccc7cd5de01b606e7ba00a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-05.zip",
+      "sha256": "5e4dc2fec6ab0416aad9b0653212c6fc13ce8b1200ebe44acd4341827125dac3",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-06.zip",
+      "sha256": "1e053c1bfcbc97c223bca92e4ba836146bf6fa8bea256769656af286652effad",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-07.zip",
+      "sha256": "80d0bff3566cddde35d47540c552a497e692ab7da82b445cbad7329ddc82e552",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-08.zip",
+      "sha256": "5bf6725e48723ea2d05d548c794c92843a8f059b0d90f9dff687e0eefa01c8a5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-09.zip",
+      "sha256": "e2bedf6d420ba2ded5e78e1d67a8c424b7bdff6fc80ba4b6648d23913f3811db",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-10.zip",
+      "sha256": "b8bbb2c72743adeb4184ad2ad94c29692db6d8ab645f0e66dccc73e3034bd556",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-11.zip",
+      "sha256": "aa4a16c4de890fd840ebcd9294879ce41dbbd4fe9b5578d0ee8cf10ab20eb0c6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2020-12.zip",
+      "sha256": "d87996290558d389f8b5596296a43e063e2bf609319a6b1a2b733871802c6bfc",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-01.zip",
+      "sha256": "63101a764d8dfa5d8bbdf6f3357c8ff96cdf837899b79d0b33c85698153b70ec",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-02.zip",
+      "sha256": "2cda8e10b5b7d194d3c038c2fbf95b15de945cac50f8790cadf11887a2787528",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-03.zip",
+      "sha256": "3fbe6a7676f896f40be7c865c34cabb3057f47109f49d563330da72ec4a1fbbe",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-04.zip",
+      "sha256": "c965cf62a6e61c1e23a9b23c08c62faac6fb3247d1ada1d3d48644836556c941",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-05.zip",
+      "sha256": "d3e19b18db31ca8846da0f62924921b68cd1d080cd1a330792e63969300e93de",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-06.zip",
+      "sha256": "6b4a7d8077cc3ef79812aa9bac4e651edfa7d4230ab39b34f6fa58a118497166",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-07.zip",
+      "sha256": "ac0830706323595aa2bce48aa80cd34326708d7bfb6a2c4a34e4d0b8d0bb29e9",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-08.zip",
+      "sha256": "ead4545b954472d59c120a9165f5f3bf340176d032edf8e86b482241008059bf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-09.zip",
+      "sha256": "bd6e5e379e750303ef1df2dcccc9b323b45c417fcf83e945db5f97c3ec52c74c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-10.zip",
+      "sha256": "3a32c65f6cc1f7bb5221e37d34e88008eba50475c014e6d9cd3539a117ece66c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-11.zip",
+      "sha256": "cff81547921bae8a1a70019c6168f412e77e030914fc3f996cd530d87e5d8fde",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2021-12.zip",
+      "sha256": "8fde5d3fbbde2b2a748b41f95d2951aaf9438154149ad3a1d4aab7070e0803c1",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-01.zip",
+      "sha256": "6edf8b51595c19bb320c01b1b4a215210d404260d483a3ab033886adfc83730a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-02.zip",
+      "sha256": "1e9f4233d619bd57c1f7c74d245c0dff612e8f3a457de3b5a250444af38f0174",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-03.zip",
+      "sha256": "ca12900dcf5ac9aeb72dff4145834f03a1ac66c603dd0eac874a2fa5074c894e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-04.zip",
+      "sha256": "42768d9c864bf525ebc32b71f10311eddb114071c9773ade3a7ab22f3c86f392",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-05.zip",
+      "sha256": "4376b2e557eae35e00d86df2311ba8bc282f5161e34a855cd30ff978a3c44c23",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-06.zip",
+      "sha256": "ae1ec2d5e3c3023609fa022476de5064224906e7690c6d98f62f814e7cf839ef",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-07.zip",
+      "sha256": "c04e14f621e23fd42652758c8b4fd5b4653a4f1c7af0d9648e85d58b6463a839",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-08.zip",
+      "sha256": "c99b993c386f3cb2406c30fb72997a2333a71f79e9df77677bd02eba65c4bdf6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-09.zip",
+      "sha256": "df20bf0453c0d584c892eebbba59fff2abe555ce6ee3af63e82387028833906c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-10.zip",
+      "sha256": "7cf631b8965c16cf9f7c8f1dc95f4c15d5e34e7f253162f1a1893c987c6e1551",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-11.zip",
+      "sha256": "65ee026535d60b6006cbfa89ed5551b420e00a7915db24abc97e748d6936513c",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2022-12.zip",
+      "sha256": "ee65784e71438b3f94dbce86b503a47f0e87eb302de1320c6947b022e215549d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-01.zip",
+      "sha256": "235ea54ac77931ae69a8eb30a250b16af5a24c5e89c288d46a022b5cd6d3acbf",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-02.zip",
+      "sha256": "9edaed86100c0d0b588a8f9c1f289488ea0869135bfe114910ab9eac684b49a0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-03.zip",
+      "sha256": "9c7915674b5eef3190ae09813b0e529399f894ffd1618ff3664278408dd22302",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-04.zip",
+      "sha256": "ca1c242628078f283c85fcf6ae4cbcb1b5a58c9683cd20b1bad9e649b0aeb87d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-05.zip",
+      "sha256": "28f19957a4bc2b2dc979f71f89dbcc8750ebd3e75ea2d19b63d333472fc07488",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-06.zip",
+      "sha256": "18a88ddf637a488ede908b4230805967aa07c6792ac0fdb2b39f8853e254de12",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-07.zip",
+      "sha256": "083d993a9024c192e3e6d5ac4fbd13113f78d4307824940be5f40581acf43a5e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-08.zip",
+      "sha256": "beb8980e50720070b3b204460c2eb959d70a04470c2623bfdd9326b071a07aa6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-09.zip",
+      "sha256": "e390dce9d9edd884adfe7ab86668054830b4055f1ba2ab4cc5df68564b668ced",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-10.zip",
+      "sha256": "4b1bacbe75ede3478a0356c2388960c6cd5a9e8f1cb7d7e44957b580c474659d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-11.zip",
+      "sha256": "1e401a5aeeb04eaacb889a47fed2974677f0939b2de369d0fa81943ed966b1d8",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2023-12.zip",
+      "sha256": "9b898deda916e0d5c14319ef61ec565ede33ac6fa8c8e42a36739e0f4864120d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-01.zip",
+      "sha256": "a479e00fb3bc313baaafdc1aa6e5bc3cfa46f8301cf588a4eb36dff2bb542fa0",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-02.zip",
+      "sha256": "6d3fdab2b05dd517813611bb177be13044af3a589949ffb872d3fe9fa97a5a6f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-03.zip",
+      "sha256": "27377c06bcf2d6e3ca3ecbd630eb5681c531d0f678400895fa16a80e87a941e6",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-04.zip",
+      "sha256": "7e1dbcc4603841f331967996d4999973040e161eaaf0999698a148d26c32a3d5",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-05.zip",
+      "sha256": "4ca15b0265eed1e0e30d03660d16f9f2014bcacba0b279fc847f4193abee428e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-06.zip",
+      "sha256": "a4a8f3c7642dc3f99834db3bcf0942f27aa3757cf3fd25338a2e33f69da90d8d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-07.zip",
+      "sha256": "fb9531fb352f1d78efd2ee881f59ac61432a570f277b353c3f8a91331de7ea2a",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-08.zip",
+      "sha256": "5cc09f77d6bae7e0f5dc5eb251f01d970187b843f1f9e018bf004383f89fce2e",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-09.zip",
+      "sha256": "6eb973a1092a358d87bef14d457858a984ffccce02ab48c6e325ccdb8e01dc0d",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-10.zip",
+      "sha256": "19cc84745e131d2548962b0c943c8db30ce150b3ad8649ea790cdc19e0f4201f",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-11.zip",
+      "sha256": "93f5dc40c35fb351d8fdb110c46249301d9f65b3a7334ca274c176d2a54070b7",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\phase4\\markPriceKlines\\EOSUSDT-1h-2024-12.zip",
+      "sha256": "b3e1167678c49c91885909b57b67f7b90a912a669e0e2760ab86851fca9f1c26",
+      "role": "monthly"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2020-12.zip",
+      "sha256": "69401532cef3cf3b89e154de9eb119ee7640cf8a97aff8cfe6db7be674f5ab6f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-01.zip",
+      "sha256": "92ad3159a3ba175a42ce97347242a4742f25d9383608a4942d057c934a526c5a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-02.zip",
+      "sha256": "3742e8b629b705c936a04308a24f488126dfd108a367b0c14423126513fdf059"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-03.zip",
+      "sha256": "ce391815ae465eac7ad0380d7d123c2e15eb0a69d824c72c8819d108d5cd8437"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-04.zip",
+      "sha256": "3a2eeeb284838ffd525adbf64f42a43e9725db5f4beef7947e93322060d2fbaa"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-05.zip",
+      "sha256": "e4becc5625161bc3eeba902f189abd1b9940bbf172716613dfd9dc149cb97e8e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-06.zip",
+      "sha256": "a1993fbd3a13bdb8e13068e9ead47b223b98cdf37db6fde6179857513b8277c5"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-07.zip",
+      "sha256": "b37558c5fa6dae9b0ee4d1a75d6eb8d1c326d709092a68c8717e925285b417aa"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-08.zip",
+      "sha256": "eb4ff3ffe747988448ee7f4e85e06d11437fee62f19dcd35d1118d5bf15790e2"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-09.zip",
+      "sha256": "738c17d4d18f7299954fbfb9611c7f33a14f161650ce3a05052af3044b75f5bc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-10.zip",
+      "sha256": "9d489ca8673eaa1fa7a0fac7d3462abc3a70ac4264232c8ab84bc2575caadc45"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-11.zip",
+      "sha256": "ec55fcac28da4bf1aa7dab12a4b7e8413b1e78eba58c3bdd47db1b177d6559dc"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2021-12.zip",
+      "sha256": "ff4398c455b06ad6a995662b365c5a757f79aa68555e382c1512c9897ec5124a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-01.zip",
+      "sha256": "4b3cad6cb65f2766cee03f1533a403714e5875ed91c994177796c25e92dd8b6e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-02.zip",
+      "sha256": "9ec1bad99bb600deed67695dd43dc0de9d8769a9b3154b356856d99a7b6403a9"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-03.zip",
+      "sha256": "d3c8200a67a5ce6a9d7265a094cf612cc308e1260ca197b2fc88e2be165d3632"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-04.zip",
+      "sha256": "f8618591dc459c466a57fd8f8c740e9c5e9eeb5db1a283f16f5dfad5debe5b47"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-05.zip",
+      "sha256": "c56a765e4b81310d6a6022b0047a2ed871fd337687aa3dd082eb5518dd3c141a"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-06.zip",
+      "sha256": "470cd0143f10f36e581ec00e6743c4a1b04f577cf4a946ae64f9f011814b410f"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-07.zip",
+      "sha256": "eb9cfa5ee5e30e6178cde193173847069803d07a8346ba90670bb53a028fe480"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-08.zip",
+      "sha256": "3eae29b82869e12cd749f8c8766ef9288629d555ea24bb9f5bf563c593ba7ab3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-09.zip",
+      "sha256": "4476f75208de0db4301080dfcaf94bf15d8d3a9713f2bcd7ed00237602bea4ab"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-10.zip",
+      "sha256": "8c8478e122380f8cf1e6320494bd4d326ff8761c48ffca8ef3efab0ca77dccf3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-11.zip",
+      "sha256": "f53fb848b3b970598b75eef990d8681c61854830270e58c5744bf97fd746b023"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2022-12.zip",
+      "sha256": "0bd40e839d83acff2db93e7b7599b8b1edc73269ed7c5d12830fd64c498fac78"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-01.zip",
+      "sha256": "5f5fb0162b8457c3fc41a9e1afbc8bd4d9b4c466ee8a04040de2a49aa0766d74"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-02.zip",
+      "sha256": "f53ccd127f154006c6dcb4409d212b1f712b8260a903cc849eed883c43247ffe"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-03.zip",
+      "sha256": "4d1f90423053645a47f2b30570faf9a47e31e53f9137d94d1021229d57d5fcd4"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-04.zip",
+      "sha256": "4151b29c92b69e397071fc590e02756e4c34f5681a1e683b5583e00e3723d8db"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-05.zip",
+      "sha256": "e6749b5a25481a785084bea3ae629841f18dacdad61b404fac4b124ab41bced0"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-06.zip",
+      "sha256": "dec96931695ac6d8f519ee6724fa954c33011c16e0c00b7e91b990ce915757b7"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-07.zip",
+      "sha256": "00e1a3ed536c9348816dd40fcc12bd2b4761d5dbf6a44e240a6285cf064a0346"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-08.zip",
+      "sha256": "0e703cf555ef1866ef473d97fd8e12d91107ef38fd5fec9772961d02912b9be6"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-09.zip",
+      "sha256": "42661fe54c9779e9837d967b6667f510586b9b83b60042cdc58fd168da07b387"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-10.zip",
+      "sha256": "3946cc8e0253ca02a886a8041dd5b06667e5799212c17771c12a8d6b5536fee3"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-11.zip",
+      "sha256": "3cac97c74276cd7139c22528ec16904eac4a996bb9dad6a6fc86c3177271caed"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2023-12.zip",
+      "sha256": "fe7db55491b26495a56b0a61cb7c17240d6f284a22978117be524db2d6afc495"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-01.zip",
+      "sha256": "b4f04c55d581252ef0262e30663502f5302125813e5dba6c09faa4db5a62cf7d"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-02.zip",
+      "sha256": "a70aaa24ee6a6a2778b46d270293230076bb9855bc0baaa8620cc1fe08cf3407"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-03.zip",
+      "sha256": "e5f6b8337ea8227a2394ffe6211d2852e320b6d869d9f6d6b54af98ab487a881"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-04.zip",
+      "sha256": "29029a106fb28e4daac673f4056857e7793032191fd48a70302f6ae413a1eb5c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-05.zip",
+      "sha256": "b479787520250c1a237b985e53cf6821f279ea0458fe8a8c36033134fc0270ce"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-06.zip",
+      "sha256": "45bcf13fb17f4ec1827d08b4bb6d19c4a793e166786f99cb2b7197aefa9a535e"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-07.zip",
+      "sha256": "9ef13ffde34adc03294961e4a668289343dee9053b41c13cd5cb31d45f7a3ef1"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-08.zip",
+      "sha256": "a0ca8c2cd89fe7401589413a659276ce627a75c9ac3995ba905b7da086422b9c"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-09.zip",
+      "sha256": "f1def66ceb7b4a496151e81eaf4e05a54aed3a68495e8f49c0f049ecaa439251"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-10.zip",
+      "sha256": "096a3c3ec4de856eaea5365c0d9ce5f727d0653e2cec888dd6b4eed141928978"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-11.zip",
+      "sha256": "6cf7452a703471af7c11c7c671ab69d559feb2a8467fd1bb07bdee8222a62173"
+    },
+    {
+      "file": "data\\raw\\universe\\fundingRate\\EOSUSDT-fundingRate-2024-12.zip",
+      "sha256": "2fecf2aa7ced400f7c94c9fbb51c5cb0e761b67f9f31abea08a549053fb8fa89"
+    }
+  ],
+  "execution_descriptors": {
+    "gap_p50": 0.0,
+    "gap_p99": 0.00213219616204674,
+    "gap_max": 0.002450980392156854,
+    "gap_over_1pct_share": 0.0,
+    "mark_dev_p50": 0.00035302666951203543,
+    "mark_dev_p99": 0.002048588735626839,
+    "mark_dev_obs": 35016
+  },
+  "vol_scaled_slippage_multiplier_p90": 2.2880520358875716
+}

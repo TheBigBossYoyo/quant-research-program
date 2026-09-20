@@ -1,0 +1,82 @@
+{
+  "experiment_id": "E008_20260908T170123",
+  "code_hash": "5a0ae62e20649f2f8c2d9a52dfcea9a339e971b6489bce2d01b6549ae316316b",
+  "git_commit": null,
+  "seed": 20260908,
+  "cumulative_hypotheses": 83,
+  "cases": {
+    "base": {
+      "trim_count": 0,
+      "collateral_halt": false,
+      "ending_equity_usdt": 532.4054493929731,
+      "indicative_cagr": 0.02114815166675843,
+      "max_observed_gross": 0.8516426423687483,
+      "max_observed_hourly_drawdown": -0.004754285887136334,
+      "minimum_margin_ratio": 1.3483231121077655,
+      "calendar_returns": {
+        "2022": 0.002848238955726501,
+        "2023": 0.016713835312287317,
+        "2024": 0.04433188546590383
+      },
+      "uncertainty": {
+        "block_days": 30,
+        "samples": 10000,
+        "seed": 20260908,
+        "multiplicity_trials": 83,
+        "mean_daily_ci95": [
+          3.449028143030617e-05,
+          8.429444598057256e-05
+        ],
+        "sharpe_ci95": [
+          5.5067808197487125,
+          11.642361642860822
+        ],
+        "arithmetic_alpha_annual_ci95": [
+          0.012597575292419328,
+          0.030788546394404127
+        ],
+        "simultaneous_lower_mean_daily": 2.3361105055435246e-05,
+        "simultaneous_lower_alpha_annual": 0.008532643621497723,
+        "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+      }
+    },
+    "stress": {
+      "trim_count": 0,
+      "collateral_halt": false,
+      "ending_equity_usdt": 531.6856410029732,
+      "indicative_cagr": 0.020687854093972335,
+      "max_observed_gross": 0.8522653947407174,
+      "max_observed_hourly_drawdown": -0.004757834474377276,
+      "minimum_margin_ratio": 1.3466081089613213,
+      "calendar_returns": {
+        "2022": 0.002093894487724679,
+        "2023": 0.016726416956858614,
+        "2024": 0.04369211770184833
+      },
+      "uncertainty": {
+        "block_days": 30,
+        "samples": 10000,
+        "seed": 20260908,
+        "multiplicity_trials": 83,
+        "mean_daily_ci95": [
+          3.2839861844718986e-05,
+          8.318526846604952e-05
+        ],
+        "sharpe_ci95": [
+          4.725475884427321,
+          11.275102745663336
+        ],
+        "arithmetic_alpha_annual_ci95": [
+          0.01199475953878361,
+          0.030383419307224588
+        ],
+        "simultaneous_lower_mean_daily": 2.1897385016898982e-05,
+        "simultaneous_lower_alpha_annual": 0.007998019877422354,
+        "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+      }
+    }
+  },
+  "validation_accessed": false,
+  "final_test_accessed": false,
+  "verdict": "RESEARCH-PROMISING ONLY; unverified account tiers/fees, mark proxies and latency remain. One-hour decision lag is not guaranteed hard cap protection."
+}

@@ -1,0 +1,658 @@
+{
+  "experiment_id": "E027_20260908T211015",
+  "code_hash": "6b8fb511f43db6ddd772883dfc30e6660986553d5633930e838d5006638f8453",
+  "git_commit": null,
+  "seed": 20261688,
+  "source": "reports\\E024_20260908T204223",
+  "new_hypotheses": 2,
+  "cumulative_hypotheses": 293,
+  "fill_model": "trade-through by >=1 tick within 300 s; maker 2 bps entry; taker exit",
+  "results": [
+    {
+      "symbol": "BTCUSDT",
+      "direction": 1,
+      "cases": {
+        "base": {
+          "metrics": {
+            "trades": 4837,
+            "net_return": -3.5943108374610397,
+            "daily_sharpe": -15.426963214585241,
+            "positive_month_share": 0.0,
+            "mean_trade_bps": -7.430867970769154,
+            "hit_rate": 0.40520984081041966,
+            "worst_day": -0.11895331821321947,
+            "top5pct_days_share": 0.698267401602281,
+            "attempts": 85796,
+            "fill_rate": 0.056377919716536905
+          },
+          "uncertainty": {
+            "1": {
+              "block_days": 1,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.021723396102480426,
+                -0.015361489541807547
+              ],
+              "sharpe_ci95": [
+                -18.221596854929015,
+                -13.064141514482706
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -7.934470426430975,
+                -5.610784055145206
+              ],
+              "simultaneous_lower_mean_daily": -0.024374575726690637,
+              "simultaneous_lower_alpha_annual": -8.902813784173755,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "5": {
+              "block_days": 5,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.021477411625657215,
+                -0.015687703285197807
+              ],
+              "sharpe_ci95": [
+                -17.9365855780049,
+                -13.275600992458038
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -7.844624596271299,
+                -5.729933624918498
+              ],
+              "simultaneous_lower_mean_daily": -0.023996352905011013,
+              "simultaneous_lower_alpha_annual": -8.764667898555272,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "20": {
+              "block_days": 20,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.021596261076389577,
+                -0.015801878221596014
+              ],
+              "sharpe_ci95": [
+                -17.93309920255656,
+                -13.213839419540744
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -7.888034358151294,
+                -5.771636020437945
+              ],
+              "simultaneous_lower_mean_daily": -0.02446404417589837,
+              "simultaneous_lower_alpha_annual": -8.93549213524688,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            }
+          },
+          "gate": false,
+          "passes_adjusted": false
+        },
+        "stress": {
+          "metrics": {
+            "trades": 4837,
+            "net_return": -4.078010837461038,
+            "daily_sharpe": -17.102033866885378,
+            "positive_month_share": 0.0,
+            "mean_trade_bps": -8.43086797076915,
+            "hit_rate": 0.38660326648749227,
+            "worst_day": -0.12225331821321947,
+            "top5pct_days_share": 0.7491612698958651,
+            "attempts": 85796,
+            "fill_rate": 0.056377919716536905
+          },
+          "uncertainty": {
+            "1": {
+              "block_days": 1,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.024301442248716002,
+                -0.01776983760741176
+              ],
+              "sharpe_ci95": [
+                -19.983652162812895,
+                -14.709048263289326
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -8.87610178134352,
+                -6.490433186107145
+              ],
+              "simultaneous_lower_mean_daily": -0.026992467417099285,
+              "simultaneous_lower_alpha_annual": -9.858998724095512,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "5": {
+              "block_days": 5,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.02400484597180652,
+                -0.018148204539416273
+              ],
+              "sharpe_ci95": [
+                -19.67828219360145,
+                -14.94191383612745
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -8.767769991202332,
+                -6.628631708021793
+              ],
+              "simultaneous_lower_mean_daily": -0.02656888506623194,
+              "simultaneous_lower_alpha_annual": -9.704285270441215,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "20": {
+              "block_days": 20,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.02412790082202928,
+                -0.018283312762664528
+              ],
+              "sharpe_ci95": [
+                -19.611163851986646,
+                -14.910091838025942
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -8.812715775246195,
+                -6.677979986563219
+              ],
+              "simultaneous_lower_mean_daily": -0.027044969723908636,
+              "simultaneous_lower_alpha_annual": -9.878175191657629,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            }
+          },
+          "gate": false,
+          "passes_adjusted": false
+        },
+        "severe": {
+          "metrics": {
+            "trades": 4837,
+            "net_return": -5.04541083746104,
+            "daily_sharpe": -20.1461553907775,
+            "positive_month_share": 0.0,
+            "mean_trade_bps": -10.430867970769153,
+            "hit_rate": 0.35662600785610915,
+            "worst_day": -0.12885331821321946,
+            "top5pct_days_share": 0.8463118730803673,
+            "attempts": 85796,
+            "fill_rate": 0.056377919716536905
+          },
+          "uncertainty": {
+            "1": {
+              "block_days": 1,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.029457112251471584,
+                -0.022607491697551375
+              ],
+              "sharpe_ci95": [
+                -23.20099923909739,
+                -17.658724323772784
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -10.759210249849996,
+                -8.25738634253064
+              ],
+              "simultaneous_lower_mean_daily": -0.03226657192586289,
+              "simultaneous_lower_alpha_annual": -11.78536539592142,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "5": {
+              "block_days": 5,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.029094248453324912,
+                -0.02304354916696141
+              ],
+              "sharpe_ci95": [
+                -22.834954579727157,
+                -17.96940847140504
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -10.626674247576926,
+                -8.416656333232655
+              ],
+              "simultaneous_lower_mean_daily": -0.03171906750175498,
+              "simultaneous_lower_alpha_annual": -11.585389405016006,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "20": {
+              "block_days": 20,
+              "samples": 10000,
+              "seed": 20261688,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.029199571381798718,
+                -0.02321813968961016
+              ],
+              "sharpe_ci95": [
+                -22.644583335271445,
+                -18.03989178186924
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -10.665143447201983,
+                -8.48042552163011
+              ],
+              "simultaneous_lower_mean_daily": -0.032206384752585936,
+              "simultaneous_lower_alpha_annual": -11.763382030882013,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            }
+          },
+          "gate": false,
+          "passes_adjusted": false
+        }
+      },
+      "hostile": {
+        "wait_60s": {
+          "trades": 4805,
+          "net_return": -4.1212226043083655,
+          "daily_sharpe": -17.386391138181413,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -8.576946106781199,
+          "hit_rate": 0.3850156087408949,
+          "worst_day": -0.11807557818302136,
+          "top5pct_days_share": 0.7512304894194476,
+          "attempts": 85796,
+          "fill_rate": 0.05600494195533591
+        },
+        "two_ticks": {
+          "trades": 4752,
+          "net_return": -4.254107684649663,
+          "daily_sharpe": -17.14540351193717,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -8.952246811131445,
+          "hit_rate": 0.3792087542087542,
+          "worst_day": -0.1277676063944047,
+          "top5pct_days_share": 0.7734594331394946,
+          "attempts": 85796,
+          "fill_rate": 0.055387197538346776
+        },
+        "fee_plus_2bps": {
+          "trades": 4837,
+          "net_return": -5.04541083746104,
+          "daily_sharpe": -20.1461553907775,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -10.430867970769153,
+          "hit_rate": 0.35662600785610915,
+          "worst_day": -0.12885331821321946,
+          "top5pct_days_share": 0.8463118730803673,
+          "attempts": 85796,
+          "fill_rate": 0.056377919716536905
+        },
+        "latency_30s": {
+          "trades": 4838,
+          "net_return": -4.184568525411443,
+          "daily_sharpe": -17.2253570598722,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -8.64937686112328,
+          "hit_rate": 0.3892104175279041,
+          "worst_day": -0.14886097504431217,
+          "top5pct_days_share": 0.7878131434710723,
+          "attempts": 85796,
+          "fill_rate": 0.056389575271574434
+        },
+        "noise_10pct": {
+          "trades": 5022,
+          "net_return": -4.336244643283926,
+          "daily_sharpe": -18.422261539509236,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -8.634497497578508,
+          "hit_rate": 0.37972919155714857,
+          "worst_day": -0.10905349038484854,
+          "top5pct_days_share": 0.7147010981599755,
+          "attempts": 86176,
+          "fill_rate": 0.0582760861492759
+        },
+        "placebo": {
+          "runs": 200,
+          "fraction_at_or_above_observed": 0.0,
+          "quantiles": [
+            -8.062418686421948,
+            -7.619234992213483,
+            -7.45061469205324
+          ]
+        }
+      },
+      "fill_dependent": false,
+      "verdict": "REJECTED FOR PROMOTION"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "direction": 1,
+      "cases": {
+        "base": {
+          "metrics": {
+            "trades": 5113,
+            "net_return": -3.6154765148997683,
+            "daily_sharpe": -14.45399905885551,
+            "positive_month_share": 0.05263157894736842,
+            "mean_trade_bps": -7.071145149422587,
+            "hit_rate": 0.41854097398787404,
+            "worst_day": -0.12572016176223583,
+            "top5pct_days_share": 0.5537759430239421,
+            "attempts": 80193,
+            "fill_rate": 0.06375868217924258
+          },
+          "uncertainty": {
+            "1": {
+              "block_days": 1,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.022164212539381216,
+                -0.015185542257841052
+              ],
+              "sharpe_ci95": [
+                -17.735427784268545,
+                -11.63029795295658
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -8.095478630008989,
+                -5.5465193096764445
+              ],
+              "simultaneous_lower_mean_daily": -0.024988745847538615,
+              "simultaneous_lower_alpha_annual": -9.12713942081348,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "5": {
+              "block_days": 5,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.0215338515181048,
+                -0.015743776626039537
+              ],
+              "sharpe_ci95": [
+                -17.570731940589436,
+                -11.875032299678884
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -7.865239266987778,
+                -5.75041441266094
+              ],
+              "simultaneous_lower_mean_daily": -0.023621850990316155,
+              "simultaneous_lower_alpha_annual": -8.627881074212976,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "20": {
+              "block_days": 20,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.021247081985023918,
+                -0.015981133871061048
+              ],
+              "sharpe_ci95": [
+                -17.68958551839068,
+                -11.97948180664563
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -7.760496695029986,
+                -5.837109146405048
+              ],
+              "simultaneous_lower_mean_daily": -0.022745793949216244,
+              "simultaneous_lower_alpha_annual": -8.307901239951233,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            }
+          },
+          "gate": false,
+          "passes_adjusted": false
+        },
+        "stress": {
+          "metrics": {
+            "trades": 5113,
+            "net_return": -4.126776514899768,
+            "daily_sharpe": -16.309149442022274,
+            "positive_month_share": 0.0,
+            "mean_trade_bps": -8.071145149422584,
+            "hit_rate": 0.4040680618032466,
+            "worst_day": -0.12802016176223582,
+            "top5pct_days_share": 0.5981640730982799,
+            "attempts": 80193,
+            "fill_rate": 0.06375868217924258
+          },
+          "uncertainty": {
+            "1": {
+              "block_days": 1,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.02482769670429565,
+                -0.017772421887787333
+              ],
+              "sharpe_ci95": [
+                -19.69794094252512,
+                -13.43911756988885
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -9.068316221243986,
+                -6.491377094514323
+              ],
+              "simultaneous_lower_mean_daily": -0.027777645401338254,
+              "simultaneous_lower_alpha_annual": -10.145784982838798,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "5": {
+              "block_days": 5,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.02419840209259006,
+                -0.018352955607325607
+              ],
+              "sharpe_ci95": [
+                -19.53618987351378,
+                -13.663155374833401
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -8.83846636431852,
+                -6.7034170355756775
+              ],
+              "simultaneous_lower_mean_daily": -0.02630080625227034,
+              "simultaneous_lower_alpha_annual": -9.606369483641743,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "20": {
+              "block_days": 20,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.023924954410473973,
+                -0.0185812324103893
+              ],
+              "sharpe_ci95": [
+                -19.64461637116597,
+                -13.785682670755392
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -8.738589598425618,
+                -6.786795137894691
+              ],
+              "simultaneous_lower_mean_daily": -0.025390124871849034,
+              "simultaneous_lower_alpha_annual": -9.27374310944286,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            }
+          },
+          "gate": false,
+          "passes_adjusted": false
+        },
+        "severe": {
+          "metrics": {
+            "trades": 5113,
+            "net_return": -5.149376514899767,
+            "daily_sharpe": -19.814425344808225,
+            "positive_month_share": 0.0,
+            "mean_trade_bps": -10.071145149422588,
+            "hit_rate": 0.37707803637786036,
+            "worst_day": -0.13262016176223582,
+            "top5pct_days_share": 0.684486592335921,
+            "attempts": 80193,
+            "fill_rate": 0.06375868217924258
+          },
+          "uncertainty": {
+            "1": {
+              "block_days": 1,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.030217897755761815,
+                -0.02295406129554414
+              ],
+              "sharpe_ci95": [
+                -23.446106452663823,
+                -16.82483029520023
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -11.037087155292001,
+                -8.383970888197496
+              ],
+              "simultaneous_lower_mean_daily": -0.033331646433032366,
+              "simultaneous_lower_alpha_annual": -12.174383859665072,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "5": {
+              "block_days": 5,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.029529279433891508,
+                -0.023558070673684428
+              ],
+              "sharpe_ci95": [
+                -23.204524283410244,
+                -17.039844299194286
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -10.785569313228875,
+                -8.604585313563238
+              ],
+              "simultaneous_lower_mean_daily": -0.03165871677617872,
+              "simultaneous_lower_alpha_annual": -11.56334630249928,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            },
+            "20": {
+              "block_days": 20,
+              "samples": 10000,
+              "seed": 20261689,
+              "multiplicity_trials": 293,
+              "mean_daily_ci95": [
+                -0.029258231883332236,
+                -0.023785431002864156
+              ],
+              "sharpe_ci95": [
+                -23.297947729992107,
+                -17.161610956211703
+              ],
+              "arithmetic_alpha_annual_ci95": [
+                -10.686569195387099,
+                -8.687628673796134
+              ],
+              "simultaneous_lower_mean_daily": -0.03081730065020291,
+              "simultaneous_lower_alpha_annual": -11.256019062486613,
+              "warning": "Extreme adjusted quantile has few bootstrap tail draws; approximate and cannot establish nonstationarity robustness."
+            }
+          },
+          "gate": false,
+          "passes_adjusted": false
+        }
+      },
+      "hostile": {
+        "wait_60s": {
+          "trades": 5089,
+          "net_return": -4.00994628884377,
+          "daily_sharpe": -16.814594760620036,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -7.879635073381351,
+          "hit_rate": 0.4016506189821183,
+          "worst_day": -0.08400133943525118,
+          "top5pct_days_share": 0.6082198660124313,
+          "attempts": 80193,
+          "fill_rate": 0.0634594041873979
+        },
+        "two_ticks": {
+          "trades": 5060,
+          "net_return": -4.220150109605438,
+          "daily_sharpe": -16.787515462404716,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -8.340217607915886,
+          "hit_rate": 0.399604743083004,
+          "worst_day": -0.1269926447452446,
+          "top5pct_days_share": 0.6268659438494086,
+          "attempts": 80193,
+          "fill_rate": 0.06309777661391892
+        },
+        "fee_plus_2bps": {
+          "trades": 5113,
+          "net_return": -5.149376514899767,
+          "daily_sharpe": -19.814425344808225,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -10.071145149422588,
+          "hit_rate": 0.37707803637786036,
+          "worst_day": -0.13262016176223582,
+          "top5pct_days_share": 0.684486592335921,
+          "attempts": 80193,
+          "fill_rate": 0.06375868217924258
+        },
+        "latency_30s": {
+          "trades": 5121,
+          "net_return": -4.165181239784266,
+          "daily_sharpe": -16.9454906009061,
+          "positive_month_share": 0.0,
+          "mean_trade_bps": -8.133531028674605,
+          "hit_rate": 0.39640695176723295,
+          "worst_day": -0.09520959895264533,
+          "top5pct_days_share": 0.6540706840709258,
+          "attempts": 80193,
+          "fill_rate": 0.06385844150985746
+        },
+        "noise_10pct": {
+          "trades": 5303,
+          "net_return": -4.249503121794968,
+          "daily_sharpe": -15.555581594913631,
+          "positive_month_share": 0.05263157894736842,
+          "mean_trade_bps": -8.013394534782138,
+          "hit_rate": 0.39355082029040167,
+          "worst_day": -0.1495296717799218,
+          "top5pct_days_share": 0.6533977836233242,
+          "attempts": 80777,
+          "fill_rate": 0.06564987558339626
+        },
+        "placebo": {
+          "runs": 200,
+          "fraction_at_or_above_observed": 0.0,
+          "quantiles": [
+            -7.788953432505812,
+            -7.294414219026848,
+            -7.121497435499544
+          ]
+        }
+      },
+      "fill_dependent": false,
+      "verdict": "REJECTED FOR PROMOTION"
+    }
+  ],
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

@@ -1,0 +1,446 @@
+[
+  {
+    "asset": "SOLUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.9443283998882988,
+    "gross_exposure": 0.37800085008955403,
+    "net_exposure": -0.1686373310904272,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -2217.1735579194,
+        "short_pnl": 15094.927385799718
+      },
+      "breakout": {
+        "long_pnl": -3217.695516428456,
+        "short_pnl": 2020.5966968584794
+      }
+    },
+    "total_net_return": 0.5519730020450277,
+    "cagr": 0.5519730020450277,
+    "volatility": 0.49890414340361233,
+    "sharpe": 1.1199948511377684,
+    "sortino": 1.988503013974877,
+    "calmar": 1.792747478195818,
+    "max_dd": -0.3078922206046115,
+    "drawdown_duration_days": 201,
+    "expected_shortfall_95": -0.04945593194792446,
+    "annual_arithmetic_return": 0.5587700718233447,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.1749464156862221,
+    "top_quarter_positive_pnl_share": 0.42339932958357607,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "XRPUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.6017397437404453,
+    "gross_exposure": 0.39163951909831424,
+    "net_exposure": -0.08883770609234694,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -2278.045086290356,
+        "short_pnl": 4034.0421858757213
+      },
+      "breakout": {
+        "long_pnl": -3197.1691615653085,
+        "short_pnl": 668.6106053518056
+      }
+    },
+    "total_net_return": -0.016652677648190894,
+    "cagr": -0.016652677648190894,
+    "volatility": 0.3491029164232174,
+    "sharpe": 0.12308878781065861,
+    "sortino": 0.20097628233848555,
+    "calmar": -0.05889333551902779,
+    "max_dd": -0.2827599676844691,
+    "drawdown_duration_days": 201,
+    "expected_shortfall_95": -0.03725114098137912,
+    "annual_arithmetic_return": 0.04297065480369949,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.3405721511664164,
+    "top_quarter_positive_pnl_share": 1.0,
+    "top_year_positive_pnl_share": null
+  },
+  {
+    "asset": "BNBUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.5332991997572695,
+    "gross_exposure": 0.4286002591059567,
+    "net_exposure": -0.10841904178528755,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -1155.8744774821103,
+        "short_pnl": -149.7489122146544
+      },
+      "breakout": {
+        "long_pnl": 730.3233294744992,
+        "short_pnl": 378.4652809967057
+      }
+    },
+    "total_net_return": 0.020027073085199243,
+    "cagr": 0.020027073085199243,
+    "volatility": 0.3050069999061279,
+    "sharpe": 0.2162752176731873,
+    "sortino": 0.33237900232541373,
+    "calmar": 0.07203679886127072,
+    "max_dd": -0.27801170237683115,
+    "drawdown_duration_days": 143,
+    "expected_shortfall_95": -0.033041333136434425,
+    "annual_arithmetic_return": 0.06596545529654363,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.31085994962077246,
+    "top_quarter_positive_pnl_share": 0.6711782183480408,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "DOTUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.8493299275691925,
+    "gross_exposure": 0.49502629622084765,
+    "net_exposure": -0.24184725298178494,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -3045.889761594518,
+        "short_pnl": 4242.276383228227
+      },
+      "breakout": {
+        "long_pnl": -5220.891936997359,
+        "short_pnl": 3279.742833017
+      }
+    },
+    "total_net_return": 0.015909767759943128,
+    "cagr": 0.015909767759943128,
+    "volatility": 0.4101360488018283,
+    "sharpe": 0.24031301531582008,
+    "sortino": 0.38763571298448785,
+    "calmar": 0.05839018123658432,
+    "max_dd": -0.2724733409454615,
+    "drawdown_duration_days": 172,
+    "expected_shortfall_95": -0.040582558860003594,
+    "annual_arithmetic_return": 0.0985610305772837,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.44974810365151024,
+    "top_quarter_positive_pnl_share": 0.529283295270088,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "DOGEUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.5945368445368413,
+    "gross_exposure": 0.4055528534778653,
+    "net_exposure": -0.14571459364665892,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -4854.431890862303,
+        "short_pnl": 1691.0667832318263
+      },
+      "breakout": {
+        "long_pnl": 1216.4865389089582,
+        "short_pnl": 2642.58543391619
+      }
+    },
+    "total_net_return": 0.0635839168352732,
+    "cagr": 0.0635839168352732,
+    "volatility": 0.4981670286331105,
+    "sharpe": 0.36186310163576235,
+    "sortino": 0.6491768963479576,
+    "calmar": 0.19228415283889505,
+    "max_dd": -0.3306768441211423,
+    "drawdown_duration_days": 132,
+    "expected_shortfall_95": -0.04692236337620073,
+    "annual_arithmetic_return": 0.180268266113849,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.5808912301407803,
+    "top_quarter_positive_pnl_share": 0.6225509577434353,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "ADAUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.8217836151222682,
+    "gross_exposure": 0.4387374976826489,
+    "net_exposure": -0.21469261543678886,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -3518.5718952371453,
+        "short_pnl": -401.4250438818726
+      },
+      "breakout": {
+        "long_pnl": 2911.741124763821,
+        "short_pnl": 637.0119696339008
+      }
+    },
+    "total_net_return": -0.011773996211159932,
+    "cagr": -0.011773996211159932,
+    "volatility": 0.3796324427074799,
+    "sharpe": 0.15687228509416357,
+    "sortino": 0.23789773128579647,
+    "calmar": -0.03237264604028289,
+    "max_dd": -0.363702003120442,
+    "drawdown_duration_days": 218,
+    "expected_shortfall_95": -0.04283907325150901,
+    "annual_arithmetic_return": 0.0595538087834015,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.5288485341750886,
+    "top_quarter_positive_pnl_share": 0.5979740164183431,
+    "top_year_positive_pnl_share": null
+  },
+  {
+    "asset": "AVAXUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.9044493326439211,
+    "gross_exposure": 0.4455274727447263,
+    "net_exposure": -0.13914355819593968,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -3817.840676102288,
+        "short_pnl": 4680.398310866591
+      },
+      "breakout": {
+        "long_pnl": -1740.0692905606102,
+        "short_pnl": -58.64875926482682
+      }
+    },
+    "total_net_return": 0.02592496652693166,
+    "cagr": 0.02592496652693166,
+    "volatility": 0.4250253146901087,
+    "sharpe": 0.27114325264260614,
+    "sortino": 0.41112248837974086,
+    "calmar": 0.07416937331314201,
+    "max_dd": -0.3495373544208986,
+    "drawdown_duration_days": 158,
+    "expected_shortfall_95": -0.047035145354718026,
+    "annual_arithmetic_return": 0.11524274628052332,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.40679354678911456,
+    "top_quarter_positive_pnl_share": 1.0,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "AXSUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.9356891963810531,
+    "gross_exposure": 0.47701376255987255,
+    "net_exposure": -0.2542564744613095,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -2291.4789778805984,
+        "short_pnl": 8335.007340341828
+      },
+      "breakout": {
+        "long_pnl": 631.5873211193882,
+        "short_pnl": 5949.854145316309
+      }
+    },
+    "total_net_return": 0.8068681183401454,
+    "cagr": 0.8068681183401454,
+    "volatility": 0.49826488000132846,
+    "sharpe": 1.431960013389386,
+    "sortino": 2.488229461278571,
+    "calmar": 2.5751930150046074,
+    "max_dd": -0.31332335620625384,
+    "drawdown_duration_days": 139,
+    "expected_shortfall_95": -0.04757828960949215,
+    "annual_arithmetic_return": 0.713495384238163,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.27127408091974914,
+    "top_quarter_positive_pnl_share": 0.5140587275938714,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "MATICUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.7051157362380829,
+    "gross_exposure": 0.4405690103148843,
+    "net_exposure": -0.09967939843853657,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -3075.947181338753,
+        "short_pnl": -967.2086542262996
+      },
+      "breakout": {
+        "long_pnl": -2286.9239939078907,
+        "short_pnl": 2573.189373050903
+      }
+    },
+    "total_net_return": -0.13538985217098154,
+    "cagr": -0.13538985217098154,
+    "volatility": 0.4980944757883498,
+    "sharpe": -0.04783078845924641,
+    "sortino": -0.07703580150798506,
+    "calmar": -0.3197111085140834,
+    "max_dd": -0.4234755958284683,
+    "drawdown_duration_days": 140,
+    "expected_shortfall_95": -0.051616666823820656,
+    "annual_arithmetic_return": -0.023824251504151794,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.41763781378554843,
+    "top_quarter_positive_pnl_share": 1.0,
+    "top_year_positive_pnl_share": null
+  },
+  {
+    "asset": "FTMUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.9225641423145484,
+    "gross_exposure": 0.4068098182462691,
+    "net_exposure": -0.11944462452085952,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -3075.379354628673,
+        "short_pnl": 7148.448996046611
+      },
+      "breakout": {
+        "long_pnl": 1025.1390028144726,
+        "short_pnl": -2159.3728601631915
+      }
+    },
+    "total_net_return": 0.2309136305778634,
+    "cagr": 0.2309136305778634,
+    "volatility": 0.5286807791578261,
+    "sharpe": 0.6524273925740016,
+    "sortino": 1.0496205595741224,
+    "calmar": 0.6928189529642271,
+    "max_dd": -0.3332957760319619,
+    "drawdown_duration_days": 183,
+    "expected_shortfall_95": -0.05857010845541157,
+    "annual_arithmetic_return": 0.34492582224993207,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.2701453800631477,
+    "top_quarter_positive_pnl_share": 0.6417419450415739,
+    "top_year_positive_pnl_share": 1.0
+  },
+  {
+    "asset": "LTCUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.5346291627968649,
+    "gross_exposure": 0.418101504251593,
+    "net_exposure": -0.07784667858886303,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -2381.0379926946107,
+        "short_pnl": 971.0691354741812
+      },
+      "breakout": {
+        "long_pnl": -1762.1173584990004,
+        "short_pnl": 344.262534171163
+      }
+    },
+    "total_net_return": -0.09423906669129878,
+    "cagr": -0.09423906669129878,
+    "volatility": 0.354040359089918,
+    "sharpe": -0.10466509029294886,
+    "sortino": -0.1641541540087213,
+    "calmar": -0.20965066047409053,
+    "max_dd": -0.4495052220593658,
+    "drawdown_duration_days": 201,
+    "expected_shortfall_95": -0.03686101348207168,
+    "annual_arithmetic_return": -0.037055666151494304,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.32014292199392885,
+    "top_quarter_positive_pnl_share": 0.8756392294062493,
+    "top_year_positive_pnl_share": null
+  },
+  {
+    "asset": "LINKUSDT",
+    "period": "2022 calendar bear diagnostic",
+    "underlying_return": -0.7312403549382697,
+    "gross_exposure": 0.4474735904946555,
+    "net_exposure": -0.1016821321044925,
+    "component_dollar_pnl": {
+      "trend": {
+        "long_pnl": -4661.662793867409,
+        "short_pnl": -1988.2145033920772
+      },
+      "breakout": {
+        "long_pnl": 230.32515786887149,
+        "short_pnl": -2781.4261244550303
+      }
+    },
+    "total_net_return": -0.45768911635435017,
+    "cagr": -0.45768911635435017,
+    "volatility": 0.4191604210932321,
+    "sharpe": -1.2495566162437497,
+    "sortino": -1.7265426202051812,
+    "calmar": -0.8277468221786141,
+    "max_dd": -0.5529337039914222,
+    "drawdown_duration_days": 233,
+    "expected_shortfall_95": -0.050250293639343184,
+    "annual_arithmetic_return": -0.5237646774445643,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.5155087257426151,
+    "top_quarter_positive_pnl_share": null,
+    "top_year_positive_pnl_share": null
+  }
+]

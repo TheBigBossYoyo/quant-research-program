@@ -1,0 +1,313 @@
+{
+  "cells": [
+    {
+      "cell": "Cohort 1 (Phase 4, 12 names) trend-only 2022-2024",
+      "assets": 12,
+      "days": 1096,
+      "positive_net_fraction": 0.5833333333333334,
+      "positive_sharpe_fraction": 0.75,
+      "median_sharpe": 0.6523468643183593,
+      "median_alpha2": 0.5651707342098993,
+      "positive_alpha_fraction": 0.8333333333333334,
+      "portfolio_sharpe": 0.7531288086392539,
+      "portfolio_cagr": 0.2772587198823937,
+      "portfolio_max_dd": -0.42391528475596174,
+      "portfolio_return": 1.085104396093409
+    },
+    {
+      "cell": "Cohort 2 (12 names) 2021-2024",
+      "assets": 12,
+      "days": 1461,
+      "positive_net_fraction": 0.4166666666666667,
+      "positive_sharpe_fraction": 0.8333333333333334,
+      "median_sharpe": 0.29473603219440575,
+      "median_alpha2": 0.3111467051794521,
+      "positive_alpha_fraction": 0.75,
+      "portfolio_sharpe": 0.6180452108403074,
+      "portfolio_cagr": 0.20940032056279323,
+      "portfolio_max_dd": -0.5667518599343837,
+      "portfolio_return": 1.1404571443447789
+    },
+    {
+      "cell": "Cohort 2 NEW names (7) 2021-2024",
+      "assets": 7,
+      "days": 1461,
+      "positive_net_fraction": 0.42857142857142855,
+      "positive_sharpe_fraction": 1.0,
+      "median_sharpe": 0.2501066483383063,
+      "median_alpha2": 0.31649885070743766,
+      "positive_alpha_fraction": 0.8571428571428571,
+      "portfolio_sharpe": 0.6725714772396215,
+      "portfolio_cagr": 0.2544908255952185,
+      "portfolio_max_dd": -0.4702690877668262,
+      "portfolio_return": 1.4782192846016606
+    },
+    {
+      "cell": "Cohort 2 overlapping names (5) 2021-2024",
+      "assets": 5,
+      "days": 1461,
+      "positive_net_fraction": 0.4,
+      "positive_sharpe_fraction": 0.6,
+      "median_sharpe": 0.3393654160505052,
+      "median_alpha2": 0.10767572030807396,
+      "positive_alpha_fraction": 0.6,
+      "portfolio_sharpe": 0.4576269694313554,
+      "portfolio_cagr": 0.10191462730534773,
+      "portfolio_max_dd": -0.7496210370215004,
+      "portfolio_return": 0.4747121769808078
+    },
+    {
+      "cell": "Cohort 2 calendar 2021 (new regime)",
+      "assets": 12,
+      "days": 365,
+      "positive_net_fraction": 0.5833333333333334,
+      "positive_sharpe_fraction": 0.9166666666666666,
+      "median_sharpe": 0.6793312921637968,
+      "median_alpha2": 0.19076037095491788,
+      "positive_alpha_fraction": 0.75,
+      "portfolio_sharpe": 1.1606579174728795,
+      "portfolio_cagr": 0.8742322554748152,
+      "portfolio_max_dd": -0.39801224957201886,
+      "portfolio_return": 0.8742322554748152
+    },
+    {
+      "cell": "Cohort 2 2022-2024 (same window as cohort 1)",
+      "assets": 12,
+      "days": 1096,
+      "positive_net_fraction": 0.4166666666666667,
+      "positive_sharpe_fraction": 0.6666666666666666,
+      "median_sharpe": 0.15026878958239887,
+      "median_alpha2": 0.24092384050344215,
+      "positive_alpha_fraction": 0.75,
+      "portfolio_sharpe": 0.32032288156055844,
+      "portfolio_cagr": 0.04522856879170889,
+      "portfolio_max_dd": -0.5318349612489027,
+      "portfolio_return": 0.1420534982492525
+    },
+    {
+      "cell": "Cohort 2 NEW names 2022-2024",
+      "assets": 7,
+      "days": 1096,
+      "positive_net_fraction": 0.5714285714285714,
+      "positive_sharpe_fraction": 0.8571428571428571,
+      "median_sharpe": 0.43590451667655,
+      "median_alpha2": 0.39205886994311023,
+      "positive_alpha_fraction": 0.8571428571428571,
+      "portfolio_sharpe": 0.5360448057689827,
+      "portfolio_cagr": 0.15629527549483369,
+      "portfolio_max_dd": -0.45856926670823595,
+      "portfolio_return": 0.5466036991683818
+    }
+  ],
+  "bootstrap": {
+    "cohort1_portfolio_sharpe_ci95": [
+      -0.4474901593503558,
+      1.9519447659185523
+    ],
+    "cohort2_portfolio_sharpe_ci95_2022_2024": [
+      -1.0255409992703979,
+      1.6458535905908895
+    ],
+    "difference_ci95": [
+      -1.0844106633191293,
+      0.1604528263876409
+    ],
+    "portfolio_correlation_2022_2024": 0.883913431850056,
+    "monthly_return_correlation": 0.8858446333170272,
+    "new_names_vs_cohort1_portfolio_correlation": 0.7864630485069465,
+    "cohort_year_signs": {
+      "c1_2022": 0.019098654554639882,
+      "c1_2023": 0.48224496786239057,
+      "c1_2024": 0.3803575375253081,
+      "c2_2021": 0.8742322554748152,
+      "c2_2022": -0.06455612521714593,
+      "c2_2023": -0.10613944024823962,
+      "c2_2024": 0.36582676320448826
+    },
+    "median_alpha2_by_year_cohort2": {
+      "2021": 0.19076037095491788,
+      "2022": -0.4127924582198246,
+      "2023": -0.10950371860705344,
+      "2024": 0.31786501285991586
+    },
+    "heterogeneity_between_cohorts": {
+      "median_sharpe_c1": 0.6523468643183593,
+      "median_sharpe_c2": 0.29473603219440575,
+      "median_sharpe_new": 0.2501066483383063
+    }
+  },
+  "meta_cohort1": {
+    "14": {
+      "median_alpha_ci95": [
+        -0.1072887305492082,
+        1.0229161020531459
+      ],
+      "median_sharpe_ci95": [
+        -0.2777144218224986,
+        1.3428226684932054
+      ],
+      "positive_fraction_ci95": [
+        0.4166666666666667,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "30": {
+      "median_alpha_ci95": [
+        -0.15142331006843765,
+        1.0866724424479155
+      ],
+      "median_sharpe_ci95": [
+        -0.3120994619065163,
+        1.4173004019811686
+      ],
+      "positive_fraction_ci95": [
+        0.3333333333333333,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "60": {
+      "median_alpha_ci95": [
+        -0.17076951062080287,
+        1.0146827272600776
+      ],
+      "median_sharpe_ci95": [
+        -0.27426698463508414,
+        1.3330123395985691
+      ],
+      "positive_fraction_ci95": [
+        0.3333333333333333,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "asset_bootstrap_descriptive": [
+      0.035377159508850495,
+      0.8021836451214936
+    ],
+    "heterogeneity": {
+      "alpha_std": 0.4698949272839545,
+      "alpha_iqr": 0.7342494934516244,
+      "alpha_min": -0.23028104402040936,
+      "alpha_max": 1.269717460310627,
+      "random_effects": "Not used: correlated crypto units violate independent-effect sampling assumptions"
+    }
+  },
+  "meta_cohort2": {
+    "14": {
+      "median_alpha_ci95": [
+        -0.3697989439642417,
+        0.7822417032512777
+      ],
+      "median_sharpe_ci95": [
+        -0.4193309021264615,
+        1.0671577455666956
+      ],
+      "positive_fraction_ci95": [
+        0.16666666666666666,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "30": {
+      "median_alpha_ci95": [
+        -0.3054817475370691,
+        0.7577430911377356
+      ],
+      "median_sharpe_ci95": [
+        -0.32829069367324076,
+        1.044311767316307
+      ],
+      "positive_fraction_ci95": [
+        0.25,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "60": {
+      "median_alpha_ci95": [
+        -0.33268112683970114,
+        0.699321803579848
+      ],
+      "median_sharpe_ci95": [
+        -0.3166648990858571,
+        0.9254858239132621
+      ],
+      "positive_fraction_ci95": [
+        0.16666666666666666,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "asset_bootstrap_descriptive": [
+      -0.005476873166317016,
+      0.397801735966599
+    ],
+    "heterogeneity": {
+      "alpha_std": 0.3670501818343526,
+      "alpha_iqr": 0.31483817421510923,
+      "alpha_min": -0.2524620574383351,
+      "alpha_max": 1.0843044718454091,
+      "random_effects": "Not used: correlated crypto units violate independent-effect sampling assumptions"
+    }
+  },
+  "meta_new_names": {
+    "14": {
+      "median_alpha_ci95": [
+        -0.32523777518261165,
+        0.9180168587308268
+      ],
+      "median_sharpe_ci95": [
+        -0.3955116650264579,
+        1.1291698792469564
+      ],
+      "positive_fraction_ci95": [
+        0.14285714285714285,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "30": {
+      "median_alpha_ci95": [
+        -0.2730087383191612,
+        0.9048206695887513
+      ],
+      "median_sharpe_ci95": [
+        -0.3175943684807136,
+        1.100674594873395
+      ],
+      "positive_fraction_ci95": [
+        0.14285714285714285,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "60": {
+      "median_alpha_ci95": [
+        -0.29908953194527943,
+        0.7992011894368812
+      ],
+      "median_sharpe_ci95": [
+        -0.2769410201617368,
+        0.9703615816689429
+      ],
+      "positive_fraction_ci95": [
+        0.14285714285714285,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "asset_bootstrap_descriptive": [
+      0.20779457955199798,
+      0.4615300123278223
+    ],
+    "heterogeneity": {
+      "alpha_std": 0.3954210640694109,
+      "alpha_iqr": 0.14100716636486677,
+      "alpha_min": -0.2524620574383351,
+      "alpha_max": 1.0843044718454091,
+      "random_effects": "Not used: correlated crypto units violate independent-effect sampling assumptions"
+    }
+  }
+}

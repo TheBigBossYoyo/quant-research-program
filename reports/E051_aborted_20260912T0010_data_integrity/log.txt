@@ -1,0 +1,11 @@
+T2_A_mom12_1_N10: months 238 net Sharpe 0.38 excess-EW t 1.66 survivor False
+T2_A_mom12_1_N20: months 238 net Sharpe 0.38 excess-EW t 1.65 survivor False
+T2_A_mom12_1_N30: months 238 net Sharpe 0.38 excess-EW t 1.65 survivor False
+T2_A_mom12_1_N50: months 238 net Sharpe 0.38 excess-EW t 1.64 survivor False
+T2_A_mom6_1_N10: months 238 net Sharpe 0.23 excess-EW t 0.99 survivor False
+T2_A_mom6_1_N20: months 238 net Sharpe 0.23 excess-EW t 0.96 survivor False
+T2_A_mom6_1_N30: months 238 net Sharpe 0.23 excess-EW t 0.93 survivor False
+T2_A_mom6_1_N50: months 238 net Sharpe 0.23 excess-EW t 0.87 survivor False
+T2_A_mom9_1_N10: months 238 net Sharpe 0.23 excess-EW t 0.99 survivor False
+T2_A_mom9_1_N20: months 238 net Sharpe 0.23 excess-EW t 0.96 survivor False
+T2_A_mom9_1_N30: months 238 net Sharpe 0.23 excess-EW t 0.93 survivor False

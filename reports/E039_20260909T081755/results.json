@@ -1,0 +1,1935 @@
+{
+  "experiment_id": "E039_20260909T081755",
+  "code_hash": "2a56d92b23a4e3948e701460ee40f5e10f6780cabd87be27504dc150797641d0",
+  "git_commit": null,
+  "economic_hypotheses": 4,
+  "cumulative_economic": 384,
+  "stage_a": [
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "ic1": -0.0221819018460931,
+      "ic1_adj_ci": [
+        -0.0475324518871681,
+        0.0013435866014873692
+      ],
+      "partial_ic1": -0.021145391360346752,
+      "ic5": -0.015569664137232615,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "ic1": 0.014291671078368741,
+      "ic1_adj_ci": [
+        -0.008445806314008207,
+        0.039315244617849486
+      ],
+      "partial_ic1": 0.010113936168050596,
+      "ic5": 0.01279731407684081,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "ic1": 0.009571110005069852,
+      "ic1_adj_ci": [
+        -0.016434586250649655,
+        0.03313844757014593
+      ],
+      "partial_ic1": 0.009266060421640005,
+      "ic5": 0.016611833634551883,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "ic1": -0.025803309130328578,
+      "ic1_adj_ci": [
+        -0.05447743843920093,
+        -0.0012010790771649926
+      ],
+      "partial_ic1": -0.036980850505333444,
+      "ic5": -0.011280598613664174,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "ic1": -0.07376270347490749,
+      "ic1_adj_ci": [
+        -0.09915020397499329,
+        -0.047009195051501404
+      ],
+      "partial_ic1": -0.0755016207969353,
+      "ic5": -0.00037816325756071434,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "ic1": 0.02547622791807393,
+      "ic1_adj_ci": [
+        0.002709047880945483,
+        0.05192666502389679
+      ],
+      "partial_ic1": 0.026174502505468298,
+      "ic5": -0.004305773193309919,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "ic1": -0.03917326553228543,
+      "ic1_adj_ci": [
+        -0.06426316015694902,
+        -0.013101564331705636
+      ],
+      "partial_ic1": -0.0388998271396724,
+      "ic5": -0.041467868524538536,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "ic1": -0.09092524997094963,
+      "ic1_adj_ci": [
+        -0.1151971785119233,
+        -0.0631199332352452
+      ],
+      "partial_ic1": -0.09271332450903923,
+      "ic5": -0.01489911858787307,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "ic1": -0.001855338609504619,
+      "ic1_adj_ci": [
+        -0.0684720014543506,
+        0.06339015865112423
+      ],
+      "partial_ic1": -2.5330894970286096e-05,
+      "ic5": 0.03871703930449648,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "ic1": 0.0339014130641876,
+      "ic1_adj_ci": [
+        -0.029986985050013504,
+        0.10664995895145671
+      ],
+      "partial_ic1": 0.03039659879930393,
+      "ic5": 0.06386233866869373,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "ic1": 0.02761988758821401,
+      "ic1_adj_ci": [
+        -0.04592294469676381,
+        0.09470611637567973
+      ],
+      "partial_ic1": 0.026766448259355508,
+      "ic5": 0.0652141420814534,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "ic1": 0.009696769598143732,
+      "ic1_adj_ci": [
+        -0.05495700782116411,
+        0.08641752486275617
+      ],
+      "partial_ic1": 0.003517199211716528,
+      "ic5": 0.039369879250265166,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "ic1": -0.031897111747627896,
+      "ic1_adj_ci": [
+        -0.09670915339111731,
+        0.03338844588317225
+      ],
+      "partial_ic1": -0.0337027542251752,
+      "ic5": -0.01440849625385329,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "ic1": 0.008746031797124762,
+      "ic1_adj_ci": [
+        -0.06175327775886373,
+        0.07430742584216787
+      ],
+      "partial_ic1": 0.00904938942058835,
+      "ic5": -0.007974214375746445,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "ic1": 0.012746001764200425,
+      "ic1_adj_ci": [
+        -0.05596889243178956,
+        0.07991664361539272
+      ],
+      "partial_ic1": 0.01208366768251102,
+      "ic5": -0.027217901750494884,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "ic1": -0.02508652374092111,
+      "ic1_adj_ci": [
+        -0.09686553138035411,
+        0.045221751479014534
+      ],
+      "partial_ic1": -0.027102744037562212,
+      "ic5": -0.022322361966926767,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "ic1": -0.01039916478855209,
+      "ic1_adj_ci": [
+        -0.0362369942071769,
+        0.016017866985721545
+      ],
+      "partial_ic1": -0.010096312748018442,
+      "ic5": 0.011179694371115117,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "ic1": 0.010646420232533859,
+      "ic1_adj_ci": [
+        -0.016307793812283353,
+        0.03605816813214319
+      ],
+      "partial_ic1": 0.008901184435553593,
+      "ic5": 0.022491402921826067,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "ic1": 0.008156749173803714,
+      "ic1_adj_ci": [
+        -0.015440459390127188,
+        0.03320890147316766
+      ],
+      "partial_ic1": 0.008172404860418371,
+      "ic5": 0.008933429741325617,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "ic1": -0.01856732723559648,
+      "ic1_adj_ci": [
+        -0.04497897323315391,
+        0.00707678841124347
+      ],
+      "partial_ic1": -0.024035800096299586,
+      "ic5": 0.0014538482711215406,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "ic1": -0.05807956769285009,
+      "ic1_adj_ci": [
+        -0.08340729421644252,
+        -0.03097365806483103
+      ],
+      "partial_ic1": -0.05926856813593742,
+      "ic5": 0.0054537859961999845,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "ic1": 0.018576293832086706,
+      "ic1_adj_ci": [
+        -0.005465827394759776,
+        0.04452164603945958
+      ],
+      "partial_ic1": 0.019079210117506715,
+      "ic5": -0.008773393603435924,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "ic1": -0.024387842126354267,
+      "ic1_adj_ci": [
+        -0.05125817757190573,
+        0.0038738338718907984
+      ],
+      "partial_ic1": -0.023957059913535094,
+      "ic5": -0.022374833309503538,
+      "n": 10711,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "ic1": -0.0698636220457801,
+      "ic1_adj_ci": [
+        -0.09541147412733418,
+        -0.045564636120716616
+      ],
+      "partial_ic1": -0.07098154363462335,
+      "ic5": -0.0016039235278161052,
+      "n": 10711,
+      "passes": true
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "ic1": -0.019615162301815942,
+      "ic1_adj_ci": [
+        -0.09289058294187316,
+        0.04206952642606044
+      ],
+      "partial_ic1": -0.01801166116318256,
+      "ic5": 0.006277884925835829,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "ic1": -0.009195525662054348,
+      "ic1_adj_ci": [
+        -0.07777454643821491,
+        0.0590165414659079
+      ],
+      "partial_ic1": 0.0012608305057181515,
+      "ic5": -0.03161386841803756,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "ic1": 0.036084269140222586,
+      "ic1_adj_ci": [
+        -0.03151576716695961,
+        0.10067787665197525
+      ],
+      "partial_ic1": 0.03351897571584763,
+      "ic5": 0.09030835102487572,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "ic1": -0.01524938577254708,
+      "ic1_adj_ci": [
+        -0.08639313535152487,
+        0.053428533861179545
+      ],
+      "partial_ic1": -0.02878040309016686,
+      "ic5": 0.009979414357443508,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "ic1": -0.04053531480220336,
+      "ic1_adj_ci": [
+        -0.11079121162262592,
+        0.023324346343404953
+      ],
+      "partial_ic1": -0.04252004545030242,
+      "ic5": -0.016080644174398525,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "ic1": -0.00376339294815229,
+      "ic1_adj_ci": [
+        -0.07262331946214902,
+        0.06771925811503082
+      ],
+      "partial_ic1": -0.001831050012040069,
+      "ic5": -0.010780083912239497,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "ic1": 0.02557246274514493,
+      "ic1_adj_ci": [
+        -0.04576136015800264,
+        0.09072609314717765
+      ],
+      "partial_ic1": 0.02332652314536571,
+      "ic5": 0.019524277550900852,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "ic1": -0.022455278922644515,
+      "ic1_adj_ci": [
+        -0.09262903147046492,
+        0.04021168672179047
+      ],
+      "partial_ic1": -0.025614283399772137,
+      "ic5": -0.0016284245433016537,
+      "n": 1576,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "ic1": -0.008033278240859715,
+      "ic1_adj_ci": [
+        -0.03327320062393275,
+        0.016213514900793497
+      ],
+      "partial_ic1": -0.006970472013978025,
+      "ic5": -0.008485652441281466,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "ic1": 0.008203969150000094,
+      "ic1_adj_ci": [
+        -0.016355670203370126,
+        0.03701285805532753
+      ],
+      "partial_ic1": 0.0030442279363294073,
+      "ic5": 0.013768834677774292,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "ic1": 0.010441372855426354,
+      "ic1_adj_ci": [
+        -0.013967101869244545,
+        0.03575658432167191
+      ],
+      "partial_ic1": 0.01039326567916557,
+      "ic5": 0.019179371315159694,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "ic1": -0.014832513229137334,
+      "ic1_adj_ci": [
+        -0.04140124980075854,
+        0.014674640638591294
+      ],
+      "partial_ic1": -0.024506706334213643,
+      "ic5": 0.010112621593002873,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "ic1": -0.073489597096858,
+      "ic1_adj_ci": [
+        -0.1001491203815727,
+        -0.04741054042897445
+      ],
+      "partial_ic1": -0.07527639046764725,
+      "ic5": 0.013541541128613407,
+      "n": 10778,
+      "passes": true
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "ic1": 0.017270067823534806,
+      "ic1_adj_ci": [
+        -0.009529325325901523,
+        0.043768717210305084
+      ],
+      "partial_ic1": 0.018252880383918497,
+      "ic5": -0.006371367566238786,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "ic1": -0.02640276752917434,
+      "ic1_adj_ci": [
+        -0.05163515871202781,
+        -0.0005954780413091999
+      ],
+      "partial_ic1": -0.025858058303212462,
+      "ic5": -0.03874071997047402,
+      "n": 10778,
+      "passes": true
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "ic1": -0.08312258708088877,
+      "ic1_adj_ci": [
+        -0.11130965392045253,
+        -0.05632181614393665
+      ],
+      "partial_ic1": -0.08490682744542902,
+      "ic5": 0.0008789087511668057,
+      "n": 10778,
+      "passes": true
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "ic1": 0.007134414571070425,
+      "ic1_adj_ci": [
+        -0.10060670589653489,
+        0.10868413128014072
+      ],
+      "partial_ic1": 0.010152924386988903,
+      "ic5": 0.04608807618834193,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "ic1": 0.013942816700289816,
+      "ic1_adj_ci": [
+        -0.0908630955090691,
+        0.10800486644285982
+      ],
+      "partial_ic1": 0.002869099062823421,
+      "ic5": 0.06422440140945204,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "ic1": 0.03445597080329142,
+      "ic1_adj_ci": [
+        -0.0776155408370022,
+        0.1360859290462048
+      ],
+      "partial_ic1": 0.03497659451466085,
+      "ic5": 0.03657819386811462,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "ic1": 0.022526528586399377,
+      "ic1_adj_ci": [
+        -0.09199708733379297,
+        0.12212596145363681
+      ],
+      "partial_ic1": 0.007442826318409573,
+      "ic5": 0.039669741913536685,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "ic1": -0.00339325406453842,
+      "ic1_adj_ci": [
+        -0.1057319652801567,
+        0.10989988561828205
+      ],
+      "partial_ic1": -0.0068149628949666936,
+      "ic5": 0.01158552174193294,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "ic1": 0.040425152489016056,
+      "ic1_adj_ci": [
+        -0.05907108576623635,
+        0.15337581376062545
+      ],
+      "partial_ic1": 0.04243073954791491,
+      "ic5": -0.014529055469064875,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "ic1": -0.019306363506010026,
+      "ic1_adj_ci": [
+        -0.1263907586904687,
+        0.0811777558113595
+      ],
+      "partial_ic1": -0.019504450308658005,
+      "ic5": -0.03603813831477209,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "ic1": -0.01871619196057147,
+      "ic1_adj_ci": [
+        -0.11933859729370162,
+        0.08107576806862475
+      ],
+      "partial_ic1": -0.022635403843474997,
+      "ic5": 0.002633716549630203,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "ic1": -0.009060970187683292,
+      "ic1_adj_ci": [
+        -0.03743115951239684,
+        0.017679987784340833
+      ],
+      "partial_ic1": -0.008588660672693007,
+      "ic5": -0.0035609580863418216,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "ic1": 0.014517001020593513,
+      "ic1_adj_ci": [
+        -0.012099758956036174,
+        0.039397127266560986
+      ],
+      "partial_ic1": 0.011770538692368085,
+      "ic5": 0.018636011859338907,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "ic1": 0.008949335905172374,
+      "ic1_adj_ci": [
+        -0.01692225947423167,
+        0.03555217424835237
+      ],
+      "partial_ic1": 0.008895854048348858,
+      "ic5": 0.007961936436272233,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "ic1": -0.01172818225177674,
+      "ic1_adj_ci": [
+        -0.03992880090302958,
+        0.015107618017620133
+      ],
+      "partial_ic1": -0.01707671788034627,
+      "ic5": 0.005632735182334611,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "ic1": -0.05453963169413247,
+      "ic1_adj_ci": [
+        -0.07775290875687713,
+        -0.02953673513017611
+      ],
+      "partial_ic1": -0.055776232036004965,
+      "ic5": 0.018470224147088214,
+      "n": 10778,
+      "passes": true
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "ic1": 0.008403801356094474,
+      "ic1_adj_ci": [
+        -0.016802527569123184,
+        0.03200915139497615
+      ],
+      "partial_ic1": 0.008712026836333701,
+      "ic5": -0.005270298419617887,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "ic1": -0.018247015575769934,
+      "ic1_adj_ci": [
+        -0.04612086209253708,
+        0.005399750448509295
+      ],
+      "partial_ic1": -0.018160741373090313,
+      "ic5": -0.020818680129122902,
+      "n": 10778,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "ic1": -0.061312821133338684,
+      "ic1_adj_ci": [
+        -0.08680844055596763,
+        -0.03253070340977884
+      ],
+      "partial_ic1": -0.06252788160965275,
+      "ic5": 0.01100966547842999,
+      "n": 10778,
+      "passes": true
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "ic1": -0.005141428642983665,
+      "ic1_adj_ci": [
+        -0.10993937303934452,
+        0.09577716183394366
+      ],
+      "partial_ic1": -0.0025808714276700203,
+      "ic5": 0.04372055125172207,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "ic1": 0.003745676841026605,
+      "ic1_adj_ci": [
+        -0.10093024437197926,
+        0.11274140081190237
+      ],
+      "partial_ic1": 0.004356032498650907,
+      "ic5": 0.00033693838970057157,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "ic1": 0.06908659179277941,
+      "ic1_adj_ci": [
+        -0.04510000579494906,
+        0.1713404121955763
+      ],
+      "partial_ic1": 0.06934047298288747,
+      "ic5": 0.02715035781070216,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "ic1": -0.011768805677645787,
+      "ic1_adj_ci": [
+        -0.11252113823237646,
+        0.09360599321975879
+      ],
+      "partial_ic1": -0.015359719072842991,
+      "ic5": 0.042149072521464125,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "ic1": -0.016644253814653162,
+      "ic1_adj_ci": [
+        -0.12118594806853696,
+        0.08777130998217865
+      ],
+      "partial_ic1": -0.01698976269635949,
+      "ic5": 0.010153097408386142,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "ic1": 0.023935178890987112,
+      "ic1_adj_ci": [
+        -0.08328864038984869,
+        0.1258805258176178
+      ],
+      "partial_ic1": 0.023575656362330458,
+      "ic5": -0.01293089568630214,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "ic1": 0.01164400255074397,
+      "ic1_adj_ci": [
+        -0.08980993091680443,
+        0.10809282882851318
+      ],
+      "partial_ic1": 0.011032364471468192,
+      "ic5": -0.0002883295344315387,
+      "n": 686,
+      "passes": false
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "ic1": -0.011553396966565835,
+      "ic1_adj_ci": [
+        -0.1308698911040779,
+        0.09171275762433242
+      ],
+      "partial_ic1": -0.011764716815140387,
+      "ic5": 0.01486114240515209,
+      "n": 686,
+      "passes": false
+    }
+  ],
+  "stage_b": [
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": 0.5560556780443399,
+      "improvement": -0.8890483530222238,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": 0.16449220681546906,
+      "trades": 512
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": 1.2155262081747658,
+      "improvement": -0.22957782289179796,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": 0.5938462241337921,
+      "trades": 285
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": 0.8476855636318861,
+      "improvement": -0.5974184674346776,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": 0.3290815715412214,
+      "trades": 560
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": 0.7269981639072602,
+      "improvement": -0.7181058671593035,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": 0.2760640982651914,
+      "trades": 732
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": -1.9260178673385386,
+      "improvement": -3.3711218984051023,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": -0.6728711665310334,
+      "trades": 3048
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": -1.0622231493608332,
+      "improvement": -2.5073271804273967,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": -0.4743540358210444,
+      "trades": 2725
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": -1.0725540750827294,
+      "improvement": -2.517658106149293,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": -0.4470674122284024,
+      "trades": 2715
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "base_sharpe": 1.4451040310665637,
+      "filtered_sharpe": -2.265794934613828,
+      "improvement": -3.710898965680392,
+      "half_width": 0.8516417581963054,
+      "retained": false,
+      "base_cagr": 0.9088970078984109,
+      "filtered_cagr": -0.719485270636508,
+      "trades": 3085
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": 0.7084948261981477,
+      "improvement": 0.12139600725199617,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": 0.22551484093922136,
+      "trades": 80
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": 0.5746017740551584,
+      "improvement": -0.012497044890993125,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": 0.1705692010018074,
+      "trades": 59
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": 0.2727332099925973,
+      "improvement": -0.31436560895355425,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": 0.029924861068293618,
+      "trades": 87
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": 0.4051331459643538,
+      "improvement": -0.18196567298179778,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": 0.08512070529814708,
+      "trades": 123
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": -0.1293431614735487,
+      "improvement": -0.7164419804197003,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": -0.12380353675649447,
+      "trades": 443
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": 0.0856915504789549,
+      "improvement": -0.5014072684671966,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": -0.06763581231385773,
+      "trades": 389
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": -0.1465956373242744,
+      "improvement": -0.733694456270426,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": -0.13393406162358323,
+      "trades": 431
+    },
+    {
+      "kind": "perp",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "base_sharpe": 0.5870988189461516,
+      "filtered_sharpe": 0.42714711611636713,
+      "improvement": -0.15995170282978444,
+      "half_width": 0.9144502817796245,
+      "retained": false,
+      "base_cagr": 0.18617809461468293,
+      "filtered_cagr": 0.09651526445297809,
+      "trades": 434
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": 0.5391359786515588,
+      "improvement": -0.32439937447946654,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": 0.16244477046674333,
+      "trades": 538
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": 0.1741477626824566,
+      "improvement": -0.6893875904485688,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": -0.07803626569694344,
+      "trades": 322
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": 0.46551302402096706,
+      "improvement": -0.3980223291100583,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": 0.10748407971139406,
+      "trades": 580
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": 0.6938874200387997,
+      "improvement": -0.1696479330922257,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": 0.27742965837193956,
+      "trades": 749
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": -1.3853018526111032,
+      "improvement": -2.2488372057421286,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": -0.6584778940304326,
+      "trades": 3000
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": -0.9368269363874884,
+      "improvement": -1.8003622895185138,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": -0.560825437705515,
+      "trades": 2671
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": -0.8975672931390496,
+      "improvement": -1.761102646270075,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": -0.5242933376293237,
+      "trades": 2730
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "base_sharpe": 0.8635353531310254,
+      "filtered_sharpe": -2.267568306332181,
+      "improvement": -3.1311036594632067,
+      "half_width": 0.8646767713327917,
+      "retained": false,
+      "base_cagr": 0.4405413686678168,
+      "filtered_cagr": -0.8043000305575027,
+      "trades": 3085
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.784230487649746,
+      "improvement": -0.3690141588832553,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.3068587497442756,
+      "trades": 68
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.8343659978166005,
+      "improvement": -0.3188786487164008,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.37308143142595296,
+      "trades": 32
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 1.2382799947648413,
+      "improvement": 0.08503534823184,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.646424011958658,
+      "trades": 84
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.9635085626837786,
+      "improvement": -0.1897360838492227,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.45939490314608467,
+      "trades": 91
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.03949870158842215,
+      "improvement": -1.1137459449445792,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": -0.11618752367782104,
+      "trades": 427
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.7652920060903226,
+      "improvement": -0.38795264044267874,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.3253406158459935,
+      "trades": 366
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.6823386277906053,
+      "improvement": -0.470906018742396,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.24576518393729274,
+      "trades": 416
+    },
+    {
+      "kind": "perp",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "base_sharpe": 1.1532446465330013,
+      "filtered_sharpe": 0.7616078692719279,
+      "improvement": -0.3916367772610734,
+      "half_width": 0.839979889206862,
+      "retained": false,
+      "base_cagr": 0.7210579441288676,
+      "filtered_cagr": 0.31065937805481214,
+      "trades": 408
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": 0.5651579698463484,
+      "improvement": -0.4337491098036511,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": 0.1268828479687556,
+      "trades": 271
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": 0.4821166460254445,
+      "improvement": -0.516790433624555,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": 0.10421813784839462,
+      "trades": 163
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": 0.17717645783603386,
+      "improvement": -0.8217306218139656,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": 0.01184666738013207,
+      "trades": 304
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": 0.4739699262643308,
+      "improvement": -0.5249371533856686,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": 0.10832042757613247,
+      "trades": 388
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": -3.06608141009263,
+      "improvement": -4.06498848974263,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": -0.6164086700108005,
+      "trades": 1603
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": -2.384677034604897,
+      "improvement": -3.3835841142548966,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": -0.5507508884643983,
+      "trades": 1422
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": -2.1083070776028596,
+      "improvement": -3.107214157252859,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": -0.46845355405530076,
+      "trades": 1458
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "base_sharpe": 0.9989070796499995,
+      "filtered_sharpe": -2.595499152408365,
+      "improvement": -3.5944062320583643,
+      "half_width": 0.7512695678114487,
+      "retained": false,
+      "base_cagr": 0.370374241797119,
+      "filtered_cagr": -0.5716170099839712,
+      "trades": 1593
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": 0.5190611262360714,
+      "improvement": -0.016466648557047603,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": 0.07173552115405091,
+      "trades": 19
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": 0.6765178809969147,
+      "improvement": 0.1409901062037957,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": 0.10684099773785927,
+      "trades": 12
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": 0.2809152564158727,
+      "improvement": -0.25461251837724624,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": 0.03876985196772087,
+      "trades": 24
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": 0.3362994624694933,
+      "improvement": -0.19922831232362564,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": 0.04643979900826123,
+      "trades": 35
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": -0.024676001561708127,
+      "improvement": -0.5602037763548271,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": -0.016048039821874083,
+      "trades": 124
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": -0.07686210265074646,
+      "improvement": -0.6123898774438654,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": -0.029410240694776157,
+      "trades": 106
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": 0.1349902427114263,
+      "improvement": -0.4005375320816927,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": 0.00887098935221009,
+      "trades": 121
+    },
+    {
+      "kind": "spot",
+      "symbol": "BTCUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "base_sharpe": 0.535527774793119,
+      "filtered_sharpe": 0.13358524926789328,
+      "improvement": -0.4019425255252257,
+      "half_width": 0.6698469476253651,
+      "retained": false,
+      "base_cagr": 0.11418109222698902,
+      "filtered_cagr": 0.008909820235022181,
+      "trades": 118
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "macd_hist",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": 0.3248700639840735,
+      "improvement": -0.3116268282849849,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": 0.055818768240533556,
+      "trades": 288
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_level",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": 0.519550844975904,
+      "improvement": -0.11694604729315439,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": 0.12494998568349303,
+      "trades": 168
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "adx_change",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": -0.20815285640223555,
+      "improvement": -0.8446497486712939,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": -0.11395633986481146,
+      "trades": 286
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "vwap_dist",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": 0.4174752362290612,
+      "improvement": -0.21902165603999718,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": 0.09192988741720609,
+      "trades": 360
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "body",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": -2.407716743479571,
+      "improvement": -3.0442136357486294,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": -0.6033045774890325,
+      "trades": 1479
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "upper_wick",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": -1.72001494916134,
+      "improvement": -2.3565118414303985,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": -0.4925693750216745,
+      "trades": 1316
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "lower_wick",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": -1.6988997007089863,
+      "improvement": -2.3353965929780447,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": -0.4717350823614629,
+      "trades": 1340
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "4h",
+      "feature": "clv",
+      "base_sharpe": 0.6364968922690584,
+      "filtered_sharpe": -2.4409541481332435,
+      "improvement": -3.077451040402302,
+      "half_width": 0.7378251504992754,
+      "retained": false,
+      "base_cagr": 0.20849361812874045,
+      "filtered_cagr": -0.6278975734695416,
+      "trades": 1483
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "macd_hist",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": 0.37687068320062195,
+      "improvement": -0.0349438026365122,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": 0.04910312002892803,
+      "trades": 15
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_level",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": 0.4983436618584592,
+      "improvement": 0.08652917602132504,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": 0.07197083589533193,
+      "trades": 8
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "adx_change",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": 0.9750541913732039,
+      "improvement": 0.5632397055360698,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": 0.13110494320876454,
+      "trades": 17
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "vwap_dist",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": 0.3319302158075152,
+      "improvement": -0.07988427002961895,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": 0.046682285208707874,
+      "trades": 18
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "body",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": -0.5863563692028089,
+      "improvement": -0.9981708550399431,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": -0.08675742562511657,
+      "trades": 105
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "upper_wick",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": 0.07618744746914628,
+      "improvement": -0.33562703836798785,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": -0.003534344227501207,
+      "trades": 86
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "lower_wick",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": 0.10293979505619742,
+      "improvement": -0.3088746907809367,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": 0.00328687029115593,
+      "trades": 102
+    },
+    {
+      "kind": "spot",
+      "symbol": "ETHUSDT",
+      "tf": "1D",
+      "feature": "clv",
+      "base_sharpe": 0.41181448583713415,
+      "filtered_sharpe": -0.10474779857179183,
+      "improvement": -0.5165622844089259,
+      "half_width": 0.6242057450836503,
+      "retained": false,
+      "base_cagr": 0.07400628740459769,
+      "filtered_cagr": -0.025740109434553293,
+      "trades": 101
+    }
+  ],
+  "verdicts": {
+    "macd_hist": {
+      "stage_a_passes": 0,
+      "cells": 8,
+      "median_partial_ic": -0.007779566343335516,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "REJECTED"
+    },
+    "adx_level": {
+      "stage_a_passes": 0,
+      "cells": 8,
+      "median_partial_ic": 0.00662860846710225,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "REJECTED"
+    },
+    "adx_change": {
+      "stage_a_passes": 0,
+      "cells": 8,
+      "median_partial_ic": 0.01857985696926054,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "REJECTED"
+    },
+    "vwap_dist": {
+      "stage_a_passes": 1,
+      "cells": 8,
+      "median_partial_ic": -0.020556258988322928,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "REJECTED"
+    },
+    "body": {
+      "stage_a_passes": 4,
+      "cells": 8,
+      "median_partial_ic": -0.04914813874315369,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "WEAK_SIGNAL"
+    },
+    "upper_wick": {
+      "stage_a_passes": 1,
+      "cells": 8,
+      "median_partial_ic": 0.018666045250712606,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "REJECTED"
+    },
+    "lower_wick": {
+      "stage_a_passes": 2,
+      "cells": 8,
+      "median_partial_ic": -0.01883259584087416,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "REJECTED"
+    },
+    "clv": {
+      "stage_a_passes": 4,
+      "cells": 8,
+      "median_partial_ic": -0.044815312823607484,
+      "filter_retained_4h": 0,
+      "filter_retained_1d": 0,
+      "verdict": "WEAK_SIGNAL"
+    }
+  },
+  "validation_accessed": false,
+  "final_test_accessed": false
+}

@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 8B Human Labeling</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#1d2330; --muted:#5b6474; --line:#d9dde5; --accent:#2b5bd7; --warn:#fff4d6; --warnline:#e0b84a; --ok:#1f8a4c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
+  header { background:var(--card); border-bottom:1px solid var(--line); padding:12px 24px; position:sticky; top:0; z-index:5; }
+  .top { display:flex; flex-wrap:wrap; align-items:center; gap:16px 28px; }
+  h1 { font-size:17px; margin:0; letter-spacing:.04em; }
+  .tabs button { border:1px solid var(--line); background:#fff; padding:6px 12px; border-radius:6px; cursor:pointer; font-size:14px; }
+  .tabs button.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .prog { font-size:13px; color:var(--muted); }
+  .bar { height:8px; background:#e6e9ef; border-radius:4px; overflow:hidden; margin-top:6px; }
+  .bar > div { height:100%; background:var(--accent); width:0; transition:width .2s; }
+  main { max-width:1500px; margin:0 auto; padding:18px 24px 60px; display:grid; grid-template-columns: minmax(0, 1fr) 380px; gap:20px; }
+  @media (max-width:1100px) { main { grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; }
+  .meta { display:grid; grid-template-columns: 130px 1fr; gap:4px 12px; font-size:14px; }
+  .meta b { color:var(--muted); font-weight:600; }
+  .filing { font-size:14px; color:var(--muted); margin-bottom:6px; }
+  h2 { font-size:13px; letter-spacing:.06em; color:var(--muted); margin:18px 0 8px; text-transform:uppercase; }
+  .text { white-space:pre-wrap; font-size:16px; line-height:1.6; max-height:46vh; overflow:auto; padding:12px 14px; border:1px solid var(--line); border-radius:8px; background:#fcfcfd; }
+  .text.empty { color:var(--muted); font-style:italic; }
+  mark { background:#ffe58a; padding:0 1px; }
+  .labels { display:grid; grid-template-columns:1fr; gap:8px; }
+  .lab { display:flex; gap:12px; align-items:flex-start; text-align:left; border:1px solid var(--line); background:#fff; border-radius:8px; padding:9px 12px; cursor:pointer; font:inherit; }
+  .lab:hover { border-color:var(--accent); background:#f3f6ff; }
+  .lab .key { font-weight:700; font-size:18px; min-width:26px; color:var(--accent); }
+  .lab .name { font-weight:600; font-size:14px; }
+  .lab .desc { color:var(--muted); font-size:13px; line-height:1.35; }
+  .lab.current { background:var(--warn); border-color:var(--warnline); }
+  .badge { display:inline-block; background:var(--warn); border:1px solid var(--warnline); border-radius:6px; padding:6px 10px; font-size:14px; margin-bottom:10px; }
+  .nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .nav button, .small { border:1px solid var(--line); background:#fff; padding:7px 12px; border-radius:6px; cursor:pointer; font-size:14px; }
+  .nav button:hover, .small:hover { border-color:var(--accent); }
+  textarea { width:100%; min-height:64px; font:inherit; font-size:14px; padding:8px; border:1px solid var(--line); border-radius:6px; resize:vertical; }
+  .tags { display:flex; flex-wrap:wrap; gap:6px; margin:6px 0; }
+  .tags button { font-size:12px; padding:3px 8px; }
+  details { margin-top:14px; }
+  summary { cursor:pointer; font-size:14px; color:var(--accent); }
+  .aid { font-size:13px; color:var(--ink); line-height:1.45; }
+  .aid dt { font-weight:600; margin-top:8px; }
+  .aid dd { margin:2px 0 0 0; color:var(--muted); }
+  .shortcuts { font-size:12px; color:var(--muted); margin-top:12px; }
+  .status { font-size:13px; color:var(--ok); min-height:18px; }
+  .status.err { color:#b3261e; }
+  .modal { position:fixed; inset:0; background:rgba(20,24,32,.55); display:none; align-items:center; justify-content:center; z-index:20; }
+  .modal.open { display:flex; }
+  .modal .box { background:#fff; width:min(1100px, 94vw); height:88vh; border-radius:10px; display:flex; flex-direction:column; overflow:hidden; }
+  .modal .head { display:flex; gap:10px; align-items:center; padding:10px 14px; border-bottom:1px solid var(--line); }
+  .modal .body { flex:1; overflow:auto; padding:14px 18px; white-space:pre-wrap; font-size:15px; line-height:1.55; }
+  input[type=text] { font:inherit; font-size:14px; padding:6px 8px; border:1px solid var(--line); border-radius:6px; }
+  .done { text-align:center; padding:40px 20px; }
+  .done h2 { font-size:22px; color:var(--ok); text-transform:none; letter-spacing:0; }
+  code { background:#eef1f6; padding:1px 5px; border-radius:4px; font-size:13px; }
+  .guide { white-space:pre-wrap; font-size:13px; max-height:60vh; overflow:auto; border:1px solid var(--line); border-radius:8px; padding:10px; background:#fcfcfd; }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>PHASE 8B HUMAN LABELING</h1>
+    <div class="tabs"><button id="tab-main" onclick="switchDs('main')">Main sample</button> <button id="tab-audit" onclick="switchDs('audit')">Retrieval audit</button></div>
+    <div class="prog" id="prog-line"></div>
+    <div style="margin-left:auto; display:flex; gap:8px; align-items:center;">
+      <input type="text" id="jump" placeholder="Jump to event ID / accession" size="30">
+      <button class="small" onclick="jump()">Go</button>
+      <button class="small" onclick="undo()" id="undo-btn" title="Undo last label (restores the previous value on disk)">Undo last label</button>
+    </div>
+  </div>
+  <div class="bar"><div id="bar"></div></div>
+</header>
+
+<main>
+  <section>
+    <div class="card" id="filing-card">
+      <div class="filing" id="filing-line"></div>
+      <div class="meta" id="meta"></div>
+      <div style="margin:12px 0 0; display:flex; gap:8px; align-items:center;">
+        <input type="text" id="search" placeholder="Highlight a word in the passages (your own search)" size="42" oninput="renderTexts()">
+        <button class="small" onclick="document.getElementById('fulldetails').open = true; document.getElementById('fulldetails').scrollIntoView({behavior:'smooth'});">View full filing text below</button>
+        <button class="small" onclick="openFull()">Open full text in a large window</button>
+      </div>
+      <div class="badge" id="nopassage" style="display:none; margin-top:12px;">The search matched this filing in a document that is not part of the package (for example an EX-10 agreement), so no keyword passage exists. Read the full filing text below; if it does not mention share repurchases at all, the guide says I with NOMENTION.</div>
+      <h2>Relevant 8-K passage</h2>
+      <div class="text" id="t8k"></div>
+      <h2>Relevant exhibit / press release</h2>
+      <div class="text" id="tex"></div>
+      <details id="fulldetails" ontoggle="if(this.open)loadInline()">
+        <summary>Full filing text (8-K body and EX-99 exhibits)</summary>
+        <div style="margin:8px 0; display:flex; gap:8px; align-items:center;"><input type="text" id="isearch" placeholder="Highlight in full text" size="30" oninput="renderInline()"><span id="ipath" style="font-size:12px; color:#5b6474;"></span></div>
+        <div class="text" id="ifull" style="max-height:70vh;"></div>
+      </details>
+    </div>
+    <div class="card done" id="done-card" style="display:none;"></div>
+  </section>
+
+  <aside>
+    <div class="card">
+      <div id="current-badge"></div>
+      <h2 style="margin-top:0">Choose the best label</h2>
+      <div class="labels" id="labels"></div>
+      <h2>Optional note</h2>
+      <div class="tags" id="tags"></div>
+      <textarea id="note" placeholder="Optional (e.g. AMBIG, SIZE=$100m, PRIOR=..., PRESSREL_DATE=...)" onblur="saveNote()"></textarea>
+      <div class="status" id="status"></div>
+      <div class="nav">
+        <button onclick="go(cur.index-1)">&larr; Previous</button>
+        <button onclick="skip()">Skip temporarily</button>
+        <button onclick="go(cur.index+1)">Next &rarr;</button>
+        <button onclick="nextUnlabeled()">Next unlabeled &raquo;</button>
+      </div>
+      <details><summary>Decision aids (neutral rules from the guide)</summary>
+        <dl class="aid">
+          <dt>A vs B</dt><dd>Existing program still had capacity and is enlarged &rarr; B. Old program completed/expired and a genuinely new one starts &rarr; A.</dd>
+          <dt>B vs C</dt><dd>Extra dollars or shares &rarr; B. Time extension only &rarr; C.</dd>
+          <dt>B vs D</dt><dd>Board increases the authorization &rarr; B. Only reports what was bought / what remains &rarr; D.</dd>
+          <dt>F</dt><dd>ASR execution or settlement under an existing authorization &rarr; F. If the same filing also independently announces a new/increased authorization &rarr; A or B (note ASR).</dd>
+          <dt>J</dt><dd>Newly announced self-tender / fixed-price / Dutch-auction offer for the company's own common stock &rarr; J. Only if a separate new/increased general authorization is clearly also announced &rarr; A or B (note TENDER). Results or extensions of an earlier tender &rarr; D or G.</dd>
+          <dt>I</dt><dd>Debt or notes, preferred, warrants, units, fund redemptions, another company's program, employee-plan withholding, merger-related repurchase &rarr; I. No repurchase mention in the shown text &rarr; I with NOMENTION.</dd>
+          <dt>Doubt</dt><dd>Unsure between A/B and anything else &rarr; the non-A/B label, note AMBIG.</dd>
+        </dl>
+      </details>
+      <details><summary>Detailed labeling guide (full frozen rules)</summary><div class="guide" id="guide">Loading...</div></details>
+      <div class="shortcuts">Shortcuts (when no text box has focus): <b>A</b>-<b>J</b> label &middot; <b>&larr;</b> previous &middot; <b>&rarr;</b> next unlabeled &middot; <b>F</b> is a label, so use the button to open full text &middot; <b>Ctrl+Z</b> undo</div>
+    </div>
+  </aside>
+</main>
+
+<div class="modal" id="modal" onclick="if(event.target===this)closeFull()">
+  <div class="box">
+    <div class="head">
+      <b>Full filing text</b>
+      <input type="text" id="msearch" placeholder="Highlight in full text" size="30" oninput="renderFull()">
+      <span id="mpath" style="font-size:12px; color:#5b6474; margin-left:auto;"></span>
+      <button class="small" onclick="closeFull()">Close</button>
+    </div>
+    <div class="body" id="mbody"></div>
+  </div>
+</div>
+
+<script>
+const LABELS = [
+  ['A','NEW AUTHORIZATION','A genuinely new authorization for future open-market / private repurchases of the company\'s own common stock (incl. a new program replacing one that was exhausted or expired). Self-tenders are J.'],
+  ['B','INCREASE / EXPANSION','An existing authorization that still had capacity is increased or expanded by additional dollars or shares (or replaced by a larger one).'],
+  ['C','RENEWAL / EXTENSION','Existing program extended in time or re-approved without an increase in size.'],
+  ['D','ROUTINE UPDATE','Progress under an existing program: shares bought, amount remaining, "we continue to repurchase".'],
+  ['E','HISTORICAL REPURCHASES','Past repurchase activity described, with no authorization news.'],
+  ['F','ASR EXECUTION / UPDATE','Accelerated share repurchase entered, delivered or settled under an existing authorization.'],
+  ['G','COMPLETED / EXPIRED / TERMINATED','Program finished, expired or terminated; nothing new authorized.'],
+  ['H','HISTORICAL / BACKGROUND REFERENCE','Boilerplate, risk factor, footnote or general capital-allocation mention.'],
+  ['I','IRRELEVANT / FALSE POSITIVE','Not a repurchase of the company\'s own common stock (debt, preferred, warrants, units, funds, another company) or no mention in the shown text.'],
+  ['J','SELF-TENDER / DUTCH AUCTION','Newly announced self-tender, fixed-price or Dutch-auction offer for the company\'s own common stock; distinct from A/B authorizations.'],
+];
+const TAGS = ['AMBIG','ASR','TENDER','NOMENTION','SIZE=','PRIOR=','PRESSREL_DATE='];
+let ds = 'main', cur = null, state = null, fullText = null;
+
+async function api(path, body) {
+  const r = await fetch(path, body ? {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)} : {});
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status));
+  return j;
+}
+function esc(s) { return (s || '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function hl(text, term) {
+  const e = esc(text);
+  if (!term || term.length < 2) return e;
+  const re = new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+  return e.replace(re, m => '<mark>' + m + '</mark>');
+}
+function setStatus(msg, err) { const s = document.getElementById('status'); s.textContent = msg; s.className = 'status' + (err ? ' err' : ''); }
+
+async function refreshState() {
+  state = await api('/api/state');
+  const m = state.datasets.main, a = state.datasets.audit;
+  document.getElementById('prog-line').innerHTML = `Main sample: <b>${m.done} / ${m.total}</b> completed &nbsp;&middot;&nbsp; Retrieval audit: <b>${a.done} / ${a.total}</b> completed &nbsp;&middot;&nbsp; Total: <b>${state.done} / ${state.total}</b>`;
+  const d = state.datasets[ds];
+  document.getElementById('bar').style.width = d.pct + '%';
+  document.getElementById('tab-main').className = ds === 'main' ? 'active' : '';
+  document.getElementById('tab-audit').className = ds === 'audit' ? 'active' : '';
+  document.getElementById('undo-btn').disabled = !state.undo_available;
+}
+
+function buildLabels() {
+  const box = document.getElementById('labels'); box.innerHTML = '';
+  for (const [k, name, desc] of LABELS) {
+    const b = document.createElement('button'); b.className = 'lab'; b.id = 'lab-' + k;
+    b.innerHTML = `<span class="key">${k}</span><span><div class="name">${esc(name)}</div><div class="desc">${esc(desc)}</div></span>`;
+    b.onclick = () => label(k); box.appendChild(b);
+  }
+  const t = document.getElementById('tags'); t.innerHTML = '';
+  for (const tag of TAGS) { const b = document.createElement('button'); b.className = 'small'; b.textContent = tag; b.onclick = () => addTag(tag); t.appendChild(b); }
+}
+function addTag(tag) { const n = document.getElementById('note'); n.value = (n.value ? n.value.replace(/\s*$/, '') + ' ' : '') + tag; n.focus(); }
+
+async function load(i) {
+  cur = await api(`/api/row?ds=${ds}&i=${i}`);
+  const r = cur.row; fullText = null;
+  document.getElementById('done-card').style.display = 'none'; document.getElementById('filing-card').style.display = '';
+  document.getElementById('filing-line').textContent = `${state.datasets[ds].title} - Filing ${cur.index + 1} / ${cur.total}`;
+  document.getElementById('meta').innerHTML = [['Company', r.company_name], ['Filing date', r.filing_date], ['Form', r.form], ['Accepted (ET)', r.acceptance_datetime_et],
+    ['Items', (r.items_8k || '').split('|').join(' | ')], ['SIC', r.sic], ['Documents', (r.documents || '').split('|').join(', ')], ['Event ID', r.event_id]]
+    .map(([k, v]) => `<b>${k}</b><span>${esc(v)}</span>`).join('');
+  document.getElementById('note').value = cur.note || '';
+  renderTexts();
+  const badge = document.getElementById('current-badge');
+  for (const [k] of LABELS) document.getElementById('lab-' + k).className = 'lab' + (cur.labeled && cur.current_label === k ? ' current' : '');
+  badge.innerHTML = cur.labeled ? `<div class="badge">Already labeled by you: <b>${cur.current_label}</b>. Clicking another label will change it (saved immediately; Undo available).</div>` : '';
+  setStatus('');
+  document.activeElement && document.activeElement.blur();
+}
+function renderTexts() {
+  const term = document.getElementById('search').value;
+  let anyText = false;
+  for (const [id, key] of [['t8k', 'passage_8k_body'], ['tex', 'passage_exhibits']]) {
+    const el = document.getElementById(id); const v = (cur.row[key] || '').trim();
+    el.className = 'text' + (v ? '' : ' empty');
+    el.innerHTML = v ? hl(v, term) : '(no keyword passage in this document type - see the full filing text below)';
+    anyText = anyText || !!v;
+  }
+  document.getElementById('nopassage').style.display = anyText ? 'none' : '';
+  const det = document.getElementById('fulldetails');
+  document.getElementById('ifull').innerHTML = ''; document.getElementById('ipath').textContent = ''; document.getElementById('isearch').value = '';
+  det.open = false;
+  if (!anyText) { det.open = true; }          // ontoggle loads the text
+}
+async function loadInline() {
+  if (!cur || document.getElementById('ifull').innerHTML) return;
+  document.getElementById('ifull').textContent = 'Loading...';
+  try { const r = await api(`/api/fulltext?ds=${ds}&i=${cur.index}`); fullText = r.text; document.getElementById('ipath').textContent = r.path; renderInline(); }
+  catch (e) { fullText = null; document.getElementById('ifull').innerHTML = '<b style="color:#b3261e">' + esc(e.message) + '</b>'; }
+}
+function renderInline() { if (fullText !== null) document.getElementById('ifull').innerHTML = hl(fullText, document.getElementById('isearch').value); }
+async function go(i) {
+  if (!cur || busy) return;
+  busy = true;
+  try { const n = cur.total; i = ((i % n) + n) % n; await load(i); } finally { busy = false; }
+}
+async function nextUnlabeled() {
+  await refreshState();
+  const k = cur ? cur.next_unlabeled : state.datasets[ds].first_unlabeled;
+  if (k === null || k === undefined) {
+    if (state.datasets[ds].complete) return showDone();
+    if (cur && !cur.labeled) return setStatus('This is the only unlabeled filing left in this dataset.');
+    const f = state.datasets[ds].first_unlabeled; if (f !== null && f !== undefined) return load(f);
+    return showDone();
+  }
+  await load(k);
+}
+async function skip() { await nextUnlabeled(); }
+let busy = false;   // one save/navigation at a time: a second click or key while a save is in flight is ignored, never applied to a stale filing
+async function label(k) {
+  if (!cur || busy) return;
+  busy = true; const idx = cur.index;
+  try {
+    const note = document.getElementById('note').value;
+    const res = await api('/api/label', {ds, i: idx, label: k, note});
+    state = res.state; await refreshState();
+    setStatus(`Saved ${k} for filing ${idx + 1} (written to disk).`);
+    if (res.next_unlabeled === null) { busy = false; return showDone(); }
+    await load(res.next_unlabeled);
+  } catch (e) { setStatus('NOT SAVED: ' + e.message, true); }
+  finally { busy = false; }
+}
+async function saveNote() {
+  if (!cur) return;
+  const note = document.getElementById('note').value;
+  if (note === (cur.note || '')) return;
+  try { await api('/api/note', {ds, i: cur.index, note}); cur.note = note; setStatus('Note saved.'); } catch (e) { setStatus('Note NOT saved: ' + e.message, true); }
+}
+async function undo() {
+  if (busy) return;
+  busy = true;
+  try {
+    const res = await api('/api/undo', {});
+    if (!res.undone) return setStatus('Nothing to undo.');
+    state = res.state; await refreshState();
+    if (res.ds !== ds) { ds = res.ds; await refreshState(); }
+    await load(res.index);
+    setStatus(`Undo: filing ${res.index + 1} restored to "${res.restored_label || '(blank)'}" on disk.`);
+  } catch (e) { setStatus('Undo failed: ' + e.message, true); }
+  finally { busy = false; }
+}
+async function jump() {
+  const q = document.getElementById('jump').value;
+  const r = await api(`/api/find?ds=${ds}&q=${encodeURIComponent(q)}`);
+  if (r.index === null) return setStatus('No filing with that ID in this dataset.', true);
+  await load(r.index); document.getElementById('jump').blur();
+}
+async function switchDs(k) { ds = k; cur = null; await refreshState(); await nextUnlabeled(); }
+async function showDone() {
+  await refreshState();
+  const d = state.datasets[ds];
+  document.getElementById('filing-card').style.display = 'none';
+  const box = document.getElementById('done-card'); box.style.display = '';
+  let html = `<h2>${d.title} labeling complete: ${d.done} / ${d.total}</h2><p>Saved file: <code>${esc(d.labeled_file)}</code></p>`;
+  const other = ds === 'main' ? 'audit' : 'main';
+  if (!state.datasets[other].complete) html += `<p><button class="small" onclick="switchDs('${other}')">Continue with the ${state.datasets[other].title} (${state.datasets[other].done} / ${state.datasets[other].total})</button></p>`;
+  if (state.all_complete) {
+    const rep = await api('/api/integrity');
+    html += `<h2>Phase 8B human labeling complete.</h2><p>Main CSV: <code>${esc(state.datasets.main.labeled_file)}</code><br>Retrieval-audit CSV: <code>${esc(state.datasets.audit.labeled_file)}</code><br>Integrity report: <code>${esc(rep.path)}</code></p>`;
+    for (const k of ['main', 'audit']) { const r = rep.reports[k]; html += `<p style="font-size:13px;color:#5b6474">${esc(r.dataset)}: rows ${r.output_rows}/${r.source_rows}, valid labels ${r.valid_label_rows}, blank ${r.blank_label_rows}, event IDs unchanged ${r.event_ids_unchanged}, other columns unchanged ${r.non_label_columns_unchanged}, duplicates ${r.duplicate_event_ids}</p>`; }
+  } else {
+    html += `<p><button class="small" onclick="go(0)">Review filings in this dataset</button></p>`;
+  }
+  box.innerHTML = html;
+}
+async function openFull() {
+  if (!cur) return setStatus('No filing is loaded (the server is not connected).', true);
+  const m = document.getElementById('modal'); m.classList.add('open');
+  document.getElementById('mbody').textContent = 'Loading...';
+  try { const r = await api(`/api/fulltext?ds=${ds}&i=${cur.index}`); fullText = r.text; document.getElementById('mpath').textContent = r.path; renderFull(); }
+  catch (e) { fullText = null; document.getElementById('mbody').innerHTML = '<b style="color:#b3261e">' + esc(e.message) + '</b>'; document.getElementById('mpath').textContent = ''; }
+}
+function renderFull() { if (fullText !== null) document.getElementById('mbody').innerHTML = hl(fullText, document.getElementById('msearch').value); }
+function closeFull() { document.getElementById('modal').classList.remove('open'); }
+
+document.addEventListener('keydown', ev => {
+  const tag = (ev.target.tagName || '').toLowerCase();
+  if (tag === 'input' || tag === 'textarea' || ev.target.isContentEditable) return;
+  if (ev.key === 'Escape') return closeFull();
+  if (document.getElementById('modal').classList.contains('open')) return;
+  if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'z') { ev.preventDefault(); return undo(); }
+  if (ev.ctrlKey || ev.altKey || ev.metaKey) return;
+  const k = ev.key.toUpperCase();
+  if (k.length === 1 && k >= 'A' && k <= 'J') { ev.preventDefault(); return label(k); }
+  if (ev.key === 'ArrowLeft') { ev.preventDefault(); return go(cur.index - 1); }
+  if (ev.key === 'ArrowRight') { ev.preventDefault(); return nextUnlabeled(); }
+});
+
+function fatal(msg) {
+  document.getElementById('filing-card').innerHTML = `<div class="badge" style="display:block; font-size:16px; line-height:1.5"><b>The labeler is not connected to its local server.</b><br>${esc(msg)}<br><br>
+    Do not open <code>labeler.html</code> as a file. Double-click <code>START_PHASE8B_LABELER.bat</code> (repository root or research/phase8b), keep its black window open, and use the address it opens: <code>http://127.0.0.1:8765/</code>.</div>`;
+  document.querySelector('aside').style.display = 'none';
+}
+(async () => {
+  if (location.protocol === 'file:') return fatal('This page was opened as a local file, so it cannot read or save anything.');
+  buildLabels();
+  try {
+    document.getElementById('guide').textContent = (await api('/api/guide')).guide;
+    await refreshState();
+  } catch (e) { return fatal('Server request failed: ' + e.message); }
+  if (state.datasets.main.complete && !state.datasets.audit.complete) ds = 'audit';
+  await refreshState();
+  await nextUnlabeled();
+})();
+</script>
+</body>
+</html>

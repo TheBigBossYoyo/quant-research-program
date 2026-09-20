@@ -1,0 +1,363 @@
+{
+  "experiment_id": "E048_20260909T151232",
+  "source": "E047_20260909T150950",
+  "classification": "TREND_REPLICATION_FAILURE",
+  "decision": "DO_NOT_OPEN_2025",
+  "gates": {
+    "G1_assets": true,
+    "G2_positive_fraction": false,
+    "G3_positive_sharpe_fraction": true,
+    "G4_median_sharpe": true,
+    "G5_median_alpha2": true,
+    "G6_common_block_lower_alpha": false,
+    "G7_new_names": false,
+    "G8_2021_positive": true,
+    "G9_years": true,
+    "G10_conservative": false,
+    "G11_vol_scaled": true,
+    "G12_remove_best_year": true,
+    "G13_concentration": true,
+    "G14_drawdown": false,
+    "G15_overlap": true,
+    "G16_no_defects": true
+  },
+  "positive_fraction": 0.4166666666666667,
+  "positive_sharpe_fraction": 0.8333333333333334,
+  "median_sharpe": 0.30387270028065727,
+  "median_cagr": -0.0698441538451003,
+  "median_drawdown": -0.7923122265110993,
+  "median_alpha2": 0.316917112441306,
+  "median_alpha5": -0.22885988682833724,
+  "median_alpha_univariate": 0.13176433882769306,
+  "positive_alpha2_fraction": 0.75,
+  "common_block_lower_alpha2": -0.3697989439642417,
+  "meta_cohort2": {
+    "14": {
+      "median_alpha_ci95": [
+        -0.3697989439642417,
+        0.7905650980817502
+      ],
+      "median_sharpe_ci95": [
+        -0.3957668465050781,
+        1.0850919818971287
+      ],
+      "positive_fraction_ci95": [
+        0.16666666666666666,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "30": {
+      "median_alpha_ci95": [
+        -0.30339047119925516,
+        0.7597838774056367
+      ],
+      "median_sharpe_ci95": [
+        -0.320017805889174,
+        1.0553250234697917
+      ],
+      "positive_fraction_ci95": [
+        0.25,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "60": {
+      "median_alpha_ci95": [
+        -0.3279525727160161,
+        0.7028030765364522
+      ],
+      "median_sharpe_ci95": [
+        -0.3077315853635854,
+        0.9366304794217218
+      ],
+      "positive_fraction_ci95": [
+        0.16666666666666666,
+        1.0
+      ],
+      "note": "Common calendar blocks across all assets; factor exposures estimated on full sample, paired return/factor bootstrap with coefficients re-estimated in each common time resample"
+    },
+    "asset_bootstrap_descriptive": [
+      -0.005476873166317016,
+      0.40288268111001296
+    ],
+    "heterogeneity": {
+      "alpha_std": 0.3738665872631623,
+      "alpha_iqr": 0.32245959193023016,
+      "alpha_min": -0.1968160348679652,
+      "alpha_max": 1.1478172096428625,
+      "random_effects": "Not used: correlated crypto units violate independent-effect sampling assumptions"
+    }
+  },
+  "new_names": {
+    "positive_fraction": 0.42857142857142855,
+    "median_sharpe": 0.2683799845108118,
+    "median_alpha2": 0.3340734596053761
+  },
+  "primary_portfolio": {
+    "total_net_return": 1.2927087622446076,
+    "cagr": 0.23034118308847873,
+    "volatility": 0.5784921809940596,
+    "sharpe": 0.6479237996193241,
+    "sortino": 0.97646020848933,
+    "calmar": 0.42979334432048033,
+    "max_dd": -0.5359347373158068,
+    "drawdown_duration_days": 1182,
+    "expected_shortfall_95": -0.06855512008258906,
+    "annual_arithmetic_return": 0.37481885195974085,
+    "trades": 0,
+    "average_trade": null,
+    "median_trade": null,
+    "win_rate": null,
+    "profit_factor": null,
+    "payoff_ratio": null,
+    "expectancy": null,
+    "top_month_positive_pnl_share": 0.24040184898859443,
+    "top_quarter_positive_pnl_share": 0.3161895235278828,
+    "top_year_positive_pnl_share": 0.5859314422873614,
+    "case": "stress",
+    "weighting": "equal",
+    "alpha_btc_market": 0.3269826772423815,
+    "alpha_ci_low": -0.21605957709751492,
+    "alpha_ci_high": 0.8700249315822779,
+    "beta_btc": -0.33938946082134286,
+    "beta_market": 0.28983615447036104,
+    "gross_exposure": 0.737809862056229,
+    "net_exposure": 0.004350524151536267,
+    "annual_turnover": 104.77258212943563,
+    "positive_asset_fraction": 0.4166666666666667,
+    "median_asset_sharpe": 0.30387270028065727,
+    "ret_2021": 0.8742322554748152,
+    "ret_2022": 0.002009501419180326,
+    "ret_2023": -0.10613944024823685,
+    "ret_2024": 0.3657898099507815
+  },
+  "concentration": {
+    "best_year": 2021,
+    "remove_best_year": {
+      "total_net_return": 0.2232788948901021,
+      "cagr": 0.06942058954822894,
+      "volatility": 0.4399726352408047,
+      "sharpe": 0.37049735484869695,
+      "sortino": 0.5766803973077709,
+      "calmar": 0.1305210177373678,
+      "max_dd": -0.5318728795688361,
+      "drawdown_duration_days": 897,
+      "expected_shortfall_95": -0.05002515083270385,
+      "annual_arithmetic_return": 0.16300869756252873,
+      "trades": 0,
+      "average_trade": null,
+      "median_trade": null,
+      "win_rate": null,
+      "profit_factor": null,
+      "payoff_ratio": null,
+      "expectancy": null,
+      "top_month_positive_pnl_share": 0.3786671746032314,
+      "top_quarter_positive_pnl_share": 0.5298883052772141,
+      "top_year_positive_pnl_share": 0.9939037965958014
+    },
+    "top1_trade_share": 0.03637881996562592,
+    "top5_trade_share": 0.1490762760684393,
+    "top10_trade_share": 0.2445296757754116,
+    "trades": 2841,
+    "remove_best1_trade_contributions": {
+      "total_net_return": 0.9727955056802768,
+      "cagr": 0.1850045674955596,
+      "volatility": 0.5708367923602907,
+      "sharpe": 0.5833543619599205,
+      "sortino": 0.8731314523412327,
+      "calmar": 0.3451998062714564,
+      "max_dd": -0.5359347373158045,
+      "drawdown_duration_days": 1182,
+      "expected_shortfall_95": -0.0681492206600494,
+      "annual_arithmetic_return": 0.33300013279058505,
+      "trades": 0,
+      "average_trade": null,
+      "median_trade": null,
+      "win_rate": null,
+      "profit_factor": null,
+      "payoff_ratio": null,
+      "expectancy": null,
+      "top_month_positive_pnl_share": 0.2419684678852854,
+      "top_quarter_positive_pnl_share": 0.3355849804709142,
+      "top_year_positive_pnl_share": 0.5354407589961266
+    },
+    "remove_best5_trade_contributions": {
+      "total_net_return": 0.1927099382252755,
+      "cagr": 0.04501040145097068,
+      "volatility": 0.5441450433171322,
+      "sharpe": 0.353789687739456,
+      "sortino": 0.5204132127280209,
+      "calmar": 0.08395769061373046,
+      "max_dd": -0.536108141159491,
+      "drawdown_duration_days": 1212,
+      "expected_shortfall_95": -0.06579209480661509,
+      "annual_arithmetic_return": 0.19251290496014098,
+      "trades": 0,
+      "average_trade": null,
+      "median_trade": null,
+      "win_rate": null,
+      "profit_factor": null,
+      "payoff_ratio": null,
+      "expectancy": null,
+      "top_month_positive_pnl_share": 0.15283496145411693,
+      "top_quarter_positive_pnl_share": 0.26430318054787083,
+      "top_year_positive_pnl_share": 0.7319348376296393
+    },
+    "top_quarter_share": 0.3161895235278828,
+    "quarter_pnl": {
+      "2021Q1": 1424.0045057325478,
+      "2021Q2": 6497.206024275369,
+      "2021Q3": 3394.2016412744233,
+      "2021Q4": -2573.0896165341874,
+      "2022Q1": 337.0458964558311,
+      "2022Q2": 5059.6760037500935,
+      "2022Q3": -5294.371791773447,
+      "2022Q4": -64.68738465996648,
+      "2023Q1": -3932.864329432614,
+      "2023Q2": 374.97796071871926,
+      "2023Q3": 207.46431783288972,
+      "2023Q4": 1357.124925548671,
+      "2024Q1": 534.4743939819055,
+      "2024Q2": -1283.4531705539666,
+      "2024Q3": -1982.1847851748844,
+      "2024Q4": 8871.563031004693
+    }
+  },
+  "long_short": {
+    "portfolio_long_contribution": 1.6152743831747414,
+    "portfolio_short_contribution": -0.08417790795590574,
+    "short_side_sharpe": -0.05519724029464878,
+    "long_side_sharpe": 0.8395124793137988,
+    "short_side_expectancy_annual": -0.02103007282950417,
+    "drawdown_full": -0.5359347373158068,
+    "drawdown_without_short_contribution": -0.4820439142130377,
+    "sharpe_without_short_contribution": 0.8235450561916692,
+    "short_contribution_by_year": {
+      "2021": 0.014044993832264957,
+      "2022": 0.2902506110660849,
+      "2023": -0.24971161483001653,
+      "2024": -0.13876189802423902
+    },
+    "long_contribution_by_year": {
+      "2021": 1.0086013913631835,
+      "2022": -0.18417321433522438,
+      "2023": 0.20213424058080887,
+      "2024": 0.5887119655659734
+    },
+    "assets_with_positive_short_pnl": 1,
+    "assets_with_positive_long_pnl": 8
+  },
+  "cross_cohort": {
+    "cohort1_portfolio_sharpe_ci95": [
+      -0.4474901593503558,
+      1.9519447659185523
+    ],
+    "cohort2_portfolio_sharpe_ci95_2022_2024": [
+      -1.0085413810244928,
+      1.669910006612029
+    ],
+    "difference_ci95": [
+      -1.0392360840093704,
+      0.23205118452618384
+    ],
+    "portfolio_correlation_2022_2024": 0.8796384447692214,
+    "monthly_return_correlation": 0.8875332352163736,
+    "new_names_vs_cohort1_portfolio_correlation": 0.7747181148154476,
+    "cohort_year_signs": {
+      "c1_2022": 0.019098654554639882,
+      "c1_2023": 0.48224496786239057,
+      "c1_2024": 0.3803575375253081,
+      "c2_2021": 0.8742322554748152,
+      "c2_2022": 0.002009501419180326,
+      "c2_2023": -0.10613944024823685,
+      "c2_2024": 0.3657898099507815
+    },
+    "median_alpha2_by_year_cohort2": {
+      "2021": 0.19076037095491788,
+      "2022": -0.3558179604209707,
+      "2023": -0.10950371860705344,
+      "2024": 0.31786501285991586
+    },
+    "heterogeneity_between_cohorts": {
+      "median_sharpe_c1": 0.6523468643183593,
+      "median_sharpe_c2": 0.30387270028065916,
+      "median_sharpe_new": 0.26837998451081313
+    }
+  },
+  "trend_spec_sha256": "96b70e8c6c341e717a217a44f1cd0c24cf74d51f78e9efc9e5d3a05ed519101c",
+  "cohort_sha256": "5ca28d27659a45dcb3f01f7f7bf9ca6bbc63a1401244243897a9cac42b17a4ec",
+  "source_hashes": {
+    "research\\acquire.py": "61edfbeea26634979af728ffbc1b7393c6d59b636743ffa6537a89a371997229",
+    "research\\acquire_carry_prices.py": "fc28c5d934b6b917212bde3b0efdda57f54f9a454fa41dcd73af472d3f106f24",
+    "research\\acquire_economic_benchmarks.py": "d700f46df5dbee925707c5811163f2fb93e79d2edf652a4fd496d4aa82bf8929",
+    "research\\acquire_funding.py": "21911e46f84ecd184cb226a74c408418abe1dd233b9f42d6a81e471c33ff219e",
+    "research\\acquire_universe.py": "c8d6d5f9435a4d4ac985e00fe8ba7689964e00007c6aeb794aa99c3546c06e3e",
+    "research\\archive_checkpoint.py": "9956fd4a397f7a34d72a8258bc8e8d9af318f062baf7ef1a801da7010759a4df",
+    "research\\audit.py": "62c7df0c661374956e9e2473a8b7fe30aaa3d54f29e74fa6569d58e231ef8611",
+    "research\\breadth_timing.py": "724394d12c96a478cefd672259f0aa23ca5e6dd98179c5b252b8daceb83b952f",
+    "research\\capped_carry.py": "814d0e6ae445bd128043b9ec6a8cd90ea4ab6c0917f83b55e6438518b01b35c4",
+    "research\\carry_backtest.py": "2d3264dcc492768f88e85978e57ef930410a36bea112292ce96e568449582045",
+    "research\\carry_screen.py": "dcda07089b450d1d4d4188c25c6e2f60621e4509f06cc4976bb67fbc81b02777",
+    "research\\carry_uncertainty.py": "61ce1fcc326905693493d796c52e976776b69d580db7f8b8d352bccc8e284438",
+    "research\\continuous_carry.py": "d58edebc007c6ee48b90cbeab9cd8db934a800636ee7176bb3ac82b2bddce596",
+    "research\\core.py": "3a05f568838b2a151a26cddf557d848dbe5c81221b04fd1956b1ca6337c9129a",
+    "research\\cross_sectional_audit.py": "882187a33b8bf37c4f2a78e8900a47330fb3856c21630fdefa0d386074f72910",
+    "research\\cross_sectional_hostile.py": "31120d1a4365a986044aecdd04238f4cc36c69f9d1521779dc6de922ef83f44c",
+    "research\\cross_sectional_screen.py": "490e8193fd5cd2a024607a7a7842424907058cd2160a2270088ddc6e1cc8d28a",
+    "research\\economic_audit.py": "e937d84aeaa2ddd6ad3eb7717f97e4b1b18e6e4f4296cdd7df8b6f2337866911",
+    "research\\etf_data.py": "b0252e9d31a6d49416254e3c08d32c05e94babc21f712a02f2229cb6e79677fd",
+    "research\\etf_screen.py": "41c9ac156556256312a23855e2c8e6ee4b3ffcf676d507f8afc5ca1a964c407c",
+    "research\\flow_screen.py": "a9baa7588ecd43ada3fa7d8e00fe7dd16078a638b333c68f51c13814f2f84e28",
+    "research\\micro_data.py": "548f2b02f140515143e072ab5b8e4a1b7e557d6a2d1ba5fa19d62bc28194f7a2",
+    "research\\micro_horizon.py": "924471117728e46d6fedfb65649aaf6a2d23269f6c93d525f91cf714cb39f619",
+    "research\\micro_ledger.py": "dce788c3b4500b3ea7d106e4a3049952b8cd84c6accb7c8dcd890d6e1e7bd47e",
+    "research\\micro_passive.py": "88e9fa884ad0cd5dfed389177214e24915009a45f70325fd04e843abb23466b6",
+    "research\\micro_passive_bound.py": "fc83a92f34b0d5f8ea89a974e398fa06f431aa718d9e10784bc839f225793180",
+    "research\\micro_positioning.py": "ee95402b5c1e49e0d069d3959adc503251748c84d383f6acf0dc44f82a808530",
+    "research\\micro_screen.py": "bd5e215e665b96e21661664f81ac1e90f23833b197e2c9686e54fabf2daeea63",
+    "research\\micro_spot_screen.py": "7d5416ce033a36736a7526edf9797f841c9261ede64cb10c6aed99fc6c8ccc32",
+    "research\\perpetual_audit.py": "c49cb66e6c2054da925f7fa5c2cfcdbffd9d6067862fa365ab5308738bca6aa6",
+    "research\\perpetual_screen.py": "f9a862ef2ec2fd314917ac5100c3cdc1f4b77133a274bb48cf65a242333e3197",
+    "research\\phase4_audit.py": "ca694650d34488b5863da7ec4d5f2a479dabb378d26b503b160fd5b3de994482",
+    "research\\phase4_capital.py": "b5c41fd596d60cbe14b3dcd4f49e24e8908986f91fcff7ec0ff4e5209417c3fb",
+    "research\\phase4_data.py": "b3be3d20ef00aa07f2146f1bfcddd84380f8feec4749a861f938c2b9598a47b5",
+    "research\\phase4_engine.py": "4f0b81093df2aaf5e7eee5cccf4cfed06f12aae51a485d0a845d8edaba3d2fb6",
+    "research\\phase4_execute.py": "e599e80d9a05f0c92ffdda9dcef4ccefd424446c75c9f3402d995ed93ef900e2",
+    "research\\phase4_final_tables.py": "f1d1f9904618423880a6add67cba417ba4c5b89b835786ebc7e30c95cbec14e2",
+    "research\\phase4_report.py": "0a3ff7b56ddda7b8270499021b5e667071b4c6f2cfdadd5359966a7d7dd5651e",
+    "research\\phase4_run.py": "1e3f999423fe359f191ac60ac2f71ed5cd5c8acb38bdf37d4dc417fd1ac8e639",
+    "research\\phase4_stats.py": "77d4ecfcb4436a0a721ab46d5ec436f8c1c7514dfa74591458d9e062546c6d0e",
+    "research\\phase4_supplement_audit.py": "7e4afc4717179e6da422758cb2061320faef094f02aa98a0731a08a18b1e9ad8",
+    "research\\phase4_supplement_delta.py": "115b3cfdd85b172715592f2882eff11c003a5f37ffeba8ace6ba3948a14769a3",
+    "research\\phase5_acquire.py": "e026728b0b8d74bc759482eb8d59f6ecda9f4ed3ecfb457124ad837ffc4a0eb0",
+    "research\\phase5_analysis.py": "914322bd60183a0613214b8b4777e2bcf898ac1c197d25f4564da2c7ba9a1d46",
+    "research\\phase5_cohort.py": "6c800f2f927644a4e03c89ecd966bb0242dcd5772f386bc725a8b42b6b34ec65",
+    "research\\phase5_run.py": "30fdc1b763bd654ebbe687d99617c3dbb7772d7d69dafe7cb4ab4a29c89a506d",
+    "research\\positioning_screen.py": "c68dc54978f9b7aaae3dcb529cedaaaaec00a3cbda842a455322cf85e54fb887",
+    "research\\repair_mark_gaps.py": "3cbc7e27e209ad4f7495b6c53a711eb7214cf034d7602483ef10f4367cf6f724",
+    "research\\report.py": "32db3723e50957ed2209426df66e7144fe0fc7f6e10483d3314ba649384dde3d",
+    "research\\robustness.py": "9aff840e0171d2f8c2b06e5b006ce351caf8c831848e673b15af501b027a5c18",
+    "research\\screen.py": "66f4b8296d723b2aa7db64f7cbc945f55df7c7e76b1d4668e87abd1d82c5635f",
+    "research\\seasonality_leadlag.py": "765632e1819f39cca0464e3469ea7326896dba34557844892b06c57664ba8ca7",
+    "research\\spot_micro_data.py": "767f3edaca57405c67d1f165e8c1d5fd4e51906874b5647f34b569fbfb03b671",
+    "research\\ta_ablation.py": "563c8989246845c421de4d7a018d2889e7625f55168a7ff05b0b1617f198a85d",
+    "research\\ta_audit.py": "3b6d72b82a971d5802b53c65419167dcfb119c9381065d999a01fae12707a0ce",
+    "research\\ta_combo.py": "c133bb21dcb80078421feb460b5eabd0f2a6a997434cdb8585cbfe79f73a2737",
+    "research\\ta_data.py": "8fd5e891dace67365dc134f1ddff21c51bd6f3f99670e0633338f56eb416a149",
+    "research\\ta_engine.py": "572331a73b9d3edc1092967e3da36b8a1c5647b088828b2b4447e893ee4863ce",
+    "research\\ta_ensemble.py": "a9ac9306a152d5ffe51153b634143869a28376a3301c079b31996a9f42590a24",
+    "research\\ta_meanrev.py": "e3fb2214bb00d6b83e11e8f32c0308bd2749b38a6ecf4c0795425f338b2216a6",
+    "research\\ta_pullback.py": "c776b327f1fd9a3b0346958fc7e82903f7aa1635e82ecdb8ecb9ff92ea8dd816",
+    "research\\ta_relstrength.py": "8995c174d5c68a958745349d51f4b43c6550193200f1e266eb8e3e3a8a923323",
+    "research\\ta_screen.py": "6ebdc2296d5a123e27a1f623de88e786b3ffb610c858a081f1aa87b4132d6cce",
+    "research\\ta_stack.py": "f24d504df767d693de0f91b4ba011a45d3570edee5c1806abb897290836d7b12",
+    "research\\ta_stats.py": "3fa2bb413412b11e4ffa773ed12ac94541a042b6990eac9f64b7526a160f2a4d",
+    "research\\ta_volcomp.py": "adbe4db4ca7d3b0531bb880a43a6f1261495098fe046973aa8807a3aad3a7367",
+    "research\\universe.py": "42d86f761aeb50e1daa9f937bc4b30ce5bd7903bb40bacac44bc7ded1f0312a9",
+    "research\\vol_data.py": "53721bfe32553fc7bf75b560502ced9ea2c983e4dd0b9cda63fc630c6f504831",
+    "research\\vol_screen.py": "7bc144ec0d46ff6eea522e2f3f32434d9ed019247ea910fb57206c5e9cc4af64"
+  },
+  "validation_2025": "LOCKED",
+  "holdout_2026": "UNTOUCHED"
+}
