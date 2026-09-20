@@ -1,0 +1,22 @@
+{
+ "measured_on": "development pool only (dev_pool == True), 8-K forms",
+ "dev_pool_8k_rows": 15608,
+ "v17_positives": 1464,
+ "v18_positives": 1533,
+ "v17_positive_rate": 0.0938,
+ "v18_positive_rate": 0.09822,
+ "gained": 76,
+ "lost": 7,
+ "any_label_change": 215,
+ "gained_by_rule": {
+  "auth_new": 64,
+  "auth_increase": 12
+ },
+ "lost_to_label": {
+  "D": 3,
+  "F": 2,
+  "UNCLASSIFIED": 1,
+  "C": 1
+ },
+ "note": "no human label exists for the development pool; gained/lost cases were read by the agent, not labelled"
+}

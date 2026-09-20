@@ -1,0 +1,110 @@
+{
+ "checked_utc": "2026-09-20T19:24:46.935443+00:00",
+ "n": 15,
+ "all_visible": true,
+ "human_csv_columns": [
+  "gold2_id",
+  "company",
+  "filing_date",
+  "form",
+  "items_8k",
+  "source_document",
+  "key_passage",
+  "wider_context",
+  "human_label",
+  "human_notes"
+ ],
+ "prediction_columns_in_human_csv": [],
+ "cases": [
+  {
+   "gold2_id": "F001",
+   "classifier_evidence_visible": true,
+   "passage_chars": 390,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F002",
+   "classifier_evidence_visible": true,
+   "passage_chars": 584,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F003",
+   "classifier_evidence_visible": true,
+   "passage_chars": 433,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F004",
+   "classifier_evidence_visible": true,
+   "passage_chars": 1303,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F005",
+   "classifier_evidence_visible": true,
+   "passage_chars": 493,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F006",
+   "classifier_evidence_visible": true,
+   "passage_chars": 706,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F007",
+   "classifier_evidence_visible": true,
+   "passage_chars": 589,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F008",
+   "classifier_evidence_visible": true,
+   "passage_chars": 610,
+   "sentences": 2
+  },
+  {
+   "gold2_id": "F009",
+   "classifier_evidence_visible": true,
+   "passage_chars": 519,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F010",
+   "classifier_evidence_visible": true,
+   "passage_chars": 1166,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F011",
+   "classifier_evidence_visible": true,
+   "passage_chars": 513,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F012",
+   "classifier_evidence_visible": true,
+   "passage_chars": 503,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F013",
+   "classifier_evidence_visible": true,
+   "passage_chars": 464,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F014",
+   "classifier_evidence_visible": true,
+   "passage_chars": 510,
+   "sentences": 3
+  },
+  {
+   "gold2_id": "F015",
+   "classifier_evidence_visible": true,
+   "passage_chars": 453,
+   "sentences": 3
+  }
+ ]
+}

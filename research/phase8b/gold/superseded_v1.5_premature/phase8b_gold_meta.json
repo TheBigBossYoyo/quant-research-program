@@ -1,0 +1,21 @@
+{
+ "drawn_utc": "2026-09-20T17:40:44.455112+00:00",
+ "method": "sequential seeded walk (A2.3a)",
+ "seed": 20260920,
+ "classifier_version": "1.5",
+ "n": 60,
+ "strata": {
+  "P_early": 19,
+  "P_recent": 19,
+  "N_obvious": 10,
+  "H_low_margin": 6,
+  "H_p2_only": 3,
+  "H_p1_only": 3
+ },
+ "unfilled_quotas": {},
+ "gold_pool_size": 85748,
+ "walked": 627,
+ "fetched_on_demand": 165,
+ "pass1_positives_seen_in_walk": 63,
+ "negative_margin_min": 1.5
+}

@@ -27,6 +27,8 @@ VALID = list('ABCDEFGHIJ')
 DATASETS = {'main': ('phase8b_labeling_candidates.csv', 'Main sample'), 'audit': ('phase8b_retrieval_audit_candidates.csv', 'Retrieval audit')}
 BACKUP_EVERY = 25
 LABEL_COL, NOTE_COL, ID_COL = 'human_label', 'human_notes', 'event_id'
+EXTRA_REQUIRED = ('full_text_path',)
+REPORT_NAME = 'PHASE8B_HUMAN_LABELING_INTEGRITY.txt'
 LOCK = threading.Lock()
 
 
@@ -61,7 +63,7 @@ class Dataset:
         if not self.source.exists():
             raise FileNotFoundError(f'source CSV not found: {self.source}')
         self.fieldnames, self.source_rows = read_csv(self.source)
-        for c in (LABEL_COL, NOTE_COL, ID_COL, 'full_text_path'):
+        for c in (LABEL_COL, NOTE_COL, ID_COL) + tuple(EXTRA_REQUIRED):
             if c not in self.fieldnames:
                 raise ValueError(f'{self.source.name} lacks column {c}')
         if self.labeled.exists():
@@ -218,7 +220,7 @@ class App:
         lines = ['PHASE8B_HUMAN_LABELING_INTEGRITY - neutral completeness and structure check (counts and hashes only)', f'generated: {datetime.now().isoformat(timespec="seconds")}', '']
         for k, r in reps.items():
             lines += [f"[{r['dataset']}]"] + [f'  {kk}: {vv}' for kk, vv in r.items() if kk != 'dataset'] + ['']
-        path = self.workspace / 'PHASE8B_HUMAN_LABELING_INTEGRITY.txt'
+        path = self.workspace / REPORT_NAME
         path.write_text('\n'.join(lines), encoding='utf-8')
         return path, reps
 

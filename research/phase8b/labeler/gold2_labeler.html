@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Phase 8B Fresh Validation (15 cases)</title>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#1d2330; --muted:#5b6474; --line:#d9dde5; --accent:#2b5bd7; --warn:#fff4d6; --warnline:#e0b84a; --ok:#1f8a4c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui, "Segoe UI", Roboto, Arial, sans-serif; }
+  header { background:var(--card); border-bottom:1px solid var(--line); padding:10px 24px; position:sticky; top:0; z-index:5; }
+  .top { display:flex; flex-wrap:wrap; align-items:center; gap:10px 24px; }
+  h1 { font-size:16px; margin:0; letter-spacing:.04em; }
+  .prog { font-size:14px; color:var(--muted); }
+  .bar { height:6px; background:#e6e9ef; border-radius:4px; overflow:hidden; margin-top:8px; }
+  .bar > div { height:100%; background:var(--accent); width:0; transition:width .2s; }
+  main { max-width:1400px; margin:0 auto; padding:16px 24px 50px; display:grid; grid-template-columns:minmax(0,1fr) 400px; gap:18px; align-items:start; }
+  @media (max-width:1050px) { main { grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; }
+  .caseline { font-size:14px; color:var(--muted); margin-bottom:10px; }
+  .caseline b { color:var(--ink); }
+  .snippet { font-size:20px; line-height:1.6; padding:6px 2px 2px; }
+  .snippet p { margin:0 0 14px; }
+  .snippet .extra { color:#3a4150; border-left:3px solid var(--line); padding-left:12px; font-size:18px; }
+  mark.cue { background:#ffe58a; font-weight:700; padding:0 2px; border-radius:3px; }
+  b.amt { font-weight:800; text-decoration:underline; text-decoration-color:#9aa4b5; text-underline-offset:3px; }
+  .notice { background:var(--warn); border:1px solid var(--warnline); border-radius:6px; padding:8px 10px; font-size:14px; margin-bottom:10px; }
+  details { margin-top:10px; } summary { cursor:pointer; font-size:14px; color:var(--accent); }
+  .text { white-space:pre-wrap; font-size:15px; line-height:1.55; max-height:48vh; overflow:auto; padding:10px 12px; border:1px solid var(--line); border-radius:8px; background:#fcfcfd; margin-top:6px; }
+  .lab { display:flex; gap:10px; align-items:flex-start; width:100%; text-align:left; border:1px solid var(--line); background:#fff; border-radius:8px; padding:6px 10px; margin-bottom:6px; cursor:pointer; font:inherit; }
+  .lab:hover { border-color:var(--accent); background:#f3f6ff; }
+  .lab .key { font-weight:800; font-size:18px; min-width:20px; color:var(--accent); }
+  .lab .name { font-weight:700; font-size:13.5px; }
+  .lab .desc { color:var(--muted); font-size:12.5px; line-height:1.3; }
+  .lab .clue { color:#3a4150; font-size:12px; font-style:italic; }
+  .lab.current { background:var(--warn); border-color:var(--warnline); }
+  .why { margin-left:auto; font-size:12px; color:var(--accent); border:1px solid var(--line); border-radius:10px; padding:0 7px; background:#fff; white-space:nowrap; }
+  .why:hover { border-color:var(--accent); }
+  .ex { display:none; font-size:12.5px; color:#1d2330; background:#eef3ff; border-radius:6px; padding:4px 8px; margin-top:4px; }
+  .lab.showex .ex { display:block; }
+  .nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+  .small { border:1px solid var(--line); background:#fff; padding:6px 12px; border-radius:6px; cursor:pointer; font-size:14px; }
+  .small:hover { border-color:var(--accent); }
+  textarea { width:100%; min-height:40px; font:inherit; font-size:14px; padding:6px 8px; border:1px solid var(--line); border-radius:6px; }
+  .status { font-size:13px; color:var(--ok); min-height:18px; margin-top:4px; } .status.err { color:#b3261e; }
+  .shortcuts { font-size:12px; color:var(--muted); margin-top:8px; }
+  .done { text-align:center; padding:40px 20px; } .done h2 { font-size:22px; color:var(--ok); }
+  code { background:#eef1f6; padding:1px 5px; border-radius:4px; font-size:13px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>PHASE 8B GOLD VALIDATION</h1>
+    <div class="prog" id="prog-line"></div>
+    <div style="margin-left:auto; display:flex; gap:8px"><button class="small" onclick="go(cur.index-1)">&larr; Back</button><button class="small" onclick="undo()" id="undo-btn">Undo last label</button></div>
+  </div>
+  <div class="bar"><div id="bar"></div></div>
+</header>
+<main>
+  <section>
+    <div class="card" id="case-card">
+      <div class="caseline" id="case-line"></div>
+      <div id="notice"></div>
+      <div class="snippet" id="snippet"></div>
+      <details id="widedet"><summary>Show wider context</summary><div class="text" id="wide"></div></details>
+    </div>
+    <div class="card done" id="done-card" style="display:none"></div>
+  </section>
+  <aside>
+    <div class="card">
+      <div id="badge"></div>
+      <div id="labels"></div>
+      <textarea id="note" placeholder="Optional note" onblur="saveNote()"></textarea>
+      <div class="status" id="status"></div>
+      <div class="nav"><button class="small" onclick="nextUnlabeled()">Skip for now &rarr;</button></div>
+      <div class="shortcuts">Keys (when not typing): <b>1-8</b> label, <b>9</b> self-tender &middot; <b>&larr;</b> back &middot; <b>&rarr;</b> next unlabeled &middot; <b>Ctrl+Z</b> undo &middot; <b>W</b> wider context. Highlighting marks cue words of every category alike; it is not a suggestion. The passage below is the sentence the automated rule acted on, with one sentence each side &mdash; nothing is ranked or hidden.</div>
+    </div>
+  </aside>
+</main>
+<script>
+const LABELS = [
+  ['1','NEW','NEW','A genuinely new repurchase authorization/program is announced.','','"The Board of Directors authorized a new program to repurchase up to $100 million of common stock."'],
+  ['2','INCREASED','INCREASED','An existing authorization is enlarged.','Clues: "additional", "increased", "expanded", "in addition to the remaining authorization"','"Board authorized the repurchase of an additional 500,000 shares."'],
+  ['3','RENEWAL','RENEWAL / EXTENSION','Existing program continues longer or is renewed, without a material new authorization amount.','','"The Board extended the repurchase program through December 31, 2016."'],
+  ['4','ROUTINE','ROUTINE UPDATE','Reports purchases already made, remaining capacity, quarterly progress. No new board authorization.','','"During the quarter the Company repurchased 1.2 million shares; $120 million remains under the authorization."'],
+  ['5','ASR','ASR / EXECUTION','Actual execution agreement, including accelerated share repurchase transactions.','','"The Company entered into an accelerated share repurchase agreement with Bank X for $200 million."'],
+  ['6','COMPLETED_HISTORICAL','COMPLETED / HISTORICAL','Describes a past or completed program, or historical repurchases.','','"The Company completed its $100 million repurchase program announced in 2012."'],
+  ['7','IRRELEVANT','IRRELEVANT','No genuine share-repurchase authorization/event relevant to the study (debt, preferred, warrants, options, funds, another company).','','"Investors received warrants to purchase up to 750,000 shares." / "repurchase of the 6.5% senior notes"'],
+  ['8','AMBIGUOUS','AMBIGUOUS','The available passage is insufficient to classify confidently.','','"The Board approved a share repurchase program." with no hint whether it is new, larger or a renewal, even in the wider context.'],
+  ['9','SELF_TENDER','SELF-TENDER / DUTCH AUCTION','Newly announced tender offer for the company\'s own shares (kept separate from NEW / INCREASED).','','"The Company commenced a modified Dutch auction tender offer for up to 5 million shares at $20-$23."'],
+];
+const LETTER = {N:'NEW', I:'INCREASED', R:'RENEWAL', U:'ROUTINE', S:'ASR', H:'COMPLETED_HISTORICAL', X:'IRRELEVANT', A:'AMBIGUOUS', T:'SELF_TENDER'};
+const CUE = /\b(authoriz\w+|approv\w+|adopt\w+|additional|increas\w+|expand\w*|expansion|new|exten\w+|renew\w+|re-?authoriz\w+|remain\w*|existing|previously|prior|current(?:ly)?|accelerated\s+(?:share|stock)\s+repurchase(?:\s+agreement)?|ASR|complet\w+|expir\w+|terminat\w+|suspend\w+|repurchased|bought\s+back|tender\s+offer|dutch\s+auction|in\s+addition\s+to)\b/gi;
+const AMT = /(\$\s?[\d,.]+\s*(?:million|billion)?|\b[\d,.]+\s*(?:million|billion)\s+(?:of\s+)?(?:shares|dollars)?|\b[\d,]{4,}\s+(?:additional\s+)?shares|\b\d+(?:\.\d+)?\s?(?:%|percent))/gi;
+const ds = 'gold2'; let cur = null, state = null, busy = false;
+async function api(path, body) {
+  const r = await fetch(path, body ? {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(body)} : {});
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || ('HTTP ' + r.status)); return j;
+}
+function esc(s) { return (s || '').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function hl(s) { return esc(s).replace(AMT, m => '<b class="amt">' + m + '</b>').replace(CUE, m => '<mark class="cue">' + m + '</mark>'); }
+function setStatus(m, err) { const s = document.getElementById('status'); s.textContent = m; s.className = 'status' + (err ? ' err' : ''); }
+async function refreshState() {
+  state = await api('/api/state'); const d = state.datasets[ds];
+  document.getElementById('prog-line').innerHTML = `Completed <b>${d.done} / ${d.total}</b> &middot; remaining ${d.remaining} &middot; ${d.pct}%`;
+  document.getElementById('bar').style.width = d.pct + '%';
+  document.getElementById('undo-btn').disabled = !state.undo_available;
+}
+function buildLabels() {
+  const box = document.getElementById('labels');
+  for (const [num, code, name, desc, clue, ex] of LABELS) {
+    const b = document.createElement('div'); b.className = 'lab'; b.id = 'lab-' + code; b.setAttribute('role', 'button'); b.tabIndex = -1;
+    b.innerHTML = `<span class="key">${num}</span><span style="flex:1"><div class="name">${esc(name)}</div><div class="desc">${esc(desc)}</div>${clue ? `<div class="clue">${esc(clue)}</div>` : ''}<div class="ex">Example: ${esc(ex)}</div></span><span class="why" title="${esc(ex)}">Why?</span>`;
+    b.onclick = ev => { if (ev.target.classList.contains('why')) { b.classList.toggle('showex'); return; } label(code); };
+    box.appendChild(b);
+  }
+}
+async function load(i) {
+  cur = await api(`/api/row?ds=${ds}&i=${i}`); const r = cur.row, sn = cur.snippet || {sentences: []};
+  document.getElementById('done-card').style.display = 'none'; document.getElementById('case-card').style.display = '';
+  document.getElementById('case-line').innerHTML = `Case ${cur.index + 1} / ${cur.total} &nbsp;&middot;&nbsp; <b>${esc(r.company)}</b> &nbsp;&middot;&nbsp; filed ${esc(r.filing_date)} &nbsp;&middot;&nbsp; ${esc((r.items_8k || '').split('|').join(', '))}`;
+  const none = !sn.sentences.length;
+  document.getElementById('notice').innerHTML = none ? '<div class="notice">No passage was stored for this case. Open the wider context below.</div>' : '';
+  const n = sn.sentences.length;
+  document.getElementById('snippet').innerHTML = sn.sentences.map((s, k) => `<p class="${sn.added_for_ambiguity && k === n - 1 && n > 1 ? 'extra' : ''}">${hl(s)}</p>`).join('');
+  document.getElementById('wide').innerHTML = hl(r.wider_context || '');
+  document.getElementById('widedet').open = none;
+  document.getElementById('note').value = cur.note || '';
+  for (const l of LABELS) { const el = document.getElementById('lab-' + l[1]); el.classList.toggle('current', !!(cur.labeled && cur.current_label === l[1])); }
+  document.getElementById('badge').innerHTML = cur.labeled ? `<div class="notice">Already labeled by you: <b>${esc(cur.current_label)}</b>. Choosing another label changes it (saved immediately).</div>` : '';
+  setStatus(''); document.activeElement && document.activeElement.blur(); window.scrollTo(0, 0);
+}
+async function go(i) { if (!cur || busy) return; busy = true; try { const n = cur.total; await load(((i % n) + n) % n); } finally { busy = false; } }
+async function nextUnlabeled() {
+  await refreshState(); const d = state.datasets[ds];
+  const k = cur ? cur.next_unlabeled : d.first_unlabeled;
+  if (k === null || k === undefined) { if (d.complete) return showDone(); if (cur && !cur.labeled) return setStatus('This is the only unlabeled case left.'); if (d.first_unlabeled !== null) return load(d.first_unlabeled); return showDone(); }
+  await load(k);
+}
+async function label(code) {
+  if (!cur || busy) return; busy = true; const idx = cur.index;
+  try {
+    const res = await api('/api/label', {ds, i: idx, label: code, note: document.getElementById('note').value});
+    await refreshState(); setStatus(`Saved for case ${idx + 1}.`);
+    if (res.next_unlabeled === null) { busy = false; return showDone(); }
+    await load(res.next_unlabeled);
+  } catch (e) { setStatus('NOT SAVED: ' + e.message, true); } finally { busy = false; }
+}
+async function saveNote() { if (!cur) return; const note = document.getElementById('note').value; if (note === (cur.note || '')) return;
+  try { await api('/api/note', {ds, i: cur.index, note}); cur.note = note; setStatus('Note saved.'); } catch (e) { setStatus('Note NOT saved: ' + e.message, true); } }
+async function undo() { if (busy) return; busy = true;
+  try { const res = await api('/api/undo', {}); if (!res.undone) return setStatus('Nothing to undo.'); await refreshState(); await load(res.index); setStatus(`Undo: case ${res.index + 1} restored to "${res.restored_label || '(blank)'}".`); }
+  catch (e) { setStatus('Undo failed: ' + e.message, true); } finally { busy = false; } }
+async function showDone() {
+  await refreshState(); const d = state.datasets[ds];
+  document.getElementById('case-card').style.display = 'none'; const box = document.getElementById('done-card'); box.style.display = '';
+  box.innerHTML = `<h2>Gold validation labeling complete: ${d.done} / ${d.total}</h2><p>Saved file: <code>${esc(d.labeled_file)}</code></p><p>Next step: tell Claude the 60 labels are done; the evaluation then applies the preregistered rule. You can still review and change labels: <button class="small" onclick="go(0)">Review cases</button></p>`;
+  try { await api('/api/integrity'); } catch (e) {}
+}
+document.addEventListener('keydown', ev => {
+  const tag = (ev.target.tagName || '').toLowerCase(); if (tag === 'input' || tag === 'textarea') return;
+  if ((ev.ctrlKey || ev.metaKey) && ev.key.toLowerCase() === 'z') { ev.preventDefault(); return undo(); }
+  if (ev.ctrlKey || ev.altKey || ev.metaKey) return;
+  const k = ev.key.toUpperCase(); const byNum = LABELS.find(l => l[0] === k);
+  if (byNum) { ev.preventDefault(); return label(byNum[1]); }
+  if (k === 'W') { ev.preventDefault(); const d = document.getElementById('widedet'); d.open = !d.open; return; }
+  if (LETTER[k]) { ev.preventDefault(); return label(LETTER[k]); }
+  if (ev.key === 'ArrowLeft') { ev.preventDefault(); return go(cur.index - 1); }
+  if (ev.key === 'ArrowRight') { ev.preventDefault(); return nextUnlabeled(); }
+});
+(async () => {
+  if (location.protocol === 'file:') { document.getElementById('case-card').innerHTML = '<div class="notice">Do not open this file directly. Double-click <code>START_PHASE8B_GOLD_LABELER.bat</code> and use <code>http://127.0.0.1:8766/</code>.</div>'; return; }
+  buildLabels();
+  try { await refreshState(); } catch (e) { document.getElementById('case-card').innerHTML = '<div class="notice">Server not reachable: ' + esc(e.message) + '</div>'; return; }
+  await nextUnlabeled();
+})();
+</script>
+</body>
+</html>

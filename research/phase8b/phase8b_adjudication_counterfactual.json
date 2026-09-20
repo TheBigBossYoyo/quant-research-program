@@ -1,0 +1,9 @@
+{
+ "frozen_verdict": "CLASSIFIER_VALIDATION_FAILED_AS_MEASURED",
+ "frozen_stratum_P": "33/38",
+ "frozen_precision": 0.8684,
+ "counterfactual_stratum_P": "35/38",
+ "counterfactual_precision": 0.9211,
+ "labels_corrected_in_stratum_P": 2,
+ "status": "DIAGNOSTIC ONLY - does not restate the frozen verdict, is not a PASS, and is not used by any gate"
+}

@@ -5,8 +5,14 @@
   "frozen_utc": "2026-09-12",
   "locks": {
     "development_end_exclusive": "2018-01-01",
-    "validation": ["2018-01-01", "2022-01-01"],
-    "holdout": ["2022-01-01", "2026-09-01"],
+    "validation": [
+      "2018-01-01",
+      "2022-01-01"
+    ],
+    "holdout": [
+      "2022-01-01",
+      "2026-09-01"
+    ],
     "retrieval_start": "2004-01-01",
     "retrieval_end": "2017-12-31",
     "entry_first": "2004-01-02",
@@ -18,25 +24,71 @@
     "page_size": 100,
     "hit_ceiling": 10000,
     "target_expressions": [
-      "\"repurchase program\"", "\"repurchase plan\"", "\"share repurchase\"", "\"stock repurchase\"",
-      "\"repurchase authorization\"", "\"repurchase authorisation\"", "\"buyback\"", "\"buy-back\"", "\"buy back\"",
-      "\"repurchase of up to\"", "\"repurchase up to\"", "\"authorized the repurchase\"", "\"authorization to repurchase\"",
-      "\"authorized to repurchase\"", "\"repurchase of its common stock\"", "\"repurchase of common stock\"",
-      "\"repurchase shares\"", "\"repurchase of shares\"", "\"purchase of up to\"", "\"purchase up to\"",
-      "\"repurchase of its shares\"", "\"repurchase its shares\"", "\"repurchase its common stock\"", "\"repurchase common stock\""
+      "\"repurchase program\"",
+      "\"repurchase plan\"",
+      "\"share repurchase\"",
+      "\"stock repurchase\"",
+      "\"repurchase authorization\"",
+      "\"repurchase authorisation\"",
+      "\"buyback\"",
+      "\"buy-back\"",
+      "\"buy back\"",
+      "\"repurchase of up to\"",
+      "\"repurchase up to\"",
+      "\"authorized the repurchase\"",
+      "\"authorization to repurchase\"",
+      "\"authorized to repurchase\"",
+      "\"repurchase of its common stock\"",
+      "\"repurchase of common stock\"",
+      "\"repurchase shares\"",
+      "\"repurchase of shares\"",
+      "\"purchase of up to\"",
+      "\"purchase up to\"",
+      "\"repurchase of its shares\"",
+      "\"repurchase its shares\"",
+      "\"repurchase its common stock\"",
+      "\"repurchase common stock\""
     ],
     "auth_group": [
-      "\"repurchase authorization\"", "\"repurchase authorisation\"", "\"repurchase of up to\"", "\"repurchase up to\"",
-      "\"authorized the repurchase\"", "\"authorization to repurchase\"", "\"authorized to repurchase\"",
-      "\"purchase of up to\"", "\"purchase up to\""
+      "\"repurchase authorization\"",
+      "\"repurchase authorisation\"",
+      "\"repurchase of up to\"",
+      "\"repurchase up to\"",
+      "\"authorized the repurchase\"",
+      "\"authorization to repurchase\"",
+      "\"authorized to repurchase\"",
+      "\"purchase of up to\"",
+      "\"purchase up to\""
     ],
-    "audit_complement_expressions": ["\"repurchase\"", "\"repurchases\"", "\"repurchased\"", "\"buyback\"", "\"buy back\"", "\"buy-back\""],
-    "kept_document_types": ["8-K", "8-K/A", "EX-99", "EX-99.1", "EX-99.2", "EX-99.3", "EX-99.4", "EX-99.5", "EX-99.6", "EX-99.7", "EX-99.8", "EX-99.9"],
+    "audit_complement_expressions": [
+      "\"repurchase\"",
+      "\"repurchases\"",
+      "\"repurchased\"",
+      "\"buyback\"",
+      "\"buy back\"",
+      "\"buy-back\""
+    ],
+    "kept_document_types": [
+      "8-K",
+      "8-K/A",
+      "EX-99",
+      "EX-99.1",
+      "EX-99.2",
+      "EX-99.3",
+      "EX-99.4",
+      "EX-99.5",
+      "EX-99.6",
+      "EX-99.7",
+      "EX-99.8",
+      "EX-99.9"
+    ],
     "max_bytes_per_submission": 8000000
   },
   "events": {
     "unit": "accession",
-    "amendment_forms_excluded": ["8-K/A"],
+    "amendment_forms_excluded": [
+      "8-K/A"
+    ],
     "repeat_reference_days": 60,
     "event_id_format": "E8B-<cik10>-<accession>",
     "ambiguous_output": "UNCLASSIFIED"
@@ -55,19 +107,51 @@
       "J": "self-tender / Dutch-auction repurchase offer for the issuer's own common stock (newly announced); economically distinct from an authorisation for future open-market or private repurchases; NOT part of the primary A/B signal; never merged into A/B"
     },
     "taxonomy_amendment": "J added 2026-09-12 before any label existed (Amendment 1 of PHASE8B_PREREGISTRATION.md); A no longer includes self-tenders",
-    "primary_positive": ["A", "B"],
-    "sample": {"seed": 20260912, "target_total": 240, "minimum_total": 200, "stratum_S1_auth": 160, "stratum_S2_other": 80,
-                "year_floor_S1": 5, "year_floor_S2": 3, "one_per_issuer_year": true, "context_chars": 400},
-    "split": {"dev_share": 0.6667, "holdout_share": 0.3333, "seed": 20260912, "stratify": ["year", "stratum"]},
-    "classifier_gate": {"precision_min": 0.90, "min_predicted_positives_holdout": 25, "wilson95_lower_min": 0.75, "recall_investigate_below": 0.30,
-                         "precision_metric": "stratum-weighted (raw reported alongside)"},
-    "retrieval_audit": {"xbrl_window_days": 120, "seed": 20260912,
-                         "population": "complement accessions (audit expression matched, no target expression), search-index form 8-K, CIK known",
-                         "stratum_B1_definition": "search-index items include 8.01 or 7.01 and exclude 2.02 (non-earnings disclosures)",
-                         "stratum_B2_definition": "all other complement accessions (earnings releases 2.02 and other items)",
-                         "stratum_B1_non_earnings": 60, "stratum_B2_other": 30, "year_floor_B1": 2, "year_floor_B2": 1, "one_per_issuer_year": true,
-                         "estimator": "missed A/B events = sum_s N_s * p_s (p_s = labelled A/B share in stratum s); retrieval recall = found / (found + missed), found = sum_s N_s * q_s from the main sample strata S1/S2; Wilson intervals per stratum, bootstrap CI on the ratio",
-                         "superseded_design": "60 rows, year-stratified only (drawn 2026-09-12, never labelled; replaced before any label)"}
+    "primary_positive": [
+      "A",
+      "B"
+    ],
+    "sample": {
+      "seed": 20260912,
+      "target_total": 240,
+      "minimum_total": 200,
+      "stratum_S1_auth": 160,
+      "stratum_S2_other": 80,
+      "year_floor_S1": 5,
+      "year_floor_S2": 3,
+      "one_per_issuer_year": true,
+      "context_chars": 400
+    },
+    "split": {
+      "dev_share": 0.6667,
+      "holdout_share": 0.3333,
+      "seed": 20260912,
+      "stratify": [
+        "year",
+        "stratum"
+      ]
+    },
+    "classifier_gate": {
+      "precision_min": 0.9,
+      "min_predicted_positives_holdout": 25,
+      "wilson95_lower_min": 0.75,
+      "recall_investigate_below": 0.3,
+      "precision_metric": "stratum-weighted (raw reported alongside)"
+    },
+    "retrieval_audit": {
+      "xbrl_window_days": 120,
+      "seed": 20260912,
+      "population": "complement accessions (audit expression matched, no target expression), search-index form 8-K, CIK known",
+      "stratum_B1_definition": "search-index items include 8.01 or 7.01 and exclude 2.02 (non-earnings disclosures)",
+      "stratum_B2_definition": "all other complement accessions (earnings releases 2.02 and other items)",
+      "stratum_B1_non_earnings": 60,
+      "stratum_B2_other": 30,
+      "year_floor_B1": 2,
+      "year_floor_B2": 1,
+      "one_per_issuer_year": true,
+      "estimator": "missed A/B events = sum_s N_s * p_s (p_s = labelled A/B share in stratum s); retrieval recall = found / (found + missed), found = sum_s N_s * q_s from the main sample strata S1/S2; Wilson intervals per stratum, bootstrap CI on the ratio",
+      "superseded_design": "60 rows, year-stratified only (drawn 2026-09-12, never labelled; replaced before any label)"
+    }
   },
   "timing": {
     "timezone": "America/New_York",
@@ -81,8 +165,17 @@
   "universe": {
     "tier2": "LIQ1000 at the last month-end signal date on or before the entry day (phase6_stock_universe)",
     "corroboration": "PIT S&P 1500 from 2012-04-30",
-    "mapping_routes": ["insider_submission_prior_400d", "insider_submission_backfill_400d", "company_tickers_current"],
-    "code_variants": ["", "_old", "_old1", "_old2"],
+    "mapping_routes": [
+      "insider_submission_prior_400d",
+      "insider_submission_backfill_400d",
+      "company_tickers_current"
+    ],
+    "code_variants": [
+      "",
+      "_old",
+      "_old1",
+      "_old2"
+    ],
     "price_check_sessions_before_entry": 5,
     "market_cap": "last month-end close x latest dei:EntityCommonStockSharesOutstanding filed before that month-end"
   },
@@ -91,27 +184,154 @@
     "same_issuer_active": "no second position, no extension; counted",
     "monthly_return_convention": "first open of month to first open of next month",
     "cost_cases": {
-      "MANUAL_USD": {"buy": 0.0005, "sell": 0.00053, "buy_far": 0.0010, "sell_far": 0.00103},
-      "AUTOMATED": {"buy": 0.0020, "sell": 0.00203, "buy_far": 0.0025, "sell_far": 0.00253},
-      "STRESS": {"buy": 0.0030, "sell": 0.0031, "buy_far": 0.0045, "sell_far": 0.0046}
+      "MANUAL_USD": {
+        "buy": 0.0005,
+        "sell": 0.00053,
+        "buy_far": 0.001,
+        "sell_far": 0.00103
+      },
+      "AUTOMATED": {
+        "buy": 0.002,
+        "sell": 0.00203,
+        "buy_far": 0.0025,
+        "sell_far": 0.00253
+      },
+      "STRESS": {
+        "buy": 0.003,
+        "sell": 0.0031,
+        "buy_far": 0.0045,
+        "sell_far": 0.0046
+      }
     },
     "far_rank": 500,
     "primary_cost_case": "MANUAL_USD",
     "delisting": "phase6_stock_universe.delisting_haircut base; sensitivities all100, all30",
-    "operational_sensitivity": {"slots": 20, "capital_eur": [500, 1000], "eur_usd": 1.1652, "min_order_eur": 1.0}
+    "operational_sensitivity": {
+      "slots": 20,
+      "capital_eur": [
+        500,
+        1000
+      ],
+      "eur_usd": 1.1652,
+      "min_order_eur": 1.0
+    }
   },
-  "event_study": {"horizons": [5, 21, 63, 126, 252], "primary_horizon": 252, "secondary_horizon": 126,
-                   "benchmarks": ["EW eligible universe buy-and-hold (members at signal date)", "SPY"],
-                   "bootstrap": {"draws": 1000, "seed": 20260912, "clusters": ["entry_month", "issuer_cik"]}},
-  "benchmarks": {"excess": "EW Tier 2 eligible universe (monthly engine)", "alpha": ["CAPM vs SPY", "FF3", "FF5+MOM"], "hac_lags": 12},
+  "event_study": {
+    "horizons": [
+      5,
+      21,
+      63,
+      126,
+      252
+    ],
+    "primary_horizon": 252,
+    "secondary_horizon": 126,
+    "benchmarks": [
+      "EW eligible universe buy-and-hold (members at signal date)",
+      "SPY"
+    ],
+    "bootstrap": {
+      "draws": 1000,
+      "seed": 20260912,
+      "clusters": [
+        "entry_month",
+        "issuer_cik"
+      ]
+    }
+  },
+  "benchmarks": {
+    "excess": "EW Tier 2 eligible universe (monthly engine)",
+    "alpha": [
+      "CAPM vs SPY",
+      "FF3",
+      "FF5+MOM"
+    ],
+    "hac_lags": 12
+  },
   "gates": {
-    "window": ["2013-01-01", "2017-12-31"],
-    "G1_excess_ann_min": 0.03, "G2_nw_t_min": 2.0, "G3_years_positive_min": 4, "G4_capm_alpha_min": 0.02, "G4_capm_t_min": 1.5,
-    "G4_ff5mom_alpha_min": 0.02, "G4_ff5mom_t_min": 1.0, "G5_dd_tolerance": 0.15, "G6_turnover_max": 3.0, "G7_automated_excess_min": 0.0,
-    "G8_best_year_share_max": 0.5, "G8_top5_events_share_max": 0.25, "G8_top_ticker_share_max": 0.10, "G8_top_sic2_share_max": 0.30,
-    "G9_early_excess_min": 0.0, "G10_events_2013_2017_min": 150, "G10_events_total_min": 300,
-    "G11_h252_cluster_t_min": 2.0, "G12_dsr_prob_min": 0.90, "G12_n_trials": 10
+    "window": [
+      "2013-01-01",
+      "2017-12-31"
+    ],
+    "G1_excess_ann_min": 0.03,
+    "G2_nw_t_min": 2.0,
+    "G3_years_positive_min": 4,
+    "G4_capm_alpha_min": 0.02,
+    "G4_capm_t_min": 1.5,
+    "G4_ff5mom_alpha_min": 0.02,
+    "G4_ff5mom_t_min": 1.0,
+    "G5_dd_tolerance": 0.15,
+    "G6_turnover_max": 3.0,
+    "G7_automated_excess_min": 0.0,
+    "G8_best_year_share_max": 0.5,
+    "G8_top5_events_share_max": 0.25,
+    "G8_top_ticker_share_max": 0.1,
+    "G8_top_sic2_share_max": 0.3,
+    "G9_early_excess_min": 0.0,
+    "G10_events_2013_2017_min": 150,
+    "G10_events_total_min": 300,
+    "G11_h252_cluster_t_min": 2.0,
+    "G12_dsr_prob_min": 0.9,
+    "G12_n_trials": 10
   },
-  "decision_labels": ["CLASSIFIER_VALIDATION_FAILED - STOP E062", "REPURCHASE_SIGNAL_REJECTED_IN_DEVELOPMENT", "REPURCHASE_SIGNAL_RED_TEAM_FAILURE",
-                       "PHASE8B_DEVELOPMENT_SURVIVOR - VALIDATION AUTHORISATION REQUIRED", "PHASE8B_DATA_INSUFFICIENT", "PHASE8B_ENGINEERING_FAILURE"]
+  "decision_labels": [
+    "CLASSIFIER_VALIDATION_FAILED - STOP E062",
+    "REPURCHASE_SIGNAL_REJECTED_IN_DEVELOPMENT",
+    "REPURCHASE_SIGNAL_RED_TEAM_FAILURE",
+    "PHASE8B_DEVELOPMENT_SURVIVOR - VALIDATION AUTHORISATION REQUIRED",
+    "PHASE8B_DATA_INSUFFICIENT",
+    "PHASE8B_ENGINEERING_FAILURE"
+  ],
+  "amendment2": {
+    "date": "2026-09-20",
+    "supersedes": [
+      "labels.sample",
+      "labels.split",
+      "labels.classifier_gate",
+      "labels.retrieval_audit (human part)"
+    ],
+    "development_pool": "int(sha256(accession).hexdigest(), 16) % 5 == 0",
+    "gold_pool": "all other non-amended 8-K candidates with text, one per CIK",
+    "gold": {
+      "seed": 20260920,
+      "stratum_P_predicted_positive": 38,
+      "P_recent_2013_2017": 19,
+      "P_early_2004_2012": 19,
+      "stratum_N_obvious_negative": 10,
+      "stratum_H_hard": 12,
+      "H_pass_disagreement": 6,
+      "H_low_margin_or_unclassified": 6,
+      "context_chars_key": 700,
+      "context_chars_wide": 2500
+    },
+    "human_labels": {
+      "NEW": "A",
+      "INCREASED": "B",
+      "RENEWAL": "C",
+      "ROUTINE": "D",
+      "ASR": "F",
+      "COMPLETED_HISTORICAL": "E|G|H",
+      "IRRELEVANT": "I",
+      "SELF_TENDER": "J",
+      "AMBIGUOUS": "AMBIGUOUS"
+    },
+    "primary_positive_human": [
+      "NEW",
+      "INCREASED"
+    ],
+    "reveal_predictions": "only after all gold labels are saved",
+    "instability_rule": {
+      "pass2_rejects_share_of_pass1_positives_max": 0.2,
+      "review_cases": 40
+    },
+    "decision_rule": {
+      "pass_precision_min": 0.95,
+      "borderline_min": 0.9,
+      "borderline_extra_cases_max": 15,
+      "systematic_same_rule_false_positives": 2,
+      "systematic_routine_as_positive": 2,
+      "repair_revalidation_fresh_positives": 15,
+      "interval": "Clopper-Pearson 95%, reported, not a criterion"
+    }
+  }
 }

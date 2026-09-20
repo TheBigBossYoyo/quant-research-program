@@ -1,0 +1,51 @@
+{
+ "built_utc": "2026-09-20T17:35:53.343594+00:00",
+ "classifier_version": "1.5",
+ "n_filings": 75842,
+ "p1_labels": {
+  "I": 22924,
+  "H": 19000,
+  "D": 18236,
+  "A": 4636,
+  "G": 4076,
+  "B": 3084,
+  "J": 1434,
+  "UNCLASSIFIED": 1182,
+  "F": 1096,
+  "C": 174
+ },
+ "p1_positives": 7720,
+ "p2_positives": 11237,
+ "p2_rejects_share_of_p1_positives": 0.2025906735751295,
+ "p2_only": 5081,
+ "agreement_primary_overall": 0.9123836396719496,
+ "p1_positives_by_year": {
+  "2004": 615,
+  "2005": 796,
+  "2006": 907,
+  "2007": 1148,
+  "2008": 1054,
+  "2009": 358,
+  "2010": 592,
+  "2011": 771,
+  "2012": 697,
+  "2013": 705,
+  "2014": 55,
+  "2015": 10,
+  "2016": 10,
+  "2017": 2
+ },
+ "by_pool": {
+  "development": {
+   "p1_positives": 1544,
+   "p2_rejects": 0.19559585492227982
+  },
+  "gold_pool": {
+   "p1_positives": 6176,
+   "p2_rejects": 0.20433937823834192
+  }
+ },
+ "negative_margin_median": 1.5,
+ "corpus_coverage": "all fetched candidate filings at build time (the download of 2013-2017 may still be running; recomputed when complete)",
+ "instability_flag": true
+}

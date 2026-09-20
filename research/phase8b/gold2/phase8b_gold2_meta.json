@@ -1,0 +1,25 @@
+{
+ "drawn_utc": "2026-09-20T19:20:39.954068+00:00",
+ "amendment": 3,
+ "method": "sequential seeded walk (A2.3a) over the non-development, never-shown pool",
+ "seed": 20260923,
+ "classifier_version": "1.8",
+ "classifier_sha256": {
+  "research/phase8b_classifier.py": "4a0c6b54a9a7b49cc8df04e8436d133d5801b7f220e6d76a9930a2c60ae21301",
+  "research/phase8b_corpus.py": "659f2834d98aa912076998a0a47f57506cdf511fae4e487193140d16dc71be58",
+  "research/phase8b_display.py": "7a372efa1b062c1c73e4136d1c271e80d5451b29390ae22299cba9fa7336036f"
+ },
+ "n": 15,
+ "strata": {
+  "P_recent": 8,
+  "P_early": 7
+ },
+ "pool_size": 85489,
+ "excluded_accessions": 393,
+ "excluded_ciks": 64,
+ "walked": 412,
+ "fetched_on_demand": 51,
+ "pass1_positives_seen": 34,
+ "skipped_evidence_not_visible": 0,
+ "preflight": "classifier_evidence_visible == True for every drawn case (A3.4)"
+}

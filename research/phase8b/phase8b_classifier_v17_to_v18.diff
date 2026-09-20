@@ -1,0 +1,213 @@
+--- research/phase8b/frozen_v1.7/phase8b_classifier_v1.7.py	2026-09-20 19:49:29.896579500 +0100
++++ research/phase8b_classifier.py	2026-09-20 20:14:24.041641500 +0100
+@@ -10,14 +10,16 @@
+ import json
+ import re
+ 
+-VERSION = '1.7'
++VERSION = '1.8'
+ MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December'
+ MON_IDX = {m.lower(): i + 1 for i, m in enumerate(MONTHS.split('|'))}
+ 
+ # ---------------------------------------------------------------- shared vocabulary
+ OWN_REPURCHASE = re.compile(r'(repurchas\w*|buy[\s-]?back\w*|(purchase|acquire)\s+(of\s+)?up\s+to\b[^.;]{0,90}?\b(its|the\s+company.?s|our)\s+(own\s+)?(outstanding\s+)?(common\s+|ordinary\s+|class\s+a\s+)?(stock|shares))', re.I)
+ AUTH_VERB = re.compile(r'\b(authorized|approved|adopted|authorization\s+of|approval\s+of|adoption\s+of)\b|\b(board|directors)\b[^.;]{0,40}?\b(increased|expanded|raised)\b'
+-                       r'|\b(increase|expansion)\s+(in|of|to)\s+[^.;]{0,60}?(repurchase|buy[\s-]?back)\s+(authorization|program|plan)', re.I)
++                       r'|\b(increase|expansion)\s+(in|of|to)\s+[^.;]{0,60}?(repurchase|buy[\s-]?back)\s+(authorization|program|plan)'
++                       # repair E: "authority" / "authorized amount" are authorisation nouns
++                       r'|\b(increase|expansion|increased|expanded|raised)\b[^.;]{0,60}?\b(authority|authorized\s+amount)\b', re.I)
+ DESCRIPTIVE = re.compile(r'\b(is|are|was|were|be|been|being|may|might|would|could|can|will|shall|to|remains?)\s+(also\s+|currently\s+|still\s+)?(authorized|approved)\b'
+                          r'|\b(program|plan|authorization|policy)\s+(authorizes|permits|allows|provides)\b|\bmay\s+authorize\b'
+                          r'|\b(program|plan|authorization)\s+(previously\s+)?(approved|authorized|adopted)\s+by\b|\bongoing\b|\bpart\s+of\s+(an?|the|its|our)\b'
+@@ -27,9 +29,9 @@
+                   r'|\b(one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen|twenty|twenty-five|thirty|forty|fifty|hundred)\s+(million|billion|thousand|hundred|percent))', re.I)
+ NEW_CUE = re.compile(r'\b(new|additional|increas\w+|expan\w+|rais\w+|enlarg\w+|supplement\w*)\b', re.I)
+ INCREASE_CUE = re.compile(r'\b(additional|increas\w+|expan\w+|rais\w+|enlarg\w+|supplement\w*|in\s+addition\s+to|upsiz\w+)\b', re.I)
+-RENEW_CUE = re.compile(r'\b(renew\w*|re-?authoriz\w+|extend\w*|extension|re-?approv\w+|continu\w+\s+(of\s+)?(the|its))\b', re.I)
++RENEW_CUE = re.compile(r'\b(renew\w*|re-?authoriz\w+|reactivat\w+|extend\w*|extension|re-?approv\w+|reaffirm\w*|continu\w+\s+(of\s+)?(the|its)|(second|third|fourth|fifth|next)\s+year\s+of)\b', re.I)
+ PAST_CUE = re.compile(r'\b(previously|prior(ly)?|earlier|remind\w*|(that|which)\s+(we|was|were|the\s+company)\s+(had\s+)?announced|announced\s+(in|last)\s+\w+|existing|current(ly)?\s+authori|had\s+(previously\s+)?(authorized|approved)|originally|remain(s|ing|ed)?|since\s+(inception|the\s+inception|\w+\s+\d{4})|to\s+date|as\s+of\s+(' + MONTHS + r')|pursuant\s+to\s+(the|its|our)|under\s+(the|its|our|this|a)\s+[^.;]{0,60}?(program|plan|authorization))\b', re.I)
+-HARD_PAST = re.compile(r'\b(previously|prior(ly)?|earlier(?!\s+(today|this\s+(week|morning)))|remind\w*|(that|which)\s+(we|was|were|the\s+company)\s+(had\s+)?announced|announced\s+(in|last)\s+\w+|originally|last\s+(quarter|year|month|fall|spring|summer|winter)|a\s+year\s+ago)\b', re.I)
++HARD_PAST = re.compile(r'\b(previously|prior(ly)?|at\s+that\s+time|earlier(?!\s+(today|this\s+(week|morning)))|remind\w*|(that|which)\s+(we|was|were|the\s+company)\s+(had\s+)?announced|announced\s+(in|last)\s+\w+|originally|last\s+(quarter|year|month|fall|spring|summer|winter)|a\s+year\s+ago)\b', re.I)
+ NEGATED = re.compile(r'\b(has|have|had|did|does|do|was|were|is|are)\s+not\b|\bnot\s+(yet\s+)?(been\s+)?(authorized|approved|adopted)\b|\bno\s+(new\s+)?(share|stock)?\s*(repurchase|buy[\s-]?back)\b', re.I)
+ MONTH_ONLY = re.compile(r'\b(in|during|since)\s+(early\s+|late\s+|mid-?\s*)?(' + MONTHS + r')\b(?!\s+\d)', re.I)
+ PERIOD_CUE = re.compile(r'\b(during\s+(the\s+)?(quarter|year|period|first|second|third|fourth|fiscal|three|six|nine|twelve)|for\s+the\s+(quarter|year|three|six|nine|twelve)|year[\s-]to[\s-]date|in\s+the\s+(first|second|third|fourth)\s+quarter)\b', re.I)
+@@ -37,7 +39,7 @@
+ REPURCHASED_ACTIVITY = re.compile(r'\b(repurchased|bought\s+back|purchased)\b[^.;]{0,80}?\b(shares|common\s+stock)\b', re.I)
+ ASR = re.compile(r'accelerated\s+(share|stock)\s+(repurchase|buy[\s-]?back)|\bASR\b', re.I)
+ TENDER = re.compile(r'(tender\s+offer|dutch\s+auction|self[\s-]tender|offer\s+to\s+(re)?purchase|odd[\s-]lot)', re.I)
+-NOT_OWN_EQUITY = re.compile(r'(warrants?\s+to\s+purchase|options?\s+to\s+(purchase|acquire)|underwrit\w+|over-?allot\w*|notes?\b|debentures?|bonds?\b|senior\s+(secured\s+)?(notes|debt)|convertible|preferred|preference\s+shares|units?\b|agreements?\s+to\s+repurchase|repurchase\s+agreements?|repurchase\s+(obligation|reserve|liabilit|demand|request)\w*|mortgage|loans?\b|receivables|redemption|upon\s+the\s+death|stockholders?\s+may\s+request|employee\s+stock\s+purchase|stock\s+plan|restricted\s+stock|right\s+of\s+first|put\s+right|the\s+fund\b|interval\s+fund|extinguishment|pre-?tax\s+gain|gain\s+on\s+(the\s+)?repurchase|excess\s+(capital\s+)?stock|capital\s+stock|federal\s+home\s+loan\s+bank|fhlbank|members?.?\s+(stock|shares))', re.I)
++NOT_OWN_EQUITY = re.compile(r'(warrants?\s+to\s+purchase|options?\s+to\s+(purchase|acquire)|underwrit\w+|over-?allot\w*|notes?\b|debentures?|bonds?\b|senior\s+(secured\s+)?(notes|debt)|debt\s+(repurchase|buy[\s-]?back)|convertible|preferred|preference\s+shares|units?\b|agreements?\s+to\s+repurchase|repurchase\s+agreements?|repurchase\s+(obligation|reserve|liabilit|demand|request)\w*|mortgage|loans?\b|receivables|redemption|upon\s+the\s+death|stockholders?\s+may\s+request|employee\s+stock\s+purchase|stock\s+plan|restricted\s+stock|right\s+of\s+first|put\s+right|the\s+fund\b|interval\s+fund|extinguishment|pre-?tax\s+gain|gain\s+on\s+(the\s+)?repurchase|excess\s+(capital\s+)?stock|capital\s+stock|federal\s+home\s+loan\s+bank|fhlbank|members?.?\s+(stock|shares))', re.I)
+ ANNOUNCE_NOW = re.compile(r'\b(today\s+announced|announced\s+today|announces|announced\s+that|announcing\s+that|has\s+(authorized|approved|adopted)|have\s+(authorized|approved))\b', re.I)
+ FOLLOW_PAST = re.compile(r'\b(previously|prior|existing|remain(s|ing|ed)?|originally|to\s+date|repurchased)\b', re.I)
+ DATE_RE = re.compile(r'\b(' + MONTHS + r')\s+(\d{1,2},?\s+)?((19|20)\d{2})\b', re.I)
+@@ -45,6 +47,61 @@
+ STALE_DAYS = 21
+ FRESH = re.compile(r'\b(today|announc\w+|recently|subsequent(ly)?\s+to|new|newly|additional|increas\w+|expan\w+|rais\w+)\b', re.I)
+ 
++# ---------------------------------------------------------------- Amendment 3 repairs (general semantics only)
++# Repair A: "new" means newness only when it governs the programme. A capitalised place name ("New York", "New Jersey",
++# "Newark") in an address or a glued release header never implies a new authorisation. Programme words are excluded
++# from the place pattern so a title-case headline ("Announces New Share Repurchase Program") still counts.
++PLACE_NEW = re.compile(r'\bNew\s+(?!(?:Share|Shares|Stock|Common|Ordinary|Class|Repurchase|Buyback|Buy|Program|Programme|Plan|Author)\b)[A-Z][a-zA-Z]+|\bNewark\b')
++NEW_PROGRAMME = re.compile(r'\bnew\b[^.;]{0,60}?(repurchas\w*|buy[\s-]?back\w*|program\w*|plan\b|authoriz\w+)'
++                           r'|(repurchas\w*|buy[\s-]?back\w*|program\w*|plan\b|authoriz\w+)[^.;]{0,40}?\bis\s+new\b', re.I)
++# Repair B: a forward-looking-statements / safe-harbour / risk-factor list is never an announcement. Applied only when
++# the boilerplate marker PRECEDES the repurchase cue, i.e. the repurchase words are items inside the legal list.
++FLS = re.compile(r'forward[\s-]looking\s+statements?|safe\s+harbor|private\s+securities\s+litigation\s+reform'
++                 r'|risks?\s+and\s+uncertainties|actual\s+results\s+(could|may|might)\s+differ', re.I)
++# Repair D: a release headline that explicitly announces a repurchase programme is a freshness cue for the filing.
++HEADLINE_ANNOUNCE = re.compile(r'(announc\w+|authoriz\w+|approv\w+|adopt\w+|initiat\w+|declar\w+)[^.]{0,90}?(repurchase|buy[\s-]?back)'
++                               r'|(repurchase|buy[\s-]?back)\s+(program|programme|plan|authoriz\w+)[^.]{0,60}?(announc\w+|authoriz\w+|approv\w+|adopt\w+)', re.I)
++PROGRAMME = re.compile(r'(repurchase|buy[\s-]?back)\s+(program|programme|plan|authoriz\w+)|(program|programme|plan)\s+to\s+(repurchase|buy\s+back)', re.I)
++D_ANNOUNCE = re.compile(r'\b(announc\w+|adopt\w+|approv\w+|authoriz\w+|initiat\w+|commenc\w+)\b', re.I)
++REMAINING = re.compile(r'\bremain\w*\b', re.I)
++# A Rule 10b5-1 trading plan is an EXECUTION mechanism, not an authorisation; adopting one authorises nothing new.
++TRADING_PLAN = re.compile(r'(rule\s+)?10b5-?1|pre-?arranged\s+(stock\s+)?trading\s+plan|written\s+trading\s+plan', re.I)
++# repurchases of restricted stock from an employee/officer are not an issuer programme
++RESTRICTED_BUYBACK = re.compile(r'restricted\s+stock\s+repurchas|repurchas\w*\s+[^.;]{0,40}?restricted\s+(stock|shares)', re.I)
++# Preserved distinctions that v1.7 did not actually honour (Amendment 3 lists them explicitly; all are general):
++#  - an increase OF THE AUTHORISATION ITSELF is INCREASED even when the sentence quotes no dollar size (repair E);
++#  - "in addition to the existing/remaining authorization" is added capacity, not a status restatement;
++#  - a newly approved programme REPLACING a completed/prior one is NEW, not a reference to the past.
++AUTH_CAPACITY_INCREASE = re.compile(r'\b(increase|expansion)\s+(in|of|to)\s+(the\s+|its\s+|our\s+|their\s+)*(compan(y|ies).?s?\s+)*(share\s+|stock\s+|common\s+stock\s+)?(repurchase\s+)?(authority|authoriz\w+|program\w*|plan)\b'
++                                    r'|\b(increased|expanded|raised|enlarged)\s+(the\s+|its\s+|our\s+|their\s+)*(compan(y|ies).?s?\s+)*(share\s+|stock\s+|common\s+stock\s+)?(repurchase\s+)?(authority|authoriz\w+|program\w*|plan)\b', re.I)
++ADDED_CAPACITY = re.compile(r'\bin\s+addition\s+to\b', re.I)
++REPLACEMENT = re.compile(r'\b(replac\w+|supersed\w+|succeed\w+|in\s+place\s+of)\b', re.I)
++NEAR_CHARS = 120
++
++
++def added_capacity_near(sentence, auth):
++    """Added capacity counts only when it sits next to the authorisation verb; a glued slide deck or financial table
++    can otherwise pair an unrelated "additional $200 million" with a distant "authorized"."""
++    if not auth:
++        return False
++    return any(abs(m.start() - auth.start()) <= NEAR_CHARS for m in ADDED_CAPACITY.finditer(sentence))
++
++
++
++def has_newness(sentence):
++    """Repair A: True when the sentence carries newness that actually governs the programme, after capitalised place
++    names have been removed. `_strip_places` is applied first so "New York" cannot supply the newness."""
++    return bool(NEW_PROGRAMME.search(PLACE_NEW.sub(' ', sentence)))
++
++
++def fls_boilerplate(sentence):
++    """Repair B: True when the repurchase words sit inside forward-looking/risk-factor boilerplate that precedes them."""
++    m = FLS.search(sentence)
++    if not m:
++        return False
++    r = OWN_REPURCHASE.search(sentence)
++    return bool(r) and m.start() < r.start()
++
+ 
+ def _filed(rec):
+     return datetime.strptime(str(rec['filed'])[:8], '%Y%m%d')
+@@ -90,23 +147,35 @@
+ 
+ # ---------------------------------------------------------------- pass 1: sentence-level grammar
+ def sentence_role(s, filed, earnings_release=False):
+-    """Role of one repurchase sentence: AUTH_NEW, AUTH_INCREASE, AUTH_RENEW, AUTH_WEAK, PAST_AUTH, ACTIVITY, DONE, ASR, TENDER, NOT_OWN, MENTION."""
++    """Role of one repurchase sentence: AUTH_NEW, AUTH_INCREASE, AUTH_RENEW, AUTH_WEAK, PAST_AUTH, ACTIVITY, DONE,
++    ASR, TENDER, NOT_OWN, MENTION."""
+     own = OWN_REPURCHASE.search(s)
+     if not own:
+         return 'NOT_OWN' if NOT_OWN_EQUITY.search(s) else 'MENTION'
++    if fls_boilerplate(s):
++        return 'MENTION'                                           # repair B: legal boilerplate is never an event
++    if RESTRICTED_BUYBACK.search(s):
++        return 'NOT_OWN'                                           # restricted-stock buybacks from insiders are not a programme
+     if TENDER.search(s):
+         return 'TENDER'
+     if NOT_OWN_EQUITY.search(s) and not re.search(r'(share|stock)\s+(repurchase|buy[\s-]?back)', s, re.I):
+         return 'NOT_OWN'
+     if ASR.search(s):
+         return 'ASR'
++    if TRADING_PLAN.search(s) and not has_newness(s) and not INCREASE_CUE.search(s) \
++            and not (AUTH_VERB.search(s) and BOARD.search(s) and SIZE.search(s)):
++        return 'ACTIVITY'      # adopting a 10b5-1 plan is execution, not authorisation - unless the same
++                               # sentence is itself a board authorisation of an amount
+     auth = AUTH_VERB.search(s)
++    # a newly approved programme that REPLACES a completed/prior one is NEW: its backward reference is subordinate
++    replaces_prior = bool(REPLACEMENT.search(s) and has_newness(s))
+     if auth and (len(re.findall(r'\d[\d,.]*', s)) >= 12 or len(re.findall(r'[•▪·]', s)) >= 2):
+         return 'MENTION'                                           # financial table or slide bullets glued into one "sentence"
+     if auth and NEGATED.search(s):
+         return 'MENTION'                                           # "has not authorized a new stock repurchase program"
+-    if auth and HARD_PAST.search(s):
++    if auth and HARD_PAST.search(s) and not replaces_prior:
+         return 'PAST_AUTH'                                         # "as previously announced ...", "last quarter ..." are never overridden
++        # exception: "approved a new $300m program, replacing the prior program" is a NEW authorisation, not a past reference
+     if auth and re.search(r'\b(has|have|had)\s+\$?\s?[\d,.]+\s*(million|billion)?\s+(remaining\s+)?authorized\b', s, re.I):
+         return 'PAST_AUTH'                                         # "currently has $286 million authorized for share repurchase"
+     if auth and DESCRIPTIVE.search(s) and not ANNOUNCE_NOW.search(s):
+@@ -116,13 +185,14 @@
+             return 'PAST_AUTH'
+         if PERIOD_CUE.search(s) and not re.search(r'\btoday\b', s, re.I):    # "during the quarter the Board approved ..." may be old news
+             return 'PAST_AUTH'
+-        if PAST_CUE.search(s) and not (INCREASE_CUE.search(s) and ANNOUNCE_NOW.search(s)):
++        if PAST_CUE.search(s) and not replaces_prior and not (INCREASE_CUE.search(s) and (ANNOUNCE_NOW.search(s) or added_capacity_near(s, auth))):
+             return 'PAST_AUTH'
+-        if RENEW_CUE.search(s) and not INCREASE_CUE.search(s) and not re.search(r'\bnew\b', s, re.I):
+-            return 'AUTH_RENEW'
+-        if INCREASE_CUE.search(s) and (SIZE.search(s) or ANNOUNCE_NOW.search(s)):
++        if RENEW_CUE.search(s) and not INCREASE_CUE.search(s) and not has_newness(s):
++            return 'AUTH_RENEW'                                    # repair A + C: "New York" no longer blocks this branch
++        if INCREASE_CUE.search(s) and (SIZE.search(s) or ANNOUNCE_NOW.search(s) or AUTH_CAPACITY_INCREASE.search(s)):
+             return 'AUTH_INCREASE'
+-        if SIZE.search(s) or re.search(r'\bnew\b', s, re.I):
++        new = has_newness(s)
++        if SIZE.search(s) or new:
+             if earnings_release and not FRESH.search(s) and not recent_date(s, filed):
+                 return 'AUTH_WEAK'          # undated authorisation sentence inside an earnings release: may be quarterly boilerplate
+             return 'AUTH_NEW'
+@@ -141,6 +211,11 @@
+         return dict(label='I', margin=3.0, rule='no_repurchase_sentence', evidence='')
+     earnings = bool(re.search(r'Results of Operations', rec.get('items') or ''))
+     roles = [(sentence_role(s['text'], filed, earnings), s) for s in sents]
++    items = (rec.get('items') or '')
++    standalone = bool(re.search(r'Other Events|Regulation FD', items)) and not re.search(r'Results of Operations', items)
++    lead = ((rec.get('lead_ex') or '')[:500] + ' ' + (rec.get('lead_8k') or '')[:500])
++    headline = bool(re.search(r'(announc\w+|authoriz\w+|approv\w+|increas\w+|expand\w+)[^.]{0,90}(repurchase|buy[\s-]?back)', lead, re.I))
++    head_announces = bool(HEADLINE_ANNOUNCE.search(lead))          # repair D: the release headline announces a programme
+     # an announcement whose size is in the next sentence: "approved a share repurchase program. Under the program up to $50 million ..."
+     nxt = {(s['doc'], s['i']): s['text'] for s in key_sentences(rec)}
+     upgraded = []
+@@ -148,21 +223,24 @@
+         follow = nxt.get((s['doc'], s['i'] + 1), '')
+         if r == 'AUTH_WEAK' and ANNOUNCE_NOW.search(s['text']) and SIZE.search(follow) and not FOLLOW_PAST.search(follow) and not NOT_OWN_EQUITY.search(follow):
+             r = 'AUTH_NEW'
++        # repair D: an authorisation sentence demoted by the earnings-release guard is restored when the release
++        # headline itself announces the programme, and the sentence is not flagged as old news.
++        elif r == 'AUTH_WEAK' and head_announces and not DONE_CUE.search(s['text']) and not RENEW_CUE.search(s['text']) and not HARD_PAST.search(s['text']) and not stale_date(s['text'], filed):
++            r = 'AUTH_NEW'
+         upgraded.append((r, s))
+     roles = upgraded
+     count = {}
+     for r, _ in roles:
+         count[r] = count.get(r, 0) + 1
+     first = lambda role: next((s['text'] for r, s in roles if r == role), '')
+-    items = (rec.get('items') or '')
+-    standalone = bool(re.search(r'Other Events|Regulation FD', items)) and not re.search(r'Results of Operations', items)
+-    lead = ((rec.get('lead_ex') or '')[:500] + ' ' + (rec.get('lead_8k') or '')[:500])
+-    headline = bool(re.search(r'(announc\w+|authoriz\w+|approv\w+|increas\w+|expand\w+)[^.]{0,90}(repurchase|buy[\s-]?back)', lead, re.I))
+-    n_inc, n_new, n_renew = count.get('AUTH_INCREASE', 0), count.get('AUTH_NEW', 0), count.get('AUTH_RENEW', 0)
++    n_inc, n_renew = count.get('AUTH_INCREASE', 0), count.get('AUTH_RENEW', 0)
++    n_new = count.get('AUTH_NEW', 0)
+     if n_inc or n_new:
+         margin = min(n_inc + n_new, 3) + (1.0 if headline else 0.0) + (0.5 if standalone else 0.0) - (0.5 if count.get('TENDER') else 0.0) - (0.5 if count.get('PAST_AUTH', 0) > n_inc + n_new else 0.0)
+         label = 'B' if n_inc >= n_new and n_inc > 0 else 'A'
+-        return dict(label=label, margin=round(margin, 2), rule='auth_increase' if label == 'B' else 'auth_new', evidence=first('AUTH_INCREASE' if label == 'B' else 'AUTH_NEW'))
++        rule = 'auth_increase' if label == 'B' else 'auth_new'
++        ev = first('AUTH_INCREASE') if label == 'B' else first('AUTH_NEW')
++        return dict(label=label, margin=round(margin, 2), rule=rule, evidence=ev)
+     if count.get('TENDER'):
+         return dict(label='J', margin=1.0 + (1.0 if re.search(r'tender|dutch', lead, re.I) else 0.0), rule='tender', evidence=first('TENDER'))
+     if n_renew:
+@@ -196,6 +274,7 @@
+     items = rec.get('items') or ''
+     bag = ' '.join(s['text'] for s in key_sentences(rec) if s.get('hit'))
+     cues = {}
++    title, lead = PLACE_NEW.sub(' ', title), PLACE_NEW.sub(' ', lead)      # repair A applies to pass 2's newness cues too
+     cues['headline'] = 3.0 if P2_HEADLINE.search(title) else 0.0
+     cues['lead_auth'] = 2.0 if P2_NEAR_AUTH.search(lead) else 0.0
+     cues['lead_newness'] = 1.0 if P2_NEWNESS.search(lead) else 0.0

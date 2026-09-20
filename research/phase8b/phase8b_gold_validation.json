@@ -1,0 +1,396 @@
+{
+ "evaluated_utc": "2026-09-20T18:36:32.921502+00:00",
+ "reference_kind": "AI_ASSISTED_HUMAN_ADJUDICATED_REFERENCE_SET",
+ "reference_sha256": "09e31be6e09550183e6a9dc6dd5e6ffb9411174b72de170e543634017330f73a",
+ "full": {
+  "n": 60,
+  "accuracy_9class": 0.7666666666666667,
+  "per_class": {
+   "NEW": {
+    "support": 26,
+    "predicted": 26,
+    "precision": 0.8461538461538461,
+    "recall": 0.8461538461538461,
+    "f1": 0.8461538461538461
+   },
+   "INCREASED": {
+    "support": 17,
+    "predicted": 18,
+    "precision": 0.8333333333333334,
+    "recall": 0.8823529411764706,
+    "f1": 0.8571428571428571
+   },
+   "RENEWAL": {
+    "support": 2,
+    "predicted": 0,
+    "precision": null,
+    "recall": 0.0,
+    "f1": null
+   },
+   "ROUTINE": {
+    "support": 7,
+    "predicted": 6,
+    "precision": 0.6666666666666666,
+    "recall": 0.5714285714285714,
+    "f1": 0.6153846153846153
+   },
+   "ASR": {
+    "support": 0,
+    "predicted": 0,
+    "precision": null,
+    "recall": null,
+    "f1": null
+   },
+   "COMPLETED_HISTORICAL": {
+    "support": 3,
+    "predicted": 1,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": null
+   },
+   "IRRELEVANT": {
+    "support": 5,
+    "predicted": 6,
+    "precision": 0.8333333333333334,
+    "recall": 1.0,
+    "f1": 0.9090909090909091
+   },
+   "SELF_TENDER": {
+    "support": 0,
+    "predicted": 0,
+    "precision": null,
+    "recall": null,
+    "f1": null
+   },
+   "AMBIGUOUS": {
+    "support": 0,
+    "predicted": 3,
+    "precision": 0.0,
+    "recall": null,
+    "f1": null
+   }
+  },
+  "binary_tradable_all60": {
+   "tp": 39,
+   "fp": 5,
+   "fn": 4,
+   "tn": 12,
+   "precision": 0.8863636363636364,
+   "recall": 0.9069767441860465,
+   "f1": 0.896551724137931,
+   "specificity": 0.7058823529411765,
+   "error_rate": 0.15,
+   "precision_cp95": [
+    0.7544232236844686,
+    0.9620562870607252
+   ],
+   "precision_wilson95": [
+    0.7602084746202706,
+    0.9504721943024861
+   ],
+   "recall_cp95": [
+    0.7786465546186137,
+    0.9740687097336765
+   ]
+  },
+  "second_pass": {
+   "p1_vs_p2_agreement": 0.8,
+   "p1_vs_p2_kappa": 0.5431472081218276,
+   "p1_vs_p2_disagreements": 12,
+   "p1_vs_reference_agreement": 0.85,
+   "p1_vs_reference_kappa": 0.6239554317548746,
+   "p2_vs_reference_agreement": 0.7166666666666667,
+   "p2_vs_reference_kappa": 0.35929648241206025,
+   "p2_binary": {
+    "tp": 32,
+    "fp": 6,
+    "fn": 11,
+    "tn": 11
+   },
+   "both_passes_positive": {
+    "n": 35,
+    "reference_positive": 31
+   },
+   "p1_only_positive": {
+    "n": 9,
+    "reference_positive": 8
+   },
+   "p2_only_positive": {
+    "n": 3,
+    "reference_positive": 1
+   },
+   "disagreement_reference_labels": {
+    "NEW": 6,
+    "INCREASED": 3,
+    "ROUTINE": 2,
+    "COMPLETED_HISTORICAL": 1
+   }
+  },
+  "false_positive_modes": {
+   "routine_as_authorisation": 1,
+   "historical_or_completed_as_authorisation": 2,
+   "asr_as_authorisation": 0,
+   "irrelevant_as_authorisation": 0,
+   "renewal_as_authorisation": 2,
+   "tender_as_authorisation": 0,
+   "ambiguous_among_predicted_positive": 0
+  },
+  "new_vs_increased_among_true_positives": {
+   "A": {
+    "INCREASED": 1,
+    "NEW": 22
+   },
+   "B": {
+    "INCREASED": 15,
+    "NEW": 1
+   }
+  }
+ },
+ "headline_stratum_P": {
+  "n": 38,
+  "correct": 33,
+  "precision": 0.868421052631579,
+  "ci95": [
+   0.7191361541162467,
+   0.9558625599420856
+  ],
+  "ambiguous": 0,
+  "precision_excluding_ambiguous": 0.868421052631579
+ },
+ "by_period": {
+  "P_early": {
+   "n": 19,
+   "correct": 17,
+   "precision": 0.8947368421052632,
+   "ci95": [
+    0.668623335543234,
+    0.9869878356282226
+   ],
+   "ambiguous": 0,
+   "precision_excluding_ambiguous": 0.8947368421052632
+  },
+  "P_recent": {
+   "n": 19,
+   "correct": 16,
+   "precision": 0.8421052631578947,
+   "ci95": [
+    0.6042154487333258,
+    0.9661737509982353
+   ],
+   "ambiguous": 0,
+   "precision_excluding_ambiguous": 0.8421052631578947
+  }
+ },
+ "combined_with_extension": null,
+ "systematic": {
+  "flag": true,
+  "routine_labelled_as_positive": 1,
+  "repeated_rule_false_positives": {
+   "auth_increase": 2,
+   "auth_new": 3
+  },
+  "repeated_rule_and_label": {
+   "auth_new|COMPLETED_HISTORICAL": 2
+  }
+ },
+ "verdict": "FAIL",
+ "pooled": {
+  "n": 60,
+  "tp": 39,
+  "fp": 5,
+  "fn": 4,
+  "precision": 0.8863636363636364,
+  "recall": 0.9069767441860465,
+  "note": "pooled over all strata; the set is enriched with predicted positives and hard cases, so pooled recall and F1 are descriptive only",
+  "f1": 0.896551724137931
+ },
+ "by_stratum": {
+  "H_low_margin": {
+   "n": 6,
+   "human_primary": 5,
+   "p1_primary": 3,
+   "p2_primary": 3
+  },
+  "H_p1_only": {
+   "n": 3,
+   "human_primary": 3,
+   "p1_primary": 3,
+   "p2_primary": 0
+  },
+  "H_p2_only": {
+   "n": 3,
+   "human_primary": 1,
+   "p1_primary": 0,
+   "p2_primary": 3
+  },
+  "N_obvious": {
+   "n": 10,
+   "human_primary": 1,
+   "p1_primary": 0,
+   "p2_primary": 0
+  },
+  "P_early": {
+   "n": 19,
+   "human_primary": 17,
+   "p1_primary": 19,
+   "p2_primary": 17
+  },
+  "P_recent": {
+   "n": 19,
+   "human_primary": 16,
+   "p1_primary": 19,
+   "p2_primary": 15
+  }
+ },
+ "pass2_precision_on_its_positives": {
+  "n": 38,
+  "correct": 32,
+  "precision": 0.8421052631578947,
+  "ci95": [
+   0.687466391708095,
+   0.9397702720826153
+  ],
+  "ambiguous": 0,
+  "precision_excluding_ambiguous": 0.8421052631578947
+ },
+ "confusion": {
+  "AMBIGUOUS": {
+   "COMPLETED_HISTORICAL": 0,
+   "INCREASED": 0,
+   "IRRELEVANT": 0,
+   "NEW": 2,
+   "RENEWAL": 0,
+   "ROUTINE": 1
+  },
+  "COMPLETED_HISTORICAL": {
+   "COMPLETED_HISTORICAL": 0,
+   "INCREASED": 0,
+   "IRRELEVANT": 0,
+   "NEW": 0,
+   "RENEWAL": 0,
+   "ROUTINE": 1
+  },
+  "INCREASED": {
+   "COMPLETED_HISTORICAL": 0,
+   "INCREASED": 15,
+   "IRRELEVANT": 0,
+   "NEW": 1,
+   "RENEWAL": 1,
+   "ROUTINE": 1
+  },
+  "IRRELEVANT": {
+   "COMPLETED_HISTORICAL": 0,
+   "INCREASED": 1,
+   "IRRELEVANT": 5,
+   "NEW": 0,
+   "RENEWAL": 0,
+   "ROUTINE": 0
+  },
+  "NEW": {
+   "COMPLETED_HISTORICAL": 2,
+   "INCREASED": 1,
+   "IRRELEVANT": 0,
+   "NEW": 22,
+   "RENEWAL": 1,
+   "ROUTINE": 0
+  },
+  "ROUTINE": {
+   "COMPLETED_HISTORICAL": 1,
+   "INCREASED": 0,
+   "IRRELEVANT": 0,
+   "NEW": 1,
+   "RENEWAL": 0,
+   "ROUTINE": 4
+  }
+ },
+ "false_positives": [
+  {
+   "gold_id": "G009",
+   "accession": "0000763563-10-000130",
+   "stratum": "P_early",
+   "human_label": "RENEWAL",
+   "p1_label": "A",
+   "p1_rule": "auth_new",
+   "p1_margin": "2.5",
+   "p1_evidence": "Box 1522 Elmira, New York 14902 (607) 737-3711 For Immediate Release: November 22, 2010 Chemung Financial Extends Share Repurchase Plan Chemung Financial Corporation (OTCBB:CHMG) today announced that its Board of Directors approved the extension of the current stock repurchase plan until November 16, 2011."
+  },
+  {
+   "gold_id": "G015",
+   "accession": "0000067215-16-000056",
+   "stratum": "P_recent",
+   "human_label": "RENEWAL",
+   "p1_label": "B",
+   "p1_rule": "auth_increase",
+   "p1_margin": "4.5",
+   "p1_evidence": "On February 23, 2016 , the Company issued a press release announcing that its Board of Directors had authorized an additional $50 million to repurchase shares of Dycom\u2019s outstanding common stock."
+  },
+  {
+   "gold_id": "G016",
+   "accession": "0001000623-14-000090",
+   "stratum": "P_recent",
+   "human_label": "COMPLETED_HISTORICAL",
+   "p1_label": "A",
+   "p1_rule": "auth_new",
+   "p1_margin": "1.0",
+   "p1_evidence": "Forward-looking statements include, without limitation, those regarding 2014 guidance and future performance, our capital allocation strategy, mergers and acquisitions, future market trends (including in China), future reconstituted tobacco leaf, or RTL, sales and volume trends, smoking attrition rates, DelStar synergies, integration and growth prospects (including international growth), impact of our restructuring actions, capital spending, common stock repurchases, the opening and profitabilit"
+  },
+  {
+   "gold_id": "G049",
+   "accession": "0000859598-13-000023",
+   "stratum": "P_recent",
+   "human_label": "ROUTINE",
+   "p1_label": "B",
+   "p1_rule": "auth_increase",
+   "p1_margin": "1.0",
+   "p1_evidence": "On February 26, 2013, SEACOR's Board of Directors increased the Company's authority to repurchase SEACOR common stock from $30.5 million up to $100.0 million."
+  },
+  {
+   "gold_id": "G052",
+   "accession": "0000950134-08-000530",
+   "stratum": "P_early",
+   "human_label": "COMPLETED_HISTORICAL",
+   "p1_label": "A",
+   "p1_rule": "auth_new",
+   "p1_margin": "1.0",
+   "p1_evidence": "The Company\u0092s board of directors approved a share repurchase program for $750 million of the Company\u0092s common stock."
+  }
+ ],
+ "false_negatives": [
+  {
+   "gold_id": "G002",
+   "accession": "0001144204-08-046405",
+   "stratum": "H_low_margin",
+   "human_label": "NEW",
+   "p1_label": "UNCLASSIFIED",
+   "p1_rule": "auth_without_size_or_newness",
+   "p1_evidence": "We enter fiscal 2009 with confidence and momentum, making continued progress toward our long-term financial goals, enhancing client capabilities, and building shareholder value.\u201d Share Repurchase Authorization CACI\u2019s Board of Directors has approved a share repurchase program for up to $20 million of the Company\u2019s common stock."
+  },
+  {
+   "gold_id": "G012",
+   "accession": "0000950134-04-016104",
+   "stratum": "H_p2_only",
+   "human_label": "NEW",
+   "p1_label": "D",
+   "p1_rule": "activity_or_past_authorisation",
+   "p1_evidence": "The timing and the amount of any repurchase of shares during the six-month period will be determined by company management based on its evaluation of market conditions and other factors."
+  },
+  {
+   "gold_id": "G046",
+   "accession": "0001299933-07-006311",
+   "stratum": "H_low_margin",
+   "human_label": "NEW",
+   "p1_label": "UNCLASSIFIED",
+   "p1_rule": "auth_without_size_or_newness",
+   "p1_evidence": "In addition, the Board authorized the Company to repurchase up to 100,000 shares, or approximately 3.6% of its outstanding common stock, over the next two years."
+  },
+  {
+   "gold_id": "G053",
+   "accession": "0000950133-07-001624",
+   "stratum": "N_obvious",
+   "human_label": "INCREASED",
+   "p1_label": "I",
+   "p1_rule": "not_own_equity",
+   "p1_evidence": "The Company also granted the Initial Purchasers an option to purchase up to an additional $20,000,000 in aggregate principal amount of notes (the \u0093Additional Notes\u0094) solely to cover over-allotments, if any."
+  }
+ ]
+}
