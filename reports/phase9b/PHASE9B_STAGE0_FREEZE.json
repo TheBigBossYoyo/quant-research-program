@@ -1,0 +1,17 @@
+{
+ "frozen_utc": "2026-09-21T22:07:24.330327+00:00",
+ "phase": "PHASE9B_STAGE0",
+ "preregistration": "PHASE9B_STAGE0_PREREGISTRATION.md",
+ "preregistration_sha256": "8f107feb574ac6878211a65606e431bd263228839f29616f4eba662cd18c0082",
+ "source_file": "data/raw/phase9b/PredictorPortsFull_202510.csv",
+ "source_sha256": "6cdaf0ff051222b813e6f8404d7a30b94e146b421625f202bd04473fe97a1817",
+ "benchmark_b2_file": "data/raw/phase6/french/F-F_Research_Data_Factors_CSV.zip",
+ "benchmark_b2_sha256": "b840dba55d319f4818fc7300e65c52eff5f64870c8d495fa58ff5d4cd749f5eb",
+ "fetch_script": "research/phase9b_stage0_fetch.py",
+ "fetch_script_sha256": "3a162e5418a8f4df400e8efff271e7eebba41d39af78e603ccf574ebfc310c83",
+ "execution_script": "research/phase9b_stage0.py",
+ "execution_script_sha256": "05d6e7f89ce63d481166970d763d2b2f836addfb96e78990cc8fe81db2a1042b",
+ "tests": "tests/test_phase9b_stage0.py",
+ "tests_sha256": "8fb56fcbbb2528a3eadd07380d2e890e3e194eb0b72889fefbf70bd9c2130a4d",
+ "note": "Frozen BEFORE any return observation was read. Only signalname, port, date, Nlong and Nshort were loaded from the source file prior to this freeze; the ret column was never touched."
+}

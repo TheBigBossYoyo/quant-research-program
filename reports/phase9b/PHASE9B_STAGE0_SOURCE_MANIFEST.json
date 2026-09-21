@@ -1,0 +1,69 @@
+{
+ "retrieved_utc": "2026-09-21T22:03:10.152607+00:00",
+ "source": "Open Source Asset Pricing (Chen and Zimmermann), October 2025 release",
+ "source_page": "https://www.openassetpricing.com/data/",
+ "url": "https://drive.usercontent.google.com/download?id=1g7w-yQ6Cg2qbMEkER9Q3vgns4JszXQo6&export=download&confirm=t",
+ "local_path": "data\\raw\\phase9b\\PredictorPortsFull_202510.csv",
+ "bytes": 77651932,
+ "sha256": "6cdaf0ff051222b813e6f8404d7a30b94e146b421625f202bd04473fe97a1817",
+ "columns": [
+  "signalname",
+  "port",
+  "date",
+  "ret",
+  "signallag",
+  "Nlong",
+  "Nshort"
+ ],
+ "total_rows": 1226794,
+ "distinct_signals": 212,
+ "signals": {
+  "AnalystRevision": {
+   "present": true,
+   "rows": 3013,
+   "ports": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "LS"
+   ],
+   "rows_per_port": {
+    "01": 586,
+    "02": 553,
+    "03": 180,
+    "04": 522,
+    "05": 586,
+    "LS": 586
+   },
+   "date_min": "1976-03-31",
+   "date_max": "2024-12-31",
+   "rows_before_2018": 2585
+  },
+  "REV6": {
+   "present": true,
+   "rows": 3480,
+   "ports": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "LS"
+   ],
+   "rows_per_port": {
+    "01": 580,
+    "02": 580,
+    "03": 580,
+    "04": 580,
+    "05": 580,
+    "LS": 580
+   },
+   "date_min": "1976-09-30",
+   "date_max": "2024-12-31",
+   "rows_before_2018": 2976
+  }
+ },
+ "note": "Schema-only manifest. No return observation was read, printed or aggregated to produce this file; only signalname, port and date columns were loaded."
+}
