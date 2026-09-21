@@ -1,0 +1,126 @@
+{
+ "run_id": "E062_20260920T214738",
+ "produced_utc": "20260920T214738",
+ "report_built_utc": "2026-09-21T19:19:49.372410+00:00",
+ "recomputed": false,
+ "source": "reports/E062_20260920T214738 (immutable; hash-verified against the freeze ledger)",
+ "git_commit": "83e3c565c2d906e6f22c2fcf87c594c7f1232e7f",
+ "results_sha256": "5812e0b5ba782b42c4dfbdcc27051f9444bfdc9fc789a6c016512a20356f7d84",
+ "results_hashed_utc": "2026-09-20T21:49:41.977193+00:00",
+ "code_hashes": {
+  "research/phase8b_classifier.py": "4a0c6b54a9a7b49cc8df04e8436d133d5801b7f220e6d76a9930a2c60ae21301",
+  "research/phase8b_corpus.py": "659f2834d98aa912076998a0a47f57506cdf511fae4e487193140d16dc71be58",
+  "research/phase8b_display.py": "7a372efa1b062c1c73e4136d1c271e80d5451b29390ae22299cba9fa7336036f",
+  "research/phase8b_lock.py": "699e2b8e1ddd71502c3eb7835b0d508f0194ee741f8e05f25091f75e50243a02",
+  "research/phase8b_timing.py": "375ba445ea04386d498876b3095f94a324571d0ba4a4176e48a286903e6eb36c",
+  "research/phase8b_edgar.py": "e83d9c9ef018c36997db1138413dc11fef9980d30c006c6ed29af63abcd999b7",
+  "research/phase8b_events.py": "626e1918b47362bc76ef5adc788dbc2313a3ee394c1d8c3d3c6f40fb34f1b51b",
+  "research/phase8b_portfolio.py": "aab44f7d0139727ba324c787eac6a600ecd48e8e59a3f3542c24b90d4f22077c",
+  "research/phase8b_backtest.py": "391e84fc0c3749d61e5edc5943192a773fa8dd1e4b7a68c4135464d537cf1d05",
+  "research/phase8b_gold2.py": "d3f84183c58deeb25552b5175d3f5c22d649b8e7f7bbf5c6b336ab724b0d4eea",
+  "research/phase8b_gold2_eval.py": "4f9b4ba89febc3edab968822ea5d1c729b008e7fb54e16146e7f4c3151e3b0af",
+  "research/phase8b/phase8b_config.json": "73fb59a67e4b3eecabf66bf05b0a68b90139d9976248f6abd807298739fe4238",
+  "research/phase8b/gold2/phase8b_gold2_reference_FROZEN.csv": "780eaa025d2db6d13173e750a053d4a2ba0a73ee53265bf754fd293d3de0be8a",
+  "research/phase8b/gold2/phase8b_gold2_key_SEALED.csv": "53afa863cd077de01fb6868742afb02139e808e3d15d2d46d1d5b6303dd28878"
+ },
+ "config_sha256": "73fb59a67e4b3eecabf66bf05b0a68b90139d9976248f6abd807298739fe4238",
+ "classifier_sha256": "4a0c6b54a9a7b49cc8df04e8436d133d5801b7f220e6d76a9930a2c60ae21301",
+ "classifier_version": "1.8",
+ "event_list_sha256": "dd0dc6c85765a6326ad9321aba58f6f684551bb1fda6dbe86f759c4808652280",
+ "classified_sha256": "9f0da6626ff95fcdfc37fc60f3a85def098850cb86cb5a8ef545a0c221e3d9e2",
+ "filings_table_sha256": "0c9009510a4b5345387254f0d85cec72ae9b62e627f323cb94713329920a8b0a",
+ "price_integrity_screen_sha256": "380a106b03ee01b8849a0256c1da2bd09322d8eb0b44a260fac737905e0da5e7",
+ "gold2_reference_sha256": "780eaa025d2db6d13173e750a053d4a2ba0a73ee53265bf754fd293d3de0be8a",
+ "gold_v17_reference_sha256": "09e31be6e09550183e6a9dc6dd5e6ffb9411174b72de170e543634017330f73a",
+ "development_window": {
+  "entry_first": "2004-01-02",
+  "entry_last": "2017-12-28",
+  "gate_window": [
+   "2013-01-01",
+   "2017-12-31"
+  ],
+  "development_end_exclusive": "2018-01-01"
+ },
+ "locked_and_not_accessed": {
+  "validation": "2018-01-01..2021-12-31",
+  "holdout": "2022-01-01..2026-08-31"
+ },
+ "frozen_parameters": {
+  "hold_sessions": 252,
+  "weighting": "equal weight, re-equalised to 1/N on entry/exit sessions only",
+  "entry": "first open >= 60 min after EDGAR acceptance (08:30 ET cutoff)",
+  "universe": "Tier 2 LIQ1000 at the last month-end signal date strictly before entry",
+  "benchmarks": "equal-weight eligible universe (primary) and SPY",
+  "costs": {
+   "primary": "MANUAL_USD 5/5.3 bps (10/10.3 far)",
+   "automated": "AUTOMATED 20/20.3 bps (25/25.3 far)",
+   "stress": "STRESS 30/31 bps (45/46 far)"
+  },
+  "repeat_days": 60,
+  "positives": [
+   "A",
+   "B"
+  ],
+  "gates": {
+   "window": [
+    "2013-01-01",
+    "2017-12-31"
+   ],
+   "G1_excess_ann_min": 0.03,
+   "G2_nw_t_min": 2.0,
+   "G3_years_positive_min": 4,
+   "G4_capm_alpha_min": 0.02,
+   "G4_capm_t_min": 1.5,
+   "G4_ff5mom_alpha_min": 0.02,
+   "G4_ff5mom_t_min": 1.0,
+   "G5_dd_tolerance": 0.15,
+   "G6_turnover_max": 3.0,
+   "G7_automated_excess_min": 0.0,
+   "G8_best_year_share_max": 0.5,
+   "G8_top5_events_share_max": 0.25,
+   "G8_top_ticker_share_max": 0.1,
+   "G8_top_sic2_share_max": 0.3,
+   "G9_early_excess_min": 0.0,
+   "G10_events_2013_2017_min": 150,
+   "G10_events_total_min": 300,
+   "G11_h252_cluster_t_min": 2.0,
+   "G12_dsr_prob_min": 0.9,
+   "G12_n_trials": 10
+  },
+  "multiplicity": {
+   "dsr_n_trials": 10,
+   "note": "nine Phase 8 trials + E062"
+  }
+ },
+ "counts": {
+  "events_all": 7806,
+  "eligible": 2378,
+  "pit": 1643,
+  "by_year": {
+   "2004": 71,
+   "2005": 204,
+   "2006": 219,
+   "2007": 229,
+   "2008": 169,
+   "2009": 60,
+   "2010": 153,
+   "2011": 198,
+   "2012": 165,
+   "2013": 188,
+   "2014": 174,
+   "2015": 211,
+   "2016": 168,
+   "2017": 169
+  },
+  "by_label": {
+   "A": 1205,
+   "B": 1173
+  }
+ },
+ "superseded_run": {
+  "run_id": "E062_SUPERSEDED_DATA_DEFECT_20260920T213315",
+  "reason": "price-path data-integrity defect (Amendment 4)",
+  "retained": true,
+  "numbers_are_not_results": true
+ }
+}
