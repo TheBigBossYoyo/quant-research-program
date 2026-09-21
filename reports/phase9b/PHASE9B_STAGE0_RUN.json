@@ -1,5 +1,7 @@
 {
- "run_utc": "2026-09-21T22:07:55.302150+00:00",
+ "run_utc": "2026-09-21T22:10:41.390839+00:00",
+ "amendment": "PHASE9B_STAGE0_AMENDMENT1.md (D1 percent-to-decimal, D2 year-month alignment)",
+ "gate_invariance_check": "all five gates identical to the superseded run, as AMENDMENT1 predicted",
  "preregistration_sha256": "8f107feb574ac6878211a65606e431bd263228839f29616f4eba662cd18c0082",
  "source_sha256": "6cdaf0ff051222b813e6f8404d7a30b94e146b421625f202bd04473fe97a1817",
  "conditions": {
@@ -13,14 +15,14 @@
  },
  "long_leg_gate_observable": true,
  "decay": {
-  "early_ann_mean": 9.91545970125889,
-  "modern_ann_mean": 2.386311294498184,
+  "early_ann_mean": 0.09915459701258889,
+  "modern_ann_mean": 0.023863112944981838,
   "modern_over_early": 0.24066572467590308
  },
  "secondary_b2": {
-  "excess_modern": 10.285710044545429,
-  "excess_recent": 9.813886633716901,
-  "beats_b1_but_not_b2": false
+  "excess_modern": 0.008155031033779956,
+  "excess_recent": -0.009475263177208822,
+  "beats_b1_but_not_b2": true
  },
  "decision": "AMBIGUOUS_ANALYST_REVISION_EVIDENCE",
  "cells_added": 0,

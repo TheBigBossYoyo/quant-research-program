@@ -395,3 +395,71 @@ restriction with the exact product, table and column names attached. Nothing was
 created, no cell was added, the ledger stays at 490, and the multiplicity burden is unchanged because
 nothing was evaluated against a return. 358 tests pass. Validation and holdout have still never been
 opened.
+
+## Phase 9B Stage 0 — the sort still points the right way and that is all it does (2026-09-21)
+
+Before running anything I had to withdraw a claim from my own draft. I had written that the published
+OSAP long-short portfolios were an upper bound on what a long-only retail book could capture. That is
+not true and it is not subtly untrue. A long-short return is the long leg minus the short leg, the short
+leg can have either sign, and so the spread bounds the long side in neither direction. A spread can be
+large because the short leg collapsed while the long leg did nothing, which is the case that matters
+here, because we can only go long. The correct description is narrower and duller: a low-friction
+external mechanism screen on someone else's implementation, useful for asking whether analyst-revision
+sorting still separated returns, and not a backtest of anything we could trade. The long leg had to be
+tested on its own rather than inferred, which is what §5 of the preregistration does.
+
+The freeze was written before any return was touched, and the part I am most comfortable with is that
+the long-leg question was settled from counts alone. The published file carries Nlong and Nshort per
+row. For AnalystRevision the LS row's Nlong matches port 05 exactly — 502 pre-2018 months, median 673,
+min 171, max 4063 — and its Nshort matches port 01. So LS = port 05 minus port 01 and port 05 is the
+long leg, established without reading a single return, which is the only honest way to fix a gate that
+depends on knowing which end of the sort you are standing at.
+
+The same counts turned up a structural wart worth recording. AnalystRevision's interior quintiles are
+empty in 361 of 502 months. That is what a discrete signal does: the mean-estimate ratio piles at
+exactly 1.0 whenever no analyst moved, the interior breakpoints collapse, and everything lands in the
+extreme bins. It means a simple average across the five ports is not the universe return, so the
+benchmark had to be Nlong-weighted across whatever ports exist that month. Getting that wrong would
+have manufactured a benchmark rather than derived one.
+
+Then the first run produced a monthly mean of 0.826 and a cumulative return of 3.5e+31, and I stopped.
+Two defects, both mine, both mechanical. OSAP quotes returns in percent; the French loader already
+divides by 100. And OSAP stamps each month with the last trading day — 2005-04-29, 2005-07-29,
+2005-12-30 — while French stamps the calendar month end, so an exact-timestamp join had silently kept
+111 of 156 months and I had not noticed because nothing printed the match count. The first run is on
+disk, superseded, and none of its numbers is quoted; its "+10.29%/yr long-leg excess over the market"
+was an artefact of subtracting a decimal from a percent and is worth naming explicitly so nobody
+rediscovers it as a result.
+
+What made the repair legitimate rather than a second look was writing down, before re-running, why it
+could not matter: C1, C3, C4 and C5 are signs, which survive division by 100, C2 is a t-statistic, which
+is scale-invariant, and C5's two sides come from the same file at the same scale on the same dates. The
+script now asserts that against the stored flags and raises if any gate flips. It did not flip. All five
+identical, 156 of 156 months matched.
+
+And the result is the flat, unsatisfying kind. AnalystRevision's spread went from 9.92%/yr with a t of
+6.5 in 1990-2004 to 2.39%/yr with a t of 1.28 in 2005-2017 — a quarter of its former strength, Sharpe
+1.66 down to 0.37, and over thirteen years of monthly data indistinguishable from zero. C1 passes, C2
+fails, and the rule I froze says that combination is ambiguous no matter what else holds. It holds a
+lot else: 2010-2017 still positive, REV6 strong at 7.04%/yr with a t of 2.48, long-leg excess over the
+equal-weighted universe positive in both windows. None of it counts, by design, because I wrote the rule
+so that a weak primary could not be carried over the line by its corroborators.
+
+REV6 is the temptation and it is worth saying so plainly. It is the better signal by every number in the
+table and it would have been easy to reframe the phase around it. It was frozen as corroboration and it
+stays corroboration. Its long leg also loses to the value-weighted market in 2010-2017, so elevating it
+would have bought a different headline and the same economics.
+
+Which is the actual finding. The preregistered warning fired: beats_b1_but_not_b2 is true. The long leg
+beat the equal-weighted covered universe by 0.82%/yr and then 0.39%/yr, with t-statistics of 0.79 and
+0.34 — statistically it is the average covered stock — and against the value-weighted market it managed
++0.82%/yr and then -0.95%/yr, at eighteen to twenty-one percent volatility against the market's twelve
+to fourteen. That is the third time this programme has produced that exact object. The Phase 8
+insider-purchase cell did it, E062 did it, and now the published long leg of a sort built from data we
+cannot buy does it. All of this gross, costless, equal-weighted, microcaps included, in someone else's
+implementation. Our version would be strictly worse.
+
+So the family is not rejected and is not supported. It is data-blocked by licence and the free evidence
+came back inconclusive, which is the least quotable of the three outcomes and the one the numbers
+actually produced. Nothing bought, nothing promoted, no additional analyst signal inspected, no
+threshold moved after the fact. 376 tests, 490 cells, and validation and holdout still never opened.
