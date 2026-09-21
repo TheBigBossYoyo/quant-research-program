@@ -17,10 +17,14 @@ reports/*.zip
 reports/**/daily_panel.csv
 reports/**/*_features.csv
 
-# human labelling work in progress and its backups (labels are published deliberately, not by accident)
+# human labelling work in progress and its backups (labels are published deliberately, not by accident).
+# The final frozen reference files ARE published; only in-progress copies and periodic snapshots are excluded.
 research/phase8b/*_LABELED.csv
+research/phase8b/**/*_LABELED.csv
 research/phase8b/backups/
+research/phase8b/**/backups/
 research/phase8b/PHASE8B_HUMAN_LABELING_INTEGRITY.txt
+research/phase8b/**/PHASE8B_GOLD*_LABELING_INTEGRITY.txt
 
 # local tooling
 .claude/
