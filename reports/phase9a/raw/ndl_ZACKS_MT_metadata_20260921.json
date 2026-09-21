@@ -1,0 +1,1 @@
+{"datatable":{"vendor_code":"ZACKS","datatable_code":"MT","name":"Zacks Master Table","description":null,"columns":[],"filters":["m_ticker","ticker"],"primary_key":["m_ticker"],"premium":true,"status":{"refreshed_at":"2026-09-21T13:41:25.000Z","status":"ON TIME","expected_at":"*","update_frequency":"CONTINUOUS"},"data_version":{"code":"3","default":true,"description":null}}}

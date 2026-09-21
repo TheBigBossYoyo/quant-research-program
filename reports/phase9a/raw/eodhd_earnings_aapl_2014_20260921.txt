@@ -1,0 +1,5 @@
+https://eodhd.com/api/calendar/earnings?symbols=AAPL.US&from=2014-01-01&to=2014-12-31&api_token=<REDACTED>&fmt=json
+
+HTTP 403
+
+Forbidden. Please contact support@eodhistoricaldata.com

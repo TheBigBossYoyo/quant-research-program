@@ -319,3 +319,79 @@ So the branch closes, and with it the EDGAR event family: insider purchases, qua
 now repurchase authorisations, each rejected on its own evidence. Four hundred and ninety cells, no candidate. The
 2018-2021 validation window and the 2022-2026 holdout have still never been opened, which is the only part of this
 that was ever going to be hard to undo. A rejected candidate does not get to spend them.
+
+## Phase 9A — the analyst-revision family is not dead, it is unlicensed (2026-09-21)
+
+The question this phase had to answer was narrow and it turned out to have a clean answer, which is rare
+here. Can we obtain, for a stock on a historical date, what the analyst consensus actually said on that
+date — not today's estimate for an old quarter, not the last number before the print, not a surprise.
+The test reduces to one thing: does the schema carry an observation date that is a different field from
+the fiscal period, and can you query it.
+
+The first provider audited passed on the first look, which was not what the previous eight phases had
+trained me to expect. Nasdaq Data Link's ZACKS/EEH returns, from an endpoint that needs no API key at
+all, a primary key of m_ticker, per_end_date, obs_date, per_type, with obs_date also listed as a filter.
+The documentation defines obs_date as the date on which contributed estimates were changed and the
+consensus was revised. That is not a marketing claim about history, it is the row being written when the
+consensus moves. EPS mean, median, high, low, standard deviation, analyst count, and separate counts of
+estimates revised up and down. Back to 1979. Twenty-three thousand issuers, listed and delisted, which is
+the one number in this audit that no free source was willing to state. A companion table carries CIK, so
+the join to the SEC identifiers this repository already uses is a join and not a research project.
+
+Then the Nasdaq FAQ, four scrolls down a page about Okta activation and billing addresses: an individual
+may subscribe to fewer than three years of Zacks history, because the agreement restricts deeper history
+to institutions. Full history may only be licensed to institutions and businesses and not to individuals.
+
+So the right data exists, is exactly the right shape, and is not for sale to us. The workaround is to
+register as a business, which is a statement about who I am rather than a technical step, and I am not
+going to recommend that. Three years supports forward paper trading and nothing else; it cannot hold a
+development window, a validation window and a holdout.
+
+Everything cheaper fails on structure rather than on price, which is the useful part. EODHD's
+calendar/trends, the obvious candidate at twenty dollars a month, returned 403 on our token — /api/user
+returned 200 in the same run, so it is an entitlement boundary and I stopped there per the brief. The
+documentation disqualifies it anyway, and does so in its own words: date is the fiscal period end, the
+horizon label repeats across many dates because the file keeps the history, and the worked example is
+annotated with the date it was read and the note that the estimate fields move as analysts publish. The
+history it advertises is history of target periods. There is no observation field anywhere in the
+payload and no date filter on the endpoint, so the question cannot even be asked, and immutability cannot
+be demonstrated because nothing records when a row was written.
+
+Alpha Vantage was more interesting and is the one place I had to test rather than read. Its
+EARNINGS_ESTIMATES has no observation date either, but the past-period rows are not live. IBM's
+2017-06-30 quarter still reads 2.75 current, 2.75 at seven days, 2.75 at thirty, 2.77 at sixty, 3.17 at
+ninety. If that row were being recomputed today every one of those would be identical, because nobody
+revises a quarter reported nine years ago. The spread across the lags is the settling pattern of a
+consensus walking into a print, preserved. So the row was frozen and kept, which makes it genuinely
+partial point-in-time rather than a current snapshot. It still fails, for three reasons that stack: the
+anchor date is not in the schema so every feature inherits an unverifiable timing assumption, there is
+one snapshot per fiscal period taken at the end of the estimation window so it can only be read after the
+print, and history starts 2017-06. Useful to have established properly rather than dismissed.
+
+FMP saved me the work by conceding it: their own August guidance says a current consensus response should
+not be described as the pre-announcement estimate unless the record was actually observed before the
+announcement, lists reconstructing historical knowledge from a current response as the canonical error,
+and tells you to use a source that explicitly supports point-in-time vintages. Finnhub has exactly two
+tiers now, zero and three and a half thousand a month. Intrinio sells the same Zacks data and every
+estimate feed is Enterprise; their individual plan at a hundred and fifty carries no estimates at all.
+Polygon's Benzinga sets are ninety-nine a month and are ratings, not consensus. There is no price point
+between free and institutional at which this data becomes buyable, and that is a licence structure, not a
+gap in my searching.
+
+The part I did not expect to find was Chen and Zimmermann. Their open-source cross-section publishes
+twenty-one analyst-category signals built from IBES, including AnalystRevision, which is literally FY1
+mean estimate this month over last month, and REV6. The firm-level panel is keyed on CRSP permno and we
+have no legitimate permno-to-ticker map, so it cannot produce anything tradable here. But the long-short
+portfolio return series need no identifier mapping at all, and restricted to 2017 and earlier they answer
+the question that should be answered before anyone discusses money: was this mechanism still alive in the
+development era. Those portfolios are decile, long-short, CRSP-universe and costless, so they are an upper
+bound on what a long-only top-N retail book could capture. If the upper bound is already gone by
+2010-2017, no purchase at any price rescues the retail version and the family closes on evidence instead
+of on budget. That is Stage 0 of the 9B draft and I did not run it, because this phase was an audit.
+
+The distinction I want on record is the one this phase changes. The analyst-revision family is not
+rejected. It is blocked. Phase 7B guessed at that in one line; it is now a verified, quotable licence
+restriction with the exact product, table and column names attached. Nothing was bought, no account was
+created, no cell was added, the ledger stays at 490, and the multiplicity burden is unchanged because
+nothing was evaluated against a return. 358 tests pass. Validation and holdout have still never been
+opened.

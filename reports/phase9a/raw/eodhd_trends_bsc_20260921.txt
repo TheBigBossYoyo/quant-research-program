@@ -1,0 +1,5 @@
+https://eodhd.com/api/calendar/trends?symbols=BSC_old.US&api_token=<REDACTED>&fmt=json
+
+HTTP 403
+
+Forbidden. Please contact support@eodhistoricaldata.com
