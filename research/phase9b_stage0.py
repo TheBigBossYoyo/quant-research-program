@@ -35,6 +35,9 @@ PRIMARY = 'AnalystRevision'
 LONG_PORT = '05'
 QUANTILE_PORTS = ('01', '02', '03', '04', '05')
 LOCK_END = pd.Timestamp('2018-01-01')
+# PHASE9B_STAGE0_AMENDMENT1 D1: the OSAP `ret` column is denominated in percent per month; the Phase 6
+# French loader returns decimals. Everything downstream works in decimals.
+OSAP_PCT_TO_DECIMAL = 100.0
 
 WINDOWS = {
     'EARLY_1990_2004': ('1990-01-01', '2004-12-31'),
@@ -112,6 +115,7 @@ def load_ports():
 
     frame = frame[frame['signalname'].isin(SIGNALS)].copy()
     frame['port'] = frame['port'].astype(str).str.zfill(2)
+    frame['ret'] = frame['ret'] / OSAP_PCT_TO_DECIMAL   # AMENDMENT1 D1
 
     # LAYER 2: the repository firewall. Development bound is [1900-01-01, 2018-01-01).
     indexed = frame.set_index('date').sort_index()
@@ -146,6 +150,19 @@ def market_vw():
     return mkt
 
 
+def align_on_month(long_leg, bench):
+    """Join on the year-month period (AMENDMENT1 D2).
+
+    OSAP stamps each month with its last trading day; the French library stamps the calendar month
+    end, so an exact-timestamp join silently drops roughly 30 percent of months.
+    """
+    a = pd.Series(long_leg.values, index=pd.PeriodIndex(long_leg.index, freq='M'), name='long')
+    b = pd.Series(bench.values, index=pd.PeriodIndex(bench.index, freq='M'), name='bench')
+    a = a[~a.index.duplicated()]
+    b = b[~b.index.duplicated()]
+    return pd.concat([a, b], axis=1, join='inner').sort_index()
+
+
 def window_slice(series, window):
     lo, hi = WINDOWS[window]
     return series[(series.index >= pd.Timestamp(lo)) & (series.index <= pd.Timestamp(hi))]
@@ -173,7 +190,7 @@ def main():
             rows.append(rec)
 
             for bname, bench in (('EWCOV_B1', ewcov), ('MKT_VW_B2', mkt)):
-                pair = pd.concat([lw.rename('long'), bench.rename('bench')], axis=1, join='inner')
+                pair = align_on_month(lw, bench)   # AMENDMENT1 D2
                 rec = describe(pair['bench'], f'{signal}|BENCH_{bname}|{window}')
                 rec.update(signal=signal, series=f'BENCH_{bname}', window=window, benchmark=bname)
                 rows.append(rec)
@@ -225,8 +242,24 @@ def main():
     modern = get(PRIMARY, 'LS', DECISION_WINDOW)
     ratio = (modern / early) if early > 0 else float('nan')
 
+    prior = ROOT / 'reports/phase9b/superseded_run1/PHASE9B_STAGE0_RUN_run1_SUPERSEDED.json'
+    gate_check = 'no prior run to compare'
+    if prior.exists():
+        before = json.loads(prior.read_text(encoding='utf8'))['conditions']
+        now = dict(c1_primary_ls_modern_positive=bool(c1), c2_primary_ls_modern_nw_t_ge_2=bool(c2),
+                   c3_primary_ls_recent_positive=bool(c3), c4_rev6_ls_modern_positive=bool(c4),
+                   c5_primary_long_leg_excess_b1_positive_both=c5)
+        flipped = {k: (before[k], now[k]) for k in now if before[k] != now[k]}
+        if flipped:
+            raise RuntimeError(
+                'AMENDMENT1 predicted every gate is invariant to the unit and alignment repairs, but '
+                f'these flipped: {flipped}. The amendment reasoning was wrong; report the change.')
+        gate_check = 'all five gates identical to the superseded run, as AMENDMENT1 predicted'
+
     out = dict(
         run_utc=datetime.now(timezone.utc).isoformat(),
+        amendment='PHASE9B_STAGE0_AMENDMENT1.md (D1 percent-to-decimal, D2 year-month alignment)',
+        gate_invariance_check=gate_check,
         preregistration_sha256=freeze['preregistration_sha256'],
         source_sha256=freeze['source_sha256'],
         conditions=dict(c1_primary_ls_modern_positive=bool(c1),

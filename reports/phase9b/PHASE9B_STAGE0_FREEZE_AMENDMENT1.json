@@ -1,0 +1,21 @@
+{
+ "frozen_utc": "2026-09-21T22:10:18.274490+00:00",
+ "phase": "PHASE9B_STAGE0_AMENDMENT1",
+ "amendment": "PHASE9B_STAGE0_AMENDMENT1.md",
+ "amendment_sha256": "857c1c7d88f6500ab9e1cb5ba45be18823bbd91a0b2af04cb366577fb233a3b9",
+ "execution_script": "research/phase9b_stage0.py",
+ "execution_script_sha256": "b4fec16877bf21937dc09d3159642f0431052b5ab36720932c5e4ad4419de0f8",
+ "tests": "tests/test_phase9b_stage0.py",
+ "tests_sha256": "0f0404570f0fae8cc39aa86e9c548b2d2999bfb8c8b468fe03714be074bbce7d",
+ "superseded_run": "reports/phase9b/superseded_run1/",
+ "unchanged": [
+  "PHASE9B_STAGE0_PREREGISTRATION.md",
+  "source file",
+  "windows",
+  "signals",
+  "HAC lag rule",
+  "benchmark definitions",
+  "decision thresholds"
+ ],
+ "note": "Repairs D1 (OSAP ret is percent, French is decimal) and D2 (OSAP stamps the last trading day, French the calendar month end). Both repairs are provably gate-invariant; the script asserts this against the superseded run and fails if any gate flips."
+}

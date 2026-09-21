@@ -1,0 +1,28 @@
+{
+ "run_utc": "2026-09-21T22:07:55.302150+00:00",
+ "preregistration_sha256": "8f107feb574ac6878211a65606e431bd263228839f29616f4eba662cd18c0082",
+ "source_sha256": "6cdaf0ff051222b813e6f8404d7a30b94e146b421625f202bd04473fe97a1817",
+ "conditions": {
+  "c1_primary_ls_modern_positive": true,
+  "c2_primary_ls_modern_nw_t_ge_2": false,
+  "c3_primary_ls_recent_positive": true,
+  "c4_rev6_ls_modern_positive": true,
+  "c5_primary_long_leg_excess_b1_positive_both": true,
+  "c5_modern": true,
+  "c5_recent": true
+ },
+ "long_leg_gate_observable": true,
+ "decay": {
+  "early_ann_mean": 9.91545970125889,
+  "modern_ann_mean": 2.386311294498184,
+  "modern_over_early": 0.24066572467590308
+ },
+ "secondary_b2": {
+  "excess_modern": 10.285710044545429,
+  "excess_recent": 9.813886633716901,
+  "beats_b1_but_not_b2": false
+ },
+ "decision": "AMBIGUOUS_ANALYST_REVISION_EVIDENCE",
+ "cells_added": 0,
+ "cumulative_ledger": 490
+}

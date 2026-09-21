@@ -114,5 +114,45 @@ class TestDescribe(unittest.TestCase):
         self.assertAlmostEqual(rec['ann_vol'], np.sqrt(12.0) * ser.std(ddof=1), places=12)
 
 
+class TestAmendment1(unittest.TestCase):
+    """PHASE9B_STAGE0_AMENDMENT1: D1 percent-to-decimal, D2 year-month benchmark alignment."""
+
+    def test_d1_scale_constant(self):
+        self.assertEqual(s0.OSAP_PCT_TO_DECIMAL, 100.0)
+
+    def test_d1_t_statistic_is_scale_invariant(self):
+        """The reason the repair cannot move gate C2: t is unchanged by a uniform rescaling."""
+        rng = np.random.default_rng(3)
+        pct = pd.Series(rng.normal(loc=0.8, scale=6.0, size=156))
+        dec = pct / 100.0
+        self.assertAlmostEqual(s0.nw_tstat(pct)[0], s0.nw_tstat(dec)[0], places=9)
+
+    def test_d1_sign_is_scale_invariant(self):
+        """The reason the repair cannot move gates C1, C3, C4, C5."""
+        for v in (-0.31, 0.0, 0.47):
+            self.assertEqual(np.sign(v), np.sign(v / s0.OSAP_PCT_TO_DECIMAL))
+
+    def test_d2_last_trading_day_matches_calendar_month_end(self):
+        osap = pd.Series([0.01, 0.02, 0.03],
+                         index=pd.to_datetime(['2005-04-29', '2005-07-29', '2005-12-30']))
+        french = pd.Series([0.005, 0.006, 0.007],
+                           index=pd.to_datetime(['2005-04-30', '2005-07-31', '2005-12-31']))
+        pair = s0.align_on_month(osap, french)
+        self.assertEqual(len(pair), 3)
+        self.assertAlmostEqual(float((pair['long'] - pair['bench']).sum()), 0.042, places=12)
+
+    def test_d2_exact_timestamp_join_would_have_dropped_them(self):
+        osap = pd.Series([0.01], index=pd.to_datetime(['2005-04-29']))
+        french = pd.Series([0.005], index=pd.to_datetime(['2005-04-30']))
+        naive = pd.concat([osap.rename('a'), french.rename('b')], axis=1, join='inner')
+        self.assertEqual(len(naive), 0)
+        self.assertEqual(len(s0.align_on_month(osap, french)), 1)
+
+    def test_d2_non_overlapping_months_are_excluded(self):
+        osap = pd.Series([0.01, 0.02], index=pd.to_datetime(['2005-04-29', '2005-05-31']))
+        french = pd.Series([0.005], index=pd.to_datetime(['2005-05-31']))
+        self.assertEqual(list(s0.align_on_month(osap, french).index.astype(str)), ['2005-05'])
+
+
 if __name__ == '__main__':
     unittest.main()
