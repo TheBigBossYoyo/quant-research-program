@@ -1,0 +1,44 @@
+{
+ "checked_utc": "2026-09-22T11:35:01.413949+00:00",
+ "source": "data/raw/phase9b/PredictorPortsFull_202510.csv (OSAP Oct 2025, sha256 6cdaf0ff...)",
+ "note": "Structural only: signalname, port and date were loaded. The ret column was NOT read. Phase 10A does not compute returns.",
+ "signals": {
+  "ShortInterest": {
+   "rows": 3738,
+   "ports": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "LS"
+   ],
+   "date_min": "1973-02-28",
+   "date_max": "2024-12-31",
+   "pre2018_months": 539
+  },
+  "IO_ShortInterest": {
+   "rows": 2163,
+   "ports": [
+    "01",
+    "02",
+    "03",
+    "LS"
+   ],
+   "date_min": "1979-11-30",
+   "date_max": "2024-12-31",
+   "pre2018_months": 458
+  },
+  "Recomm_ShortInterest": {
+   "rows": 1119,
+   "ports": [
+    "01",
+    "02",
+    "LS"
+   ],
+   "date_min": "1993-12-31",
+   "date_max": "2024-12-31",
+   "pre2018_months": 289
+  }
+ }
+}

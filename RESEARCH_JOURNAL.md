@@ -463,3 +463,84 @@ So the family is not rejected and is not supported. It is data-blocked by licenc
 came back inconclusive, which is the least quotable of the three outcomes and the one the numbers
 actually produced. Nothing bought, nothing promoted, no additional analyst signal inspected, no
 threshold moved after the fact. 376 tests, 490 cells, and validation and holdout still never opened.
+
+## Phase 10A — the free panel starts one settlement date too late (2026-09-22)
+
+The first thing worth getting right was the distinction the brief insisted on, because the free data is
+asymmetric in exactly the way that punishes carelessness. Short interest is the outstanding position,
+reported twice a month under Rule 4560. Short-sale volume is the daily flow of short-marked executions.
+NYSE's public FTP makes the trap concrete: /ShortData/ holds six directories and every one of them is
+shvol — NYSE, ARCA, Amex, Chicago, National, Texas. Volume, in bulk, free, going back years. Nobody
+publishes the positions that cheaply. A researcher in a hurry substitutes one for the other and has a
+different paper.
+
+The NYSE free short-interest tree does exist, at /NYSEGroupConsolidatedShortInterest/, from 2015-08, and
+the files are twenty kilobytes each, which is the answer before you open one. It is a market-level
+summary: four rows, NYSE, ARCA, MKT, GROUP, with total current short interest and a count of securities
+holding a position. No issuers. The one elegant thing about it is the timing convention — the file named
+20150811 contains settlement date 07/31/2015, so the filename is the publication date and the settlement
+date sits inside. Perfect point-in-time structure wrapped around data with no cross-section in it.
+
+FINRA was the surprise. api.finra.org answers with no key, no registration, no account, and
+consolidatedShortInterest returns issue-level rows with everything this family needs: current and
+previous short position, days to cover, a revision flag, a split flag, market class. On settlement date
+2017-12-29 the record-total header says 15,495 issues, consolidated across NYSE, NNM, ARCA, SC, AMEX,
+BZX and OTC. I checked survivorship the only way that means anything, by asking for names that are gone:
+TWTR returns 37,978,572 shares short, CELG returns a row, RTN returns a row. The historical files keep
+the dead tickers even though Nasdaq's lookup page does not.
+
+And then the coverage. My first scan tested calendar 15ths and told me the data started in late 2018,
+which was wrong — 2018-01-15 was the MLK holiday, 2018-04-15 and 2018-07-15 were Sundays, and FINRA
+settles on the preceding business day. Rescanning on actual settlement dates moved the boundary to
+2017-12-29. That is the whole finding in one date. The free, correctly structured, venue-consolidated,
+survivorship-safe US short-interest panel begins on the last settlement date of 2017, and our
+development window ends on 2018-01-01. One observation. Everything else it holds is validation and
+holdout.
+
+The paid side is the mirror image. NYSE Group Short Interest goes back to January 1988 and its client
+specification is the best-structured thing I have read in three phases of data audits: CUSIP rather than
+ticker, Free_Float at the settlement date, Change_In_Short_Interest_Position already computed,
+Revision_Indicator, Split_Indicator, and a published calendar mapping every settlement date to a release
+date with the file landing at 2:00pm ET. Causality fully determined. Two problems. It covers NYSE,
+American and Arca only, so every Nasdaq-listed issuer is missing and you would need Nasdaq's separate
+product as well. And the phrase "short interest" appears zero times in both of NYSE's public pricing
+guides; the governing line is a flat fee per product per organisation on an enterprise-wide basis, which
+is a licence written for firms. Nasdaq's bulk file is "subscribe for SFTP" with no figure, and its own
+Publication Schedule and Data Fields links 404 — a vendor whose documentation has rotted is a risk worth
+writing down.
+
+I did not download the NYSE issue-level samples. They sit on the public FTP, 734KB each, and the two
+sample settlement dates are 2026-04-15 and 2026-04-30, both inside the holdout. The specification gave
+me the schema without opening them, which is the point of reading specifications.
+
+The literature screen produced one correction I care about. The brief nominated change in short interest
+as the primary signal. The evidence does not support that ordering: the change looks informative for
+distressed firms, a one-month change has been found to carry no marginal power once the demeaned ratio
+is controlled for, and the open-source replication corpus contains three short-interest level predictors
+and no change predictor at all. So the 10B draft inverts it — level primary, change corroborating — and
+says plainly that if the inversion is not accepted the phase should not run, because it would be leading
+with the weaker and unreplicated form.
+
+The genuinely encouraging result is Boehmer, Huszar and Jordan: the low-short-interest long side is
+larger in absolute value than the heavily-shorted short side. Almost everything this programme has
+looked at is a short-side story that dies under a long-only mandate, and this one is documented as the
+opposite shape. That is the only reason the family was worth an audit.
+
+The discouraging result is the one that matters more. Asquith, Pathak and Ritter measure the effect at
+215 basis points a month equally weighted and 39 basis points value-weighted, insignificant. Every
+short-interest portfolio in the open-source corpus is equal-weighted. Chen and Welch put the post-2005
+large-cap median at seven basis points a month. This is the fourth time in a row I am looking at a
+candidate whose entire case rests on beating an equal-weighted universe, after the Phase 8 insider cell,
+E062, and the Phase 9B analyst-revision long leg. The pattern is no longer a coincidence and it should
+probably be treated as a prior rather than a finding.
+
+So: partial, not sufficient and not absent. And the useful next move costs nothing, because the OSAP file
+is already on disk from Phase 9B and contains ShortInterest with 539 pre-2018 months, Sign = -1, meaning
+the long leg is the low-short-interest side. Whether that leg beat a value-weighted market in 2005-2017
+is answerable for free, and it decides whether any quote is worth requesting. I did not run it; Phase 10A
+computes no returns. One note for whoever writes that preregistration: Sign = -1 means the long leg
+should be port 01, not port 05, and that has to be proved from the Nlong and Nshort counts before any
+return is read, exactly as it was for AnalystRevision. Assuming it would be a way to read a sign
+backwards and call it a result.
+
+490 cells, unchanged. 376 tests. Nothing bought. Validation and holdout still never opened.
