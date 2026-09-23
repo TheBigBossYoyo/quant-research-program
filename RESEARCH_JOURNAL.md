@@ -544,3 +544,71 @@ return is read, exactly as it was for AnalystRevision. Assuming it would be a wa
 backwards and call it a result.
 
 490 cells, unchanged. 376 tests. Nothing bought. Validation and holdout still never opened.
+
+## Phase 10B Stage 0 — stopped at the timing audit, and a sign error caught on the way (2026-09-23)
+
+The instruction was to resolve the causal timing before preregistering anything, and to do it without
+touching the return column. That turned out to be the right order, because the audit killed the stage.
+
+The chain took four files to trace and none of it is ambiguous. CompustatShortInterest.py sets
+time_avail_m with one line — datadate.to_period('M').to_timestamp() — which is the calendar month of
+the settlement date with no lag applied at all. The field is named availability and holds observation.
+The monthly collapse then takes the first record in the month, which is the mid-month settlement, as
+SignalDoc says. ShortInterest.py carries that key straight through to yyyymm. And then
+01_PortfolioFunction.R does the thing that matters: yyyymm := yyyymm + 1, join onto crspret, whose
+yyyymm is the return month. So the return printed at month m belongs to month m and was earned on a
+signal measured around the 15th of month m-1. The return period opens on the 1st of month m. Everything
+rests on whether the mid-month figure was public by then.
+
+The modern answer is yes. Nasdaq's own report key says FINRA compiles the data and provides it for
+publication on the 8th business day after the settlement date, and running that against the XNYS
+calendar for all 336 months from 1990 to 2017 gives publication before the return month every single
+time. But the margin is a median of five days, and every February it is exactly one day — settlement on
+the 15th, publication on the 28th, return period starting on the 1st of March. That is not the kind of
+margin you want to be relying on.
+
+And the modern answer only applies to the modern regime, which is the whole point of the warning I was
+given. FINRA Notice 07-24 introduced a fixed publication calendar in September 2007, for the first time.
+Notice 08-13 consolidated collection across NASDAQ, Amex, NYSE, ARCA and OTC in May 2008 and put every
+venue on one uniform date. Before September 2007 there was no such thing, and Asquith, Pathak and Ritter
+say so in the Journal of Financial Economics, describing precisely that era: press release dates vary
+month to month because the exchanges have no required release date, the data are sometimes published as
+early as the 19th and sometimes as late as the first of the next month, and Nasdaq has traditionally
+released a few days later than NYSE and Amex.
+
+The first of the next month is the day the OSAP return period opens. So in some months the signal was
+not public when the holding period began, and for Nasdaq names it could be several days late. Thirty-two
+of the 156 months in the 2005-2017 decision window sit in that regime, a fifth of it, and all 180 months
+of the early window do. There is no release-date record to identify and drop the bad months with.
+
+I called it FAIL rather than UNRESOLVED deliberately. Unresolved would mean I could not work out the
+mapping; I worked it out. There is positive documentary evidence from a JFE paper covering the era that
+publication sometimes fell on or after the first day of the return month. What is unknown is the
+frequency, not the existence. And the SignalDoc assumption that started all this — bi-weekly with a
+four day lag — matches no regime at all: the reporting deadline is two business days, publication is
+eight business days now and was unscheduled before 2007. That was the weak link and it was worth pulling.
+
+None of this is a criticism of Chen and Zimmermann. A four-day lag is a defensible modelling choice for
+a modern sample and a generous one for an older sample. Our causal bar is stricter than theirs, which is
+a statement about us, not about them.
+
+The other thing the audit produced was a correction to my own work. I had written, in the 10B draft, in
+STATUS, in PLAN and in memory, that Sign = -1 puts the long leg at port 01. It does not. OSAP multiplies
+the signal by Sign before sorting and then names the legs by port number, longportname = max(port$port),
+so port 05 is always the long leg regardless of sign. For ShortInterest that means port 05 holds the
+lowest raw short interest, which is the long-only reading we actually want — the economics were right
+and the label was wrong. The counts settle it without a single return: LS.Nlong equals port 05's Nlong
+in 539 of 539 pre-2018 months, and LS.Nshort equals port 01's Nlong in 539 of 539. This is exactly the
+error the mechanical proof was specified to catch, and it would have inverted the entire screen if the
+timing audit had passed and nobody had checked. All four documents are corrected.
+
+What survives is narrow: a Stage 0 restricted to 2008-2017, entirely inside the consolidated
+eight-business-day regime, where the timing is verifiably causal. It costs the early window, so no decay
+comparison, and 36 months of the decision window, so less power, and it needs a preregistration written
+from scratch rather than an amendment. It also still carries the February one-day margin, the
+possibility that a missing mid-month observation silently promotes a month-end one published ten days
+into the return month, and Nasdaq's stated practice of retroactively split-adjusting all historical data
+on its website, which means the archive is restated rather than immutable.
+
+Not executed. No preregistration written. 490 cells, nothing bought, no vendor contacted, validation and
+holdout still never opened.

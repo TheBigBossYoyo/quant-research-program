@@ -1,5 +1,11 @@
 # PHASE 10B — DRAFT ONLY, NOT EXECUTED, NOT PREREGISTERED
 
+> **Superseded in part, 2026-09-23.** The causal-timing audit (`PHASE10B_STAGE0_TIMING_AUDIT.md`) returned **OSAP_SHORTINTEREST_TIMING_CAUSAL_FAIL**: before
+> September 2007 the exchanges had no required short-interest release date and published as late as the
+> first of the following month, which is on or after the day OSAP's return period begins. Stage 0 as
+> specified below is **not executed**. The only surviving variant is a 2008-2017 window, which needs its
+> own preregistration. The leg-orientation claim below has also been corrected.
+
 Status: **draft**. Nothing here is frozen or hashed. No experiment ID. No cell added to the 490-cell
 ledger. Running any stage below requires a separate preregistration, hashed and committed **before any
 return is read**, exactly as Phase 9B Stage 0 was.
@@ -55,11 +61,13 @@ Nothing else may be loaded. No other OSAP predictor may be scanned after these r
 `01`-`05` plus `LS`, 1973-02 → 2024-12, **539 pre-2018 months**. `IO_ShortInterest` has `01`-`03` + `LS`;
 `Recomm_ShortInterest` has `01`-`02` + `LS`.
 
-**Mandatory pre-freeze step — which port is the long leg.** `ShortInterest` carries `Sign = −1`, so the
-long side should be **port 01 (lowest short interest)**, the reverse of the Phase 9B signals. This must
-be established from the `Nlong` / `Nshort` counts on the `LS` rows **before any return is read**, exactly
-as Phase 9B proved port 05 was the long leg for `AnalystRevision`. Assuming it would be a way to read a
-sign backwards and call it a result.
+**Which port is the long leg — RESOLVED 2026-09-23, and this draft's original claim was wrong.**
+This draft first asserted that `Sign = −1` puts the long side at port 01. It does not. OSAP applies the
+sign **before** sorting (`signal$signal = signal$signal*Sign`) and names the legs by port number
+(`longportname = max(port$port)`), so **port 05 is always the long leg**; for `ShortInterest` it holds
+the *lowest raw short interest*, which is the long-only reading we want. Proved mechanically on all 539
+pre-2018 months from counts alone: `LS.Nlong == port05.Nlong` and `LS.Nshort == port01.Nlong` in 539/539.
+See `PHASE10B_STAGE0_TIMING_AUDIT.md` §2.
 
 **Windows** — identical to Phase 9B so the two screens are comparable:
 
