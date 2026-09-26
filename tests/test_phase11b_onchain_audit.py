@@ -188,7 +188,7 @@ class TestSupplyNetting(unittest.TestCase):
                            self.E("ethereum", "ISSUE_FROM_TREASURY", 400)])
         self.assertEqual(r2["treasury_adjusted_circulating"], 400)
         self.assertEqual(r2["new_external_dollars"], 400)
-        self.assertIn("issuer treasury address", r2["labels_required"])
+        self.assertIn("ISSUER_TREASURY_ADDRESS", r2["identification_required"])
 
     def test_bridge_wrap_double_counts_naive_sum(self):
         r = a.net_supply([self.E("ethereum", "BRIDGE_LOCK", 70), self.E("arbitrum", "BRIDGE_WRAPPED_MINT", 70)])
@@ -206,11 +206,28 @@ class TestSupplyNetting(unittest.TestCase):
         d = a.net_supply([self.E("ethereum", "DESTROY_FROZEN", 5)])
         self.assertEqual(d["native_total_all_chains"], -5)
         self.assertEqual(d["new_external_dollars"], 0)
-        self.assertEqual(d["labels_required"], [])
+        self.assertEqual(d["identification_required"], [])
 
-    def test_only_transfers_and_destroys_need_no_label(self):
-        unlabeled = {k for k, v in a.EVENT_KINDS.items() if v[2] is None}
-        self.assertEqual(unlabeled, {"TRANSFER", "DESTROY_FROZEN"})
+    def test_identification_classes(self):
+        by_class = {}
+        for k, v in a.EVENT_KINDS.items():
+            self.assertIn(v[2], a.IDENTIFICATION_CLASSES)
+            by_class.setdefault(v[2], set()).add(k)
+        self.assertEqual(by_class["NONE"], {"TRANSFER", "DESTROY_FROZEN"})
+        # cross-chain protocol and bridge contracts are fixed public contracts, not changing entity labels
+        self.assertEqual(by_class["FIXED_PUBLIC_CONTRACT"],
+                         {"BURN_AND_MINT_OUT", "BURN_AND_MINT_IN", "BRIDGE_LOCK", "BRIDGE_WRAPPED_MINT"})
+        self.assertEqual(by_class["OFF_CHAIN_ISSUER_RECORD"], {"CHAIN_SWAP_MINT", "CHAIN_SWAP_BURN"})
+
+    def test_three_supply_objects(self):
+        self.assertEqual(a.SUPPLY_OBJECTS["RAW_MINT_BURN_EVENTS"][0], "RAW_CHAIN_RECONSTRUCTABLE")
+        self.assertEqual(a.SUPPLY_OBJECTS["TOKEN_TOTAL_SUPPLY"][0], "RAW_CHAIN_RECONSTRUCTABLE")
+        self.assertEqual(a.SUPPLY_OBJECTS["ECONOMIC_CIRCULATING_AGGREGATE"][0], "RULE_DEPENDENT")
+        # a direct mint/burn on one fixed contract needs no treasury, bridge or swap identification
+        r = a.net_supply([self.E("ethereum", "MINT_DIRECT_TO_CUSTOMER", 10),
+                          self.E("ethereum", "REDEEM_BURN_DIRECT", 4)])
+        self.assertEqual(r["native_total_by_chain"], {"ethereum": 6})
+        self.assertEqual(r["identification_required"], ["CONTRACT_ROLE"])
 
     def test_event_validation(self):
         with self.assertRaises(ValueError):
@@ -262,6 +279,14 @@ class TestDecisionRule(unittest.TestCase):
     def test_all_pass(self):
         self.assertEqual(a.mechanism_decision(_gates())["primary"], "AUTHORIZE_STAGE1_PREREGISTRATION")
 
+    def test_primary_code_rests_on_hard_fails(self):
+        r = a.mechanism_decision(_gates(Q3_oos_evidence="FAIL", Q11_protocol_comparability="UNRESOLVED"))
+        self.assertEqual(r["primary"], "MECHANISM_TOO_WEAK")        # an open question does not outrank a failure
+        self.assertEqual(r["codes"], ["DATA_BLOCKED", "MECHANISM_TOO_WEAK"])
+        self.assertEqual(r["unresolved"], ["Q11_protocol_comparability"])
+        r2 = a.mechanism_decision(_gates(Q3_oos_evidence="FAIL", Q11_protocol_comparability="FAIL"))
+        self.assertEqual(r2["primary"], "DATA_BLOCKED")
+
     def test_precedence_and_unresolved(self):
         r = a.mechanism_decision(_gates(Q3_oos_evidence="FAIL", Q10_no_retrospective_labels="FAIL"))
         self.assertEqual(r["primary"], "PIT_LABEL_BLOCKED")
@@ -287,15 +312,24 @@ class TestDecisionRule(unittest.TestCase):
         with self.assertRaises(ValueError):
             a.programme_decision(per, "MECHANISM_TOO_WEAK")   # would discard a passing mechanism
 
-    def test_programme_blocking_code_must_bind_everywhere(self):
-        per = {"A": _gates(Q3_oos_evidence="FAIL"),
-               "B": _gates(Q9_not_price_response="FAIL", Q2_raw_chain_reconstructable="FAIL"),
+    def test_programme_hierarchy_sets_aside_label_blocked_branches(self):
+        per = {"A": _gates(Q3_oos_evidence="FAIL", Q11_protocol_comparability="UNRESOLVED"),
+               "B": _gates(Q9_not_price_response="FAIL", Q8_survives_momentum_volume="UNRESOLVED"),
                "C": _gates(Q10_no_retrospective_labels="FAIL", Q5_long_only_evidence="FAIL")}
+        self.assertEqual(a.derive_programme_outcome(per), "MECHANISM_TOO_WEAK")
         self.assertEqual(a.programme_decision(per, "MECHANISM_TOO_WEAK"), "MECHANISM_TOO_WEAK")
         with self.assertRaises(ValueError):
-            a.programme_decision(per, "PIT_LABEL_BLOCKED")
+            a.programme_decision(per, "PIT_LABEL_BLOCKED")          # only one branch is label-blocked
         with self.assertRaises(ValueError):
-            a.programme_decision(per, "ABANDON_ONCHAIN_PROGRAMME")   # A has no data/causality hard fail
+            a.programme_decision(per, "ABANDON_ONCHAIN_PROGRAMME")  # A and B have no data/causality hard fail
+
+    def test_programme_all_label_blocked_and_mixed_remainder(self):
+        pit = _gates(Q10_no_retrospective_labels="FAIL", Q3_oos_evidence="FAIL")
+        self.assertEqual(a.derive_programme_outcome({"A": pit, "B": pit}), "PIT_LABEL_BLOCKED")
+        per = {"A": _gates(Q3_oos_evidence="FAIL"), "B": _gates(Q2_raw_chain_reconstructable="FAIL"), "C": pit}
+        self.assertEqual(a.derive_programme_outcome(per), "DATA_BLOCKED")   # precedence among label-free branches
+        with self.assertRaises(ValueError):
+            a.programme_decision(per, "MECHANISM_TOO_WEAK")
 
     def test_programme_abandon(self):
         per = {"A": _gates(Q3_oos_evidence="FAIL", Q11_protocol_comparability="FAIL"),
@@ -323,8 +357,14 @@ class TestFrozenStage0Record(unittest.TestCase):
         self.assertEqual(a.programme_decision(g["gates"], g["programme_decision"]), "MECHANISM_TOO_WEAK")
         with self.assertRaises(ValueError):
             a.programme_decision(g["gates"], "AUTHORIZE_STAGE1_PREREGISTRATION")
-        with self.assertRaises(ValueError):   # A needs no wallet label, so PIT cannot be the phase-level code
+        with self.assertRaises(ValueError):   # only the exchange-flow branch is label-blocked
             a.programme_decision(g["gates"], "PIT_LABEL_BLOCKED")
+        with self.assertRaises(ValueError):   # activity and label-free stablecoin supply have no data hard fail
+            a.programme_decision(g["gates"], "ABANDON_ONCHAIN_PROGRAMME")
+        primaries = {m: a.mechanism_decision(v)["primary"] for m, v in g["gates"].items()}
+        self.assertEqual(primaries, {"A_ACTIVITY": "MECHANISM_TOO_WEAK", "B_STABLECOIN": "MECHANISM_TOO_WEAK",
+                                     "C_EXCHANGE_FLOW": "PIT_LABEL_BLOCKED"})
+        self.assertEqual(g["per_mechanism_decision"], primaries)
 
 
 class TestFirewallAndCli(unittest.TestCase):

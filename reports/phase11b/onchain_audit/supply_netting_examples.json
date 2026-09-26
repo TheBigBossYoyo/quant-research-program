@@ -1,4 +1,18 @@
 {
+  "objects": {
+    "RAW_MINT_BURN_EVENTS": {
+      "class": "RAW_CHAIN_RECONSTRUCTABLE",
+      "note": "mint/burn events of a predetermined token contract, read from logs; chain-specific mechanics apply (USDT Issue/Redeem/DestroyedBlackFunds emit no Transfer)"
+    },
+    "TOKEN_TOTAL_SUPPLY": {
+      "class": "RAW_CHAIN_RECONSTRUCTABLE",
+      "note": "totalSupply of a fixed contract by event replay or state; contract migrations and new chain deployments must be handled by explicit rules fixed in advance"
+    },
+    "ECONOMIC_CIRCULATING_AGGREGATE": {
+      "class": "RULE_DEPENDENT",
+      "note": "needs rules for treasury inventory, authorized-but-not-issued stock, multiple chains, migrations, bridges, chain swaps, frozen tokens and double counting; PIT-label-dependent only where a rule uses historically changing entity labels"
+    }
+  },
   "terms": {
     "MINTED": "created on one chain by the token contract; includes treasury mints, chain-swap mints and burn-and-mint transfer mints",
     "AUTHORIZED": "minted to the issuer's treasury but not yet sold to a customer (Tether: 'authorized but not issued'); on-chain totalSupply includes it",
@@ -6,76 +20,83 @@
     "CIRCULATING": "issued supply less issuer-held, destroyed/frozen and bridge-locked balances; definition is vendor-specific",
     "TRANSFERRED": "moved between holders; changes no supply measure"
   },
+  "identification_classes": {
+    "NONE": "visible in the event itself",
+    "CONTRACT_ROLE": "minter/burner role readable from contract state and events",
+    "FIXED_PUBLIC_CONTRACT": "protocol or bridge contract published by its operator and fixed at deployment",
+    "ISSUER_TREASURY_ADDRESS": "issuer inventory address; PIT-safe only if issuer-published with a date, not if taken from a later third-party explorer label",
+    "OFF_CHAIN_ISSUER_RECORD": "pairing of operations across chains; recorded only in issuer announcements"
+  },
   "event_kinds": {
     "MINT_TO_TREASURY": {
       "native_supply_sign": 1,
       "external_dollar_sign": 0,
-      "label_needed": "issuer treasury address"
+      "identification": "ISSUER_TREASURY_ADDRESS"
     },
     "ISSUE_FROM_TREASURY": {
       "native_supply_sign": 0,
       "external_dollar_sign": 1,
-      "label_needed": "issuer treasury address"
+      "identification": "ISSUER_TREASURY_ADDRESS"
     },
     "RETURN_TO_TREASURY": {
       "native_supply_sign": 0,
       "external_dollar_sign": -1,
-      "label_needed": "issuer treasury address"
+      "identification": "ISSUER_TREASURY_ADDRESS"
     },
     "BURN_FROM_TREASURY": {
       "native_supply_sign": -1,
       "external_dollar_sign": 0,
-      "label_needed": "issuer treasury address"
+      "identification": "ISSUER_TREASURY_ADDRESS"
     },
     "MINT_DIRECT_TO_CUSTOMER": {
       "native_supply_sign": 1,
       "external_dollar_sign": 1,
-      "label_needed": "issuer minter role (contract-visible) and absence of a matching burn"
+      "identification": "CONTRACT_ROLE"
     },
     "REDEEM_BURN_DIRECT": {
       "native_supply_sign": -1,
       "external_dollar_sign": -1,
-      "label_needed": "issuer minter role and absence of a matching mint elsewhere"
+      "identification": "CONTRACT_ROLE"
     },
     "CHAIN_SWAP_MINT": {
       "native_supply_sign": 1,
       "external_dollar_sign": 0,
-      "label_needed": "pairing with a burn on another chain (issuer operation, not labelled on chain)"
+      "identification": "OFF_CHAIN_ISSUER_RECORD"
     },
     "CHAIN_SWAP_BURN": {
       "native_supply_sign": -1,
       "external_dollar_sign": 0,
-      "label_needed": "pairing with a mint on another chain"
+      "identification": "OFF_CHAIN_ISSUER_RECORD"
     },
     "BURN_AND_MINT_OUT": {
       "native_supply_sign": -1,
       "external_dollar_sign": 0,
-      "label_needed": "cross-chain transfer protocol contract (e.g. CCTP)"
+      "identification": "FIXED_PUBLIC_CONTRACT"
     },
     "BURN_AND_MINT_IN": {
       "native_supply_sign": 1,
       "external_dollar_sign": 0,
-      "label_needed": "cross-chain transfer protocol contract (e.g. CCTP)"
+      "identification": "FIXED_PUBLIC_CONTRACT"
     },
     "BRIDGE_LOCK": {
       "native_supply_sign": 0,
       "external_dollar_sign": 0,
-      "label_needed": "bridge escrow contract"
+      "identification": "FIXED_PUBLIC_CONTRACT"
     },
     "BRIDGE_WRAPPED_MINT": {
       "native_supply_sign": 0,
       "external_dollar_sign": 0,
-      "label_needed": "bridge token contract on the destination chain"
+      "identification": "FIXED_PUBLIC_CONTRACT"
     },
     "DESTROY_FROZEN": {
       "native_supply_sign": -1,
       "external_dollar_sign": 0,
-      "label_needed": null
+      "identification": "NONE"
     },
     "TRANSFER": {
       "native_supply_sign": 0,
       "external_dollar_sign": 0,
-      "label_needed": null
+      "identification": "NONE"
     }
   },
   "examples": {
@@ -88,9 +109,8 @@
       "naive_sum_including_wrapped": 0.0,
       "treasury_adjusted_circulating": 0.0,
       "new_external_dollars": 0.0,
-      "labels_required": [
-        "pairing with a burn on another chain (issuer operation, not labelled on chain)",
-        "pairing with a mint on another chain"
+      "identification_required": [
+        "OFF_CHAIN_ISSUER_RECORD"
       ]
     },
     "chain_swap_mint_leg_only": {
@@ -101,8 +121,8 @@
       "naive_sum_including_wrapped": 100.0,
       "treasury_adjusted_circulating": 100.0,
       "new_external_dollars": 0.0,
-      "labels_required": [
-        "pairing with a burn on another chain (issuer operation, not labelled on chain)"
+      "identification_required": [
+        "OFF_CHAIN_ISSUER_RECORD"
       ]
     },
     "authorized_not_issued": {
@@ -113,8 +133,8 @@
       "naive_sum_including_wrapped": 1000.0,
       "treasury_adjusted_circulating": 0.0,
       "new_external_dollars": 0.0,
-      "labels_required": [
-        "issuer treasury address"
+      "identification_required": [
+        "ISSUER_TREASURY_ADDRESS"
       ]
     },
     "authorized_then_issued": {
@@ -125,8 +145,8 @@
       "naive_sum_including_wrapped": 1000.0,
       "treasury_adjusted_circulating": 400.0,
       "new_external_dollars": 400.0,
-      "labels_required": [
-        "issuer treasury address"
+      "identification_required": [
+        "ISSUER_TREASURY_ADDRESS"
       ]
     },
     "burn_and_mint_transfer": {
@@ -138,8 +158,8 @@
       "naive_sum_including_wrapped": 0.0,
       "treasury_adjusted_circulating": 0.0,
       "new_external_dollars": 0.0,
-      "labels_required": [
-        "cross-chain transfer protocol contract (e.g. CCTP)"
+      "identification_required": [
+        "FIXED_PUBLIC_CONTRACT"
       ]
     },
     "bridge_lock_and_wrap": {
@@ -151,9 +171,8 @@
       "naive_sum_including_wrapped": 70.0,
       "treasury_adjusted_circulating": 0.0,
       "new_external_dollars": 0.0,
-      "labels_required": [
-        "bridge escrow contract",
-        "bridge token contract on the destination chain"
+      "identification_required": [
+        "FIXED_PUBLIC_CONTRACT"
       ]
     },
     "direct_mint_to_customer": {
@@ -164,8 +183,8 @@
       "naive_sum_including_wrapped": 25.0,
       "treasury_adjusted_circulating": 25.0,
       "new_external_dollars": 25.0,
-      "labels_required": [
-        "issuer minter role (contract-visible) and absence of a matching burn"
+      "identification_required": [
+        "CONTRACT_ROLE"
       ]
     }
   }

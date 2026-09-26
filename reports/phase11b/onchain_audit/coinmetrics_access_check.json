@@ -1,0 +1,241 @@
+{
+  "catalog-v2": {
+    "status": 200,
+    "rows": [
+      [
+        "btc",
+        "FlowInExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "btc",
+        "FlowOutExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "btc",
+        "SplyExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "btc",
+        "TxCnt",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "FlowInExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "FlowOutExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "SplyExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "TxCnt",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ]
+    ],
+    "error": null
+  },
+  "catalog-all-v2": {
+    "status": 200,
+    "rows": [
+      [
+        "btc",
+        "FlowInExNtv",
+        [
+          [
+            "1b",
+            null
+          ],
+          [
+            "1h",
+            null
+          ],
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "btc",
+        "FlowOutExNtv",
+        [
+          [
+            "1b",
+            null
+          ],
+          [
+            "1h",
+            null
+          ],
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "btc",
+        "SplyExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "btc",
+        "TxCnt",
+        [
+          [
+            "1b",
+            null
+          ],
+          [
+            "1h",
+            null
+          ],
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "FlowInExNtv",
+        [
+          [
+            "1b",
+            null
+          ],
+          [
+            "1h",
+            null
+          ],
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "FlowOutExNtv",
+        [
+          [
+            "1b",
+            null
+          ],
+          [
+            "1h",
+            null
+          ],
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "SplyExNtv",
+        [
+          [
+            "1d",
+            true
+          ]
+        ]
+      ],
+      [
+        "eth",
+        "TxCnt",
+        [
+          [
+            "1b",
+            null
+          ],
+          [
+            "1h",
+            null
+          ],
+          [
+            "1d",
+            true
+          ]
+        ]
+      ]
+    ],
+    "error": null
+  },
+  "probe_FlowInExNtv": {
+    "status": 200,
+    "rows_returned": 0,
+    "error": null
+  },
+  "probe_TxCnt": {
+    "status": 200,
+    "rows_returned": 0,
+    "error": null
+  },
+  "probe_FlowInExNtv_1h_negative_control": {
+    "status": 403,
+    "rows_returned": null,
+    "error": {
+      "type": "forbidden",
+      "message": "Requested metric 'FlowInExNtv' with frequency '1h' for asset 'btc' is not available with supplied credentials."
+    }
+  },
+  "note": "Retrieved 2026-09-26 from community-api.coinmetrics.io (no API key). Catalog entries are metadata only. Probes request a time range before each metric's coverage start, so no metric value can be returned; they test permission only."
+}

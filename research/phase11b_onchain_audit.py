@@ -7,9 +7,10 @@ Nothing in this module reads a price, a return, or any on-chain metric time seri
   2. the causal timing convention: Bitcoin day closure through median-time-past (MTP), Ethereum closure
      through finality (PoS) or confirmation depth (PoW), and the fixed D -> D+1 compute/execution schedule,
      with a model-based (not data-based) estimate of how long Bitcoin day closure takes;
-  3. a stablecoin supply taxonomy (minted / authorized / issued / circulating / transferred) and a netting
-     illustration that shows where single-chain or summed per-chain supply mismeasures new issuance, and
-     which event types can only be recognised with an address label;
+  3. a stablecoin supply taxonomy: three objects (raw mint/burn events, token totalSupply, economic circulating
+     aggregate), five terms (minted / authorized / issued / circulating / transferred), and a netting illustration
+     that shows where single-chain or summed per-chain supply mismeasures new issuance and what identification
+     each event type needs (most of it is fixed public contracts, not historically changing entity labels);
   4. the Stage 0 evidence-table schema and validator, the per-mechanism gate table and the decision rule.
 
 CLI:  python phase11b_onchain_audit.py all      (from research/; writes reports/phase11b/onchain_audit/)
@@ -235,23 +236,49 @@ SUPPLY_TERMS = {
     "TRANSFERRED": "moved between holders; changes no supply measure",
 }
 
-# kind -> (effect on the emitting chain's native totalSupply, effect on new external dollars, label needed to
-# recognise the kind from chain data alone)
-EVENT_KINDS: dict[str, tuple[int, int, str | None]] = {
-    "MINT_TO_TREASURY": (+1, 0, "issuer treasury address"),
-    "ISSUE_FROM_TREASURY": (0, +1, "issuer treasury address"),
-    "RETURN_TO_TREASURY": (0, -1, "issuer treasury address"),
-    "BURN_FROM_TREASURY": (-1, 0, "issuer treasury address"),
-    "MINT_DIRECT_TO_CUSTOMER": (+1, +1, "issuer minter role (contract-visible) and absence of a matching burn"),
-    "REDEEM_BURN_DIRECT": (-1, -1, "issuer minter role and absence of a matching mint elsewhere"),
-    "CHAIN_SWAP_MINT": (+1, 0, "pairing with a burn on another chain (issuer operation, not labelled on chain)"),
-    "CHAIN_SWAP_BURN": (-1, 0, "pairing with a mint on another chain"),
-    "BURN_AND_MINT_OUT": (-1, 0, "cross-chain transfer protocol contract (e.g. CCTP)"),
-    "BURN_AND_MINT_IN": (+1, 0, "cross-chain transfer protocol contract (e.g. CCTP)"),
-    "BRIDGE_LOCK": (0, 0, "bridge escrow contract"),
-    "BRIDGE_WRAPPED_MINT": (0, 0, "bridge token contract on the destination chain"),  # separate token contract
-    "DESTROY_FROZEN": (-1, 0, None),  # own event on USDT; administrative, not a fiat redemption
-    "TRANSFER": (0, 0, None),
+# Three different objects (finalization correction, 2026-09-26): the first two are raw-chain objects of a
+# predetermined contract; only the third needs aggregation rules, and those rules are semantic choices that become
+# point-in-time-label problems only if a rule depends on historically changing entity labels.
+SUPPLY_OBJECTS = {
+    "RAW_MINT_BURN_EVENTS": ("RAW_CHAIN_RECONSTRUCTABLE",
+                             "mint/burn events of a predetermined token contract, read from logs; chain-specific "
+                             "mechanics apply (USDT Issue/Redeem/DestroyedBlackFunds emit no Transfer)"),
+    "TOKEN_TOTAL_SUPPLY": ("RAW_CHAIN_RECONSTRUCTABLE",
+                           "totalSupply of a fixed contract by event replay or state; contract migrations and new "
+                           "chain deployments must be handled by explicit rules fixed in advance"),
+    "ECONOMIC_CIRCULATING_AGGREGATE": ("RULE_DEPENDENT",
+                                       "needs rules for treasury inventory, authorized-but-not-issued stock, multiple "
+                                       "chains, migrations, bridges, chain swaps, frozen tokens and double counting; "
+                                       "PIT-label-dependent only where a rule uses historically changing entity labels"),
+}
+
+# How each event kind could be recognised from outside the issuer. Only the last two classes carry a point-in-time
+# hazard, and only when the classification comes from a third party after the fact.
+IDENTIFICATION_CLASSES = {
+    "NONE": "visible in the event itself",
+    "CONTRACT_ROLE": "minter/burner role readable from contract state and events",
+    "FIXED_PUBLIC_CONTRACT": "protocol or bridge contract published by its operator and fixed at deployment",
+    "ISSUER_TREASURY_ADDRESS": "issuer inventory address; PIT-safe only if issuer-published with a date, not if taken "
+                               "from a later third-party explorer label",
+    "OFF_CHAIN_ISSUER_RECORD": "pairing of operations across chains; recorded only in issuer announcements",
+}
+
+# kind -> (effect on the emitting chain's native totalSupply, effect on new external dollars, identification class)
+EVENT_KINDS: dict[str, tuple[int, int, str]] = {
+    "MINT_TO_TREASURY": (+1, 0, "ISSUER_TREASURY_ADDRESS"),
+    "ISSUE_FROM_TREASURY": (0, +1, "ISSUER_TREASURY_ADDRESS"),
+    "RETURN_TO_TREASURY": (0, -1, "ISSUER_TREASURY_ADDRESS"),
+    "BURN_FROM_TREASURY": (-1, 0, "ISSUER_TREASURY_ADDRESS"),
+    "MINT_DIRECT_TO_CUSTOMER": (+1, +1, "CONTRACT_ROLE"),
+    "REDEEM_BURN_DIRECT": (-1, -1, "CONTRACT_ROLE"),
+    "CHAIN_SWAP_MINT": (+1, 0, "OFF_CHAIN_ISSUER_RECORD"),
+    "CHAIN_SWAP_BURN": (-1, 0, "OFF_CHAIN_ISSUER_RECORD"),
+    "BURN_AND_MINT_OUT": (-1, 0, "FIXED_PUBLIC_CONTRACT"),   # e.g. CCTP TokenMessenger
+    "BURN_AND_MINT_IN": (+1, 0, "FIXED_PUBLIC_CONTRACT"),
+    "BRIDGE_LOCK": (0, 0, "FIXED_PUBLIC_CONTRACT"),
+    "BRIDGE_WRAPPED_MINT": (0, 0, "FIXED_PUBLIC_CONTRACT"),  # separate token contract on the destination chain
+    "DESTROY_FROZEN": (-1, 0, "NONE"),  # own event on USDT; administrative, not a fiat redemption
+    "TRANSFER": (0, 0, "NONE"),
 }
 
 
@@ -275,9 +302,9 @@ def net_supply(events: Iterable[SupplyEvent], wrapped_on: dict[str, str] | None 
         measures);
     naive_sum_including_wrapped: sum over chains of every token that calls itself USDT/USDC, including bridge-wrapped
         tokens (what a naive multi-chain dashboard sums);
-    treasury_adjusted_circulating: native supply less treasury-held balance (needs the treasury label);
+    treasury_adjusted_circulating: native supply less treasury-held balance (needs the treasury address);
     new_external_dollars: fiat that entered minus fiat that left the issuer (the economic quantity of interest);
-    labels_required: every label needed to separate the kinds that occurred.
+    identification_required: the identification classes needed to separate the kinds that occurred ("NONE" omitted).
     """
     wrapped_on = wrapped_on or {}
     native: dict[str, float] = {}
@@ -286,7 +313,8 @@ def net_supply(events: Iterable[SupplyEvent], wrapped_on: dict[str, str] | None 
     dollars = 0.0
     labels: set[str] = set()
     for e in events:
-        d_supply, d_dollars, label = EVENT_KINDS[e.kind]
+        d_supply, d_dollars, ident = EVENT_KINDS[e.kind]
+        label = None if ident == "NONE" else ident
         native[e.chain] = native.get(e.chain, 0.0) + d_supply * e.amount
         dollars += d_dollars * e.amount
         if e.kind == "MINT_TO_TREASURY":
@@ -306,7 +334,7 @@ def net_supply(events: Iterable[SupplyEvent], wrapped_on: dict[str, str] | None 
         "naive_sum_including_wrapped": total_native + wrapped,
         "treasury_adjusted_circulating": total_native - treasury,
         "new_external_dollars": dollars,
-        "labels_required": sorted(labels),
+        "identification_required": sorted(labels),
     }
 
 
@@ -416,7 +444,11 @@ DECISIONS = {
 
 
 def mechanism_decision(gates: dict[str, str]) -> dict:
-    """UNRESOLVED counts as not passing: a gate that cannot be shown to pass cannot authorise a cell."""
+    """UNRESOLVED counts as not passing: a gate that cannot be shown to pass cannot authorise a cell.
+
+    The primary blocking code is taken from the established FAILs by precedence; UNRESOLVED gates are listed but
+    only set the primary code when nothing has hard-failed (finalization correction: an open question is not a
+    block)."""
     if set(gates) != set(GATES):
         raise ValueError(f"gate set mismatch: {sorted(set(GATES) ^ set(gates))}")
     bad = {k: v for k, v in gates.items() if v not in GATE_VALUES}
@@ -424,40 +456,52 @@ def mechanism_decision(gates: dict[str, str]) -> dict:
         raise ValueError(f"invalid gate values {bad}")
     failing = [k for k, v in gates.items() if v != "PASS"]
     if not failing:
-        return {"primary": DECISIONS["A"], "codes": [], "failing": []}
+        return {"primary": DECISIONS["A"], "codes": [], "failing": [], "hard_fail": [], "unresolved": []}
+    hard = [k for k in failing if gates[k] == "FAIL"]
     codes = sorted({GATES[k] for k in failing}, key=CODE_PRECEDENCE.index)
-    return {"primary": codes[0], "codes": codes, "failing": failing,
-            "hard_fail": [k for k in failing if gates[k] == "FAIL"]}
+    hard_codes = sorted({GATES[k] for k in hard}, key=CODE_PRECEDENCE.index)
+    return {"primary": (hard_codes or codes)[0], "codes": codes, "failing": failing, "hard_fail": hard,
+            "unresolved": [k for k in failing if gates[k] == "UNRESOLVED"]}
+
+
+def derive_programme_outcome(per_mechanism: dict[str, dict[str, str]]) -> str:
+    """The phase outcome implied by the gate tables.
+
+    Exactly one passing mechanism -> AUTHORIZE (more than one is an error: Stage 0 ends with at most one).
+    Otherwise mechanisms blocked on point-in-time labels are set aside, and the outcome is the binding code of the
+    remaining (label-free) mechanisms, by precedence if they differ. Only if every mechanism is label-blocked is the
+    outcome PIT_LABEL_BLOCKED."""
+    results = {m: mechanism_decision(g) for m, g in per_mechanism.items()}
+    passing = [m for m, r in results.items() if r["primary"] == DECISIONS["A"]]
+    if len(passing) > 1:
+        raise ValueError(f"more than one mechanism passes {passing}; Stage 0 must select at most one")
+    if passing:
+        return DECISIONS["A"]
+    label_free = [r["primary"] for r in results.values() if r["primary"] != "PIT_LABEL_BLOCKED"]
+    if not label_free:
+        return "PIT_LABEL_BLOCKED"
+    return min(label_free, key=CODE_PRECEDENCE.index)
 
 
 def programme_decision(per_mechanism: dict[str, dict[str, str]], chosen: str) -> str:
-    """Check that the phase decision `chosen` (a DECISIONS value) is consistent with the gate tables.
-
-    - AUTHORIZE is allowed only when exactly one mechanism passes every gate.
-    - With no passing mechanism, the decision must be a blocking code that actually binds: one appearing among
-      the hard FAIL codes of every mechanism (it closes all of them), or ABANDON_ONCHAIN_PROGRAMME when every
-      mechanism hard-fails on at least one evidence gate AND on at least one data/causality gate, so that neither
-      new data nor new evidence alone would reopen it.
-    """
-    results = {m: mechanism_decision(g) for m, g in per_mechanism.items()}
-    passing = [m for m, r in results.items() if r["primary"] == DECISIONS["A"]]
-    if chosen == DECISIONS["A"]:
-        if len(passing) != 1:
-            raise ValueError(f"AUTHORIZE requires exactly one passing mechanism, found {passing}")
-        return chosen
-    if passing:
-        raise ValueError(f"{passing} pass every gate; a blocking decision would discard it")
-    hard_codes = {m: {GATES[k] for k in r["hard_fail"]} for m, r in results.items()}
-    if chosen == DECISIONS["G"]:
-        data_codes = {"PIT_LABEL_BLOCKED", "DATA_BLOCKED"}
-        ok = all("MECHANISM_TOO_WEAK" in c and c & data_codes for c in hard_codes.values())
-        if not ok:
-            raise ValueError("ABANDON requires every mechanism to hard-fail on evidence and on data/causality")
-        return chosen
+    """Check that the phase decision `chosen` (a DECISIONS value) is consistent with the gate tables: it must equal
+    derive_programme_outcome(), or be ABANDON_ONCHAIN_PROGRAMME when every mechanism hard-fails on at least one
+    evidence gate AND on at least one data/causality gate, so that neither new data nor new evidence alone would
+    reopen any of them."""
     if chosen not in DECISIONS.values():
         raise ValueError(f"unknown decision {chosen}")
-    if not all(chosen in c for c in hard_codes.values()):
-        raise ValueError(f"{chosen} is not a hard-fail code of every mechanism: {hard_codes}")
+    derived = derive_programme_outcome(per_mechanism)
+    if chosen == DECISIONS["G"]:
+        if derived == DECISIONS["A"]:
+            raise ValueError("a mechanism passes every gate; abandoning would discard it")
+        results = {m: mechanism_decision(g) for m, g in per_mechanism.items()}
+        hard_codes = {m: {GATES[k] for k in r["hard_fail"]} for m, r in results.items()}
+        data_codes = {"PIT_LABEL_BLOCKED", "DATA_BLOCKED"}
+        if not all("MECHANISM_TOO_WEAK" in c and c & data_codes for c in hard_codes.values()):
+            raise ValueError("ABANDON requires every mechanism to hard-fail on evidence and on data/causality")
+        return chosen
+    if chosen != derived:
+        raise ValueError(f"gate tables imply {derived}, not {chosen}")
     return chosen
 
 
@@ -509,8 +553,10 @@ def run_all() -> dict:
 
     swap = [SupplyEvent("ethereum", "CHAIN_SWAP_MINT", 100.0), SupplyEvent("omni", "CHAIN_SWAP_BURN", 100.0)]
     _write_json(OUT / "supply_netting_examples.json", {
+        "objects": {k: {"class": v[0], "note": v[1]} for k, v in SUPPLY_OBJECTS.items()},
         "terms": SUPPLY_TERMS,
-        "event_kinds": {k: {"native_supply_sign": v[0], "external_dollar_sign": v[1], "label_needed": v[2]}
+        "identification_classes": IDENTIFICATION_CLASSES,
+        "event_kinds": {k: {"native_supply_sign": v[0], "external_dollar_sign": v[1], "identification": v[2]}
                         for k, v in EVENT_KINDS.items()},
         "examples": {
             "chain_swap_completed": net_supply(swap),
@@ -541,8 +587,13 @@ def run_all() -> dict:
     if gate_file.exists():
         g = json.loads(gate_file.read_text(encoding="utf-8"))
         per = {m: mechanism_decision(v) for m, v in g["gates"].items()}
+        recorded = g.get("per_mechanism_decision", {})
+        mismatch = {m: (recorded[m], per[m]["primary"]) for m in recorded if recorded[m] != per[m]["primary"]}
+        if mismatch:
+            raise SystemExit(f"recorded per-mechanism decisions disagree with the gates: {mismatch}")
         programme_decision(g["gates"], g["programme_decision"])
         _write_json(OUT / "decision_check.json", {"per_mechanism": per,
+                                                   "derived_programme_outcome": derive_programme_outcome(g["gates"]),
                                                    "programme_decision": g["programme_decision"],
                                                    "consistent_with_gates": True})
         written.append(OUT / "decision_check.json")
@@ -553,6 +604,9 @@ def run_all() -> dict:
         manifest["inputs"] = {str(EVIDENCE_CSV.relative_to(ROOT)).replace("\\", "/"): _sha256(EVIDENCE_CSV)}
     if gate_file.exists():
         manifest.setdefault("inputs", {})[str(gate_file.relative_to(ROOT)).replace("\\", "/")] = _sha256(gate_file)
+    access = OUT / "coinmetrics_access_check.json"
+    if access.exists():
+        manifest.setdefault("inputs", {})[str(access.relative_to(ROOT)).replace("\\", "/")] = _sha256(access)
     _write_json(OUT / "MANIFEST.json", manifest)
     return manifest
 

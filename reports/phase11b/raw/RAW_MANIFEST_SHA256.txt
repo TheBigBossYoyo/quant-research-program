@@ -1,4 +1,4 @@
-# Phase 11B Stage 0 raw evidence manifest (SHA-256, size in bytes). Retrieved 2026-09-26.
+# Phase 11B Stage 0 raw evidence manifest (SHA-256, size in bytes). Retrieved 2026-09-26; regenerated at finalization.
 # [local] = git-ignored (third-party copyright, vendor licence, or quarantined possible price content); [tracked] = committed.
 325efe2268488e3d34575c71d9442bedcb6ca4796b6303713507c9d273fe64aa      426584  [local]    reports/phase11b/raw/literature/AhmedAldasoro_2025_ClevelandFedMirror.pdf
 25d099cf97d64f4ed246d3cdb2835532377e5b0ad9dae623cc0bf04d6830495d      468176  [local]    reports/phase11b/raw/literature/anastasopoulos_et_al_order_flow_efma2025.pdf
@@ -25,7 +25,7 @@ c1fc9e1a691621e832e6bdffeb8150117124cd89418d410f8cd9348d665d2af6     1359150  [l
 a6de1fec135a08d1d5dba1d3cbe364227286a22fa015a719461f9a1fce161293      770924  [local]    reports/phase11b/raw/literature/polasik_et_al_2015_ecb.pdf
 415066637ef15eab005441ef04362beae3fbb76e65ebeb0adc3da3a13b31cf85      436679  [local]    reports/phase11b/raw/literature/Saggu_2022_arxiv2501.05232.pdf
 3991ee1d756f9f3a071f4b028e7f1e6425966b398e5d312414ededfc714b9329      694337  [local]    reports/phase11b/raw/literature/sakkas_urquhart_2024_blockchain_factors_bham.pdf
-a9e35fd01ed4523cab090d6354eff61165f7694bacdb62501fb75c1ca2646c9f       10065  [tracked]  reports/phase11b/raw/literature/SOURCES.txt
+1bd4518fdc08fbad57fb1cd9a68f0c0c1c67cd03a05f1facf015c4d3f83532e8       11294  [tracked]  reports/phase11b/raw/literature/SOURCES.txt
 7e2b5aa983acacabdc19adb565daee43afa059ec1d65b467a0139a46b27e12f6      263619  [local]    reports/phase11b/raw/literature/Wei_2018_SSRN3175876.pdf
 370559d48ba930409aa1e80d63b28a8b7258746b0a213ea1668e47d9a0eeb1e7     4797256  [local]    reports/phase11b/raw/literature/whale_transactions_cryptoquant_arxiv_2211.08281.pdf
 51e46b26f2d9eb2048eb048032ea31f67bdb83c008b43325ab04bc049b9875f3     1515529  [local]    reports/phase11b/raw/literature/wheatley_sornette_2018_arxiv.pdf

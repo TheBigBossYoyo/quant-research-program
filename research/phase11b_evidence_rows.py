@@ -118,13 +118,17 @@ ROWS = [
      "BRL WP11 abstract; Table 2, Fig.2 pp.5-8", "VERIFIED_FULLTEXT",
      "IS", "BOTH", "hours (-24h..+24h)", "on-chain issuance time", "EVENT_STUDY", "NO", "BOTH",
      "2019-04..2020-03, 565 events", "YES", "NO", "NO", "NO",
-     "market downturn in the prior week; CAAR +0.31-0.47% pre (-12..-1h) and +0.47-0.69% post (0..24h); issuance "
-     "size irrelevant; pre-event sign differs by issuer", "MIXED"),
-    ("AnteFiedlerStrehle2021_TFSC", "B_STABLECOIN", "stablecoin transfers >= USD 1m",
-     "TFSC 170:120851 abstract (closed access)", "ABSTRACT_ONLY",
+     "market downturn in the prior week; no significant raw returns in the 24h after issuance; abnormal CAAR "
+     "+0.31-0.47% pre (-12..-1h) and +0.47-0.69% post (0..24h) vs a falling estimation window; issuance size "
+     "irrelevant; 'lack of significant effects for USDC and GUSD' (USDC n=191); authors: demand 'triggers the "
+     "issuance'", "MIXED"),
+    ("AnteFiedlerStrehle2021_TFSC", "B_STABLECOIN", "stablecoin transfers >= USD 1m by sender/receiver category",
+     "TFSC 170:120851 abstract (IDEAS; closed access)", "ABSTRACT_ONLY",
      "IS", "CONTEMPORANEOUS", "hours", "on-chain transfer time (unverified)", "EVENT_STUDY", "NO", "BTC_ONLY",
      "2019-04..2020-03 (secondary)", "YES", "unverified", "UNKNOWN", "NOT_TESTED",
-     "abnormal returns and volume 'around' transfers (secondary description)", "MIXED"),
+     "abstract: senders and receivers 'categorized as (1) unknown, (2) cryptocurrency exchange or (3) stablecoin "
+     "treasury'; effects 'differ across the nine resulting subsamples' - label-dependent, not evidence for a "
+     "label-free aggregate", "MIXED"),
     ("Kristoufek2021_FRL", "B_STABLECOIN", "aggregate free-float supply of 9 stablecoins",
      "FRL 43:101991 abstract; pp.2-4; Fig.2 rolling windows", "VERIFIED_FULLTEXT",
      "IS", "REVERSE", "daily VAR (H=100)", "daily close", "REGRESSION_ONLY", "NO", "BTC_ETH",

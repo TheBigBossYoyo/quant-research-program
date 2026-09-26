@@ -52,8 +52,13 @@ B. STABLECOIN ISSUANCE / SUPPLY
 12. Ante, L., Fiedler, I. & Strehle, E. "The influence of stablecoin issuances on cryptocurrency markets". FRL
     41:101867 (2021). Local: AnteFiedlerStrehle_2021_issuances_BRLWP11.pdf. Abstract: 565 events >= USD 1m, 2019-04..
     2020-03; downturns in the week before issuance; issuance size not significant [re-checked]; Table 2, Fig.2.
+    Finalization re-check: "We do not observe significant returns for the hour of the issuance and the next 24 hours";
+    "lack of significant effects for USDC and GUSD"; authors: demand for cryptocurrencies "triggers the issuance".
 13. Ante, L., Fiedler, I. & Strehle, E. "The impact of transparent money flows". TFSC 170:120851 (2021),
-    DOI 10.1016/j.techfore.2021.120851. Closed access (Unpaywall); abstract only.
+    DOI 10.1016/j.techfore.2021.120851. Closed access (Unpaywall); abstract only. Abstract re-checked at
+    https://ideas.repec.org/a/eee/tefoso/v170y2021ics0040162521002833.html : senders and receivers "categorized as
+    (1) unknown, (2) cryptocurrency exchange or (3) stablecoin treasury"; effects "differ across the nine resulting
+    subsamples" (label-dependent evidence).
 14. Kristoufek, L. "Tethered, or Untethered?" FRL 43:101991 (2021), DOI 10.1016/j.frl.2021.101991.
     Local: Kristoufek_2021_FRL_UTIA.pdf. Abstract and pp.2-4: "no evidence of stablecoins boosting the prices";
     issuances "come in reaction" [re-checked].
@@ -103,4 +108,10 @@ D. VENDOR DOCUMENTATION RE-CHECKED BY THE MAIN AUDIT (WebFetch, 2026-09-26)
 - Coin Metrics, https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/exchange/point-in-time-flows.md :
   standard flows "Past values can change when new entity addresses are discovered later"; point-in-time flows "Past
   values are fixed; newly discovered addresses affect only intervals on or after their discovery date".
-- Yae & Tian abstract, https://ideas.repec.org/a/eee/phsmap/v598y2022ics0378437122002928.html
+- Yae & Tian abstract, https://ideas.repec.org/a/eee/phsmap/v598y2022ics0378437122002928.html (general OOS caution on
+  attention and trading volume; on-chain metrics not shown to be tested in the accessible material).
+- Coin Metrics Community API access check (finalization), community-api.coinmetrics.io/v4, no key; metadata and zero-row
+  probes only (reports/phase11b/onchain_audit/coinmetrics_access_check.json): FlowInExNtv/FlowOutExNtv/SplyExNtv for
+  BTC and ETH are community: true at 1d; FlowIn/Out at 1b and 1h carry no community flag; a FlowInExNtv 1d probe
+  returned HTTP 200 (0 rows) and a 1h probe HTTP 403 "forbidden". Metric definition (catalog): values "reflect activity
+  of addresses currently known to belong to the entity, from each address's first non-zero balance".

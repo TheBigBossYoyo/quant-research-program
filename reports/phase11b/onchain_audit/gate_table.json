@@ -1,8 +1,8 @@
 {
-  "note": "Phase 11B Stage 0 gate table. Values are judgements from published evidence and documentation (PHASE11B_STAGE0_AUDIT.md sections 2-12); no return, price or on-chain metric series was read. UNRESOLVED counts as not passing. Checked by research/phase11b_onchain_audit.py (programme_decision).",
+  "note": "Phase 11B Stage 0 gate table (finalized 2026-09-26). Values are judgements from published evidence and documentation (PHASE11B_STAGE0_AUDIT.md sections 2-13); no return, price or on-chain metric series was read. UNRESOLVED counts as not passing but does not set a mechanism's primary blocking code when a gate has hard-failed. Checked by research/phase11b_onchain_audit.py (mechanism_decision, derive_programme_outcome, programme_decision). Finalization corrections vs commit 1aacdaa: B is the label-free raw-contract construction (Q2 and Q10 now PASS, Q11 UNRESOLVED); A Q11 FAIL -> UNRESOLVED (semantic instability documented as a risk, not a data block).",
   "constructions": {
     "A_ACTIVITY": "weekly growth in a raw, label-free activity count (Bitcoin transaction count or active addresses; Ethereum active addresses) -> BTC/ETH long-or-cash",
-    "B_STABLECOIN": "weekly growth in aggregate USDT+USDC net issuance -> BTC/ETH long-or-cash",
+    "B_STABLECOIN": "weekly change in raw mint-minus-burn (equivalently token totalSupply) of predetermined issuer token contracts (USDT, USDC) on predetermined chains, fixed before any price is opened; no treasury, exchange or bridge labels -> BTC/ETH long-or-cash",
     "C_EXCHANGE_FLOW": "weekly change in BTC/ETH exchange reserves (net inflow) -> BTC/ETH long-or-cash"
   },
   "gates": {
@@ -17,14 +17,14 @@
       "Q8_survives_momentum_volume": "FAIL",
       "Q9_not_price_response": "FAIL",
       "Q10_no_retrospective_labels": "PASS",
-      "Q11_protocol_comparability": "FAIL",
+      "Q11_protocol_comparability": "UNRESOLVED",
       "Q12_low_frequency_viable": "PASS",
       "Q13_capital_feasible": "PASS",
       "Q14_independent_of_prior_search": "UNRESOLVED"
     },
     "B_STABLECOIN": {
       "Q1_known_before_return": "PASS",
-      "Q2_raw_chain_reconstructable": "FAIL",
+      "Q2_raw_chain_reconstructable": "PASS",
       "Q3_oos_evidence": "FAIL",
       "Q4_btc_eth_evidence": "FAIL",
       "Q5_long_only_evidence": "FAIL",
@@ -32,8 +32,8 @@
       "Q7_no_decay": "FAIL",
       "Q8_survives_momentum_volume": "UNRESOLVED",
       "Q9_not_price_response": "FAIL",
-      "Q10_no_retrospective_labels": "FAIL",
-      "Q11_protocol_comparability": "FAIL",
+      "Q10_no_retrospective_labels": "PASS",
+      "Q11_protocol_comparability": "UNRESOLVED",
       "Q12_low_frequency_viable": "PASS",
       "Q13_capital_feasible": "PASS",
       "Q14_independent_of_prior_search": "PASS"
@@ -54,6 +54,11 @@
       "Q13_capital_feasible": "PASS",
       "Q14_independent_of_prior_search": "UNRESOLVED"
     }
+  },
+  "per_mechanism_decision": {
+    "A_ACTIVITY": "MECHANISM_TOO_WEAK",
+    "B_STABLECOIN": "MECHANISM_TOO_WEAK",
+    "C_EXCHANGE_FLOW": "PIT_LABEL_BLOCKED"
   },
   "programme_decision": "MECHANISM_TOO_WEAK"
 }

@@ -672,60 +672,76 @@ failed mechanism plus one more free choice made after reading the results. They 
 
 ## Phase 11B NATIVE_BLOCKCHAIN_FUNDAMENTALS_STAGE0 — closed at the mechanism gate (2026-09-26)
 
-The pitch for on-chain data is transparency. Every Bitcoin transaction and every stablecoin mint is public and
-timestamped, so perhaps a patient retail investor could see demand forming before it reaches the price. After 388 crypto
-cells built from exchange data, that seemed worth one careful look at a genuinely different information source. The
-brief allowed three kinds of variable (network activity, stablecoin supply, exchange reserves) and asked a single
-question: does any one of them deserve a strategy cell? The answer is no, and it is no for all three before any price
-was opened.
+The appeal of on-chain data is its transparency. Every Bitcoin transaction and every stablecoin mint is public and
+timestamped, so perhaps a patient retail investor could see demand forming before it reached the price. After 388
+crypto cells built from exchange data, that seemed worth one careful look at a genuinely different information source.
+The brief allowed three kinds of variable: network activity, stablecoin supply and exchange reserves. It asked one
+question. Does any of them deserve a strategy cell? None does. The reasons differ, and the record now keeps them
+apart.
 
-Network activity was the easiest to reject. Rebuilding Bitcoin transaction counts from raw blocks is entirely possible,
-but the evidence says those counts move with the price, not ahead of it. The one full-text test of a Bitcoin-level
-network variable that I could read, in Liu and Tsyvinski's working paper, has an R-squared of zero at every horizon from
-one to seven days. Their published version files network factors under exposures and keeps the word "forecast" for
-momentum and attention. The positive results all come from weekly long-short sorts across hundreds of small coins,
-gross of costs. The most careful recent test, Sakkas and Urquhart's multiple-testing procedure, removes the
-activity-based factors once the market is in the model. What survives there is a supply-concentration measure, which is
-not activity and not something a long-only BTC/ETH book can hold. Even a good result would have run into a data problem.
-Raw counts measure different things in different years: batching, then inscriptions in 2023, Runes in 2024, and on
-Ethereum the move of activity onto rollups and blobs. A growth rate that crosses one of those dates is measuring a
-protocol change.
+Exchange reserves stop at the label audit, before the evidence matters. The mechanism is plausible: coins moved onto an
+exchange are coins someone may sell. But every measure of it depends on knowing which addresses belong to an exchange,
+and that knowledge is discovered over time and written back into history. Glassnode's own documentation says a metric
+has no point-in-time history before its PIT tracking was switched on, which for most metrics was July 2025. Coin
+Metrics says its standard flows change "when new entity addresses are discovered later". Its flow definition uses
+"addresses currently known to belong to the entity". Exchange proof-of-reserve address lists begin in November 2022.
+Everything published on reserves applies today's labels to earlier years. That branch is PIT_LABEL_BLOCKED, and it
+would be blocked however good the published results looked.
 
-Stablecoins were the class I most wanted to work, because they are the one genuinely new layer. Primary-market creation
-of crypto dollars appears nowhere in the earlier search. The literature is fairly clear that supply follows prices. Griffin and
-Shams is the famous supply-push paper, and it is careful work, but it is about one wallet cluster on one exchange over
-thirteen months. Their own end-of-month result loses significance when December 2017 and January 2018 are left out. Lyons
-and Viswanath-Natraj re-ran the same window on aggregate issuance and found nothing. Kristoufek's longer and broader
-sample finds issuance reacting to prices, stable across rolling windows. The event studies show markets falling the week
-before an issuance and then drifting up for a day, with issuance size irrelevant. Saggu finds the minute-scale reaction
-only when Whale Alert tweets the mint. Nobody has tested a weekly or monthly long-only rule, in or out of sample. On the
-data side, "net new dollars" cannot be separated from chain swaps, bridge mints and burn-and-mint transfers without
-labels, and Tether does not publish its treasury and swap records in a form a researcher could date. USDT's `issue`,
-`redeem` and `destroyBlackFunds` do not even emit a Transfer event, so the obvious log replay would be silently wrong.
+Network activity is a different kind of failure. The raw counts are among the cleanest data in the whole programme:
+Bitcoin transactions can be rebuilt from raw blocks without any label. The evidence is what is missing. The one
+full-text Bitcoin-level predictive test I could read, in Liu and Tsyvinski's working paper, has an R-squared of zero at
+every horizon from one to seven days. Their published version calls network factors exposures and keeps "forecast" for
+momentum and attention. The positive results are weekly long-short sorts across hundreds of small coins, gross of
+costs. The most careful recent test (Sakkas and Urquhart) removes the activity-based factors once the market is in the
+model. There is a real semantic problem too: addresses are not users, and batching, inscriptions, Runes, Lightning,
+custody and rollups all change what a count means. I first recorded that as a data block and have downgraded it to a
+documented risk. The decision rests on the evidence.
 
-Exchange reserves stopped at the label audit, which is where the brief expected them to stop. Glassnode's own
-documentation says a metric has no point-in-time history before its PIT tracking was switched on, which for most metrics
-was July 2025. Coin Metrics says its standard flows change "when new entity addresses are discovered later". One
-correction to the sub-audit: those restated flows are in the free Coin Metrics tier. Exchange proof-of-reserve address
-lists begin in November 2022. Everything published on reserves therefore uses labels known today, applied to earlier
-years.
+Stablecoin supply needed the most careful correction. In the first pass I let a true statement about the *economic*
+aggregate stand for the whole mechanism. Three objects need separating:
+- the mint and burn events of a fixed contract;
+- that contract's total supply;
+- the circulating aggregate across issuers, chains, bridges and treasuries.
 
-Two things from the plumbing are worth keeping regardless. First, a Bitcoin day can be closed exactly. Median-time-past
-never decreases, so once the block six deep has an MTP past midnight, no block stamped the previous day can ever appear.
-That turns the "blockchain timestamp is not tradable time" problem into a checkable condition rather than a guessed
-buffer. Second, the venue facts moved. Binance stopped taking new EU/EEA spot business on 1 July 2026, so the fee the
-crypto phases assumed is not currently available to a European resident. At the licensed venues' retail fees, weekly
-switching would cost between a sixth and nearly half of the position each year.
+The first two can be rebuilt from the chain without any label. They need care — USDT's issue, redeem and destroy
+functions emit no Transfer event, so the obvious log replay would be silently wrong — but no label. The aggregate's
+difficulties (treasury inventory, chain swaps, bridges, double counting) are problems of definition, not of wallet
+labels leaking from the future. So the label-free construction is judged on its evidence, and the evidence is weak. Wei
+finds no subsequent return effect, only volume. Ante, Fiedler and Strehle's event study shows markets falling the week
+before issuance and no significant raw returns in the next day. Their USDC and GUSD subsamples are insignificant, and
+the authors themselves suggest that demand triggers the issuance. The transfer study's effects depend on whether sender
+and receiver are exchanges, treasuries or unknown, so it is label evidence, not aggregate evidence. Kristoufek and Lyons
+and Viswanath-Natraj find supply responding to prices, including on the Griffin-Shams window. The plausible chain runs
+from crypto demand or stress to a mint, not from a mint to predictable appreciation. MECHANISM_TOO_WEAK, not
+PIT_LABEL_BLOCKED.
+
+That gives the phase its logic. One attractive branch is independently blocked by labels. The two branches that are
+label-free and reconstructable do not have strong enough prior evidence. So the programme outcome is
+MECHANISM_TOO_WEAK. The decision code encodes that ordering, and a test checks the recorded decision against it. The
+sentence of record is narrow on purpose: no native on-chain mechanism meeting the programme's causal, reproducible,
+long-only and small-capital constraints had strong enough prior evidence for Stage 1. It does not say on-chain
+information is useless.
+
+One factual dispute was settled by measurement rather than by either side's say-so. The finalization brief said Coin
+Metrics' exchange-flow entries are not flagged for Community access. One sub-audit said flows were Pro-only; another
+said they were free. Metadata requests and zero-row probes show all three are partly right. The daily BTC/ETH series are
+flagged and accessible (HTTP 200, no rows requested). The hourly series is refused ("forbidden"). The flow product
+family is professional. The record says exactly that and classifies the flows as vendor-transformed and label-dependent.
+Access never mattered to the decision, because the accessible series is the restated one.
+
+Two things from the plumbing are worth keeping. A Bitcoin day can be closed exactly: median-time-past never decreases,
+so once the block six deep has an MTP past midnight, no block stamped the previous day can ever appear. And the venue
+facts moved: Binance stopped taking new EU/EEA spot business on 1 July 2026, so the fee the crypto phases assumed is not
+available to a European resident. At the licensed venues' retail fees, weekly switching would cost between a sixth and
+nearly half of the position a year.
 
 Process notes. Six sub-audits ran in parallel, and their search-engine summaries produced at least two false
 statements: Chainalysis labels in Makarov and Schoar, and network metrics in Yae and Tian's abstract. Both were caught
-against primary text, and every decisive number in the evidence table was re-read in the local full text. Some venue
-captures were ETP product pages that may carry price tables. They were quarantined unread. The on-chain metric catalogs
-were read for names and definitions only; no values.
-
-The decision is D rather than G. The gate table would allow abandoning the on-chain programme outright. But the audit
-covered three classes by instruction, and two of the data blockers will ease with time. The practical effect is the
-same: nothing is proposed, and reopening needs someone else's out-of-sample evidence.
+against primary text. Yae and Tian is kept only as general out-of-sample caution about attention and volume. Every
+decisive number was re-read in full text or the official abstract. Captures of ETP product pages that might carry prices
+were quarantined unread. The zero-of-33 "qualifying rows" count is kept as a summary, not as the reason for the
+decision.
 
 0 cells. 490 cumulative. No price, return or on-chain metric value loaded. Old crypto holdout, equity validation and
 equity holdout still closed.
