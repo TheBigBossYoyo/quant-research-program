@@ -1,0 +1,16 @@
+{
+  "source": {
+    "research/phase11b_onchain_audit.py": "47ec8124e2665442f5c86eb263ff347c26051489b6582363fccd65fea802b2b3"
+  },
+  "outputs": {
+    "reports/phase11b/onchain_audit/event_topics.json": "54c1470db0982f010446464276ec67ee29a1209e7cd37c3db7706e33082b12ef",
+    "reports/phase11b/onchain_audit/timing_convention.json": "51e3bfe4c37054b22d5564105df712850df18c1786ca62874a6aa86761e09c7a",
+    "reports/phase11b/onchain_audit/supply_netting_examples.json": "e610bb3146db346216d7b44518e1c1a2cdb93feb820a3569af643c2e52703eec",
+    "reports/phase11b/onchain_audit/evidence_summary.json": "388b06f5a983bd4eb9042a88347eaebdb36fc6e089fca98127594463373c41c1",
+    "reports/phase11b/onchain_audit/decision_check.json": "dc35c94e83c7af33c6bc8726c41794e7075d358dad8bac6565273c919e684057"
+  },
+  "inputs": {
+    "reports/phase11b/onchain_audit/evidence_table.csv": "a5509f3d3b9f6c4b914248103643398b1c71024db445aab4a10b598b3dde3a60",
+    "reports/phase11b/onchain_audit/gate_table.json": "8f9afe88509ef25697cee265c67e05e5fc3b5c86d1b76693ece70b2d52bbdcff"
+  }
+}

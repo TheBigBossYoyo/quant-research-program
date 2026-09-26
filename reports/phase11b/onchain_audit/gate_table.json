@@ -1,0 +1,59 @@
+{
+  "note": "Phase 11B Stage 0 gate table. Values are judgements from published evidence and documentation (PHASE11B_STAGE0_AUDIT.md sections 2-12); no return, price or on-chain metric series was read. UNRESOLVED counts as not passing. Checked by research/phase11b_onchain_audit.py (programme_decision).",
+  "constructions": {
+    "A_ACTIVITY": "weekly growth in a raw, label-free activity count (Bitcoin transaction count or active addresses; Ethereum active addresses) -> BTC/ETH long-or-cash",
+    "B_STABLECOIN": "weekly growth in aggregate USDT+USDC net issuance -> BTC/ETH long-or-cash",
+    "C_EXCHANGE_FLOW": "weekly change in BTC/ETH exchange reserves (net inflow) -> BTC/ETH long-or-cash"
+  },
+  "gates": {
+    "A_ACTIVITY": {
+      "Q1_known_before_return": "PASS",
+      "Q2_raw_chain_reconstructable": "PASS",
+      "Q3_oos_evidence": "FAIL",
+      "Q4_btc_eth_evidence": "FAIL",
+      "Q5_long_only_evidence": "FAIL",
+      "Q6_large_vs_spot_costs": "FAIL",
+      "Q7_no_decay": "FAIL",
+      "Q8_survives_momentum_volume": "FAIL",
+      "Q9_not_price_response": "FAIL",
+      "Q10_no_retrospective_labels": "PASS",
+      "Q11_protocol_comparability": "FAIL",
+      "Q12_low_frequency_viable": "PASS",
+      "Q13_capital_feasible": "PASS",
+      "Q14_independent_of_prior_search": "UNRESOLVED"
+    },
+    "B_STABLECOIN": {
+      "Q1_known_before_return": "PASS",
+      "Q2_raw_chain_reconstructable": "FAIL",
+      "Q3_oos_evidence": "FAIL",
+      "Q4_btc_eth_evidence": "FAIL",
+      "Q5_long_only_evidence": "FAIL",
+      "Q6_large_vs_spot_costs": "FAIL",
+      "Q7_no_decay": "FAIL",
+      "Q8_survives_momentum_volume": "UNRESOLVED",
+      "Q9_not_price_response": "FAIL",
+      "Q10_no_retrospective_labels": "FAIL",
+      "Q11_protocol_comparability": "FAIL",
+      "Q12_low_frequency_viable": "PASS",
+      "Q13_capital_feasible": "PASS",
+      "Q14_independent_of_prior_search": "PASS"
+    },
+    "C_EXCHANGE_FLOW": {
+      "Q1_known_before_return": "FAIL",
+      "Q2_raw_chain_reconstructable": "FAIL",
+      "Q3_oos_evidence": "FAIL",
+      "Q4_btc_eth_evidence": "FAIL",
+      "Q5_long_only_evidence": "FAIL",
+      "Q6_large_vs_spot_costs": "FAIL",
+      "Q7_no_decay": "UNRESOLVED",
+      "Q8_survives_momentum_volume": "UNRESOLVED",
+      "Q9_not_price_response": "UNRESOLVED",
+      "Q10_no_retrospective_labels": "FAIL",
+      "Q11_protocol_comparability": "UNRESOLVED",
+      "Q12_low_frequency_viable": "PASS",
+      "Q13_capital_feasible": "PASS",
+      "Q14_independent_of_prior_search": "UNRESOLVED"
+    }
+  },
+  "programme_decision": "MECHANISM_TOO_WEAK"
+}

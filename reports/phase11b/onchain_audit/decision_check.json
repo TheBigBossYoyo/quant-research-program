@@ -1,0 +1,99 @@
+{
+  "per_mechanism": {
+    "A_ACTIVITY": {
+      "primary": "DATA_BLOCKED",
+      "codes": [
+        "DATA_BLOCKED",
+        "DUPLICATES_PRIOR_CRYPTO_SEARCH",
+        "MECHANISM_TOO_WEAK"
+      ],
+      "failing": [
+        "Q3_oos_evidence",
+        "Q4_btc_eth_evidence",
+        "Q5_long_only_evidence",
+        "Q6_large_vs_spot_costs",
+        "Q7_no_decay",
+        "Q8_survives_momentum_volume",
+        "Q9_not_price_response",
+        "Q11_protocol_comparability",
+        "Q14_independent_of_prior_search"
+      ],
+      "hard_fail": [
+        "Q3_oos_evidence",
+        "Q4_btc_eth_evidence",
+        "Q5_long_only_evidence",
+        "Q6_large_vs_spot_costs",
+        "Q7_no_decay",
+        "Q8_survives_momentum_volume",
+        "Q9_not_price_response",
+        "Q11_protocol_comparability"
+      ]
+    },
+    "B_STABLECOIN": {
+      "primary": "PIT_LABEL_BLOCKED",
+      "codes": [
+        "PIT_LABEL_BLOCKED",
+        "DATA_BLOCKED",
+        "MECHANISM_TOO_WEAK"
+      ],
+      "failing": [
+        "Q2_raw_chain_reconstructable",
+        "Q3_oos_evidence",
+        "Q4_btc_eth_evidence",
+        "Q5_long_only_evidence",
+        "Q6_large_vs_spot_costs",
+        "Q7_no_decay",
+        "Q8_survives_momentum_volume",
+        "Q9_not_price_response",
+        "Q10_no_retrospective_labels",
+        "Q11_protocol_comparability"
+      ],
+      "hard_fail": [
+        "Q2_raw_chain_reconstructable",
+        "Q3_oos_evidence",
+        "Q4_btc_eth_evidence",
+        "Q5_long_only_evidence",
+        "Q6_large_vs_spot_costs",
+        "Q7_no_decay",
+        "Q9_not_price_response",
+        "Q10_no_retrospective_labels",
+        "Q11_protocol_comparability"
+      ]
+    },
+    "C_EXCHANGE_FLOW": {
+      "primary": "PIT_LABEL_BLOCKED",
+      "codes": [
+        "PIT_LABEL_BLOCKED",
+        "DATA_BLOCKED",
+        "DUPLICATES_PRIOR_CRYPTO_SEARCH",
+        "MECHANISM_TOO_WEAK",
+        "IMPLEMENTATION_BLOCKED"
+      ],
+      "failing": [
+        "Q1_known_before_return",
+        "Q2_raw_chain_reconstructable",
+        "Q3_oos_evidence",
+        "Q4_btc_eth_evidence",
+        "Q5_long_only_evidence",
+        "Q6_large_vs_spot_costs",
+        "Q7_no_decay",
+        "Q8_survives_momentum_volume",
+        "Q9_not_price_response",
+        "Q10_no_retrospective_labels",
+        "Q11_protocol_comparability",
+        "Q14_independent_of_prior_search"
+      ],
+      "hard_fail": [
+        "Q1_known_before_return",
+        "Q2_raw_chain_reconstructable",
+        "Q3_oos_evidence",
+        "Q4_btc_eth_evidence",
+        "Q5_long_only_evidence",
+        "Q6_large_vs_spot_costs",
+        "Q10_no_retrospective_labels"
+      ]
+    }
+  },
+  "programme_decision": "MECHANISM_TOO_WEAK",
+  "consistent_with_gates": true
+}

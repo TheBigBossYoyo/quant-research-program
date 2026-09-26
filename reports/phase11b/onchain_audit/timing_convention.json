@@ -1,0 +1,39 @@
+{
+  "daily_example": {
+    "day": "2021-06-13",
+    "cutoff": "2021-06-14 00:00:00+00:00",
+    "compute_not_before": "2021-06-14 06:00:00+00:00",
+    "execution": "2021-06-14 12:00:00+00:00"
+  },
+  "weekly_example": {
+    "day": "2021-06-13",
+    "cutoff": "2021-06-14 00:00:00+00:00",
+    "compute_not_before": "2021-06-14 06:00:00+00:00",
+    "execution": "2021-06-14 12:00:00+00:00"
+  },
+  "rules": {
+    "bucket": "UTC day D by block timestamp, [D 00:00, D+1 00:00)",
+    "btc_closure": "MTP of the block with 6 confirmations >= D+1 00:00",
+    "eth_pos_closure": "finalized head timestamp >= D+1 00:00",
+    "eth_pow_closure": "a block stamped >= D+1 00:00 is 64 deep",
+    "compute_not_before": "D+1 06:00 UTC, and only if every required chain closed day D by then",
+    "execution": "D+1 12:00 UTC; if the signal is not usable, hold the previous position"
+  },
+  "btc_closure_delay_minutes_model": {
+    "mean_block_600s": {
+      "p0.5": 106.68522403836316,
+      "p0.9": 154.06641171976514,
+      "p0.99": 201.44680218796933,
+      "p0.999": 241.3397114541759,
+      "p0.9999": 277.622943878526
+    },
+    "mean_block_900s_slow_hashrate": {
+      "p0.5": 160.02783605754473,
+      "p0.9": 231.0996175796477,
+      "p0.99": 302.170203281954,
+      "p0.999": 362.0095671812639,
+      "p0.9999": 416.434415817789
+    },
+    "note": "Erlang(11) model under exponential block arrivals; not an empirical measurement"
+  }
+}

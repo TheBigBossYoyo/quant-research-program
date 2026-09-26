@@ -1,0 +1,172 @@
+{
+  "terms": {
+    "MINTED": "created on one chain by the token contract; includes treasury mints, chain-swap mints and burn-and-mint transfer mints",
+    "AUTHORIZED": "minted to the issuer's treasury but not yet sold to a customer (Tether: 'authorized but not issued'); on-chain totalSupply includes it",
+    "ISSUED": "sold to a customer against fiat and moved out of the treasury; the issuer's liability",
+    "CIRCULATING": "issued supply less issuer-held, destroyed/frozen and bridge-locked balances; definition is vendor-specific",
+    "TRANSFERRED": "moved between holders; changes no supply measure"
+  },
+  "event_kinds": {
+    "MINT_TO_TREASURY": {
+      "native_supply_sign": 1,
+      "external_dollar_sign": 0,
+      "label_needed": "issuer treasury address"
+    },
+    "ISSUE_FROM_TREASURY": {
+      "native_supply_sign": 0,
+      "external_dollar_sign": 1,
+      "label_needed": "issuer treasury address"
+    },
+    "RETURN_TO_TREASURY": {
+      "native_supply_sign": 0,
+      "external_dollar_sign": -1,
+      "label_needed": "issuer treasury address"
+    },
+    "BURN_FROM_TREASURY": {
+      "native_supply_sign": -1,
+      "external_dollar_sign": 0,
+      "label_needed": "issuer treasury address"
+    },
+    "MINT_DIRECT_TO_CUSTOMER": {
+      "native_supply_sign": 1,
+      "external_dollar_sign": 1,
+      "label_needed": "issuer minter role (contract-visible) and absence of a matching burn"
+    },
+    "REDEEM_BURN_DIRECT": {
+      "native_supply_sign": -1,
+      "external_dollar_sign": -1,
+      "label_needed": "issuer minter role and absence of a matching mint elsewhere"
+    },
+    "CHAIN_SWAP_MINT": {
+      "native_supply_sign": 1,
+      "external_dollar_sign": 0,
+      "label_needed": "pairing with a burn on another chain (issuer operation, not labelled on chain)"
+    },
+    "CHAIN_SWAP_BURN": {
+      "native_supply_sign": -1,
+      "external_dollar_sign": 0,
+      "label_needed": "pairing with a mint on another chain"
+    },
+    "BURN_AND_MINT_OUT": {
+      "native_supply_sign": -1,
+      "external_dollar_sign": 0,
+      "label_needed": "cross-chain transfer protocol contract (e.g. CCTP)"
+    },
+    "BURN_AND_MINT_IN": {
+      "native_supply_sign": 1,
+      "external_dollar_sign": 0,
+      "label_needed": "cross-chain transfer protocol contract (e.g. CCTP)"
+    },
+    "BRIDGE_LOCK": {
+      "native_supply_sign": 0,
+      "external_dollar_sign": 0,
+      "label_needed": "bridge escrow contract"
+    },
+    "BRIDGE_WRAPPED_MINT": {
+      "native_supply_sign": 0,
+      "external_dollar_sign": 0,
+      "label_needed": "bridge token contract on the destination chain"
+    },
+    "DESTROY_FROZEN": {
+      "native_supply_sign": -1,
+      "external_dollar_sign": 0,
+      "label_needed": null
+    },
+    "TRANSFER": {
+      "native_supply_sign": 0,
+      "external_dollar_sign": 0,
+      "label_needed": null
+    }
+  },
+  "examples": {
+    "chain_swap_completed": {
+      "native_total_by_chain": {
+        "ethereum": 100.0,
+        "omni": -100.0
+      },
+      "native_total_all_chains": 0.0,
+      "naive_sum_including_wrapped": 0.0,
+      "treasury_adjusted_circulating": 0.0,
+      "new_external_dollars": 0.0,
+      "labels_required": [
+        "pairing with a burn on another chain (issuer operation, not labelled on chain)",
+        "pairing with a mint on another chain"
+      ]
+    },
+    "chain_swap_mint_leg_only": {
+      "native_total_by_chain": {
+        "ethereum": 100.0
+      },
+      "native_total_all_chains": 100.0,
+      "naive_sum_including_wrapped": 100.0,
+      "treasury_adjusted_circulating": 100.0,
+      "new_external_dollars": 0.0,
+      "labels_required": [
+        "pairing with a burn on another chain (issuer operation, not labelled on chain)"
+      ]
+    },
+    "authorized_not_issued": {
+      "native_total_by_chain": {
+        "ethereum": 1000.0
+      },
+      "native_total_all_chains": 1000.0,
+      "naive_sum_including_wrapped": 1000.0,
+      "treasury_adjusted_circulating": 0.0,
+      "new_external_dollars": 0.0,
+      "labels_required": [
+        "issuer treasury address"
+      ]
+    },
+    "authorized_then_issued": {
+      "native_total_by_chain": {
+        "ethereum": 1000.0
+      },
+      "native_total_all_chains": 1000.0,
+      "naive_sum_including_wrapped": 1000.0,
+      "treasury_adjusted_circulating": 400.0,
+      "new_external_dollars": 400.0,
+      "labels_required": [
+        "issuer treasury address"
+      ]
+    },
+    "burn_and_mint_transfer": {
+      "native_total_by_chain": {
+        "ethereum": -50.0,
+        "base": 50.0
+      },
+      "native_total_all_chains": 0.0,
+      "naive_sum_including_wrapped": 0.0,
+      "treasury_adjusted_circulating": 0.0,
+      "new_external_dollars": 0.0,
+      "labels_required": [
+        "cross-chain transfer protocol contract (e.g. CCTP)"
+      ]
+    },
+    "bridge_lock_and_wrap": {
+      "native_total_by_chain": {
+        "ethereum": 0.0,
+        "arbitrum": 0.0
+      },
+      "native_total_all_chains": 0.0,
+      "naive_sum_including_wrapped": 70.0,
+      "treasury_adjusted_circulating": 0.0,
+      "new_external_dollars": 0.0,
+      "labels_required": [
+        "bridge escrow contract",
+        "bridge token contract on the destination chain"
+      ]
+    },
+    "direct_mint_to_customer": {
+      "native_total_by_chain": {
+        "ethereum": 25.0
+      },
+      "native_total_all_chains": 25.0,
+      "naive_sum_including_wrapped": 25.0,
+      "treasury_adjusted_circulating": 25.0,
+      "new_external_dollars": 25.0,
+      "labels_required": [
+        "issuer minter role (contract-visible) and absence of a matching burn"
+      ]
+    }
+  }
+}

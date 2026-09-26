@@ -1,0 +1,106 @@
+Phase 11B Stage 0 - literature source log (tracked). Retrieved 2026-09-26.
+
+The PDFs and text conversions in this directory are third-party copyrighted works. They are kept locally and are
+git-ignored (.gitignore, Phase 11B rule); this file is the tracked record. SHA-256 of every local file is in
+reports/phase11b/raw/RAW_MANIFEST_SHA256.txt. Full per-paper audits: reports/phase11b/raw/sources/L1_*.md (network
+activity), L2_*.md (stablecoins), L3_*.md (exchange flows and labels). Statistics marked [re-checked] were re-read
+by the main audit from the local full text before being entered in reports/phase11b/onchain_audit/evidence_table.csv.
+
+A. NETWORK ACTIVITY
+1. Liu, Y. & Tsyvinski, A. "Risks and Returns of Cryptocurrency". NBER WP 24877 (Aug 2018 draft).
+   https://www.nber.org/papers/w24877 ; published RFS 34(6):2689-2727 (2021), DOI 10.1093/rfs/hhaa113.
+   Local: liu_tsyvinski_nber_w24877.pdf. Table 30 p.29: BTC wallet-user price-to-dividend ratio, daily t+1..t+7,
+   coefficients 0.13/0.05/-0.13/-0.12/0.05/0.09/0.05, R2 0.00 throughout [re-checked]. Published abstract (EconPapers):
+   returns "exposed to" network factors; momentum and attention "forecast" returns.
+2. Liu, Y., Tsyvinski, A. & Wu, X. "Common Risk Factors in Cryptocurrency". NBER WP 25882 (Dec 2019 draft);
+   JF 77(2):1133-1177 (2022), DOI 10.1111/jofi.13119. Local: liu_tsyvinski_wu_nber_w25882.pdf. The draft contains no
+   address variable; a later price-to-new-address result is known only via Cong et al. fn 11 (SECONDARY).
+3. Cong, L.W., Karolyi, G.A., Tang, K. & Zhao, W. "Value Premium, Network Adoption, and Factor Pricing of Crypto
+   Assets". EFMA 2022 draft. https://www.efmaefm.org/0efmameetings/efma%20annual%20meetings/2022-rome/papers/efma%202022_stage-3032_question-full%20paper_id-231.pdf
+   Local: cong_karolyi_tang_zhao_efma2022.pdf. Table 6 p.38 and text p.14: NET factor mean 3.76%/week, t 2.82,
+   2014-01-22..2021-01-04, IntoTheBlock core sample; RHS intercept t 1.82 (p.18) [re-checked].
+4. Sakkas, A. & Urquhart, A. "Blockchain factors". JIFMIM 94:102012 (2024), DOI 10.1016/j.intfin.2024.102012.
+   Local: sakkas_urquhart_2024_blockchain_factors_bham.pdf (Birmingham OA copy). Table 2 p.5 definitions (P2A, NVT);
+   pp.9-10: after market and NDF "none of the remaining factors is able to explain the cross-section" [re-checked];
+   Coin Metrics data; 36 coins, 2015-01..2021-11.
+5. Kristoufek, L. "What Are the Main Drivers of the Bitcoin Price?" PLoS ONE 10(4):e0123923 (2015),
+   DOI 10.1371/journal.pone.0123923. Local: kristoufek_2015_plosone.pdf. pp.7-8, Fig.3.
+6. Polasik, M. et al. "Price Fluctuations and the Use of Bitcoin". IJEC 20(1):9-49 (2015),
+   DOI 10.1080/10864415.2016.1061413. Local: polasik_et_al_2015_ecb.pdf (ECB conference version). pp.21-24.
+7. Wheatley, S., Sornette, D. et al. "Are Bitcoin Bubbles Predictable?" RSOS 6(6):180538 (2019); arXiv 1803.05663.
+   Local: wheatley_sornette_2018_arxiv.pdf. p.4: beta 1.69, R2 0.956; fn 6 and 10 (spurious regression, endogeneity).
+8. Ciaian, P., Kancs, d'A. & Rajcaniova, M. "Virtual Relationships" JRC WP 2017/5, DOI 10.2760/133614.
+   Local: ciaian_rajcaniova_kancs_2017_jrc_wp.pdf. Context only; NOT the Applied Economics 2016 paper.
+9. Llanos, D.R. "Open Bitcoin Metrics" arXiv 2607.03124 (Jul 2026). Local: open_bitcoin_metrics_arxiv_2607.03124.pdf.
+   Section 3.3: UTC-day bucketing by block timestamp, timestamps non-monotonic; no active-address series is offered.
+   Vendor auditability table pp.6-7.
+Not obtained in full text (abstract or secondary only): Yae & Tian, Physica A 598:127379 (2022),
+DOI 10.1016/j.physa.2022.127379 (abstract via IDEAS: attention and volume fail out of sample; network metrics not
+named in the abstract); Bhambhwani, Delikouras & Korniotis, JIFMIM (2023), DOI 10.1016/j.intfin.2023.101782;
+Koutmos, Economics Letters 167:81-85 (2018), DOI 10.1016/j.econlet.2018.03.021; Ciaian, Rajcaniova & Kancs,
+Applied Economics 48(19) (2016); Alabi, ECRA 24 (2017); Peterson, SSRN 3078248 (2018); Cakici et al., IRFA 94:103244
+(2024); Fieberg et al., IRFA (2024); Mudassir et al. (2020); Sebastiao & Godinho, Financial Innovation 7:3 (2021);
+Jagannath et al., IEEE Access 9 (2021); Chen, Li & Sun, JCAM 365 (2020).
+
+B. STABLECOIN ISSUANCE / SUPPLY
+10. Wei, W.C. "The impact of Tether grants on Bitcoin". Economics Letters 171:19-22 (2018); SSRN 3175876.
+    Local: Wei_2018_SSRN3175876.pdf. Conclusion p.6: no evidence Tether issuances cause subsequent BTC return increases;
+    grants follow BTC falls [re-checked]. Table 2 cells deliberately not quoted (layout ambiguous).
+11. Griffin, J.M. & Shams, A. "Is Bitcoin Really Untethered?" JF 75(4):1913-1964 (2020), DOI 10.1111/jofi.12903
+    (open access). Local text render: GriffinShams_2020_JoF_fulltext_htmlrender.txt. Table II; Section IV.B.1: EOM t
+    -2.85 with all months, -1.26 excluding Dec-2017/Jan-2018 [re-checked].
+12. Ante, L., Fiedler, I. & Strehle, E. "The influence of stablecoin issuances on cryptocurrency markets". FRL
+    41:101867 (2021). Local: AnteFiedlerStrehle_2021_issuances_BRLWP11.pdf. Abstract: 565 events >= USD 1m, 2019-04..
+    2020-03; downturns in the week before issuance; issuance size not significant [re-checked]; Table 2, Fig.2.
+13. Ante, L., Fiedler, I. & Strehle, E. "The impact of transparent money flows". TFSC 170:120851 (2021),
+    DOI 10.1016/j.techfore.2021.120851. Closed access (Unpaywall); abstract only.
+14. Kristoufek, L. "Tethered, or Untethered?" FRL 43:101991 (2021), DOI 10.1016/j.frl.2021.101991.
+    Local: Kristoufek_2021_FRL_UTIA.pdf. Abstract and pp.2-4: "no evidence of stablecoins boosting the prices";
+    issuances "come in reaction" [re-checked].
+15. Lyons, R.K. & Viswanath-Natraj, G. "What Keeps Stablecoins Stable?" NBER WP 27136 (2020); JIMF 131 (2023).
+    Local: LyonsViswanathNatraj_2020_NBERw27136.pdf, LyonsViswanathNatraj_2023_WRAP.pdf. 2020 draft pp.30-32 and fn 33:
+    "no significant effect on the prices of Bitcoin and Ethereum", also on the Mar-2017..Mar-2018 window [re-checked].
+16. Saggu, A. "The Intraday Bitcoin Response to Tether Minting and Burning Events". FRL 49:103096 (2022);
+    arXiv 2501.05232. Local: Saggu_2022_arxiv2501.05232.pdf. Whale Alert tweeted 222 of 367 mints; untweeted mints
+    usually not priced [re-checked].
+17. Grobys, K. & Huynh, T.L.D. "When Tether says 'JUMP!'". FRL 47:102644 (2022). Local: GrobysHuynh_2022_FRL_OSUVA.pdf.
+    Table 2 p.4: -3.647 (t -1.918), -3.934 (t -1.993), -8.4857 (t -4.2367) [re-checked].
+18. Grobys, K., Junttila, J.-P., Kolari, J.W. & Sapkota, N. "On the Stability of Stablecoins". JEF 64:207-223 (2021).
+    Local: GrobysJuntillaKolariSapkota_2021_JEF_JYX.pdf.
+19. Baumohl, E. & Vyrost, T. "Stablecoins as a crypto safe haven? Not all of them!" EconStor 215484 (2020).
+    Local: BaumohlVyrost_2020_EconStor.pdf. Context.
+20. Ahmed, R. & Aldasoro, I. "Stablecoins and safe asset prices". BIS WP 1270 (2025).
+    Local: AhmedAldasoro_2025_ClevelandFedMirror.pdf (the bis.org PDF URL served a navigation shell and was discarded).
+21. Ahmed, R., Clouse, J.A., Natalucci, F., Rebucci, A. & Sun, G. "Stablecoins: A Revolutionary Payment Technology
+    with Financial Risks". NBER WP 34475 (2025). Local: NBER_w34475_Stablecoins_Ahmed_Clouse_Natalucci_Rebucci_Sun_2025.pdf.
+22. Barthelemy, J., Gardin, P. & Nguyen, B. "Stablecoins and the Financing of the Real Economy". Banque de France
+    WP 908 (2023). Local: BarthelemyGardinNguyen_2023_BdF_WP908.pdf. Context.
+23. "The Impact of Stablecoins on Bitcoin Returns: An Empirical Analysis Based on VAR Model". DR Press (2025),
+    https://drpress.org/ojs/index.php/ajmss/article/view/32611. Local: drpress_VAR_StablecoinsBitcoinReturns_2025.pdf.
+    EXCLUDED: predictor is peg deviation, not issuance; venue quality unverified.
+
+C. EXCHANGE RESERVES / FLOWS AND LABELS
+24. Makarov, I. & Schoar, A. "Blockchain Analysis of the Bitcoin Market". NBER WP 29396 (2021).
+    https://www.nber.org/system/files/working_papers/w29396/w29396.pdf. Local: makarov_schoar_nber_w29396.pdf.
+    p.10 own scraping + Bitfury Crystal; p.13 entity identification "incomplete almost by design".
+25. Chi, Y., Chu, Q.R. & Hao, W. "Return and Volatility Forecasting Using On-Chain Flows in Cryptocurrency Markets".
+    arXiv 2411.06327 (Jun 2025). Local: arxiv_2411.06327_onchain_flows.pdf (identical copy
+    onchain_flow_forecasting_arxiv_2411.06327.pdf). Abstract p.1 [re-checked]; sample 2017-12-16..2023-01-20; no vendor
+    or labelling method disclosed.
+26. Herremans, D. & Low, K.W. "Forecasting Bitcoin volatility spikes from whale transactions and CryptoQuant data".
+    arXiv 2211.08281 (2022). Local: whale_transactions_cryptoquant_arxiv_2211.08281.pdf. Volatility target.
+27. Anastasopoulos, A. et al. "Order Flow and Cryptocurrency Returns". SSRN 5020002 / EFMA 2025.
+    https://www.efmaefm.org/0EFMAMEETINGS/EFMA%20ANNUAL%20MEETINGS/2025-Greece/papers/OrderFlowpaper.pdf
+    Local: anastasopoulos_et_al_order_flow_efma2025.pdf. Off-chain trade-classified order flow: NOT on-chain.
+Not obtained in full text: Hoang, L.T. & Baur, D.G. "Loaded for bear". JBF 144:106622 (2022),
+DOI 10.1016/j.jbankfin.2022.106622 (abstract via RePEc; vendor attribution unverified); Magner, N. & Sanhueza, A.
+"The Moby Dick effect". FRL 85 (2025) (secondary only).
+
+D. VENDOR DOCUMENTATION RE-CHECKED BY THE MAIN AUDIT (WebFetch, 2026-09-26)
+- Glassnode, https://docs.glassnode.com/data/point-in-time-metrics : "any metrics that had PIT enabled in July 2025
+  will not contain historical PIT data prior to that date"; before July 2025 PIT tracking limited to BTC, ETH and
+  select tokens for listed metrics.
+- Coin Metrics, https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/exchange/point-in-time-flows.md :
+  standard flows "Past values can change when new entity addresses are discovered later"; point-in-time flows "Past
+  values are fixed; newly discovered addresses affect only intervals on or after their discovery date".
+- Yae & Tian abstract, https://ideas.repec.org/a/eee/phsmap/v598y2022ics0378437122002928.html

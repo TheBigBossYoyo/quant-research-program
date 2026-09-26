@@ -1,0 +1,65 @@
+{
+  "rows": 33,
+  "by_mechanism": {
+    "A_ACTIVITY": {
+      "rows": 14,
+      "stance": {
+        "CONTRADICTORY": 4,
+        "MIXED": 3,
+        "NOT_PREDICTIVE_TEST": 5,
+        "SUPPORTIVE": 2
+      },
+      "oos_rows": 1,
+      "predictive_rows": 6,
+      "btc_eth_rows": 10,
+      "with_costs_rows": 0,
+      "current_labels_applied_rows": 0,
+      "qualifying_rows": []
+    },
+    "B_STABLECOIN": {
+      "rows": 9,
+      "stance": {
+        "CONTRADICTORY": 4,
+        "MIXED": 4,
+        "NOT_PREDICTIVE_TEST": 0,
+        "SUPPORTIVE": 1
+      },
+      "oos_rows": 0,
+      "predictive_rows": 6,
+      "btc_eth_rows": 9,
+      "with_costs_rows": 0,
+      "current_labels_applied_rows": 0,
+      "qualifying_rows": []
+    },
+    "C_EXCHANGE_FLOW": {
+      "rows": 7,
+      "stance": {
+        "CONTRADICTORY": 0,
+        "MIXED": 2,
+        "NOT_PREDICTIVE_TEST": 2,
+        "SUPPORTIVE": 3
+      },
+      "oos_rows": 3,
+      "predictive_rows": 6,
+      "btc_eth_rows": 7,
+      "with_costs_rows": 0,
+      "current_labels_applied_rows": 0,
+      "qualifying_rows": []
+    },
+    "GENERAL": {
+      "rows": 3,
+      "stance": {
+        "CONTRADICTORY": 1,
+        "MIXED": 0,
+        "NOT_PREDICTIVE_TEST": 2,
+        "SUPPORTIVE": 0
+      },
+      "oos_rows": 2,
+      "predictive_rows": 3,
+      "btc_eth_rows": 1,
+      "with_costs_rows": 0,
+      "current_labels_applied_rows": 0,
+      "qualifying_rows": []
+    }
+  }
+}

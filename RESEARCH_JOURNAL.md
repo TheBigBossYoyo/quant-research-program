@@ -669,3 +669,63 @@ release, managed-money positioning, a different smoothing window, positioning co
 failed mechanism plus one more free choice made after reading the results. They are written down as excluded.
 
 0 cells. 490 cumulative. No commodity return of any date loaded. Equity validation and holdout still never opened.
+
+## Phase 11B NATIVE_BLOCKCHAIN_FUNDAMENTALS_STAGE0 — closed at the mechanism gate (2026-09-26)
+
+The pitch for on-chain data is transparency. Every Bitcoin transaction and every stablecoin mint is public and
+timestamped, so perhaps a patient retail investor could see demand forming before it reaches the price. After 388 crypto
+cells built from exchange data, that seemed worth one careful look at a genuinely different information source. The
+brief allowed three kinds of variable (network activity, stablecoin supply, exchange reserves) and asked a single
+question: does any one of them deserve a strategy cell? The answer is no, and it is no for all three before any price
+was opened.
+
+Network activity was the easiest to reject. Rebuilding Bitcoin transaction counts from raw blocks is entirely possible,
+but the evidence says those counts move with the price, not ahead of it. The one full-text test of a Bitcoin-level
+network variable that I could read, in Liu and Tsyvinski's working paper, has an R-squared of zero at every horizon from
+one to seven days. Their published version files network factors under exposures and keeps the word "forecast" for
+momentum and attention. The positive results all come from weekly long-short sorts across hundreds of small coins,
+gross of costs. The most careful recent test, Sakkas and Urquhart's multiple-testing procedure, removes the
+activity-based factors once the market is in the model. What survives there is a supply-concentration measure, which is
+not activity and not something a long-only BTC/ETH book can hold. Even a good result would have run into a data problem.
+Raw counts measure different things in different years: batching, then inscriptions in 2023, Runes in 2024, and on
+Ethereum the move of activity onto rollups and blobs. A growth rate that crosses one of those dates is measuring a
+protocol change.
+
+Stablecoins were the class I most wanted to work, because they are the one genuinely new layer. Primary-market creation
+of crypto dollars appears nowhere in the earlier search. The literature is fairly clear that supply follows prices. Griffin and
+Shams is the famous supply-push paper, and it is careful work, but it is about one wallet cluster on one exchange over
+thirteen months. Their own end-of-month result loses significance when December 2017 and January 2018 are left out. Lyons
+and Viswanath-Natraj re-ran the same window on aggregate issuance and found nothing. Kristoufek's longer and broader
+sample finds issuance reacting to prices, stable across rolling windows. The event studies show markets falling the week
+before an issuance and then drifting up for a day, with issuance size irrelevant. Saggu finds the minute-scale reaction
+only when Whale Alert tweets the mint. Nobody has tested a weekly or monthly long-only rule, in or out of sample. On the
+data side, "net new dollars" cannot be separated from chain swaps, bridge mints and burn-and-mint transfers without
+labels, and Tether does not publish its treasury and swap records in a form a researcher could date. USDT's `issue`,
+`redeem` and `destroyBlackFunds` do not even emit a Transfer event, so the obvious log replay would be silently wrong.
+
+Exchange reserves stopped at the label audit, which is where the brief expected them to stop. Glassnode's own
+documentation says a metric has no point-in-time history before its PIT tracking was switched on, which for most metrics
+was July 2025. Coin Metrics says its standard flows change "when new entity addresses are discovered later". One
+correction to the sub-audit: those restated flows are in the free Coin Metrics tier. Exchange proof-of-reserve address
+lists begin in November 2022. Everything published on reserves therefore uses labels known today, applied to earlier
+years.
+
+Two things from the plumbing are worth keeping regardless. First, a Bitcoin day can be closed exactly. Median-time-past
+never decreases, so once the block six deep has an MTP past midnight, no block stamped the previous day can ever appear.
+That turns the "blockchain timestamp is not tradable time" problem into a checkable condition rather than a guessed
+buffer. Second, the venue facts moved. Binance stopped taking new EU/EEA spot business on 1 July 2026, so the fee the
+crypto phases assumed is not currently available to a European resident. At the licensed venues' retail fees, weekly
+switching would cost between a sixth and nearly half of the position each year.
+
+Process notes. Six sub-audits ran in parallel, and their search-engine summaries produced at least two false
+statements: Chainalysis labels in Makarov and Schoar, and network metrics in Yae and Tian's abstract. Both were caught
+against primary text, and every decisive number in the evidence table was re-read in the local full text. Some venue
+captures were ETP product pages that may carry price tables. They were quarantined unread. The on-chain metric catalogs
+were read for names and definitions only; no values.
+
+The decision is D rather than G. The gate table would allow abandoning the on-chain programme outright. But the audit
+covered three classes by instruction, and two of the data blockers will ease with time. The practical effect is the
+same: nothing is proposed, and reopening needs someone else's out-of-sample evidence.
+
+0 cells. 490 cumulative. No price, return or on-chain metric value loaded. Old crypto holdout, equity validation and
+equity holdout still closed.
