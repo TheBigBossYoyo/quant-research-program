@@ -1,0 +1,14 @@
+SOURCE URL: https://helpcentre.trading212.com/hc/en-us/articles/11471996799517-What-are-the-fees-in-the-Invest-ISAs-and-SIPP
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction; quotes below are as extracted by the fetch tool, not a raw HTML dump)
+
+RELEVANT EXCERPT (fees for Invest account; NO performance/price data included):
+- Trading Commission: "Free"
+- Custody Fee: "Free"
+- FX Fee: "0.15%"
+- The article also notes that additional fees may be charged by exchanges and tax authorities (not by Trading 212 itself): Stamp Duty Reserve Tax on LSE stocks at 0.5%, PTM Levy, and transaction fees on NYSE stocks.
+
+NOTES:
+- This confirms the 0.15% FX fee figure already recorded in project memory (trading212-verified-facts.md, verified 2026-09-09) remains current as of 2026-09-26.
+- No commission and no custody fee applies to Invest/ISA/SIPP accounts.
+- The article text does not itemise ETC-specific fees separately from ETFs/shares; all appear to fall under the same fee schedule.

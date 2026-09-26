@@ -1,0 +1,115 @@
+Literature audit — CFTC COT hedging-pressure forecasting power
+Retrieval date for all entries below: 2026-09-26
+
+1. DeRoonNijmanVeld_2000_working.pdf
+   De Roon, Nijman & Veld (2000) "Hedging Pressure Effects in Futures Markets", Journal of Finance 55(3):1437-1456.
+   Source: Tilburg University institutional repository (working-paper copy of published JF article)
+   URL: https://repository.tilburguniversity.edu/server/api/core/bitstreams/81b4685f-66fa-4fe8-9c51-da6e3e5dcfdf/content
+   (landing page: https://pure.uvt.nl/ws/files/377514/nijman_hedging.pdf)
+
+2. GortonHayashiRouwenhorst_2007_working.pdf
+   Gorton, Hayashi & Rouwenhorst, "The Fundamentals of Commodity Futures Returns", NBER Working Paper 13249 (July 2007);
+   published as Review of Finance 17 (2013), 35-105.
+   URL: https://www.nber.org/system/files/working_papers/w13249/w13249.pdf
+
+3. SandersIrwinMerrin_2007_workingpaper.pdf
+   Sanders, Irwin & Merrin, "Smart Money? The Forecasting Ability of CFTC Large Traders", NCCC-134 Conference
+   proceedings paper (2007); published as Sanders, Irwin & Merrin (2009), Journal of Agricultural and Resource
+   Economics 34(2):276-296.
+   URL: https://farmdoc.illinois.edu/assets/meetings/nccc134/conf_2007/pdf/confp01-07.pdf
+
+4. SzymanowskaDeRoonNijmanVanDenGoorbergh_2014_working.pdf
+   Szymanowska, de Roon, Nijman & van den Goorbergh, "An Anatomy of Commodity Futures Risk Premia",
+   Journal of Finance 69(1):453-482 (2014).
+   URL: https://www.tias.edu/docs/default-source/Kennisartikelen/an-anatomy-of-commodity-futures-risk-premia-szymanowska-and-de-roon-and-nijman-and-van-den-goorbergh-(2013).pdf
+
+5. KangRouwenhorstTang_2013_NBERconf.pdf
+   Kang, Rouwenhorst & Tang, "The Role of Hedgers and Speculators in Liquidity Provision to Commodity Futures
+   Markets", working paper dated Oct 14, 2013 (NBER Commodities Workshop conference draft). This is the direct
+   precursor of the published Kang, Rouwenhorst & Tang (2020) "A Tale of Two Premiums: The Role of Hedgers and
+   Speculators in Commodity Futures Markets", Journal of Finance 75(1):377-417.
+   URL: https://conference.nber.org/confer/2013/CWf13/Kang_Rouwenhorst_Tang.pdf
+   Final-version abstract (2020 JoF) retrieved separately from:
+   https://econpapers.repec.org/article/blajfinan/v_3a75_3ay_3a2020_3ai_3a1_3ap_3a377-417.htm
+
+6. Wang_2001_working.pdf
+   Wang, Changyun, "Investor Sentiment and Return Predictability in Agricultural Futures Markets",
+   Journal of Futures Markets 21(10):929-952 (2001). MPRA working-paper copy (posted 2012, written ~Jan 2000/2001).
+   URL: https://mpra.ub.uni-muenchen.de/36425/1/MPRA_paper_36425.pdf
+
+7. BhardwajGortonRouwenhorst_2015_NBER.pdf
+   Bhardwaj, Gorton & Rouwenhorst, "Facts and Fantasies about Commodity Futures Ten Years Later",
+   NBER Working Paper 21243 (June 2015).
+   URL: https://www.nber.org/system/files/working_papers/w21243/w21243.pdf
+
+Papers sought but NOT obtained in full text (paywalled / blocked; abstract-only or secondary-source evidence used instead,
+flagged UNVERIFIED for anything beyond the quoted abstract/secondary text in the final report):
+
+- Bessembinder, H. (1992) "Systematic Risk, Hedging Pressure, and Risk Premiums in Futures Markets",
+  Review of Financial Studies 5(4):637-667. Paywalled at Oxford Academic (https://academic.oup.com/rfs/article-abstract/5/4/637/1590884);
+  no free author copy located. Description relies on secondary quotations in De Roon-Nijman-Veld (2000),
+  Gorton-Hayashi-Rouwenhorst (2007/2013), Szymanowska et al. (2014), Kang-Rouwenhorst-Tang (2013), and Wang (2001),
+  all of which quote/cite Bessembinder's HP measure and results directly (verbatim passages captured in those files).
+
+- Basu, D. & Miffre, J. (2013) "Capturing the Risk Premium of Commodity Futures: The Role of Hedging Pressure",
+  Journal of Banking & Finance 37(7):2652-2664. SSRN delivery blocked (403); EDHEC repository requires registration.
+  Abstract retrieved verbatim from https://climateinstitute.edhec.edu/publications/capturing-risk-premium-commodity-futures-role-hedging-pressure
+  (retrieved 2026-09-26). Full methodology/results text NOT verified beyond this abstract.
+
+- Sanders, D.R., Boris, K. & Manfredo, M. (2004) "Hedgers, funds, and small speculators in the energy futures
+  markets: An analysis of the CFTC's Commitments of Traders reports", Energy Economics 26(3):425-445.
+  ScienceDirect abstract page blocked (403). No open-access copy located. Description relies on secondary
+  quotations/paraphrase in Sanders-Irwin-Merrin (2007) working paper and search-engine-indexed abstract text
+  (marked UNVERIFIED beyond those secondary quotes).
+
+- Daskalaki, Kostakis & Skiadopoulos (2014) "Are There Common Factors in Individual Commodity Futures Returns?",
+  Journal of Banking & Finance 40:346-363. SSRN delivery blocked (403/HTML challenge page). Not obtained; not
+  used substantively in the report (flagged as not verified).
+
+--- Added by the main Stage 0 session, 2026-09-26 ---
+KangRouwenhorstTang_TaleOfTwoPremiums_confversion.pdf (+ .txt extraction)
+  URL: https://www7.uc.cl/economia/finance_uc/docs/conferences/11th/Rouwenhorst-Tale%20of%20two%20premiums.pdf
+  Version: "First Draft: August 15, 2013 / This version: December 4, 2016" (pre-publication version of JF 2020, 75(1):377-417).
+  Used for: HP definition eq.(1) (hedger short - hedger long)/OI; Section 4.1 raw lagged HP Fama-MacBeth t = -0.43;
+  52-week smoothed HP t = 3.35 controlling for basis and past returns; Section 4.2 double sorts, 105 bp over 20 days.
+Marechal_2021_TaleOfTwoPremiumsRevisited.pdf (+ .txt extraction)
+  URL: https://business.ucdenver.edu/jpmorgancenter/content/marechal-2022 (slide deck dated August 16, 2022;
+  paper published as Marechal, "A tale of two premiums revisited", Journal of Futures Markets 43(5):580-614, 2023;
+  abstract verified at https://ideas.repec.org/a/wly/jfutmk/v43y2023i5p580-614.html).
+  The ACFR copy https://acfr.aut.ac.nz/__data/assets/pdf_file/0006/530781/P3.pdf returned HTTP 403.
+  Used for: AHP (52-week) FMB slopes KRT-replication 0.43 (t 2.67), pre-2004 0.25 (t 0.92), post-2004 0.43 (t 1.84),
+  1994-2020 0.41 (t 2.33); panel: post-2004 0.25 (t 1.34), post-2004 with B/M/BM/CR controls
+  -0.37 (t -0.76); conclusion "Reduction of the insurance price in the post-financialization period".
+  CORRECTION 2026-09-26 (finalization; column positions read from the PDF text coordinates, slide 13): the panel
+  table has three period headers, each spanning two columns: 1994-2017 = (1)-(2), pre-2004 = (3)-(4), post-2004 =
+  (5)-(6). B/M/BM/CR controls appear only in (2), (4), (6), and the "FE" row is ticked only in (6). So the entry above
+  should read: panel post-2004 0.25 (t 1.34) without controls; post-2004 with controls and commodity fixed effects
+  -0.37 (t -0.76). "Panel with commodity FE" applies to column (6) only. Also: panel 1994-2017 0.33 (t 2.28) / 0.33
+  (t 2.24); panel pre-2004 0.48 (t 2.26) / 0.50 (t 2.36), i.e. SIGNIFICANT before 2004.
+Reading_LongShortSpeculators.pdf (+ MiffreBrooks_2013_extract_full.txt)
+  URL: https://centaur.reading.ac.uk/36099/1/36099.pdf (author accepted version)
+  Miffre, J. & Brooks, C. (2013) "Do long-short speculators destabilize commodity futures markets?",
+  International Review of Financial Analysis 30:230-240. Used as a SECONDARY source for the Basu-Miffre (2013)
+  construction: hedgers' HP = long / (long + short) "for the previous week"; long the quintile with the LOWEST
+  mean hedger HP over an R-week formation period, hold H weeks; COT "collected every Tuesday and made available
+  to the public the following Friday"; sample 27 commodities 1992-2011.
+FernandezPerez et al. (2018) "Hedging Pressure and Returns in Futures: Evidence Across Asset Classes" - ACFR PDF
+  https://acfr.aut.ac.nz/__data/assets/pdf_file/0007/188161/AFP-Hedging-pressure-everywhere_Adrian-Fernandez-Perez_2018-DMC.pdf
+  returned HTTP 403 (2026-09-26). NOT obtained, NOT used.
+
+--- Repository status of the files above (finalization, 2026-09-26) ---
+The downloaded paper PDFs and the three full-text conversions (KangRouwenhorstTang_TaleOfTwoPremiums_confversion.txt,
+Marechal_2021_TaleOfTwoPremiumsRevisited.txt, MiffreBrooks_2013_extract_full.txt) are third-party copyrighted material.
+They are kept LOCALLY ONLY and are git-ignored (see .gitignore, Phase 11A rule). This SOURCES.txt is the tracked
+record: bibliographic details, URLs, retrieval date, and the decision-relevant facts below. Each item can be
+re-obtained from the URL given.
+
+--- Decision-relevant facts (numbers and table locations only; re-checked at finalization) ---
+KRT (Dec-2016 version of JF 2020), Table 6: weekly Fama-MacBeth of R(t+1) on lagged HP / smoothed HP / Q. Controls
+  (log basis, past excess return, idiosyncratic-volatility x speculator-sign) are included in all three columns.
+  (1) raw lagged HP -0.07 (t -0.43); (2) 52-week smoothed HP 0.54 (t 3.35); (3) smoothed HP 0.49 (t 2.80) with Q.
+KRT Table 9 (Disaggregated COT, producers/merchants as the hedger proxy, weekly 2006-01-03 to 2014-11-01; Q included):
+  smoothed HP 0.85 (t 2.64) without controls; 0.58 (t 1.61) with the same expected-return controls.
+Marechal slides (2022-08-16), slide 12, Fama-MacBeth, AHP(t-1): KRT spec 0.43 (t 2.67); optimal risk 0.34 (t 1.93);
+  3+ 0.55 (t 1.98); CIT 0.38 (t 2.04); pre-2004 0.25 (t 0.92); post-2004 0.43 (t 1.84); 1994-2020 0.41 (t 2.33).
+Marechal slide 13, panel: see the correction above.

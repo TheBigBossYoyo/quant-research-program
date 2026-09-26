@@ -1,0 +1,19 @@
+SOURCE URL: https://helpcentre.trading212.com/hc/en-us/articles/360008818178-What-are-the-markets-opening-and-closing-times
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction)
+
+RELEVANT EXCERPT (NO performance/price data included):
+- London Stock Exchange (LSE): "Open: 07:00 GMT" / "Close: 15:30 GMT"
+- Deutsche Boerse Xetra (Germany): "Open: 07:00 GMT" / "Close: 15:30 GMT"
+- "Extended-hours and overnight trading are available only for eligible US instruments" - extended sessions "typically have fewer participants, wider spreads and lower liquidity than the regular trading session."
+- All times presented in GMT; the page recommends a time-zone converter and states the in-app trading-hours view is authoritative for any given day.
+
+DISCREPANCY FLAGGED FOR FOLLOW-UP:
+The times shown here (07:00-15:30 "GMT") are exactly one hour earlier than the official local-time hours confirmed independently for both exchanges this session:
+  - LSE official continuous trading is 08:00-16:30 UK LOCAL time (see lse_official_hours.txt) - identical clock digits to T212's page, but T212 labels them "GMT" without adjusting for British Summer Time (BST = GMT+1, in effect for most of the year including 2026-09-26). This suggests the T212 help-centre page's "GMT" labelling is either (a) simplified/approximate and not meant to be read literally as invariant GMT year-round, or (b) the page was last updated during GMT (winter) months and not adjusted for the BST period. Either way, T212's own page states the in-app view is authoritative, so this help-centre article should not be relied upon for precise session timing without cross-checking the in-app calendar on the trading day in question.
+  - The same pattern appears for Xetra: official Xetra continuous trading is 09:00-17:30 CET (see xetra_official_hours.txt), i.e. 08:00-16:30 UK time / 07:00-15:30 GMT during CET (winter) - so T212's stated "07:00-15:30 GMT" for Xetra is only literally correct when Germany is on CET (winter) AND the label is read as UK-adjusted GMT, not simultaneously true with the LSE row's own DST behaviour. During CEST (summer, most of the year) Xetra's local 09:00-17:30 CEST = 07:00-15:30 UTC, which numerically matches T212's row - so the Xetra row is consistent with UTC=GMT labelling in CEST/summer, but the LSE row would then be wrong by an hour (LSE local 08:00-16:30 BST = 07:00-15:30 UTC also - actually consistent too). CONCLUSION: T212's page appears to express both rows in UTC (which it labels "GMT" year-round, a common colloquial simplification), and both rows are numerically consistent with UTC = local-time-minus-DST-offset for the CURRENT (September, BST/CEST) season. The two exchanges' UK-local and CET-local clock times differ (08:00 UK vs 09:00 CET) but their UTC equivalents coincide (07:00 UTC) only for Xetra's *opening auction proxy*, not for continuous trading start - see the official pages for exact auction/continuous-trading breakdowns, which T212's simplified consumer-facing page does not reproduce.
+- Does not mention Xetra's new Extended Xetra Retail Service (effective 2025-12-01, 08:00-22:00 CET) at all as of this retrieval - i.e. the official T212 help-centre page shown to us does not reflect the December-2025 Xetra retail-hours extension. This should be treated as UNVERIFIED/possibly-stale on T212's part regarding Xetra, pending direct confirmation from T212 support or the in-app calendar.
+
+UNVERIFIED:
+- Whether Trading 212 actually offers trading during the new Xetra Extended Retail Service window (08:00-22:00 CET) for ETC/ETF instruments, since its help-centre page (as fetched) still shows only the legacy 09:00-17:30 CET-equivalent window and explicitly restricts extended/overnight trading to "eligible US instruments" only.
+- Precise LSE/Xetra pre-market and closing-auction timing as displayed inside the T212 app (the help-centre article defers to the in-app calendar for exact daily times).

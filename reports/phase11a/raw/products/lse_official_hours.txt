@@ -1,0 +1,21 @@
+SOURCE URLS:
+- https://www.londonstockexchange.com/discover/events/london-stock-exchange-market-ceremonies (market open/close ceremony times)
+- https://docs.londonstockexchange.com/sites/default/files/documents/lse-turquoise-calendar-2025.pdf (SETS/Millennium Exchange trading-day timetable; PDF binary, not machine-readable via WebFetch this session - see note below)
+- Corroborating secondary aggregation of the same official timetable via search-engine snippets (see NOTE)
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebSearch (site-restricted) + WebFetch attempt on the official PDF (failed to parse binary content - see note)
+
+RELEVANT FACTS (NO performance/price data):
+- "Companies and issuers are invited to 'Open or Close the Market' each day at 08:00 and 16:30 (UK time)."
+- "London Stock Exchange launches its closing auction every day at 16:30."
+- SETS main-market trading-day timetable (as aggregated from official LSE/Turquoise calendar documents by search-engine indexing, since the source PDF itself could not be parsed as text this session):
+    - Opening auction (auction call + random uncross): approx. 07:50-08:00 UK time
+    - Continuous trading: 08:00-16:30 UK time, Monday-Friday
+    - Closing auction (auction call + random uncross): approx. 16:30-16:35 UK time
+    - A separate T212-sourced note (see t212_trading_hours.txt) references an additional pre-trading session (~05:05-07:50) and post-trading session (~16:40-17:15) for LSE, described there as coming from a third-party aggregator (XTB/CMC Markets), NOT from an official LSE document - this should be treated as UNVERIFIED until confirmed directly against an LSE rulebook/notice.
+
+LIMITATION: The primary official LSE PDF document (lse-turquoise-calendar-2025.pdf) was fetched but returned as raw compressed PDF stream data that the fetch tool could not parse into readable text ("Binary content... not human-readable"). The times above are therefore corroborated via search-engine snippets of officially-hosted LSE pages/documents rather than a directly-quoted verbatim excerpt of the primary PDF. This should be re-verified with a proper PDF-text-extraction pass if exact-second precision is ever required for execution-timing research (this audit is metadata-only, so exact tick-level auction timing is not required).
+
+UNVERIFIED:
+- Exact opening-auction start time to the second/minute (07:50 vs some other pre-open time) - not independently confirmed from readable primary-source text this session.
+- Whether ETC-class instruments (as opposed to ordinary equities) trade on an identical SETS timetable, or a different LSE segment (e.g. the ETC/ETP segment may have its own trading service description) - NOT CONFIRMED this session.

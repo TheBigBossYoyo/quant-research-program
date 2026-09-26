@@ -1,0 +1,15 @@
+SOURCE URL: https://www.businesswire.com/news/home/20170427006869/en/Deutsche-X-trackers-announces-closure-ETFs (title/snippet only - full article body not independently re-fetched this session)
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebSearch
+
+EVENT: Deutsche X-trackers (db x-trackers, Deutsche Bank's ETF business, predecessor brand to today's "Xtrackers" managed by DWS) announced a closure of five ETFs in April 2017, with last trading day expected 2017-05-15 and liquidation proceeds distributed to shareholders on or about 2017-05-26.
+
+RELEVANT COMMODITY-SPECIFIC CONTEXT (from search aggregation, not a directly re-fetched primary source this session):
+- db x-trackers' notable commodity product in this era was the "db x-trackers DBLCI - OY Balanced UCITS ETF" (tracking the Deutsche Bank Liquid Commodity Index - Optimum Yield, a diversified 14-commodity broad-commodity index covering oil, gas, aluminium, copper, zinc, gold, silver, wheat, corn, soybean and sugar), listed on LSE.
+- The 2017 closure announcement covered five (unspecified in the snippet retrieved) ETFs out of db x-trackers' broader >300-product, ~GBP 46.48bn AUM range (as of August 2016) - it was NOT confirmed this session whether the DBLCI OY Balanced commodity product itself was among the five closed in this specific announcement, or whether it survived (under the Xtrackers/DWS brand) into the present day. This needs a follow-up direct check against the current etf.dws.com product list or a dedicated search for "DBLCI Optimum Yield" current status.
+
+SURVIVORSHIP IMPLICATION: This is recorded as a general marker that the Deutsche Bank -> DWS/Xtrackers commodity-ETF lineage experienced at least one wave of fund closures (2017) separate from the WisdomTree/ETFS 2018-2019 consolidation and the 2020 oil-price events - i.e. survivorship risk in this product category is NOT limited to a single issuer or a single historical episode.
+
+UNVERIFIED:
+- Whether the specific DBLCI OY Balanced broad-commodity product was among the five ETFs closed in the April 2017 announcement, or a different (non-commodity) product line.
+- Full list of the five closed ETFs.

@@ -1,0 +1,20 @@
+SOURCE URLS:
+- https://www.etfstrategy.com/wisdomtree-to-unify-boost-and-etf-securities-etps-under-its-brand-64857/ (fetched but content on the live page no longer shows the original 2018 article body - see note)
+- WebSearch aggregation of the same event (multiple secondary sources)
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebSearch (primary), WebFetch attempt on the ETF Strategy URL (returned only a generic current search-engine page, not the original 2018 article - the article appears to have been superseded/archived on the live site)
+
+EVENT: WisdomTree Investments, Inc. completed its acquisition of ETF Securities' European exchange-traded commodity, currency and short-and-leveraged ETP business on 2018-04-12.
+
+RELEVANT FACTS (as aggregated from search results, NOT a single verbatim primary-source quote - treat as SECONDARY-SOURCE CONFIRMED pending a primary WisdomTree/ETFS corporate document):
+- Following the acquisition, WisdomTree planned to unify 224 products (both ETFS-branded and Boost-branded ETPs) under a single WisdomTree brand.
+- As part of the reorganisation, WisdomTree closed approximately 192 duplicate or stale products.
+- The rebrand/consolidation programme was scheduled for completion by end of September 2019, after which WisdomTree offered approximately 250 products spanning commodities, equities, currency, fixed income and alternatives under one brand.
+- Tickers for surviving ETFS-branded commodity ETCs were generally CARRIED FORWARD unchanged in most cases observed in this session's other research (e.g. PHAU, PHAG, PHPT, AIGI, COPA, AIGA, CRUD, NGAS, HEAT, UGAS all still trade today under their original ETF Securities-era tickers, now under the WisdomTree brand name) - i.e. the 2018 event was primarily a BRAND rename rather than a wholesale ISIN/ticker change for the surviving single-commodity ETC range, based on cross-referencing today's tickers against the original 2006 Jersey/GB-domiciled launch details found elsewhere in this audit.
+- HOWEVER, a separate and more consequential pattern was found independently in this session (see t212_product_availability_checks.txt / product_metadata.csv notes on WisdomTree Natural Gas and WisdomTree Lean Hogs): at least two product NAMES (Natural Gas, Lean Hogs) are associated with TWO DIFFERENT ISINs in current aggregator data - an older "GB00..." or similar Jersey/GB-domiciled ISIN, and a newer "JE00BN7KB..." ISIN. This is consistent with a subsequent (post-2018, exact date NOT CONFIRMED this session) reissuance of at least some single-commodity ETC lines under new legal share classes/ISINs, which is DIRECTLY RELEVANT to task C's survivorship question: today's live tickers may mask an underlying ISIN discontinuity that a naive "download today's list, backfill history under the current ISIN" approach would miss or mis-splice.
+
+SURVIVORSHIP IMPLICATION FOR THIS AUDIT: The 2018 WisdomTree/ETFS brand consolidation closed ~192 products. Any dataset built by scraping ONLY today's live product list would NOT see those ~192 closed products, understating the true 2008-2018 universe size and overstating the apparent survival rate of the single-commodity ETC category as a whole. This is a genuine, material survivorship-bias mechanism, separate from (and in addition to) the ISIN-reissuance pattern noted above.
+
+UNVERIFIED:
+- Exact list of the ~192 closed product names/ISINs/tickers (not obtained this session - the original ETF Strategy article body could not be re-fetched; a corporate WisdomTree 8-K, press release, or an archived version of the etfstrategy.com article via a web archive would be the next step to obtain the exact list).
+- Exact date and reason for the WisdomTree Natural Gas / Lean Hogs (and potentially other) ISIN reissuance pattern noted above.

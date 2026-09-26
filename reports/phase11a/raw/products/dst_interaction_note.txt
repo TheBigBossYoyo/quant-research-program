@@ -1,0 +1,10 @@
+ANALYTICAL NOTE (not a single-source excerpt) - DST interaction between US and EU/UK clocks
+RETRIEVAL DATE: 2026-09-26 (compiled from general public knowledge of DST transition rules, cross-checked against the exchange-hours sources in this same directory)
+
+FACTS (as stated in the audit brief and confirmed general knowledge, not from a single fetched page):
+- US DST ("Daylight Saving Time") begins the second Sunday of March and ends the first Sunday of November.
+- EU/UK DST ("British Summer Time" / "Central European Summer Time") begins the last Sunday of March and ends the last Sunday of October.
+
+IMPLICATION FOR THIS STRATEGY: Because the US and EU/UK DST transition dates do NOT coincide (there are two short asymmetric windows each year - roughly early-to-mid March, and late October to early November - where US clocks have shifted but EU/UK clocks have not, or vice versa), the wall-clock offset between US Eastern time (where CFTC data is released and NYMEX/CBOT/COMEX/ICE-US trading occurs) and UK/CET time (where LSE/Xetra/Borsa Italiana trading occurs) is NOT constant year-round: it is 5 hours (US Eastern to UK) / 6 hours (US Eastern to CET) for most of the year, but temporarily changes by one hour during those asymmetric windows. Any execution-timing rule for a CFTC-driven European-ETC strategy (e.g. "place order N minutes after Friday's CFTC Commitments of Traders release, which itself has its own publication-delay conventions") must account for this asymmetry explicitly in code (comparing calendar dates against both DST rule sets) rather than assuming a fixed UTC offset - this is a pure calendar-logic point, not a data point requiring a source citation beyond the well-established DST transition rules themselves.
+
+This note is provided for completeness of Task D; it does not by itself change the trading-hours facts recorded in lse_official_hours.txt, xetra_official_hours.txt, or borsa_italiana_etfplus_hours.txt, which already state each exchange's continuous-trading window in that exchange's own local civil time.

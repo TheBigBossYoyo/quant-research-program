@@ -1,0 +1,27 @@
+PURPOSE: Documents which issuer "full product range" pages were attempted this session, which succeeded, which were blocked, and how the product_metadata.csv rows were actually sourced when the issuer's own marketing page could not be fetched directly.
+RETRIEVAL DATE: 2026-09-26
+
+WisdomTree (wisdomtree.eu):
+- Attempted: https://www.wisdomtree.eu/en-gb/products/ucits-etfs-unleveraged-etps/commodities (full commodity range listing page)
+- Result: WebFetch returned "HTTP 403 Forbidden" (likely bot/anti-scraping protection on the marketing site).
+- Workaround used: individual WebSearch queries per commodity (e.g. "WisdomTree Physical Silver ETC ticker ISIN"), which reliably surfaced the issuer's own wisdomtree.eu / wisdomtree.com per-product pages, dataspanapi.wisdomtree.com KID/factsheet PDF endpoints (these were NOT blocked - the dataspanapi subdomain appears to sit outside whatever protection blocks the main wisdomtree.eu domain), and third-party aggregators (justETF, Cbonds, Yahoo Finance, Borsa Italiana, Morningstar) for cross-referencing tickers/ISINs. All ISINs recorded in the CSV for WisdomTree products were cross-checked against at least one aggregator; where only ONE source (often an aggregator, not the issuer directly) was found, this is stated in the CSV's notes/source_url column.
+
+iShares (ishares.com):
+- Attempted implicitly via WebFetch on a T212 instrument page only (not the ishares.com product page itself, which was not directly fetched this session).
+- All iShares ISINs/tickers/TERs in the CSV come from WebSearch aggregation (Cbonds, justETF, TradingView, Yahoo Finance snippets) plus direct T212-page confirmation of ticker+ISIN+market for the specific instruments checked (IGLN, ISLN, COMM). The BlackRock factsheet PDF URLs surfaced in search results (e.g. blackrock.com literature fact-sheet PDFs) were NOT opened this session.
+
+Invesco (invesco.com):
+- Not directly fetched this session (WebFetch was not attempted on invesco.com pages; all Invesco data points come from WebSearch aggregation of justETF/Cbonds/Invesco's own indexed KID PDF URLs, which appeared in search results but were not opened).
+- T212 availability was actively tested for SGLD (CONFIRMED TRUE) and CMOD (CONFIRMED the ticker/suffix combination does NOT resolve - see t212_product_availability_checks.txt). Invesco's physical silver/platinum/palladium tickers and the EUR-hedged Bloomberg Commodity line were NOT tested on T212 this session.
+
+Xtrackers/DWS (etf.dws.com):
+- Attempted: https://etf.dws.com/en-gb/etc-product-list/ - WebFetch succeeded in loading the page but the page returned was a legal "you are about to leave the Xtrackers ETF website" gateway/disclaimer page, not an actual product list/table. No product-level detail was obtainable from this specific URL.
+- Workaround used: WebSearch aggregation per product (gold/silver/platinum), which surfaced individual etf.dws.com product pages (title/name/ISIN/TER visible in search snippets) plus third-party aggregators. XGLD (Xtrackers Physical Gold) was actively confirmed on T212; other Xtrackers products (silver, platinum, the newer Ireland-domiciled gold share classes) were NOT tested on T212 this session.
+
+Deutsche Boerse Commodities (xetra-gold.com):
+- Both a WebSearch aggregation and a direct WebFetch of the Xetra-Gold KID PDF URL and the Deutsche Boerse cash-market brochure PDF URL were attempted; the WebSearch aggregation succeeded in extracting readable quoted text (recorded in the CSV and in xetra_official_hours.txt's companion product notes); the PDF documents themselves were listed as sources but not deeply parsed beyond what the search snippets themselves quoted.
+
+Amundi / UBS / L&G (broad-diversified issuers):
+- All data points sourced via WebSearch aggregation only this session (justETF, Cbonds, issuer's own indexed pages appearing in search results such as amundietf.co.uk, ubs.com asset-management pages, trackingdifferences.com). No direct WebFetch or T212 page confirmation was completed for Amundi or L&G products this session; UBS's BCFU ticker was actively tested on T212 and did NOT resolve (see availability-checks file).
+
+OVERALL METHODOLOGICAL CAVEAT: Given that several issuers' own marketing domains returned HTTP 403 or gateway/disclaimer pages to automated fetching this session, a meaningful share of the ticker/ISIN/TER/index-name data in product_metadata.csv is SECONDARY-SOURCE CONFIRMED (aggregator sites cross-referencing each other and, in several cases, the issuer's own KID/factsheet PDF filenames which embed the ISIN) rather than directly quoted from a primary issuer webpage. This is disclosed per-row in the CSV's notes/source_url columns, and the task's instruction to mark UNVERIFIED anything not confirmed has been followed - but the audit requester should be aware that "confirmed via aggregator cross-reference" is a weaker evidentiary standard than "directly fetched from issuer KID," and a follow-up pass that specifically fetches the dataspanapi.wisdomtree.com KID PDFs, the Invesco KID PDFs, and the etf.dws.com individual product pages (all of which appeared reachable via search-indexed URLs even when the top-level marketing domains were not) would upgrade a large fraction of these rows from secondary- to primary-source confirmed with fairly little additional effort.

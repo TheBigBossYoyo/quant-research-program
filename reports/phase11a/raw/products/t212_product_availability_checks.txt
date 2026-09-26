@@ -1,0 +1,68 @@
+METHOD: Direct navigation of individual Trading 212 public instrument pages (https://www.trading212.com/en/trading-instruments/invest/<TICKER>.<EXCHANGE_SUFFIX>) using the Claude Browser tool, followed by extraction of only the instrument name / ticker symbol / market / ISIN fields from the rendered page (JavaScript field extraction, or page-title/heading confirmation). NO price, NAV, percentage-change, or 52-week-high/low figures were recorded here even though some pages displayed them on screen - per the hard rule of this audit, that data was viewed transiently in the browser but is NOT reproduced in this file or anywhere else in the repository.
+RETRIEVAL DATE: 2026-09-26
+Cookie banner: non-essential cookies were declined ("Refuse les non essentiels") before any data was extracted.
+
+CONFIRMED AVAILABLE on Trading 212 Invest (page loaded successfully, showing the named instrument, its ticker, market, and ISIN):
+
+1. iShares Diversified Commodity Swap (Acc) - COMM - London Stock Exchange - ISIN IE00BDFL4P12
+   URL: https://www.trading212.com/en/trading-instruments/invest/COMM.GB
+
+2. WisdomTree Physical Gold - PHAU - London Stock Exchange - ISIN JE00B1VS3770
+   URL: https://www.trading212.com/en/trading-instruments/invest/PHAU.GB
+
+3. WisdomTree Physical Silver - PHAG - London Stock Exchange - ISIN JE00B1VS3333
+   URL: https://www.trading212.com/en/trading-instruments/invest/PHAG.GB
+
+4. iShares Physical Gold - IGLN - London Stock Exchange - ISIN IE00B4ND3602
+   URL: https://www.trading212.com/en/trading-instruments/invest/IGLN.GB
+
+5. iShares Physical Silver - ISLN - London Stock Exchange - ISIN IE00B4NCWG09
+   URL: https://www.trading212.com/en/trading-instruments/invest/ISLN.GB
+
+6. Invesco Physical Gold (Acc) - SGLD - London Stock Exchange - ISIN IE00B579F325
+   URL: https://www.trading212.com/en/trading-instruments/invest/SGLD.GB
+
+7. Xtrackers Physical Gold - XGLD - London Stock Exchange - ISIN GB00B5840F36
+   URL: https://www.trading212.com/en/trading-instruments/invest/XGLD.GB
+
+8. Xetra-Gold - 4GLD - Deutsche Boerse Xetra - ISIN DE000A0S9GB0
+   URL: https://www.trading212.com/en/trading-instruments/invest/4GLD.DE
+
+9. WisdomTree Physical Platinum - PHPT - London Stock Exchange - ISIN JE00B1VS2W53
+   URL: https://www.trading212.com/en/trading-instruments/invest/PHPT.GB
+
+10. WisdomTree Agriculture - AIGA - London Stock Exchange - ISIN GB00B15KYH63
+    URL: https://www.trading212.com/en/trading-instruments/invest/AIGA.GB
+    (This page's "related instruments" carousel also displayed, by NAME only - no data recorded from them beyond existence - three further T212-tradeable products not yet in this session's table: "UBS Bloomberg SPGSCI Constant Maturity Composite TR Index", "WisdomTree Industrial Metals Enhanced", and "UBS Bloomberg CMCI Components Natural Gas GBP Mth Hdg TR". These are flagged as newly-discovered candidate rows for a follow-up session; NOT independently opened/confirmed beyond their appearance in this carousel.)
+
+11. WisdomTree WTI Crude Oil - CRUD - London Stock Exchange - ISIN (page loaded and title confirmed; ISIN field not separately re-extracted this check, already on file as GB00B15KXV33 from aggregator cross-reference)
+    URL: https://www.trading212.com/en/trading-instruments/invest/CRUD.GB
+
+12. WisdomTree Copper - COPA - London Stock Exchange - ISIN (page loaded and title confirmed; ISIN field not separately re-extracted this check, already on file as GB00B15KXQ89 from aggregator cross-reference)
+    URL: https://www.trading212.com/en/trading-instruments/invest/COPA.GB
+
+CONFIRMED NOT RESOLVING to a specific instrument page (URL redirected to the generic "all trading instruments" hub page rather than a named instrument page - this is a NEGATIVE finding, i.e. best current evidence that Trading 212 does NOT list the instrument under this ticker/suffix, though a different ticker/suffix or a site-search-box lookup was not exhaustively tried):
+
+13. Invesco Bloomberg Commodity UCITS ETF - attempted ticker CMOD, suffix .GB - REDIRECTED to generic hub page (https://www.trading212.com/fr/trading-instruments/invest), title "Investis dans des actions et des ETF dans le monde entier"
+    URL attempted: https://www.trading212.com/en/trading-instruments/invest/CMOD.GB
+
+14. UBS Bloomberg Commodity CMCI SF UCITS ETF - attempted ticker BCFU, suffix .DE - REDIRECTED to generic hub page
+    URL attempted: https://www.trading212.com/en/trading-instruments/invest/BCFU.DE
+
+PAGE CONFIRMED TO EXIST BUT FIELD EXTRACTION INCOMPLETE (browser tool's page-scripting permission was revoked by the operator partway through this session; page navigation itself succeeded and the page title/heading confirmed the instrument name, but the ISIN field was not captured before the tool became unavailable):
+
+10. WisdomTree Physical Palladium - ticker PHPD (page title confirmed: "WisdomTree Physical Palladium") - London Stock Exchange (implied by .GB suffix) - ISIN NOT CAPTURED
+    URL: https://www.trading212.com/en/trading-instruments/invest/PHPD.GB
+
+11. WisdomTree Industrial Metals - ticker AIGI (page title confirmed: "WisdomTree Industrial Metals") - London Stock Exchange (implied by .GB suffix) - ISIN NOT CAPTURED this session (cross-referenced as GB00B15KYG56 from an independent aggregator search, not from the T212 page itself)
+    URL: https://www.trading212.com/en/trading-instruments/invest/AIGI.GB
+
+NOT CHECKED THIS SESSION (time/tool constraints) - status UNVERIFIED, listed in the CSV as such:
+- Remaining single-commodity WisdomTree agriculture/livestock/energy ETCs (BRNT, NGAS, HEAT, UGAS, WEAT, CORN, SOYB, SUGA, COFF, COTN, CATL, HOGS, ALUM, NICK, ZINC)
+- Invesco/Xtrackers physical silver/platinum/palladium lines
+- Invesco Bloomberg Commodity UCITS ETF EUR-hedged share class (CMOE) - and note the USD line (CMOD) was actively tried and did NOT resolve (see above)
+- Amundi, L&G, WisdomTree Broad Commodities/Enhanced Commodity broad-diversified funds; UBS CMCI USD line (BCFU) was actively tried and did NOT resolve (see above)
+- iShares Diversified Commodity Swap UCITS ETF (DE) / EXXY (Xetra line)
+- The three newly-surfaced "related instruments" names noted under item 10 above
+
+METHODOLOGY NOTE ON URL PATTERN: Trading 212's public instrument pages follow the pattern /trading-instruments/invest/<TICKER>.<SUFFIX> where <SUFFIX> appears to be ".GB" for London Stock Exchange listings and ".DE" for Deutsche Boerse Xetra listings (confirmed working for both in this session). This pattern was inferred from one search-engine-indexed example (COMM.GB) and confirmed to generalise correctly across all 9 successfully-loaded pages above. It was NOT tested for Borsa Italiana (.MI or .IT?), Euronext, or other listing venues this session.

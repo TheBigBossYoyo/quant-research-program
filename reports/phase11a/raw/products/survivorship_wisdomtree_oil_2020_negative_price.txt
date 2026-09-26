@@ -1,0 +1,23 @@
+SOURCE URLS:
+- https://www.globenewswire.com/news-release/2020/08/04/2072461/0/en/WisdomTree-announces-index-change-for-WTI-Crude-Oil-ETC.html
+- https://www.globenewswire.com/news-release/2020/03/09/1997336/0/en/Compulsory-Redemption-of-WisdomTree-WTI-Crude-Oil-3x-Daily-Leveraged-and-WisdomTree-Brent-Crude-Oil-3x-Daily-Leveraged-the-Impacted-Products.html
+- WebSearch aggregation for surrounding context
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction) + WebSearch
+
+EVENT 1 - COMPULSORY REDEMPTION OF LEVERAGED OIL ETCs (2020-03, triggered by an oil-price crash, NOT the April 2020 negative-price event):
+- Product(s) affected: WisdomTree WTI Crude Oil 3x Daily Leveraged and WisdomTree Brent Crude Oil 3x Daily Leveraged (LEVERAGED products - outside this audit's unleveraged, long-only universe, but directly relevant to survivorship of the WisdomTree/ETFS product family as a whole).
+- A "Severe Overnight Gap Event" occurred; the Swap Provider served a "Transaction Early Termination Notice"; application was made to the London Stock Exchange, Borsa Italiana and Deutsche Boerse to suspend and delist the affected products; compulsory redemption followed "all in accordance with the prospectus."
+
+EVENT 2 - INDEX METHODOLOGY CHANGE FOR THE UNLEVERAGED WisdomTree WTI Crude Oil ETC (CRUD, GB00B15KXV33) - THIS IS THE DIRECTLY RELEVANT EVENT FOR THE AUDIT'S UNLEVERAGED UNIVERSE:
+- Effective date: 2020-08-04.
+- Change: index changed to the "Bloomberg WTI Crude Oil Multi-Tenor Excess Return Index" (referred to in some sources as "Bloomberg WTI Crude Oil Multi-Tenor Total Return Index" - the exact Excess-Return vs Total-Return naming should be re-confirmed from the current KID, since Bloomberg commodity subindices are published in both ER and TR variants and issuers sometimes reference the ER version internally while marketing the TR wrapper level).
+- Reason (as stated in the press release): to provide "greater future protection from the type of extreme conditions" experienced in 2020, specifically the unprecedented NEGATIVE WTI futures prices seen in the April 2020 contract. The new index "spreads risk across three WTI contracts instead of one" (i.e. moved from an apparent single-(front-month)-contract methodology to a multi-tenor/multi-contract methodology), "offering a price floor at zero," improved liquidity, and reduced exposure to contango drag.
+- A "zero floor" mechanism was also implemented so that the (leveraged, now-defunct) CRUD-family products would automatically terminate if NAV reached zero - again more directly relevant to the leveraged products, but described in the same corporate action package as the unleveraged index change.
+
+SURVIVORSHIP/METHODOLOGY-CHANGE IMPLICATION FOR THIS AUDIT: The unleveraged WisdomTree WTI Crude Oil ETC (CRUD) that exists on exchanges TODAY is NOT tracking the same index methodology it tracked before 2020-08-04. A backtest or "index history" pulled naively from today's factsheet, or a price series treated as if it always tracked a single, unchanged multi-tenor methodology, would be silently splicing two different return-generating processes (single-contract front-month roll pre-2020-08-04, multi-tenor roll post-2020-08-04) under one continuous ticker/ISIN. This is exactly the kind of "index or roll-methodology change" survivorship risk flagged in the task brief, and it is DOCUMENTED, DATED, and NAMED (not a hypothesis) for at least this one product.
+
+UNVERIFIED:
+- Exact pre-2020-08-04 index name (the press release excerpt as fetched did not explicitly restate the OLD index name, only characterising it as effectively single-contract).
+- Whether WisdomTree Brent Crude Oil (unleveraged, BRNT) underwent an analogous methodology change around the same period (not confirmed this session - only the leveraged Brent 3x product's compulsory redemption was found).
+- Whether other WisdomTree/ETFS single-commodity ETCs (e.g. Natural Gas) underwent similar roll-methodology changes around 2020 (not checked this session).

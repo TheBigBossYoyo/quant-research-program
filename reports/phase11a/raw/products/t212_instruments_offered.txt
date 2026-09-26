@@ -1,0 +1,13 @@
+SOURCE URL: https://helpcentre.trading212.com/hc/en-us/articles/11717160183197-What-trading-instruments-does-Trading-212-offer
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction)
+
+RELEVANT EXCERPT (NO performance/price data included):
+Invest and Stocks ISA accounts offer: "Ordinary shares, Preferred shares, Exchange-traded funds (ETFs), Exchange-traded products (ETPs), Exchange-traded commodities (ETCs), Real Estate Investment trusts (REITs), Investment Trusts"
+
+CFD accounts offer: "FOREX, Stocks, ETFs, Index futures, Commodity futures, FOREX futures, Treasury futures, Cryptocurrencies" (cryptocurrency CFDs restricted to Trading 212 Markets Ltd. / Trading 212 EU GmbH entities).
+
+CONFIRMS: Trading 212 Invest explicitly and officially offers ETCs (Exchange-Traded Commodities) as an instrument class, corroborating the individual product-page checks in t212_product_availability_checks.txt.
+
+UNVERIFIED:
+- The fetched page did not contain any statement about PRIIPs/KID regulatory restrictions on US-listed ETFs/ETPs for EU/UK retail clients. (Separately, it is general public knowledge that UK/EU retail brokers cannot offer US-domiciled ETFs to retail clients without a PRIIPs KID, which in practice is why US-listed commodity ETFs such as SPDR Gold Shares (GLD) or United States Oil Fund (USO) are not available to Trading 212 UK/EU retail Invest clients - but this specific point was NOT independently confirmed from an official Trading 212 source this session and should be marked UNVERIFIED pending a direct source.)

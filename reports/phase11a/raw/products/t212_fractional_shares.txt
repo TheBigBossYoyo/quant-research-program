@@ -1,0 +1,14 @@
+SOURCE URL: https://helpcentre.trading212.com/hc/en-us/articles/9511997937437-Can-I-trade-with-fractional-shares
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction)
+
+RELEVANT EXCERPT (NO performance/price data included):
+- "Most instruments available on the Invest accounts and ISAs can be traded fractionally."
+- Supports "Fractional Market, Limit, Stop and Stop Limit orders."
+- Minimum order value: the fetched article text did not state a formal minimum order value; a separate community-forum thread (https://community.trading212.com/t/1-minimum-order-value/15654, not an official help-centre source) references a GBP 1 minimum order value figure, which should be treated as UNVERIFIED until confirmed on an official Trading 212 page.
+- "You can't transfer fractions to other brokers" (fractional positions must be sold before an account transfer).
+- The article does not explicitly carve out ETFs/ETCs as an exception, so "most instruments" is read to include them, but this is an inference, not a direct statement.
+
+UNVERIFIED:
+- Exact minimum order value in GBP/EUR (community forum cites GBP 1; not confirmed on an official help-centre page this session).
+- Whether any specific ETC (as opposed to ETFs/shares generally) is excluded from fractional trading.

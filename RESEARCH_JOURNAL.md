@@ -612,3 +612,60 @@ on its website, which means the archive is restated rather than immutable.
 
 Not executed. No preregistration written. 490 cells, nothing bought, no vendor contacted, validation and
 holdout still never opened.
+
+## Phase 11A COMMODITY_HEDGING_PRESSURE_STAGE0 — closed at the mechanism gate (2026-09-26)
+
+The idea is the oldest one in commodity finance. Producers hedge by selling futures, somebody has to take the other
+side, and when hedging demand is heavy the speculator is paid for the insurance. The positioning data are free, weekly
+and go back decades, and a long-only investor could in principle hold the commodities where producers are most net
+short. That was enough to justify a Stage 0.
+
+The literature took most of it away before any data mattered. The famous relationship is contemporaneous, and a
+signal we can trade has to survive the three-day wait until Friday's release. In the form most people mean by hedging
+pressure, last week's hedger positions, it predicts nothing: in Kang, Rouwenhorst and Tang's own table, the lagged
+weekly slope is -0.07 with t = -0.43. What survives is a slow, specialised variable, the 52-week average, which they
+call the insurance premium: t = 3.35 on Legacy data. That is a real result, but it is not a result about COT
+positioning in general. Their Legacy hedger category includes swap dealers. When they rerun it on the Disaggregated
+producer category, the one that actually corresponds to the mechanism, the coefficient falls from 0.85 (t 2.64) to
+0.58 (t 1.61) once expected-return controls are added.
+
+Maréchal's replication is where I nearly got it wrong. The flattened text of his slides lists six panel columns under
+three period headings, and both the earlier source note and my own first draft read them one way. The text coordinates
+say otherwise: each heading spans two columns. So the 0.25 (t 1.34) I had called pre-2004 is actually post-2004 without
+controls, the pre-2004 panel is significant (t 2.26 to 2.36), and the famous -0.37 (t -0.76) is the one post-2004 column
+with controls and commodity fixed effects. His Fama-MacBeth table says something different again. The full period is
+significant, and the two sub-periods estimated separately are not: 0.92 before 2004 and 1.84 after. And his own summary
+has two halves: the Fama-MacBeth results are robust to financialization, and the panel shows the insurance price falling
+after it. The accurate statement is narrower than the one I first wrote. No post-2004 estimate in either method is
+significant, and the only within-commodity post-2004 estimate is insignificant. That still does not establish a robust
+modern effect, and it is what the record now says. Section 15 of the audit lists this correction with the others (the
+KRT sample runs to 2014, not 2012, and its controls are basis, past return and idiosyncratic risk, not "momentum").
+
+Every one of those numbers is a costless long-short cross-section over twenty-odd futures, aligned to Tuesday
+positions that are not public until Friday. Nobody reports the long leg, nobody measures it after the release, and nobody
+trades it through a London-listed ETC that holds physical gold instead of a futures position, or through a WisdomTree oil
+product whose index changed underneath it in August 2020. Everything we would add pushes the same way: later
+information, more basis, more cost, less power. The ex-ante power calculation, done from published magnitudes rather
+than any data, puts the realistic test at roughly 5 to 25 percent under modern attenuation. A null would be weakly
+informative, and a pass would be one more lucky draw in a 490-cell search.
+
+The pattern from Phases 8 to 10 repeats in a new asset class. The documented effect is a long-short spread, and the
+long-only leg that a small book could hold is either unreported or much weaker.
+
+Two workstreams were stopped rather than finished, and the audit says so in plain words. The archived release
+schedules came back rate-limited and incomplete: 2008 and 2025 are unusable, 2009 is nearly empty, no release map was
+built, and what was recovered are tentative schedules, not a record of releases. The product agent was interrupted:
+the partial metadata is kept under an INTERRUPTED_UNVERIFIED_ARTIFACT label, its CSV is malformed and deliberately
+unrepaired, and no mapping from CFTC contracts to products was certified. Neither could have changed the answer. A
+perfect release map only confirms that we would see the signal no earlier than the papers did, and a perfect product
+list only removes a friction.
+
+One hygiene change is prospective. The papers downloaded for this phase stay on this machine and out of git, and
+SOURCES.txt carries the references and the table locations instead. Earlier phases' committed papers are left as they
+are.
+
+The tempting continuations all belong to the same family: the position-change premium that partly survives the
+release, managed-money positioning, a different smoothing window, positioning conditioned on carry. Each would be the
+failed mechanism plus one more free choice made after reading the results. They are written down as excluded.
+
+0 cells. 490 cumulative. No commodity return of any date loaded. Equity validation and holdout still never opened.

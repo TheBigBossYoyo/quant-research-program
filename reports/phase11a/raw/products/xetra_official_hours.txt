@@ -1,0 +1,21 @@
+SOURCE URL 1: https://www.cashmarket.deutsche-boerse.com/cash-en/Trading-calendar-and-trading-hours-22048
+SOURCE URL 2: https://www.cashmarket.deutsche-boerse.com/cash-en/Stay-Informed/circulars-newsletters/deutsche-boerse-circulars/Planned-introduction-of-Extended-Xetra-Retail-Service-trading-hour-extension-effective-as-of-1-December-2025-4737182
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction)
+
+RELEVANT EXCERPT - BASE TRADING HOURS (NO performance/price data):
+- "Trading on Xetra takes place from Mondays to Fridays from 9 until 17:30 CET."
+- Opening auction: from 8:50 am. Closing auction: from 5:30 pm.
+
+RELEVANT EXCERPT - EXTENDED XETRA RETAIL SERVICE (effective 2025-12-01, i.e. ALREADY IN EFFECT as of this audit's 2026-09-26 retrieval date - this is a material, time-sensitive fact):
+- Effective date: 1 December 2025.
+- Early trading: "8:00 a.m. to 9:00 a.m. CET"
+- Late trading: "5:30 p.m. to 10:00 p.m. CET"
+- Net effect: Deutsche Boerse Xetra is described by Deutsche Boerse's own circular as "now available continuously from 08:00 until 22:00 CET for retail investors" following this change.
+- Operational adjustments alongside the extension: Opening Auction shifts to 8:55 a.m. (five minutes later than the pre-Dec-2025 8:50am); continuous trading transition occurs 9:00-9:04 a.m.; the Trade-at-Close (TAC) phase window reduces from ten minutes to five minutes (5:35-5:40 p.m.) and, per the circular, TAC is "only available for DAX, MDAX and SDAX" indices - suggesting the TAC-specific mechanic is equity-index-focused and may not apply identically to ETC/ETC-fund instruments (NOT independently confirmed for ETCs specifically this session).
+- The circular's text as fetched did NOT explicitly state whether ETFs/ETCs participate in the new 08:00-22:00 CET retail window on the same basis as equities - this is flagged as UNVERIFIED and should be checked against Deutsche Boerse's ETC/ETP trading-hours documentation specifically, or against Xetra's instrument-level trading calendar for a specific ETC ISIN, before relying on it for execution-timing research.
+
+IMPLICATION FOR THIS AUDIT: Because this extension went live 2025-12-01 (before the current 2026-09-26 audit date), any current-facts research on "Xetra trading hours" must use the NEW 08:00-22:00 CET retail window, not the older 09:00-17:30 CET window, as the presently-correct answer - and Trading 212's own help-centre page on market hours (t212_trading_hours.txt) does NOT appear to reflect this change as of this retrieval, which is itself a notable finding (T212's stated Xetra hours may be stale relative to Deutsche Boerse's current retail-hours regime).
+
+UNVERIFIED:
+- Whether Trading 212 clients can actually access the new 08:00-09:00 and 17:30-22:00 CET Xetra retail windows for ETC/ETF orders (T212's help-centre article says extended-hours trading is available "only for eligible US instruments", which - read literally - would exclude Xetra-listed European ETCs from any extended session regardless of Deutsche Boerse's own retail-hours expansion). This is an important, unresolved discrepancy between the exchange-level rule and the broker-level rule and should be confirmed directly with Trading 212 support before being relied upon operationally.

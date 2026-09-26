@@ -1,0 +1,14 @@
+SOURCE URL: https://www.borsaitaliana.it/etf/formazione/segmentazioneemicrostrutturamercatoetfplus/etfplussegmentazioneemicrostruttura.en.htm
+RETRIEVAL DATE: 2026-09-26
+METHOD: WebFetch (HTML->markdown extraction)
+
+RELEVANT EXCERPT (NO performance/price data):
+- Opening Auction: "from 7:30am to 9:04 am plus a variable interval of up to 30 secs [randomised uncross]"
+- Continuous Trading: "from 9.04 am to 5.30pm"
+- Closing Auction: "from 5.30pm to 5.35pm plus a variable interval of up to 30 secs"
+- Trading-at-last: "from 5:35pm to 5:40pm"
+- All times are CET/CEST (Milan local time; the source page itself did not explicitly repeat the "CET" label in the extracted excerpt, but Borsa Italiana/ETFplus operates on Milan local time, i.e. the same civil-time zone as Xetra/Frankfurt).
+- ETC instruments on ETFplus are described as having their own dedicated segment, differentiated from the plain "ETF" and "Active Managed ETF" segments partly by leverage-related classes ("maximum leverage effect equal to 2" or "greater than 2" as classification thresholds for structured/leveraged products) - this audit's target universe is explicitly UNLEVERAGED (1x), so this classification nuance is noted but not directly relevant to product selection; it does NOT indicate a different trading-hours regime for the unleveraged ETC segment versus the ETF segment - continuous trading hours (9:04am-5:30pm) appear to be common across ETFplus segments per the fetched text.
+
+UNVERIFIED:
+- Whether price-fluctuation/circuit-breaker limits differ materially between the plain-vanilla physical/swap-backed commodity ETCs in this audit's universe and other ETFplus-listed structured products (the source text mentions fluctuation limits vary "depending on the segment and specific class" but did not give exact percentage limits for the commodity-ETC class specifically).

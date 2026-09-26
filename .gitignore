@@ -37,3 +37,9 @@ reports/**/*_path.csv
 # vendor symbol list and a duplicate copy of the labelling package kept at the root
 /supported_tickers.zip
 /phase8b_labeling_package.zip
+
+# Phase 11A (prospective rule; earlier phases' committed PDFs are not rewritten): third-party academic papers and
+# their full-text conversions stay local and untracked. Bibliographic details, URLs and the decision-relevant facts
+# are kept in SOURCES.txt.
+reports/phase11a/raw/literature/*
+!reports/phase11a/raw/literature/SOURCES.txt

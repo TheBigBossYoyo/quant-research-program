@@ -1,0 +1,20 @@
+{
+ "legacy": {
+  "rows": 289653,
+  "distinct_contract_codes": 956,
+  "first_report_date": "1986-01-15",
+  "last_report_date": "2026-09-22",
+  "n_report_dates": 1937,
+  "duplicate_code_date_rows": 0,
+  "non_tuesday_report_dates": 163
+ },
+ "disagg": {
+  "rows": 185348,
+  "distinct_contract_codes": 656,
+  "first_report_date": "2006-06-13",
+  "last_report_date": "2026-09-22",
+  "n_report_dates": 1059,
+  "duplicate_code_date_rows": 0,
+  "non_tuesday_report_dates": 14
+ }
+}
