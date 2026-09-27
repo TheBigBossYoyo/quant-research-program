@@ -1,0 +1,49 @@
+{
+  "decision": "REAL_TIME_OOS_EVIDENCE_TOO_WEAK",
+  "selected": null,
+  "binding_class": "B_SLOPE_FWD_SPREAD",
+  "set_aside_data_blocked": [
+    "C_PIT_TERM_PREMIUM"
+  ],
+  "per_class": {
+    "B_SLOPE_FWD_SPREAD": {
+      "eligible": false,
+      "code": "REAL_TIME_OOS_EVIDENCE_TOO_WEAK",
+      "fails": [
+        "real_time_oos_evidence"
+      ],
+      "unresolved": [
+        "long_only_economic_meaning"
+      ],
+      "data_blocked": false
+    },
+    "A_CP_FACTOR": {
+      "eligible": false,
+      "code": "REAL_TIME_OOS_EVIDENCE_TOO_WEAK",
+      "fails": [
+        "real_time_oos_evidence",
+        "long_only_economic_meaning"
+      ],
+      "unresolved": [
+        "pit_reconstructable",
+        "low_turnover",
+        "no_proprietary_data"
+      ],
+      "data_blocked": false
+    },
+    "C_PIT_TERM_PREMIUM": {
+      "eligible": false,
+      "code": "REAL_TIME_OOS_EVIDENCE_TOO_WEAK",
+      "fails": [
+        "real_time_oos_evidence",
+        "pit_reconstructable",
+        "simple_preregistrable"
+      ],
+      "unresolved": [
+        "long_only_economic_meaning",
+        "low_turnover"
+      ],
+      "data_blocked": true
+    }
+  }
+}

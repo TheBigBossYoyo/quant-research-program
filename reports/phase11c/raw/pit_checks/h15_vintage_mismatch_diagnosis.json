@@ -1,0 +1,200 @@
+{
+ "DGS1@2005-06-28": {
+  "numeric_revisions": 2,
+  "numeric_revision_dates": [
+   "1991-07-24",
+   "1998-08-28"
+  ],
+  "format_only_diffs": 10828,
+  "old_missing_now_present": 0,
+  "range_old_missing_now_present": [
+   [],
+   []
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "1962-01-02"
+   ],
+   [
+    "2005-06-27"
+   ]
+  ],
+  "decimals_old": [
+   3
+  ],
+  "decimals_cur": [
+   2
+  ]
+ },
+ "DGS2@2005-06-28": {
+  "numeric_revisions": 3,
+  "numeric_revision_dates": [
+   "1990-11-21",
+   "1994-11-23",
+   "1995-11-29"
+  ],
+  "format_only_diffs": 7257,
+  "old_missing_now_present": 0,
+  "range_old_missing_now_present": [
+   [],
+   []
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "2005-06-27"
+   ],
+   [
+    "2005-06-27"
+   ]
+  ],
+  "decimals_old": [
+   3
+  ],
+  "decimals_cur": [
+   2
+  ]
+ },
+ "DGS20@2005-06-28": {
+  "numeric_revisions": 2,
+  "numeric_revision_dates": [
+   "1996-08-13",
+   "1997-10-16"
+  ],
+  "format_only_diffs": 2932,
+  "old_missing_now_present": 0,
+  "range_old_missing_now_present": [
+   [],
+   []
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "1962-01-02"
+   ],
+   [
+    "2005-06-27"
+   ]
+  ],
+  "decimals_old": [
+   3
+  ],
+  "decimals_cur": [
+   2
+  ]
+ },
+ "DGS30@2010-01-04": {
+  "numeric_revisions": 1,
+  "numeric_revision_dates": [
+   "2009-12-14"
+  ],
+  "format_only_diffs": 0,
+  "old_missing_now_present": 994,
+  "range_old_missing_now_present": [
+   [
+    "2002-02-19"
+   ],
+   [
+    "2006-02-08"
+   ]
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "2009-12-31"
+   ],
+   [
+    "2010-01-01"
+   ]
+  ],
+  "decimals_old": [
+   2
+  ],
+  "decimals_cur": [
+   2
+  ]
+ },
+ "DGS3MO@2005-06-28": {
+  "numeric_revisions": 1,
+  "numeric_revision_dates": [
+   "1999-10-01"
+  ],
+  "format_only_diffs": 0,
+  "old_missing_now_present": 0,
+  "range_old_missing_now_present": [
+   [],
+   []
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "1981-09-01"
+   ],
+   [
+    "2005-06-27"
+   ]
+  ],
+  "decimals_old": [
+   2
+  ],
+  "decimals_cur": [
+   2
+  ]
+ },
+ "DGS20@2010-01-04": {
+  "numeric_revisions": 2,
+  "numeric_revision_dates": [
+   "1996-08-13",
+   "2009-11-19"
+  ],
+  "format_only_diffs": 0,
+  "old_missing_now_present": 0,
+  "range_old_missing_now_present": [
+   [],
+   []
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "1962-01-02"
+   ],
+   [
+    "2010-01-01"
+   ]
+  ],
+  "decimals_old": [
+   2
+  ],
+  "decimals_cur": [
+   2
+  ]
+ },
+ "DGS10@2005-06-28": {
+  "numeric_revisions": 1,
+  "numeric_revision_dates": [
+   "1991-01-29"
+  ],
+  "format_only_diffs": 0,
+  "old_missing_now_present": 0,
+  "range_old_missing_now_present": [
+   [],
+   []
+  ],
+  "old_present_now_missing": 0,
+  "only_in_current_range": [
+   [
+    "1962-01-02"
+   ],
+   [
+    "2005-06-27"
+   ]
+  ],
+  "decimals_old": [
+   2
+  ],
+  "decimals_cur": [
+   2
+  ]
+ }
+}

@@ -1,0 +1,63 @@
+{
+  "publication_bound_et": "18:00:00",
+  "live_rule": "execute at the close of the first XLON session whose open is after D 18:00 ET",
+  "backtest_rule": "same, measured from max(D, first ALFRED vintage containing D)",
+  "illustrative_2026_schedule": [
+    {
+      "month": "2026-01",
+      "signal_date": "2026-01-30",
+      "publication_bound_utc": "2026-01-30T23:00:00+00:00",
+      "execution_session": "2026-02-02",
+      "execution_close_utc": "2026-02-02T16:30:00+00:00"
+    },
+    {
+      "month": "2026-02",
+      "signal_date": "2026-02-27",
+      "publication_bound_utc": "2026-02-27T23:00:00+00:00",
+      "execution_session": "2026-03-02",
+      "execution_close_utc": "2026-03-02T16:30:00+00:00"
+    },
+    {
+      "month": "2026-03",
+      "signal_date": "2026-03-31",
+      "publication_bound_utc": "2026-03-31T22:00:00+00:00",
+      "execution_session": "2026-04-01",
+      "execution_close_utc": "2026-04-01T15:30:00+00:00"
+    },
+    {
+      "month": "2026-04",
+      "signal_date": "2026-04-30",
+      "publication_bound_utc": "2026-04-30T22:00:00+00:00",
+      "execution_session": "2026-05-01",
+      "execution_close_utc": "2026-05-01T15:30:00+00:00"
+    },
+    {
+      "month": "2026-05",
+      "signal_date": "2026-05-29",
+      "publication_bound_utc": "2026-05-29T22:00:00+00:00",
+      "execution_session": "2026-06-01",
+      "execution_close_utc": "2026-06-01T15:30:00+00:00"
+    },
+    {
+      "month": "2026-06",
+      "signal_date": "2026-06-30",
+      "publication_bound_utc": "2026-06-30T22:00:00+00:00",
+      "execution_session": "2026-07-01",
+      "execution_close_utc": "2026-07-01T15:30:00+00:00"
+    },
+    {
+      "month": "2026-07",
+      "signal_date": "2026-07-31",
+      "publication_bound_utc": "2026-07-31T22:00:00+00:00",
+      "execution_session": "2026-08-03",
+      "execution_close_utc": "2026-08-03T15:30:00+00:00"
+    },
+    {
+      "month": "2026-08",
+      "signal_date": "2026-08-31",
+      "publication_bound_utc": "2026-08-31T22:00:00+00:00",
+      "execution_session": "2026-09-01",
+      "execution_close_utc": "2026-09-01T15:30:00+00:00"
+    }
+  ]
+}

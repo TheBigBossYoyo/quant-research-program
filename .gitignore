@@ -53,3 +53,10 @@ reports/phase11b/raw/literature/*
 reports/phase11b/raw/sources/*_snapshots/*
 !reports/phase11b/raw/sources/*_snapshots/INDEX.md
 !reports/phase11b/raw/sources/*_snapshots/_index.md
+
+reports/phase11c/raw/literature/*
+!reports/phase11c/raw/literature/SOURCES.txt
+reports/phase11c/raw/sources/*_snapshots/*
+!reports/phase11c/raw/sources/*_snapshots/INDEX.md
+reports/phase11c/raw/pit_checks/QUARANTINE_VALUES_NOT_INSPECTED/
+reports/phase11c/raw/pit_checks/*.QUARANTINE

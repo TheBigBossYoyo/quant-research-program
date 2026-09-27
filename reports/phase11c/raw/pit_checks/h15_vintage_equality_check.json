@@ -1,0 +1,577 @@
+{
+ "method": "ALFRED alfredgraph.csv per vintage; observations dated before the vintage date and <= 2017-12-31 compared for exact string equality with the 2026-09-25 vintage; no value printed",
+ "results": {
+  "DGS3MO": {
+   "2005-06-28": {
+    "obs_compared": 6125,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.10000000000000053,
+    "mismatch_dates_first10": [
+     "1999-10-01"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 90,
+    "only_in_current_first5": [
+     "1981-09-01",
+     "1981-09-02",
+     "1981-09-03",
+     "1981-09-04",
+     "1981-09-07"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 7303,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.10000000000000053,
+    "mismatch_dates_first10": [
+     "1999-10-01"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 91,
+    "only_in_current_first5": [
+     "1981-09-01",
+     "1981-09-02",
+     "1981-09-03",
+     "1981-09-04",
+     "1981-09-07"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 9390,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.10000000000000053,
+    "mismatch_dates_first10": [
+     "1999-10-01"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 89,
+    "only_in_current_first5": [
+     "1981-09-01",
+     "1981-09-02",
+     "1981-09-03",
+     "1981-09-04",
+     "1981-09-07"
+    ]
+   }
+  },
+  "DGS6MO": {
+   "2005-06-28": {
+    "obs_compared": 6125,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.010000000000000231,
+    "mismatch_dates_first10": [
+     "1994-03-25"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 90,
+    "only_in_current_first5": [
+     "1981-09-01",
+     "1981-09-02",
+     "1981-09-03",
+     "1981-09-04",
+     "1981-09-07"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 7303,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.010000000000000231,
+    "mismatch_dates_first10": [
+     "1994-03-25"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 91,
+    "only_in_current_first5": [
+     "1981-09-01",
+     "1981-09-02",
+     "1981-09-03",
+     "1981-09-04",
+     "1981-09-07"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 9390,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.010000000000000231,
+    "mismatch_dates_first10": [
+     "1994-03-25"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 89,
+    "only_in_current_first5": [
+     "1981-09-01",
+     "1981-09-02",
+     "1981-09-03",
+     "1981-09-04",
+     "1981-09-07"
+    ]
+   }
+  },
+  "DGS1": {
+   "2005-06-28": {
+    "obs_compared": 11322,
+    "mismatched": 10830,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1962-02-01",
+     "1962-02-02",
+     "1962-02-05",
+     "1962-02-06",
+     "1962-02-07",
+     "1962-02-08",
+     "1962-02-09",
+     "1962-02-13",
+     "1962-02-14",
+     "1962-02-15"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 23,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 12522,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1991-07-24"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 14609,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1991-07-24"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  },
+  "DGS2": {
+   "2005-06-28": {
+    "obs_compared": 7584,
+    "mismatched": 7260,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.019999999999999574,
+    "mismatch_dates_first10": [
+     "1976-06-01",
+     "1976-06-02",
+     "1976-06-03",
+     "1976-06-04",
+     "1976-06-07",
+     "1976-06-08",
+     "1976-06-09",
+     "1976-06-10",
+     "1976-06-11",
+     "1976-06-14"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 1,
+    "only_in_current_first5": [
+     "2005-06-27"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 8762,
+    "mismatched": 2,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.019999999999999574,
+    "mismatch_dates_first10": [
+     "1990-11-21",
+     "1995-11-29"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 10849,
+    "mismatched": 2,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.019999999999999574,
+    "mismatch_dates_first10": [
+     "1990-11-21",
+     "1995-11-29"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  },
+  "DGS3": {
+   "2005-06-28": {
+    "obs_compared": 11322,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "2001-07-18"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 23,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 12522,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "2001-07-18"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 14609,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "2001-07-18"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  },
+  "DGS5": {
+   "2005-06-28": {
+    "obs_compared": 11322,
+    "mismatched": 0,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.0,
+    "mismatch_dates_first10": [],
+    "only_in_old": 0,
+    "only_in_current": 23,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 12522,
+    "mismatched": 0,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.0,
+    "mismatch_dates_first10": [],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 14609,
+    "mismatched": 0,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.0,
+    "mismatch_dates_first10": [],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  },
+  "DGS7": {
+   "2005-06-28": {
+    "obs_compared": 9389,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1994-12-14"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 1,
+    "only_in_current_first5": [
+     "2005-06-27"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 10567,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1994-12-14"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 12654,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1994-12-14"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  },
+  "DGS10": {
+   "2005-06-28": {
+    "obs_compared": 11322,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.02000000000000135,
+    "mismatch_dates_first10": [
+     "1991-01-29"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 23,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 12522,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.02000000000000135,
+    "mismatch_dates_first10": [
+     "1991-01-29"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 14609,
+    "mismatched": 1,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.02000000000000135,
+    "mismatch_dates_first10": [
+     "1991-01-29"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  },
+  "DGS20": {
+   "2005-06-28": {
+    "obs_compared": 3061,
+    "mismatched": 2934,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1993-10-01",
+     "1993-10-04",
+     "1993-10-05",
+     "1993-10-06",
+     "1993-10-07",
+     "1993-10-08",
+     "1993-10-12",
+     "1993-10-13",
+     "1993-10-14",
+     "1993-10-15"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 8284,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 4239,
+    "mismatched": 2,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1996-08-13",
+     "2009-11-19"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 8285,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 6326,
+    "mismatched": 2,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "1996-08-13",
+     "2009-11-19"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 8283,
+    "only_in_current_first5": [
+     "1962-01-02",
+     "1962-01-03",
+     "1962-01-04",
+     "1962-01-05",
+     "1962-01-08"
+    ]
+   }
+  },
+  "DGS30": {
+   "2005-06-28": {
+    "obs_compared": 6524,
+    "mismatched": 0,
+    "missing_vs_present_changes": 0,
+    "max_abs_revision_pct_pts": 0.0,
+    "mismatch_dates_first10": [],
+    "only_in_old": 0,
+    "only_in_current": 876,
+    "only_in_current_first5": [
+     "2002-02-18",
+     "2002-02-19",
+     "2002-02-20",
+     "2002-02-21",
+     "2002-02-22"
+    ]
+   },
+   "2010-01-04": {
+    "obs_compared": 8577,
+    "mismatched": 995,
+    "missing_vs_present_changes": 994,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "2002-02-19",
+     "2002-02-20",
+     "2002-02-21",
+     "2002-02-22",
+     "2002-02-25",
+     "2002-02-26",
+     "2002-02-27",
+     "2002-02-28",
+     "2002-03-01",
+     "2002-03-04"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 2,
+    "only_in_current_first5": [
+     "2009-12-31",
+     "2010-01-01"
+    ]
+   },
+   "2018-01-02": {
+    "obs_compared": 10664,
+    "mismatched": 995,
+    "missing_vs_present_changes": 994,
+    "max_abs_revision_pct_pts": 0.009999999999999787,
+    "mismatch_dates_first10": [
+     "2002-02-19",
+     "2002-02-20",
+     "2002-02-21",
+     "2002-02-22",
+     "2002-02-25",
+     "2002-02-26",
+     "2002-02-27",
+     "2002-02-28",
+     "2002-03-01",
+     "2002-03-04"
+    ],
+    "only_in_old": 0,
+    "only_in_current": 0,
+    "only_in_current_first5": []
+   }
+  }
+ },
+ "sha256": {
+  "DGS3MO_2026-09-25": "e35f214493904a6d0c55d10dcc52d0f01c8bfb4013a2e4ecee487ac3a2631d17",
+  "DGS3MO_2005-06-28": "743e5e16165e06096ca114c6747724a0814dd0cd00ee1c10b846686a5ba238d8",
+  "DGS3MO_2010-01-04": "456082579e0e7c95df7d857b0ab6bc26b24f99a89dbc7780e196df55c3ede71a",
+  "DGS3MO_2018-01-02": "b9de30b65e253b255e5f986f0f62c9c6ef0f4250f8b948db0c11979a5532a20d",
+  "DGS6MO_2026-09-25": "33a70d5dd0b6ee73c930aea6dc023542c83101c64738783c75d3a129b9b95b7f",
+  "DGS6MO_2005-06-28": "0ffe925ea4f20df3ccc42104eba947bdbe89a9d16681831dfa243ebf4753ea37",
+  "DGS6MO_2010-01-04": "84d8e4a7c765e5bc79614877684227d695e4b6ec227925f33f6ac7c9785161d1",
+  "DGS6MO_2018-01-02": "e2b2586b9c7daa25db5df1449812ea8633dac0bc0d26aecbc35d054d48377b4c",
+  "DGS1_2026-09-25": "98621de593cea33f93fc978efb4062210e2c15a3ef90399ed1b81a3c607ece51",
+  "DGS1_2005-06-28": "e7b9a658d5ceb659d59fddf1f07710cc68d2bf1711e3428c2149e9362996ddee",
+  "DGS1_2010-01-04": "23530bf1fca22fbe44384770481a3b70f7fc6edcb2d67b85566c9206ea867417",
+  "DGS1_2018-01-02": "e7c9433b1e980ce6792b056bd62ff75e8f8927c118456ce167d31a2d3b145766",
+  "DGS2_2026-09-25": "a257e402f626e4fa93137b177e8a6f4fabb06398067f2373f074edd62edf5449",
+  "DGS2_2005-06-28": "88adfa114af3b739e2c1f4fb5d2da274b44b265382b0d138336055e0304e8088",
+  "DGS2_2010-01-04": "cce3ece06489cd8a25e728e65392631cc86e42ce8f2ddb79852ba525e68990ca",
+  "DGS2_2018-01-02": "d02344008ef1de8adb6bfb8f4e7201b2ee410c2f09867e60b95352b6b77e429a",
+  "DGS3_2026-09-25": "55bebc296102e5a375f0a3c958c659250e7f1149313ee2794cb3cea22ab533f1",
+  "DGS3_2005-06-28": "b1173fc78649933ee49bf91c1bcadf821deb142a13cdabad7c1211f93b1498ce",
+  "DGS3_2010-01-04": "e0b535389a7be7e6f78203a796c5e6d729635e0ea3e0017d497d8b4855f2f89e",
+  "DGS3_2018-01-02": "b278b66238a6623d0573f7a41c62ad38fb2cb3def954442a0d15eaa550142692",
+  "DGS5_2026-09-25": "30282cd750bc2eaa63dcb0a08ce33f68409595a5b0cbe3f48ad4f855681d3777",
+  "DGS5_2005-06-28": "04a3b96d296a57685758a9728e13c1383a62b538897508f71840ed2cf7bff7b5",
+  "DGS5_2010-01-04": "27f4e8a323f2f373b40dff134567ab1e23bb9f7909527ab1c052d2e3d910fc49",
+  "DGS5_2018-01-02": "2750d9bdba24980e2fa9d83a66ee5a607cb205966f044fbbc28b79f7ad337b14",
+  "DGS7_2026-09-25": "3d31c7c1241e344f6302791f6db58605281ddc834c04cef144e2973166c44769",
+  "DGS7_2005-06-28": "77bdddea7ec623417cf9f12a731a97de66977036ef78065ad0c439a59aeca603",
+  "DGS7_2010-01-04": "b1de4f2bc508cb9238f6818b4047f0cfe315895810915f79173d415577c0ed6e",
+  "DGS7_2018-01-02": "41c460919a7e2e9acd5e8eb7db7a524e93584e38c364687315ff0f57a809c589",
+  "DGS10_2026-09-25": "67fa694ba0708bf825245fe831b243ab6fde20178a63e7a05cc435d738ad6b05",
+  "DGS10_2005-06-28": "9b82a6fbe85ea678e7381de3f3099518c9a6c99d85b297ad3d7747d2e4879a88",
+  "DGS10_2010-01-04": "52266d67dedc534e89ab4331d74046338931225371daeb3756305b213a975194",
+  "DGS10_2018-01-02": "9f2e9d933b18f474cb3a82fe5530316ed1ecb80d200967679fbca88dd93f9e66",
+  "DGS20_2026-09-25": "caf7300a081011a719e68ddbb4c76a6cc18c6b1afb9b5b2bc3930c6ca0161e52",
+  "DGS20_2005-06-28": "4a37e6bcefdd57b7c38caa03b3e65cc1bc8c387e0df793da22dc7ba20977d7f6",
+  "DGS20_2010-01-04": "8bb4043b1890c1b79e56fb1bc32a17e36790895dad63e5ebe07179c64d6a68d1",
+  "DGS20_2018-01-02": "8e86bc73765f4c484330c58d91fc123a81b04854eb8e35dc263fdf1583007dca",
+  "DGS30_2026-09-25": "95810816f6d5fd424a6021141c88898105a2f7f29a6bb9dcdd61e4a9b05e77c7",
+  "DGS30_2005-06-28": "8d5ecafe7f1ba0b92cf5fc2f3c8ce457df8332273e20c110caae8b0174f05baf",
+  "DGS30_2010-01-04": "1ee586349f69b133bf9d0edaddffa62c58f51eb54aa2671934638d1f0ca905cf",
+  "DGS30_2018-01-02": "4168fd680d5aae261fc3a6e664be7e298a0fd7b89fb05a7e5d0cdc8445512352"
+ }
+}

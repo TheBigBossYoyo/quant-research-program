@@ -1,0 +1,49 @@
+{
+  "class_gates": {
+    "B_SLOPE_FWD_SPREAD": {
+      "in_sample_mechanism": "PASS",
+      "real_time_oos_evidence": "FAIL",
+      "pit_reconstructable": "PASS",
+      "simple_preregistrable": "PASS",
+      "long_only_economic_meaning": "UNRESOLVED",
+      "low_turnover": "PASS",
+      "no_proprietary_data": "PASS",
+      "distinct_from_prior_research": "PASS"
+    },
+    "A_CP_FACTOR": {
+      "in_sample_mechanism": "PASS",
+      "real_time_oos_evidence": "FAIL",
+      "pit_reconstructable": "UNRESOLVED",
+      "simple_preregistrable": "PASS",
+      "long_only_economic_meaning": "FAIL",
+      "low_turnover": "UNRESOLVED",
+      "no_proprietary_data": "UNRESOLVED",
+      "distinct_from_prior_research": "PASS"
+    },
+    "C_PIT_TERM_PREMIUM": {
+      "in_sample_mechanism": "PASS",
+      "real_time_oos_evidence": "FAIL",
+      "pit_reconstructable": "FAIL",
+      "simple_preregistrable": "FAIL",
+      "long_only_economic_meaning": "UNRESOLVED",
+      "low_turnover": "UNRESOLVED",
+      "no_proprietary_data": "PASS",
+      "distinct_from_prior_research": "PASS"
+    }
+  },
+  "preference": [
+    "B_SLOPE_FWD_SPREAD",
+    "A_CP_FACTOR",
+    "C_PIT_TERM_PREMIUM"
+  ],
+  "gates_to_codes": {
+    "in_sample_mechanism": "MECHANISM_TOO_WEAK",
+    "real_time_oos_evidence": "REAL_TIME_OOS_EVIDENCE_TOO_WEAK",
+    "pit_reconstructable": "PIT_DATA_BLOCKED",
+    "simple_preregistrable": "IMPLEMENTATION_BLOCKED",
+    "long_only_economic_meaning": "REAL_TIME_OOS_EVIDENCE_TOO_WEAK",
+    "low_turnover": "IMPLEMENTATION_BLOCKED",
+    "no_proprietary_data": "PIT_DATA_BLOCKED",
+    "distinct_from_prior_research": "DUPLICATES_PRIOR_RESEARCH"
+  }
+}

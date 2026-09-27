@@ -1,0 +1,36 @@
+{
+  "assumption_long_only_capture": 0.5,
+  "r2_source": "GPT 2019 Table 3 (FB spread, OLS, monthly OOS R2)",
+  "rows": [
+    {
+      "monthly_r2": 0.005,
+      "ir_unconstrained": 0.246,
+      "ir_long_only_assumed": 0.123,
+      "years_to_t1.96_long_only": 254.8,
+      "power_one_sided_5pct_6y": 0.089,
+      "power_one_sided_5pct_14.67y": 0.12,
+      "power_one_sided_5pct_22y": 0.143,
+      "power_one_sided_5pct_30y": 0.165
+    },
+    {
+      "monthly_r2": 0.01,
+      "ir_unconstrained": 0.348,
+      "ir_long_only_assumed": 0.174,
+      "years_to_t1.96_long_only": 126.8,
+      "power_one_sided_5pct_6y": 0.111,
+      "power_one_sided_5pct_14.67y": 0.164,
+      "power_one_sided_5pct_22y": 0.204,
+      "power_one_sided_5pct_30y": 0.245
+    },
+    {
+      "monthly_r2": 0.02,
+      "ir_unconstrained": 0.495,
+      "ir_long_only_assumed": 0.247,
+      "years_to_t1.96_long_only": 62.7,
+      "power_one_sided_5pct_6y": 0.149,
+      "power_one_sided_5pct_14.67y": 0.243,
+      "power_one_sided_5pct_22y": 0.314,
+      "power_one_sided_5pct_30y": 0.386
+    }
+  ]
+}

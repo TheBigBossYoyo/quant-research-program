@@ -745,3 +745,61 @@ decision.
 
 0 cells. 490 cumulative. No price, return or on-chain metric value loaded. Old crypto holdout, equity validation and
 equity holdout still closed.
+
+
+## Phase 11C TREASURY_TERM_PREMIA_STAGE0 — closed at the real-time evidence gate (2026-09-27)
+
+Treasury duration timing looked like a good fit for this account: unlevered, long-only, monthly, cheap instruments, and
+a mechanism with some of the most famous in-sample results in empirical finance. When the curve pays well for holding
+duration, hold duration; when it does not, stay short. The question was whether that survives the conditions we would
+actually trade under. It does not, at least not on the evidence that exists.
+
+The in-sample case is not in doubt. Cochrane and Piazzesi's tent-shaped factor explains a third or more of one-year
+excess returns on unsmoothed Fama-Bliss data, the loadings recur in every subsample, and Bauer and Hamilton, who
+dismantle most of the other bond-predictability claims with a proper bootstrap, explicitly concur that the core factor
+is stable. Rebonato and Nyholm's recent paper argues it is not an overfitting artefact. I accept all of that.
+
+The trouble starts when an investor has to estimate the coefficients as the data arrive. Cochrane and Piazzesi's own
+real-time check already earned only about half the full-sample trading profit. Gargano, Pettenuzzo and Timmermann's
+2019 paper, the strongest positive study, is also the clearest witness against the simple version. In their Table 3,
+the constant-coefficient CP regression has a monthly out-of-sample R-squared of -1.58% to 0.73% over 1990-2011. In
+Table 5, a long-only investor using it gains nothing measurable. Their large certainty-equivalent gains come from
+stochastic-volatility and time-varying-parameter machinery, a macro factor built from revised data, and portfolio
+weights between -2 and 3. Hodrick and Tomunen find CP loses to historical averages out of sample. Sarno, Schneider and
+Wagner call their own result the bond-market Goyal-Welch. Thornton and Valente, whose full text I still could not
+obtain, reached the same verdict for a dynamic allocator.
+
+The simple forward spread does a little better, and it deserves to be stated precisely because it is the one thing
+that nearly survived. In the same GPT table, the Fama-Bliss spread in a long-only bond-versus-bill allocation earns
+0.46% and 0.67% a year of certainty equivalent for the four- and five-year bonds, and nothing at two and three years.
+That is recursive and out of sample. It is also gross of costs, ends in 2011, comes from one study, and is contradicted
+at the annual horizon. Two switches a year through a converting Trading 212 path would cost 80 basis points. And
+there is nowhere left to test it: 1990-2011 is the literature's own window, this programme has already read Treasury
+ETF returns for most of 2004-2019, and what remains overlaps the locked 2018-2026 windows and the 2022 bond crash
+everyone remembers. At the literature's best R-squared, a long-only test over the remaining fifteen years would have
+roughly a one-in-four chance of detecting a true effect. A cell spent there would most likely end ambiguous.
+
+The data work, by contrast, came out cleaner than expected, and I measured it rather than trusting the sub-audit. H.15
+constant-maturity yields are par yields, not zero-coupon yields, so they cannot produce canonical CP forwards. But they
+are genuinely point-in-time: comparing ALFRED vintages from 2005, 2010 and 2018 with today's, blind and by exact string
+equality, found between zero and three revised dates per tenor across 55 years, the largest 10 basis points. Two
+exceptions matter. The 20-year history before 1993 and the 30-year's 2002-2006 gap were filled in after the fact, so a
+naive download of those tenors is not real-time. FRED also archived month-end observations one to six days late in
+2006-2011, so a backtest has to gate on the first vintage containing the date, not on the evening the Fed posted it.
+GSW's smoothed curve is both a revised vintage and, per Cochrane and Piazzesi's 2008 table, destructive of the tent
+signal. ACM term premia are re-estimated on the full sample with no public vintages: a value dated 2005 in today's file
+is not something anyone knew in 2005.
+
+So the decision is REAL_TIME_OOS_EVIDENCE_TOO_WEAK, not MECHANISM_TOO_WEAK and not PIT_DATA_BLOCKED. The binding class
+has free, point-in-time data, and the mechanism has strong in-sample support; what is missing is real-time, long-only,
+after-cost evidence, and the independent data to produce it. I froze the one construction that would be tested if
+outside evidence reopens the question (10-year minus 1-year CMT, expanding-window sign rule, 7-10 year versus 1-3 year,
+against a fixed 50/50 blend, with a bond-momentum duplication check), so that a reopening cannot become a search.
+
+Process notes. Five sub-audits ran in parallel. Each decisive number above was re-read in the local full text. The data
+sub-agent's provisional classification was superseded by measurement, and two of its series-start claims were wrong.
+One file labelled Thornton-Valente turned out to be a different Thornton paper. The ETF sub-agent saw a few incidental
+quotes and discarded them unrecorded.
+
+0 cells. 490 cumulative. No return series loaded, no yield-curve signal computed. Equity validation, equity holdout and
+old crypto holdouts still closed.

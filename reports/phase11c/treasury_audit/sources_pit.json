@@ -1,0 +1,62 @@
+{
+  "H15_CMT": {
+    "key": "H15_CMT",
+    "name": "Federal Reserve H.15 / Treasury par yield curve (constant maturity), 3m-10y",
+    "curve_type": "PAR_CMT",
+    "pit_class": "PIT_SAFE",
+    "free": true,
+    "start": "1962-01-02 (1y/3y/5y/10y/20y), 1969-07-01 (7y), 1976-06-01 (2y), 1981-09-01 (3m/6m), 2001-07-31 (1m)",
+    "note": "measured (reports/phase11c/raw/pit_checks): ALFRED vintages from 2005-06-28; observations dated before each of three vintages (2005, 2010, 2018) differ from the 2026-09-25 vintage in 0-3 isolated dates per tenor (max 10 bp, mostly <= 2 bp) plus a 3->2 decimal formatting change; FRED archive lag at month-ends 1-6 calendar days; Dec 2021 fitting change is prospective only",
+    "cp_construction": "NOT_VALID"
+  },
+  "H15_LONG_END": {
+    "key": "H15_LONG_END",
+    "name": "H.15 20y and 30y CMT",
+    "curve_type": "PAR_CMT",
+    "pit_class": "MINOR_REVISION_RISK",
+    "free": true,
+    "start": "1962-01-02 (20y, backfilled), 1977-02-15 (30y)",
+    "note": "backfill hazard (measured): 20y history before the 1993 reintroduction is absent from the 2005 and 2010 vintages and present today; 30y 2002-02-19..2006-02-08 (994 dates) missing in the 2010 vintage and filled today - values not available in real time",
+    "cp_construction": "NOT_VALID"
+  },
+  "GSW": {
+    "key": "GSW",
+    "name": "Gurkaynak-Sack-Wright Fed nominal curve (Svensson)",
+    "curve_type": "ZERO_SMOOTHED",
+    "pit_class": "MINOR_REVISION_RISK",
+    "free": true,
+    "start": "1961-06-14",
+    "note": "each day fitted on that day's prices, but the current file is a re-implemented vintage ('not identical' to the original, Fed); archived vintages sparse (legacy .xls: 69 Wayback captures, 27 distinct digests 2009-2025); smoothing removes the tent-shape signal (CP 2008 Table 1)",
+    "cp_construction": "DIFFERENT_CONSTRUCTION"
+  },
+  "ACM": {
+    "key": "ACM",
+    "name": "NY Fed Adrian-Crump-Moench term premia",
+    "curve_type": "MODEL_TERM_PREMIUM",
+    "pit_class": "PIT_BLOCKED",
+    "free": true,
+    "start": "1961-06-14",
+    "note": "model re-estimated on the full sample; no archive of historical vintages; a value dated 2005 is not an estimate available in 2005",
+    "cp_construction": "NOT_VALID"
+  },
+  "FAMA_BLISS": {
+    "key": "FAMA_BLISS",
+    "name": "CRSP Fama-Bliss discount bonds",
+    "curve_type": "ZERO_UNSMOOTHED",
+    "pit_class": "PIT_SAFE",
+    "free": false,
+    "start": "1952-06",
+    "note": "the canonical CP input; licensed (CRSP via WRDS), not obtainable by this programme",
+    "cp_construction": "EXACT"
+  },
+  "LIU_WU": {
+    "key": "LIU_WU",
+    "name": "Liu-Wu (2021) reconstructed zero-coupon curve",
+    "curve_type": "ZERO_UNSMOOTHED",
+    "pit_class": "MINOR_REVISION_RISK",
+    "free": true,
+    "start": "1961-06",
+    "note": "free output of a date-by-date kernel fit to CRSP quotes; periodic re-releases; no vintage archive",
+    "cp_construction": "CLOSE"
+  }
+}

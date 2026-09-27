@@ -1,0 +1,242 @@
+{
+ "DGS10@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 11322
+ },
+ "DGS10@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 12522
+ },
+ "DGS10@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 14609
+ },
+ "DGS10@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 16888
+ },
+ "DGS1@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 11322
+ },
+ "DGS1@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 12522
+ },
+ "DGS1@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 14609
+ },
+ "DGS1@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 16888
+ },
+ "DGS20@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 3061
+ },
+ "DGS20@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 4239
+ },
+ "DGS20@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 6326
+ },
+ "DGS20@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 16888
+ },
+ "DGS2@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 7584
+ },
+ "DGS2@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 8762
+ },
+ "DGS2@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 10849
+ },
+ "DGS2@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 13128
+ },
+ "DGS30@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2002-02-15",
+  "calendar_days_lag": 1229,
+  "n_rows": 6524
+ },
+ "DGS30@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 8577
+ },
+ "DGS30@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 10664
+ },
+ "DGS30@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 12943
+ },
+ "DGS3MO@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 6125
+ },
+ "DGS3MO@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 7303
+ },
+ "DGS3MO@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 9390
+ },
+ "DGS3MO@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 11758
+ },
+ "DGS3@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 11322
+ },
+ "DGS3@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 12522
+ },
+ "DGS3@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 14609
+ },
+ "DGS3@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 16888
+ },
+ "DGS5@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 11322
+ },
+ "DGS5@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 12522
+ },
+ "DGS5@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 14609
+ },
+ "DGS5@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 16888
+ },
+ "DGS6MO@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 6125
+ },
+ "DGS6MO@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 7303
+ },
+ "DGS6MO@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 9390
+ },
+ "DGS6MO@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 11758
+ },
+ "DGS7@2005-06-28": {
+  "vintage": "2005-06-28",
+  "last_obs_with_value": "2005-06-24",
+  "calendar_days_lag": 4,
+  "n_rows": 9389
+ },
+ "DGS7@2010-01-04": {
+  "vintage": "2010-01-04",
+  "last_obs_with_value": "2009-12-30",
+  "calendar_days_lag": 5,
+  "n_rows": 10567
+ },
+ "DGS7@2018-01-02": {
+  "vintage": "2018-01-02",
+  "last_obs_with_value": "2017-12-29",
+  "calendar_days_lag": 4,
+  "n_rows": 12654
+ },
+ "DGS7@2026-09-25": {
+  "vintage": "2026-09-25",
+  "last_obs_with_value": "2026-09-24",
+  "calendar_days_lag": 1,
+  "n_rows": 14933
+ }
+}

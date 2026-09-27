@@ -1,0 +1,57 @@
+{
+ "DGS1MO": {
+  "observation_start": "2001-07-31",
+  "n_vintage_dates": 5113,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS3MO": {
+  "observation_start": "1981-09-01",
+  "n_vintage_dates": 5117,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS6MO": {
+  "observation_start": "1981-09-01",
+  "n_vintage_dates": 5118,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS1": {
+  "observation_start": "1962-01-02",
+  "n_vintage_dates": 5118,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS2": {
+  "observation_start": "1976-06-01",
+  "n_vintage_dates": 5118,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS3": {
+  "observation_start": "1962-01-02",
+  "n_vintage_dates": 5114,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS5": {
+  "observation_start": "1962-01-02",
+  "n_vintage_dates": 5117,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS7": {
+  "observation_start": "1969-07-01",
+  "n_vintage_dates": 5116,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS10": {
+  "observation_start": "1962-01-02",
+  "n_vintage_dates": 5117,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS20": {
+  "observation_start": "1962-01-02",
+  "n_vintage_dates": 5113,
+  "first_vintage": "2005-06-28"
+ },
+ "DGS30": {
+  "observation_start": "1977-02-15",
+  "n_vintage_dates": 5066,
+  "first_vintage": "2005-06-28"
+ }
+}

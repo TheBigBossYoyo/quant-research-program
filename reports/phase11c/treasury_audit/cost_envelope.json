@@ -1,0 +1,29 @@
+{
+  "t212_fx_bps_each_way": 15.0,
+  "cases": {
+    "usd_lines_held_in_usd_low": {
+      "per_switch_bps": 6.0,
+      "annual_drag_bps_1_switches": 6.0,
+      "annual_drag_bps_2_switches": 12.0,
+      "annual_drag_bps_4_switches": 24.0
+    },
+    "usd_lines_held_in_usd_high": {
+      "per_switch_bps": 20.0,
+      "annual_drag_bps_1_switches": 20.0,
+      "annual_drag_bps_2_switches": 40.0,
+      "annual_drag_bps_4_switches": 80.0
+    },
+    "eur_account_converting_each_switch": {
+      "per_switch_bps": 40.0,
+      "annual_drag_bps_1_switches": 40.0,
+      "annual_drag_bps_2_switches": 80.0,
+      "annual_drag_bps_4_switches": 160.0
+    },
+    "eur_hedged_lines_eur_account": {
+      "per_switch_bps": 16.0,
+      "annual_drag_bps_1_switches": 16.0,
+      "annual_drag_bps_2_switches": 32.0,
+      "annual_drag_bps_4_switches": 64.0
+    }
+  }
+}
